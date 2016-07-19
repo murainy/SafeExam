@@ -1,0 +1,19 @@
+package com.murainy.safeexam.Utils;
+
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+public enum Action {
+
+    DOWNLOAD_GRADE_LIST,
+    DOWNLOAD_QUESTION_LIST,
+    DOWNLOAD_PAPER_LIST,
+    DOWNLOAD_QUESTION_LIST100,
+    DOWNLOAD_QUESTION_LISTMy,
+    QUERY_ERROR,
+    SAVE_PAPER_SUCCESS,
+    SAVE_PAPER_ERROR,
+    QUESTIONCOUNT,
+    SAVE_GRADE_SUCCESS,
+    SAVE_GRADE_ERROR,
+}

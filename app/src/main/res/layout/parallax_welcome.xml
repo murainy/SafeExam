@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/hippophaes"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="133dp"
+        android:src="@drawable/cloud"
+        android:id="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" android:layout_toStartOf="@+id/imageView2" android:layout_below="@+id/imageView2"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="133dp"
+        android:src="@drawable/fish"
+        android:id="@+id/imageView1"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+    />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="133dp"
+        android:src="@drawable/sky"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="133dp"
+        android:src="@drawable/hippophae"
+        android:id="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_below="@+id/imageView2"/>
+
+</RelativeLayout>

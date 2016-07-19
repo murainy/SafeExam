@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info_name">吴佳宝</string>
+    <string name="info_class">软件三班</string>
+    <string name="add_paper">添加试卷</string>
+    <string name="update_paper">更新试卷</string>
+</resources>

@@ -1,0 +1,362 @@
+[
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ccb_comm_bg0.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ccb_comm_bg0.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_person_blue_a400_18dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_person_blue_a400_18dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\turnplate_mask_unlogin_normal.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\turnplate_mask_unlogin_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_chevron_left_white_24dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\drawable-hdpi-v4\\ic_chevron_left_white_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\circle_bg3.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\circle_bg3.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_sync_black_24dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_sync_black_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_6_clicked.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_6_clicked.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_arrow_left.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_arrow_left.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bmob_update_close_bg_tap.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable-hdpi-v4\\bmob_update_close_bg_tap.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\turnplate_inner_icon.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\turnplate_inner_icon.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bmob_update_btn_check_on_pressed_holo_light.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable-hdpi-v4\\bmob_update_btn_check_on_pressed_holo_light.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\turnplate_bg_left.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\turnplate_bg_left.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bmob_update_btn_check_off_pressed_holo_light.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable-hdpi-v4\\bmob_update_btn_check_off_pressed_holo_light.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\about_bottom_bg.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\about_bottom_bg.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\about_top_bg.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\about_top_bg.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bear.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\bear.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bmob_update_close_bg_normal.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable-hdpi-v4\\bmob_update_close_bg_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\circle_bg2.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\circle_bg2.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_chevron_right_white_24dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\drawable-hdpi-v4\\ic_chevron_right_white_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_chevron_right_blue_48dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_chevron_right_blue_48dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_person_pin_white_18dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_person_pin_white_18dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bmob_update_btn_check_on_holo_light.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable-hdpi-v4\\bmob_update_btn_check_on_holo_light.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bmob_update_btn_check_on_focused_holo_light.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable-hdpi-v4\\bmob_update_btn_check_on_focused_holo_light.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_info_black_24dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_info_black_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\arrow.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\arrow.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bg.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\bg.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_1_normal.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_1_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\logo.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\logo.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_notifications_black_24dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_notifications_black_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\turnplate_center_unlogin.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\turnplate_center_unlogin.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\circle_bg.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\circle_bg.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_6_normal.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_6_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\about_mid_bg.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\about_mid_bg.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_5_clicked.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_5_clicked.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_person_grey_700_18dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_person_grey_700_18dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_5_normal.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_5_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_done_red_900_18dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_done_red_900_18dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_4_normal.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_4_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_2_normal.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_2_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_3_normal.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_3_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_status_flight_time.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_status_flight_time.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\turnplate_bg_right.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\turnplate_bg_right.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ic_chevron_right_black_48dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_chevron_right_black_48dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bmob_update_btn_check_off_holo_light.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable-hdpi-v4\\bmob_update_btn_check_off_holo_light.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_4_clicked.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_4_clicked.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_2_clicked.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_2_clicked.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_3_clicked.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_3_clicked.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\home_mbank_1_clicked.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-hdpi\\home_mbank_1_clicked.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\bmob_update_btn_check_off_focused_holo_light.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable-hdpi-v4\\bmob_update_btn_check_off_focused_holo_light.png"
+    }
+]

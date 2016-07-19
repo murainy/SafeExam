@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorForeground">@color/fbutton_color_green_sea</item>
+        <item name="android:textColorPrimary">@color/accent_material_dark</item>
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="welcomeButtonSkipText">Skip</item>
+        <item name="welcomeButtonDoneText">Start</item>
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/blue</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">#3A5FCD</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
+    </style>
+
+    <style name="MenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">?attr/colorPrimary</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+    </style>
+
+    <style name="common_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_button_height</item>
+        <item name="android:background">@drawable/selector_red_corners_button</item>
+        <item name="android:padding">6.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="CustomWelcomeScreenTheme" parent="WelcomeScreenTheme">
+        <item name="welcomeIndicatorStyle">@style/WelcomeScreenPageIndicator.Custom</item>
+        <item name="welcomeTitleTextStyle">@style/WelcomeScreenText.Title.Centered</item>
+    </style>
+
+    <style name="WelcomeScreenPageIndicator.Custom">
+        <item name="animated">true</item>
+    </style>
+
+    <style name="WelcomeScreenText.Title.Centered.Custom">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/theme_bg_color</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="tweetName">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:shadowColor">#44000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="tweetText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorLink">#778085</item>
+    </style>
+
+    <style name="tweetDate">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFAAAAAA</item>
+    </style>
+
+    <style name="About">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#eff0f1</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

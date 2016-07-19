@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:textAlignment="gravity">
+    <include layout="@layout/include_header" android:id="@+id/include"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:src="@mipmap/ic_launcher" android:layout_gravity="center" android:layout_marginTop="100dp" android:contentDescription="@string/face"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_nick"
+            android:hint="@string/et_nick"
+            android:textSize="15sp"
+            android:inputType="text" android:layout_gravity="center"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="247dp"
+            android:layout_height="50dp" android:layout_gravity="center" android:weightSum="3" android:gravity="center">
+            <Button
+                android:id="@+id/btn_takephoto"
+                style="@style/common_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/camery" android:layout_weight="1" android:layout_gravity="center" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/btn_okphoto"
+                style="@style/common_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dwonload" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1" android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btn_photos"
+                style="@style/common_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gallay" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1" android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
