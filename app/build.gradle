@@ -79,6 +79,9 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+    dexOptions {
+        incremental true
+    }
 }
 
 
@@ -98,6 +101,5 @@ dependencies {
     compile 'com.android.support:design:24.0.0'
     //bmob-sdk
     compile 'cn.bmob.android:bmob-sdk:3.5.0'
-
 }
 
