@@ -44,11 +44,11 @@ android {
         debug {
             // 为了不和 release 版本冲突
             applicationIdSuffix ".debug"
-            minifyEnabled false
         }
         release {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.wyz
+            //混淆
             minifyEnabled false
         }
     }
@@ -67,9 +67,7 @@ android {
         maven { url "https://jitpack.io"}
 
     }
-    dexOptions {
-        incremental false
-    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
@@ -94,36 +92,12 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
     compile 'com.orhanobut:logger:1.11'
     compile 'org.greenrobot:eventbus:3.0.0'
-    compile 'com.android.support:support-annotations:24.0..0'
-    compile 'com.android.support:support-v4:24.0..0'
-    compile 'com.android.support:appcompat-v7:24.0..0'
+    compile 'com.android.support:support-annotations:24.0.0'
+    compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.7.4'
     compile 'com.android.support:design:24.0.0'
     //bmob-sdk
     compile 'cn.bmob.android:bmob-sdk:3.5.0'
-}
-
-buildscript {
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
-    }
-    repositories {
-        jcenter()
-    }
-}
-
-
-allprojects {
-    repositories {
-        jcenter()
-    }
 
 }
 
-tasks.withType(ScalaCompile) {
-    configure(scalaCompileOptions.forkOptions) {
-        memoryMaximumSize = '2g'
-        jvmArgs = ['-XX:MaxPermSize=2048m']
-    }
-}
