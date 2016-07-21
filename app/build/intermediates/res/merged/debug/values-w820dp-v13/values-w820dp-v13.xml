@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="activity_horizontal_margin">64dp</dimen>
-    <string name="add_paper">添加试卷</string>
-    <string name="update_paper">更新试卷</string>
-</resources>
