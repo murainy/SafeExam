@@ -1,5 +1,6 @@
 package com.murainy.safeexam.activitis;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
@@ -14,10 +15,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.murainy.safeexam.R;
+
+import mehdi.sakout.fancybuttons.FancyButton;
 
 public class ErrorActivity extends AppCompatActivity {
 
@@ -39,6 +43,20 @@ public class ErrorActivity extends AppCompatActivity {
         toolbar.setNavigationIcon(R.drawable.back_icon_selector);
         // Menu item click 的監聽事件一樣要設定在 setSupportActionBar 才有作用
         toolbar.setOnMenuItemClickListener(onMenuItemClick);
+
+        FancyButton signupBtn = new FancyButton(this);
+        signupBtn.setText("报告");
+        signupBtn.setIconResource(R.drawable.ic_info_black_24dp);
+        signupBtn.setBackgroundColor(Color.parseColor("#ff8800"));
+        signupBtn.setFocusBackgroundColor(Color.parseColor("#ffa43c"));
+        signupBtn.setTextSize(15);
+        signupBtn.setCustomTextFont("Roboto_Bold.ttf");
+        signupBtn.setRadius(30);
+        signupBtn.setPadding(10,10,10,10);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        layoutParams.setMargins(0,0,0,10);
+        LinearLayout container = (LinearLayout)findViewById(R.id.container);
+        container.addView(signupBtn,layoutParams);
     }
 
     private Toolbar.OnMenuItemClickListener onMenuItemClick = new Toolbar.OnMenuItemClickListener() {

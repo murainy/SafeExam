@@ -15,18 +15,18 @@ public class LauncherActivity$$ViewBinder<T extends LauncherActivity> implements
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624100, "field 'bnt_me' and method 'next'");
-    target.bnt_me = finder.castView(view, 2131624100, "field 'bnt_me'");
-    unbinder.view2131624100 = view;
+    view = finder.findRequiredView(source, 2131624105, "field 'bnt_me' and method 'next'");
+    target.bnt_me = finder.castView(view, 2131624105, "field 'bnt_me'");
+    unbinder.view2131624105 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.next(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131624102, "field 'bnt_you' and method 'man'");
-    target.bnt_you = finder.castView(view, 2131624102, "field 'bnt_you'");
-    unbinder.view2131624102 = view;
+    view = finder.findRequiredView(source, 2131624109, "field 'bnt_you' and method 'man'");
+    target.bnt_you = finder.castView(view, 2131624109, "field 'bnt_you'");
+    unbinder.view2131624109 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,9 +43,9 @@ public class LauncherActivity$$ViewBinder<T extends LauncherActivity> implements
   protected static class InnerUnbinder<T extends LauncherActivity> implements Unbinder {
     private T target;
 
-    View view2131624100;
+    View view2131624105;
 
-    View view2131624102;
+    View view2131624109;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -59,9 +59,9 @@ public class LauncherActivity$$ViewBinder<T extends LauncherActivity> implements
     }
 
     protected void unbind(T target) {
-      view2131624100.setOnClickListener(null);
+      view2131624105.setOnClickListener(null);
       target.bnt_me = null;
-      view2131624102.setOnClickListener(null);
+      view2131624109.setOnClickListener(null);
       target.bnt_you = null;
     }
   }

@@ -19,10 +19,10 @@ public final class R {
 		public static final int contentPaddingLeft = 0x7f0100b1;
 		public static final int contentPaddingRight = 0x7f0100b2;
 		public static final int contentPaddingTop = 0x7f0100b3;
-		public static final int layoutManager = 0x7f0100f5;
-		public static final int reverseLayout = 0x7f0100f7;
-		public static final int spanCount = 0x7f0100f6;
-		public static final int stackFromEnd = 0x7f0100f8;
+		public static final int layoutManager = 0x7f01010c;
+		public static final int reverseLayout = 0x7f01010e;
+		public static final int spanCount = 0x7f01010d;
+		public static final int stackFromEnd = 0x7f01010f;
 	}
 	public static final class color {
 		public static final int cardview_dark_background = 0x7f0c007a;
@@ -56,14 +56,14 @@ public final class R {
 		public static final int sp_16 = 0x7f0800b6;
 	}
 	public static final class drawable {
-		public static final int sample_footer_loading = 0x7f0200c8;
-		public static final int sample_footer_loading_progress = 0x7f0200c9;
+		public static final int sample_footer_loading = 0x7f0200cd;
+		public static final int sample_footer_loading_progress = 0x7f0200ce;
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f0e0008;
-		public static final int loading_progress = 0x7f0e00e2;
-		public static final int loading_text = 0x7f0e00e3;
-		public static final int loading_view = 0x7f0e00e1;
+		public static final int loading_progress = 0x7f0e00e9;
+		public static final int loading_text = 0x7f0e00ea;
+		public static final int loading_view = 0x7f0e00e8;
 	}
 	public static final class layout {
 		public static final int def_loading = 0x7f040035;
@@ -93,7 +93,7 @@ public final class R {
 		public static final int CardView_contentPaddingLeft = 9;
 		public static final int CardView_contentPaddingRight = 10;
 		public static final int CardView_contentPaddingTop = 11;
-		public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f0100f5, 0x7f0100f6, 0x7f0100f7, 0x7f0100f8 };
+		public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f01010c, 0x7f01010d, 0x7f01010e, 0x7f01010f };
 		public static final int RecyclerView_android_orientation = 0;
 		public static final int RecyclerView_layoutManager = 2;
 		public static final int RecyclerView_reverseLayout = 4;

@@ -90,6 +90,7 @@ dependencies {
     compile(name: 'circle-menu', ext: 'aar')
     compile(name: 'shimmer-android-release', ext: 'aar')
     compile(name: 'welcome-release', ext: 'aar')
+    compile(name: 'fancybuttons-release', ext: 'aar')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.jakewharton:butterknife:8.0.1'
     apt 'com.jakewharton:butterknife-compiler:8.0.1'

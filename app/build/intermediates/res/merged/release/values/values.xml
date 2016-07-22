@@ -253,6 +253,7 @@
     <declare-styleable name="CoordinatorLayout_Layout"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="FancyButtonsAttrs"><attr format="color" name="fb_defaultColor"/><attr format="string" name="fb_text"/><attr format="color" name="fb_textColor"/><attr format="color" name="fb_iconColor"/><attr format="string" name="fb_textFont"/><attr format="string" name="fb_iconFont"/><attr format="dimension" name="fb_textSize"/><attr format="integer" name="fb_iconResource"/><attr format="string" name="fb_fontIconResource"/><attr format="dimension" name="fb_fontIconSize"/><attr format="enum" name="fb_iconPosition"><enum name="left" value="1"/><enum name="right" value="2"/><enum name="top" value="3"/><enum name="bottom" value="4"/></attr><attr format="enum" name="fb_textPosition"><enum name="left" value="1"/><enum name="right" value="2"/><enum name="top" value="3"/><enum name="bottom" value="4"/></attr><attr format="enum" name="fb_textGravity"><enum name="top" value="0x30"/><enum name="bottom" value="0x50"/><enum name="left" value="0x03"/><enum name="right" value="0x05"/><enum name="center_vertical" value="0x10"/><enum name="fill_vertical" value="0x70"/><enum name="center_horizontal" value="0x01"/><enum name="fill_horizontal" value="0x07"/><enum name="center" value="0x11"/><enum name="fill" value="0x77"/><enum name="clip_vertical" value="0x80"/><enum name="clip_horizontal" value="0x08"/><enum name="start" value="0x00800003"/><enum name="end" value="0x00800005"/></attr><attr format="dimension" name="fb_iconPaddingLeft"/><attr format="dimension" name="fb_iconPaddingRight"/><attr format="dimension" name="fb_iconPaddingTop"/><attr format="dimension" name="fb_iconPaddingBottom"/><attr format="color" name="fb_borderColor"/><attr format="dimension" name="fb_borderWidth"/><attr format="color" name="fb_focusColor"/><attr format="dimension" name="fb_radius"/><attr format="boolean" name="fb_textAllCaps"/><attr format="boolean" name="fb_ghost"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="auto" value="-1"/><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="boolean" name="useCompatPadding"/></declare-styleable>
     <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
@@ -723,6 +724,42 @@
     <string name="et_nick_n">昵称</string>
     <string name="exit_app">退出登陆</string>
     <string name="exit_sys">结束程序</string>
+    <string name="fa_angle_left"></string>
+    <string name="fa_angle_right"></string>
+    <string name="fa_apple"></string>
+    <string name="fa_arrow_left"></string>
+    <string name="fa_arrow_right"></string>
+    <string name="fa_bicycle"></string>
+    <string name="fa_check"></string>
+    <string name="fa_check_circle"></string>
+    <string name="fa_check_circle_o"></string>
+    <string name="fa_chevron_left"></string>
+    <string name="fa_chevron_right"></string>
+    <string name="fa_cog"></string>
+    <string name="fa_cogs"></string>
+    <string name="fa_copy"></string>
+    <string name="fa_delicious"></string>
+    <string name="fa_diamond"></string>
+    <string name="fa_envira"></string>
+    <string name="fa_error"></string>
+    <string name="fa_error_o"></string>
+    <string name="fa_file_o"></string>
+    <string name="fa_file_text"></string>
+    <string name="fa_gear"></string>
+    <string name="fa_gears"></string>
+    <string name="fa_gg"></string>
+    <string name="fa_github"></string>
+    <string name="fa_heart"></string>
+    <string name="fa_heart_o"></string>
+    <string name="fa_home"></string>
+    <string name="fa_leaf"></string>
+    <string name="fa_male"></string>
+    <string name="fa_navicon"></string>
+    <string name="fa_paper_plane"></string>
+    <string name="fa_paper_plane_o"></string>
+    <string name="fa_paperclip"></string>
+    <string name="fa_question"></string>
+    <string name="fa_user"></string>
     <string name="face">face</string>
     <string name="fisfh">完成</string>
     <string name="forgetpass">忘记密码</string>

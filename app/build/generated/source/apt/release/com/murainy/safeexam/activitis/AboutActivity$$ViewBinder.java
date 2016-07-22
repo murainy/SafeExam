@@ -14,8 +14,8 @@ public class AboutActivity$$ViewBinder<T extends AboutActivity> implements ViewB
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624204, "field 'tv_title'");
-    target.tv_title = finder.castView(view, 2131624204, "field 'tv_title'");
+    view = finder.findRequiredView(source, 2131624211, "field 'tv_title'");
+    target.tv_title = finder.castView(view, 2131624211, "field 'tv_title'");
     view = finder.findRequiredView(source, 2131624055, "field 'webView'");
     target.webView = finder.castView(view, 2131624055, "field 'webView'");
     return unbinder;

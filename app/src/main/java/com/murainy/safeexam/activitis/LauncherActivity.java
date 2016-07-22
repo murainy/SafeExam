@@ -2,6 +2,7 @@ package com.murainy.safeexam.activitis;
 
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,7 @@ import com.murainy.safeexam.SafeExam;
 import com.murainy.safeexam.Shareprefrence.Account;
 import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
 import com.murainy.safeexam.beans.Student;
+import com.murainy.safeexam.view.FontManager;
 import com.stephentuso.welcome.WelcomeScreenHelper;
 
 import butterknife.BindView;
@@ -56,6 +58,8 @@ public class LauncherActivity extends AppCompatActivity {
         welcomeScreen = new WelcomeScreenHelper(this, SplashActivity.class);
         welcomeScreen.show(savedInstanceState);
 
+        Typeface iconFont = FontManager.getTypeface(getApplicationContext(), FontManager.FONTAWESOME);
+        FontManager.markAsIconContainer(findViewById(R.id.icons_container), iconFont);
         mFlipper = (ViewFlipper) findViewById(R.id.flipper);
         //动态导入的方式为ViewFlipper加入子View
         for (int i = 0; i < resID.length; i++) {
