@@ -3,7 +3,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@color/blue"
-                android:backgroundTint="@color/blue">
+    >
 
     <LinearLayout
         android:id="@+id/ll_left"
@@ -41,7 +41,7 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="登录"
+            android:text="@string/tv_head"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </LinearLayout>

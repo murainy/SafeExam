@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:background="@color/blue">
 
         <TextView
@@ -50,7 +50,7 @@
         android:dividerHeight="2dp"
         android:fadingEdgeLength="0dp"
         android:fastScrollEnabled="true"
-        android:scrollbars="none"
+        android:scrollbars="vertical"
         android:paddingBottom="10dp" />
 
 </LinearLayout>

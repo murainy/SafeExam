@@ -4,28 +4,12 @@
               android:background="@color/theme_bg_color"
               android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/blue">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="选择试卷"
-            android:textColor="@color/black"
-            android:textSize="20sp"/>
-
-        <ImageButton
-            android:id="@+id/btn_infor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="8dp"
-            android:background="@drawable/person_selector"/>
-    </RelativeLayout>
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        layout="@layout/include_header"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/textView9"/>
 
     <ImageView
         android:layout_width="match_parent"

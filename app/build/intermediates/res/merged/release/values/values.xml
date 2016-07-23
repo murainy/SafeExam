@@ -813,6 +813,7 @@
     <string name="tihao">题目</string>
     <string name="title_activity_eaxm">EaxmActivity</string>
     <string name="title_activity_settings">设置</string>
+    <string name="tv_head">head</string>
     <string name="tv_nick">昵称</string>
     <string name="tv_nick_n">昵称</string>
     <string name="update_paper">更新试卷</string>

@@ -1236,7 +1236,6 @@ int id btn_back 0x7f0e0078
 int id btn_change_password 0x7f0e00a0
 int id btn_face 0x7f0e008e
 int id btn_finish_test 0x7f0e00c7
-int id btn_infor 0x7f0e00b8
 int id btn_like 0x7f0e008f
 int id btn_look_grade 0x7f0e00a3
 int id btn_mask_test 0x7f0e00c5
@@ -1490,6 +1489,7 @@ int id textView5 0x7f0e010f
 int id textView6 0x7f0e00f9
 int id textView7 0x7f0e00e5
 int id textView8 0x7f0e010d
+int id textView9 0x7f0e00b8
 int id textview 0x7f0e012f
 int id time 0x7f0e011d
 int id title 0x7f0e0050
@@ -1812,8 +1812,9 @@ int string this_is_fragment 0x7f0700a8
 int string tihao 0x7f0700a9
 int string title_activity_eaxm 0x7f0700aa
 int string title_activity_settings 0x7f0700ab
-int string tv_nick 0x7f0700ac
-int string tv_nick_n 0x7f0700ad
+int string tv_head 0x7f0700ac
+int string tv_nick 0x7f0700ad
+int string tv_nick_n 0x7f0700ae
 int string update_paper 0x7f070018
 int style About 0x7f0900ea
 int style AlertDialog_AppCompat 0x7f0900eb

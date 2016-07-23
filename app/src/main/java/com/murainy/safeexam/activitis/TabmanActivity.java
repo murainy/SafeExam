@@ -30,8 +30,8 @@ public class TabmanActivity extends TabActivity {
 
 
     String[] mTitle = new String[]{"安全考试", "模拟练习", "个人中心"};
-    int[] mIcon = new int[]{R.drawable.ic_shop, R.drawable.ic_sale,
-            R.drawable.ic_car, R.drawable.ic_mine};
+    int[] mIcon = new int[]{R.drawable.home_mbank_1_normal, R.drawable.home_mbank_2_normal,
+            R.drawable.home_mbank_5_normal};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

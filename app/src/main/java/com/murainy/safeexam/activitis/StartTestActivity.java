@@ -89,6 +89,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         if (hasFocus)
         {
             ToastUtil.showShort(this,"开始练习。");
+
         }
     }
 
@@ -101,14 +102,16 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         operateSQLite = new OperateSQLite(this);
         paperName = getIntent().getStringExtra("paperName");
         Logger.i(paperName + "");
-        BmobUtils.questionCount(StartTestActivity.this, paperName, "判断题", 40);
+        BmobUtils.examLists("2014");
+        /*BmobUtils.questionCount(StartTestActivity.this, paperName, "判断题", 40);
         judgethList = qthLists;
         BmobUtils.questionCount(StartTestActivity.this, paperName, "单选题", 40);
         singerthList = qthLists;
         BmobUtils.questionCount(StartTestActivity.this, paperName, "多选题", 20);
         mutithList = qthLists;
-        BmobUtils.downloadQuestionList100(StartTestActivity.this, judgethList, singerthList, mutithList);
+        BmobUtils.downloadQuestionList100(StartTestActivity.this, judgethList, singerthList, mutithList);*/
         //BmobUtils.downloadQuestionList(StartTestActivity.this, paperName);
+
         test= (RelativeLayout) findViewById(R.id.test_item);
         ImageButton backBtn = (ImageButton) findViewById(R.id.btn_back);
         finishBtn = (Button) findViewById(R.id.btn_finish_test);
@@ -146,6 +149,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         switch (action & MotionEvent.ACTION_MASK) {
             case MotionEvent.ACTION_DOWN:
                 Logger.e("ACTION_DOWN" + action);
+                if(tag==0){eaxmlist();}
                 if (saveAnswer()) {
                     if (tag >= questions.size() - 1) {
                         finishTest();
@@ -202,12 +206,13 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         switch (action) {
             case DOWNLOAD_QUESTION_LIST:
                 Logger.i("获取试题列表成功");
-                questions = BmobUtils.questionsList;
+	            if(BmobUtils.ready){
+                questions = BmobUtils.questionsList;}
                 Logger.i(questions.size() + "");
                 if (questions.size() == 1) {
                     finishBtn.setText("交卷");
                 }
-                eaxmlist();
+
                 break;
             case DOWNLOAD_QUESTION_LISTMy:
                 Logger.i("获取试题列表成功");
@@ -332,10 +337,11 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         } else if (multiOptionA.isChecked()) {
             answerx = answerx + "F";
         } else {
+	        if(tag>0){
             Toast t3 = Toast.makeText(this, "还没答题呢！", Toast.LENGTH_SHORT);
             t3.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM, 0, 0);
             t3.setMargin(0f, 0.5f);
-            t3.show();
+            t3.show();}
             return false;
         }
 

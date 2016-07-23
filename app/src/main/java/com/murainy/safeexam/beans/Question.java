@@ -8,7 +8,7 @@ import cn.bmob.v3.BmobObject;
 public class Question extends BmobObject {
 
 
-    private String questionId = "";
+    private String questionid = "";
     private String paperName = "";
     private String type = "";
     private String question = "";
@@ -21,7 +21,16 @@ public class Question extends BmobObject {
     private String mark = "";
     private String answer = "";
     private String note = "";
+    private String year="";
 
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
     public String getPaperName() {
         return paperName;
     }
@@ -86,12 +95,12 @@ public class Question extends BmobObject {
         this.answer = answer;
     }
 
-    public String getQuestionId() {
-        return questionId;
+    public String getQuestionid() {
+        return questionid;
     }
 
-    public void setQuestionId(String questionId) {
-        this.questionId = questionId;
+    public void setQuestionid(String questionid) {
+        this.questionid = questionid;
     }
 
     public String getOptionF() {

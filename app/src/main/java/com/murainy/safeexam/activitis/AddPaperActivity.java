@@ -160,7 +160,7 @@ public class AddPaperActivity extends Activity implements View.OnClickListener {
 
     private void saveQuestion(String answer) {
         Question q = new Question();
-        q.setQuestionId(paper.getPaperName() + tag);
+        q.setQuestionid(paper.getPaperName() + tag);
         q.setPaperName(paper.getPaperName());
         q.setQuestion(questionET.getText().toString());
         q.setOptionA(optionAET.getText().toString());

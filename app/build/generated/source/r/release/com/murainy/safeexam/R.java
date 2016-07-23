@@ -3673,7 +3673,6 @@ containing a value of this type.
         public static final int btn_change_password=0x7f0e00a0;
         public static final int btn_face=0x7f0e008e;
         public static final int btn_finish_test=0x7f0e00c7;
-        public static final int btn_infor=0x7f0e00b8;
         public static final int btn_like=0x7f0e008f;
         public static final int btn_look_grade=0x7f0e00a3;
         public static final int btn_mask_test=0x7f0e00c5;
@@ -3927,6 +3926,7 @@ containing a value of this type.
         public static final int textView6=0x7f0e00f9;
         public static final int textView7=0x7f0e00e5;
         public static final int textView8=0x7f0e010d;
+        public static final int textView9=0x7f0e00b8;
         public static final int textview=0x7f0e012f;
         public static final int time=0x7f0e011d;
         public static final int title=0x7f0e0050;
@@ -4259,8 +4259,9 @@ containing a value of this type.
         public static final int tihao=0x7f0700a9;
         public static final int title_activity_eaxm=0x7f0700aa;
         public static final int title_activity_settings=0x7f0700ab;
-        public static final int tv_nick=0x7f0700ac;
-        public static final int tv_nick_n=0x7f0700ad;
+        public static final int tv_head=0x7f0700ac;
+        public static final int tv_nick=0x7f0700ad;
+        public static final int tv_nick_n=0x7f0700ae;
         public static final int update_paper=0x7f070018;
     }
     public static final class style {

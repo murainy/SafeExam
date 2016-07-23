@@ -63,7 +63,6 @@ public class ChangerPasswordActivity extends Activity implements View.OnClickLis
         Button sureChangeBtn = (Button) findViewById(R.id.btn_sure_change);
         sureChangeBtn.setOnClickListener(this);
         iv_left.setVisibility(View.VISIBLE);
-        tv_left.setVisibility(View.VISIBLE);
         tv_title.setText("修改密码");
     }
 

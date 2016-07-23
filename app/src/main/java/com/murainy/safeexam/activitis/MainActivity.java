@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.orhanobut.logger.Logger;
@@ -27,6 +29,10 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 /**
  * Created by murainy on 2015/12/14.
  */
@@ -36,11 +42,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private List<Paper> papers = new ArrayList<Paper>();
     private PaperListAdapter adapter;
     private OperateSQLite operateSQLite;
-
+    @BindView(R.id.iv_left)
+    ImageView iv_left;
+    @BindView(R.id.iv_right)
+    ImageView iv_right;
+    @BindView(R.id.tv_title)
+    TextView tv_title;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+        iv_left.setVisibility(View.VISIBLE);
+        iv_right.setVisibility(View.VISIBLE);
+        tv_title.setText("选择试卷");
         EventBus.getDefault().register(this);
         paperList = (ListView) findViewById(R.id.lv_paper);
        // BmobUtils.updateAllPaperList(this);
@@ -64,8 +80,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         });
 
-        ImageButton informationBtn = (ImageButton) findViewById(R.id.btn_infor);
-        informationBtn.setOnClickListener(this);
+
 
     }
 
@@ -86,7 +101,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btn_infor:
+            case R.id.iv_right:
                 Intent i1 = new Intent(MainActivity.this, InformationActivity.class);
                 startActivity(i1);
                 break;
@@ -128,5 +143,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void onDestroy() {
         super.onDestroy();
         EventBus.getDefault().unregister(this);
+    }
+
+    @OnClick(R.id.iv_left)
+    public void back(View view) {
+        finish();
     }
 }
