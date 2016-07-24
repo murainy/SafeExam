@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomSheetBehavior;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.Gravity;
@@ -20,6 +22,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,6 +71,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
     private RadioGroup singleRadioGroup, judge;
     private LinearLayout multiOptionGroup;
     private RelativeLayout test;
+    private SeekBar seekbar;
     private GestureDetector mGestureDetector;
     private Handler handler = new Handler() {
         @Override
@@ -111,7 +115,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         mutithList = qthLists;
         BmobUtils.downloadQuestionList100(StartTestActivity.this, judgethList, singerthList, mutithList);*/
         //BmobUtils.downloadQuestionList(StartTestActivity.this, paperName);
-
+        seekbar=(SeekBar) findViewById(R.id.seekBar);
         test= (RelativeLayout) findViewById(R.id.test_item);
         ImageButton backBtn = (ImageButton) findViewById(R.id.btn_back);
         finishBtn = (Button) findViewById(R.id.btn_finish_test);
@@ -207,7 +211,9 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
             case DOWNLOAD_QUESTION_LIST:
                 Logger.i("获取试题列表成功");
 	            if(BmobUtils.ready){
-                questions = BmobUtils.questionsList;}
+                questions = BmobUtils.questionsList;
+                    seekbar.setMax(questions.size());}
+
                 Logger.i(questions.size() + "");
                 if (questions.size() == 1) {
                     finishBtn.setText("交卷");
@@ -244,6 +250,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 
     private void eaxmlist() {
         id.setText((tag + 1) + ". ");
+        seekbar.setProgress(tag);
         Logger.i(questions.get(tag).getType());
         question.setText(questions.get(tag).getQuestion());
         answer.setText(questions.get(tag).getAnswer());
@@ -469,6 +476,12 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
             }
         }.start();
     }
+
+
+    public void myintro(View view) {
+
+    }
+
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

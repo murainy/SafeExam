@@ -82,7 +82,7 @@
     </LinearLayout>
 
     <android.support.v4.widget.NestedScrollView
-        android:id="@+id/scroll"
+        android:id="@+id/myscroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_behavior="android.support.design.widget.BottomSheetBehavior">

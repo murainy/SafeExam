@@ -32,5 +32,14 @@
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
         android:src="@android:drawable/ic_dialog_info"/>
-
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Small"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminate="true"
+        android:progress="30"
+        android:secondaryProgress="60"
+        android:layout_gravity="center_horizontal"
+        android:max="100"/>
 </android.support.design.widget.CoordinatorLayout>

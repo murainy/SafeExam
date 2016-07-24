@@ -42,7 +42,7 @@
                 android:paddingLeft="15dip"
                 android:shadowDx="0.0"
                 android:shadowDy="1.0"
-                android:shadowRadius="1.0"
+                android:shadowRadius="2.0"
                 android:textColorHint="#ffdddddd"/>
             <View
                 android:layout_width="match_parent"
