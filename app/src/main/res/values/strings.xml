@@ -6,6 +6,7 @@
     <string name="fisfh">完成</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_testings">更新题库</string>
     <string name="login_bnt">登录</string>
     <string name="account_no">还没有账号？</string>
     <string name="register_bnt">注册</string>
@@ -97,8 +98,8 @@
     <string name="gallay">相册</string>
     <string name="camery">拍照</string>
     <string name="info_name">吴佳宝</string>
-    <string name="info_class">软件三班</string>
-    <string name="info_number">3113006331</string>
+    <string name="info_class">tenerify</string>
+    <string name="info_number">18335054303</string>
     <string name="info_person">个人信息</string>
     <string name="info_production">产品信息</string>
     <string name="gallory">相册</string>

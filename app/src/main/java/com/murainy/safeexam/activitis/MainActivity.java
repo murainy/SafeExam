@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
@@ -36,7 +37,7 @@ import butterknife.OnClick;
 /**
  * Created by murainy on 2015/12/14.
  */
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ListView paperList;
     private List<Paper> papers = new ArrayList<Paper>();

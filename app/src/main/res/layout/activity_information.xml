@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:text="学号"
+                android:text="帐号"
                 android:textColor="@color/black"/>
 
             <TextView
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:text="班级"
+                android:text="手机"
                 android:textColor="@color/black"/>
 
 

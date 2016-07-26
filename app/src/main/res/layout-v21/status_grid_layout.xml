@@ -6,12 +6,12 @@
               android:layout_height="match_parent" android:weightSum="1">
     <com.murainy.safeexam.view.Mygridview
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:id="@+id/my_gridview"
         android:layout_gravity="center_horizontal"
         android:numColumns="5"
         android:listSelector="@drawable/selector_gird"
         android:nestedScrollingEnabled="false"
         android:verticalSpacing="5dp"
-        android:horizontalSpacing="5dp" android:layout_weight="0.46"/>
+        android:horizontalSpacing="5dp"/>
 </LinearLayout>

@@ -6,6 +6,7 @@ import android.util.Log;
 import com.murainy.safeexam.beans.Grade;
 import com.murainy.safeexam.beans.Paper;
 import com.murainy.safeexam.beans.Question;
+import com.murainy.safeexam.beans.Testqeba;
 import com.orhanobut.logger.Logger;
 
 import org.greenrobot.eventbus.EventBus;
@@ -16,10 +17,14 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
+import cn.bmob.v3.BmobBatch;
+import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.datatype.BatchResult;
 import cn.bmob.v3.datatype.BmobQueryResult;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
+import cn.bmob.v3.listener.QueryListListener;
 import cn.bmob.v3.listener.SQLQueryListener;
 import cn.bmob.v3.listener.SaveListener;
 import cn.bmob.v3.listener.UpdateListener;
@@ -31,9 +36,12 @@ public class BmobUtils {
 	public static List<String> paperSet = new ArrayList<String>();
 	public static List<Grade> gradeList = new ArrayList<Grade>();
 	public static List<Paper> paperList = new ArrayList<Paper>();
+	public static List<Paper> LP = new ArrayList<>();
+	public static List<Testqeba> LT = new ArrayList<>();
 	public static List<Question> questionsList = new ArrayList<Question>();
 	public static List<Question> qthList = new ArrayList<Question>();
-	public static boolean ready =false;
+	public static boolean ready = false;
+
 	public static void downloadGradeList(Context context, String username) {
 		BmobQuery<Grade> query = new BmobQuery<Grade>();
 		query.addWhereEqualTo("username", username);
@@ -302,7 +310,7 @@ public class BmobUtils {
 	}
 
 	/**
-	 * 判断某个字符串是否存在于数组中
+	 * 判断某个字符串是否存在于数组中*
 	 *
 	 * @param stringArray 原数组
 	 * @param source      查找的字符串
@@ -382,6 +390,149 @@ public class BmobUtils {
 		examListini(y, "判断题", 40);
 		examListini(y, "单选题", 40);
 		examListini(y, "多选题", 20);
-		ready=true;
+		ready = true;
 	}
+
+	public static void testBanks() {
+		String bql = "select distinct year  from Question ";
+		new BmobQuery<Question>().doSQLQuery(bql, new SQLQueryListener<Question>() {
+
+			@Override
+			public void done(BmobQueryResult<Question> result, BmobException e) {
+				if (e == null) {
+					List<Question> list = (List<Question>) result.getResults();
+
+					if (list != null && list.size() > 0) {
+						for (int i = 0; i < list.size(); i++) {
+							Testqeba t = new Testqeba();
+							t.setId(i);
+							t.setName(list.get(i).getYear());
+							t.setNote("安全套");
+							LT.add(i, t);
+						}
+						Logger.e(LT.toString());
+						List<BmobObject> bank = new ArrayList<>();
+						for (int i = 0; i < BmobUtils.LT.size(); i++) {
+							bank.add(i, BmobUtils.LT.get(i));
+						}
+						Logger.e(bank.toString());
+						new BmobBatch().insertBatch(bank).doBatch(new QueryListListener<BatchResult>() {
+
+							@Override
+							public void done(List<BatchResult> o, BmobException e) {
+								if (e == null) {
+									for (int i = 0; i < o.size(); i++) {
+										BatchResult result = o.get(i);
+										BmobException ex = result.getError();
+										if (ex == null) {
+											Logger.e("第" + i + "个数据批量更新成功：" + result.getUpdatedAt());
+										} else {
+											Logger.e("第" + i + "个数据批量更新失败：" + ex.getMessage() + "," + ex.getErrorCode());
+										}
+									}
+								} else {
+									Log.i("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
+								}
+							}
+						});
+					} else {
+						Log.i("smile", "查询成功，无数据返回");
+					}
+				} else {
+					Log.i("smile", "错误码：" + e.getErrorCode() + "，错误描述：" + e.getMessage());
+				}
+			}
+		});
+	}
+
+
+
+
+	public static void papers() {
+		String bql = "select distinct paperName,year from Question order by year";
+		new BmobQuery<Question>().doSQLQuery(bql, new SQLQueryListener<Question>() {
+
+			@Override
+			public void done(BmobQueryResult<Question> result, BmobException e) {
+				if (e == null) {
+					List<Question> list = (List<Question>) result.getResults();
+
+					if (list != null && list.size() > 0) {
+						for (int i = 0; i < list.size(); i++) {
+							Paper p = new Paper();
+							p.setPaperName(list.get(i).getPaperName());
+							p.setPaperId(String.valueOf(i));
+							LP.add(i, p);
+						}
+						Logger.e(LP.toString());
+						List<BmobObject> paper = new ArrayList<BmobObject>();
+						for (int i = 0; i < BmobUtils.LP.size(); i++) {
+							paper.add(i, BmobUtils.LP.get(i));
+						}
+						Logger.e(paper.toString());
+						//第二种方式：v3.5.0开始提供
+						new BmobBatch().insertBatch(paper).doBatch(new QueryListListener<BatchResult>() {
+
+							@Override
+							public void done(List<BatchResult> o, BmobException e) {
+								if (e == null) {
+									for (int i = 0; i < o.size(); i++) {
+										BatchResult result = o.get(i);
+										BmobException ex = result.getError();
+										if (ex == null) {
+											Logger.e("第" + i + "个数据批量更新成功：" + result.getUpdatedAt());
+										} else {
+											Logger.e("第" + i + "个数据批量更新失败：" + ex.getMessage() + "," + ex.getErrorCode());
+										}
+									}
+								} else {
+									Log.i("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
+								}
+							}
+						});
+					} else {
+						Log.i("smile", "查询成功，无数据返回");
+					}
+				} else {
+					Log.i("smile", "错误码：" + e.getErrorCode() + "，错误描述：" + e.getMessage());
+				}
+			}
+		});
+	}
+
+
+
+	public static void deletPaper() {
+		//批量删除
+		BmobBatch batch = new BmobBatch();
+		List<BmobObject> paper = new ArrayList<BmobObject>();
+
+		for (int i = 0; i < paperList.size(); i++) {
+			paper.add(i, paperList.get(i));
+		}
+		batch.deleteBatch(paper);
+		//执行批量操作
+		batch.doBatch(new QueryListListener<BatchResult>() {
+
+			@Override
+			public void done(List<BatchResult> results, BmobException ex) {
+				if (ex == null) {
+					//返回结果的results和上面提交的顺序是一样的，请一一对应
+					for (int i = 0; i < results.size(); i++) {
+						BatchResult result = results.get(i);
+						if (result.isSuccess()) {//只有批量添加才返回objectId
+							Logger.e("第" + i + "个成功：" + result.getObjectId() + "," + result.getUpdatedAt());
+						} else {
+							BmobException error = result.getError();
+							Logger.e("第" + i + "个失败：" + error.getErrorCode() + "," + error.getMessage());
+						}
+					}
+				} else {
+					Logger.e("bmob", "失败：" + ex.getMessage() + "," + ex.getErrorCode());
+				}
+			}
+		});
+
+	}
+
 }

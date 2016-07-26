@@ -141,6 +141,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         answer = (TextView) findViewById(R.id.answerd);
         note = (TextView) findViewById(R.id.answers);
         backBtn.setOnClickListener(this);
+        seekbar.setOnClickListener(this);
         finishBtn.setOnClickListener(this);
         testTimeThread(40);
         mGestureDetector = new GestureDetector(this, new DefaultGestureListener());
@@ -201,7 +202,10 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
                     }
                 }
                 break;
-
+	        case R.id.seekBar:
+		        tag=seekbar.getProgress();
+		        eaxmlist();
+		        break;
         }
     }
 

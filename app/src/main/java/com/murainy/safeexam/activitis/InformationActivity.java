@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.SafeExam;
 import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
+import com.murainy.safeexam.Utils.StatusBarUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -19,7 +21,7 @@ import butterknife.OnClick;
 import cn.bmob.v3.BmobUser;
 
 
-public class InformationActivity extends Activity implements View.OnClickListener {
+public class InformationActivity extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.iv_left)
     ImageView iv_left;
     @BindView(R.id.tv_title)
@@ -33,6 +35,7 @@ public class InformationActivity extends Activity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
+        StatusBarUtil.setStatusBarColor(this,R.color.air_speed_label);
         Button lookGradeBtn = (Button) findViewById(R.id.btn_look_grade);
         Button changePasswordBtn = (Button) findViewById(R.id.btn_change_password);
         TextView nameTV = (TextView) findViewById(R.id.tv_name);

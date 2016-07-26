@@ -19,7 +19,8 @@
                 android:id="@+id/seekBar"
                 android:background="@color/air_speed_label"
                 android:layout_margin="5dp"
-                android:indeterminate="false"/>
+                android:indeterminate="false"
+                style="@android:style/Widget.SeekBar"/>
 
             <TextView
                 android:id="@+id/answers"

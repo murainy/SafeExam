@@ -52,10 +52,11 @@
         <activity
             android:name=".activitis.MainActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
         <activity
             android:name=".activitis.InformationActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:launchMode="singleTop">
         </activity>
         <activity

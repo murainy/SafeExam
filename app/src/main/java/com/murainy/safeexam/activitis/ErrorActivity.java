@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.murainy.safeexam.R;
+import com.murainy.safeexam.Utils.BmobUtils;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
@@ -65,13 +66,13 @@ public class ErrorActivity extends AppCompatActivity {
 			String msg = "";
 			switch (menuItem.getItemId()) {
 				case R.id.check_grade:
-					msg += "check_grade";
+					BmobUtils.deletPaper();
 					break;
-				case R.id.action_share:
-					msg += "Click share";
+				case R.id.change_password:
+					BmobUtils.papers();
 					break;
-				case R.id.action_settings:
-					msg += "Click setting";
+				case R.id.action_testings:
+					BmobUtils.testBanks();
 					break;
 			}
 

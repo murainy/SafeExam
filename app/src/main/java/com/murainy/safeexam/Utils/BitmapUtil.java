@@ -473,4 +473,6 @@ public class BitmapUtil {
         canvas.drawText(gText, x * scale, y * scale, paint);
         return bitmap;
     }
+
+
 }
