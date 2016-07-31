@@ -35,7 +35,6 @@ public class InformationActivity extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
-        StatusBarUtil.setStatusBarColor(this,R.color.air_speed_label);
         Button lookGradeBtn = (Button) findViewById(R.id.btn_look_grade);
         Button changePasswordBtn = (Button) findViewById(R.id.btn_change_password);
         TextView nameTV = (TextView) findViewById(R.id.tv_name);

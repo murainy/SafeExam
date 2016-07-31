@@ -33,7 +33,7 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
             android:layout_toLeftOf="@+id/tv_time"
-            android:src="@drawable/ic_status_flight_time"/>
+            android:src="@drawable/ic_timer_white_24dp"/>
 
         <TextView
             android:id="@+id/tv_time"

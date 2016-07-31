@@ -38,6 +38,7 @@ public class BmobUtils {
 	public static List<Paper> paperList = new ArrayList<Paper>();
 	public static List<Paper> LP = new ArrayList<>();
 	public static List<Testqeba> LT = new ArrayList<>();
+	public static List<Testqeba> TestList = new ArrayList<>();
 	public static List<Question> questionsList = new ArrayList<Question>();
 	public static List<Question> qthList = new ArrayList<Question>();
 	public static boolean ready = false;
@@ -76,6 +77,29 @@ public class BmobUtils {
 					paperList = new ArrayList<Paper>();
 					for (int i = 0; i < object.size(); i++) {
 						paperList.add(object.get(i));
+					}
+					Logger.i(paperList.size() + "///");
+					EventBus.getDefault().post(Action.DOWNLOAD_PAPER_LIST);
+				} else {
+					Logger.i("查询失败");
+					EventBus.getDefault().post(Action.QUERY_ERROR);
+				}
+			}
+		});
+	}
+
+	public static void downloadTestList() {
+
+		BmobQuery<Testqeba> query = new BmobQuery<>();
+		query.setLimit(100);
+		query.findObjects(new FindListener<Testqeba>() {
+			@Override
+			public void done(List<Testqeba> object, BmobException e) {
+				if (e == null) {
+					Logger.i(object.size() + "///");
+					TestList = new ArrayList<>();
+					for (int i = 0; i < object.size(); i++) {
+						TestList.add(object.get(i));
 					}
 					Logger.i(paperList.size() + "///");
 					EventBus.getDefault().post(Action.DOWNLOAD_PAPER_LIST);

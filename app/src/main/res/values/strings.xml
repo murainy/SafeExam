@@ -114,4 +114,6 @@
     <string name="contact">294967877@qq.com</string>
     <string name="face">face</string>
     <string name="tv_head">head</string>
+    <string name="error_research">搜索</string>
+    <string name="error_share">分享</string>
 </resources>

@@ -45,18 +45,41 @@ public class ErrorActivity extends AppCompatActivity {
 		// Menu item click 的監聽事件一樣要設定在 setSupportActionBar 才有作用
 		toolbar.setOnMenuItemClickListener(onMenuItemClick);
 
+		FancyButton facebookLoginBtn = new FancyButton(this);
+		facebookLoginBtn.setText("检查");
+		facebookLoginBtn.setBackgroundColor(Color.parseColor("#3b5998"));
+		facebookLoginBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
+		facebookLoginBtn.setTextSize(15);
+		facebookLoginBtn.setRadius(20);
+		facebookLoginBtn.setIconResource("\uf082");
+		facebookLoginBtn.setIconPosition(FancyButton.POSITION_LEFT);
+		facebookLoginBtn.setFontIconSize(20);
+		facebookLoginBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Toast.makeText(ErrorActivity.this,"facebookLoginBtn",Toast.LENGTH_SHORT).show();
+			}
+		});
+
 		FancyButton signupBtn = new FancyButton(this);
 		signupBtn.setText("报告");
-		signupBtn.setIconResource(R.drawable.home_mbank_2_normal);
-		signupBtn.setBackgroundColor(Color.parseColor("#ff8800"));
-		signupBtn.setFocusBackgroundColor(Color.parseColor("#ffa43c"));
+		signupBtn.setIconResource("\uf016");
+		signupBtn.setBackgroundColor(Color.parseColor("#3b5998"));
+		signupBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
 		signupBtn.setTextSize(15);
-		signupBtn.setCustomTextFont("robotoregular.ttf");
-		signupBtn.setRadius(30);
-		signupBtn.setPadding(10, 10, 10, 10);
+		signupBtn.setRadius(20);
+		signupBtn.setFontIconSize(20);
+		signupBtn.setIconPosition(FancyButton.POSITION_LEFT);
+		signupBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Toast.makeText(ErrorActivity.this,"signupBtn",Toast.LENGTH_SHORT).show();
+			}
+		});
 		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 		layoutParams.setMargins(0, 0, 0, 10);
 		LinearLayout container = (LinearLayout) findViewById(R.id.container);
+		container.addView(facebookLoginBtn, layoutParams);
 		container.addView(signupBtn, layoutParams);
 	}
 

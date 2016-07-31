@@ -31,7 +31,7 @@
         <RelativeLayout
             android:id="@+id/layout_nick"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:background="@drawable/about_mid_bg" android:padding="10dp"
             android:alpha="0.3"
             android:layout_marginLeft="20dp"
@@ -63,7 +63,7 @@
         <RelativeLayout
             android:id="@+id/layout_name"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:background="@drawable/about_mid_bg" android:padding="10dp"
             android:alpha="0.3"
             android:layout_marginLeft="20dp"
@@ -94,7 +94,7 @@
         <RelativeLayout
             android:id="@+id/layout_gender"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="40dp"
             android:background="@drawable/about_mid_bg" android:padding="10dp"
             android:alpha="0.3"
             android:layout_marginLeft="20dp"

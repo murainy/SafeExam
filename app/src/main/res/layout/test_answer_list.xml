@@ -15,12 +15,13 @@
 
             <SeekBar
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="10dp"
                 android:id="@+id/seekBar"
                 android:background="@color/air_speed_label"
                 android:layout_margin="5dp"
                 android:indeterminate="false"
-                style="@android:style/Widget.SeekBar"/>
+                style="@android:style/Widget.SeekBar"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/answers"

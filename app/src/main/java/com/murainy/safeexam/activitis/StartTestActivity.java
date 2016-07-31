@@ -257,7 +257,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         seekbar.setProgress(tag);
         Logger.i(questions.get(tag).getType());
         question.setText(questions.get(tag).getQuestion());
-        answer.setText(questions.get(tag).getAnswer());
+        answer.setText("答案："+questions.get(tag).getAnswer());
         note.setText(questions.get(tag).getNote());
         switch (questions.get(tag).getType()) {
             case "判断题":
