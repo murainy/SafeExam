@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:id="@+id/layout_all"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/theme_bg_color"
+              android:orientation="vertical" android:weightSum="1" tools:context=".activitis.InformationActivity">
+
+    <include layout="@layout/include_header"
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/jdt" android:src="@drawable/base_horization_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/index_bg_001"
+        android:orientation="vertical" android:weightSum="1"
+        android:layout_weight="0.9">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/ci_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@drawable/man"/>
+        <RelativeLayout
+            android:id="@+id/layout_nick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/about_mid_bg" android:padding="10dp"
+            android:alpha="0.3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <TextView
+                style="@style/Smile.TextView._Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="姓名"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10dp"
+                android:text="@string/info_name" android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/about_mid_bg" android:padding="10dp"
+            android:alpha="0.3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                style="@style/Smile.TextView._Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="帐号"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_number"
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10dp"
+                android:text="@string/info_number"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_gender"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/about_mid_bg" android:padding="10dp"
+            android:alpha="0.3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                style="@style/Smile.TextView._Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="手机"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/tv_class"
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="10dp"
+                android:text="@string/info_class" android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:alignmentMode="alignMargins"
+            android:columnCount="2" android:orientation="horizontal"
+            android:padding="5dp"
+            android:rowCount="3" android:useDefaultMargins="false" android:layout_gravity="center">
+            <Button
+                android:id="@+id/btn_change_password"
+                style="@style/common_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/activity_vertical_margin" android:layout_row="0"
+                android:gravity="center"
+                android:text="@string/changepass" android:textColor="@color/base_color_text_white"
+                android:textSize="@dimen/text_size_large"/>
+            <Button
+                android:id="@+id/bnt_bindphone"
+                style="@style/common_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_row="0"
+                android:gravity="center_vertical|center_horizontal" android:text="@string/bindphone"
+                android:textAlignment="center" android:textColor="@color/base_color_text_white"
+                android:textSize="@dimen/text_size_large"/>
+            <Button
+                android:id="@+id/bnt_sethead"
+                style="@style/common_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal|fill"
+                android:layout_margin="@dimen/activity_vertical_margin" android:layout_row="1"
+                android:text="@string/set_head"/>
+            <Button
+                android:id="@+id/btn_look_grade"
+                style="@style/common_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_row="1"
+                android:gravity="center"
+                android:text="@string/lookgrade"
+                android:textSize="@dimen/text_size_large"/>
+            <Button android:id="@+id/bnt_exit"
+                    style="@style/common_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_row="2"
+                    android:text="@string/exit_app"/>
+            <Button android:id="@+id/info_end"
+                    style="@style/common_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal|fill"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_row="2"
+                    android:text="@string/exit_sys" android:singleLine="false"/>
+        </GridLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

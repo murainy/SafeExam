@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/multiOptionGroup"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@color/air_speed_label"
+            android:gravity="top">
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:id="@+id/seekBar"
+                android:background="@color/air_speed_label"
+                android:layout_margin="5dp"
+                android:indeterminate="false"
+                style="@android:style/Widget.SeekBar"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answer"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/answerd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/note"
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
