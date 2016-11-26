@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:padding="50dp"
                 android:background="@color/colorPrimary"
-                android:text="人不会死在绝境，却往往栽在十字路口"
+                android:text="@string/xxx"
                 android:textColor="@android:color/white"/>
 
         </LinearLayout>

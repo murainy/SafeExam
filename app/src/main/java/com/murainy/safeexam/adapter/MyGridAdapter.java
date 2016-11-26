@@ -17,7 +17,7 @@ import com.murainy.safeexam.view.BaseViewHolder;
 
 /**
  * @author http://blog.csdn.net/finddreams
- * @Description:gridview的Adapter
+ * @Description:gridview Adapter
  */
 public class MyGridAdapter extends BaseAdapter {
     private Context mContext;

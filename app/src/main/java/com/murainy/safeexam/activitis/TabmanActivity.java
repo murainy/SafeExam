@@ -30,7 +30,7 @@ public class TabmanActivity extends TabActivity {
 
 
     String[] mTitle = new String[]{"安全考试", "模拟练习", "个人中心"};
-    int[] mIcon = new int[]{R.drawable.home_mbank_1_normal, R.drawable.home_mbank_2_normal,
+    int[] mIcon = new int[]{ R.drawable.home_mbank_2_normal,R.drawable.home_mbank_1_normal,
             R.drawable.home_mbank_5_normal};
 
     @Override
@@ -66,17 +66,17 @@ public class TabmanActivity extends TabActivity {
         layoutInflater = LayoutInflater.from(this);
         TabHost.TabSpec spec;
 
-        //发现
-        Intent intent1 = new Intent(this, MainActivity.class);
+        //安全考试
+        Intent intent1 = new Intent(this,CircleActivity.class );
         spec = tabHost.newTabSpec(mTitle[0]).setIndicator(getTabItemView(0)).setContent(intent1);
         tabHost.addTab(spec);
 
-        //考试
-        Intent intent2 = new Intent(this, CircleActivity.class);
+        //模拟练习
+        Intent intent2 = new Intent(this, MainActivity.class);
         spec = tabHost.newTabSpec(mTitle[1]).setIndicator(getTabItemView(1)).setContent(intent2);
         tabHost.addTab(spec);
 
-        //我的
+        //个人信息
         Intent intent3 = new Intent(this, InformationActivity.class);
         spec = tabHost.newTabSpec(mTitle[2]).setIndicator(getTabItemView(2)).setContent(intent3);
         tabHost.addTab(spec); 

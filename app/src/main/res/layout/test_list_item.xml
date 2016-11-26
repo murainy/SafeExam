@@ -10,14 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:singleLine="true"
-        android:text="10、" android:textColor="@color/base_tab_indicator_text_color" android:textSize="18sp" android:visibility="visible"/>
+        android:text="@string/id_10" android:textColor="@color/base_tab_indicator_text_color" android:textSize="18sp" android:visibility="visible"/>
 
     <TextView
         android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/id"
-        android:text="问一个问题"
+        android:text="@string/ask"
         android:textColor="@color/colorAccent" android:textSize="18sp" android:visibility="visible"/>
     <RadioGroup
         android:id="@+id/judge"

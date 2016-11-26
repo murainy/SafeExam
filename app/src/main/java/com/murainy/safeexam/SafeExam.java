@@ -2,6 +2,7 @@ package com.murainy.safeexam;
 
 import android.app.Application;
 
+import com.murainy.safeexam.Utils.CrashHandler;
 import com.murainy.safeexam.beans.Student;
 
 import cn.bmob.v3.Bmob;
@@ -38,5 +39,11 @@ public class SafeExam extends Application {
               .setFileExpiration(5500)
                 .build();
          Bmob.initialize(config);
+        initData();
+    }
+
+    private void initData() {
+        //当程序发生Uncaught异常的时候,由该类来接管程序,一定要在这里初始化
+        CrashHandler.getInstance().init(this);
     }
 }

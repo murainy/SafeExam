@@ -9,13 +9,13 @@ package com.zhy.ccbCricleMenu;
 public final class R {
 	public static final class dimen {
 		public static final int activity_horizontal_margin = 0x7f08001c;
-		public static final int activity_vertical_margin = 0x7f080057;
+		public static final int activity_vertical_margin = 0x7f08005c;
 	}
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f0200a9;
+		public static final int ic_launcher = 0x7f0200b2;
 	}
 	public static final class id {
-		public static final int action_settings = 0x7f0e014e;
+		public static final int action_settings = 0x7f0e015e;
 		public static final int id_circle_menu_item_center = 0x7f0e0005;
 		public static final int id_circle_menu_item_image = 0x7f0e0006;
 		public static final int id_circle_menu_item_text = 0x7f0e0007;
@@ -27,12 +27,12 @@ public final class R {
 		public static final int main = 0x7f0f0000;
 	}
 	public static final class string {
-		public static final int action_settings = 0x7f070035;
-		public static final int app_name = 0x7f070038;
-		public static final int hello_world = 0x7f070084;
+		public static final int action_settings = 0x7f070036;
+		public static final int app_name = 0x7f07003d;
+		public static final int hello_world = 0x7f07008a;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f090025;
-		public static final int AppTheme = 0x7f090042;
+		public static final int AppTheme = 0x7f090044;
 	}
 }

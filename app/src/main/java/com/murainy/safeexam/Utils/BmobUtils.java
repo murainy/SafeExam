@@ -473,7 +473,7 @@ public class BmobUtils {
 
 
 	public static void papers() {
-		String bql = "select distinct paperName,year from Question order by year";
+		String bql = "select distinct paperName from Question ";
 		new BmobQuery<Question>().doSQLQuery(bql, new SQLQueryListener<Question>() {
 
 			@Override

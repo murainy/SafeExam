@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.murainy.safeexam"
-    android:versionCode="12"
-    android:versionName="1.0.3" >
+    android:versionCode="13"
+    android:versionName="1.0.4" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -23,6 +23,12 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 允许完全退出 -->
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name="com.murainy.safeexam.SafeExam"

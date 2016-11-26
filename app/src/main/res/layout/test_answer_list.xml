@@ -3,6 +3,7 @@
 
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -15,13 +16,13 @@
 
             <SeekBar
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
                 android:id="@+id/seekBar"
-                android:background="@color/air_speed_label"
-                android:layout_margin="5dp"
+                android:background="@drawable/coral"
+                android:layout_margin="10dp"
                 android:indeterminate="false"
                 style="@android:style/Widget.SeekBar"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_height="20dp"/>
 
             <TextView
                 android:id="@+id/answers"
