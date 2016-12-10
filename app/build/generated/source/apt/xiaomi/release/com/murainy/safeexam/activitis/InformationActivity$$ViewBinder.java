@@ -15,17 +15,17 @@ public class InformationActivity$$ViewBinder<T extends InformationActivity> impl
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624210, "field 'iv_left' and method 'back'");
-    target.iv_left = finder.castView(view, 2131624210, "field 'iv_left'");
-    unbinder.view2131624210 = view;
+    view = finder.findRequiredView(source, 2131624211, "field 'iv_left' and method 'back'");
+    target.iv_left = finder.castView(view, 2131624211, "field 'iv_left'");
+    unbinder.view2131624211 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.back(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131624212, "field 'tv_title'");
-    target.tv_title = finder.castView(view, 2131624212, "field 'tv_title'");
+    view = finder.findRequiredView(source, 2131624213, "field 'tv_title'");
+    target.tv_title = finder.castView(view, 2131624213, "field 'tv_title'");
     view = finder.findRequiredView(source, 2131624109, "field 'bnt_exit' and method 'exit'");
     target.bnt_exit = finder.castView(view, 2131624109, "field 'bnt_exit'");
     unbinder.view2131624109 = view;
@@ -54,7 +54,7 @@ public class InformationActivity$$ViewBinder<T extends InformationActivity> impl
   protected static class InnerUnbinder<T extends InformationActivity> implements Unbinder {
     private T target;
 
-    View view2131624210;
+    View view2131624211;
 
     View view2131624109;
 
@@ -72,7 +72,7 @@ public class InformationActivity$$ViewBinder<T extends InformationActivity> impl
     }
 
     protected void unbind(T target) {
-      view2131624210.setOnClickListener(null);
+      view2131624211.setOnClickListener(null);
       target.iv_left = null;
       target.tv_title = null;
       view2131624109.setOnClickListener(null);

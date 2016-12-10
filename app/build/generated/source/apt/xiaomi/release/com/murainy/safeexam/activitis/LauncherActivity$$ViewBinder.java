@@ -15,18 +15,27 @@ public class LauncherActivity$$ViewBinder<T extends LauncherActivity> implements
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624113, "field 'bnt_me' and method 'next'");
-    target.bnt_me = finder.castView(view, 2131624113, "field 'bnt_me'");
-    unbinder.view2131624113 = view;
+    view = finder.findRequiredView(source, 2131624117, "field 'ta' and method 'next'");
+    target.ta = finder.castView(view, 2131624117, "field 'ta'");
+    unbinder.view2131624117 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.next(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131624117, "field 'bnt_you' and method 'man'");
-    target.bnt_you = finder.castView(view, 2131624117, "field 'bnt_you'");
-    unbinder.view2131624117 = view;
+    view = finder.findRequiredView(source, 2131624118, "field 'ts' and method 'setup'");
+    target.ts = finder.castView(view, 2131624118, "field 'ts'");
+    unbinder.view2131624118 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.setup(p0);
+      }
+    });
+    view = finder.findRequiredView(source, 2131624119, "field 'tg' and method 'man'");
+    target.tg = finder.castView(view, 2131624119, "field 'tg'");
+    unbinder.view2131624119 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,9 +52,11 @@ public class LauncherActivity$$ViewBinder<T extends LauncherActivity> implements
   protected static class InnerUnbinder<T extends LauncherActivity> implements Unbinder {
     private T target;
 
-    View view2131624113;
-
     View view2131624117;
+
+    View view2131624118;
+
+    View view2131624119;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -59,10 +70,12 @@ public class LauncherActivity$$ViewBinder<T extends LauncherActivity> implements
     }
 
     protected void unbind(T target) {
-      view2131624113.setOnClickListener(null);
-      target.bnt_me = null;
       view2131624117.setOnClickListener(null);
-      target.bnt_you = null;
+      target.ta = null;
+      view2131624118.setOnClickListener(null);
+      target.ts = null;
+      view2131624119.setOnClickListener(null);
+      target.tg = null;
     }
   }
 }

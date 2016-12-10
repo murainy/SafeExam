@@ -35,11 +35,12 @@ public class InformationActivity extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
+        ButterKnife.bind(this);
         Button lookGradeBtn = (Button) findViewById(R.id.btn_look_grade);
         Button changePasswordBtn = (Button) findViewById(R.id.btn_change_password);
-        TextView nameTV = (TextView) findViewById(R.id.tv_name);
+        TextView nameTV = (TextView) findViewById(R.id.tv_class);
         TextView numberTV = (TextView) findViewById(R.id.tv_number);
-        TextView classTV = (TextView) findViewById(R.id.tv_class);
+        TextView classTV = (TextView) findViewById(R.id.tv_name);
         Button bindpBtn = (Button) findViewById(R.id.bnt_bindphone);
         Button setheadBtn = (Button) findViewById(R.id.bnt_sethead);
         nameTV.setText(SafeExam.getStudent().getNick());
@@ -49,7 +50,7 @@ public class InformationActivity extends AppCompatActivity implements View.OnCli
         changePasswordBtn.setOnClickListener(this);
         bindpBtn.setOnClickListener(this);
         setheadBtn.setOnClickListener(this);
-        ButterKnife.bind(this);
+
         iv_left.setVisibility(View.VISIBLE);
         tv_title.setText("个人信息");
     }
@@ -94,7 +95,7 @@ public class InformationActivity extends AppCompatActivity implements View.OnCli
         am.killBackgroundProcesses(getPackageName());
         finish();
         //退出后台线程,以及销毁静态变量
-        //System.exit(0);
+        System.exit(0);
         }
 
 }

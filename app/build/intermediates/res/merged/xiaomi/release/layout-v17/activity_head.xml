@@ -12,7 +12,7 @@
             android:id="@+id/iv_head"
             android:layout_width="200dip"
             android:layout_height="200dip"
-            android:src="@mipmap/ic_launcher" android:layout_gravity="center" android:layout_marginTop="100dp"/>
+            android:src="@drawable/yule" android:layout_gravity="center" android:layout_marginTop="100dp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

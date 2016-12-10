@@ -35,12 +35,35 @@
     </style>
 
     <style name="CustomWelcomeScreenTheme" parent="WelcomeScreenTheme">
-        <item name="welcomeIndicatorStyle">@style/WelcomeScreenPageIndicator.Custom</item>
+        <item name="welcomeIndicatorStyle">@style/WelcomeScreenPageIndicator.Animated</item>
         <item name="welcomeTitleTextStyle">@style/WelcomeScreenText.Title.Centered</item>
     </style>
 
-    <style name="WelcomeScreenPageIndicator.Custom">
+    <style name="WelcomeScreenPageIndicator.Animated">
+        <item name="animation">slide</item>
+    </style>
 
+    <style name="WelcomeScreenPageIndicator.Light.Animated">
+        <item name="animation">slide</item>
+    </style>
+    <!-- 上圆角样式 -->
+    <style name="setting_top_layout" parent="base_layout">
+        <item name="android:background">@drawable/setting_top_layout_selector</item>
+    </style>
+
+    <!-- 无圆角样式 -->
+    <style name="setting_mid_layout" parent="base_layout">
+        <item name="android:background">@drawable/setting_mid_layout_selector</item>
+    </style>
+
+    <!-- 下圆角样式 -->
+    <style name="setting_bottom_layout" parent="base_layout">
+        <item name="android:background">@drawable/setting_bottom_layout_selector</item>
+    </style>
+
+    <!-- 全圆角样式 -->
+    <style name="single_layout" parent="base_layout">
+        <item name="android:background">@drawable/setting_single_layout_selector</item>
     </style>
 
     <style name="WelcomeScreenText.Title.Centered.Custom">
@@ -53,6 +76,7 @@
         <item name="android:background">@color/theme_bg_color</item>
         <item name="android:orientation">vertical</item>
     </style>
+
     <style name="tweetName">
         <item name="android:textColor">@color/green</item>
         <item name="android:textSize">20sp</item>
@@ -83,6 +107,8 @@
         <item name="android:background">#eff0f1</item>
         <item name="android:layout_alignParentBottom">true</item>
     </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>
