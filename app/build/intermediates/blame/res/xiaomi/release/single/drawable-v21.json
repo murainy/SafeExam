@@ -40,6 +40,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-v21\\ic_menu_slideshow.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\wel_button_borderless_background_theme_light.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\drawable-v21\\wel_button_borderless_background_theme_light.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\ic_sync_black_24dp.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-v21\\ic_sync_black_24dp.xml"
     },
@@ -62,5 +66,9 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\button_borderless_background_theme_light.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\drawable-v21\\button_borderless_background_theme_light.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\wel_button_borderless_background.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\drawable-v21\\wel_button_borderless_background.xml"
     }
 ]

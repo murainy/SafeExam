@@ -9,17 +9,17 @@
                     "startOffset": 55,
                     "endLine": 5,
                     "endColumn": 12,
-                    "endOffset": 276
+                    "endOffset": 280
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-v19\\values-v19.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-v19\\values-v19.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 55,
                         "endLine": 5,
                         "endColumn": 12,
-                        "endOffset": 276
+                        "endOffset": 280
                     }
                 }
             },
@@ -27,20 +27,20 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 281,
+                    "startOffset": 285,
                     "endLine": 8,
                     "endColumn": 12,
-                    "endOffset": 419
+                    "endOffset": 423
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-v19\\values-v19.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-v19\\values-v19.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 281,
+                        "startOffset": 285,
                         "endLine": 8,
                         "endColumn": 12,
-                        "endOffset": 419
+                        "endOffset": 423
                     }
                 }
             },
@@ -48,20 +48,20 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 424,
+                    "startOffset": 428,
                     "endLine": 11,
                     "endColumn": 12,
-                    "endOffset": 572
+                    "endOffset": 576
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-v19\\values-v19.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-v19\\values-v19.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 424,
+                        "startOffset": 428,
                         "endLine": 11,
                         "endColumn": 12,
-                        "endOffset": 572
+                        "endOffset": 576
                     }
                 }
             },
@@ -69,20 +69,20 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 577,
+                    "startOffset": 581,
                     "endLine": 14,
                     "endColumn": 12,
-                    "endOffset": 709
+                    "endOffset": 713
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-v19\\values-v19.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-v19\\values-v19.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 577,
+                        "startOffset": 581,
                         "endLine": 14,
                         "endColumn": 12,
-                        "endOffset": 709
+                        "endOffset": 713
                     }
                 }
             },
@@ -90,20 +90,20 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 714,
+                    "startOffset": 718,
                     "endLine": 17,
                     "endColumn": 12,
-                    "endOffset": 856
+                    "endOffset": 860
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-v19\\values-v19.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-v19\\values-v19.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 714,
+                        "startOffset": 718,
                         "endLine": 17,
                         "endColumn": 12,
-                        "endOffset": 856
+                        "endOffset": 860
                     }
                 }
             }

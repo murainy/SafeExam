@@ -311,17 +311,17 @@
                     "startLine": 18,
                     "startColumn": 4,
                     "startOffset": 1170,
-                    "endColumn": 50,
-                    "endOffset": 1216
+                    "endColumn": 54,
+                    "endOffset": 1220
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 55,
-                        "endColumn": 50,
-                        "endOffset": 101
+                        "endColumn": 54,
+                        "endOffset": 105
                     }
                 }
             },
@@ -329,18 +329,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1221,
-                    "endColumn": 54,
-                    "endOffset": 1271
+                    "startOffset": 1225,
+                    "endColumn": 58,
+                    "endOffset": 1279
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 106,
-                        "endColumn": 54,
-                        "endOffset": 156
+                        "startOffset": 110,
+                        "endColumn": 58,
+                        "endOffset": 164
                     }
                 }
             },
@@ -348,18 +348,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1276,
-                    "endColumn": 47,
-                    "endOffset": 1319
+                    "startOffset": 1284,
+                    "endColumn": 51,
+                    "endOffset": 1331
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 161,
-                        "endColumn": 47,
-                        "endOffset": 204
+                        "startOffset": 169,
+                        "endColumn": 51,
+                        "endOffset": 216
                     }
                 }
             },
@@ -367,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1324,
-                    "endColumn": 46,
-                    "endOffset": 1366
+                    "startOffset": 1336,
+                    "endColumn": 50,
+                    "endOffset": 1382
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 209,
-                        "endColumn": 46,
-                        "endOffset": 251
+                        "startOffset": 221,
+                        "endColumn": 50,
+                        "endOffset": 267
                     }
                 }
             },
@@ -386,9 +386,9 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1371,
+                    "startOffset": 1387,
                     "endColumn": 62,
-                    "endOffset": 1429
+                    "endOffset": 1445
                 },
                 "from": {
                     "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
@@ -405,10 +405,10 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1434,
+                    "startOffset": 1450,
                     "endLine": 26,
                     "endColumn": 12,
-                    "endOffset": 1611
+                    "endOffset": 1627
                 },
                 "from": {
                     "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

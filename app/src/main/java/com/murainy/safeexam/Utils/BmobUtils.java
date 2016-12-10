@@ -283,7 +283,7 @@ public class BmobUtils {
 
 			@Override
 			public void done(String objectId, BmobException e) {
-				if (e == null) {
+				if (e == null ) {
 					Logger.i("成绩成功");
 				} else {
 					Logger.i("成绩失败" + e);

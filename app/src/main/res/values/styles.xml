@@ -40,7 +40,7 @@
     </style>
 
     <style name="WelcomeScreenPageIndicator.Custom">
-        <item name="animated">true</item>
+
     </style>
 
     <style name="WelcomeScreenText.Title.Centered.Custom">

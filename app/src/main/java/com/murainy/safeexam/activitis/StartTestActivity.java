@@ -389,7 +389,9 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
         grade.setUsername(SafeExam.getStudent().getUsername());
         grade.setJoinTime(df.format(new Date()));
         grade.setGrade((correctNum * 100) / questionNum);
-        BmobUtils.saveGrade(StartTestActivity.this, grade);
+        //考试通过记入成绩。
+        if (grade.getGrade()>=60 ){
+        BmobUtils.saveGrade(StartTestActivity.this, grade);}
         paper = new Paper();
 
         Logger.i(answers.toString());

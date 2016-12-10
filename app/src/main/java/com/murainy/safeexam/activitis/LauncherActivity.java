@@ -22,7 +22,9 @@ import com.murainy.safeexam.Shareprefrence.Account;
 import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
 import com.murainy.safeexam.beans.Student;
 import com.murainy.safeexam.view.FontManager;
-import com.stephentuso.welcome.WelcomeScreenHelper;
+
+import com.stephentuso.welcome.WelcomeHelper;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,7 +35,8 @@ import cn.bmob.v3.listener.LogInListener;
 
 public class LauncherActivity extends AppCompatActivity {
 
-    WelcomeScreenHelper welcomeScreen;
+    private WelcomeHelper welcomeScreen;
+
     private ShimmerFrameLayout mShimmerViewContainer;
     private ViewFlipper mFlipper;
     private GestureDetectorCompat mDetector; //手势检测
@@ -55,7 +58,7 @@ public class LauncherActivity extends AppCompatActivity {
         assert mShimmerViewContainer != null;
         mShimmerViewContainer.setDuration(5000);
         mShimmerViewContainer.setRepeatMode(ObjectAnimator.REVERSE);
-        welcomeScreen = new WelcomeScreenHelper(this, SplashActivity.class);
+        welcomeScreen = new WelcomeHelper(this, SplashActivity.class);
         welcomeScreen.show(savedInstanceState);
 
         Typeface iconFont = FontManager.getTypeface(getApplicationContext(), FontManager.FONTAWESOME);
@@ -151,7 +154,7 @@ public class LauncherActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == WelcomeScreenHelper.DEFAULT_WELCOME_SCREEN_REQUEST) {
+        if (requestCode == WelcomeHelper.DEFAULT_WELCOME_SCREEN_REQUEST) {
             String welcomeKey = data.getStringExtra(SplashActivity.WELCOME_SCREEN_KEY);
 
             if (resultCode == RESULT_OK) {

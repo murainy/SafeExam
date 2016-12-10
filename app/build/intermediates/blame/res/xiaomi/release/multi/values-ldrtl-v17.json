@@ -7,17 +7,17 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 34,
-                    "endOffset": 85
+                    "endColumn": 39,
+                    "endOffset": 90
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 55,
-                        "endColumn": 34,
-                        "endOffset": 85
+                        "endColumn": 39,
+                        "endOffset": 90
                     }
                 }
             },
@@ -25,20 +25,20 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 90,
+                    "startOffset": 95,
                     "endLine": 6,
                     "endColumn": 12,
-                    "endOffset": 291
+                    "endOffset": 300
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 90,
+                        "startOffset": 95,
                         "endLine": 6,
                         "endColumn": 12,
-                        "endOffset": 291
+                        "endOffset": 300
                     }
                 }
             },
@@ -46,20 +46,20 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 296,
+                    "startOffset": 305,
                     "endLine": 10,
                     "endColumn": 12,
-                    "endOffset": 498
+                    "endOffset": 511
                 },
                 "from": {
-                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "file": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 296,
+                        "startOffset": 305,
                         "endLine": 10,
                         "endColumn": 12,
-                        "endOffset": 498
+                        "endOffset": 511
                     }
                 }
             }

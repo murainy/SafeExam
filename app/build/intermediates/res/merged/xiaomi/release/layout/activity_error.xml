@@ -6,8 +6,9 @@
     xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.murainy.safeexam.activitis.ErrorActivity">
+    tools:context="com.murainy.safeexam.activitis.ErrorActivity"
+
+    android:background="@color/colorPrimary">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -86,12 +87,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
-
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="108dp"
+                android:layout_height="125dp"
+                fancy:srcCompat="@drawable/five"
+                android:id="@+id/imageView3"
+                android:adjustViewBounds="false"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,5 +108,7 @@
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
+
+
 
 </android.support.design.widget.CoordinatorLayout>

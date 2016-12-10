@@ -22,13 +22,15 @@
                 android:layout_width="104.0dip"
                 android:layout_height="104.0dip"
                 android:layout_centerInParent="true"
-                android:background="@drawable/turnplate_center_unlogin"/>
+                android:background="@drawable/turnplate_center_unlogin"
+                tools:ignore="ContentDescription"/>
 
             <ImageView
                 android:layout_width="116.0dip"
                 android:layout_height="116.0dip"
                 android:layout_centerInParent="true"
-                android:background="@drawable/turnplate_mask_unlogin_normal"/>
+                android:background="@drawable/turnplate_mask_unlogin_normal"
+                tools:ignore="ContentDescription"/>
         </RelativeLayout>
     </com.zhy.view.CircleMenuLayout>
 
