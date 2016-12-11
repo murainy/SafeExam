@@ -12,9 +12,10 @@
         android:id="@+id/flipper"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:flipInterval="5000"
+        android:flipInterval="2000"
         android:foregroundGravity="center_vertical|center_horizontal"
-        android:layout_margin="16dp">
+        android:layout_margin="16dp"
+        >
     </ViewFlipper>
 
     <com.facebook.shimmer.ShimmerFrameLayout

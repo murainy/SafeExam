@@ -56,14 +56,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="blue">#5CACEE</color>
+    <color name="blue">#5cacee</color>
 
     <!--设置页面-->
     <!-- 描边颜色 -->
     <color name="setting_line_color">#ccc</color>
     <color name="setting_text_color">#333</color>
     <color name="setting_white">#fff</color>
-    <color name="setting_blue">#419DE4</color>
+    <color name="setting_blue">#419de4</color>
 
 
     <!--fbutton的颜色-->
@@ -135,6 +135,6 @@
     <color name="radioButton">#44a6f5</color>
     <color name="background_color">#F555</color>
     <color name="marker_color">#AFFF</color>
-    <color name="text_color">#AFFF</color>
+    <color name="text_color">#aaffffff</color>
 
 </resources>

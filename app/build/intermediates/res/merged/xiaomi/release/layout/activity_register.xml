@@ -2,17 +2,19 @@
 
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/theme_bg_color">
+                android:background="@color/setting_blue">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="75dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
 
 
         <LinearLayout
@@ -33,12 +35,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/input_bg"
+            android:background="@color/blue"
             android:orientation="vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
+            android:layout_margin="16dp">
 
             <EditText
                 android:id="@+id/username"
@@ -53,7 +52,8 @@
                 android:shadowDx="0.0"
                 android:shadowDy="1.0"
                 android:shadowRadius="1.0"
-                android:textColorHint="#ffdddddd"/>
+                android:textColorHint="#ffdddddd"
+                tools:ignore="RtlSymmetry"/>
 
             <View
                 android:layout_width="match_parent"
@@ -70,7 +70,8 @@
                 android:hint="密码"
                 android:inputType="textPassword"
                 android:paddingLeft="15dip"
-                android:textColorHint="#ffdddddd"/>
+                android:textColorHint="#ffdddddd"
+                tools:ignore="RtlSymmetry"/>
 
             <View
                 android:layout_width="match_parent"
@@ -82,7 +83,7 @@
                 android:layout_height="@dimen/base_action_bar_height"
                 android:background="@color/transparent"
                 android:paddingLeft="15dip"
-                >
+                tools:ignore="RtlSymmetry">
 
                 <TextView
                     style="@style/Smile.TextView._Black"
@@ -91,7 +92,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:text="姓名"
-                    android:textColor="@color/black"/>
+                    android:textColor="@drawable/aliceblue"
+                    tools:ignore="ObsoleteLayoutParam"/>
 
                 <EditText
                     android:id="@+id/register_name"
@@ -121,7 +123,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:text="班级"
-                    android:textColor="@color/black"/>
+                    android:textColor="@drawable/aliceblue"
+                    tools:ignore="ObsoleteLayoutParam"/>
 
                 <EditText
                     android:id="@+id/register_class"
@@ -149,7 +152,8 @@
             android:padding="@dimen/activity_vertical_margin"
             android:text="注册"
             android:textColor="@color/base_color_text_white"
-            android:textSize="@dimen/text_size_large"/>
+            android:textSize="@dimen/text_size_large"
+            tools:ignore="TextViewEdits"/>
     </LinearLayout>
 
 

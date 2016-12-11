@@ -15,9 +15,9 @@ public class UserBindPhoneActivity$$ViewBinder<T extends UserBindPhoneActivity> 
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624211, "field 'iv_left' and method 'back'");
-    target.iv_left = finder.castView(view, 2131624211, "field 'iv_left'");
-    unbinder.view2131624211 = view;
+    view = finder.findRequiredView(source, 2131624212, "field 'iv_left' and method 'back'");
+    target.iv_left = finder.castView(view, 2131624212, "field 'iv_left'");
+    unbinder.view2131624212 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -28,8 +28,8 @@ public class UserBindPhoneActivity$$ViewBinder<T extends UserBindPhoneActivity> 
     target.et_number = finder.castView(view, 2131624072, "field 'et_number'");
     view = finder.findRequiredView(source, 2131624073, "field 'et_input'");
     target.et_input = finder.castView(view, 2131624073, "field 'et_input'");
-    view = finder.findRequiredView(source, 2131624213, "field 'tv_title'");
-    target.tv_title = finder.castView(view, 2131624213, "field 'tv_title'");
+    view = finder.findRequiredView(source, 2131624214, "field 'tv_title'");
+    target.tv_title = finder.castView(view, 2131624214, "field 'tv_title'");
     view = finder.findRequiredView(source, 2131624074, "field 'tv_send' and method 'send'");
     target.tv_send = finder.castView(view, 2131624074, "field 'tv_send'");
     unbinder.view2131624074 = view;
@@ -58,7 +58,7 @@ public class UserBindPhoneActivity$$ViewBinder<T extends UserBindPhoneActivity> 
   protected static class InnerUnbinder<T extends UserBindPhoneActivity> implements Unbinder {
     private T target;
 
-    View view2131624211;
+    View view2131624212;
 
     View view2131624074;
 
@@ -76,7 +76,7 @@ public class UserBindPhoneActivity$$ViewBinder<T extends UserBindPhoneActivity> 
     }
 
     protected void unbind(T target) {
-      view2131624211.setOnClickListener(null);
+      view2131624212.setOnClickListener(null);
       target.iv_left = null;
       target.et_number = null;
       target.et_input = null;

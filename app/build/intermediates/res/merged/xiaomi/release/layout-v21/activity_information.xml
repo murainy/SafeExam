@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/index_bg_001"
         android:orientation="vertical" android:weightSum="1"
-        >
+        android:padding="16dp">
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
@@ -32,10 +32,9 @@
             android:id="@+id/layout_nick"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/shape_corner_up" android:padding="10dp"
+            android:padding="10dp"
             android:alpha="0.3"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            style="@style/setting_top_layout">
 
             <TextView
                 style="@style/Smile.TextView._Black"
@@ -60,15 +59,17 @@
                 tools:ignore="RelativeOverlap"/>
 
         </RelativeLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/base_horization_line"/>
         <RelativeLayout
             android:id="@+id/layout_name"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/shape_no_corner" android:padding="10dp"
+            android:padding="10dp"
             android:alpha="0.3"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            style="@style/setting_mid_layout">
 
             <TextView
                 style="@style/Smile.TextView._Black"
@@ -93,15 +94,17 @@
                 android:textColor="@color/black"
                 tools:ignore="RelativeOverlap"/>
         </RelativeLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/base_horization_line"/>
         <RelativeLayout
             android:id="@+id/layout_gender"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/shape_corner_down" android:padding="10dp"
+            android:padding="10dp"
             android:alpha="0.3"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            style="@style/setting_bottom_layout">
 
             <TextView
                 style="@style/Smile.TextView._Black"

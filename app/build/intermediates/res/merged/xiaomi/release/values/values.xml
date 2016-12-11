@@ -60,7 +60,7 @@
     <color name="bg_btn_normal_color">#ed4444</color>
     <color name="bg_btn_press_color">#d81e06</color>
     <color name="black">#030303</color>
-    <color name="blue">#5CACEE</color>
+    <color name="blue">#5cacee</color>
     <color name="bottom_top_bar">#66848484</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -191,7 +191,7 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <color name="setting_blue">#419DE4</color>
+    <color name="setting_blue">#419de4</color>
     <color name="setting_line_color">#ccc</color>
     <color name="setting_text_color">#333</color>
     <color name="setting_white">#fff</color>
@@ -201,7 +201,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="text_color">#AFFF</color>
+    <color name="text_color">#aaffffff</color>
     <color name="text_gray">#969696</color>
     <color name="theme_bg_color">#f0f2f5</color>
     <color name="theme_bg_color1">#f0f2f5</color>
@@ -1156,18 +1156,18 @@
         
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        
         <item name="android:colorForeground">@color/fbutton_color_green_sea</item>
         <item name="android:textColorPrimary">@color/accent_material_dark</item>
-        <!-- Customize your theme here. -->
+        
         <item name="colorAccent">@color/colorAccent</item>
         <item name="welcomeButtonSkipText">Skip</item>
         <item name="welcomeButtonDoneText">Start</item>
-        <!-- toolbar（actionbar）颜色 -->
+        
         <item name="colorPrimary">@color/blue</item>
-        <!-- 状态栏颜色 -->
+        
         <item name="colorPrimaryDark">#3A5FCD</item>
-        <!-- 窗口的背景颜色 -->
+        
         <item name="android:windowBackground">@android:color/white</item>
         <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
     </style>
@@ -2987,7 +2987,7 @@
     <style name="tweetName">
         <item name="android:textColor">@color/green</item>
         <item name="android:textSize">20sp</item>
-        <!--<item name="android:textStyle">bold</item>-->
+        
         <item name="android:shadowColor">#44000000</item>
         <item name="android:shadowDx">1</item>
         <item name="android:shadowDy">1</item>
