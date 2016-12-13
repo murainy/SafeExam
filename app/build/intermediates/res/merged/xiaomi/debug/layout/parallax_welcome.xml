@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:padding="5dp"
+    android:layout_margin="48dp"
+    android:alignmentMode="alignBounds">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_view1"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:src="@drawable/cloud"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_view2"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:src="@drawable/fish"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_view4"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:src="@drawable/hippophaes"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_view5"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_column="2"
+        android:layout_row="2"
+        android:src="@drawable/sky"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_view3"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:src="@drawable/rain"/>
+
+
+</GridLayout>

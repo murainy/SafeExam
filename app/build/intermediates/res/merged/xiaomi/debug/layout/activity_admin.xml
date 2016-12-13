@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_centerInParent="true"
+            android:text="@string/select_paper"
+            android:textSize="20sp"
+            android:textColor="@color/base_color_text_white" android:layout_margin="5dp" android:gravity="center_vertical" android:id="@+id/textView"/>
+        <Button
+            android:id="@+id/add_paper"
+            style="@style/common_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:gravity="center"
+            android:text="@string/add_paper"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <Button style="@style/common_button_style" android:id="@+id/update_paper" android:layout_width="wrap_content" android:layout_height="@dimen/base_action_bar_height" android:gravity="center" android:text="@string/update_paper" android:textColor="@color/base_color_text_white" android:textSize="@dimen/text_size_large" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/base_horization_line"/>
+
+
+    <ListView
+        android:id="@+id/lv_paper_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/base_horizontal_line"
+        android:dividerHeight="2dp"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="true"
+        android:scrollbars="vertical"
+        android:paddingBottom="10dp" />
+
+</LinearLayout>
