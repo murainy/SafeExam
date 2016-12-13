@@ -39,6 +39,7 @@ public class SafeExam extends Application {
               .setFileExpiration(5500)
                 .build();
          Bmob.initialize(config);
+
         initData();
     }
 

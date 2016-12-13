@@ -27,14 +27,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_marginTop="20dp"
-            android:background="@color/setting_blue"
+            android:background="@drawable/shape_corner"
             android:orientation="vertical" android:theme="@style/AppTheme">
 
             <EditText
                 android:id="@+id/username"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/base_action_bar_height"
-                android:background="@color/setting_blue"
+                android:background="@color/transparent"
                 android:drawableLeft="@drawable/login_account_box_white_36dp"
                 android:drawablePadding="25dip"
                 android:hint="账号/手机号"
@@ -52,7 +52,7 @@
                 android:id="@+id/password"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/base_action_bar_height"
-                android:background="@color/setting_blue"
+                android:background="@color/transparent"
                 android:drawableLeft="@drawable/login_lock_white_36dp"
                 android:drawablePadding="25dip"
                 android:hint="密码"
@@ -71,7 +71,7 @@
                 android:checked="true"
                 android:layout_gravity="center"
                 style="@style/AppTheme"
-                android:textColor="@color/base_bg"/>
+                android:textColor="@color/air_speed_label"/>
         </LinearLayout>
 
         <Button

@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:background="@color/blue"
+            android:background="@drawable/shape_corner"
             android:orientation="vertical">
 
             <EditText
@@ -45,7 +45,7 @@
                 android:layout_height="@dimen/base_action_bar_height"
                 android:background="@color/transparent"
                 android:drawableLeft="@drawable/login_account_box_white_36dp"
-                android:drawablePadding="25dip"
+                android:drawablePadding="16dip"
                 android:hint="帐号"
                 android:inputType="number"
                 android:paddingLeft="15dip"
@@ -66,7 +66,7 @@
                 android:layout_height="@dimen/base_action_bar_height"
                 android:background="@color/transparent"
                 android:drawableLeft="@drawable/login_lock_white_36dp"
-                android:drawablePadding="25dip"
+                android:drawablePadding="16dp"
                 android:hint="密码"
                 android:inputType="textPassword"
                 android:paddingLeft="15dip"
@@ -84,7 +84,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/base_action_bar_height"
                 android:drawableLeft="@drawable/ic_account_circle_white_36dp"
-                android:drawablePadding="25dip"
+                android:drawablePadding="16dp"
                 android:background="@color/transparent"
                 android:hint="姓名"
                 android:paddingLeft="15dip"
@@ -104,7 +104,7 @@
                 android:layout_height="@dimen/base_action_bar_height"
                 android:hint="手机"
                 android:background="@color/transparent"
-                android:drawablePadding="25dip"
+                android:drawablePadding="16dp"
                 android:paddingLeft="15dip"
                 android:textColorHint="#ffdddddd"/>
 

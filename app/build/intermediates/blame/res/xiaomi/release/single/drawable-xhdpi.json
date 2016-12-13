@@ -24,8 +24,28 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_chevron_right_black_48dp.png"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xhdpi\\ic_account_circle_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_account_circle_white_36dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xhdpi\\login_account_box_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\generated\\res\\pngs\\xiaomi\\release\\drawable-xhdpi\\login_account_box_white_36dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xhdpi\\login_cell_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\generated\\res\\pngs\\xiaomi\\release\\drawable-xhdpi\\login_cell_white_36dp.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xhdpi\\ic_done_red_900_18dp.png",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_done_red_900_18dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xhdpi\\ic_lock_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_lock_white_36dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xhdpi\\login_lock_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\generated\\res\\pngs\\xiaomi\\release\\drawable-xhdpi\\login_lock_white_36dp.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xhdpi\\bear.png",

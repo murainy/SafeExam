@@ -97,7 +97,7 @@ public class BitmapUtil {
      */
     private static int FREE_SD_SPACE_NEEDED_TO_CACHE = 1;
     private static int MB = 1024 * 1024;
-    public final static String DIR = "/sdcard/Eloancn";
+    public final static String DIR = Environment.getExternalStorageDirectory().getPath();
 
     public static void saveBmpToSd(Bitmap bm, String url, int quantity) {
         // 判断sdcard上的空间

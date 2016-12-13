@@ -28,6 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.murainy.safeexam.R;
+import com.murainy.safeexam.Utils.ToastUtil;
 import com.murainy.safeexam.beans.Student;
 
 import java.io.File;
@@ -38,15 +39,20 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.datatype.BmobFile;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.DownloadFileListener;
+import cn.bmob.v3.listener.FindListener;
+import cn.bmob.v3.listener.QueryListener;
 import cn.bmob.v3.listener.UpdateListener;
+import cn.bmob.v3.listener.UploadFileListener;
 
 @SuppressLint("SdCardPath")//忽略警告
 public class HeadActivity extends Activity implements OnClickListener {
@@ -58,11 +64,13 @@ public class HeadActivity extends Activity implements OnClickListener {
 	private Bitmap head;//头像Bitmap
 	private EditText et_nick;
 	private static String path = Environment.getExternalStorageDirectory().getPath();//sd路径
-	private static String pathbak = Environment.getDataDirectory() + "tmp";//sd路径
+	private static String pathbak = Environment.getDataDirectory() + "/tmp";//sd路径
 	@BindView(R.id.iv_left)
 	ImageView iv_left;
 	@BindView(R.id.tv_title)
 	TextView tv_title;
+	@BindView(R.id.btn_upload)
+	Button upload;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +101,6 @@ public class HeadActivity extends Activity implements OnClickListener {
 		} else {
 			/**
 			 *	如果SD里面没有则需要从服务器取头像，取回来的头像再保存在SD中
-             *
 			 */
 			Bmobfiledown();
 		}
@@ -173,28 +180,46 @@ public class HeadActivity extends Activity implements OnClickListener {
 		}
 	}
 
-	/**
-	 * 上传文件到bmob后台
-	 */
-	public void uploadbmobfile() {
 
-		String nick = et_nick.getText().toString();
-		BmobFile bmobFile = new BmobFile("head", null, new File(path).toString());
-		String fileurl = bmobFile.getFileUrl();
-		BmobUser student = BmobUser.getCurrentUser();
-		Student stu = new Student();
-		stu.setNick(nick);
-		stu.setHeadurl(fileurl);
-		stu.setHeadpng(bmobFile);
-		stu.update(student.getObjectId(), new UpdateListener() {
+	/*分片上传单个文件 、到bmob库*/
+	public void uploadbmobfile() {
+		String picPath = "sdcard/head.jpg";
+		final BmobFile bmobFile = new BmobFile(new File(picPath));
+		bmobFile.uploadblock(new UploadFileListener() {
+
 			@Override
 			public void done(BmobException e) {
 				if (e == null) {
-					// TODO Auto-generated method stub
-					Log.i("TAG", "更新用户头像信息成功。");
+					//bmobFile.getFileUrl()--返回的上传文件的完整地址
+					String url;
+					url = bmobFile.getFileUrl();
+					//et_nick.setText(url);
+					BmobUser student = BmobUser.getCurrentUser();
+					Student stu = new Student();
+					stu.setNick(et_nick.getText().toString());
+					stu.setHeadurl(url);
+					stu.setHeadpng(bmobFile);
+					stu.setmClass("2016");
+					stu.update(student.getObjectId(), new UpdateListener() {
+						@Override
+						public void done(BmobException e) {
+							if (e == null) {
+								Log.i("TAG", "更新用户头像信息成功。");
+							} else {
+								Log.i("TAG", "更新用户头像信息失败:");
+							}
+						}
+					});
+					toast("上传文件成功:" + url);
 				} else {
-					Log.i("TAG", "更新用户头像信息失败:");
+					toast("上传文件失败：" + e.getMessage());
 				}
+
+			}
+
+			@Override
+			public void onProgress(Integer value) {
+				// 返回的上传进度（百分比）
 			}
 		});
 	}
@@ -283,38 +308,54 @@ public class HeadActivity extends Activity implements OnClickListener {
 	 * 下载Bomb文件
 	 */
 	public void Bmobfiledown() {
-
+		// 查询用刻苦
 		BmobUser userinfo = BmobUser.getCurrentUser(Student.class);
-		Student student = new Student();
-		BmobFile bmobfile = student.getHeadpng();
-		if (bmobfile != null) {
-			//调用bmobfile.download方法
-			downloadFile(bmobfile);
-		}
+		BmobQuery<Student> query = new BmobQuery<Student>();
+		query.getObject(userinfo.getObjectId(), new QueryListener<Student>() {
+
+			@Override
+			public void done(Student object, BmobException e) {
+				if (e == null) {
+					BmobFile bmobfile = object.getHeadpng();
+					if (bmobfile != null) {
+						//调用bmobfile.download方法
+						downloadFile(bmobfile);
+					} else {
+						toast("用户对像为空!");
+					}
+
+				} else {
+					Log.i("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
+				}
+			}
+
+		});
+
 	}
 
 	private void downloadFile(BmobFile file) {
 		//允许设置下载文件的存储路径，默认下载文件的目录为：context.getApplicationContext().getCacheDir()+"/bmob/"
-		File saveFile = new File(pathbak, file.getFilename());
+		File saveFile = new File(path, "N" + file.getFilename());
 		file.download(saveFile, new DownloadFileListener() {
 
 			@Override
 			public void onStart() {
 				toast("开始下载...");
 			}
-
 			@Override
 			public void done(String savePath, BmobException e) {
 				if (e == null) {
 					toast("下载成功,保存路径:" + savePath);
 				} else {
 					toast("下载失败：" + e.getErrorCode() + "," + e.getMessage());
+
 				}
 			}
 
 			@Override
 			public void onProgress(Integer value, long newworkSpeed) {
-				Log.i("bmob", "下载进度：" + value + "," + newworkSpeed);
+
+				toast("Bmob下载进度：" + value + "%，" + newworkSpeed / 1000 + "Kb/s");
 			}
 
 		});
@@ -408,5 +449,10 @@ public class HeadActivity extends Activity implements OnClickListener {
 	@OnClick(R.id.iv_left)
 	public void back(View view) {
 		finish();
+	}
+
+	@OnClick(R.id.btn_upload)
+	public void upload(View view) {
+		uploadbmobfile();
 	}
 }

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -13,11 +14,13 @@ import android.widget.TextView;
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.SafeExam;
 import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
+import com.murainy.safeexam.Utils.BitmapUtil;
 import com.murainy.safeexam.Utils.StatusBarUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.internal.Utils;
 import cn.bmob.v3.BmobUser;
 
 
@@ -30,7 +33,8 @@ public class InformationActivity extends AppCompatActivity implements View.OnCli
     Button bnt_exit;
     @BindView(R.id.info_end)
     Button bnt_end;
-
+    @BindView(R.id.ci_view)
+    ImageView ci100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +54,8 @@ public class InformationActivity extends AppCompatActivity implements View.OnCli
         changePasswordBtn.setOnClickListener(this);
         bindpBtn.setOnClickListener(this);
         setheadBtn.setOnClickListener(this);
-
+        //String path = Environment.getExternalStorageDirectory().getPath()+"/head.jpg";
+        //ci100.setImageBitmap(BitmapUtil.GetBitmap(path,100));
         iv_left.setVisibility(View.VISIBLE);
         tv_title.setText("个人信息");
     }

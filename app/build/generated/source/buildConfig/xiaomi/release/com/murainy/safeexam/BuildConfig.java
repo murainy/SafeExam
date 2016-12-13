@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.murainy.safeexam";
   public static final String BUILD_TYPE = "release";
   public static final String FLAVOR = "xiaomi";
-  public static final int VERSION_CODE = 16;
-  public static final String VERSION_NAME = "1.0.7";
+  public static final int VERSION_CODE = 18;
+  public static final String VERSION_NAME = "1.0.9";
 }

@@ -98,12 +98,13 @@
     <string name="dwonload">下载</string>
     <string name="gallay">相册</string>
     <string name="camery">拍照</string>
+    <string name="upload">上传</string>
     <string name="info_name">吴佳宝</string>
     <string name="info_class">tenerify</string>
     <string name="info_number">18335054303</string>
     <string name="info_person">个人信息</string>
     <string name="info_production">产品信息</string>
-    <string name="gallory">相册</string>
+
     <string name="add_paper">添加试卷</string>
     <string name="update_paper">更新试卷</string>
     <string name="select_paper">选择试卷</string>
@@ -125,7 +126,7 @@
     <string name="xxx">人不会死在绝境，却往往栽在十字路口</string>
 
     <string name="app_error">应用程序错误</string>
-    <string name="app_error_message">很报歉，人不会死在绝境，却往往栽在十字路口。</string>
+    <string name="app_error_message">很报歉，程序栽在十字路口。</string>
     <string name="submit_report">请给我发邮件报告错误，以便尽快修复，谢谢！</string>
 
 </resources>

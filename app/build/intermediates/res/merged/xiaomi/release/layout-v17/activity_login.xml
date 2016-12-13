@@ -3,6 +3,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/theme_bg_color">
@@ -10,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center" android:orientation="vertical" android:background="@drawable/lavender">
+        android:gravity="center" android:orientation="vertical" android:background="@color/setting_blue">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/view"
@@ -26,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/input_bg"
+            android:background="@drawable/shape_corner"
             android:orientation="vertical" android:theme="@style/AppTheme">
 
             <EditText
@@ -34,7 +35,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/base_action_bar_height"
                 android:background="@color/transparent"
-                android:drawableLeft="@drawable/login_icon_account"
+                android:drawableLeft="@drawable/login_account_box_white_36dp"
                 android:drawablePadding="25dip"
                 android:hint="账号/手机号"
                 android:inputType="text"
@@ -52,7 +53,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/base_action_bar_height"
                 android:background="@color/transparent"
-                android:drawableLeft="@drawable/login_icon_password"
+                android:drawableLeft="@drawable/login_lock_white_36dp"
                 android:drawablePadding="25dip"
                 android:hint="密码"
                 android:inputType="textPassword"

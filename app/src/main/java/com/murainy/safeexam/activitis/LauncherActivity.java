@@ -229,6 +229,6 @@ public class LauncherActivity extends AppCompatActivity {
 
 	@OnClick(R.id.tv_set)
 	public void setup(View view) {
-		mFlipper.showNext();
+		welcomeScreen.forceShow();
 	}
 }

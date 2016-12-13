@@ -15,17 +15,26 @@ public class HeadActivity$$ViewBinder<T extends HeadActivity> implements ViewBin
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624212, "field 'iv_left' and method 'back'");
-    target.iv_left = finder.castView(view, 2131624212, "field 'iv_left'");
-    unbinder.view2131624212 = view;
+    view = finder.findRequiredView(source, 2131624218, "field 'iv_left' and method 'back'");
+    target.iv_left = finder.castView(view, 2131624218, "field 'iv_left'");
+    unbinder.view2131624218 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.back(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131624214, "field 'tv_title'");
-    target.tv_title = finder.castView(view, 2131624214, "field 'tv_title'");
+    view = finder.findRequiredView(source, 2131624220, "field 'tv_title'");
+    target.tv_title = finder.castView(view, 2131624220, "field 'tv_title'");
+    view = finder.findRequiredView(source, 2131624099, "field 'upload' and method 'upload'");
+    target.upload = finder.castView(view, 2131624099, "field 'upload'");
+    unbinder.view2131624099 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.upload(p0);
+      }
+    });
     return unbinder;
   }
 
@@ -36,7 +45,9 @@ public class HeadActivity$$ViewBinder<T extends HeadActivity> implements ViewBin
   protected static class InnerUnbinder<T extends HeadActivity> implements Unbinder {
     private T target;
 
-    View view2131624212;
+    View view2131624218;
+
+    View view2131624099;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -50,9 +61,11 @@ public class HeadActivity$$ViewBinder<T extends HeadActivity> implements ViewBin
     }
 
     protected void unbind(T target) {
-      view2131624212.setOnClickListener(null);
+      view2131624218.setOnClickListener(null);
       target.iv_left = null;
       target.tv_title = null;
+      view2131624099.setOnClickListener(null);
+      target.upload = null;
     }
   }
 }

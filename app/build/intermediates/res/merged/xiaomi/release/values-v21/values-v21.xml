@@ -80,7 +80,7 @@
     <color name="radioButton">#44a6f5</color>
     <color name="radio_button_selected_color">#ff33b5e5</color>
     <color name="radio_button_unselected_color">@android:color/transparent</color>
-    <color name="setting_blue">#419DE4</color>
+    <color name="setting_blue">#419de4</color>
     <color name="setting_line_color">#ccc</color>
     <color name="setting_text_color">#333</color>
     <color name="setting_white">#fff</color>

@@ -1,7 +1,15 @@
 [
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\login_cell_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\generated\\res\\pngs\\xiaomi\\release\\drawable-xxxhdpi\\login_cell_white_36dp.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\ic_pages_black_24dp.png",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_pages_black_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\ic_account_circle_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_account_circle_white_36dp.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\ic_free_breakfast_black_24dp.png",
@@ -32,6 +40,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_menu_white_24dp.png"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\login_account_box_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\generated\\res\\pngs\\xiaomi\\release\\drawable-xxxhdpi\\login_account_box_white_36dp.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\ic_person_pin_white_18dp.png",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_person_pin_white_18dp.png"
     },
@@ -48,8 +60,16 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\generated\\res\\pngs\\xiaomi\\release\\drawable-xxxhdpi\\bear.png"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\login_lock_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\generated\\res\\pngs\\xiaomi\\release\\drawable-xxxhdpi\\login_lock_white_36dp.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\ic_sync_black_24dp.png",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_sync_black_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\ic_lock_white_36dp.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_lock_white_36dp.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-xxxhdpi\\ic_portrait_black_24dp.png",
