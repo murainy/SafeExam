@@ -21,7 +21,7 @@ public final class R {
 		public static final int id_circle_menu_item_text = 0x7f0e0007;
 	}
 	public static final class layout {
-		public static final int circle_menu_item = 0x7f040031;
+		public static final int circle_menu_item = 0x7f040032;
 	}
 	public static final class menu {
 		public static final int main = 0x7f0f0000;
