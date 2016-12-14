@@ -2,24 +2,27 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/bg"
+              android:background="@color/air_speed_label"
               android:orientation="vertical"
               tools:context="com.murainy.safeexam.activitis.CircleActivity"
-              android:weightSum="1">
+              android:weightSum="1"
+              android:fitsSystemWindows="true">
 
     <TextView
         android:text="安全管理人员考试系统"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView11"
-        android:layout_margin="16dp"
         android:padding="16dp"
         android:background="@drawable/shape_corner"
         android:textSize="18sp"
         android:elevation="0dp"
         android:textAlignment="center"
         android:textColor="@drawable/midnightblue"
-        style="@style/SetupSpinnerItem"/>
+        style="@style/SetupSpinnerItem"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
 
     <com.zhy.view.CircleMenuLayout
         android:id="@+id/id_menulayout"

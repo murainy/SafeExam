@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.murainy.safeexam"
-    android:versionCode="18"
-    android:versionName="1.0.9" >
+    android:versionCode="20"
+    android:versionName="1.0.11" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -40,7 +40,7 @@
         <activity
             android:name="com.murainy.safeexam.activitis.LauncherActivity"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation"
             android:uiOptions="splitActionBarWhenNarrow" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,53 +54,53 @@
             android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation" />
         <activity
             android:name="com.murainy.safeexam.activitis.LoginActivity"
-            android:theme="@android:style/Theme.NoTitleBar"
+            android:theme="@style/ImageTranslucentTheme"
             android:windowSoftInputMode="stateHidden|stateUnchanged|adjustResize" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.RegisterActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.MainActivity"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.InformationActivity"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.ChangerPasswordActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.LookGradeActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.StartTestActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.AdminActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.AddPaperActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.TabmanActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.HeadActivity"
@@ -108,14 +108,15 @@
         <activity
             android:name="com.murainy.safeexam.activitis.CircleActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@style/ImageTranslucentTheme" />
         <activity
             android:name="com.murainy.safeexam.activitis.ResetPasswordActivity"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTop"
+            android:theme="@style/ImageTranslucentTheme" />
         <activity
             android:name="com.murainy.safeexam.activitis.UserBindPhoneActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar" />
+            android:theme="@style/ImageTranslucentTheme" />
         <activity
             android:name="com.murainy.safeexam.activitis.SettingsActivity"
             android:label="@string/title_activity_settings"
@@ -126,22 +127,26 @@
         </activity>
         <activity android:name="com.murainy.safeexam.activitis.GridActivity" >
         </activity>
-        <activity android:name="com.murainy.safeexam.activitis.ContentExamActivity" >
+        <activity
+            android:name="com.murainy.safeexam.activitis.ContentExamActivity"
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.AboutActivity"
-            android:theme="@style/WelcomeScreenTheme" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
-        <activity android:name="com.murainy.safeexam.activitis.HeaderAndFooterUseActivity" >
+        <activity
+            android:name="com.murainy.safeexam.activitis.SequenceActivity"
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.ExamActivity"
             android:label="@string/title_activity_eaxm"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.ErrorActivity"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
     </application>
 

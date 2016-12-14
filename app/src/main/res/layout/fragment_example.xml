@@ -6,7 +6,7 @@
                 tools:context="com.murainy.safeexam.view.DoneFragment"
                 android:gravity="center"
                 android:id="@+id/layout"
-                android:background="@color/air_speed_label">
+                android:elevation="1dp">
 
     <ImageView
         android:layout_width="match_parent"
@@ -16,8 +16,8 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_above="@+id/text"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/yule"/>
+        android:src="@drawable/cherry"
+        android:id="@+id/cherry"/>
 
     <TextView
         style="@style/WelcomeScreenText.Large.Centered"

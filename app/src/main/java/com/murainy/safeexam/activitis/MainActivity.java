@@ -37,7 +37,7 @@ import butterknife.OnClick;
 /**
  * Created by murainy on 2015/12/14.
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     private ListView paperList;
     private List<Paper> papers = new ArrayList<Paper>();

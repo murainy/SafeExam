@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:background="@android:color/white"
+              android:background="@color/air_speed_label"
               android:orientation="vertical"
-              android:weightSum="1">
+              android:weightSum="1"
+              android:fitsSystemWindows="true"
+              app:layout_collapseParallaxMultiplier="0.0">
 
     <include layout="@layout/include_header"/>
-    
+
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8.0dip" >
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center_vertical|center_horizontal"
             android:layout_marginTop="2.0dip"
-            android:padding="10.0dip"
             android:text="+86" />
 
         <EditText
             android:id="@+id/et_number"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10.0dip"
-            android:layout_marginRight="10.0dip"
-            android:layout_marginTop="2.0dip"
+            android:layout_height="48dp"
             android:layout_weight="1.0"
             android:background="#00000000"
             android:hint="请输入手机号码"
             android:maxLength="11"
-            android:padding="10.0dip"
             android:singleLine="true"
-            android:textColor="#ff666666"
+            android:textColor="@android:color/white"
             android:textColorHint="#ffbdbdbd"
-            android:textSize="14.0sp" />
+            android:textSize="14.0sp"
+            android:inputType="number"
+            android:gravity="left|center"
+            android:paddingLeft="16dp"/>
     </LinearLayout>
 
     <View
@@ -48,22 +50,23 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp" >
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
 
         <EditText
             android:id="@+id/et_input"
             android:layout_width="168dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="25dp"
             android:gravity="center"
             android:hint="请入验证码"
             android:inputType="number"
             android:maxLength="6"
             android:singleLine="false"
-            android:textColor="#ff666666"
-            android:textColorHint="#88b5b5b5"
+            android:textColor="#710501"
+            android:textColorHint="#b5b5b5"
             android:textSize="14.0sp"
-            style="@android:style/TextAppearance.Holo.Widget"/>
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="16dp"/>
 
         <TextView
 
@@ -71,16 +74,16 @@
             style="@style/common_button_style"
             android:layout_width="110dp"
             android:layout_height="40dp"
-            android:alpha="0.8"
             android:clickable="true"
-            android:padding="10.0dip"
+            android:padding="8dp"
             android:text="发送验证码"
             android:textColor="@android:color/white"
-            android:textSize="13.0sp"
-            android:textStyle="bold"
+            android:textSize="14sp"
             android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/et_input"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="15dp"/>
     </RelativeLayout>
 
     <TextView
@@ -92,8 +95,8 @@
         android:gravity="center"
         android:text="绑定手机号"
         android:textColor="@color/white"
-        android:textSize="15.0sp"
-        android:layout_marginTop="30dp"
-        />
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"/>
 
 </LinearLayout>

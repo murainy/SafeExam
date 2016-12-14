@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent" android:layout_height="match_parent"
-              android:background="@color/theme_bg_color"
-              android:orientation="vertical">
+              android:background="@color/air_speed_label"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+    >
 
     <include
         android:layout_width="wrap_content"

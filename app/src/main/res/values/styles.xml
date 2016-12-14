@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="WelcomeScreenTheme">
         <!-- Customize your theme here. -->
         <item name="android:colorForeground">@color/fbutton_color_green_sea</item>
         <item name="android:textColorPrimary">@color/accent_material_dark</item>
         <!-- Customize your theme here. -->
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="welcomeButtonSkipText">Skip</item>
-        <item name="welcomeButtonDoneText">Start</item>
+        <item name="welcomeButtonSkipText">跳过</item>
+        <item name="welcomeButtonDoneText">开始</item>
         <!-- toolbar（actionbar）颜色 -->
         <item name="colorPrimary">@color/blue</item>
         <!-- 状态栏颜色 -->
         <item name="colorPrimaryDark">#3A5FCD</item>
         <!-- 窗口的背景颜色 -->
-        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowBackground">@color/air_speed_label</item>
         <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
+    </style>
+
+    <style name="ImageTranslucentTheme" parent="AppTheme">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
     </style>
 
     <style name="MenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
@@ -107,6 +114,7 @@
         <item name="android:background">@color/air_speed_label</item>
 
     </style>
+
     <style name="line_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>

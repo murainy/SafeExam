@@ -8,7 +8,8 @@
     android:layout_height="match_parent"
     tools:context="com.murainy.safeexam.activitis.ErrorActivity"
 
-    android:background="@color/colorPrimary">
+    android:background="@color/air_speed_label"
+    android:fitsSystemWindows="true">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -17,7 +18,8 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverlay"/>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -101,8 +103,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="50dp"
-                android:background="@color/colorPrimary"
+                android:padding="32dp"
                 android:text="@string/xxx"
                 android:textColor="@android:color/white"/>
 

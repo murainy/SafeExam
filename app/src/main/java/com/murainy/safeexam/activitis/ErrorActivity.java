@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +32,9 @@ public class ErrorActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_error);
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		//隐藏状态栏
+		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 		assert toolbar != null;
 		toolbar.inflateMenu(R.menu.menu_error);//设置右上角的填充菜单
 		// App Logo

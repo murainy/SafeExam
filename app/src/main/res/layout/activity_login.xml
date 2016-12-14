@@ -71,7 +71,8 @@
                 android:checked="true"
                 android:layout_gravity="center"
                 style="@style/AppTheme"
-                android:textColor="@color/air_speed_label"/>
+                android:textColor="@color/air_speed_label"
+                android:textColorLink="?attr/colorButtonNormal"/>
         </LinearLayout>
 
         <Button

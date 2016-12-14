@@ -2,6 +2,7 @@ package com.murainy.safeexam.activitis;
 
 import android.support.v4.app.Fragment;
 
+import com.murainy.safeexam.view.DoneFragment;
 import com.murainy.safeexam.view.ExampleFragment;
 import com.stephentuso.welcome.BasicPage;
 import com.stephentuso.welcome.FragmentWelcomePage;
@@ -21,6 +22,7 @@ public class SplashActivity extends WelcomeActivity {
 		return new WelcomeConfiguration.Builder(this)
 				.defaultTitleTypefacePath("Montserrat-Bold.ttf")
 				.defaultHeaderTypefacePath("Montserrat-Bold.ttf")
+				.defaultBackgroundColor(R.color.air_speed_label)
 				.page(new TitlePage(R.drawable.bluebg, "专注·无我·做自己")
 						.background(R.color.air_speed_label)
 
@@ -35,6 +37,12 @@ public class SplashActivity extends WelcomeActivity {
 					@Override
 					protected Fragment fragment() {
 						return new ExampleFragment();
+					}
+				})
+				.page(new FragmentWelcomePage() {
+					@Override
+					protected Fragment fragment() {
+						return new DoneFragment();
 					}
 				})
 				.page(new BasicPage(R.drawable.fish, "玩物养志·淡泊宁静", "花朵再美也不过是一朵花而已，并无特别之处。")

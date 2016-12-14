@@ -14,8 +14,7 @@
         android:layout_height="200dp"
         android:flipInterval="2000"
         android:foregroundGravity="center_vertical|center_horizontal"
-        android:layout_margin="16dp"
-        >
+        android:layout_marginTop="24dp">
     </ViewFlipper>
 
     <com.facebook.shimmer.ShimmerFrameLayout

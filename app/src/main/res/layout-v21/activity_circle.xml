@@ -5,7 +5,8 @@
               android:background="@drawable/bg"
               android:orientation="vertical"
               tools:context="com.murainy.safeexam.activitis.CircleActivity"
-              android:weightSum="1">
+              android:weightSum="1"
+              android:fitsSystemWindows="true">
 
     <TextView
         android:text="安全管理人员考试系统"

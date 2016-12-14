@@ -16,7 +16,7 @@ import com.murainy.safeexam.adapter.QuickAdapter;
 /**
  * https://github.com/CymChad/BaseRecyclerViewAdapterHelper
  */
-public class HeaderAndFooterUseActivity extends Activity {
+public class SequenceActivity extends Activity {
 
     private RecyclerView mRecyclerView;
     private QuickAdapter mQuickAdapter;
@@ -25,7 +25,7 @@ public class HeaderAndFooterUseActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_header_and_footer_use);
+        setContentView(R.layout.activity_sequence);
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_list);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         initAdapter();
@@ -36,25 +36,27 @@ public class HeaderAndFooterUseActivity extends Activity {
 
     private View getView() {
         View view = getLayoutInflater().inflate(R.layout.include_header, null);
+        view.findViewById(R.id.tv_title).setVisibility(View.GONE);
         view.findViewById(R.id.tv_right).setVisibility(View.GONE);
         view.setLayoutParams(new DrawerLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HeaderAndFooterUseActivity.this, "click View", Toast.LENGTH_LONG).show();
+                Toast.makeText(SequenceActivity.this, "Welcome to here.", Toast.LENGTH_LONG).show();
+
             }
         });
         return view;
     }
 
     private void initAdapter() {
-        mQuickAdapter = new QuickAdapter(HeaderAndFooterUseActivity.this, PAGE_SIZE);
+        mQuickAdapter = new QuickAdapter(SequenceActivity.this, PAGE_SIZE);
         mQuickAdapter.openLoadAnimation();
         mRecyclerView.setAdapter(mQuickAdapter);
         mQuickAdapter.setOnRecyclerViewItemClickListener(new BaseQuickAdapter.OnRecyclerViewItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Toast.makeText(HeaderAndFooterUseActivity.this, "" + Integer.toString(position), Toast.LENGTH_LONG).show();
+                Toast.makeText(SequenceActivity.this, "" + Integer.toString(position), Toast.LENGTH_LONG).show();
             }
         });
     }

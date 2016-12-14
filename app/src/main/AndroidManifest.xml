@@ -18,12 +18,13 @@
     <!-- 允许完全退出 -->
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
 
-    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
-    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <application
         android:name=".SafeExam"
         android:allowBackup="true"
@@ -33,7 +34,7 @@
         <activity
             android:name=".activitis.LauncherActivity"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation"
             android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -47,55 +48,55 @@
             android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation"/>
         <activity
             android:name=".activitis.LoginActivity"
-            android:theme="@android:style/Theme.NoTitleBar"
+            android:theme="@style/ImageTranslucentTheme"
             android:windowSoftInputMode="stateHidden|stateUnchanged|adjustResize">
         </activity>
         <activity
             android:name=".activitis.RegisterActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.MainActivity"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.InformationActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.ChangerPasswordActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.LookGradeActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.StartTestActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.AdminActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
 
         <activity
             android:name=".activitis.AddPaperActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
 
         <activity
             android:name=".activitis.TabmanActivity"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@style/ImageTranslucentTheme"
+            android:launchMode="singleTop">
 
         </activity>
         <activity
@@ -103,41 +104,49 @@
             android:launchMode="singleTop"/>
         <activity
             android:name=".activitis.CircleActivity"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar"/>
+            android:theme="@style/ImageTranslucentTheme"
+            android:launchMode="singleTop"/>
         <activity
             android:name=".activitis.ResetPasswordActivity"
-            android:launchMode="singleTop"/>
+            android:launchMode="singleTop"
+            android:theme="@style/ImageTranslucentTheme"/>
         <activity
             android:name=".activitis.UserBindPhoneActivity"
             android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar"/>
+            android:theme="@style/ImageTranslucentTheme"/>
         <activity
             android:name=".activitis.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".activitis.TabmanActivity" >
+            android:parentActivityName=".activitis.TabmanActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activitis.TabmanActivity"/>
         </activity>
         <activity android:name=".activitis.GridActivity">
+
         </activity>
-        <activity android:name=".activitis.ContentExamActivity">
+        <activity
+            android:name=".activitis.ContentExamActivity"
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.AboutActivity"
-            android:theme="@style/WelcomeScreenTheme">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
-        <activity android:name=".activitis.HeaderAndFooterUseActivity">
+        <activity
+            android:name=".activitis.SequenceActivity"
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.ExamActivity"
             android:label="@string/title_activity_eaxm"
-            android:theme="@style/AppTheme">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
-        <activity android:name=".activitis.ErrorActivity"
-                  android:theme="@style/AppTheme">
+        <activity
+            android:name=".activitis.ErrorActivity"
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
+
     </application>
 
 </manifest>

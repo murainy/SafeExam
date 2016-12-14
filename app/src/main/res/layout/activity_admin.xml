@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/theme_bg_color">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/air_speed_label"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -10,27 +13,43 @@
         android:background="@color/blue">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/base_action_bar_height"
             android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
             android:text="@string/select_paper"
-            android:textSize="20sp"
-            android:textColor="@color/base_color_text_white" android:layout_margin="5dp" android:gravity="center_vertical" android:id="@+id/textView"/>
+            android:textColor="@color/base_color_text_white"
+            android:textSize="20sp"/>
+
         <Button
             android:id="@+id/add_paper"
             style="@style/common_button_style"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/base_action_bar_height"
-            android:gravity="center"
-            android:text="@string/add_paper"
-            android:textColor="@color/base_color_text_white"
-            android:textSize="@dimen/text_size_large"
             android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"/>
-        <Button style="@style/common_button_style" android:id="@+id/update_paper" android:layout_width="wrap_content" android:layout_height="@dimen/base_action_bar_height" android:gravity="center" android:text="@string/update_paper" android:textColor="@color/base_color_text_white" android:textSize="@dimen/text_size_large" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" android:layout_margin="5dp"/>
+            android:gravity="center"
+            android:text="@string/add_paper"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large"/>
+
+        <Button
+            android:id="@+id/update_paper"
+            style="@style/common_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/update_paper"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large"/>
 
     </RelativeLayout>
 
@@ -50,7 +69,7 @@
         android:dividerHeight="2dp"
         android:fadingEdgeLength="0dp"
         android:fastScrollEnabled="true"
-        android:scrollbars="vertical"
-        android:paddingBottom="10dp" />
+        android:paddingBottom="10dp"
+        android:scrollbars="vertical"/>
 
 </LinearLayout>

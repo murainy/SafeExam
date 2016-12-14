@@ -1,5 +1,6 @@
 package com.murainy.safeexam.activitis;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -23,10 +24,8 @@ import com.murainy.safeexam.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Created by sunfusheng on 16/4/24.
- */
-public class AboutActivity extends AppCompatActivity {
+
+public class AboutActivity extends Activity {
 
     @BindView(R.id.tv_title)
     TextView tv_title;
@@ -101,14 +100,6 @@ public class AboutActivity extends AppCompatActivity {
         return "";
     }
 
-    public void initToolBar(Toolbar toolbar, boolean homeAsUpEnabled, String title) {
-        toolbar.setTitle(title);
-        setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(homeAsUpEnabled);
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
