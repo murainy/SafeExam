@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:2:1-152:12
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:2:1-153:12
 	package
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:3:11-41
 		INJECTED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml
@@ -78,7 +78,7 @@ ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:26:22-76
 application
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:28:5-150:19
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:28:5-151:19
 MERGED from [:circleimageview-release:] E:\AndroidStudioProjects\SafeExam1.0\app\build\intermediates\exploded-aar\circleimageview-release\AndroidManifest.xml:9:5-20
 MERGED from [:circle-menu:] E:\AndroidStudioProjects\SafeExam1.0\app\build\intermediates\exploded-aar\circle-menu\AndroidManifest.xml:11:5-15:19
 MERGED from [:fancybuttons-release:] E:\AndroidStudioProjects\SafeExam1.0\app\build\intermediates\exploded-aar\fancybuttons-release\AndroidManifest.xml:11:5-20
@@ -164,9 +164,9 @@ ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml
 activity#com.murainy.safeexam.activitis.InformationActivity
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:64:9-68:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:66:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:67:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:67:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:66:13-57
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:65:13-58
 activity#com.murainy.safeexam.activitis.ChangerPasswordActivity
@@ -218,85 +218,87 @@ ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:97:13-53
 activity#com.murainy.safeexam.activitis.HeadActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:102:9-104:45
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:102:9-105:45
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:104:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:105:13-43
+	android:theme
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:104:13-57
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:103:13-51
 activity#com.murainy.safeexam.activitis.CircleActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:105:9-108:45
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:106:9-109:45
+	android:label
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:108:13-58
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:108:13-43
-	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:107:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:109:13-43
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:106:13-53
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:107:13-53
 activity#com.murainy.safeexam.activitis.ResetPasswordActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:109:9-112:59
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:110:9-113:59
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:111:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:112:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:112:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:113:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:110:13-60
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:111:13-60
 activity#com.murainy.safeexam.activitis.UserBindPhoneActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:113:9-116:59
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:114:9-117:59
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:115:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:116:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:116:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:117:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:114:13-60
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:115:13-60
 activity#com.murainy.safeexam.activitis.SettingsActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:117:9-124:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:118:9-125:20
 	android:label
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:119:13-60
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:120:13-60
 	android:parentActivityName
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:120:13-67
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:121:13-67
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:118:13-55
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:119:13-55
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:121:13-123:60
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:122:13-124:60
 	android:value
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:123:17-58
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:124:17-58
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:122:17-63
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:123:17-63
 activity#com.murainy.safeexam.activitis.GridActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:125:9-127:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:126:9-128:20
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:125:19-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:126:19-57
 activity#com.murainy.safeexam.activitis.ContentExamActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:128:9-131:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:129:9-132:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:130:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:131:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:129:13-58
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:130:13-58
 activity#com.murainy.safeexam.activitis.AboutActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:132:9-135:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:133:9-136:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:134:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:135:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:133:13-52
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:134:13-52
 activity#com.murainy.safeexam.activitis.SequenceActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:136:9-139:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:137:9-140:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:138:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:139:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:137:13-55
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:138:13-55
 activity#com.murainy.safeexam.activitis.ExamActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:140:9-144:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:141:9-145:20
 	android:label
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:142:13-56
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:143:13-56
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:143:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:144:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:141:13-51
-activity#com.murainy.safeexam.activitis.ErrorActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:145:9-148:20
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:142:13-51
+activity#com.murainy.safeexam.activitis.KnowledgeActivity
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:146:9-149:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:147:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:148:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:146:13-52
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:147:13-56
 uses-sdk
 INJECTED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [:circleimageview-release:] E:\AndroidStudioProjects\SafeExam1.0\app\build\intermediates\exploded-aar\circleimageview-release\AndroidManifest.xml:5:5-7:41

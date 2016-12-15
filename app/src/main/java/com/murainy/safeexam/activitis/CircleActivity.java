@@ -32,7 +32,7 @@ public class CircleActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		//自已切换布局文件看效果
 		setContentView(R.layout.activity_circle);
-//		setContentView(R.layout.activity_main);
+
 
 		mCircleMenuLayout = (CircleMenuLayout) findViewById(R.id.id_menulayout);
 		mCircleMenuLayout.setMenuItemIconsAndTexts(mItemImgs, mItemTexts);
@@ -45,7 +45,7 @@ public class CircleActivity extends Activity {
 						startActivity(new Intent(CircleActivity.this, ResetPasswordActivity.class));
 						break;
 					case 1:
-						startActivity(new Intent(CircleActivity.this, ErrorActivity.class));
+						startActivity(new Intent(CircleActivity.this, KnowledgeActivity.class));
 						break;
 					case 2:
 						startActivity(new Intent(CircleActivity.this, SequenceActivity.class));

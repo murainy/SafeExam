@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.murainy.safeexam"
-    android:versionCode="21"
-    android:versionName="1.0.12" >
+    android:versionCode="22"
+    android:versionName="1.0.13" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -104,11 +104,12 @@
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.HeadActivity"
-            android:launchMode="singleTop" />
-        <activity
-            android:name="com.murainy.safeexam.activitis.CircleActivity"
             android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme" />
+        <activity
+            android:name="com.murainy.safeexam.activitis.CircleActivity"
+            android:label="@string/image_translucent_bar"
+            android:launchMode="singleTop" />
         <activity
             android:name="com.murainy.safeexam.activitis.ResetPasswordActivity"
             android:launchMode="singleTop"
@@ -145,7 +146,7 @@
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
-            android:name="com.murainy.safeexam.activitis.ErrorActivity"
+            android:name="com.murainy.safeexam.activitis.KnowledgeActivity"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
     </application>

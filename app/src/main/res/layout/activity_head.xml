@@ -1,8 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textAlignment="gravity">
+                android:textAlignment="gravity"
+                android:background="@drawable/index_bg_002"
+                android:fitsSystemWindows="true">
 
     <include
         android:id="@+id/include"
@@ -13,7 +14,6 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:background="@color/air_speed_label"
         android:orientation="vertical"
         android:padding="16dp">
 

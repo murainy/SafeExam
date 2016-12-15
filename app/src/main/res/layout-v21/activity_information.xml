@@ -3,25 +3,20 @@
               xmlns:tools="http://schemas.android.com/tools" android:id="@+id/layout_all"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@color/theme_bg_color"
+              android:background="@drawable/index_bg_003"
               android:orientation="vertical"
               android:weightSum="1"
               tools:context=".activitis.InformationActivity"
-              android:fitsSystemWindows="true">
+              android:fitsSystemWindows="true"
+              android:paddingTop="25dp">
 
     <include layout="@layout/include_header"
              android:layout_width="wrap_content"
-             android:layout_height="48dp"/>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/jdt" android:src="@drawable/base_horization_line"/>
+             android:layout_height="50dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/index_bg_001"
         android:orientation="vertical" android:weightSum="1"
         android:padding="16dp">
         <de.hdodenhof.circleimageview.CircleImageView

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SafeExam</string>
+    <string name="image_translucent_bar">image_translucent_bar</string>
     <string name="instridution">说明</string>
     <string name="person_name">Hippophae</string>
     <string name="fisfh">完成</string>

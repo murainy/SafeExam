@@ -63,8 +63,8 @@
         </activity>
         <activity
             android:name=".activitis.InformationActivity"
-            android:launchMode="singleTop"
-            android:theme="@style/ImageTranslucentTheme">
+            android:theme="@style/ImageTranslucentTheme"
+            android:launchMode="singleTop">
         </activity>
         <activity
             android:name=".activitis.ChangerPasswordActivity"
@@ -101,10 +101,11 @@
         </activity>
         <activity
             android:name=".activitis.HeadActivity"
+            android:theme="@style/ImageTranslucentTheme"
             android:launchMode="singleTop"/>
         <activity
             android:name=".activitis.CircleActivity"
-            android:theme="@style/ImageTranslucentTheme"
+            android:label="@string/image_translucent_bar"
             android:launchMode="singleTop"/>
         <activity
             android:name=".activitis.ResetPasswordActivity"
@@ -143,7 +144,7 @@
             android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
-            android:name=".activitis.ErrorActivity"
+            android:name=".activitis.KnowledgeActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
 

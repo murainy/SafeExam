@@ -3,7 +3,7 @@
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:background="@color/air_speed_label"
+              android:background="@drawable/index_bg_003"
               android:orientation="vertical"
               android:weightSum="1"
               android:fitsSystemWindows="true"

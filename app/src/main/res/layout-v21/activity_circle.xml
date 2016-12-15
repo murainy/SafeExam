@@ -2,11 +2,12 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/bg"
               android:orientation="vertical"
               tools:context="com.murainy.safeexam.activitis.CircleActivity"
               android:weightSum="1"
-              android:fitsSystemWindows="true">
+              android:fitsSystemWindows="true"
+              android:theme="@style/ImageTranslucentTheme"
+              android:background="@drawable/index_bg_001">
 
     <TextView
         android:text="安全管理人员考试系统"
@@ -25,7 +26,7 @@
     <com.zhy.view.CircleMenuLayout
         android:id="@+id/id_menulayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/circle_bg3"
         android:layout_margin="16dp"
         android:padding="16dp">

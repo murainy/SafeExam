@@ -20,9 +20,6 @@
 
     <style name="ImageTranslucentTheme" parent="AppTheme">
         <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-
     </style>
 
     <style name="MenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
@@ -125,4 +122,6 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
 </resources>

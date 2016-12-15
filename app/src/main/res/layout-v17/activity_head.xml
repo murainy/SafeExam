@@ -1,7 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:textAlignment="gravity">
+                android:layout_height="match_parent"
+                android:textAlignment="gravity"
+                android:background="@drawable/index_bg_002"
+                android:fitsSystemWindows="true">
     <include layout="@layout/include_header" android:id="@+id/include"/>
 
     <LinearLayout
@@ -9,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        android:background="@color/air_speed_label"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true">
 
