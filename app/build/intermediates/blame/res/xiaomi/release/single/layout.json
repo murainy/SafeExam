@@ -56,6 +56,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_activity_photo_preview.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_activity_photo_preview.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\activity_sequence.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\activity_sequence.xml"
     },
@@ -78,6 +82,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\activity_look_grade.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\activity_look_grade.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_item_photo_folder.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_item_photo_folder.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\drawer_header.xml",
@@ -108,12 +116,12 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\abc_action_bar_title_item.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\notification_template_part_chronometer.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\abc_action_bar_title_item.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\design_layout_snackbar_include.xml",
@@ -132,12 +140,12 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\activity_change_password.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\design_text_input_password_icon.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\layout\\design_text_input_password_icon.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\preference_information.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\24.2.1\\res\\layout\\preference_information.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\design_text_input_password_icon.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\design_navigation_item.xml",
@@ -224,6 +232,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\layout\\wel_activity_welcome.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_toolbar_viewstub.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_toolbar_viewstub.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\status_griditem_layout.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\status_griditem_layout.xml"
     },
@@ -242,6 +254,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\tweet.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\tweet.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_activity_photo_picker.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_activity_photo_picker.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\notification_template_big_media_narrow_custom.xml",
@@ -344,8 +360,20 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\notification_action.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_al_photo_picker.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_al_photo_picker.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_dialog_loading.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_dialog_loading.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\abc_action_mode_close_item_material.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_item_nine_photo.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_item_nine_photo.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\preference_dialog_edittext.xml",
@@ -358,6 +386,14 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\activity_add_paper.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\activity_add_paper.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_activity_photo_picker_preview.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_activity_photo_picker_preview.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_item_photo_picker.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_item_photo_picker.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\activity_tabman.xml",
@@ -390,6 +426,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\notification_template_big_media.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_pw_photo_folder.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_pw_photo_folder.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\status_grid_layout.xml",
@@ -440,6 +480,14 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.stephentuso\\welcome\\1.1.0\\res\\layout\\wel_fragment_basic.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_al_photo_picker_preview.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_al_photo_picker_preview.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_item_photo_camera.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_item_photo_camera.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\nav_header_eaxm.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\nav_header_eaxm.xml"
     },
@@ -458,6 +506,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\activity_circle.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\layout\\activity_circle.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\bga_pp_al_photo_preview.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\layout\\bga_pp_al_photo_preview.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout\\notification_action_tombstone.xml",

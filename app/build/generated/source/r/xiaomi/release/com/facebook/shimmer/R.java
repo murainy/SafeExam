@@ -8,21 +8,21 @@ package com.facebook.shimmer;
 
 public final class R {
 	public static final class attr {
-		public static final int angle = 0x7f01015d;
-		public static final int auto_start = 0x7f010157;
-		public static final int base_alpha = 0x7f010158;
-		public static final int dropoff = 0x7f01015e;
-		public static final int duration = 0x7f010159;
-		public static final int fixed_height = 0x7f010160;
-		public static final int fixed_width = 0x7f01015f;
-		public static final int intensity = 0x7f010161;
-		public static final int relative_height = 0x7f010163;
-		public static final int relative_width = 0x7f010162;
-		public static final int repeat_count = 0x7f01015a;
-		public static final int repeat_delay = 0x7f01015b;
-		public static final int repeat_mode = 0x7f01015c;
-		public static final int shape = 0x7f010164;
-		public static final int tilt = 0x7f010165;
+		public static final int angle = 0x7f010176;
+		public static final int auto_start = 0x7f010170;
+		public static final int base_alpha = 0x7f010171;
+		public static final int dropoff = 0x7f010177;
+		public static final int duration = 0x7f010172;
+		public static final int fixed_height = 0x7f010179;
+		public static final int fixed_width = 0x7f010178;
+		public static final int intensity = 0x7f01017a;
+		public static final int relative_height = 0x7f01017c;
+		public static final int relative_width = 0x7f01017b;
+		public static final int repeat_count = 0x7f010173;
+		public static final int repeat_delay = 0x7f010174;
+		public static final int repeat_mode = 0x7f010175;
+		public static final int shape = 0x7f01017d;
+		public static final int tilt = 0x7f01017e;
 	}
 	public static final class id {
 		public static final int cw_0 = 0x7f0e0044;
@@ -35,7 +35,7 @@ public final class R {
 		public static final int reverse = 0x7f0e0043;
 	}
 	public static final class styleable {
-		public static final int[] ShimmerFrameLayout = { 0x7f010157, 0x7f010158, 0x7f010159, 0x7f01015a, 0x7f01015b, 0x7f01015c, 0x7f01015d, 0x7f01015e, 0x7f01015f, 0x7f010160, 0x7f010161, 0x7f010162, 0x7f010163, 0x7f010164, 0x7f010165 };
+		public static final int[] ShimmerFrameLayout = { 0x7f010170, 0x7f010171, 0x7f010172, 0x7f010173, 0x7f010174, 0x7f010175, 0x7f010176, 0x7f010177, 0x7f010178, 0x7f010179, 0x7f01017a, 0x7f01017b, 0x7f01017c, 0x7f01017d, 0x7f01017e };
 		public static final int ShimmerFrameLayout_angle = 6;
 		public static final int ShimmerFrameLayout_auto_start = 0;
 		public static final int ShimmerFrameLayout_base_alpha = 1;

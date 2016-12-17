@@ -92,6 +92,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_cancel_bg_selector.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_selector_item_folder.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_selector_item_folder.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\setting_mid_layout_selector.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable\\setting_mid_layout_selector.xml"
     },
@@ -284,6 +288,14 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_cancel_bg_tap.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_selector_btn_confirm.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_selector_btn_confirm.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_rotate_progress_bar.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_rotate_progress_bar.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bg_btn_press_color_1.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable\\bg_btn_press_color_1.xml"
     },
@@ -400,6 +412,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\ic_launcher.png",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_ok_bg_normal.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_ok_bg_normal.xml"
     },
@@ -446,6 +462,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_close_bg_selector.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_close_bg_selector.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\shape_red_corners_button_pressed.xml",
@@ -566,6 +586,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\err.png",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable\\err.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_shape_dialog_bg.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_shape_dialog_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ic_ab_back_material.xml",

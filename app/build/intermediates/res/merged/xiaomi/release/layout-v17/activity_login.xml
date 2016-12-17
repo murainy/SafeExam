@@ -3,7 +3,6 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/theme_bg_color">
@@ -23,7 +22,8 @@
             app:civ_border_color="@color/dark_grey"
             app:civ_border_overlay="@color/opaque_white"
             app:civ_border_width="2dp"
-            app:civ_fill_color="@color/transparent_light" android:alpha="0.6"/>
+            app:civ_fill_color="@color/transparent_light"
+            android:alpha="0.6"/>
         <LinearLayout
             android:layout_width="264dp"
             android:layout_height="wrap_content"

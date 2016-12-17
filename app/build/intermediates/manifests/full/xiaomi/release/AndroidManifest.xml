@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.murainy.safeexam"
-    android:versionCode="22"
-    android:versionName="1.0.13" >
+    android:versionCode="23"
+    android:versionName="1.0.14" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -149,6 +149,43 @@
             android:name="com.murainy.safeexam.activitis.KnowledgeActivity"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
+
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="4db8eb826c" />
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.0" />
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="SafeExam" />
+        <!-- 配置Bugly调试模式（true或者false） -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="isDebug" />
+
+        <!-- 图片预览界面 -->
+        <activity
+            android:name="cn.bingoogolapple.photopicker.activity.BGAPhotoPreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/BGAPPTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- 图片选择界面 -->
+        <activity
+            android:name="cn.bingoogolapple.photopicker.activity.BGAPhotoPickerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/BGAPPTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- 图片选择预览界面 -->
+        <activity
+            android:name="cn.bingoogolapple.photopicker.activity.BGAPhotoPickerPreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/BGAPPTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>

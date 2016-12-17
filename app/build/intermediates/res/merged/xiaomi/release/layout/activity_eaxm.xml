@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     android:background="@drawable/index_bg_003"
     android:fitsSystemWindows="true">
-<android.support.v4.widget.DrawerLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:openDrawer="start"
-    android:background="@drawable/index_bg_002"
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start"
+        android:background="@drawable/index_bg_002"
     >
 
     <include
@@ -32,7 +33,5 @@
         app:menu="@menu/menu_eaxm_drawer"/>
 
 
-
-
-</android.support.v4.widget.DrawerLayout>
-    </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

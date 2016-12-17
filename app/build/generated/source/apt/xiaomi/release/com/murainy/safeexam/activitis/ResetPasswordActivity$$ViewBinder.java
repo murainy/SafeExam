@@ -15,17 +15,17 @@ public class ResetPasswordActivity$$ViewBinder<T extends ResetPasswordActivity> 
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624217, "field 'iv_left' and method 'back'");
-    target.iv_left = finder.castView(view, 2131624217, "field 'iv_left'");
-    unbinder.view2131624217 = view;
+    view = finder.findRequiredView(source, 2131624242, "field 'iv_left' and method 'back'");
+    target.iv_left = finder.castView(view, 2131624242, "field 'iv_left'");
+    unbinder.view2131624242 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.back(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131624219, "field 'tv_title'");
-    target.tv_title = finder.castView(view, 2131624219, "field 'tv_title'");
+    view = finder.findRequiredView(source, 2131624244, "field 'tv_title'");
+    target.tv_title = finder.castView(view, 2131624244, "field 'tv_title'");
     view = finder.findRequiredView(source, 2131624139, "field 'et_phone'");
     target.et_phone = finder.castView(view, 2131624139, "field 'et_phone'");
     view = finder.findRequiredView(source, 2131624140, "field 'et_code'");
@@ -60,7 +60,7 @@ public class ResetPasswordActivity$$ViewBinder<T extends ResetPasswordActivity> 
   protected static class InnerUnbinder<T extends ResetPasswordActivity> implements Unbinder {
     private T target;
 
-    View view2131624217;
+    View view2131624242;
 
     View view2131624141;
 
@@ -78,7 +78,7 @@ public class ResetPasswordActivity$$ViewBinder<T extends ResetPasswordActivity> 
     }
 
     protected void unbind(T target) {
-      view2131624217.setOnClickListener(null);
+      view2131624242.setOnClickListener(null);
       target.iv_left = null;
       target.tv_title = null;
       target.et_phone = null;

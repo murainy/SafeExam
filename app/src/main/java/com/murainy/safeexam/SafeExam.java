@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.murainy.safeexam.Utils.CrashHandler;
 import com.murainy.safeexam.beans.Student;
+import com.tencent.bugly.crashreport.CrashReport;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobConfig;
@@ -41,6 +42,8 @@ public class SafeExam extends Application {
          Bmob.initialize(config);
 
         initData();
+//异常报告
+        CrashReport.initCrashReport(getApplicationContext(), "efd91e37-2d6a-42ef-9532-b1e7108190f9", false);
     }
 
     private void initData() {

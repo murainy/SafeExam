@@ -37,7 +37,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 		assert toolbar != null;
 		toolbar.inflateMenu(R.menu.menu_error);//设置右上角的填充菜单
 		// App Logo
-		toolbar.setLogo(R.drawable.ic_launcher);
+		toolbar.setLogo(R.drawable.logo);
 		// Title
 		toolbar.setTitle("SafeExam2016");
 		// Sub Title
@@ -47,13 +47,14 @@ public class KnowledgeActivity extends AppCompatActivity {
 		toolbar.setNavigationIcon(R.drawable.back_icon_selector);
 		// Menu item click 的監聽事件一樣要設定在 setSupportActionBar 才有作用
 		toolbar.setOnMenuItemClickListener(onMenuItemClick);
-		toolbar.setBackgroundColor(getResources().getColor(R.color.transparent));
+		toolbar.setBackgroundColor(getResources().getColor(R.color.air_speed_label));
 		FancyButton facebookLoginBtn = new FancyButton(this);
 		facebookLoginBtn.setText("检查");
 		facebookLoginBtn.setBackgroundColor(Color.parseColor("#3b5998"));
 		facebookLoginBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
 		facebookLoginBtn.setTextSize(15);
 		facebookLoginBtn.setRadius(20);
+		facebookLoginBtn.setMinimumWidth(96);
 		facebookLoginBtn.setIconResource("\uf082");
 		facebookLoginBtn.setIconPosition(FancyButton.POSITION_LEFT);
 		facebookLoginBtn.setFontIconSize(20);
@@ -72,6 +73,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 		signupBtn.setTextSize(15);
 		signupBtn.setRadius(20);
 		signupBtn.setFontIconSize(20);
+		signupBtn.setMinimumWidth(96);
 		signupBtn.setIconPosition(FancyButton.POSITION_LEFT);
 		signupBtn.setOnClickListener(new View.OnClickListener() {
 			@Override

@@ -25,6 +25,7 @@ import com.murainy.safeexam.beans.Student;
 import com.murainy.safeexam.view.FontManager;
 
 import com.stephentuso.welcome.WelcomeHelper;
+import com.tencent.bugly.crashreport.CrashReport;
 
 
 import butterknife.BindView;
@@ -230,5 +231,6 @@ public class LauncherActivity extends AppCompatActivity {
 	@OnClick(R.id.tv_set)
 	public void setup(View view) {
 		welcomeScreen.forceShow();
+		CrashReport.testJavaCrash();
 	}
 }
