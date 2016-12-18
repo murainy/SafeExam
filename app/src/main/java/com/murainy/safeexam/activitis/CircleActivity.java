@@ -20,7 +20,7 @@ public class CircleActivity extends Activity {
 	private CircleMenuLayout mCircleMenuLayout;
 
 	private String[] mItemTexts = new String[]{"安全资讯 ", "安全知识", "顺序练习",
-			"模拟考试", "错题练习", "设置", "关于"};
+			"模拟考试", "错题练习", "考试内容", "关于"};
 	private int[] mItemImgs = new int[]{R.drawable.home_mbank_1_normal,
 			R.drawable.home_mbank_2_normal, R.drawable.home_mbank_3_normal,
 			R.drawable.home_mbank_4_normal, R.drawable.home_mbank_5_normal,

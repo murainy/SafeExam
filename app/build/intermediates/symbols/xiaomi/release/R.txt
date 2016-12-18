@@ -1947,7 +1947,7 @@ int menu bga_pp_menu_photo_preview 0x7f0f0002
 int menu main 0x7f0f0003
 int menu menu_eaxm 0x7f0f0004
 int menu menu_eaxm_drawer 0x7f0f0005
-int menu menu_error 0x7f0f0006
+int menu menu_knowledge 0x7f0f0006
 int mipmap bga_pp_ic_arrow_down 0x7f030000
 int mipmap bga_pp_ic_cb_checked 0x7f030001
 int mipmap bga_pp_ic_cb_normal 0x7f030002

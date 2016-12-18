@@ -4932,7 +4932,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int main=0x7f0f0003;
         public static final int menu_eaxm=0x7f0f0004;
         public static final int menu_eaxm_drawer=0x7f0f0005;
-        public static final int menu_error=0x7f0f0006;
+        public static final int menu_knowledge=0x7f0f0006;
     }
     public static final class mipmap {
         public static final int bga_pp_ic_arrow_down=0x7f030000;

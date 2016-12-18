@@ -24,6 +24,8 @@ import com.murainy.safeexam.Utils.BmobUtils;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
+import static com.murainy.safeexam.activitis.AboutActivity.getVersionName;
+
 public class KnowledgeActivity extends AppCompatActivity {
 
 	@Override
@@ -35,11 +37,12 @@ public class KnowledgeActivity extends AppCompatActivity {
 		//this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 		assert toolbar != null;
-		toolbar.inflateMenu(R.menu.menu_error);//设置右上角的填充菜单
+		toolbar.inflateMenu(R.menu.menu_knowledge);//设置右上角的填充菜单
 		// App Logo
 		toolbar.setLogo(R.drawable.logo);
+
 		// Title
-		toolbar.setTitle("SafeExam2016");
+		toolbar.setTitle("SafeExam" + getVersionName(this));
 		// Sub Title
 		toolbar.setSubtitle("安全管理人员考试");
 		setSupportActionBar(toolbar);
@@ -135,7 +138,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.menu_error, menu);
+		getMenuInflater().inflate(R.menu.menu_knowledge, menu);
 		return true;
 	}
 
