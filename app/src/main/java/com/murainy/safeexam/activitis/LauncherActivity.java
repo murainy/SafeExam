@@ -10,10 +10,8 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
@@ -23,10 +21,7 @@ import com.murainy.safeexam.Shareprefrence.Account;
 import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
 import com.murainy.safeexam.beans.Student;
 import com.murainy.safeexam.view.FontManager;
-
 import com.stephentuso.welcome.WelcomeHelper;
-import com.tencent.bugly.crashreport.CrashReport;
-
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -230,7 +225,8 @@ public class LauncherActivity extends AppCompatActivity {
 
 	@OnClick(R.id.tv_set)
 	public void setup(View view) {
-		welcomeScreen.forceShow();
-		CrashReport.testJavaCrash();
+		//welcomeScreen.forceShow();
+		//CrashReport.testJavaCrash();
+		startActivity(new Intent(LauncherActivity.this, RubblerAct.class));
 	}
 }

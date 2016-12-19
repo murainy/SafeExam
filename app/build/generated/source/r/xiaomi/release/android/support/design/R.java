@@ -669,19 +669,19 @@ public final class R {
 		public static final int design_fab_background = 0x7f020092;
 		public static final int design_ic_visibility = 0x7f020093;
 		public static final int design_snackbar_background = 0x7f020094;
-		public static final int navigation_empty_icon = 0x7f0200e0;
-		public static final int notification_action_background = 0x7f0200e2;
-		public static final int notification_bg = 0x7f0200e3;
-		public static final int notification_bg_low = 0x7f0200e4;
-		public static final int notification_bg_low_normal = 0x7f0200e5;
-		public static final int notification_bg_low_pressed = 0x7f0200e6;
-		public static final int notification_bg_normal = 0x7f0200e7;
-		public static final int notification_bg_normal_pressed = 0x7f0200e8;
-		public static final int notification_icon_background = 0x7f0200e9;
-		public static final int notification_template_icon_bg = 0x7f02017e;
-		public static final int notification_template_icon_low_bg = 0x7f02017f;
-		public static final int notification_tile_bg = 0x7f0200ea;
-		public static final int notify_panel_notification_icon_bg = 0x7f0200eb;
+		public static final int navigation_empty_icon = 0x7f0200e1;
+		public static final int notification_action_background = 0x7f0200e3;
+		public static final int notification_bg = 0x7f0200e4;
+		public static final int notification_bg_low = 0x7f0200e5;
+		public static final int notification_bg_low_normal = 0x7f0200e6;
+		public static final int notification_bg_low_pressed = 0x7f0200e7;
+		public static final int notification_bg_normal = 0x7f0200e8;
+		public static final int notification_bg_normal_pressed = 0x7f0200e9;
+		public static final int notification_icon_background = 0x7f0200ea;
+		public static final int notification_template_icon_bg = 0x7f02017f;
+		public static final int notification_template_icon_low_bg = 0x7f020180;
+		public static final int notification_tile_bg = 0x7f0200eb;
+		public static final int notify_panel_notification_icon_bg = 0x7f0200ec;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0e013f;
@@ -896,10 +896,10 @@ public final class R {
 		public static final int notification_template_media_custom = 0x7f04006b;
 		public static final int notification_template_part_chronometer = 0x7f04006c;
 		public static final int notification_template_part_time = 0x7f04006d;
-		public static final int select_dialog_item_material = 0x7f04007a;
-		public static final int select_dialog_multichoice_material = 0x7f04007b;
-		public static final int select_dialog_singlechoice_material = 0x7f04007c;
-		public static final int support_simple_spinner_dropdown_item = 0x7f04007f;
+		public static final int select_dialog_item_material = 0x7f04007b;
+		public static final int select_dialog_multichoice_material = 0x7f04007c;
+		public static final int select_dialog_singlechoice_material = 0x7f04007d;
+		public static final int support_simple_spinner_dropdown_item = 0x7f040080;
 	}
 	public static final class string {
 		public static final int abc_action_bar_home_description = 0x7f070000;

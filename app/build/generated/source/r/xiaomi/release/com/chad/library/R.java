@@ -56,8 +56,8 @@ public final class R {
 		public static final int sp_16 = 0x7f0800d5;
 	}
 	public static final class drawable {
-		public static final int sample_footer_loading = 0x7f0200f0;
-		public static final int sample_footer_loading_progress = 0x7f0200f1;
+		public static final int sample_footer_loading = 0x7f0200f1;
+		public static final int sample_footer_loading_progress = 0x7f0200f2;
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f0e0008;
