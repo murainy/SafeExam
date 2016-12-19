@@ -147,6 +147,10 @@
             android:name=".activitis.KnowledgeActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
+        <activity
+            android:name=".activitis.RubblerAct"
+            android:theme="@style/ImageTranslucentTheme">
+        </activity>
 
         <!-- 配置APP ID -->
         <meta-data

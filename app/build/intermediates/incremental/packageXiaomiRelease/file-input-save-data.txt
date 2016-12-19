@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Dec 20 01:51:50 CST 2016
+#Tue Dec 20 02:17:50 CST 2016
 20.base=E\:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\resources-xiaomi-release.ap_
 143.base=E\:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\resources-xiaomi-release.ap_
 493.base=E\:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\resources-xiaomi-release.ap_
