@@ -227,6 +227,6 @@ public class LauncherActivity extends AppCompatActivity {
 	public void setup(View view) {
 		//welcomeScreen.forceShow();
 		//CrashReport.testJavaCrash();
-		startActivity(new Intent(LauncherActivity.this, RubblerAct.class));
+		startActivity(new Intent(LauncherActivity.this, RubblerActivity.class));
 	}
 }

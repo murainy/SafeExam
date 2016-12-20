@@ -148,7 +148,7 @@
             android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
-            android:name=".activitis.RubblerAct"
+            android:name=".activitis.RubblerActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
 

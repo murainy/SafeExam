@@ -302,12 +302,12 @@ ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:148:13-57
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:147:13-56
-activity#com.murainy.safeexam.activitis.RubblerAct
+activity#com.murainy.safeexam.activitis.RubblerActivity
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:150:9-153:20
 	android:theme
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:152:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:151:13-49
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:151:13-54
 meta-data#BUGLY_APPID
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\app\src\main\AndroidManifest.xml:156:9-158:42
 	android:value
