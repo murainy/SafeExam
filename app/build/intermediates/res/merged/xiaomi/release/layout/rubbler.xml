@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/index_bg_004">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/gg"
+            android:layout_gravity="start"/>
+
+        <view
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            class="com.murainy.safeexam.view.Text_Rubbler"
+            android:id="@+id/rubbler"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="240dp"/>
+
+        <TextView
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:id="@+id/tv_next"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/setting_single_select"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:autoText="true"
+            android:text="再来一次"/>
+    </FrameLayout>
+
+</LinearLayout>
