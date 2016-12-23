@@ -35,7 +35,7 @@ android {
     //useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.murainy.safeexam"
-        minSdkVersion 19
+        minSdkVersion 14
         targetSdkVersion 24
         versionCode 1
         versionName '1.0'

@@ -61,12 +61,12 @@ public final class R {
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f0e0008;
-		public static final int loading_progress = 0x7f0e0109;
-		public static final int loading_text = 0x7f0e010a;
-		public static final int loading_view = 0x7f0e0108;
+		public static final int loading_progress = 0x7f0e010b;
+		public static final int loading_text = 0x7f0e010c;
+		public static final int loading_view = 0x7f0e010a;
 	}
 	public static final class layout {
-		public static final int def_loading = 0x7f040042;
+		public static final int def_loading = 0x7f040043;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f07003d;

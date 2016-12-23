@@ -151,6 +151,14 @@
             android:name=".activitis.RubblerActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
+        <activity
+            android:name=".activitis.LargeImageViewActivity"
+            android:theme="@style/ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activitis.LargeImageViewSimpleBak"
+            android:theme="@style/ImageTranslucentTheme">
+        </activity>
 
         <!-- 配置APP ID -->
         <meta-data

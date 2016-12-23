@@ -78,6 +78,10 @@ public class InformationActivity extends Activity implements View.OnClickListene
                 Intent i4 = new Intent(InformationActivity.this, HeadActivity.class);
                 startActivity(i4);
                 break;
+            case R.id.ci_view:
+                Intent i5 = new Intent(InformationActivity.this, LargeImageViewActivity.class);
+                startActivity(i5);
+                break;
         }
     }
     @OnClick(R.id.iv_left)
