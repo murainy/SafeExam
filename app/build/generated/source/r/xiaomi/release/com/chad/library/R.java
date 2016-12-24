@@ -19,10 +19,10 @@ public final class R {
 		public static final int contentPaddingLeft = 0x7f0100ca;
 		public static final int contentPaddingRight = 0x7f0100cb;
 		public static final int contentPaddingTop = 0x7f0100cc;
-		public static final int layoutManager = 0x7f01015d;
-		public static final int reverseLayout = 0x7f01015f;
-		public static final int spanCount = 0x7f01015e;
-		public static final int stackFromEnd = 0x7f010160;
+		public static final int layoutManager = 0x7f01012d;
+		public static final int reverseLayout = 0x7f01012f;
+		public static final int spanCount = 0x7f01012e;
+		public static final int stackFromEnd = 0x7f010130;
 	}
 	public static final class color {
 		public static final int cardview_dark_background = 0x7f0c0084;
@@ -56,27 +56,27 @@ public final class R {
 		public static final int sp_16 = 0x7f0800d5;
 	}
 	public static final class drawable {
-		public static final int sample_footer_loading = 0x7f0200f1;
-		public static final int sample_footer_loading_progress = 0x7f0200f2;
+		public static final int sample_footer_loading = 0x7f0200f2;
+		public static final int sample_footer_loading_progress = 0x7f0200f3;
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f0e0008;
-		public static final int loading_progress = 0x7f0e010b;
-		public static final int loading_text = 0x7f0e010c;
-		public static final int loading_view = 0x7f0e010a;
+		public static final int loading_progress = 0x7f0e0118;
+		public static final int loading_text = 0x7f0e0119;
+		public static final int loading_view = 0x7f0e0117;
 	}
 	public static final class layout {
-		public static final int def_loading = 0x7f040043;
+		public static final int def_loading = 0x7f040045;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f07003d;
 		public static final int loading = 0x7f070015;
 	}
 	public static final class style {
-		public static final int Base_CardView = 0x7f090111;
-		public static final int CardView = 0x7f0900f8;
-		public static final int CardView_Dark = 0x7f090140;
-		public static final int CardView_Light = 0x7f090141;
+		public static final int Base_CardView = 0x7f09010f;
+		public static final int CardView = 0x7f0900f6;
+		public static final int CardView_Dark = 0x7f09013e;
+		public static final int CardView_Light = 0x7f09013f;
 	}
 	public static final class styleable {
 		public static final int[] CardView = { 0x0101013f, 0x01010140, 0x7f0100c3, 0x7f0100c4, 0x7f0100c5, 0x7f0100c6, 0x7f0100c7, 0x7f0100c8, 0x7f0100c9, 0x7f0100ca, 0x7f0100cb, 0x7f0100cc, 0x7f0100cd };
@@ -93,7 +93,7 @@ public final class R {
 		public static final int CardView_contentPaddingLeft = 9;
 		public static final int CardView_contentPaddingRight = 10;
 		public static final int CardView_contentPaddingTop = 11;
-		public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f01015d, 0x7f01015e, 0x7f01015f, 0x7f010160 };
+		public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f01012d, 0x7f01012e, 0x7f01012f, 0x7f010130 };
 		public static final int RecyclerView_android_orientation = 0;
 		public static final int RecyclerView_layoutManager = 2;
 		public static final int RecyclerView_reverseLayout = 4;

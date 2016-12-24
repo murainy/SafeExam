@@ -87,12 +87,16 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
-    dexOptions {
-        incremental true
-    }
+
 }
 
 dependencies {
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.5@aar'
+    compile 'pub.devrel:easypermissions:0.2.1'
+    compile(name: 'welcome-release', ext: 'aar')
     compile(name: 'circleimageview-release', ext: 'aar')
     compile(name: 'circle-menu', ext: 'aar')
     compile(name: 'shimmer-android-release', ext: 'aar')
@@ -102,7 +106,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.jakewharton:butterknife:8.0.1'
     apt 'com.jakewharton:butterknife-compiler:8.0.1'
-    compile 'com.stephentuso:welcome:1.1.0'
+    //compile 'com.stephentuso:welcome:1.1.0'
     compile 'com.orhanobut:logger:1.11'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.android.support:support-annotations:25.0.1'

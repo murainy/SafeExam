@@ -1,5 +1,6 @@
 package com.murainy.safeexam.activitis;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -38,14 +39,14 @@ public class KnowledgeActivity extends AppCompatActivity {
 
 		assert toolbar != null;
 		toolbar.inflateMenu(R.menu.menu_knowledge);//设置右上角的填充菜单
-		// App Logo
-		toolbar.setLogo(R.drawable.logo);
 
 		// Title
 		toolbar.setTitle("SafeExam" + getVersionName(this));
 		// Sub Title
 		toolbar.setSubtitle("安全管理人员考试");
 		setSupportActionBar(toolbar);
+		// App Logo 位置偏移太大
+		toolbar.setLogo(R.drawable.launcher);
 		// Navigation Icon 要設定在 setSupoortActionBar 才有作用， 否則會出現 back button
 		toolbar.setNavigationIcon(R.drawable.back_icon_selector);
 		// Menu item click 的監聽事件一樣要設定在 setSupportActionBar 才有作用
@@ -64,7 +65,9 @@ public class KnowledgeActivity extends AppCompatActivity {
 		facebookLoginBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				Toast.makeText(KnowledgeActivity.this, "facebookLoginBtn", Toast.LENGTH_SHORT).show();
+				//Toast.makeText(KnowledgeActivity.this, "facebookLoginBtn", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(KnowledgeActivity.this, MomentAddActivity.class);
+				startActivity(intent);
 			}
 		});
 
@@ -81,7 +84,9 @@ public class KnowledgeActivity extends AppCompatActivity {
 		signupBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				Toast.makeText(KnowledgeActivity.this, "signupBtn", Toast.LENGTH_SHORT).show();
+				//Toast.makeText(KnowledgeActivity.this, "signupBtn", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(KnowledgeActivity.this, MomentListActivity.class);
+				startActivity(intent);
 			}
 		});
 		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);

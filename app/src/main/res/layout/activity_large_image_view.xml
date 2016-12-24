@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -6,6 +7,17 @@
     <com.murainy.safeexam.view.LargeImageView
         android:id="@+id/id_largetImageview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:layout_width="96dp"
+        app:srcCompat="@drawable/bear"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"/>
 
 </RelativeLayout>

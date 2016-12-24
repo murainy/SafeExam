@@ -308,7 +308,6 @@
     <declare-styleable name="BGAImageView"><attr name="android:src"/><attr format="boolean" name="bga_iv_circle"/><attr format="reference|dimension" name="bga_iv_cornerRadius"/><attr format="boolean" name="bga_iv_square"/><attr format="reference|dimension" name="bga_iv_borderWidth"/><attr format="reference|color" name="bga_iv_borderColor"/></declare-styleable>
     <declare-styleable name="BGANinePhotoLayout"><attr format="dimension|reference" name="bga_npl_itemCornerRadius"/><attr format="boolean" name="bga_npl_showAsLargeWhenOnlyOne"/><attr format="dimension|reference" name="bga_npl_itemWhiteSpacing"/><attr format="dimension|reference" name="bga_npl_otherWhiteSpacing"/><attr format="reference" name="bga_npl_placeholderDrawable"/><attr format="dimension|reference" name="bga_npl_itemWidth"/><attr format="integer" name="bga_npl_itemSpanCount"/></declare-styleable>
     <declare-styleable name="BGASortableNinePhotoLayout"><attr format="boolean" name="bga_snpl_plusEnable"/><attr format="boolean" name="bga_snpl_sortable"/><attr format="reference" name="bga_snpl_deleteDrawable"/><attr format="integer" name="bga_snpl_maxItemCount"/><attr format="integer" name="bga_snpl_itemSpanCount"/><attr format="boolean" name="bga_snpl_deleteDrawableOverlapQuarter"/><attr format="reference" name="bga_snpl_plusDrawable"/><attr format="dimension|reference" name="bga_snpl_itemCornerRadius"/><attr format="dimension|reference" name="bga_snpl_itemWhiteSpacing"/><attr format="dimension|reference" name="bga_snpl_otherWhiteSpacing"/><attr format="reference" name="bga_snpl_placeholderDrawable"/><attr format="boolean" name="bga_snpl_editable"/><attr format="dimension|reference" name="bga_snpl_itemWidth"/></declare-styleable>
-    <declare-styleable name="BackgroundStyle"><attr name="android:selectableItemBackground"/><attr name="selectableItemBackground"/></declare-styleable>
     <declare-styleable name="BottomNavigationView"><attr name="menu"/><attr name="itemIconTint"/><attr name="itemTextColor"/><attr name="itemBackground"/><attr name="elevation"/></declare-styleable>
     <declare-styleable name="BottomSheetBehavior_Layout"><attr format="dimension" name="behavior_peekHeight">
             
@@ -316,7 +315,6 @@
         </attr><attr format="boolean" name="behavior_hideable"/><attr format="boolean" name="behavior_skipCollapsed"/></declare-styleable>
     <declare-styleable name="ButtonBarLayout"><attr format="boolean" name="allowStacking"/></declare-styleable>
     <declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
-    <declare-styleable name="CheckBoxPreference"><attr format="string" name="summaryOn"/><attr name="android:summaryOn"/><attr format="string" name="summaryOff"/><attr name="android:summaryOff"/><attr format="boolean" name="disableDependentsState"/><attr name="android:disableDependentsState"/></declare-styleable>
     <declare-styleable name="CircleImageView"><attr format="dimension" name="civ_border_width"/><attr format="color" name="civ_border_color"/><attr format="boolean" name="civ_border_overlay"/><attr format="color" name="civ_fill_color"/></declare-styleable>
     <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/><attr format="dimension" name="scrimVisibleHeightTrigger"/><attr format="integer" name="scrimAnimationDuration"/><attr name="collapsedTitleGravity">
             
@@ -446,7 +444,6 @@
             <flag name="all" value="0x77"/>
         </attr></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
-    <declare-styleable name="DialogPreference"><attr format="string" name="dialogTitle"/><attr name="android:dialogTitle"/><attr format="string" name="dialogMessage"/><attr name="android:dialogMessage"/><attr format="reference" name="dialogIcon"/><attr name="android:dialogIcon"/><attr format="string" name="positiveButtonText"/><attr name="android:positiveButtonText"/><attr format="string" name="negativeButtonText"/><attr name="android:negativeButtonText"/><attr format="reference" name="dialogLayout"/><attr name="android:dialogLayout"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="FancyButtonsAttrs"><attr format="color" name="fb_defaultColor"/><attr format="string" name="fb_text"/><attr format="color" name="fb_textColor"/><attr format="color" name="fb_iconColor"/><attr format="string" name="fb_textFont"/><attr format="string" name="fb_iconFont"/><attr format="dimension" name="fb_textSize"/><attr format="integer" name="fb_iconResource"/><attr format="string" name="fb_fontIconResource"/><attr format="dimension" name="fb_fontIconSize"/><attr format="enum" name="fb_iconPosition"><enum name="left" value="1"/><enum name="right" value="2"/><enum name="top" value="3"/><enum name="bottom" value="4"/></attr><attr format="enum" name="fb_textPosition"><enum name="left" value="1"/><enum name="right" value="2"/><enum name="top" value="3"/><enum name="bottom" value="4"/></attr><attr format="enum" name="fb_textGravity"><enum name="top" value="0x30"/><enum name="bottom" value="0x50"/><enum name="left" value="0x03"/><enum name="right" value="0x05"/><enum name="center_vertical" value="0x10"/><enum name="fill_vertical" value="0x70"/><enum name="center_horizontal" value="0x01"/><enum name="fill_horizontal" value="0x07"/><enum name="center" value="0x11"/><enum name="fill" value="0x77"/><enum name="clip_vertical" value="0x80"/><enum name="clip_horizontal" value="0x08"/><enum name="start" value="0x00800003"/><enum name="end" value="0x00800005"/></attr><attr format="dimension" name="fb_iconPaddingLeft"/><attr format="dimension" name="fb_iconPaddingRight"/><attr format="dimension" name="fb_iconPaddingTop"/><attr format="dimension" name="fb_iconPaddingBottom"/><attr format="color" name="fb_borderColor"/><attr format="dimension" name="fb_borderWidth"/><attr format="color" name="fb_focusColor"/><attr format="dimension" name="fb_radius"/><attr format="boolean" name="fb_textAllCaps"/><attr format="boolean" name="fb_ghost"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize">
@@ -467,7 +464,6 @@
         </attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
-    <declare-styleable name="ListPreference"><attr format="reference" name="entries"/><attr name="android:entries"/><attr format="reference" name="entryValues"/><attr name="android:entryValues"/></declare-styleable>
     <declare-styleable name="MaterialProgressBar"><attr format="enum" name="mpb_progressStyle"><enum name="circular" value="0"/><enum name="horizontal" value="1"/></attr><attr format="boolean" name="mpb_setBothDrawables"/><attr format="boolean" name="mpb_useIntrinsicPadding"/><attr format="boolean" name="mpb_showTrack"/><attr name="android:tint"/><attr format="enum" name="mpb_tintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/><enum name="add" value="16"/></attr></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction">
@@ -483,15 +479,9 @@
             <flag name="collapseActionView" value="8"/>
         </attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/><attr format="reference" name="subMenuArrow"/></declare-styleable>
-    <declare-styleable name="MultiSelectListPreference"><attr name="entries"/><attr name="android:entries"/><attr name="entryValues"/><attr name="android:entryValues"/></declare-styleable>
     <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="headerLayout"/></declare-styleable>
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/><attr name="android:popupAnimationStyle"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
-    <declare-styleable name="Preference"><attr name="icon"/><attr name="android:icon"/><attr format="string" name="key"/><attr name="android:key"/><attr name="title"/><attr name="android:title"/><attr format="string" name="summary"/><attr name="android:summary"/><attr format="integer" name="order"/><attr name="android:order"/><attr format="string" name="fragment"/><attr name="android:fragment"/><attr name="layout"/><attr name="android:layout"/><attr format="reference" name="widgetLayout"/><attr name="android:widgetLayout"/><attr format="boolean" name="enabled"/><attr name="android:enabled"/><attr format="boolean" name="selectable"/><attr name="android:selectable"/><attr format="string" name="dependency"/><attr name="android:dependency"/><attr format="boolean" name="persistent"/><attr name="android:persistent"/><attr format="string|boolean|integer|reference|float" name="defaultValue"/><attr name="android:defaultValue"/><attr format="boolean" name="shouldDisableView"/><attr name="android:shouldDisableView"/></declare-styleable>
-    <declare-styleable name="PreferenceFragmentCompat"><attr name="android:layout"/><attr name="android:divider"/><attr name="android:dividerHeight"/></declare-styleable>
-    <declare-styleable name="PreferenceGroup"><attr format="boolean" name="orderingFromXml"/><attr name="android:orderingFromXml"/></declare-styleable>
-    <declare-styleable name="PreferenceImageView"><attr format="dimension" name="maxWidth"/><attr name="android:maxWidth"/><attr format="dimension" name="maxHeight"/><attr name="android:maxHeight"/></declare-styleable>
-    <declare-styleable name="PreferenceTheme"><attr format="reference" name="preferenceTheme"/><attr format="reference" name="preferenceScreenStyle"/><attr format="reference" name="preferenceActivityStyle"/><attr format="reference" name="preferenceFragmentStyle"/><attr format="reference" name="preferenceFragmentCompatStyle"/><attr format="reference" name="preferenceCategoryStyle"/><attr format="reference" name="preferenceStyle"/><attr format="reference" name="preferenceInformationStyle"/><attr format="reference" name="checkBoxPreferenceStyle"/><attr format="reference" name="yesNoPreferenceStyle"/><attr format="reference" name="dialogPreferenceStyle"/><attr format="reference" name="editTextPreferenceStyle"/><attr format="reference" name="ringtonePreferenceStyle"/><attr format="reference" name="dropdownPreferenceStyle"/><attr format="reference" name="preferenceLayoutChild"/><attr format="reference" name="preferencePanelStyle"/><attr format="reference" name="preferenceHeaderPanelStyle"/><attr format="reference" name="preferenceListStyle"/><attr format="reference" name="preferenceFragmentListStyle"/><attr format="dimension" name="preferenceFragmentPaddingSide"/><attr format="reference" name="switchPreferenceStyle"/><attr format="reference" name="switchPreferenceCompatStyle"/><attr format="reference" name="seekBarPreferenceStyle"/></declare-styleable>
     <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr name="android:descendantFocusability"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Layout"><attr format="dimension" name="behavior_overlapTop"/></declare-styleable>
@@ -531,7 +521,6 @@
             
             <enum name="add" value="16"/>
         </attr><attr name="android:textOn"/><attr name="android:textOff"/><attr format="dimension" name="thumbTextPadding"/><attr format="reference" name="switchTextAppearance"/><attr format="dimension" name="switchMinWidth"/><attr format="dimension" name="switchPadding"/><attr format="boolean" name="splitTrack"/><attr format="boolean" name="showText"/></declare-styleable>
-    <declare-styleable name="SwitchPreferenceCompat"><attr name="summaryOn"/><attr name="android:summaryOn"/><attr name="summaryOff"/><attr name="android:summaryOff"/><attr format="string" name="switchTextOn"/><attr name="android:switchTextOn"/><attr format="string" name="switchTextOff"/><attr name="android:switchTextOff"/><attr name="disableDependentsState"/><attr name="android:disableDependentsState"/></declare-styleable>
     <declare-styleable name="TabItem"><attr name="android:text"/><attr name="android:icon"/><attr name="android:layout"/></declare-styleable>
     <declare-styleable name="TabLayout"><attr format="color" name="tabIndicatorColor"/><attr format="dimension" name="tabIndicatorHeight"/><attr format="dimension" name="tabContentStart"/><attr format="reference" name="tabBackground"/><attr name="tabMode">
             <enum name="scrollable" value="0"/>
@@ -1167,12 +1156,10 @@
     <string name="tv_nick_n">昵称</string>
     <string name="update_paper">更新试卷</string>
     <string name="upload">上传</string>
-    <string name="v7_preference_off">OFF</string>
-    <string name="v7_preference_on">ON</string>
-    <string name="wel_done">Done</string>
-    <string name="wel_log_in">Log In</string>
-    <string name="wel_sign_up">Sign Up</string>
-    <string name="wel_skip">Skip</string>
+    <string name="wel_done">立即体验</string>
+    <string name="wel_log_in">登录</string>
+    <string name="wel_sign_up">注册</string>
+    <string name="wel_skip">跳过</string>
     <string name="xxx">人不会死在绝境，却往往栽在十字路口</string>
     <style name="About">
         <item name="android:textSize">16sp</item>
@@ -2462,62 +2449,6 @@
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
     <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Spinner"/>
-    <style name="Preference">
-        <item name="android:layout">@layout/preference</item>
-    </style>
-    <style name="Preference.Category">
-        <item name="android:layout">@layout/preference_category</item>
-        <!-- The title should not dim if the category is disabled, instead only the preference children should dim. -->
-        <item name="android:shouldDisableView">false</item>
-        <item name="android:selectable">false</item>
-    </style>
-    <style name="Preference.CheckBoxPreference">
-        <item name="android:widgetLayout">@layout/preference_widget_checkbox</item>
-    </style>
-    <style name="Preference.DialogPreference">
-        <item name="android:positiveButtonText">@android:string/ok</item>
-        <item name="android:negativeButtonText">@android:string/cancel</item>
-    </style>
-    <style name="Preference.DialogPreference.EditTextPreference">
-        <item name="android:dialogLayout">@layout/preference_dialog_edittext</item>
-    </style>
-    <style name="Preference.DropDown">
-        <item name="android:layout">@layout/preference_dropdown</item>
-    </style>
-    <style name="Preference.Information">
-        <item name="android:layout">@layout/preference_information</item>
-        <item name="android:enabled">false</item>
-        <item name="android:shouldDisableView">false</item>
-    </style>
-    <style name="Preference.PreferenceScreen">
-    </style>
-    <style name="Preference.SwitchPreferenceCompat">
-        <item name="android:widgetLayout">@layout/preference_widget_switch_compat</item>
-        <item name="android:switchTextOn">@string/v7_preference_on</item>
-        <item name="android:switchTextOff">@string/v7_preference_off</item>
-    </style>
-    <style name="PreferenceFragment">
-        <item name="android:paddingLeft">0dp</item>
-        <item name="android:paddingRight">0dp</item>
-        <item name="android:divider">?android:attr/listDivider</item>
-    </style>
-    <style name="PreferenceFragmentList">
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-    </style>
-    <style name="PreferenceThemeOverlay">
-        <item name="preferenceScreenStyle">@style/Preference.PreferenceScreen</item>
-        <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment</item>
-        <item name="preferenceCategoryStyle">@style/Preference.Category</item>
-        <item name="preferenceStyle">@style/Preference</item>
-        <item name="preferenceInformationStyle">@style/Preference.Information</item>
-        <item name="checkBoxPreferenceStyle">@style/Preference.CheckBoxPreference</item>
-        <item name="switchPreferenceCompatStyle">@style/Preference.SwitchPreferenceCompat</item>
-        <item name="dialogPreferenceStyle">@style/Preference.DialogPreference</item>
-        <item name="editTextPreferenceStyle">@style/Preference.DialogPreference.EditTextPreference</item>
-        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentList</item>
-        <item name="dropdownPreferenceStyle">@style/Preference.DropDown</item>
-    </style>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">
