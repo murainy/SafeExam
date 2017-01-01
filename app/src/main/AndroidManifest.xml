@@ -117,14 +117,8 @@
             android:name=".activitis.UserBindPhoneActivity"
             android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme"/>
-        <activity
-            android:name=".activitis.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName=".activitis.TabmanActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activitis.TabmanActivity"/>
-        </activity>
+
+
         <activity android:name=".activitis.GridActivity">
 
         </activity>
@@ -143,6 +137,7 @@
         <activity
             android:name=".activitis.ExamActivity"
             android:label="@string/title_activity_eaxm"
+            android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
@@ -163,6 +158,10 @@
         </activity>
         <activity
             android:name=".activitis.MomentListActivity"
+            android:theme="@style/ImageTranslucentTheme">
+        </activity>
+        <activity
+            android:name=".activitis.SettingsActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
 

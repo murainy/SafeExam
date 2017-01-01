@@ -31,16 +31,14 @@
             android:orderInCategory="100"
             android:title="@string/error_share"
             app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+
+        <item
+            android:icon="@drawable/ic_free_breakfast_black_24dp"
+            android:title="云盘"/>
+        <item
+            android:icon="@drawable/firebrick"
+            android:title="标签"/>
     </group>
 
-    <item android:title="其他">
-        <menu>
-            <item
-                android:icon="@drawable/ic_free_breakfast_black_24dp"
-                android:title="我是云盘"/>
-            <item
-                android:icon="@drawable/firebrick"
-                android:title="我是标签"/>
-        </menu>
-    </item>
+
 </menu>

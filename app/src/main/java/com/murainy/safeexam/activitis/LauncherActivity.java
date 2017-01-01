@@ -225,7 +225,7 @@ public class LauncherActivity extends AppCompatActivity {
 
 	@OnClick(R.id.tv_set)
 	public void setup(View view) {
-		//welcomeScreen.forceShow();
+
 		//CrashReport.testJavaCrash();
 		startActivity(new Intent(LauncherActivity.this, RubblerActivity.class));
 	}

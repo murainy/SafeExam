@@ -15,19 +15,19 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624257, "field 'iv_left' and method 'back'");
-    target.iv_left = finder.castView(view, 2131624257, "field 'iv_left'");
-    unbinder.view2131624257 = view;
+    view = finder.findRequiredView(source, 2131689797, "field 'iv_left' and method 'back'");
+    target.iv_left = finder.castView(view, 2131689797, "field 'iv_left'");
+    unbinder.view2131689797 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.back(p0);
       }
     });
-    view = finder.findRequiredView(source, 2131624262, "field 'iv_right'");
-    target.iv_right = finder.castView(view, 2131624262, "field 'iv_right'");
-    view = finder.findRequiredView(source, 2131624259, "field 'tv_title'");
-    target.tv_title = finder.castView(view, 2131624259, "field 'tv_title'");
+    view = finder.findRequiredView(source, 2131689802, "field 'iv_right'");
+    target.iv_right = finder.castView(view, 2131689802, "field 'iv_right'");
+    view = finder.findRequiredView(source, 2131689799, "field 'tv_title'");
+    target.tv_title = finder.castView(view, 2131689799, "field 'tv_title'");
     return unbinder;
   }
 
@@ -38,7 +38,7 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
   protected static class InnerUnbinder<T extends MainActivity> implements Unbinder {
     private T target;
 
-    View view2131624257;
+    View view2131689797;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -52,7 +52,7 @@ public class MainActivity$$ViewBinder<T extends MainActivity> implements ViewBin
     }
 
     protected void unbind(T target) {
-      view2131624257.setOnClickListener(null);
+      view2131689797.setOnClickListener(null);
       target.iv_left = null;
       target.iv_right = null;
       target.tv_title = null;

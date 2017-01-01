@@ -52,10 +52,10 @@
             fancy:fb_borderWidth="1dp"
             fancy:fb_defaultColor="#3b5998"
             fancy:fb_focusColor="#5577bd"
-            fancy:fb_fontIconResource="@string/fa_gg"
+            fancy:fb_fontIconResource="@string/fa_ok"
             fancy:fb_fontIconSize="15sp"
             fancy:fb_iconPosition="right"
-            fancy:fb_radius="20dp"
+            fancy:fb_radius="16dp"
             fancy:fb_text="喜欢"
             fancy:fb_textColor="#FFFFFF"
             android:minWidth="96dp"/>
@@ -74,7 +74,7 @@
             fancy:fb_fontIconResource="@string/fa_apple"
             fancy:fb_fontIconSize="15sp"
             fancy:fb_iconPosition="right"
-            fancy:fb_radius="20dp"
+            fancy:fb_radius="16dp"
             fancy:fb_text="介绍"
             fancy:fb_textColor="#FFFFFF"
             android:minWidth="96dp"/>
@@ -92,7 +92,7 @@
             fancy:fb_fontIconResource="@string/fa_gear"
             fancy:fb_fontIconSize="15sp"
             fancy:fb_iconPosition="right"
-            fancy:fb_radius="20dp"
+            fancy:fb_radius="16dp"
             fancy:fb_text="选择"
             fancy:fb_textColor="#FFFFFF"
             android:minWidth="96dp"/>

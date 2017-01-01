@@ -15,9 +15,9 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131624129, "field 'rem' and method 'remb'");
-    target.rem = finder.castView(view, 2131624129, "field 'rem'");
-    unbinder.view2131624129 = view;
+    view = finder.findRequiredView(source, 2131689671, "field 'rem' and method 'remb'");
+    target.rem = finder.castView(view, 2131689671, "field 'rem'");
+    unbinder.view2131689671 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -34,7 +34,7 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
   protected static class InnerUnbinder<T extends LoginActivity> implements Unbinder {
     private T target;
 
-    View view2131624129;
+    View view2131689671;
 
     protected InnerUnbinder(T target) {
       this.target = target;
@@ -48,7 +48,7 @@ public class LoginActivity$$ViewBinder<T extends LoginActivity> implements ViewB
     }
 
     protected void unbind(T target) {
-      view2131624129.setOnClickListener(null);
+      view2131689671.setOnClickListener(null);
       target.rem = null;
     }
   }

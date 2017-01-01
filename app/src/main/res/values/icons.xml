@@ -36,4 +36,6 @@
     <string name="fa_error">&#xf00d;</string>
     <string name="fa_error_o">&#xf057;</string>
     <string name="fa_user">&#xf007;</string>
+    <string name="fa_ok">&#xf00c;</string>
+    <string name="fa_remove">&#xf00d;</string>
 </resources>

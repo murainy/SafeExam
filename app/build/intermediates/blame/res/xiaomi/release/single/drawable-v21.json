@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\avd_show_password.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\ic_info_black_24dp.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-v21\\ic_info_black_24dp.xml"
     },
@@ -9,11 +13,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\ic_menu_gallery.xml",
@@ -21,11 +25,19 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\ic_menu_camera.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable-v21\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\design_password_eye.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\avd_hide_password.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\ic_menu_send.xml",
@@ -53,11 +65,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\notification_action_background.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable-v21\\notification_action_background.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\abc_edit_text_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\drawable-v21\\abc_edit_text_material.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable-v21\\ic_notifications_black_24dp.xml",

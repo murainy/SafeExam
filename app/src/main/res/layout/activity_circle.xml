@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView11"
         android:padding="16dp"
-        android:background="@drawable/shape_corner"
+        android:background="@drawable/setting_single_select"
         android:textSize="18sp"
         android:elevation="0dp"
         android:textAlignment="center"

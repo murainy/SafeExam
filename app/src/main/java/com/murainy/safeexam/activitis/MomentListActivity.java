@@ -2,6 +2,7 @@ package com.murainy.safeexam.activitis;
 
 import android.Manifest;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.NonNull;
@@ -70,9 +71,10 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
 	@Override
 	protected void processLogic(Bundle savedInstanceState) {
 		getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-		setTitle("朋友圈列表");
-
-
+		Drawable d = getResources().getDrawable(R.drawable.dodgerblue);
+		getSupportActionBar().setBackgroundDrawable(d);
+		getSupportActionBar().hide();
+		//setTitle("朋友圈列表");
 		mMomentRv.setLayoutManager(new LinearLayoutManager(this));
 		mMomentRv.setAdapter(mMomentAdapter);
 
@@ -85,22 +87,16 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
 	private void addNetImageTestData() {
 		List<Moment> moments = new ArrayList<>();
 
-		moments.add(new Moment("1张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered1.png"))));
-		moments.add(new Moment("2张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered2.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered3.png"))));
-		moments.add(new Moment("9张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered11.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered12.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered13.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered14.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered15.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered16.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered17.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered18.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered19.png"))));
-		moments.add(new Moment("5张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered11.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered12.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered13.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered14.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered15.png"))));
-		moments.add(new Moment("3张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered4.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered5.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered6.png"))));
-		moments.add(new Moment("8张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered11.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered12.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered13.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered14.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered15.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered16.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered17.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered18.png"))));
-		moments.add(new Moment("4张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered7.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered8.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered9.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered10.png"))));
-		moments.add(new Moment("2张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered2.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered3.png"))));
-		moments.add(new Moment("3张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered4.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered5.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered6.png"))));
-		moments.add(new Moment("4张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered7.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered8.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered9.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered10.png"))));
-		moments.add(new Moment("9张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered11.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered12.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered13.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered14.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered15.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered16.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered17.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered18.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered19.png"))));
-		moments.add(new Moment("1张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered1.png"))));
-		moments.add(new Moment("5张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered11.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered12.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered13.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered14.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered15.png"))));
-		moments.add(new Moment("6张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered11.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered12.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered13.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered14.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered15.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered16.png"))));
-		moments.add(new Moment("7张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered11.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered12.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered13.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered14.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered15.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered16.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered17.png"))));
-		moments.add(new Moment("8张网络图片", new ArrayList<>(Arrays.asList("http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered11.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered12.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered13.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered14.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered15.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered16.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered17.png", "http://7xk9dj.com1.z0.glb.clouddn.com/refreshlayout/images/staggered18.png"))));
+		moments.add(new Moment("1张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/1.webp"))));
+		moments.add(new Moment("2张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/2.jpg", "http://oiqawgwly.bkt.clouddn.com/3.jpg"))));
+		moments.add(new Moment("9张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/11.jpg", "http://oiqawgwly.bkt.clouddn.com/12.jpg", "http://oiqawgwly.bkt.clouddn.com/13.jpg", "http://oiqawgwly.bkt.clouddn.com/14.jpg", "http://oiqawgwly.bkt.clouddn.com/15.jpg", "http://oiqawgwly.bkt.clouddn.com/6.JPG", "http://oiqawgwly.bkt.clouddn.com/7.jpg", "http://oiqawgwly.bkt.clouddn.com/8.jpg", "http://oiqawgwly.bkt.clouddn.com/9.jpg"))));
+		moments.add(new Moment("5张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/11.jpg", "http://oiqawgwly.bkt.clouddn.com/12.jpg", "http://oiqawgwly.bkt.clouddn.com/13.jpg", "http://oiqawgwly.bkt.clouddn.com/14.jpg", "http://oiqawgwly.bkt.clouddn.com/15.jpg"))));
+		moments.add(new Moment("3张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/4.jpg", "http://oiqawgwly.bkt.clouddn.com/5.png", "http://oiqawgwly.bkt.clouddn.com/6.JPG"))));
+		moments.add(new Moment("8张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/11.jpg", "http://oiqawgwly.bkt.clouddn.com/12.jpg", "http://oiqawgwly.bkt.clouddn.com/13.jpg", "http://oiqawgwly.bkt.clouddn.com/14.jpg", "http://oiqawgwly.bkt.clouddn.com/15.jpg", "http://oiqawgwly.bkt.clouddn.com/6.JPG", "http://oiqawgwly.bkt.clouddn.com/7.jpg", "http://oiqawgwly.bkt.clouddn.com/8.jpg"))));
+		moments.add(new Moment("4张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/7.jpg", "http://oiqawgwly.bkt.clouddn.com/8.jpg", "http://oiqawgwly.bkt.clouddn.com/9.jpg", "http://oiqawgwly.bkt.clouddn.com/10.jpg"))));
+		moments.add(new Moment("5张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/11.jpg", "http://oiqawgwly.bkt.clouddn.com/12.jpg", "http://oiqawgwly.bkt.clouddn.com/13.jpg", "http://oiqawgwly.bkt.clouddn.com/14.jpg", "http://oiqawgwly.bkt.clouddn.com/15.jpg"))));
+		moments.add(new Moment("6张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/11.jpg", "http://oiqawgwly.bkt.clouddn.com/12.jpg", "http://oiqawgwly.bkt.clouddn.com/13.jpg", "http://oiqawgwly.bkt.clouddn.com/14.jpg", "http://oiqawgwly.bkt.clouddn.com/15.jpg", "http://oiqawgwly.bkt.clouddn.com/6.JPG"))));
+		moments.add(new Moment("7张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/11.jpg", "http://oiqawgwly.bkt.clouddn.com/12.jpg", "https://raw.githubusercontent.com/murainy/murainy.github.io/master/images/2.jpg", "http://oiqawgwly.bkt.clouddn.com/14.jpg", "http://oiqawgwly.bkt.clouddn.com/15.jpg", "http://oiqawgwly.bkt.clouddn.com/6.JPG", "http://oiqawgwly.bkt.clouddn.com/7.jpg"))));
 
 		mMomentAdapter.setData(moments);
 	}
@@ -130,7 +126,7 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
 		}
 
 		// 保存图片的目录，改成你自己要保存图片的目录。如果不传递该参数的话就不会显示右上角的保存按钮
-		File downloadDir = new File(Environment.getExternalStorageDirectory(), "BGAPhotoPickerDownload");
+		File downloadDir = new File(Environment.getExternalStorageDirectory(), "MurainyDownload");
 
 		String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
 		if (EasyPermissions.hasPermissions(this, perms)) {

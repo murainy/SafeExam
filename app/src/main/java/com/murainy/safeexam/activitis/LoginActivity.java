@@ -2,7 +2,9 @@ package com.murainy.safeexam.activitis;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.View;
@@ -119,7 +121,17 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     }
 
     @OnClick(R.id.checkBox)
+    //保存设置
     public void remb() {
-        auto=rem.isChecked();
+        SharedPreferences sharedPreferences = getSharedPreferences("preferences", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();//获取编辑器
+        editor.putString("name", "李明");
+        editor.putBoolean("auto_login", rem.isChecked());
+        editor.putInt("age", 14);
+        editor.apply();//editor.commit();//提交修改
+        sharedPreferences = getSharedPreferences("preferences", Context.MODE_PRIVATE);
+        //getString()第二个参数为缺省值，如果preference中不存在该key，将返回缺省值
+        String name = sharedPreferences.getString("name", "");
+        int age = sharedPreferences.getInt("age", 1);
     }
 }

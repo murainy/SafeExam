@@ -22,13 +22,14 @@ import android.widget.Toast;
 
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.Utils.BmobUtils;
+import com.stephentuso.welcome.WelcomeHelper;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
 import static com.murainy.safeexam.activitis.AboutActivity.getVersionName;
 
 public class KnowledgeActivity extends AppCompatActivity {
-
+	private WelcomeHelper welcomeScreen;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -36,7 +37,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 		//隐藏状态栏
 		//this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
+		welcomeScreen = new WelcomeHelper(this, SplashActivity.class);
 		assert toolbar != null;
 		toolbar.inflateMenu(R.menu.menu_knowledge);//设置右上角的填充菜单
 
@@ -57,17 +58,20 @@ public class KnowledgeActivity extends AppCompatActivity {
 		facebookLoginBtn.setBackgroundColor(Color.parseColor("#3b5998"));
 		facebookLoginBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
 		facebookLoginBtn.setTextSize(15);
-		facebookLoginBtn.setRadius(20);
-		facebookLoginBtn.setMinimumWidth(96);
-		facebookLoginBtn.setIconResource("\uf082");
-		facebookLoginBtn.setIconPosition(FancyButton.POSITION_LEFT);
-		facebookLoginBtn.setFontIconSize(20);
+		facebookLoginBtn.setPadding(20, 20, 20, 20);
+		facebookLoginBtn.setIconPadding(10, 0, 10, 0);
+		facebookLoginBtn.setBorderColor(Color.parseColor("#ffffff"));
+		facebookLoginBtn.setBorderWidth(2);
+		facebookLoginBtn.setRadius(32);
+		facebookLoginBtn.setMinimumWidth(192);
+		facebookLoginBtn.setIconResource("\uf00d");
+		facebookLoginBtn.setIconPosition(FancyButton.POSITION_RIGHT);
+		facebookLoginBtn.setFontIconSize(15);
 		facebookLoginBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
 				//Toast.makeText(KnowledgeActivity.this, "facebookLoginBtn", Toast.LENGTH_SHORT).show();
-				Intent intent = new Intent(KnowledgeActivity.this, MomentAddActivity.class);
-				startActivity(intent);
+				welcomeScreen.forceShow();
 			}
 		});
 
@@ -77,10 +81,15 @@ public class KnowledgeActivity extends AppCompatActivity {
 		signupBtn.setBackgroundColor(Color.parseColor("#3b5998"));
 		signupBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
 		signupBtn.setTextSize(15);
-		signupBtn.setRadius(20);
-		signupBtn.setFontIconSize(20);
-		signupBtn.setMinimumWidth(96);
-		signupBtn.setIconPosition(FancyButton.POSITION_LEFT);
+		signupBtn.setRadius(32);
+		signupBtn.setBorderColor(Color.parseColor("#ffffff"));
+		signupBtn.setBorderWidth(2);
+		signupBtn.setFontIconSize(15);
+		signupBtn.setPadding(20, 20, 20, 20);
+		signupBtn.setIconPadding(10, 0, 10, 0);
+		//signupBtn.setGravity(Gravity.FILL_HORIZONTAL);
+		signupBtn.setMinimumWidth(192);
+		signupBtn.setIconPosition(FancyButton.POSITION_RIGHT);
 		signupBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -90,7 +99,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 			}
 		});
 		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-		layoutParams.setMargins(0, 0, 0, 10);
+		layoutParams.setMargins(0, 10, 0, 10);
 		LinearLayout container = (LinearLayout) findViewById(R.id.container);
 		container.addView(facebookLoginBtn, layoutParams);
 		container.addView(signupBtn, layoutParams);

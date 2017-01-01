@@ -8,6 +8,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\menu\\bga_pp_menu_photo_preview.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\menu_settings.xml",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\menu\\menu_settings.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\bga_pp_menu_photo_picker.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\menu\\bga_pp_menu_photo_picker.xml"
     },
@@ -22,9 +26,5 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\bga_pp_menu_photo_picker_preview.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\menu\\bga_pp_menu_photo_picker_preview.xml"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\menu_eaxm.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\menu\\menu_eaxm.xml"
     }
 ]

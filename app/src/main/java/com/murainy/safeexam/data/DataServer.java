@@ -15,7 +15,7 @@ import java.util.List;
 public class DataServer {
 
     private static final String HTTPS_AVATARS1_GITHUBUSERCONTENT_COM_LINK = "https://avatars1.githubusercontent.com/u/7698209?v=3&s=460";
-    private static final String CYM_CHAD = "CymChad";
+    private static final String CYM_CHAD = "Murainy";
 
     private DataServer() {
     }
@@ -24,7 +24,7 @@ public class DataServer {
         List<Status> list = new ArrayList<>();
         for (int i = 0; i < lenth; i++) {
             Status status = new Status();
-            status.setUserName("Chad" + i);
+            status.setUserName("Murainy" + i);
             status.setCreatedAt("04/05/" + i);
             status.setRetweet(i % 2 == 0);
             status.setUserAvatar("https://github.com/murainy/murainy.github.io/blob/master/12.png?raw=true");

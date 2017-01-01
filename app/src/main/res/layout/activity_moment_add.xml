@@ -3,7 +3,8 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             style="@style/MatchMatch"
             android:fitsSystemWindows="true"
-            android:background="@drawable/index_bg_005">
+            android:background="@drawable/index_bg_005"
+    >
 
     <LinearLayout style="@style/MatchMatch.Vertical">
 
@@ -15,14 +16,14 @@
                 android:id="@+id/cb_moment_add_single_choice"
                 style="@style/AutoWrap"
                 android:text="是否是单选"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@drawable/aliceblue"
                 android:textSize="12sp"/>
 
             <CheckBox
                 android:id="@+id/cb_moment_add_take_photo"
                 style="@style/AutoWrap"
                 android:text="是否开启拍照功能"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@drawable/aliceblue"
                 android:textSize="12sp"/>
         </LinearLayout>
 
@@ -37,7 +38,7 @@
                 style="@style/AutoWrap"
                 android:checked="true"
                 android:text="是否可编辑"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@drawable/aliceblue"
                 android:textSize="12sp"/>
 
             <CheckBox
@@ -45,7 +46,7 @@
                 style="@style/AutoWrap"
                 android:checked="true"
                 android:text="是否显示加号"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@drawable/aliceblue"
                 android:textSize="12sp"/>
 
             <CheckBox
@@ -53,7 +54,7 @@
                 style="@style/AutoWrap"
                 android:checked="true"
                 android:text="是否拖拽排序"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@drawable/aliceblue"
                 android:textSize="12sp"/>
         </LinearLayout>
 
@@ -84,7 +85,7 @@
             android:gravity="start"
             android:hint="这一刻的想法..."
             android:lines="4"
-            android:textColor="#474747"
+            android:textColor="@drawable/aliceblue"
             android:textColorHint="#C6C6C6"/>
 
         <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              style="@style/MatchMatch.Vertical">
+              style="@style/MatchMatch.Vertical"
+              android:fitsSystemWindows="true"
+              android:background="@drawable/index_bg_005"
+    >
 
     <LinearLayout
         style="@style/MatchWrap.Horizontal"
@@ -13,7 +16,7 @@
             android:layout_marginRight="10dp"
             android:checked="true"
             android:text="预览图片时显示保存图片按钮"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@drawable/aliceblue"
             android:textSize="12sp"/>
 
         <TextView

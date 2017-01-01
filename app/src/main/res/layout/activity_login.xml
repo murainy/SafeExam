@@ -27,8 +27,7 @@
         <LinearLayout
             android:layout_width="264dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_margin="16dp"
             android:background="@drawable/shape_corner"
             android:orientation="vertical" android:theme="@style/AppTheme">
 
@@ -45,7 +44,8 @@
                 android:shadowDx="0.0"
                 android:shadowDy="1.0"
                 android:shadowRadius="2.0"
-                android:textColorHint="#ffdddddd"/>
+                android:textColorHint="#ffdddddd"
+                android:layout_margin="8dp"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
@@ -60,7 +60,9 @@
                 android:hint="密码"
                 android:inputType="textPassword"
                 android:paddingLeft="15dip"
-                android:textColorHint="#ffdddddd"/>
+                android:textColorHint="#ffdddddd"
+                android:layout_margin="8dp"
+                />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
@@ -81,7 +83,7 @@
             android:id="@+id/login"
             style="@style/common_button_style"
             android:layout_width="265dp"
-            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_vertical_margin"
             android:gravity="center"
             android:text="@string/login_bnt"

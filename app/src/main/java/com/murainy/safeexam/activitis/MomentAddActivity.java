@@ -2,6 +2,7 @@ package com.murainy.safeexam.activitis;
 
 import android.Manifest;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.NonNull;
@@ -124,8 +125,10 @@ public class MomentAddActivity extends BGAPPToolbarActivity implements EasyPermi
 
 	@Override
 	protected void processLogic(Bundle savedInstanceState) {
-		setTitle("添加朋友圈");
-
+		//setTitle("添加朋友圈");
+		Drawable d = getResources().getDrawable(R.drawable.dodgerblue);
+		getSupportActionBar().setBackgroundDrawable(d);
+		getSupportActionBar().hide();
 		mEditableCb.setChecked(mPhotosSnpl.isEditable());
 		mPlusCb.setChecked(mPhotosSnpl.isPlusEnable());
 		mSortableCb.setChecked(mPhotosSnpl.isSortable());

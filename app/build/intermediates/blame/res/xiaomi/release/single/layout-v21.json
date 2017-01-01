@@ -9,7 +9,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout-v21\\notification_action_tombstone.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout-v21\\activity_circle.xml",
@@ -17,11 +17,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout-v21\\notification_template_custom_big.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout-v21\\notification_action.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout-v21\\test_list_item.xml",
@@ -29,6 +29,6 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\layout-v21\\notification_template_icon_group.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
     }
 ]

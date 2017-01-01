@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.murainy.safeexam"
-    android:versionCode="30"
-    android:versionName="1.0.21" >
+    android:versionCode="31"
+    android:versionName="1.0.22" >
 
     <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="24" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
 
     <!-- 允许联网 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -120,14 +120,6 @@
             android:name="com.murainy.safeexam.activitis.UserBindPhoneActivity"
             android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme" />
-        <activity
-            android:name="com.murainy.safeexam.activitis.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName="com.murainy.safeexam.activitis.TabmanActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activitis.TabmanActivity" />
-        </activity>
         <activity android:name="com.murainy.safeexam.activitis.GridActivity" >
         </activity>
         <activity
@@ -145,6 +137,7 @@
         <activity
             android:name="com.murainy.safeexam.activitis.ExamActivity"
             android:label="@string/title_activity_eaxm"
+            android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
@@ -165,6 +158,10 @@
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.MomentListActivity"
+            android:theme="@style/ImageTranslucentTheme" >
+        </activity>
+        <activity
+            android:name="com.murainy.safeexam.activitis.SettingsActivity"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
 
