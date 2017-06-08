@@ -117,25 +117,25 @@ public class TestListAdapter extends BaseAdapter {
         return view;
     }
 
-    public final class ViewHolder {
+	private final class ViewHolder {
 
-        public TextView question;
-        public RadioGroup judge;
-        public RadioButton judgeA;
-        public RadioButton judgeB;
-        public RadioGroup singleRadioGroup;
-        public RadioButton singleOptionA;
-        public RadioButton SingleOptionB;
-        public RadioButton singleOptionC;
-        public RadioButton SingleOptionD;
-        public LinearLayout multiOptionGroup;
-        public CheckBox multiOptionA;
-        public CheckBox multiOptionB;
-        public CheckBox multiOptionC;
-        public CheckBox multiOptionD;
-        public CheckBox multiOptionE;
-        public CheckBox multiOptionF;
-        public TextView answer;
-        public TextView note;
-    }
+		private TextView question;
+		private RadioGroup judge;
+		private RadioButton judgeA;
+		private RadioButton judgeB;
+		private RadioGroup singleRadioGroup;
+		private RadioButton singleOptionA;
+		private RadioButton SingleOptionB;
+		private RadioButton singleOptionC;
+		private RadioButton SingleOptionD;
+		private LinearLayout multiOptionGroup;
+		private CheckBox multiOptionA;
+		private CheckBox multiOptionB;
+		private CheckBox multiOptionC;
+		private CheckBox multiOptionD;
+		private CheckBox multiOptionE;
+		private CheckBox multiOptionF;
+		private TextView answer;
+		private TextView note;
+	}
 }

@@ -8,7 +8,16 @@ import cn.bmob.v3.BmobObject;
 public class Testqeba extends BmobObject {
 	private Number id;
 	private String name;
+	private boolean finishState = false;
 	private String note;
+
+	public boolean isFinishState() {
+		return finishState;
+	}
+
+	public void setFinishState(boolean finishState) {
+		this.finishState = finishState;
+	}
 
 	public String getName() {
 		return name;

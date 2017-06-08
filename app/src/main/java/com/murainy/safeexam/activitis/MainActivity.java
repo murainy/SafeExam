@@ -16,10 +16,9 @@ import com.murainy.safeexam.R;
 import com.murainy.safeexam.SafeExam;
 import com.murainy.safeexam.Utils.Action;
 import com.murainy.safeexam.Utils.BmobUtils;
-import com.murainy.safeexam.Utils.OperateSQLite;
-import com.murainy.safeexam.adapter.PaperListAdapter;
+import com.murainy.safeexam.adapter.TestqebaAdapter;
 import com.murainy.safeexam.beans.Grade;
-import com.murainy.safeexam.beans.Paper;
+import com.murainy.safeexam.beans.Testqeba;
 import com.orhanobut.logger.Logger;
 
 import org.greenrobot.eventbus.EventBus;
@@ -39,9 +38,8 @@ import butterknife.OnClick;
 public class MainActivity extends Activity implements View.OnClickListener {
 
 	private ListView paperList;
-	private List<Paper> papers = new ArrayList<Paper>();
-	private PaperListAdapter adapter;
-	private OperateSQLite operateSQLite;
+	private List<Testqeba> papers = new ArrayList<>();
+	private TestqebaAdapter adapter;
 	@BindView(R.id.iv_left)
 	ImageView iv_left;
 	@BindView(R.id.iv_right)
@@ -51,7 +49,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-
+		//OperateSQLite operateSQLite;
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		//隐藏状态栏
@@ -59,14 +57,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		ButterKnife.bind(this);
 		iv_left.setVisibility(View.VISIBLE);
 		iv_right.setVisibility(View.VISIBLE);
-		tv_title.setText("选择试卷");
+		tv_title.setText("考试项目");
 		EventBus.getDefault().register(this);
 		paperList = (ListView) findViewById(R.id.lv_paper);
-		// BmobUtils.updateAllPaperList(this);
+		//operateSQLite = new OperateSQLite(this);
 		BmobUtils.downloadGradeList(MainActivity.this, SafeExam.getStudent().getUsername());
-		operateSQLite = new OperateSQLite(this);
-		papers = operateSQLite.getPaperData();
-		PaperListAdapter adapter = new PaperListAdapter(this, papers);
+		BmobUtils.downloadTestList(MainActivity.this);
+		//papers = operateSQLite.getTestData();
+		papers = BmobUtils.TestList;
+		adapter = new TestqebaAdapter(this, papers);
 		paperList.setAdapter(adapter);
 		paperList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
@@ -76,7 +75,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 				} else {
 					if (!papers.get(i).isFinishState()) {
 						Intent intent = new Intent(MainActivity.this, StartTestActivity.class);
-						intent.putExtra("paperName", papers.get(i).getPaperName());
+						intent.putExtra("paperName", papers.get(i).getName());
+						intent.putExtra("examMode", "正式考试");
 						startActivityForResult(intent, 0);
 					}
 				}
@@ -94,7 +94,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			if (resultCode == 1) {
 				Grade grade = (Grade) data.getSerializableExtra("data");
 				BmobUtils.gradeList.add(grade);
-				PaperListAdapter adapter = new PaperListAdapter(this, papers);
+				TestqebaAdapter adapter = new TestqebaAdapter(this, papers);
 				paperList.setAdapter(adapter);
 			}
 	}
@@ -114,11 +114,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	@Subscribe(threadMode = ThreadMode.MAIN) //在ui线程执行
 	public void onEventMainThread(Action action) {
 		switch (action) {
-			case DOWNLOAD_PAPER_LIST:
+			case DOWNLOAD_Test_LIST:
 				Logger.i("获取试卷列表成功");
 				//BmobUtils.updateAllPaperList(this);
-				papers = BmobUtils.paperList;
-				adapter = new PaperListAdapter(this, papers);
+				papers = BmobUtils.TestList;
+				adapter = new TestqebaAdapter(this, papers);
 				paperList.setAdapter(adapter);
 				break;
 			case DOWNLOAD_GRADE_LIST:
@@ -134,9 +134,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	@Override
 	protected void onPause() {
 		super.onPause();
-		papers = PaperListAdapter.paperData;
+		papers = TestqebaAdapter.paperData;
 		for (int i = 0; i < papers.size(); i++) {
-			BmobUtils.updatepaper(papers);
+			BmobUtils.updateTestpaper(papers);
 		}
 	}
 

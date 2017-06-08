@@ -2,15 +2,15 @@ package com.murainy.safeexam.activitis;
 
 import android.support.v4.app.Fragment;
 
+import com.murainy.safeexam.R;
+import com.murainy.safeexam.view.CherryFragment;
 import com.murainy.safeexam.view.DoneFragment;
-import com.murainy.safeexam.view.ExampleFragment;
 import com.stephentuso.welcome.BasicPage;
 import com.stephentuso.welcome.FragmentWelcomePage;
-import com.stephentuso.welcome.TitlePage;
 import com.stephentuso.welcome.ParallaxPage;
+import com.stephentuso.welcome.TitlePage;
 import com.stephentuso.welcome.WelcomeActivity;
 import com.stephentuso.welcome.WelcomeConfiguration;
-import com.murainy.safeexam.R;
 
 /**
  * Created by stephentuso on 11/15/15.
@@ -36,7 +36,7 @@ public class SplashActivity extends WelcomeActivity {
 				.page(new FragmentWelcomePage() {
 					@Override
 					protected Fragment fragment() {
-						return new ExampleFragment();
+						return new CherryFragment();
 					}
 				})
 				.page(new FragmentWelcomePage() {

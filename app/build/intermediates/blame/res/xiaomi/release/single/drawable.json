@@ -1,11 +1,11 @@
 [
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\design_fab_background.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable\\design_fab_background.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b6ff176b39297c7bfeab638a18e6ad5fff58fc9f\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\btn_logout_p.9.png",
@@ -13,7 +13,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\notification_bg_low.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\notification_bg_low.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\btn_logout_n.9.png",
@@ -25,7 +25,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\launcher.png",
@@ -45,15 +45,15 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\wel_button_borderless_background.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\drawable\\wel_button_borderless_background.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\a84111c3725c08de2a3c2a4111cb4bcd7c9c95e9\\output\\res\\drawable\\wel_button_borderless_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_check_selector.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_check_selector.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_check_selector.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\btn_logout_selector.xml",
@@ -81,7 +81,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_cancel_bg_focused.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_cancel_bg_focused.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_cancel_bg_focused.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\index_bg_005.webp",
@@ -89,11 +89,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_cancel_bg_selector.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_cancel_bg_selector.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_cancel_bg_selector.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_selector_item_folder.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_selector_item_folder.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8c5f6aeb57e0ef5ab1faca690383fd885ce9d550\\output\\res\\drawable\\bga_pp_selector_item_folder.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\setting_mid_layout_selector.xml",
@@ -113,7 +113,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\sample_footer_loading_progress.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.github.CymChad\\BaseRecyclerViewAdapterHelper\\v1.7.4\\res\\drawable\\sample_footer_loading_progress.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76c55381a6d276fb51f7aa085d7f2a5aef38177d\\output\\res\\drawable\\sample_footer_loading_progress.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\fish.webp",
@@ -125,11 +125,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_seekbar_track_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_seekbar_track_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\mask.png",
@@ -137,15 +137,15 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_edit_text_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_edit_text_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_text_cursor_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_text_cursor_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_wifi_disable.png",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_wifi_disable.png"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_wifi_disable.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\grade_button_normal.9.png",
@@ -161,7 +161,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_tab_indicator_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_tab_indicator_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\five.webp",
@@ -173,11 +173,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_btn_radio_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_btn_radio_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_ok_bg_selector.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_ok_bg_selector.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_ok_bg_selector.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\btn_grey_selector.xml",
@@ -185,7 +185,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\sky.webp",
@@ -197,11 +197,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\sample_footer_loading.png",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.github.CymChad\\BaseRecyclerViewAdapterHelper\\v1.7.4\\res\\drawable\\sample_footer_loading.png"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\76c55381a6d276fb51f7aa085d7f2a5aef38177d\\output\\res\\drawable\\sample_footer_loading.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ratingbar_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ratingbar_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\person_selector.xml",
@@ -233,7 +233,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\design_password_eye.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable\\design_password_eye.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b6ff176b39297c7bfeab638a18e6ad5fff58fc9f\\output\\res\\drawable\\design_password_eye.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bg_border_color_white.xml",
@@ -245,7 +245,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ic_search_api_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_search_api_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\setting_single_layout_selector.xml",
@@ -253,11 +253,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_ok_bg_focused.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_ok_bg_focused.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_ok_bg_focused.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\input_bg.9.png",
@@ -273,7 +273,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\cherry.webp",
@@ -281,19 +281,19 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_ok_bg_tap.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_ok_bg_tap.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_ok_bg_tap.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_cancel_bg_tap.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_cancel_bg_tap.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_cancel_bg_tap.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_selector_btn_confirm.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_selector_btn_confirm.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8c5f6aeb57e0ef5ab1faca690383fd885ce9d550\\output\\res\\drawable\\bga_pp_selector_btn_confirm.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_rotate_progress_bar.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_rotate_progress_bar.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8c5f6aeb57e0ef5ab1faca690383fd885ce9d550\\output\\res\\drawable\\bga_pp_rotate_progress_bar.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bg_btn_press_color_1.xml",
@@ -321,7 +321,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\login_edit_text_shape.xml",
@@ -337,7 +337,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\design_bottom_navigation_item_background.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable\\design_bottom_navigation_item_background.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b6ff176b39297c7bfeab638a18e6ad5fff58fc9f\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\yule.webp",
@@ -353,7 +353,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_btn_colored_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_btn_colored_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\unmask.png",
@@ -361,27 +361,27 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\notification_tile_bg.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\notification_tile_bg.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_btn_borderless_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_btn_borderless_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\design_snackbar_background.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable\\design_snackbar_background.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b6ff176b39297c7bfeab638a18e6ad5fff58fc9f\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\shape_corner.xml",
@@ -405,19 +405,19 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_ok_bg_normal.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_ok_bg_normal.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_ok_bg_normal.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\setting_top_layout_selector.xml",
@@ -425,7 +425,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_cancel_bg_normal.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_cancel_bg_normal.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_cancel_bg_normal.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\shape_corner_down.xml",
@@ -441,7 +441,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\notification_icon_background.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\notification_icon_background.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\btn_login_selector.xml",
@@ -449,11 +449,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_btn_check_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_btn_check_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\flower.webp",
@@ -461,11 +461,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_button_close_bg_selector.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_button_close_bg_selector.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_button_close_bg_selector.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8c5f6aeb57e0ef5ab1faca690383fd885ce9d550\\output\\res\\drawable\\bga_pp_shape_photo_folder_pw_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\shape_red_corners_button_pressed.xml",
@@ -473,11 +473,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ic_clear_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_clear_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\btn_login_p.9.png",
@@ -485,7 +485,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_item_background_holo_light.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_item_background_holo_light.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\setting_top_select.xml",
@@ -493,7 +493,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_cab_background_top_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_cab_background_top_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\shape_no_corner.xml",
@@ -501,7 +501,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\notification_bg.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\notification_bg.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\notification_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\index_bg_004.webp",
@@ -520,16 +520,12 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable\\rain.webp"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\design_ic_visibility.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\drawable\\design_ic_visibility.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\setting_bottom_layout_selector.xml",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\src\\main\\res\\drawable\\setting_bottom_layout_selector.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_textfield_search_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_textfield_search_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\flight_action_row_bg_selector.xml",
@@ -537,11 +533,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\wel_button_borderless_background_theme_light.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\welcome-release\\res\\drawable\\wel_button_borderless_background_theme_light.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\a84111c3725c08de2a3c2a4111cb4bcd7c9c95e9\\output\\res\\drawable\\wel_button_borderless_background_theme_light.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_vector_test.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_vector_test.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\side_nav_bar.xml",
@@ -553,7 +549,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_switch_thumb_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_switch_thumb_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\shape_red_corners_button.xml",
@@ -561,7 +557,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bmob_update_dialog_bg.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\cn.bmob.android\\bmob-sdk\\3.5.0\\res\\drawable\\bmob_update_dialog_bg.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0e290905d5b6f068a508c1c23102f5c24fc2b505\\output\\res\\drawable\\bmob_update_dialog_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\base_horizontal_line_red.9.png",
@@ -569,7 +565,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_dialog_material_background.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_dialog_material_background.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\base_edit_input.9.png",
@@ -581,11 +577,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\bga_pp_shape_dialog_bg.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\drawable\\bga_pp_shape_dialog_bg.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8c5f6aeb57e0ef5ab1faca690383fd885ce9d550\\output\\res\\drawable\\bga_pp_shape_dialog_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8aa220b00b8fa2d4179507299153f360d998d2cc\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\index_bg_003.webp",
@@ -593,6 +589,6 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\drawable\\navigation_empty_icon.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable\\navigation_empty_icon.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b6ff176b39297c7bfeab638a18e6ad5fff58fc9f\\output\\res\\drawable\\navigation_empty_icon.xml"
     }
 ]

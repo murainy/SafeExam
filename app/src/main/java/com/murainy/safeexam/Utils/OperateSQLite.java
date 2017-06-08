@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.murainy.safeexam.beans.Grade;
 import com.murainy.safeexam.beans.Paper;
+import com.murainy.safeexam.beans.Testqeba;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,6 +56,34 @@ public class OperateSQLite {
         return paperList;
     }
 
+    public List<Testqeba> getTestData() {
+
+        SQLiteDatabase db = sqLiteOpenHelper.getWritableDatabase();
+        List<Testqeba> paperList = new ArrayList<Testqeba>();
+        Cursor cursor = null;
+        cursor = db.query("Testqeba", null, null, null, null, null, "id DESC");
+
+
+        if (cursor.getCount() > 0) {
+            if (cursor.moveToFirst()) {
+                Testqeba paper;
+                do {
+                    paper = new Testqeba();
+                    paper.setName(cursor.getString(cursor.getColumnIndex("paperId")));
+                    paper.setNote(cursor.getString(cursor.getColumnIndex("paperName")));
+                    paper.setId(cursor.getInt(cursor.getColumnIndex("id")));
+                    if (cursor.getString(cursor.getColumnIndex("finishState")).equals("0")) {
+                        paper.setFinishState(false);
+                    } else {
+                        paper.setFinishState(true);
+                    }
+                    paperList.add(paper);
+                } while (cursor.moveToNext());
+            }
+            cursor.close();
+        }
+        return paperList;
+    }
     public List<Grade> getGradeData(String username) {
 
         SQLiteDatabase db = sqLiteOpenHelper.getWritableDatabase();

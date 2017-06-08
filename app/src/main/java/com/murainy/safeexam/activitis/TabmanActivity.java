@@ -29,8 +29,8 @@ public class TabmanActivity extends TabActivity {
     private LayoutInflater layoutInflater;
 
 
-    String[] mTitle = new String[]{"安全考试", "模拟练习", "个人中心"};
-    int[] mIcon = new int[]{ R.drawable.home_mbank_2_normal,R.drawable.home_mbank_1_normal,
+    String[] mTitle = new String[]{"模拟练习", "安全考试", "个人中心"};
+    int[] mIcon = new int[]{R.drawable.home_mbank_1_normal, R.drawable.home_mbank_2_normal,
             R.drawable.home_mbank_5_normal};
 
     @Override
@@ -66,12 +66,12 @@ public class TabmanActivity extends TabActivity {
         layoutInflater = LayoutInflater.from(this);
         TabHost.TabSpec spec;
 
-        //安全考试
+        //模拟练习
         Intent intent1 = new Intent(this,CircleActivity.class );
         spec = tabHost.newTabSpec(mTitle[0]).setIndicator(getTabItemView(0)).setContent(intent1);
         tabHost.addTab(spec);
 
-        //模拟练习
+        //安全考试
         Intent intent2 = new Intent(this, MainActivity.class);
         spec = tabHost.newTabSpec(mTitle[1]).setIndicator(getTabItemView(1)).setContent(intent2);
         tabHost.addTab(spec);

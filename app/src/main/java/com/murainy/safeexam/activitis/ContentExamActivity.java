@@ -12,8 +12,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.murainy.safeexam.R;
+import com.murainy.safeexam.Utils.ToastUtils;
 import com.murainy.safeexam.adapter.FindTabAdapter;
+import com.murainy.safeexam.data.RequestManager;
 import com.murainy.safeexam.view.FindHotCollectionFragment;
 import com.murainy.safeexam.view.FindHotMonthFragment;
 import com.murainy.safeexam.view.FindHotRecommendFragment;
@@ -74,15 +79,15 @@ public class ContentExamActivity extends FragmentActivity {
 
 		//将fragment装进列表中
 		list_fragment = new ArrayList<>();
-		list_fragment.add(hotRecommendFragment);
 		list_fragment.add(hotCollectionFragment);
+		list_fragment.add(hotRecommendFragment);
 		list_fragment.add(hotMonthFragment);
 		list_fragment.add(hotToday);
 
 		//将名称加载tab名字列表，正常情况下，我们应该在values/arrays.xml中进行定义然后调用
 		list_title = new ArrayList<>();
-		list_title.add("热门推荐");
 		list_title.add("热门收藏");
+		list_title.add("热门推荐");
 		list_title.add("本月热榜");
 		list_title.add("今日热榜");
 
@@ -124,5 +129,22 @@ public class ContentExamActivity extends FragmentActivity {
 
 	}
 
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		RequestManager.cancelAll(this);
+	}
 
+	protected void executeRequest(Request<?> request) {
+		RequestManager.addRequest(request, this);
+	}
+
+	protected Response.ErrorListener errorListener() {
+		return new Response.ErrorListener() {
+			@Override
+			public void onErrorResponse(VolleyError error) {
+				ToastUtils.showLong(getApplicationContext(), error.getMessage());
+			}
+		};
+	}
 }

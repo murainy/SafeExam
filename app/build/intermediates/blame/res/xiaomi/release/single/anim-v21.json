@@ -1,14 +1,10 @@
 [
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\anim-v21\\design_appbar_state_list_animator.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\anim-v21\\design_appbar_state_list_animator.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b6ff176b39297c7bfeab638a18e6ad5fff58fc9f\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\b6ff176b39297c7bfeab638a18e6ad5fff58fc9f\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     }
 ]

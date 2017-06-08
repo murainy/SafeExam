@@ -48,13 +48,19 @@ public class CircleActivity extends Activity {
 						startActivity(new Intent(CircleActivity.this, KnowledgeActivity.class));
 						break;
 					case 2:
-						startActivity(new Intent(CircleActivity.this, SequenceActivity.class));
+						Intent intent1 = new Intent(CircleActivity.this, SequenceActivity.class);
+						intent1.putExtra("examMode", "顺序练习");
+						startActivity(intent1);
 						break;
 					case 3:
-						startActivity(new Intent(CircleActivity.this, AdminActivity.class));
+						Intent intent2 = new Intent(CircleActivity.this, AdminActivity.class);
+						intent2.putExtra("examMode", "模拟考试");
+						startActivity(intent2);
 						break;
 					case 4:
-						startActivity(new Intent(CircleActivity.this, ExamActivity.class));
+						Intent intent3 = new Intent(CircleActivity.this, ExamActivity.class);
+						intent3.putExtra("examMode", "错题练习");
+						startActivity(intent3);
 						break;
 					case 5:
 						startActivity(new Intent(CircleActivity.this, ContentExamActivity.class));

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@color/air_speed_label"
@@ -19,7 +20,8 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="8dp"
             android:background="#00000000"
-            android:src="@drawable/ic_arrow_left"/>
+            android:src="@drawable/ic_arrow_left"
+            tools:ignore="ContentDescription"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,7 +29,8 @@
             android:layout_centerInParent="true"
             android:text="@string/ksxm"
             android:textColor="@color/base_color_text_white"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            tools:ignore="RelativeOverlap"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -35,7 +38,8 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
             android:layout_toLeftOf="@+id/tv_time"
-            android:src="@drawable/ic_timer_white_24dp"/>
+            android:src="@drawable/ic_timer_white_24dp"
+            tools:ignore="ContentDescription"/>
 
         <TextView
             android:id="@+id/tv_time"
@@ -46,14 +50,16 @@
             android:layout_marginRight="5dp"
             android:text="60秒"
             android:textColor="@color/base_color_text_white"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            tools:ignore="HardcodedText"/>
 
     </RelativeLayout>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/base_horization_line"/>
+        android:src="@drawable/base_horization_line"
+        tools:ignore="ContentDescription"/>
 
 
     <include

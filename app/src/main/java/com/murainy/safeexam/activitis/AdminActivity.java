@@ -9,12 +9,13 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.orhanobut.logger.Logger;
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.Utils.Action;
 import com.murainy.safeexam.Utils.BmobUtils;
+import com.murainy.safeexam.Utils.OperateSQLite;
 import com.murainy.safeexam.adapter.TPaperListAdapter;
 import com.murainy.safeexam.beans.Paper;
+import com.orhanobut.logger.Logger;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -29,15 +30,18 @@ public class AdminActivity extends Activity implements View.OnClickListener {
 
     private ListView paperList;
     private List<Paper> papers = new ArrayList<Paper>();
-    private TPaperListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        TPaperListAdapter adapter;
+        OperateSQLite operateSQLite;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
         EventBus.getDefault().register(this);
         BmobUtils.downloadTPaperList(AdminActivity.this);
         paperList = (ListView) findViewById(R.id.lv_paper_teacher);
+        operateSQLite = new OperateSQLite(this);
+        papers = operateSQLite.getPaperData();
         adapter = new TPaperListAdapter(this, papers);
         paperList.setAdapter(adapter);
         paperList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -45,7 +49,8 @@ public class AdminActivity extends Activity implements View.OnClickListener {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(AdminActivity.this, StartTestActivity.class);
                 intent.putExtra("paperName", papers.get(i).getPaperName());
-                startActivity(intent);
+                intent.putExtra("examMode", "模拟考试");
+                startActivityForResult(intent, 0);
             }
         });
 

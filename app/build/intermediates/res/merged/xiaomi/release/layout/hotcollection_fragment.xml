@@ -5,14 +5,10 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent" android:weightSum="1">
 
-    <TextView
+
+
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="hotCollectionFragment"
-        android:id="@+id/textView3"
-        android:singleLine="true"
-        android:gravity="center_vertical|center|center_horizontal"
-        android:layout_weight="0.32"
-        tools:ignore="Deprecated,HardcodedText"/>
+        android:layout_weight="1"/>
 </LinearLayout>

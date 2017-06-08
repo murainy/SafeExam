@@ -5,7 +5,7 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\bga_pp_menu_photo_preview.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\menu\\bga_pp_menu_photo_preview.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8c5f6aeb57e0ef5ab1faca690383fd885ce9d550\\output\\res\\menu\\bga_pp_menu_photo_preview.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\menu_settings.xml",
@@ -13,11 +13,11 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\bga_pp_menu_photo_picker.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\menu\\bga_pp_menu_photo_picker.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8c5f6aeb57e0ef5ab1faca690383fd885ce9d550\\output\\res\\menu\\bga_pp_menu_photo_picker.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\main.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\circle-menu\\res\\menu\\main.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\9dedcadfe5d996105905d3cb9d493c1ed0f8f80a\\output\\res\\menu\\main.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\menu_knowledge.xml",
@@ -25,6 +25,6 @@
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\res\\merged\\xiaomi\\release\\menu\\bga_pp_menu_photo_picker_preview.xml",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\app\\build\\intermediates\\exploded-aar\\bga-photopicker-1.2.0\\res\\menu\\bga_pp_menu_photo_picker_preview.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\8c5f6aeb57e0ef5ab1faca690383fd885ce9d550\\output\\res\\menu\\bga_pp_menu_photo_picker_preview.xml"
     }
 ]

@@ -11,7 +11,7 @@
     <string name="login_bnt">登录</string>
     <string name="account_no">还没有账号？</string>
     <string name="register_bnt">注册</string>
-    <string name="skipqusetion">路过</string>
+    <string name="skipqusetion">跳过</string>
     <string name="checkqusetion">检查</string>
     <string name="nextqusetion">下题</string>
     <string name="sigerselect">单选项</string>
@@ -24,7 +24,7 @@
     <string name="t_15">40分钟</string>
     <string name="forgetpass">忘记密码</string>
     <string name="bindphone">绑定手机</string>
-    <string name="changepass">修改密码</string>
+    <string name="changepass">更新试卷</string>
     <string name="lookgrade">查看成绩</string>
     <string name="set_head">修改头像</string>
     <string name="exit_app">退出登陆</string>

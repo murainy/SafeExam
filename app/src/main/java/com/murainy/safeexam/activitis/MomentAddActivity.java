@@ -171,7 +171,7 @@ public class MomentAddActivity extends BGAPPToolbarActivity implements EasyPermi
 		String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
 		if (EasyPermissions.hasPermissions(this, perms)) {
 			// 拍照后照片的存放目录，改成你自己拍照后要存放照片的目录。如果不传递该参数的话就没有拍照功能
-			File takePhotoDir = new File(Environment.getExternalStorageDirectory(), "BGAPhotoPickerTakePhoto");
+			File takePhotoDir = new File(Environment.getExternalStorageDirectory(), "MurainyPhoto");
 
 			startActivityForResult(BGAPhotoPickerActivity.newIntent(this, mTakePhotoCb.isChecked() ? takePhotoDir : null, mPhotosSnpl.getMaxItemCount() - mPhotosSnpl.getItemCount(), null, false), REQUEST_CODE_CHOOSE_PHOTO);
 		} else {

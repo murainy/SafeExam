@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
 
 import cn.bmob.v3.BmobBatch;
 import cn.bmob.v3.BmobObject;
@@ -33,25 +32,25 @@ import cn.bmob.v3.listener.UpdateListener;
  * Created by murainy on 2015/12/29.
  */
 public class BmobUtils {
-	public static List<String> paperSet = new ArrayList<String>();
+	private static List<String> paperSet = new ArrayList<String>();
 	public static List<Grade> gradeList = new ArrayList<Grade>();
 	public static List<Paper> paperList = new ArrayList<Paper>();
-	public static List<Paper> LP = new ArrayList<>();
-	public static List<Testqeba> LT = new ArrayList<>();
+	private static List<Paper> LP = new ArrayList<>();
+	private static List<Testqeba> LT = new ArrayList<>();
 	public static List<Testqeba> TestList = new ArrayList<>();
 	public static List<Question> questionsList = new ArrayList<Question>();
 	public static List<Question> qthList = new ArrayList<Question>();
 	public static boolean ready = false;
 
 	public static void downloadGradeList(Context context, String username) {
-		BmobQuery<Grade> query = new BmobQuery<Grade>();
+		BmobQuery<Grade> query = new BmobQuery<>();
 		query.addWhereEqualTo("username", username);
 		query.setLimit(100);
 		query.findObjects(new FindListener<Grade>() {
 			@Override
 			public void done(List<Grade> object, BmobException e) {
 				if (e == null) {
-					gradeList = new ArrayList<Grade>();
+					gradeList = new ArrayList<>();
 					for (Grade grade : object) {
 						gradeList.add(grade);
 					}
@@ -67,14 +66,14 @@ public class BmobUtils {
 
 	public static void downloadPaperList(Context context) {
 
-		BmobQuery<Paper> query = new BmobQuery<Paper>();
+		BmobQuery<Paper> query = new BmobQuery<>();
 		query.setLimit(100);
 		query.findObjects(new FindListener<Paper>() {
 			@Override
 			public void done(List<Paper> object, BmobException e) {
 				if (e == null) {
 					Logger.i(object.size() + "///");
-					paperList = new ArrayList<Paper>();
+					paperList = new ArrayList<>();
 					for (int i = 0; i < object.size(); i++) {
 						paperList.add(object.get(i));
 					}
@@ -88,7 +87,7 @@ public class BmobUtils {
 		});
 	}
 
-	public static void downloadTestList() {
+	public static void downloadTestList(Context context) {
 
 		BmobQuery<Testqeba> query = new BmobQuery<>();
 		query.setLimit(100);
@@ -101,8 +100,8 @@ public class BmobUtils {
 					for (int i = 0; i < object.size(); i++) {
 						TestList.add(object.get(i));
 					}
-					Logger.i(paperList.size() + "///");
-					EventBus.getDefault().post(Action.DOWNLOAD_PAPER_LIST);
+					Logger.i(TestList.size() + "///");
+					EventBus.getDefault().post(Action.DOWNLOAD_Test_LIST);
 				} else {
 					Logger.i("查询失败");
 					EventBus.getDefault().post(Action.QUERY_ERROR);
@@ -113,7 +112,7 @@ public class BmobUtils {
 
 	public static void downloadTPaperList(Context context) {
 
-		BmobQuery<Paper> query = new BmobQuery<Paper>();
+		BmobQuery<Paper> query = new BmobQuery<>();
 		query.findObjects(new FindListener<Paper>() {
 			@Override
 			public void done(List<Paper> object, BmobException e) {
@@ -259,6 +258,22 @@ public class BmobUtils {
 		}
 	}
 
+	public static void updateTestpaper(List<Testqeba> paper) {
+		for (int i = 0; i < paper.size(); i++) {
+			Testqeba q = paper.get(i);
+			q.save(new SaveListener<String>() {
+				@Override
+				public void done(String objectId, BmobException e) {
+					if (e == null) {
+						Logger.i("标记成功");
+					} else {
+						Logger.i("标记失败" + e);
+					}
+				}
+			});
+		}
+	}
+
 	public static void updatemark(List<Question> questions) {
 		for (int i = 0; i < questions.size(); i++) {
 			Question q = questions.get(i);
@@ -323,7 +338,7 @@ public class BmobUtils {
 
 					Logger.i("计数器查询成功：共" + qthList.size() + "条数据。");
 					Logger.i("数据样品：" + questionsList.size());
-					EventBus.getDefault().post(Action.QUESTIONCOUNT);
+					EventBus.getDefault().post(Action.QUESTION_COUNT);
 				} else {
 					Logger.e("查询失败：" + e);
 				}
@@ -431,7 +446,7 @@ public class BmobUtils {
 							Testqeba t = new Testqeba();
 							t.setId(i);
 							t.setName(list.get(i).getYear());
-							t.setNote("安全套");
+							t.setNote("安全考试");
 							LT.add(i, t);
 						}
 						Logger.e(LT.toString());
