@@ -19,12 +19,21 @@ public class Question extends BmobObject {
     private String optionE = "";
     private String optionF = "";
     private String mark = "";
+
     private String answer = "";
     private String note = "";
     private String year="";
+	private Number count = 0;
 
+	public Number getCount() {
+		return count;
+	}
 
-    public String getYear() {
+	public void setCount(Number count) {
+		this.count = count;
+	}
+
+	public String getYear() {
         return year;
     }
 

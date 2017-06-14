@@ -135,18 +135,21 @@
             android:outlineProvider="background" android:padding="5dp"
             android:rowCount="3" android:useDefaultMargins="false" android:layout_gravity="center"
             >
+
             <Button
                 android:id="@+id/btn_change_password"
                 style="@style/common_button_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
+                android:layout_columnWeight="0.5"
                 android:layout_gravity="fill"
-                android:layout_margin="@dimen/activity_vertical_margin" android:layout_row="0"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_row="0"
                 android:gravity="center"
-                android:text="@string/changepass" android:textColor="@color/base_color_text_white"
-                android:textSize="@dimen/text_size_large"
-                android:layout_columnWeight="0.5"/>
+                android:text="@string/changepass"
+                android:textColor="@color/base_color_text_white"
+                android:textSize="@dimen/text_size_large"/>
             <Button
                 android:id="@+id/bnt_bindphone"
                 style="@style/common_button_style"

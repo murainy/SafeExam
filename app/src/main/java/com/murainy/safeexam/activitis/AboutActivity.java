@@ -4,126 +4,122 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.just.library.AgentWeb;
+import com.just.library.ChromeClientCallbackManager;
 import com.murainy.safeexam.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-
 public class AboutActivity extends Activity {
+	protected AgentWeb mAgentWeb;
 
-    @BindView(R.id.tv_title)
-    TextView tv_title;
-    @BindView(R.id.webView)
-    WebView webView;
+	@BindView(R.id.tv_title)
+	TextView tv_title;
+	@BindView(R.id.web_layout)
+	LinearLayout mLayout;
 
-    private WebSettings settings;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_about);
+		ButterKnife.bind(this);
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
-        ButterKnife.bind(this);
+		String mUrl;
+		Bundle bundle = getIntent().getBundleExtra("bundle");
+		mUrl = bundle.getString("url");
+		WebSettings settings;
+		String tvt = "关于 (SafeExam V" + getVersionName(this) + ")";
+		tv_title.setText(tvt);
 
-        initView();
-    }
+		mAgentWeb = AgentWeb.with(this)//传入Activity
+				.setAgentWebParent(mLayout, new LinearLayout.LayoutParams(-1, -1))//传入AgentWeb 的父控件 ，如果父控件为 RelativeLayout ， 那么第二参数需要传入 RelativeLayout.LayoutParams
+				.useDefaultIndicator()// 使用默认进度条
+				.defaultProgressBarColor() // 使用默认进度条颜色
+				.setReceivedTitleCallback(mCallback) //设置 Web 页面的 title 回调
+				.createAgentWeb()//
+				.ready()
+				.go(mUrl);
+	}
 
-    private void initView() {
-        String tvt="关于 (SafeExam V" + getVersionName(this) + ")";
-        tv_title.setText(tvt);
-        settings = webView.getSettings();
-        settings.setJavaScriptEnabled(true); //如果访问的页面中有Javascript，则WebView必须设置支持Javascript
-        settings.setJavaScriptCanOpenWindowsAutomatically(true);
-        settings.setSupportZoom(true); //支持缩放
-        settings.setBuiltInZoomControls(true); //支持手势缩放
-        settings.setDisplayZoomControls(false); //是否显示缩放按钮
-
-        // >= 19(SDK4.4)启动硬件加速，否则启动软件加速
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-            settings.setLoadsImagesAutomatically(true); //支持自动加载图片
-        } else {
-            webView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-            settings.setLoadsImagesAutomatically(false);
-        }
-
-        settings.setUseWideViewPort(true); //将图片调整到适合WebView的大小
-        settings.setLoadWithOverviewMode(true); //自适应屏幕
-        settings.setDomStorageEnabled(true);
-        settings.setSaveFormData(true);
-        settings.setSupportMultipleWindows(true);
-        settings.setAppCacheEnabled(true);
-        settings.setCacheMode(WebSettings.LOAD_DEFAULT); //优先使用缓存
-        webView.setHorizontalFadingEdgeEnabled(true);
-        webView.setHorizontalScrollBarEnabled(false);
-        webView.setOverScrollMode(View.OVER_SCROLL_NEVER); // 取消WebView中滚动或拖动到顶部、底部时的阴影
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY); // 取消滚动条白边效果
-        webView.requestFocus();
-
-        webView.loadUrl("file:///android_asset/about.html");
-        webView.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                view.loadUrl(url);
-                return true;
-            }
-        });
-    }
-
-    // 获取当前应用的版本号
-    public static String getVersionName(Context context) {
-        try {
-            PackageManager packageManager = context.getPackageManager();
-            PackageInfo packInfo = packageManager.getPackageInfo(context.getPackageName(), 0);
-            String version = packInfo.versionName;
-            if (!TextUtils.isEmpty(version)) {
-                return version;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "";
-    }
+	private ChromeClientCallbackManager.ReceivedTitleCallback mCallback = new ChromeClientCallbackManager.ReceivedTitleCallback() {
+		@Override
+		public void onReceivedTitle(WebView view, String title) {
+			if (tv_title != null)
+				tv_title.setText(title);
+		}
+	};
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
-    }
+	// 获取当前应用的版本号
+	public static String getVersionName(Context context) {
+		try {
+			PackageManager packageManager = context.getPackageManager();
+			PackageInfo packInfo = packageManager.getPackageInfo(context.getPackageName(), 0);
+			String version = packInfo.versionName;
+			if (!TextUtils.isEmpty(version)) {
+				return version;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "";
+	}
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK && webView.canGoBack()) {
-            webView.goBack();//返回上一页面
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		return super.onCreateOptionsMenu(menu);
+	}
 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case android.R.id.home:
+				finish();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+		if (mAgentWeb.handleKeyEvent(keyCode, event)) {
+			return true;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	protected void onPause() {
+		mAgentWeb.getWebLifeCycle().onPause();
+		super.onPause();
+
+	}
+
+	@Override
+	protected void onResume() {
+		mAgentWeb.getWebLifeCycle().onResume();
+		super.onResume();
+	}
+
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		//mAgentWeb.destroy();
+		mAgentWeb.getWebLifeCycle().onDestroy();
+	}
 }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.murainy.safeexam"
-    android:versionCode="32"
-    android:versionName="1.0.23" >
+    android:versionCode="33"
+    android:versionName="1.0.24" >
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="25" />
+        android:targetSdkVersion="24" />
 
     <!-- 允许联网 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -45,7 +45,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.murainy.safeexam.activitis.LauncherActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleTask"
             android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation"
             android:uiOptions="splitActionBarWhenNarrow" >
             <intent-filter>
@@ -111,7 +111,15 @@
         <activity
             android:name="com.murainy.safeexam.activitis.HeadActivity"
             android:launchMode="singleTop"
-            android:theme="@style/ImageTranslucentTheme" />
+            android:theme="@style/ImageTranslucentTheme" >
+
+            <!-- 具有相机功能 -->
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.CircleActivity"
             android:label="@string/image_translucent_bar"
@@ -146,6 +154,7 @@
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.KnowledgeActivity"
+            android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
@@ -166,6 +175,7 @@
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.SettingsActivity"
+            android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
 
@@ -205,6 +215,16 @@
             android:screenOrientation="portrait"
             android:theme="@style/BGAPPTheme"
             android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <provider
+            android:name="com.just.library.AgentWebFileProvider"
+            android:authorities="com.murainy.safeexam.AgentWebFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/web_download_paths" />
+        </provider>
     </application>
 
 </manifest>

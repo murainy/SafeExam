@@ -188,6 +188,7 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
+    <color name="select_color">#2e2e32</color>
     <color name="setting_blue">#419de4</color>
     <color name="setting_line_color">#ccc</color>
     <color name="setting_text_color">#333</color>
@@ -1006,10 +1007,10 @@
     <string name="add">添加</string>
     <string name="add_paper">添加试卷</string>
     <string name="add_papers">添加试卷</string>
-    <string name="answer">答案</string>
+    <string name="answer"/>
     <string name="app_error">应用程序错误</string>
     <string name="app_error_message">很报歉，程序栽在十字路口。</string>
-    <string name="app_name">SafeExam</string>
+    <string name="app_name">安全考试</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="ask">问一个问题</string>
     <string name="auther">牧之河</string>
@@ -1040,9 +1041,10 @@
     <string name="bmob_common_start_patch_notification">正在更新安装包</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="camery">拍照</string>
-    <string name="changepass">更新试卷</string>
+    <string name="changepass">修改密码</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
-    <string name="checkqusetion">检查</string>
+    <string name="checkqusetion">开始</string>
+    <string name="cloud">云盘</string>
     <string name="contact">294967877@qq.com</string>
     <string name="drawer_close">关</string>
     <string name="drawer_open">开</string>
@@ -1115,7 +1117,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="nextqusetion">下题</string>
-    <string name="note">提示</string>
+    <string name="note"/>
     <string name="notify_priority">notify_priority</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>

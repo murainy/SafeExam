@@ -35,26 +35,26 @@ import butterknife.OnClick;
 /**
  * Created by murainy on 2015/12/14.
  */
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends Activity {
 
 	private ListView paperList;
 	private List<Testqeba> papers = new ArrayList<>();
 	private TestqebaAdapter adapter;
 	@BindView(R.id.iv_left)
-	ImageView iv_left;
+	public ImageView iv_left;
 	@BindView(R.id.iv_right)
-	ImageView iv_right;
+	public ImageView iv_right;
 	@BindView(R.id.tv_title)
-	TextView tv_title;
+	public TextView tv_title;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		//OperateSQLite operateSQLite;
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		ButterKnife.bind(this);
 		//隐藏状态栏
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		ButterKnife.bind(this);
 		iv_left.setVisibility(View.VISIBLE);
 		iv_right.setVisibility(View.VISIBLE);
 		tv_title.setText("考试项目");
@@ -100,15 +100,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	}
 
 
-	@Override
-	public void onClick(View view) {
-		switch (view.getId()) {
-			case R.id.iv_right:
-				Intent i1 = new Intent(MainActivity.this, InformationActivity.class);
-				startActivity(i1);
-				break;
-		}
-	}
 
 
 	@Subscribe(threadMode = ThreadMode.MAIN) //在ui线程执行
@@ -144,6 +135,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	protected void onDestroy() {
 		super.onDestroy();
 		EventBus.getDefault().unregister(this);
+
 	}
 
 	@OnClick(R.id.iv_left)

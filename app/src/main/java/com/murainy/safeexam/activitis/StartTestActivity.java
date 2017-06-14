@@ -1,12 +1,12 @@
 package com.murainy.safeexam.activitis;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.Gravity;
@@ -44,19 +44,30 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 /**
  * Created by murainy on 2015/12/16.
  */
-public class StartTestActivity extends Activity implements View.OnClickListener {
+public class StartTestActivity extends AppCompatActivity {
+
+	@BindView(R.id.btn_mask_test)
+	public Button btnMaskTest;
+	@BindView(R.id.btn_skip_test)
+	public Button btnSkipTest;
+	@BindView(R.id.btn_finish_test)
+	public Button btnFinishTest;
+	@BindView(R.id.btn_back)
+	public ImageButton btnBack;
+	@BindView(R.id.seekBar)
+	public SeekBar seekBar;
 
 	private List<Question> questions = new ArrayList<Question>();
 	private List<Question> qthLists = new ArrayList<Question>();
-	private List<Question> judgethList = new ArrayList<Question>();
-	private List<Question> singerthList = new ArrayList<Question>();
-	private List<Question> mutithList = new ArrayList<Question>();
 	private List<String> answers = new ArrayList<String>();
 	private TextView question, id, timeTV, answer, note;
-	private Button finishBtn;
+
 	private int tag = 0;
 	private String paperName;
 	private DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
@@ -66,9 +77,10 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 	private RadioButton judgeA, judgeB, singleOptionA, singleOptionB, singleOptionC, singleOptionD;
 	private RadioGroup singleRadioGroup, judge;
 	private LinearLayout multiOptionGroup;
-	private RelativeLayout test;
-	private SeekBar seekbar;
 	private GestureDetector mGestureDetector;
+	private RelativeLayout test;
+
+
 	private Handler handler = new Handler() {
 		@Override
 		public void handleMessage(Message msg) {
@@ -84,49 +96,18 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 		}
 	};
 
-	@Override
-	public void onWindowFocusChanged(boolean hasFocus) {
-		if (hasFocus) {
-			ToastUtils.showShort(this, "开始练习。");
-
-		}
-	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start_test);
 		EventBus.getDefault().register(this);
+		ButterKnife.bind(this);
 		paperName = getIntent().getStringExtra("paperName");
 		examMode = getIntent().getStringExtra("examMode");
 		Logger.i(paperName + "：收到了" + examMode);
 
-		switch (examMode) {
-			case "正式考试":
-				ToastUtils.showLong(this, examMode);
-				BmobUtils.examLists(examMode);
-				break;
-			case "模拟考试":
-				BmobUtils.questionCount(StartTestActivity.this, paperName, "判断题", 40);
-				judgethList = qthLists;
-				BmobUtils.questionCount(StartTestActivity.this, paperName, "单选题", 40);
-				singerthList = qthLists;
-				BmobUtils.questionCount(StartTestActivity.this, paperName, "多选题", 20);
-				mutithList = qthLists;
-				BmobUtils.downloadQuestionList100(StartTestActivity.this, judgethList, singerthList, mutithList);
-				break;
-			case "顺序练习":
-				BmobUtils.downloadQuestionListMy(paperName);
-				break;
-			case "错题练习":
-				BmobUtils.downloadQuestionListMy(paperName);
-				break;
-		}
-
-		seekbar = (SeekBar) findViewById(R.id.seekBar);
 		test = (RelativeLayout) findViewById(R.id.test_item);
-		ImageButton backBtn = (ImageButton) findViewById(R.id.btn_back);
-		finishBtn = (Button) findViewById(R.id.btn_finish_test);
 		timeTV = (TextView) findViewById(R.id.tv_time);
 		question = (TextView) findViewById(R.id.question);
 		id = (TextView) findViewById(R.id.id);
@@ -148,20 +129,39 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 		multiOptionF = (CheckBox) findViewById(R.id.multiOptionF);
 		answer = (TextView) findViewById(R.id.answerd);
 		note = (TextView) findViewById(R.id.answers);
-		backBtn.setOnClickListener(this);
-		seekbar.setOnClickListener(this);
-		finishBtn.setOnClickListener(this);
+		switch (examMode) {
+			case "正式考试":
+				BmobUtils.examLists(paperName);
+				ToastUtils.showShort(this, paperName);
+				break;
+			case "模拟考试":
+				BmobUtils.testLists(paperName);
+				break;
+			case "顺序练习":
+				BmobUtils.questionCount(paperName, "判断题", 40);
+				List<Question> judgethList = qthLists;
+				BmobUtils.questionCount(paperName, "单选题", 40);
+				List<Question> singerthList = qthLists;
+				BmobUtils.questionCount(paperName, "多选题", 20);
+				List<Question> mutithList = qthLists;
+				BmobUtils.downloadQuestionList100(StartTestActivity.this, judgethList, singerthList, mutithList);
+				break;
+			case "错题练习":
+				BmobUtils.downloadQuestionListMy(paperName);
+				break;
+		}
+
 		testTimeThread(40);
 		mGestureDetector = new GestureDetector(this, new DefaultGestureListener());
 
 	}
-
 	@Override
-	protected void onNewIntent(Intent intent) {
-		super.onNewIntent(intent);
-		setIntent(intent);
-		paperName = getIntent().getStringExtra("paperName");
-		examMode = getIntent().getStringExtra("examMode");
+	protected void onStart() {
+		super.onStart();
+		btnSkipTest.callOnClick();
+		ToastUtils.showShort(this, "点击开始练习。");
+		Log.d("TAG", "onStart");
+		tag = 0;
 	}
 
 	@Override
@@ -169,10 +169,11 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 		int action = event.getAction();
 		switch (action & MotionEvent.ACTION_MASK) {
 			case MotionEvent.ACTION_DOWN:
-				Logger.e("ACTION_DOWN" + action);
 				if (tag == 0) {
 					eaxmlist();
+					test.setVisibility(View.VISIBLE);
 				}
+				Logger.e("ACTION_DOWN" + action);
 				if (saveAnswer()) {
 					if (tag >= questions.size() - 1) {
 						finishTest();
@@ -200,66 +201,26 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 		return mGestureDetector.onTouchEvent(event);
 	}
 
-	@Override
-	public void onClick(View view) {
-		switch (view.getId()) {
-			case R.id.btn_back:
-				showWarnDialog();
-				break;
-			case R.id.btn_finish_test:
-				if (tag == questions.size() - 1) {
-					finishBtn.setText("交卷");
-				}
-				if (saveAnswer()) {
-					if (tag >= questions.size() - 1) {
-						finishTest();
-						showDialog(grade);
-					} else {
-						tag++;
-						eaxmlist();
-					}
-				}
-				break;
-			case R.id.seekBar:
-				tag = seekbar.getProgress();
-				eaxmlist();
-				break;
-		}
-	}
 
 	@Subscribe(threadMode = ThreadMode.MAIN) //在ui线程执行
 	public void onEventMainThread(Action action) {
 		switch (action) {
 			case DOWNLOAD_QUESTION_LIST:
 				Logger.i("获取试题列表成功");
-				if (BmobUtils.ready) {
-					questions = BmobUtils.questionsList;
-					seekbar.setMax(questions.size());
-				}
-
-				Logger.i(questions.size() + "");
-				if (questions.size() == 1) {
-					finishBtn.setText("交卷");
-				}
-
+				questions = BmobUtils.questionsList;
+				seekBar.setMax(questions.size());
+				btnMaskTest.setText(questions.size());
 				break;
 			case DOWNLOAD_QUESTION_LISTMy:
 				Logger.i("获取试题列表成功");
 				questions = BmobUtils.questionsList;
-				Logger.i(questions.size() + "");
-				if (questions.size() == 1) {
-					finishBtn.setText("交卷");
-				}
-				eaxmlist();
+				seekBar.setMax(questions.size());
 				break;
 			case DOWNLOAD_QUESTION_LIST100:
 				Logger.i("获取试题列表成功");
 				questions = BmobUtils.questionsList;
+				seekBar.setMax(questions.size());
 				Logger.i(questions.size() + "");
-				if (questions.size() == 1) {
-					finishBtn.setText("交卷");
-				}
-				eaxmlist();
 				break;
 			case QUESTION_COUNT:
 				qthLists = BmobUtils.qthList;
@@ -273,11 +234,12 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 
 	private void eaxmlist() {
 		id.setText((tag + 1) + ". ");
-		seekbar.setProgress(tag);
+		seekBar.setProgress(tag);
 		Logger.i(questions.get(tag).getType());
 		question.setText(questions.get(tag).getQuestion());
 		if (examMode.equals("正式考试")) {
-			answer.setVisibility(View.INVISIBLE);
+			answer.setVisibility(View.GONE);
+			note.setVisibility(View.GONE);
 		} else {
 			answer.setText("答案：" + questions.get(tag).getAnswer());
 			note.setText(questions.get(tag).getNote());
@@ -306,7 +268,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 				String xd = "D、" + questions.get(tag).getOptionD();
 				singleOptionD.setText(xd);
 				if (xd.equals("D、")) {
-					singleOptionD.setVisibility(View.INVISIBLE);
+					singleOptionD.setVisibility(View.GONE);
 				} else {
 					singleOptionD.setVisibility(View.VISIBLE);
 				}
@@ -328,22 +290,24 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 				multiOptionE.setText(me);
 				String mf = "F、" + questions.get(tag).getOptionF();
 				multiOptionF.setText(mf);
+				if (md.equals("D、")) {
+					multiOptionD.setVisibility(View.GONE);
+				} else {
+					multiOptionD.setVisibility(View.VISIBLE);
+				}
 				if (me.equals("E、")) {
-					multiOptionE.setVisibility(View.INVISIBLE);
+					multiOptionE.setVisibility(View.GONE);
 				} else {
 					multiOptionE.setVisibility(View.VISIBLE);
 				}
 				if (mf.equals("F、")) {
-					multiOptionF.setVisibility(View.INVISIBLE);
+					multiOptionF.setVisibility(View.GONE);
 				} else {
 					multiOptionF.setVisibility(View.VISIBLE);
 				}
 				break;
 		}
-		if (test.getVisibility() == View.INVISIBLE) {
-			test.setVisibility(View.VISIBLE);
 
-		}
 	}
 
 	private boolean saveAnswer() {
@@ -397,7 +361,7 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 	}
 
 	private void finishTest() {
-		qthLists = new ArrayList<Question>();
+		List<Question> errorLists = new ArrayList<Question>();
 		int questionNum = questions.size();
 		int correctNum = 0;
 		for (int i = 0; i < answers.size(); i++) {
@@ -405,26 +369,25 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 				correctNum++;
 			} else {
 				//错误记录
-				qthLists.add(questions.get(i));
+				errorLists.add(questions.get(i));
 			}
 		}
-		BmobUtils.updatemark(qthLists);
+		BmobUtils.updatemark(errorLists);
 		Logger.i(questionNum + "/" + correctNum);
 		grade = new Grade();
 		grade.setPaperName(paperName);
 		grade.setUsername(SafeExam.getStudent().getUsername());
 		grade.setJoinTime(df.format(new Date()));
 		grade.setGrade((correctNum * 100) / questionNum);
-		//考试通过记入成绩。
-		if (grade.getGrade() >= 60) {
-			BmobUtils.saveGrade(StartTestActivity.this, grade);
-		}
+		BmobUtils.saveGrade(StartTestActivity.this, grade);
+
 		Logger.i(answers.toString());
 	}
 
 	private void showDialog(final Grade grade) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this);
-		builder.setMessage("交卷后可前往个人信息查看成绩");
+		String msg = "本次成绩" + grade.getGrade() + "分";
+		builder.setMessage(msg);
 		builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
 
 			public void onClick(DialogInterface dialog, int whichButton) {
@@ -509,11 +472,6 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 	}
 
 
-	public void myintro(View view) {
-
-	}
-
-
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if ((keyCode == KeyEvent.KEYCODE_BACK)) {
@@ -528,12 +486,61 @@ public class StartTestActivity extends Activity implements View.OnClickListener 
 
 	}
 
+	@Override
+	protected void onNewIntent(Intent intent) {
+		super.onNewIntent(intent);
+		paperName = getIntent().getStringExtra("paperName");
+		examMode = getIntent().getStringExtra("examMode");
+	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 		EventBus.getDefault().unregister(this);
+
 	}
 
+
+	@OnClick({R.id.btn_mask_test, R.id.btn_skip_test, R.id.btn_finish_test, R.id.btn_back, R.id.seekBar})
+	public void onViewClicked(View view) {
+		switch (view.getId()) {
+			case R.id.btn_mask_test:
+				btnMaskTest.setText("我");
+				break;
+			case R.id.btn_skip_test:
+				btnSkipTest.setText("交卷");
+				btnSkipTest.setEnabled(false);
+				if (tag >= 100) {
+					saveAnswer();
+					finishTest();
+					Intent i = new Intent();
+					i.putExtra("data", grade);
+					setResult(1, i);
+					finish();
+				}
+				break;
+			case R.id.btn_finish_test:
+				if (tag == questions.size() - 1) {
+					btnSkipTest.setEnabled(true);
+				}
+				if (saveAnswer()) {
+					if (tag >= questions.size() - 1) {
+						finishTest();
+						showDialog(grade);
+					} else {
+						tag++;
+						eaxmlist();
+					}
+				}
+				break;
+			case R.id.btn_back:
+				showWarnDialog();
+				break;
+			case R.id.seekBar:
+				tag = seekBar.getProgress();
+				eaxmlist();
+				break;
+		}
+	}
 
 }

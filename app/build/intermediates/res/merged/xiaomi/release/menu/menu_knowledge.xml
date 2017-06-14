@@ -13,7 +13,7 @@
         <item
             android:id="@+id/change_password"
             android:orderInCategory="100"
-            android:title="@string/changepass"
+            android:title="@string/update_paper"
             app:showAsAction="never"/>
         <item
             android:id="@+id/action_testings"
@@ -34,7 +34,7 @@
 
         <item
             android:icon="@drawable/ic_free_breakfast_black_24dp"
-            android:title="云盘"/>
+            android:title="@string/cloud"/>
         <item
             android:icon="@drawable/firebrick"
             android:title="标签"/>

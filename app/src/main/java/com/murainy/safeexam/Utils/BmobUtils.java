@@ -132,7 +132,7 @@ public class BmobUtils {
 		});
 	}
 
-	public static void downloadQuestionList(List<String> papers) {
+	private static void downloadQuestionList(List<String> papers) {
 
 		BmobQuery<Question> query = new BmobQuery<Question>();
 		query.addWhereContainedIn("questionid", papers);
@@ -149,13 +149,14 @@ public class BmobUtils {
 			@Override
 			public void done(List<Question> object, BmobException e) {
 				if (e == null) {
-					questionsList = new ArrayList<Question>();
+
 					Logger.i(object.size() + "````");
 					for (Question question : object) {
 						questionsList.add(question);
 					}
 					Logger.i(questionsList.size() + "````");
 					EventBus.getDefault().post(Action.DOWNLOAD_QUESTION_LIST);
+					ready = true;
 				} else {
 					Logger.i("查询失败");
 					EventBus.getDefault().post(Action.QUERY_ERROR);
@@ -166,27 +167,20 @@ public class BmobUtils {
 	}
 
 	public static void downloadQuestionList100(Context context, final List<Question> tl1, final List<Question> tl2, final List<Question> tl3) {
+		questionsList.clear();
+		questionsList.addAll(tl1);
+		questionsList.addAll(tl2);
+		questionsList.addAll(tl3);
+		Log.i("我选了" + questionsList.size() + "道题", "");
+		EventBus.getDefault().post(Action.DOWNLOAD_QUESTION_LIST100);
 
-		BmobQuery<Question> query1 = new BmobQuery<Question>();
-		query1.findObjects(new FindListener<Question>() {
-			@Override
-			public void done(List<Question> object, BmobException e) {
-				if (e == null) {
-					Log.i("我选了" + questionsList.size() + "道题", "");
-					EventBus.getDefault().post(Action.DOWNLOAD_QUESTION_LIST100);
-				} else {
-					Logger.i("查询失败");
-					EventBus.getDefault().post(Action.QUERY_ERROR);
-				}
-			}
-		});
 	}
 
 	public static void downloadQuestionListMy(String paperName) {
 
 		BmobQuery<Question> query = new BmobQuery<Question>();
 		query.addWhereEqualTo("paperName", paperName);
-		query.addWhereEqualTo("mark", "1");
+		query.addWhereGreaterThan("count", "0");
 		query.setLimit(100);
 		//执行查询方法
 
@@ -194,13 +188,13 @@ public class BmobUtils {
 			@Override
 			public void done(List<Question> object, BmobException e) {
 				if (e == null) {
-					questionsList = new ArrayList<Question>();
+					questionsList.clear();
 					Logger.i(object.size() + "````");
 					for (Question question : object) {
 						questionsList.add(question);
 					}
 					Logger.i(questionsList.size() + "````");
-					EventBus.getDefault().post(Action.DOWNLOAD_QUESTION_LISTMy);
+					EventBus.getDefault().post(Action.DOWNLOAD_QUESTION_LIST);
 				} else {
 					Logger.i("查询失败");
 					EventBus.getDefault().post(Action.QUERY_ERROR);
@@ -277,7 +271,8 @@ public class BmobUtils {
 	public static void updatemark(List<Question> questions) {
 		for (int i = 0; i < questions.size(); i++) {
 			Question q = questions.get(i);
-			q.setMark("1");
+			Number c = (int) questions.get(i).getCount() + 1;
+			q.setCount(c);
 			q.update(new UpdateListener() {
 				@Override
 				public void done(BmobException e) {
@@ -298,7 +293,7 @@ public class BmobUtils {
 
 			@Override
 			public void done(String objectId, BmobException e) {
-				if (e == null ) {
+				if (e == null) {
 					Logger.i("成绩成功");
 				} else {
 					Logger.i("成绩失败" + e);
@@ -308,10 +303,12 @@ public class BmobUtils {
 	}
 
 
-	public static void questionCount(Context context, String paperName, String type, final int qs) {
+	public static void questionCount(String paperName, String type, final int qs) {
 		BmobQuery<Question> query = new BmobQuery<Question>();
+
 		query.addWhereEqualTo("paperName", paperName);
 		query.addWhereEqualTo("type", type);
+
 		//注意：这里的Question对象中只有指定列的数据。
 		query.setLimit(500);
 		query.findObjects(new FindListener<Question>() {
@@ -338,7 +335,7 @@ public class BmobUtils {
 
 					Logger.i("计数器查询成功：共" + qthList.size() + "条数据。");
 					Logger.i("数据样品：" + questionsList.size());
-					EventBus.getDefault().post(Action.QUESTION_COUNT);
+					EventBus.getDefault().post(Action.DOWNLOAD_QUESTION_LIST);
 				} else {
 					Logger.e("查询失败：" + e);
 				}
@@ -383,13 +380,12 @@ public class BmobUtils {
 
 	}
 
-	public static void examListini(String y, String t, final int c) {
+	private static void examListini(String y, String t, final int c) {
 		String bql = "select questionid from Question where year = ? and type = ?";
 		BmobQuery<Question> query = new BmobQuery<Question>();
-		paperSet.clear();
-		query.setSQL(bql);
-		//设置占位符参数
 		query.setPreparedParams(new Object[]{y, t});
+		query.setLimit(500);
+		query.setSQL(bql);
 		query.doSQLQuery(new SQLQueryListener<Question>() {
 
 			@Override
@@ -403,7 +399,7 @@ public class BmobUtils {
 							for (int i = 0; i < count; i++) {
 								paperSet.add(list.get(i).getQuestionid());
 							}
-							downloadQuestionList(paperSet);
+
 						} else {
 							int[] tihao = randRange(c, count);
 							for (int i = 0; i < c; i++) {
@@ -411,7 +407,7 @@ public class BmobUtils {
 							}
 							Logger.e("第一题目：" + paperSet);
 
-							downloadQuestionList(paperSet);
+
 						}
 					} else {
 						Log.i("smile", "查询成功，无数据返回");
@@ -424,12 +420,21 @@ public class BmobUtils {
 
 	}
 
-	public static void examLists(String y) {
+	public static void testLists(String p) {
+		paperSet.clear();
 		questionsList.clear();
-		examListini(y, "判断题", 40);
-		examListini(y, "单选题", 40);
-		examListini(y, "多选题", 20);
-		ready = true;
+		questionCount(p, "多选题", 20);
+		questionCount(p, "单选题", 40);
+		questionCount(p, "判断题", 40);
+
+	}
+
+	public static void examLists(String p) {
+		questionsList.clear();
+		examListini(p, "多选题", 20);
+		examListini(p, "单选题", 40);
+		examListini(p, "判断题", 40);
+		downloadQuestionList(paperSet);
 	}
 
 	public static void testBanks() {
@@ -485,8 +490,6 @@ public class BmobUtils {
 	}
 
 
-
-
 	public static void papers() {
 		String bql = "select distinct paperName from Question ";
 		new BmobQuery<Question>().doSQLQuery(bql, new SQLQueryListener<Question>() {
@@ -538,7 +541,6 @@ public class BmobUtils {
 			}
 		});
 	}
-
 
 
 	public static void deletPaper() {

@@ -69,7 +69,13 @@ public class CircleActivity extends Activity {
 						startActivity(new Intent(CircleActivity.this, SettingsActivity.class));
 						break;
 					case 7:
-						startActivity(new Intent(CircleActivity.this, AboutActivity.class));
+
+						Intent intent = new Intent(CircleActivity.this, AboutActivity.class);
+						Bundle bundle = new Bundle();
+						bundle.putString("url", "file:///android_asset/about.html");
+						intent.putExtra("bundle", bundle);
+						startActivity(intent);
+
 						break;
 				}
 			}

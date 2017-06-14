@@ -15,11 +15,9 @@
 
     <SeekBar
         android:id="@+id/seekBar"
-        style="@android:style/Widget.SeekBar"
+        style="@android:style/Widget.DeviceDefault.SeekBar"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="16dp"
         android:background="@drawable/aliceblue"
         android:indeterminate="false"/>
 

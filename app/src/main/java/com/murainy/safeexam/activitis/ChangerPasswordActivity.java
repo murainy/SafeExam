@@ -15,8 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.murainy.safeexam.R;
-import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
 import com.murainy.safeexam.SafeExam;
+import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
 import com.murainy.safeexam.beans.Student;
 
 import butterknife.BindView;
@@ -138,4 +138,9 @@ public class ChangerPasswordActivity extends Activity implements View.OnClickLis
         });
 
     }
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+	}
 }

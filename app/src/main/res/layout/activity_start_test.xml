@@ -104,8 +104,7 @@
             android:gravity="center"
             android:text="@string/checkqusetion"
             android:textColor="@color/base_color_text_white"
-            android:textSize="@dimen/text_size_large"
-            android:onClick="myintro"/>
+            android:textSize="@dimen/text_size_large"/>
 
         <Button
             android:id="@+id/btn_finish_test"

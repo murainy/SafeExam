@@ -84,4 +84,11 @@ public class AdminActivity extends Activity implements View.OnClickListener {
 
         }
     }
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		EventBus.getDefault().unregister(this);
+
+	}
 }

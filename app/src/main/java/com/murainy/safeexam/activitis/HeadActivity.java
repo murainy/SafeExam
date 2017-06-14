@@ -54,6 +54,8 @@ import cn.bmob.v3.listener.UploadFileListener;
 @SuppressLint("SdCardPath")//忽略警告
 public class HeadActivity extends Activity implements OnClickListener {
 	private Context mcontext = HeadActivity.this;//上下文
+	private static int REQUEST_THUMBNAIL = 1;// 请求缩略图信号标识
+	private static int REQUEST_ORIGINAL = 2;// 请求原图信号标识
 	private ImageView ivHead;//头像显示
 	private Button btnTakephoto;//拍照
 	private Button btnPhotos;//相册
@@ -165,9 +167,10 @@ public class HeadActivity extends Activity implements OnClickListener {
 				break;
 			case R.id.btn_takephoto://调用相机拍照
 				Intent intent2 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-				intent2.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(path,
-						"head.jpg")));
-				startActivityForResult(intent2, 2);//采用ForResult打开
+				//intent2.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(path,"head.jpg")));
+				//startActivityForResult(intent2, REQUEST_ORIGINAL);//获取原图
+
+				startActivityForResult(intent2, REQUEST_THUMBNAIL);//获取压缩图
 				break;
 			case R.id.btn_okphoto:
 				Bmobfiledown();
