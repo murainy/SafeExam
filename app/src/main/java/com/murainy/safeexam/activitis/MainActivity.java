@@ -37,15 +37,19 @@ import butterknife.OnClick;
  */
 public class MainActivity extends Activity {
 
-	private ListView paperList;
-	private List<Testqeba> papers = new ArrayList<>();
-	private TestqebaAdapter adapter;
 	@BindView(R.id.iv_left)
 	public ImageView iv_left;
 	@BindView(R.id.iv_right)
 	public ImageView iv_right;
 	@BindView(R.id.tv_title)
 	public TextView tv_title;
+	@BindView(R.id.tv_exam_time)
+	public TextView tvExamTime;
+
+	private ListView paperList;
+	private List<Testqeba> papers = new ArrayList<>();
+	private TestqebaAdapter adapter;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -70,15 +74,20 @@ public class MainActivity extends Activity {
 		paperList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-				if (((ConnectivityManager) getApplicationContext().getSystemService(CONNECTIVITY_SERVICE)).getActiveNetworkInfo() == null) {
-					Toast.makeText(MainActivity.this, "网络异常", Toast.LENGTH_SHORT).show();
-				} else {
-					if (!papers.get(i).isFinishState()) {
-						Intent intent = new Intent(MainActivity.this, StartTestActivity.class);
-						intent.putExtra("paperName", papers.get(i).getName());
-						intent.putExtra("examMode", "正式考试");
-						startActivityForResult(intent, 0);
+				try {
+					if (((ConnectivityManager) getApplicationContext().getSystemService(CONNECTIVITY_SERVICE)).getActiveNetworkInfo() == null) {
+						Toast.makeText(MainActivity.this, "网络异常", Toast.LENGTH_SHORT).show();
+					} else {
+						if (!papers.get(i).isFinishState()) {
+							Intent intent = new Intent(MainActivity.this, StartTestActivity.class);
+							BmobUtils.examLists(papers.get(i).getName());
+							intent.putExtra("paperName", papers.get(i).getName());
+							intent.putExtra("examMode", "正式考试");
+							startActivityForResult(intent, 0);
+						}
 					}
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
 		});
@@ -98,8 +107,6 @@ public class MainActivity extends Activity {
 				paperList.setAdapter(adapter);
 			}
 	}
-
-
 
 
 	@Subscribe(threadMode = ThreadMode.MAIN) //在ui线程执行
@@ -138,8 +145,16 @@ public class MainActivity extends Activity {
 
 	}
 
-	@OnClick(R.id.iv_left)
-	public void back(View view) {
-		finish();
+
+	@OnClick({R.id.tv_left, R.id.tv_exam_time})
+	public void onViewClicked(View view) {
+		switch (view.getId()) {
+			case R.id.tv_left:
+				finish();
+				break;
+			case R.id.tv_exam_time:
+				tvExamTime.setText("日期：2017-06-15");
+				break;
+		}
 	}
 }

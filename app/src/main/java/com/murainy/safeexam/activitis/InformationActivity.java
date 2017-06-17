@@ -37,15 +37,15 @@ public class InformationActivity extends Activity implements View.OnClickListene
         ButterKnife.bind(this);
         Button lookGradeBtn = (Button) findViewById(R.id.btn_look_grade);
         Button changePasswordBtn = (Button) findViewById(R.id.btn_change_password);
-        TextView nameTV = (TextView) findViewById(R.id.tv_class);
-        TextView numberTV = (TextView) findViewById(R.id.tv_number);
-        TextView classTV = (TextView) findViewById(R.id.tv_name);
-        Button bindpBtn = (Button) findViewById(R.id.bnt_bindphone);
+	    TextView classTV = (TextView) findViewById(R.id.tv_class);
+	    TextView numberTV = (TextView) findViewById(R.id.tv_number);
+	    TextView nameTV = (TextView) findViewById(R.id.tv_name);
+	    Button bindpBtn = (Button) findViewById(R.id.bnt_bindphone);
         Button setheadBtn = (Button) findViewById(R.id.bnt_sethead);
-        nameTV.setText(SafeExam.getStudent().getNick());
-        numberTV.setText(SafeExam.getStudent().getUsername());
-        classTV.setText(SafeExam.getStudent().getName());
-        lookGradeBtn.setOnClickListener(this);
+	    nameTV.setText(SafeExam.getStudent().getName());
+	    numberTV.setText(SafeExam.getStudent().getUsername());
+	    classTV.setText(SafeExam.getStudent().getNick());
+	    lookGradeBtn.setOnClickListener(this);
         changePasswordBtn.setOnClickListener(this);
         bindpBtn.setOnClickListener(this);
         setheadBtn.setOnClickListener(this);
@@ -53,6 +53,7 @@ public class InformationActivity extends Activity implements View.OnClickListene
         //ci100.setImageBitmap(BitmapUtil.GetBitmap(path,100));
         iv_left.setVisibility(View.VISIBLE);
         tv_title.setText("个人信息");
+
     }
 
     @Override

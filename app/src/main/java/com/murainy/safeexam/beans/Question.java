@@ -1,11 +1,12 @@
 package com.murainy.safeexam.beans;
 
-import cn.bmob.v3.BmobObject;
+import java.io.Serializable;
 
+import cn.bmob.v3.BmobObject;
 /**
  * Created by murainy on 2015/12/11.
  */
-public class Question extends BmobObject {
+public class Question extends BmobObject implements Serializable {
 
 
     private String questionid = "";

@@ -19,7 +19,7 @@
     <string name="judgeA">单选项</string>
     <string name="answer"></string>
     <string name="note"></string>
-    <string name="ksxm">SafeExam</string>
+    <string name="ksxm">安全考试</string>
     <string name="_15">40分钟</string>
     <string name="t_15">40分钟</string>
     <string name="forgetpass">忘记密码</string>
@@ -64,7 +64,7 @@
     <string name="auther">牧之河</string>
     <string name="contact">294967877@qq.com</string>
     <string name="face">face</string>
-    <string name="tv_head">head</string>
+    <string name="tv_head">安全管理人员考试</string>
     <string name="error_research">搜索</string>
     <string name="error_share">分享</string>
     <string name="submit">提交</string>

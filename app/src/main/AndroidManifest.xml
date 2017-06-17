@@ -30,12 +30,12 @@
         android:name=".SafeExam"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:launchMode="singleTask"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".activitis.LauncherActivity"
-            android:launchMode="singleTask"
             android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation"
             android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>
@@ -59,7 +59,6 @@
         </activity>
         <activity
             android:name=".activitis.MainActivity"
-            android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
@@ -80,11 +79,11 @@
         <activity
             android:name=".activitis.StartTestActivity"
             android:launchMode="singleTop"
+            android:allowBackup="false"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.AdminActivity"
-            android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
 

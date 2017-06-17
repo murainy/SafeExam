@@ -8,10 +8,11 @@ import android.view.MotionEvent;
  * Created by Tenerify on 2016/6/19.
  */
 public  class DefaultGestureListener extends GestureDetector.SimpleOnGestureListener {
-    private static final int FLING_MIN_DISTANCE = 50;
-    private static final int FLING_MIN_VELOCITX = 5;
-    private static final int FLING_MIN_VELOCITY = 10;
-    // Touch down时触发
+	public static final int FLING_MIN_DISTANCE = 50;
+	public static final int FLING_MIN_VELOCITX = 5;
+	public static final int FLING_MIN_VELOCITY = 10;
+
+	// Touch down时触发
     @Override
     public boolean onDown(MotionEvent e) {
         return super.onDown(e);

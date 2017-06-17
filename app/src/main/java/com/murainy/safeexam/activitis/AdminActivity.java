@@ -48,7 +48,8 @@ public class AdminActivity extends Activity implements View.OnClickListener {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(AdminActivity.this, StartTestActivity.class);
-                intent.putExtra("paperName", papers.get(i).getPaperName());
+	            BmobUtils.testLists(papers.get(i).getPaperName());
+	            intent.putExtra("paperName", papers.get(i).getPaperName());
                 intent.putExtra("examMode", "模拟考试");
                 startActivityForResult(intent, 0);
             }

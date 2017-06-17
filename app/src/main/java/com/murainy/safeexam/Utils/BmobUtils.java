@@ -41,7 +41,7 @@ public class BmobUtils {
 	public static List<Question> questionsList = new ArrayList<Question>();
 	public static List<Question> qthList = new ArrayList<Question>();
 	public static boolean ready = false;
-
+	public static int ALL;
 	public static void downloadGradeList(Context context, String username) {
 		BmobQuery<Grade> query = new BmobQuery<>();
 		query.addWhereEqualTo("username", username);
@@ -149,13 +149,13 @@ public class BmobUtils {
 			@Override
 			public void done(List<Question> object, BmobException e) {
 				if (e == null) {
-
 					Logger.i(object.size() + "````");
 					for (Question question : object) {
 						questionsList.add(question);
 					}
 					Logger.i(questionsList.size() + "````");
 					EventBus.getDefault().post(Action.DOWNLOAD_QUESTION_LIST);
+					ALL = questionsList.size();
 					ready = true;
 				} else {
 					Logger.i("查询失败");
@@ -406,9 +406,8 @@ public class BmobUtils {
 								paperSet.add(list.get(tihao[i]).getQuestionid());
 							}
 							Logger.e("第一题目：" + paperSet);
-
-
 						}
+						//EventBus.getDefault().post(Action.DOWNLOAD_QUESTION_LISTID);
 					} else {
 						Log.i("smile", "查询成功，无数据返回");
 					}
@@ -423,17 +422,16 @@ public class BmobUtils {
 	public static void testLists(String p) {
 		paperSet.clear();
 		questionsList.clear();
-		questionCount(p, "多选题", 20);
-		questionCount(p, "单选题", 40);
 		questionCount(p, "判断题", 40);
+		questionCount(p, "单选题", 40);
+		questionCount(p, "多选题", 20);
 
 	}
 
 	public static void examLists(String p) {
-		questionsList.clear();
-		examListini(p, "多选题", 20);
-		examListini(p, "单选题", 40);
 		examListini(p, "判断题", 40);
+		examListini(p, "单选题", 40);
+		examListini(p, "多选题", 20);
 		downloadQuestionList(paperSet);
 	}
 
