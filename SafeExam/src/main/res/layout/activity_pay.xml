@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/index_bg_005"
+    android:fitsSystemWindows="true"
+    android:padding="25dp"
+    tools:context="com.murainy.safeexam.activitis.PayActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="商品名"
+            android:text="会员费用（元）"
+            android:textColor="@color/air_speed_label"
+            android:textColorLink="@color/altitude_label"/>
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="价格"
+            android:text="0.08"
+            android:textColor="@color/air_speed_label"
+            android:textColorLink="@color/altitude_label"/>
+
+        <EditText
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="描述"
+            android:text="提供优质服务"
+            android:textColor="@color/air_speed_label"
+            android:textColorLink="@color/altitude_label"/>
+
+        <EditText
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="订单号"
+            android:visibility="gone"/>
+
+        <RadioGroup
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/alipay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="支付宝"
+                android:textColor="@drawable/aliceblue"
+                android:textColorLink="@color/altitude_label"/>
+
+            <RadioButton
+                android:id="@+id/wxpay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="微信"
+                android:textColor="@drawable/aliceblue"
+                android:textColorLink="@color/altitude_label"/>
+
+            <RadioButton
+                android:id="@+id/query"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查询"
+                android:textColor="@drawable/aliceblue"
+                android:textColorLink="@color/altitude_label"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付宝支付"
+            android:textColor="@color/air_speed_label"
+            android:textColorLink="@color/air_speed_label"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,145 @@
+apply plugin: 'com.android.application'
+
+def gitVersionCode() {
+    def cmd = 'git rev-list HEAD --first-parent --count'
+    cmd.execute().text.trim().toInteger()
+}
+
+def gitVersionTag() {
+    def cmd = 'git describe --tags'
+    def version = cmd.execute().text.trim()
+
+    def pattern = "-(\\d+)-g"
+    def matcher = version =~ pattern
+
+    if (matcher) {
+        version = version.substring(0, matcher.start()) + "." + matcher[0][1]
+    } else {
+        version = version + gitVersionCode()
+    }
+
+    return version
+}
+
+android {
+    signingConfigs {
+        wyz {
+            keyAlias 'mzh'
+            keyPassword 'ww719010'
+            storeFile file('E:/AndroidStudioProjects/wyz.jks')
+            storePassword 'ww719010'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.murainy.safeexam"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName '1.0'
+        signingConfig signingConfigs.wyz
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [eventBusIndex: "com.iwisedev.imp.EventBusIndex"]
+            }
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    buildTypes {
+        debug {
+            // 为了不和 release 版本冲突
+            applicationIdSuffix ".debug"
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.wyz
+            //混淆
+            minifyEnabled false
+            proguardFile 'E:/AndroidStudioProjects/SafeExam1.0/app/proguard-rules.pro'
+            applicationIdSuffix '.realse'
+            versionNameSuffix 'r'
+        }
+    }
+    applicationVariants.all { variant ->
+        if (variant.buildType.name.equals('release')) {
+            variant.mergedFlavor.versionCode = gitVersionCode()
+            variant.mergedFlavor.versionName = gitVersionTag()
+
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+        jcenter()
+        maven { url "https://jitpack.io" }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    productFlavors {
+        bmob {
+            minSdkVersion 19
+            applicationId 'c313355d6f4419b5084f07b9ee758da4'
+            signingConfig signingConfigs.wyz
+            targetSdkVersion 23
+            proguardFile 'E:/AndroidStudioProjects/SafeExam1.0/proguard-rules.pro'
+            versionName '1'
+            versionCode 2
+        }
+    }
+}
+
+dependencies {
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.5@aar'
+    compile 'pub.devrel:easypermissions:0.4.2'
+    compile(name: 'welcome-release', ext: 'aar')
+    compile(name: 'volley-release', ext: 'aar')
+    compile(name: 'circleimageview-release', ext: 'aar')
+    compile(name: 'circle-menu', ext: 'aar')
+    compile(name: 'shimmer-android-release', ext: 'aar')
+    compile(name: 'fancybuttons-release', ext: 'aar')
+    compile(name: 'MaterialProgressBar', ext: 'aar')
+    compile(name: 'bga-photopicker-1.2.0', ext: 'aar')
+    compile(name: 'agentweb', ext: 'aar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //必须要有，不然就会出现以问题
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.orhanobut:logger:1.11'
+    compile 'com.android.support:support-annotations:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.7.4'
+    compile 'com.android.support:design:25.3.1'
+    //崩溃报告
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+}
+
