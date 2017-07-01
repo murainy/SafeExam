@@ -33,7 +33,7 @@ public class PayActivity extends Activity implements RadioGroup.OnCheckedChangeL
 
 
 	// 此为微信支付插件的官方最新版本号,请在更新时留意更新说明
-	int PLUGINVERSION = 7;
+	int PLUGINVERSION = 8;
 
 	EditText name, price, body, order;
 	Button go;
@@ -181,7 +181,7 @@ public class PayActivity extends Activity implements RadioGroup.OnCheckedChangeL
 			public void unknow() {
 				Toast.makeText(PayActivity.this, "支付结果未知,请稍后手动查询", Toast.LENGTH_SHORT)
 						.show();
-				tv.append(name + "'s pay status is unknow\n\n");
+				tv.append(name + "'支付状态未知。\n\n");
 				hideDialog();
 			}
 
@@ -189,7 +189,7 @@ public class PayActivity extends Activity implements RadioGroup.OnCheckedChangeL
 			@Override
 			public void succeed() {
 				Toast.makeText(PayActivity.this, "支付成功!", Toast.LENGTH_SHORT).show();
-				tv.append(name + "'s pay status is success\n\n");
+				tv.append(name + "支付成功\n\n");
 				hideDialog();
 			}
 
@@ -198,7 +198,7 @@ public class PayActivity extends Activity implements RadioGroup.OnCheckedChangeL
 			public void orderId(String orderId) {
 				// 此处应该保存订单号,比如保存进数据库等,以便以后查询
 				order.setText(orderId);
-				tv.append(name + "'s orderid is " + orderId + "\n\n");
+				tv.append(name + "'订单号是 " + orderId + "\n\n");
 				showDialog("获取订单成功!请等待跳转到支付页面~");
 			}
 
@@ -219,8 +219,8 @@ public class PayActivity extends Activity implements RadioGroup.OnCheckedChangeL
 					Toast.makeText(PayActivity.this, "支付中断!", Toast.LENGTH_SHORT)
 							.show();
 				}
-				tv.append(name + "'s pay status is fail, error code is \n"
-						+ code + " ,reason is " + reason + "\n\n");
+				tv.append(name + "'支付失败, 错误代码 \n"
+						+ code + " ,原因 " + reason + "\n\n");
 				hideDialog();
 			}
 		});
@@ -237,15 +237,15 @@ public class PayActivity extends Activity implements RadioGroup.OnCheckedChangeL
 			public void succeed(String status) {
 				Toast.makeText(PayActivity.this, "查询成功!该订单状态为 : " + status,
 						Toast.LENGTH_SHORT).show();
-				tv.append("pay status of" + orderId + " is " + status + "\n\n");
+				tv.append("支付状态" + orderId + status + "\n\n");
 				hideDialog();
 			}
 
 			@Override
 			public void fail(int code, String reason) {
 				Toast.makeText(PayActivity.this, "查询失败", Toast.LENGTH_SHORT).show();
-				tv.append("query order fail, error code is " + code
-						+ " ,reason is \n" + reason + "\n\n");
+				tv.append("查询订单失败, 错误代码 " + code
+						+ " ,原因 \n" + reason + "\n\n");
 				hideDialog();
 			}
 		});

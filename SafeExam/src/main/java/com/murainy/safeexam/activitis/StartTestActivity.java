@@ -52,46 +52,46 @@ import butterknife.OnClick;
 public class StartTestActivity extends Activity {
 	//implements View.OnClickListener //abstract
 	@BindView(R.id.btn_mask_test)
-	public Button btnMaskTest;
+	 Button btnMaskTest;
 	@BindView(R.id.btn_skip_test)
-	public Button btnSkipTest;
+	 Button btnSkipTest;
 	@BindView(R.id.btn_finish_test)
-	public Button btnFinishTest;
+	 Button btnFinishTest;
 	@BindView(R.id.btn_back)
-	public ImageButton btnBack;
+	 ImageButton btnBack;
 	@BindView(R.id.seekBar)
-	public SeekBar seekBar;
+	 SeekBar seekBar;
 
 	@BindView(R.id.judgeA)
-	public RadioButton judgeA;
+	 RadioButton judgeA;
 	@BindView(R.id.judgeB)
-	public RadioButton judgeB;
+	 RadioButton judgeB;
 	@BindView(R.id.single_option_A)
-	public RadioButton singleOptionA;
+	 RadioButton singleOptionA;
 	@BindView(R.id.single_option_B)
-	public RadioButton singleOptionB;
+	 RadioButton singleOptionB;
 	@BindView(R.id.single_option_C)
-	public RadioButton singleOptionC;
+	 RadioButton singleOptionC;
 	@BindView(R.id.single_option_D)
-	public RadioButton singleOptionD;
+	 RadioButton singleOptionD;
 	@BindView(R.id.multiOptionA)
-	public CheckBox multiOptionA;
+	 CheckBox multiOptionA;
 	@BindView(R.id.multiOptionB)
-	public CheckBox multiOptionB;
+	 CheckBox multiOptionB;
 	@BindView(R.id.multiOptionC)
-	public CheckBox multiOptionC;
+	 CheckBox multiOptionC;
 	@BindView(R.id.multiOptionD)
-	public CheckBox multiOptionD;
+	 CheckBox multiOptionD;
 	@BindView(R.id.multiOptionE)
-	public CheckBox multiOptionE;
+	 CheckBox multiOptionE;
 	@BindView(R.id.multiOptionF)
-	public CheckBox multiOptionF;
+	 CheckBox multiOptionF;
 	@BindView(R.id.judge)
-	public RadioGroup judge;
+	 RadioGroup judge;
 	@BindView(R.id.single_option_group)
-	public RadioGroup singleOptionGroup;
+	 RadioGroup singleOptionGroup;
 	@BindView(R.id.multiOptionGroup)
-	public LinearLayout multiOptionGroup;
+	 LinearLayout multiOptionGroup;
 	@BindView(R.id.tv_ksxm)
 	TextView tvKsxm;
 
@@ -383,7 +383,7 @@ public class StartTestActivity extends Activity {
 	private boolean saveAnswer() {
 		boolean return_value = false;
 		String s;
-		if(!questions.isEmpty()){
+		if(questions.size()>0){
 		s=questions.get(tag).getType();
 		switch (s){
 			case "多选题":
@@ -414,7 +414,8 @@ public class StartTestActivity extends Activity {
 		int questionNum = questions.size();
 		if(questionNum==0){questionNum=100;}
 		int correctNum = 0;
-		try {
+		saveAnswer();
+		if(answers.size()>0) {
 			for (int i = 0; i < answers.size(); i++) {
 				if (answers.get(i).equals(questions.get(i).getAnswer())) {
 					correctNum++;
@@ -431,8 +432,6 @@ public class StartTestActivity extends Activity {
 			grade.setJoinTime(df.format(new Date()));
 			grade.setGrade((correctNum * 100) / questionNum);
 			BmobUtils.saveGrade(StartTestActivity.this, grade);
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
 
 		Logger.i(answers.toString());
@@ -446,6 +445,7 @@ public class StartTestActivity extends Activity {
 			builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
 
 				public void onClick(DialogInterface dialog, int whichButton) {
+					finishTest();
 					Intent i = new Intent();
 					i.putExtra("data", grade);
 					setResult(1, i);
@@ -460,12 +460,11 @@ public class StartTestActivity extends Activity {
 
 	private void showWarnDialog() {
 		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this);
+
 		try {
 			builder.setMessage("点击确定将自动提交成绩，放弃结束考试。");
 			builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-
-				public void onClick(DialogInterface dialog, int whichButton) {
-					saveAnswer();
+					public void onClick(DialogInterface dialog, int whichButton) {
 					finishTest();
 					Intent i = new Intent();
 					i.putExtra("data", grade);
@@ -489,14 +488,11 @@ public class StartTestActivity extends Activity {
 
 	private void showTimeOverDialog() {
 		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this);
-
 		builder.setMessage("考试时间结束！");
-
 		try {
 			builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
 
 				public void onClick(DialogInterface dialog, int whichButton) {
-					saveAnswer();
 					finishTest();
 					Intent i = new Intent();
 					i.putExtra("data", grade);
@@ -656,10 +652,8 @@ public class StartTestActivity extends Activity {
 
 	@OnClick(R.id.btn_skip_test)
 	public void onBtnSkipTestClicked() {
-
 		if (tag == 0) {
 			try {
-				assert questions!=null;
 				seekBar.setEnabled(true);
 				String info=Integer.toString(questions.size())+BmobUtils.ALL;
 				ToastUtils.showShort(this, info+ paperName);
@@ -675,7 +669,6 @@ public class StartTestActivity extends Activity {
 
 		} else {
 			try {
-				saveAnswer();
 				finishTest();
 				showDialog(grade);
 			} catch (Exception e) {

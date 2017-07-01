@@ -1,27 +1,34 @@
 package com.murainy.safeexam.activitis;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.Utils.BmobUtils;
+import com.murainy.safeexam.Utils.ToastUtils;
 import com.stephentuso.welcome.WelcomeHelper;
 
 import mehdi.sakout.fancybuttons.FancyButton;
@@ -30,13 +37,37 @@ import static com.murainy.safeexam.activitis.AboutActivity.getVersionName;
 
 public class KnowledgeActivity extends AppCompatActivity {
 	private WelcomeHelper welcomeScreen;
+	private NestedScrollView mNestedScrollView;
+	private AppBarLayout mAppBarLayout;
+	private  TextView mTvTitle;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_knowledge);
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		mNestedScrollView = (NestedScrollView) findViewById(R.id.myscroll);
+		//设置 NestedScrollView 的内容是否拉伸填充整个视图，
+		//这个设置是必须的，否者我们在里面设置的ViewPager会不可见
+		mNestedScrollView.setFillViewport(true);
+		mTvTitle=(TextView) findViewById(R.id.tv_title);
+		mAppBarLayout=(AppBarLayout) findViewById(R.id.apl);
+		mAppBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+			@Override
+			public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+				int scrollRangle = appBarLayout.getTotalScrollRange();
+				//初始verticalOffset为0，不能参与计算。
+				if (verticalOffset == 0) {
+					mTvTitle.setAlpha(0.0f);
+				} else {
+					//保留一位小数
+					float alpha = Math.abs(Math.round(1.0f * verticalOffset / scrollRangle) * 10) / 10;
+					mTvTitle.setAlpha(alpha);
+				}
+			}
+		});
+		FancyButton updateBtn = (FancyButton) findViewById(R.id.btn_like);
 		//隐藏状态栏
-		//this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		welcomeScreen = new WelcomeHelper(this, SplashActivity.class);
 		assert toolbar != null;
 		toolbar.inflateMenu(R.menu.menu_knowledge);//设置右上角的填充菜单
@@ -53,24 +84,43 @@ public class KnowledgeActivity extends AppCompatActivity {
 		// Menu item click 的監聽事件一樣要設定在 setSupportActionBar 才有作用
 		toolbar.setOnMenuItemClickListener(onMenuItemClick);
 		toolbar.setBackgroundColor(getResources().getColor(R.color.air_speed_label));
-		FancyButton facebookLoginBtn = new FancyButton(this);
-		facebookLoginBtn.setText("检查");
-		facebookLoginBtn.setBackgroundColor(Color.parseColor("#3b5998"));
-		facebookLoginBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
-		facebookLoginBtn.setTextSize(15);
-		facebookLoginBtn.setPadding(20, 20, 20, 20);
-		facebookLoginBtn.setIconPadding(10, 0, 10, 0);
-		facebookLoginBtn.setBorderColor(Color.parseColor("#ffffff"));
-		facebookLoginBtn.setBorderWidth(2);
-		facebookLoginBtn.setRadius(32);
-		facebookLoginBtn.setMinimumWidth(192);
-		facebookLoginBtn.setIconResource("\uf00d");
-		facebookLoginBtn.setIconPosition(FancyButton.POSITION_RIGHT);
-		facebookLoginBtn.setFontIconSize(15);
-		facebookLoginBtn.setOnClickListener(new View.OnClickListener() {
+
+		updateBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				//Toast.makeText(KnowledgeActivity.this, "facebookLoginBtn", Toast.LENGTH_SHORT).show();
+				WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
+				Display display = wm.getDefaultDisplay();
+				DisplayMetrics metric = new DisplayMetrics();
+				display.getRealMetrics(metric);
+
+                //获取的像素宽高不包含虚拟键所占空间
+				//context.getWindowManager().getDefaultDisplay().getMetrics(metric);
+				int width = metric.widthPixels;  // 宽度（像素）
+				int height = metric.heightPixels;  // 高度（像素）
+				float density = metric.density;  // dp缩放因子
+				int densityDpi = metric.densityDpi;  // 广义密度
+				float xdpi = metric.xdpi;//x轴方向的真实密度
+				float ydpi = metric.ydpi;//y轴方向的真实密度
+				ToastUtils.showShort(getBaseContext(),"屏幕密度："+Integer.toString(densityDpi));
+			}
+		});
+		FancyButton LoginBtn = new FancyButton(this);
+		LoginBtn.setText("检查");
+		LoginBtn.setBackgroundColor(Color.parseColor("#3b5998"));
+		LoginBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
+		LoginBtn.setTextSize(20);
+		LoginBtn.setPadding(20, 20, 20, 20);
+		LoginBtn.setIconPadding(8, 0, 8, 0);
+		LoginBtn.setBorderColor(Color.parseColor("#ffffff"));
+		LoginBtn.setBorderWidth(5);
+		LoginBtn.setRadius(40);
+		LoginBtn.setMinimumWidth(192);
+		LoginBtn.setIconResource("\uf00d");
+		LoginBtn.setIconPosition(FancyButton.POSITION_RIGHT);
+		LoginBtn.setFontIconSize(20);
+		LoginBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
 				welcomeScreen.forceShow();
 			}
 		});
@@ -80,28 +130,26 @@ public class KnowledgeActivity extends AppCompatActivity {
 		signupBtn.setIconResource("\uf016");
 		signupBtn.setBackgroundColor(Color.parseColor("#3b5998"));
 		signupBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
-		signupBtn.setTextSize(15);
-		signupBtn.setRadius(32);
+		signupBtn.setTextSize(20);
+		signupBtn.setRadius(40);
 		signupBtn.setBorderColor(Color.parseColor("#ffffff"));
-		signupBtn.setBorderWidth(2);
-		signupBtn.setFontIconSize(15);
+		signupBtn.setBorderWidth(5);
+		signupBtn.setFontIconSize(20);
 		signupBtn.setPadding(20, 20, 20, 20);
-		signupBtn.setIconPadding(10, 0, 10, 0);
-		//signupBtn.setGravity(Gravity.FILL_HORIZONTAL);
+		signupBtn.setIconPadding(8, 0, 8, 0);
+		signupBtn.setGhost(true);
 		signupBtn.setMinimumWidth(192);
 		signupBtn.setIconPosition(FancyButton.POSITION_RIGHT);
 		signupBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				//Toast.makeText(KnowledgeActivity.this, "signupBtn", Toast.LENGTH_SHORT).show();
 				Intent intent = new Intent(KnowledgeActivity.this, MomentListActivity.class);
 				startActivity(intent);
 			}
 		});
 		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-		layoutParams.setMargins(0, 10, 0, 10);
 		LinearLayout container = (LinearLayout) findViewById(R.id.container);
-		container.addView(facebookLoginBtn, layoutParams);
+		container.addView(LoginBtn, layoutParams);
 		container.addView(signupBtn, layoutParams);
 	}
 
@@ -118,6 +166,9 @@ public class KnowledgeActivity extends AppCompatActivity {
 					break;
 				case R.id.action_testings:
 					BmobUtils.testBanks();
+					break;
+				case R.id.ab_search:
+
 					break;
 			}
 

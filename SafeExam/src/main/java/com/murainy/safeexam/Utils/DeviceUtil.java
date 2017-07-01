@@ -61,7 +61,7 @@ public static String getAppVersionName(Context mContext){
     String versionName = "";
     try {
         PackageManager packageManager = mContext.getPackageManager();
-        PackageInfo packageInfo = packageManager.getPackageInfo("com.eloancn.mclient", 0);
+        PackageInfo packageInfo = packageManager.getPackageInfo("com.murainy.safeexam", 0);
         versionName = packageInfo.versionName;
         if (TextUtils.isEmpty(versionName)) {
             return "";

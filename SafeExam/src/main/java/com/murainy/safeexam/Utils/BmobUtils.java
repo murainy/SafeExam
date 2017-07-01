@@ -164,18 +164,18 @@ public class BmobUtils {
 	public static void downloadQuestionListIni() {
 		if(questionsList.size()>0){questionsList.clear();}
 		BmobQuery<Question> query = new BmobQuery<Question>();
-		query.addWhereGreaterThan("count", 0).order("-questionid");
-		query.setLimit(100);
+		query.addWhereGreaterThan("count", 0).order("-type");
+		query.setLimit(500);
 		//执行查询方法
 		query.findObjects(new FindListener<Question>() {
 			@Override
 			public void done(List<Question> object, BmobException e) {
 				if (e == null) {
-					Logger.i(object.size() + "````");
-					for (Question question : object) {
-						questionsList.add(question);
+					int[] tihao = randRange(100, object.size());
+					for (int i = 0; i < 100; i++) {
+						questionsList.add(object.get(tihao[i]));
 					}
-					Logger.i(questionsList.size() + "````");
+
 					EventBus.getDefault().postSticky(Action.DOWNLOAD_QUESTION_LISTINI);
 					ALL = Integer.toString(questionsList.size());
 				} else {
@@ -254,7 +254,7 @@ public class BmobUtils {
 	public static void updatemark(List<Question> questions) {
 		for (int i = 0; i < questions.size(); i++) {
 			Question q = questions.get(i);
-			Number c = (int) questions.get(i).getCount() + 1;
+			Number c = questions.get(i).getCount().intValue()  + 1;
 			q.setCount(c);
 			q.update(new UpdateListener() {
 				@Override
@@ -297,8 +297,8 @@ public class BmobUtils {
 				if (e == null) {
 					Logger.i("对象查询成功：共" + object.size() + "条数据。", "");
 					int size = object.size();
-					int[] numbers = randRange(qs, size);
 					if (size>qs) {
+						int[] numbers = randRange(qs, size);
 						for (int i = 0; i < qs; i++) {
 							questionsList.add(object.get(numbers[i]));
 						}
@@ -377,7 +377,7 @@ public class BmobUtils {
 							}
 							Logger.e("第一题目：" + paperSet);
 						}
-
+						ALL = Integer.toString(questionsList.size());
 					} else {
 						Log.i("smile", "查询成功，无数据返回");
 					}
@@ -437,11 +437,11 @@ public class BmobUtils {
 	}
 
 	public static void examLists(String p) {
-		if(paperSet.size()>0){paperSet.clear();}
+		if(questionsList.size()>0){questionsList.clear();}
 		examListFree(p, "判断题", 40);
 		examListFree(p, "单选题", 40);
 		examListFree(p, "多选题", 20);
-		EventBus.getDefault().postSticky(Action.DOWNLOAD_QUESTION_SET);
+		EventBus.getDefault().postSticky(Action.DOWNLOAD_QUESTION_EXAM);
 
 
 	}

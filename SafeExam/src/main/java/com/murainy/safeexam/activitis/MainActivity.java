@@ -83,7 +83,6 @@ public class MainActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 				examLists(papers.get(i).getName());
-				downloadQuestionList();
 				Intent intent = new Intent(MainActivity.this, StartTestActivity.class);
 				Bundle bundle = new Bundle();
 				bundle.putString("paperName", papers.get(i).getName());
@@ -124,8 +123,8 @@ public class MainActivity extends Activity {
 				break;
 			case DOWNLOAD_QUESTION_EXAM:
 				Logger.i("获取试题列表成功");
-				questions.addAll(BmobUtils.questionsList);
-				ToastUtils.showShort(this, "下载成功" + BmobUtils.ALL);
+				questions = BmobUtils.questionsList;
+				ToastUtils.showShort(this, "下载成功");
 				break;
 			case DOWNLOAD_QUESTION_LISTINI:
 				Logger.i("获取试题列表成功");
