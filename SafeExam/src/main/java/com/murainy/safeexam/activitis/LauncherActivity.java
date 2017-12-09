@@ -47,7 +47,7 @@ public class LauncherActivity extends AppCompatActivity {
 	private ViewFlipper mFlipper;
 	private GestureDetectorCompat mDetector; //手势检测
 	//背景图片int[] id
-	private static int[] resID = {R.drawable.flower, R.drawable.rain, R.drawable.hippophaes, R.drawable.sky, R.drawable.cloud};
+	private static int[] resID = {R.drawable.jjzk, R.drawable.jjz2013, R.drawable.xm_logo1, R.drawable.sky, R.drawable.cloud};
 	BmobPushManager<BmobInstallation> bmobPushManager;
 	@BindView(R.id.tv_apple)
 	TextView ta;
