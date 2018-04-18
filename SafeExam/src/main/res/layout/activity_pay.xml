@@ -1,48 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_pay"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/index_bg_005"
-    android:fitsSystemWindows="true"
-    android:padding="25dp"
-    tools:context="com.murainy.safeexam.activitis.PayActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_bg"
+                android:fitsSystemWindows="true">
 
     <LinearLayout
         android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+
         android:orientation="vertical">
 
         <EditText
             android:id="@+id/name"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:allowUndo="false"
+            android:background="@color/base_bg"
+            android:editable="false"
+            android:elevation="@dimen/activity_horizontal_margin"
+            android:fadingEdge="horizontal|vertical"
+            android:focusable="auto"
+            android:freezesText="false"
             android:hint="商品名"
-            android:text="会员费用（元）"
-            android:textColor="@color/air_speed_label"
-            android:textColorLink="@color/altitude_label"/>
+            android:labelFor="@+id/alipay"
+            android:padding="8dp"
+            android:text="赞赏「牧之河」"
+            android:textAlignment="center"
+            android:textColor="@color/base_tab_indicator_text_color"
+            android:textSize="24sp"
+            tools:editable="false"/>
 
-        <EditText
-            android:id="@+id/price"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ci_view6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:src="@drawable/man"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/WelcomeScreenButton.Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/bnt_price"
+                android:freezesText="false"
+                android:padding="8dp"
+                android:text="2元"
+                android:textColor="@color/bg_btn_press_color"
+                android:typeface="normal"/>
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/WelcomeScreenButton.Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/bnt_price"
+                android:cursorVisible="true"
+                android:freezesText="false"
+                android:padding="8dp"
+                android:text="5元"
+                android:textColor="@color/bg_btn_press_color"
+                android:typeface="normal"/>
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/WelcomeScreenButton.Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/bnt_price"
+                android:freezesText="false"
+                android:padding="8dp"
+                android:text="10元"
+                android:textColor="@color/bg_btn_press_color"
+                android:typeface="normal"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="价格"
-            android:text="0.08"
-            android:textColor="@color/air_speed_label"
-            android:textColorLink="@color/altitude_label"/>
+            android:gravity="center"
+            android:onClick="click"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/WelcomeScreenButton.Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/bnt_price"
+                android:freezesText="false"
+                android:padding="8dp"
+                android:text="20元"
+                android:textColor="@color/bg_btn_press_color"
+                android:typeface="normal"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/WelcomeScreenButton.Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/bnt_price"
+                android:freezesText="false"
+                android:padding="8dp"
+                android:text="50元"
+                android:textColor="@color/bg_btn_press_color"
+                android:typeface="normal"/>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/WelcomeScreenButton.Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/bnt_price"
+                android:freezesText="false"
+                android:padding="8dp"
+                android:text="100元"
+                android:textColor="@color/bg_btn_press_color"
+                android:typeface="normal"/>
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="价格"
+                android:text="5"
+                android:visibility="gone"/>
+        </LinearLayout>
 
         <EditText
             android:id="@+id/body"
+            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/base_bg"
+            android:editable="false"
+            android:freezesText="true"
             android:hint="描述"
-            android:text="提供优质服务"
-            android:textColor="@color/air_speed_label"
-            android:textColorLink="@color/altitude_label"/>
+            android:padding="16dp"
+            android:text="有了您的支持，本软件会作的更好，带给您方便是我的最大愿望！"/>
 
         <EditText
             android:id="@+id/order"
@@ -55,45 +180,51 @@
             android:id="@+id/type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
             <RadioButton
                 android:id="@+id/alipay"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checked="true"
-                android:text="支付宝"
-                android:textColor="@drawable/aliceblue"
-                android:textColorLink="@color/altitude_label"/>
+                android:text="支付宝"/>
 
             <RadioButton
                 android:id="@+id/wxpay"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="微信"
-                android:textColor="@drawable/aliceblue"
-                android:textColorLink="@color/altitude_label"/>
+                android:text="微信"/>
+
+            <RadioButton
+                android:id="@+id/qq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="QQ"/>
 
             <RadioButton
                 android:id="@+id/query"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="查询"
-                android:textColor="@drawable/aliceblue"
-                android:textColorLink="@color/altitude_label"/>
+                android:text="查询"/>
         </RadioGroup>
 
         <Button
             android:id="@+id/go"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_button"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:padding="16dp"
             android:text="支付宝支付"
-            android:textColor="@color/air_speed_label"
-            android:textColorLink="@color/air_speed_label"/>
-
+            android:textColor="@color/base_tab_indicator_text_color"/>
     </LinearLayout>
 
     <ScrollView
@@ -106,6 +237,8 @@
             android:id="@+id/tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"/>
+            android:layout_margin="8dp"
+            android:padding="8dp"/>
     </ScrollView>
+
 </RelativeLayout>

@@ -15,7 +15,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <De.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleImageView2"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/man"
@@ -25,15 +25,15 @@
             android:layout_margin="16dp"/>
 
         <EditText
+            android:id="@+id/et_nick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_nick"
-            android:hint="@string/et_nick"
-            android:textSize="15sp"
-            android:inputType="text"
             android:layout_gravity="center"
-            android:textAlignment="inherit"
-            android:maxLines="5"/>
+            android:hint="@string/et_nick"
+            android:inputType="text"
+            android:maxLines="5"
+            android:textAlignment="center"
+            android:textSize="15sp"/>
 
         <LinearLayout
             android:orientation="horizontal"

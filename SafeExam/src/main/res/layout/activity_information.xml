@@ -36,7 +36,7 @@
             android:padding="8dp">
 
             <TextView
-                style="@style/Smile.TextView._Black"
+                style="@style/AppTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -70,7 +70,7 @@
             android:padding="8dp">
 
             <TextView
-                style="@style/Smile.TextView._Black"
+                style="@style/AppTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -103,7 +103,7 @@
             android:padding="8dp">
 
             <TextView
-                style="@style/Smile.TextView._Black"
+                style="@style/AppTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"

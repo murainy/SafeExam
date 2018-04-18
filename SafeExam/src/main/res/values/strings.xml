@@ -88,6 +88,7 @@
         的时，定时弹出可爱的小『吐司』，不会妨碍你的触摸和点击事件，打扰性非常低，但却能很高效地无压力复习单词。
     </string>
     <string name="cloud">云盘</string>
+    <string name="TooYoung">Too young, too simple,sometimes naive.\n太年轻，太简单，有时还天真。</string>
 
     <string-array name="cities">
         <item>Pittsburgh</item>

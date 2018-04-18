@@ -12,11 +12,13 @@ import android.widget.TextView;
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.SafeExam;
 import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
+import com.murainy.safeexam.Utils.BitmapUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.bmob.v3.BmobUser;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class InformationActivity extends Activity implements View.OnClickListener {
@@ -29,7 +31,7 @@ public class InformationActivity extends Activity implements View.OnClickListene
     @BindView(R.id.info_end)
     Button bnt_end;
     @BindView(R.id.ci_view)
-    ImageView ci100;
+    CircleImageView ci;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,8 +51,8 @@ public class InformationActivity extends Activity implements View.OnClickListene
         changePasswordBtn.setOnClickListener(this);
         bindpBtn.setOnClickListener(this);
         setheadBtn.setOnClickListener(this);
-        //String path = Environment.getExternalStorageDirectory().getPath()+"/head.jpg";
-        //ci100.setImageBitmap(BitmapUtil.GetBitmap(path,100));
+        //String path = getFilesDir()+"/head.jpg";
+        //ci.setImageBitmap(BitmapUtil.GetBitmap(path,100));
         iv_left.setVisibility(View.VISIBLE);
         tv_title.setText("个人信息");
 

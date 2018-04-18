@@ -5,9 +5,9 @@
          android:layout_width="match_parent"
          android:layout_height="match_parent"
          android:layout_alignParentBottom="true"
-         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
          android:background="@color/air_speed_label"
-    >
+         android:fitsSystemWindows="true">
 
     <!-- FrameLayout的id属性必须为 @android:id/tabcontent -->
 
@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#ccDEDEDE">
+        android:background="#ccDEDEDE"
+        android:fitsSystemWindows="true">
     </TabWidget>
 </TabHost>

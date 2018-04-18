@@ -33,6 +33,7 @@ import com.stephentuso.welcome.WelcomeHelper;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
+import static com.murainy.safeexam.Utils.DeviceUtil.getDeviceId;
 import static com.murainy.safeexam.activitis.AboutActivity.getVersionName;
 
 public class KnowledgeActivity extends AppCompatActivity {
@@ -40,6 +41,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 	private NestedScrollView mNestedScrollView;
 	private AppBarLayout mAppBarLayout;
 	private  TextView mTvTitle;
+	private  TextView device_id;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -49,6 +51,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 		//设置 NestedScrollView 的内容是否拉伸填充整个视图，
 		//这个设置是必须的，否者我们在里面设置的ViewPager会不可见
 		mNestedScrollView.setFillViewport(true);
+		device_id=(TextView) findViewById(R.id.device_id);
 		mTvTitle=(TextView) findViewById(R.id.tv_title);
 		mAppBarLayout=(AppBarLayout) findViewById(R.id.apl);
 		mAppBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
@@ -126,7 +129,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 		});
 
 		FancyButton signupBtn = new FancyButton(this);
-		signupBtn.setText("报告");
+		signupBtn.setText("美图");
 		signupBtn.setIconResource("\uf016");
 		signupBtn.setBackgroundColor(Color.parseColor("#3b5998"));
 		signupBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
@@ -151,6 +154,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 		LinearLayout container = (LinearLayout) findViewById(R.id.container);
 		container.addView(LoginBtn, layoutParams);
 		container.addView(signupBtn, layoutParams);
+		device_id.setText(getDeviceId(this));
 	}
 
 	private Toolbar.OnMenuItemClickListener onMenuItemClick = new Toolbar.OnMenuItemClickListener() {
@@ -275,4 +279,16 @@ public class KnowledgeActivity extends AppCompatActivity {
 		}
 	}
 
+	private String getAppInfo() {
+		try {
+			String pkName = this.getPackageName();
+			String versionName = this.getPackageManager().getPackageInfo(
+					pkName, 0).versionName;
+			int versionCode = this.getPackageManager()
+					.getPackageInfo(pkName, 0).versionCode;
+			return pkName + "   " + versionName + "  " + versionCode;
+		} catch (Exception e) {
+		}
+		return null;
+	}
 }

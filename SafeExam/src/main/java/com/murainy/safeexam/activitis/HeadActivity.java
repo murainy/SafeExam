@@ -1,6 +1,5 @@
 package com.murainy.safeexam.activitis;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -28,6 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.murainy.safeexam.R;
+import com.murainy.safeexam.Utils.LogUtil;
 import com.murainy.safeexam.beans.Student;
 
 import java.io.File;
@@ -38,6 +38,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -50,27 +51,32 @@ import cn.bmob.v3.listener.DownloadFileListener;
 import cn.bmob.v3.listener.QueryListener;
 import cn.bmob.v3.listener.UpdateListener;
 import cn.bmob.v3.listener.UploadFileListener;
+import de.hdodenhof.circleimageview.CircleImageView;
 
-@SuppressLint("SdCardPath")//忽略警告
+import static android.os.Environment.MEDIA_MOUNTED;
+
 public class HeadActivity extends Activity implements OnClickListener {
-	private Context mcontext = HeadActivity.this;//上下文
 	private static int REQUEST_THUMBNAIL = 1;// 请求缩略图信号标识
 	private static int REQUEST_ORIGINAL = 2;// 请求原图信号标识
-	private ImageView ivHead;//头像显示
-	private Button btnTakephoto;//拍照
-	private Button btnPhotos;//相册
-	private Button btnPhotosok;//相册
 	private Bitmap head;//头像Bitmap
-	private EditText et_nick;
-	private static String path = Environment.getExternalStorageDirectory().getPath();//sd路径
-	private static String pathbak = Environment.getDataDirectory() + "/tmp";//sd路径
+	//private String path = getFilesDir().getPath();//路径：data/data/包名/files
+	private String path =getFilePath(this,"/head");
+	@BindView(R.id.circleImageView2)
+	CircleImageView ci;//头像显示
 	@BindView(R.id.iv_left)
 	ImageView iv_left;
 	@BindView(R.id.tv_title)
 	TextView tv_title;
 	@BindView(R.id.btn_upload)
 	Button upload;
-
+	@BindView(R.id.btn_photos)
+	Button btnPhotos;
+	@BindView(R.id.btn_takephoto)
+	Button btnTakephoto;
+	@BindView(R.id.btn_okphoto)
+	Button btnPhotosok;
+	@BindView(R.id.et_nick)
+	EditText et_nick;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -83,26 +89,46 @@ public class HeadActivity extends Activity implements OnClickListener {
 
 	private void initView() {
 		//初始化控件
-		btnPhotos = (Button) findViewById(R.id.btn_photos);
-		btnPhotosok = (Button) findViewById(R.id.btn_okphoto);
-		btnTakephoto = (Button) findViewById(R.id.btn_takephoto);
-		et_nick = (EditText) findViewById(R.id.et_nick);
+		upload.setOnClickListener(this);
 		btnPhotos.setOnClickListener(this);
 		btnTakephoto.setOnClickListener(this);
 		btnPhotosok.setOnClickListener(this);
-		ivHead = (ImageView) findViewById(R.id.circleImageView2);
 		Bitmap bt = BitmapFactory.decodeFile(path + "/head.jpg");
 		// Bitmap bt = createImageThumbnail(path );//从Sd中找头像，转换成Bitmap
 		if (bt != null) {
 			@SuppressWarnings("deprecation")
 			Drawable drawable = new BitmapDrawable(bt);//转换成drawable
-			ivHead.setImageDrawable(drawable);
+			ci.setImageDrawable(drawable);
 		} else {
 			/**
 			 *	如果SD里面没有则需要从服务器取头像，取回来的头像再保存在SD中
 			 */
+			readImage();//显示临时图像然后下载
 			Bmobfiledown();
 		}
+
+	}
+
+	//如果本地有,就不需要再去联网去请求
+	private boolean readImage() {
+		File filesDir;
+		if (Environment.getExternalStorageState().equals(MEDIA_MOUNTED)) {//判断sd卡是否挂载
+			//路径1：storage/sdcard/Android/data/包名/files
+			filesDir = getExternalFilesDir("");
+
+		} else {//手机内部存储
+			//路径：data/data/包名/files
+			filesDir = getFilesDir();
+
+		}
+		File file = new File(filesDir, "head.jpg");
+		if (file.exists()) {
+			//存储--->内存
+			Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+			ci.setImageBitmap(bitmap);
+			return true;
+		}
+		return false;
 
 	}
 
@@ -156,6 +182,30 @@ public class HeadActivity extends Activity implements OnClickListener {
 		}
 	}
 
+	/**
+	 * 正常开发中获取存储路径的方法
+	 * @param context 上下文对象
+	 * @param dir     存储目录
+	 * @return
+	 */
+	public static String getFilePath(Context context, String dir) {
+		String directoryPath ;
+		//判断SD卡是否可用
+		if (MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+		//directoryPath = Objects.requireNonNull(context.getExternalFilesDir(dir)).getAbsolutePath();
+		  directoryPath =context.getExternalCacheDir().getAbsolutePath() ;
+		} else {
+		//没内存卡就存机身内存
+		  directoryPath = context.getFilesDir() + File.separator + dir;
+		// directoryPath=context.getCacheDir()+File.separator+dir;
+		}
+		File file = new File(directoryPath);
+		if (!file.exists()) {//判断文件目录是否存在
+			file.mkdirs();
+		}
+		LogUtil.i("filePath====>" + directoryPath);
+		return directoryPath;
+	}
 
 	@Override
 	public void onClick(View v) {
@@ -169,11 +219,13 @@ public class HeadActivity extends Activity implements OnClickListener {
 				Intent intent2 = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 				//intent2.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(path,"head.jpg")));
 				//startActivityForResult(intent2, REQUEST_ORIGINAL);//获取原图
-
 				startActivityForResult(intent2, REQUEST_THUMBNAIL);//获取压缩图
 				break;
 			case R.id.btn_okphoto:
 				Bmobfiledown();
+				break;
+			case R.id.btn_upload:
+				uploadbmobfile();
 				break;
 			default:
 				break;
@@ -183,7 +235,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 
 	/*分片上传单个文件 、到bmob库*/
 	public void uploadbmobfile() {
-		String picPath = "sdcard/head.jpg";
+		String picPath = path + "/head.jpg";
 		final BmobFile bmobFile = new BmobFile(new File(picPath));
 		bmobFile.uploadblock(new UploadFileListener() {
 
@@ -191,8 +243,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 			public void done(BmobException e) {
 				if (e == null) {
 					//bmobFile.getFileUrl()--返回的上传文件的完整地址
-					String url;
-					url = bmobFile.getFileUrl();
+					String url= bmobFile.getFileUrl();
 					//et_nick.setText(url);
 					BmobUser student = BmobUser.getCurrentUser();
 					Student stu = new Student();
@@ -296,7 +347,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 		@Override
 		protected void onPostExecute(Bitmap result) {
 			// TODO Auto-generated method stub
-			ivHead.setImageBitmap(result);
+			ci.setImageBitmap(result);
 		}
 	}
 
@@ -308,7 +359,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 	 * 下载Bomb文件
 	 */
 	public void Bmobfiledown() {
-		// 查询用刻苦
+		// 查询用
 		BmobUser userinfo = BmobUser.getCurrentUser(Student.class);
 		BmobQuery<Student> query = new BmobQuery<Student>();
 		query.getObject(userinfo.getObjectId(), new QueryListener<Student>() {
@@ -342,6 +393,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 			public void onStart() {
 				toast("开始下载...");
 			}
+
 			@Override
 			public void done(String savePath, BmobException e) {
 				if (e == null) {
@@ -355,7 +407,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 			@Override
 			public void onProgress(Integer value, long newworkSpeed) {
 
-				toast("Bmob下载进度：" + value + "%，" + newworkSpeed / 1000 + "Kb/s");
+				//toast("Bmob下载进度：" + value + "%，" + newworkSpeed / 1000 + "Kb/s");
 			}
 
 		});
@@ -380,6 +432,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 			case 3:
 				if (data != null) {
 					Bundle extras = data.getExtras();
+					assert extras != null;
 					head = extras.getParcelable("data");
 					if (head != null) {
 						/**
@@ -387,7 +440,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 						 */
 						uploadbmobfile();
 						setPicToView(head);//保存在SD卡中
-						ivHead.setImageBitmap(head);//用ImageView显示出来
+						ci.setImageBitmap(head);//用ImageView显示出来
 					}
 				}
 				break;
@@ -419,7 +472,7 @@ public class HeadActivity extends Activity implements OnClickListener {
 
 	private void setPicToView(Bitmap mBitmap) {
 		String sdStatus = Environment.getExternalStorageState();
-		if (!sdStatus.equals(Environment.MEDIA_MOUNTED)) { // 检测sd是否可用
+		if (!sdStatus.equals(MEDIA_MOUNTED)) { // 检测sd是否可用
 			return;
 		}
 		FileOutputStream b = null;
