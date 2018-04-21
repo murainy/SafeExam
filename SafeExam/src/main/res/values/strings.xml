@@ -17,10 +17,9 @@
     <string name="sigerselect">单选项</string>
     <string name="mutiselect">多选项目</string>
     <string name="judgeA">单选项</string>
-    <string name="answer"></string>
-    <string name="note"></string>
+    <string name="answer">答案</string>
+    <string name="note">备注</string>
     <string name="ksxm">安全考试</string>
-    <string name="_15">40分钟</string>
     <string name="t_15">40分钟</string>
     <string name="forgetpass">忘记密码</string>
     <string name="bindphone">绑定手机</string>
@@ -89,7 +88,11 @@
     </string>
     <string name="cloud">云盘</string>
     <string name="TooYoung">Too young, too simple,sometimes naive.\n太年轻，太简单，有时还天真。</string>
-
+    <string name="camera">相机</string>
+    <string name="picture">相册</string>
+    <string name="reset">重设</string>
+    <string name="done">完成</string>
+    <string name="test">测试</string>
     <string-array name="cities">
         <item>Pittsburgh</item>
         <item>Allentown/Bethlehem</item>
@@ -100,6 +103,11 @@
         <item>PHL</item>
         <item>PIT</item>
         <item>ABE</item>
-
     </string-array>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="permission_pick_rationale">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
+    <string name="permission_crop_rationale">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
+    <string name="permission_denied">Permission was denied. Please consider granting it in order to use all features.</string>
+    <string name="permission_denied_never_ask_again">Permission was denied with never ask again.</string>
 </resources>

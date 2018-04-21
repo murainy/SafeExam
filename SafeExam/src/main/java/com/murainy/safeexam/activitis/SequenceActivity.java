@@ -26,7 +26,7 @@ public class SequenceActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sequence);
-        mRecyclerView = (RecyclerView) findViewById(R.id.rv_list);
+        mRecyclerView = findViewById(R.id.rv_list);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         initAdapter();
         mQuickAdapter.addHeaderView(getView());

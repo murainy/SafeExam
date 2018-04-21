@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_recommend"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/air_speed_label"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Large Text1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Large Text2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText"/>
+    <FrameLayout
+        android:id="@+id/rdtj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.44" android:background="@drawable/darkorange"
+        tools:ignore="InefficientWeight">
+        <ImageView
+            android:id="@+id/lv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_delete"
+            tools:ignore="ContentDescription"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:text="One Hundred Years of Solitude"
+            android:id="@+id/textView8" android:layout_gravity="center"
+            tools:ignore="HardcodedText"/>
+        <!--<fragment   android:name="com.murainy.safeexam.view.Fragmenttest"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  tools:layout="@layout/fragment"/>-->
+    </FrameLayout>
+
+</LinearLayout>

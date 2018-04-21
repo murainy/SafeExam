@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.SafeExam;
 import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
-import com.murainy.safeexam.Utils.BitmapUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,13 +36,13 @@ public class InformationActivity extends Activity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
         ButterKnife.bind(this);
-        Button lookGradeBtn = (Button) findViewById(R.id.btn_look_grade);
-        Button changePasswordBtn = (Button) findViewById(R.id.btn_change_password);
-	    TextView classTV = (TextView) findViewById(R.id.tv_class);
-	    TextView numberTV = (TextView) findViewById(R.id.tv_number);
-	    TextView nameTV = (TextView) findViewById(R.id.tv_name);
-	    Button bindpBtn = (Button) findViewById(R.id.bnt_bindphone);
-        Button setheadBtn = (Button) findViewById(R.id.bnt_sethead);
+	    Button lookGradeBtn = findViewById(R.id.btn_look_grade);
+	    Button changePasswordBtn = findViewById(R.id.btn_change_password);
+	    TextView classTV = findViewById(R.id.tv_class);
+	    TextView numberTV = findViewById(R.id.tv_number);
+	    TextView nameTV = findViewById(R.id.tv_name);
+	    Button bindpBtn = findViewById(R.id.bnt_bindphone);
+	    Button setheadBtn = findViewById(R.id.bnt_sethead);
 	    nameTV.setText(SafeExam.getStudent().getName());
 	    numberTV.setText(SafeExam.getStudent().getUsername());
 	    classTV.setText(SafeExam.getStudent().getNick());
@@ -78,7 +77,7 @@ public class InformationActivity extends Activity implements View.OnClickListene
                 startActivity(i3);
                 break;
             case R.id.bnt_sethead:
-                Intent i4 = new Intent(InformationActivity.this, HeadActivity.class);
+	            Intent i4 = new Intent(InformationActivity.this, SetHeadActivity.class);
                 startActivity(i4);
                 break;
 

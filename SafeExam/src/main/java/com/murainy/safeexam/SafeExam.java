@@ -19,10 +19,10 @@ public class SafeExam extends Application {
     private static Student student;
 
     public static Student getStudent() { return student;  }
-
     public static void setStudent(Student s) {
         student = s;
     }
+
 
     @Override
     public void onCreate() {

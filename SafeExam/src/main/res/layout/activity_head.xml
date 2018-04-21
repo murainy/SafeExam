@@ -1,9 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textAlignment="gravity"
                 android:background="@drawable/index_bg_002"
-                android:fitsSystemWindows="true">
+                android:fitsSystemWindows="true"
+                android:textAlignment="gravity">
 
     <include
         android:id="@+id/include"
@@ -37,13 +37,28 @@
             android:textSize="15sp"/>
 
         <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="4dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:weightSum="4"
-            android:layout_width="match_parent"
-            android:id="@+id/ll_btn">
+            android:padding="@dimen/size_level8"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btn_crop"
+                style="@style/common_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/test"/>
 
             <Button
                 android:id="@+id/btn_takephoto"
@@ -51,9 +66,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:text="@string/camery"/>
 
             <Button
@@ -62,9 +79,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:text="@string/dwonload"/>
 
             <Button
@@ -73,9 +92,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:text="@string/gallay"/>
 
             <Button
@@ -84,11 +105,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:text="@string/upload"/>
 
         </LinearLayout>
+
+
     </LinearLayout>
 </RelativeLayout>

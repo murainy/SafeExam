@@ -1,4 +1,5 @@
 package com.murainy.safeexam.activitis;
+
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +11,9 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.murainy.safeexam.R;
+import com.murainy.safeexam.Utils.Moment;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +21,6 @@ import java.util.List;
 import cn.bingoogolapple.photopicker.activity.BGAPPToolbarActivity;
 import cn.bingoogolapple.photopicker.activity.BGAPhotoPickerActivity;
 import cn.bingoogolapple.photopicker.activity.BGAPhotoPickerPreviewActivity;
-import com.murainy.safeexam.R;
-import com.murainy.safeexam.Utils.Moment;
 import cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
@@ -178,7 +180,7 @@ public class MomentAddActivity extends BGAPPToolbarActivity implements EasyPermi
         String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
         if (EasyPermissions.hasPermissions(this, perms)) {
             // 拍照后照片的存放目录，改成你自己拍照后要存放照片的目录。如果不传递该参数的话就没有拍照功能
-            File takePhotoDir = new File(Environment.getExternalStorageDirectory(), "BGAPhotoPickerTakePhoto");
+            File takePhotoDir = new File(Environment.getExternalStorageDirectory(), "BGAPhoto");
 
             Intent photoPickerIntent = new BGAPhotoPickerActivity.IntentBuilder(this)
                     .cameraFileDir(mTakePhotoCb.isChecked() ? takePhotoDir : null) // 拍照后照片的存放目录，改成你自己拍照后要存放照片的目录。如果不传递该参数的话则不开启图库里的拍照功能

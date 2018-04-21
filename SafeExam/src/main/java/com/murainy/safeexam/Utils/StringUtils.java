@@ -2,6 +2,10 @@ package com.murainy.safeexam.Utils;
 
 import android.text.TextUtils;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -18,6 +22,23 @@ public class StringUtils {
 	static String regEx = "[\u4e00-\u9fa5]";
 	static Pattern pat = Pattern.compile(regEx);
 
+	public static String getMD5(InputStream is) throws NoSuchAlgorithmException, IOException {
+		StringBuffer md5 = new StringBuffer();
+		MessageDigest md = MessageDigest.getInstance("MD5");
+		byte[] dataBytes = new byte[1024];
+
+		int nread = 0;
+		while ((nread = is.read(dataBytes)) != -1) {
+			md.update(dataBytes, 0, nread);
+		}
+		byte[] mdbytes = md.digest();
+
+		// convert the byte to hex format
+		for (int i = 0; i < mdbytes.length; i++) {
+			md5.append(Integer.toString((mdbytes[i] & 0xff) + 0x100, 16).substring(1));
+		}
+		return md5.toString();
+	}
 	/**
 	 * 判断字符串中是否包含有中文文字
 	 */
@@ -30,6 +51,9 @@ public class StringUtils {
 		return flg;
 	}
 
+	public static boolean isNotEmpty(String str) {
+		return ((str != null) && (str.trim().length() > 0));
+	}
 	/**
 	 * String 转double类型(保留两位小数)
 	 */
@@ -89,9 +113,7 @@ public class StringUtils {
 	 */
 	public static boolean isMail(String string) {
 		if (null != string) {
-			if (string.matches("^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$")) {
-				return true;
-			}
+			return string.matches("^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$");
 		}
 		return false;
 	}

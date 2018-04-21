@@ -1,4 +1,5 @@
 package com.murainy.safeexam.activitis;
+
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.Toast;
+
+import com.murainy.safeexam.R;
+import com.murainy.safeexam.Utils.Moment;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,8 +27,6 @@ import cn.bingoogolapple.baseadapter.BGARecyclerViewAdapter;
 import cn.bingoogolapple.baseadapter.BGAViewHolderHelper;
 import cn.bingoogolapple.photopicker.activity.BGAPPToolbarActivity;
 import cn.bingoogolapple.photopicker.activity.BGAPhotoPreviewActivity;
-import com.murainy.safeexam.R;
-import com.murainy.safeexam.Utils.Moment;
 import cn.bingoogolapple.photopicker.imageloader.BGARVOnScrollListener;
 import cn.bingoogolapple.photopicker.widget.BGANinePhotoLayout;
 import pub.devrel.easypermissions.AfterPermissionGranted;
@@ -52,7 +55,7 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
     protected void initView(Bundle savedInstanceState) {
         setContentView(R.layout.activity_moment_list);
         mDownLoadableCb = findViewById(R.id.cb_moment_list_downloadable);
-        mMomentRv = findViewById(R.id.rv_moment_list_system);
+        mMomentRv = findViewById(R.id.rv_moment_list_moments);
     }
 
     @Override
@@ -97,10 +100,16 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
     }
 
     public void onClick(View v) {
-        if (v.getId() == R.id.tv_moment_list_add) {
-            startActivityForResult(new Intent(this, com.murainy.safeexam.activitis.MomentAddActivity.class), RC_ADD_MOMENT);
-        } else if (v.getId() == R.id.rv_moment_list_system) {
-            startActivity(new Intent(this, com.murainy.safeexam.activitis.SystemGalleryActivity.class));
+
+        switch (v.getId()) {
+            case R.id.tv_moment_list_add:
+                startActivityForResult(new Intent(this, com.murainy.safeexam.activitis.MomentAddActivity.class), RC_ADD_MOMENT);
+                break;
+            case R.id.tv_moment_list_system:
+                startActivity(new Intent(this, com.murainy.safeexam.activitis.SystemGalleryActivity.class));
+                break;
+            default:
+                break;
         }
     }
 
@@ -124,7 +133,7 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
 
         String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
         if (EasyPermissions.hasPermissions(this, perms)) {
-            File downloadDir = new File(Environment.getExternalStorageDirectory(), "BGAPhotoPickerDownload");
+            File downloadDir = new File(Environment.getExternalStorageDirectory(), "BGADownload");
             BGAPhotoPreviewActivity.IntentBuilder photoPreviewIntentBuilder = new BGAPhotoPreviewActivity.IntentBuilder(this)
                     .saveImgDir(downloadDir); // 保存图片的目录，如果传 null，则没有保存图片功能
 

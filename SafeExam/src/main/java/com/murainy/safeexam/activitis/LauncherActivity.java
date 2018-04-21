@@ -77,14 +77,14 @@ public class LauncherActivity extends AppCompatActivity {
 		BmobUpdateAgent.update(this);
 
 		welcomeScreen.show(savedInstanceState);
-		mShimmerViewContainer = (ShimmerFrameLayout) findViewById(R.id.shimmer_view_container);
+		mShimmerViewContainer = findViewById(R.id.shimmer_view_container);
 		assert mShimmerViewContainer != null;
 		mShimmerViewContainer.setDuration(1000);
 		mShimmerViewContainer.startShimmerAnimation();
 		mShimmerViewContainer.setRepeatMode(ObjectAnimator.RESTART);
 		Typeface iconFont = FontManager.getTypeface(getApplicationContext(), FontManager.FONTAWESOME);
 		FontManager.markAsIconContainer(findViewById(R.id.icons_container), iconFont);
-		mFlipper = (ViewFlipper) findViewById(R.id.flipper);
+		mFlipper = findViewById(R.id.flipper);
 		//动态导入的方式为ViewFlipper加入子View
 		for (int aResID : resID) {
 			mFlipper.addView(getImageView(aResID));
@@ -174,8 +174,11 @@ public class LauncherActivity extends AppCompatActivity {
 		super.onActivityResult(requestCode, resultCode, data);
 
 		if (requestCode == WelcomeHelper.DEFAULT_WELCOME_SCREEN_REQUEST) {
-			String welcomeKey = data.getStringExtra(SplashActivity.WELCOME_SCREEN_KEY);
-
+			try {
+				String welcomeKey = data.getStringExtra(SplashActivity.WELCOME_SCREEN_KEY);
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
 			if (resultCode == RESULT_OK) {
 				//startActivity(new Intent(LauncherActivity.this, SplashActivity.class));
 				//Toast.makeText(getApplicationContext(), welcomeKey + " completed", Toast.LENGTH_SHORT).show();

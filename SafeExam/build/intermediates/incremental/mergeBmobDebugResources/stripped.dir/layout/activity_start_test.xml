@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/air_speed_label"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:paddingTop="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_arrow_left"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/tv_ksxm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/ksxm"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="20sp"
+            tools:ignore="RelativeOverlap"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:src="@drawable/ic_timer_white_24dp"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="60秒"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/base_horization_line"
+        tools:ignore="ContentDescription"/>
+
+
+    <include
+        android:id="@+id/test_item"
+        layout="@layout/test_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/air_speed_label"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/btn_mask_test"
+            style="@style/common_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/skipqusetion"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large"/>
+
+        <Button
+            android:id="@+id/btn_skip_test"
+            style="@style/common_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/checkqusetion"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large"/>
+
+        <Button
+            android:id="@+id/btn_finish_test"
+            style="@style/common_button_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_action_bar_height"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/nextqusetion"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large"/>
+    </LinearLayout>
+</LinearLayout>

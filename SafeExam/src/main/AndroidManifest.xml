@@ -10,10 +10,9 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_LOGS"/>
+
     <!-- 拍照存储权限 -->
     <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 允许读取手机状态 用于创建BmobInstallation -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <!-- 允许完全退出 -->
@@ -75,11 +74,23 @@
 
         <receiver android:name=".activitis.MyPushMessageReceiver"
                   android:exported="false">
-
             <intent-filter >
                 <action android:name="cn.bmob.push.action.MESSAGE"/>
             </intent-filter>
         </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.murainy.safeexam.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path">
+            </meta-data>
+        </provider>
+
+
         <activity
             android:name=".activitis.SplashActivity"
             android:launchMode="singleTop"
@@ -134,12 +145,11 @@
             android:name=".activitis.TabmanActivity"
             android:launchMode="singleTop"
             android:theme="@style/ImageTranslucentTheme">
-
         </activity>
+
         <activity
-            android:name=".activitis.HeadActivity"
-            android:theme="@style/ImageTranslucentTheme"
-            android:launchMode="singleTop">
+            android:name=".activitis.SetHeadActivity"
+            android:theme="@style/ImageTranslucentTheme">
             <!-- 具有相机功能 -->
             <intent-filter>
                 <action android:name="android.media.action.IMAGE_CAPTURE"/>
@@ -196,7 +206,8 @@
         </activity>
         <activity
             android:name=".activitis.MomentAddActivity"
-            android:theme="@style/ImageTranslucentTheme">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
         <activity
             android:name=".activitis.PayActivity"
@@ -204,7 +215,12 @@
         </activity>
         <activity
             android:name=".activitis.MomentListActivity"
-            android:theme="@style/ImageTranslucentTheme">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".activitis.SystemGalleryActivity"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".activitis.SettingsActivity"
@@ -213,9 +229,17 @@
         </activity>
         <activity
             android:name="cn.bmob.v3.update.UpdateDialogActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity android:name="cn.bmob.pay.v3.act.PayAct" />
+
+        <activity
+            android:name=".activitis.RxActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".activitis.ResultActivity">
+        </activity>
 
         <!-- 配置APP ID -->
         <meta-data

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.murainy.safeexam.activitis.CircleActivity"
+              android:weightSum="1"
+              android:fitsSystemWindows="true"
+              android:theme="@style/ImageTranslucentTheme"
+              android:background="@drawable/index_bg_001">
+
+    <TextView
+        android:text="安全管理人员考试系统"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:padding="16dp"
+        android:background="@drawable/setting_single_select"
+        android:textSize="18sp"
+        android:elevation="0dp"
+        android:textAlignment="center"
+        android:textColor="@drawable/midnightblue"
+        />
+
+    <com.zhy.view.CircleMenuLayout
+        android:id="@+id/id_menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_bg3"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:id="@id/id_circle_menu_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="104.0dip"
+                android:layout_height="104.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/turnplate_center_unlogin"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:layout_width="116.0dip"
+                android:layout_height="116.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/turnplate_mask_unlogin_normal"
+                tools:ignore="ContentDescription"/>
+        </RelativeLayout>
+    </com.zhy.view.CircleMenuLayout>
+
+</LinearLayout>

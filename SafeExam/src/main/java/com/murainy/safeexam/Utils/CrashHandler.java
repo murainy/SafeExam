@@ -5,13 +5,6 @@ package com.murainy.safeexam.Utils;
  */
 
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.lang.Thread.UncaughtExceptionHandler;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -26,6 +19,13 @@ import android.util.Log;
 import android.view.WindowManager;
 
 import com.murainy.safeexam.R;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.lang.Thread.UncaughtExceptionHandler;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 /**
@@ -165,18 +165,19 @@ public class CrashHandler implements UncaughtExceptionHandler {
 								} finally {
 									dialog.dismiss();
 									// 退出
-									android.os.Process.killProcess(android.os.Process.myPid());
-									System.exit(1);
+
 								}
+								android.os.Process.killProcess(android.os.Process.myPid());
+								System.exit(1);
 							}
 						})
-				.setNegativeButton(android.R.string.cancel,
+				.setNegativeButton(android.R.string.ok,
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int which) {
 								dialog.dismiss();
 								// 退出
-								android.os.Process.killProcess(android.os.Process.myPid());
-								System.exit(1);
+								//android.os.Process.killProcess(android.os.Process.myPid());
+								//System.exit(1);
 							}
 						});
 

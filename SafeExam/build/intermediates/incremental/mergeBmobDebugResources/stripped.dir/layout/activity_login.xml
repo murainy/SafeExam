@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_bg_color">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/air_speed_label"
+        android:orientation="vertical" android:layout_alignParentEnd="false" android:weightSum="3" android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/man"
+            app:civ_border_color="@color/dark_grey"
+            app:civ_border_overlay="@color/opaque_white"
+            app:civ_border_width="1dp"
+            android:alpha="0.9"
+            android:adjustViewBounds="false"
+            app:civ_fill_color="@color/transparent_light"/>
+        <LinearLayout
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_corner"
+            android:orientation="vertical" android:theme="@style/AppTheme">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/login_account_box_white_36dp"
+                android:drawablePadding="25dip"
+                android:hint="账号/手机号"
+                android:inputType="text"
+                android:paddingLeft="15dip"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="2.0"
+                android:textColorHint="#ffdddddd"
+                android:layout_margin="8dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/base_horization_line"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/login_lock_white_36dp"
+                android:drawablePadding="25dip"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingLeft="15dip"
+                android:textColorHint="#ffdddddd"
+                android:layout_margin="8dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/base_horization_line"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remenberme"
+                android:id="@+id/checkBox"
+                android:checked="true"
+                android:layout_gravity="center"
+                style="@style/AppTheme"
+                android:textColor="@color/air_speed_label"
+                android:textColorLink="?attr/colorButtonNormal"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            style="@style/common_button_style"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:text="@string/login_bnt"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="@dimen/text_size_large"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" android:gravity="center" android:orientation="horizontal" android:id="@+id/linearLayout" android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/account_no"
+            android:textColor="@color/base_color_text_gray" android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.34"
+            android:gravity="center"
+            android:text="@string/register_bnt"
+            android:textAlignment="center"
+            android:textColor="@color/color_theme"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tv_forpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/forgetpass"
+            android:textColor="@color/base_color_text_gray"
+            android:textSize="20sp"
+            android:theme="@style/Smile.ImageView"/>
+    </LinearLayout>
+
+</RelativeLayout>
