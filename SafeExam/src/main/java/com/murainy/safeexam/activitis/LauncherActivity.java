@@ -1,6 +1,7 @@
 package com.murainy.safeexam.activitis;
 
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -28,7 +29,6 @@ import com.stephentuso.welcome.WelcomeHelper;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import c.b.BP;
 import cn.bmob.push.BmobPush;
 import cn.bmob.v3.BmobInstallation;
 import cn.bmob.v3.BmobPushManager;
@@ -60,16 +60,16 @@ public class LauncherActivity extends AppCompatActivity {
 	@BindView(R.id.support_me)
 	TextView supportMe;
 
+	@SuppressLint("ClickableViewAccessibility")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_launcher);
 		ButterKnife.bind(this);
 		welcomeScreen = new WelcomeHelper(this, SplashActivity.class);
-		// 初始化BmobPay对象,可以在支付时再初始化
-		BP.init(SafeExam.APPID);
+
 		// 使用推送服务时的初始化操作
-		BmobInstallation.getCurrentInstallation().save();
+		BmobInstallation.getQuery();
 		// 启动推送服务
 		BmobPush.startWork(this);
 		// 创建推送消息的对象
@@ -118,11 +118,11 @@ public class LauncherActivity extends AppCompatActivity {
 							startActivity(new Intent(LauncherActivity.this, TabmanActivity.class));
 						}
 						if (student.getIdentity() == 2) {
-							startActivity(new Intent(LauncherActivity.this, AdminActivity.class));
+							startActivity(new Intent(LauncherActivity.this, MuniActivity.class));
 						}
 
 					} else {
-						 Toast.makeText(LauncherActivity.this, "账号或密码错误", Toast.LENGTH_SHORT).show();
+						Toast.makeText(LauncherActivity.this, "账号或密码错误", Toast.LENGTH_SHORT).show();
 						startActivity(new Intent(LauncherActivity.this, LoginActivity.class));
 					}
 				}
@@ -260,7 +260,7 @@ public class LauncherActivity extends AppCompatActivity {
 							startActivity(new Intent(LauncherActivity.this, TabmanActivity.class));
 						}
 						if (student.getIdentity() == 2) {
-							startActivity(new Intent(LauncherActivity.this, AdminActivity.class));
+							startActivity(new Intent(LauncherActivity.this, MuniActivity.class));
 						}
 
 					} else {
@@ -286,7 +286,7 @@ public class LauncherActivity extends AppCompatActivity {
 		// 设置推送消息，服务端会根据上面的查询条件，来进行推送这条消息
 		bmobPushManager.pushMessage("这是一条推送给所有Android设备的消息。");
 		//CrashReport.testJavaCrash();
-		startActivity(new Intent(LauncherActivity.this, ExamActivity.class));
+		startActivity(new Intent(LauncherActivity.this, CuotiActivity.class));
 	}
 
 	@OnClick(R.id.tv_let)

@@ -17,11 +17,11 @@ import java.lang.Override;
 public class UserBindPhoneActivity_ViewBinding implements Unbinder {
   private UserBindPhoneActivity target;
 
-  private View view2131296500;
+  private View view2131296499;
 
-  private View view2131296753;
+  private View view2131296756;
 
-  private View view2131296723;
+  private View view2131296725;
 
   @UiThread
   public UserBindPhoneActivity_ViewBinding(UserBindPhoneActivity target) {
@@ -35,7 +35,7 @@ public class UserBindPhoneActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.iv_left, "field 'iv_left' and method 'back'");
     target.iv_left = Utils.castView(view, R.id.iv_left, "field 'iv_left'", ImageView.class);
-    view2131296500 = view;
+    view2131296499 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class UserBindPhoneActivity_ViewBinding implements Unbinder {
     target.tv_title = Utils.findRequiredViewAsType(source, R.id.tv_title, "field 'tv_title'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_send, "field 'tv_send' and method 'send'");
     target.tv_send = Utils.castView(view, R.id.tv_send, "field 'tv_send'", TextView.class);
-    view2131296753 = view;
+    view2131296756 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class UserBindPhoneActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tv_bind, "field 'tv_bind' and method 'bind'");
     target.tv_bind = Utils.castView(view, R.id.tv_bind, "field 'tv_bind'", TextView.class);
-    view2131296723 = view;
+    view2131296725 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -79,11 +79,11 @@ public class UserBindPhoneActivity_ViewBinding implements Unbinder {
     target.tv_send = null;
     target.tv_bind = null;
 
-    view2131296500.setOnClickListener(null);
-    view2131296500 = null;
-    view2131296753.setOnClickListener(null);
-    view2131296753 = null;
-    view2131296723.setOnClickListener(null);
-    view2131296723 = null;
+    view2131296499.setOnClickListener(null);
+    view2131296499 = null;
+    view2131296756.setOnClickListener(null);
+    view2131296756 = null;
+    view2131296725.setOnClickListener(null);
+    view2131296725 = null;
   }
 }

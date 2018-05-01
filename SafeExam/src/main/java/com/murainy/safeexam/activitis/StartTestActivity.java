@@ -1,5 +1,6 @@
 package com.murainy.safeexam.activitis;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -61,7 +62,6 @@ public class StartTestActivity extends Activity {
 	 ImageButton btnBack;
 	@BindView(R.id.seekBar)
 	 SeekBar seekBar;
-
 	@BindView(R.id.judgeA)
 	 RadioButton judgeA;
 	@BindView(R.id.judgeB)
@@ -102,6 +102,7 @@ public class StartTestActivity extends Activity {
 	private String answerx = "未答";
 	private int tag = 0;
 	private String paperName;
+	@SuppressLint("SimpleDateFormat")
 	private DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private Grade grade;
 	private String examMode;
@@ -110,6 +111,7 @@ public class StartTestActivity extends Activity {
 	private RelativeLayout test;
 
 
+	@SuppressLint("HandlerLeak")
 	private Handler handler = new Handler() {
 		@Override
 		public void handleMessage(Message msg) {
@@ -139,29 +141,29 @@ public class StartTestActivity extends Activity {
 			questions = intent.getParcelableArrayListExtra("questions");
 		}
 		Logger.i(paperName + "：收到了" + examMode);
-		test = (RelativeLayout) findViewById(R.id.test_item);
+		test = findViewById(R.id.test_item);
 		tvKsxm.setText(examMode);
-		timeTV = (TextView) findViewById(R.id.tv_time);
-		question = (TextView) findViewById(R.id.question);
-		id = (TextView) findViewById(R.id.id);
+		timeTV = findViewById(R.id.tv_time);
+		question = findViewById(R.id.question);
+		id = findViewById(R.id.id);
 		//judge = (RadioGroup) findViewById(R.id.judge);
-		judgeA = (RadioButton) findViewById(R.id.judgeA);
-		judgeB = (RadioButton) findViewById(R.id.judgeB);
-		question = (TextView) findViewById(R.id.question);
+		judgeA = findViewById(R.id.judgeA);
+		judgeB = findViewById(R.id.judgeB);
+		question = findViewById(R.id.question);
 		//singleRadioGroup = (RadioGroup) findViewById(R.id.single_option_group);
-		singleOptionA = (RadioButton) findViewById(R.id.single_option_A);
-		singleOptionB = (RadioButton) findViewById(R.id.single_option_B);
-		singleOptionC = (RadioButton) findViewById(R.id.single_option_C);
-		singleOptionD = (RadioButton) findViewById(R.id.single_option_D);
+		singleOptionA = findViewById(R.id.single_option_A);
+		singleOptionB = findViewById(R.id.single_option_B);
+		singleOptionC = findViewById(R.id.single_option_C);
+		singleOptionD = findViewById(R.id.single_option_D);
 		//multiOptionGroup = (LinearLayout) findViewById(R.id.multiOptionGroup);
-		multiOptionA = (CheckBox) findViewById(R.id.multiOptionA);
-		multiOptionB = (CheckBox) findViewById(R.id.multiOptionB);
-		multiOptionC = (CheckBox) findViewById(R.id.multiOptionC);
-		multiOptionD = (CheckBox) findViewById(R.id.multiOptionD);
-		multiOptionE = (CheckBox) findViewById(R.id.multiOptionE);
-		multiOptionF = (CheckBox) findViewById(R.id.multiOptionF);
-		answer = (TextView) findViewById(R.id.answerd);
-		note = (TextView) findViewById(R.id.answers);
+		multiOptionA = findViewById(R.id.multiOptionA);
+		multiOptionB = findViewById(R.id.multiOptionB);
+		multiOptionC = findViewById(R.id.multiOptionC);
+		multiOptionD = findViewById(R.id.multiOptionD);
+		multiOptionE = findViewById(R.id.multiOptionE);
+		multiOptionF = findViewById(R.id.multiOptionF);
+		answer = findViewById(R.id.answerd);
+		note = findViewById(R.id.answers);
 		seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -273,13 +275,17 @@ public class StartTestActivity extends Activity {
 			case DOWNLOAD_QUESTION_EXAM:
 				Logger.i("获取试题列表成功");
 				questions=BmobUtils.questionsList;
-				ToastUtils.showShort(this,"收到事件");
+				ToastUtils.ToastMessage(this, "安全考试", "收到事件");
 				break;
 			case DOWNLOAD_QUESTION_TEST:
 				Logger.i("获取试题列表成功");
 				questions=BmobUtils.questionsList;
 				break;
 			case DOWNLOAD_QUESTION_LIST:
+				Logger.i("获取试题列表成功");
+				questions = BmobUtils.questionsList;
+				break;
+			case DOWNLOAD_QUESTION_SEQU:
 				Logger.i("获取试题列表成功");
 				questions = BmobUtils.questionsList;
 				break;
@@ -438,7 +444,7 @@ public class StartTestActivity extends Activity {
 	}
 
 	private void showDialog(final Grade grade) {
-		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this);
+		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this, R.style.NoBackGroundDialog);
 		String msg = "本次成绩" + grade.getGrade() + "分";
 		try {
 			builder.setMessage(msg);
@@ -459,7 +465,7 @@ public class StartTestActivity extends Activity {
 	}
 
 	private void showWarnDialog() {
-		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this);
+		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this, R.style.NoBackGroundDialog);
 
 		try {
 			builder.setMessage("点击确定将自动提交成绩，放弃结束考试。");
@@ -487,7 +493,7 @@ public class StartTestActivity extends Activity {
 	}
 
 	private void showTimeOverDialog() {
-		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this);
+		AlertDialog.Builder builder = new AlertDialog.Builder(StartTestActivity.this, R.style.NoBackGroundDialog);
 		builder.setMessage("考试时间结束！");
 		try {
 			builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
@@ -656,7 +662,7 @@ public class StartTestActivity extends Activity {
 			try {
 				seekBar.setEnabled(true);
 				String info=Integer.toString(questions.size())+BmobUtils.ALL;
-				ToastUtils.showShort(this, info+ paperName);
+				ToastUtils.ToastMessage(this, "安全考试", info + paperName);
 				seekBar.setMax(questions.size());
 				eaxmlist();
 				test.setVisibility(View.VISIBLE);

@@ -13,6 +13,7 @@ public class Question extends BmobObject implements Parcelable {
 
 	private String questionid = "";
 	private String paperName = "";
+	private String subject = "";
 	private String type = "";
 	private String question = "";
 	private String optionA = "";
@@ -22,11 +23,33 @@ public class Question extends BmobObject implements Parcelable {
 	private String optionE = "";
 	private String optionF = "";
 	private String mark = "";
-
 	private String answer = "";
 	private String note = "";
 	private String year = "";
 	private Number count = 0;
+
+	protected Question(Parcel in) {
+		this.questionid = in.readString();
+		this.paperName = in.readString();
+		this.subject = in.readString();
+		this.type = in.readString();
+		this.question = in.readString();
+		this.optionA = in.readString();
+		this.optionB = in.readString();
+		this.optionC = in.readString();
+		this.optionD = in.readString();
+		this.optionE = in.readString();
+		this.optionF = in.readString();
+		this.mark = in.readString();
+		this.answer = in.readString();
+		this.note = in.readString();
+		this.year = in.readString();
+		this.count = (Number) in.readSerializable();
+	}
+
+	public String getSubject() {
+		return subject;
+	}
 
 	public Number getCount() {
 		return count;
@@ -155,10 +178,18 @@ public class Question extends BmobObject implements Parcelable {
 		return 0;
 	}
 
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public Question() {
+	}
+
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
 		dest.writeString(this.questionid);
 		dest.writeString(this.paperName);
+		dest.writeString(this.subject);
 		dest.writeString(this.type);
 		dest.writeString(this.question);
 		dest.writeString(this.optionA);
@@ -172,27 +203,6 @@ public class Question extends BmobObject implements Parcelable {
 		dest.writeString(this.note);
 		dest.writeString(this.year);
 		dest.writeSerializable(this.count);
-	}
-
-	public Question() {
-	}
-
-	protected Question(Parcel in) {
-		this.questionid = in.readString();
-		this.paperName = in.readString();
-		this.type = in.readString();
-		this.question = in.readString();
-		this.optionA = in.readString();
-		this.optionB = in.readString();
-		this.optionC = in.readString();
-		this.optionD = in.readString();
-		this.optionE = in.readString();
-		this.optionF = in.readString();
-		this.mark = in.readString();
-		this.answer = in.readString();
-		this.note = in.readString();
-		this.year = in.readString();
-		this.count = (Number) in.readSerializable();
 	}
 
 	public static final Creator<Question> CREATOR = new Creator<Question>() {

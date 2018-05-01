@@ -136,7 +136,7 @@
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
-            android:name="com.murainy.safeexam.activitis.AdminActivity"
+            android:name="com.murainy.safeexam.activitis.MuniActivity"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
@@ -187,7 +187,7 @@
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
-            android:name="com.murainy.safeexam.activitis.ExamActivity"
+            android:name="com.murainy.safeexam.activitis.CuotiActivity"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
@@ -230,7 +230,6 @@
             android:name="cn.bmob.v3.update.UpdateDialogActivity"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
-        <activity android:name="cn.bmob.pay.v3.act.PayAct" />
         <activity
             android:name="com.murainy.safeexam.activitis.RxActivity"
             android:configChanges="orientation|screenSize"

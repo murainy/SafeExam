@@ -17,11 +17,17 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.isseiaoki.simplecropview.CropImageView;
 import com.isseiaoki.simplecropview.util.Logger;
 import com.isseiaoki.simplecropview.util.Utils;
 import com.murainy.safeexam.R;
 import com.tbruyelle.rxpermissions2.RxPermissions;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import io.reactivex.CompletableSource;
 import io.reactivex.SingleSource;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -33,9 +39,6 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.functions.Predicate;
 import io.reactivex.schedulers.Schedulers;
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class RxFragment extends Fragment {
   private static final String TAG = RxFragment.class.getSimpleName();
@@ -121,19 +124,36 @@ public class RxFragment extends Fragment {
     }
   }
 
+	public static String getDirPath() {
+		String dirPath = "";
+		File imageDir = null;
+		File extStorageDir = Environment.getExternalStorageDirectory();
+		if (extStorageDir.canWrite()) {
+			imageDir = new File(extStorageDir.getPath() + "/SafeExam");
+		}
+		if (imageDir != null) {
+			if (!imageDir.exists()) {
+				imageDir.mkdirs();
+			}
+			if (imageDir.canWrite()) {
+				dirPath = imageDir.getPath();
+			}
+		}
+		return dirPath;
+	}
+
   private Disposable loadImage(final Uri uri) {
     mSourceUri = uri;
     return new RxPermissions(getActivity()).request(Manifest.permission.WRITE_EXTERNAL_STORAGE)
         .filter(new Predicate<Boolean>() {
-          @Override public boolean test(@io.reactivex.annotations.NonNull Boolean granted)
-              throws Exception {
+	        @Override
+	        public boolean test(@io.reactivex.annotations.NonNull Boolean granted) {
             return granted;
           }
         })
         .flatMapCompletable(new Function<Boolean, CompletableSource>() {
           @Override
-          public CompletableSource apply(@io.reactivex.annotations.NonNull Boolean aBoolean)
-              throws Exception {
+          public CompletableSource apply(@io.reactivex.annotations.NonNull Boolean aBoolean) {
             return mCropView.load(uri)
                 .useThumbnail(true)
                 .initialFrameRect(mFrameRect)
@@ -143,67 +163,53 @@ public class RxFragment extends Fragment {
         .subscribeOn(Schedulers.newThread())
         .observeOn(AndroidSchedulers.mainThread())
         .subscribe(new Action() {
-          @Override public void run() throws Exception {
+	        @Override
+	        public void run() {
           }
         }, new Consumer<Throwable>() {
-          @Override public void accept(@NonNull Throwable throwable) throws Exception {
+	        @Override
+	        public void accept(@NonNull Throwable throwable) {
           }
         });
   }
+
+	// Bind views //////////////////////////////////////////////////////////////////////////////////
 
   private Disposable cropImage() {
     return mCropView.crop(mSourceUri)
         .executeAsSingle()
         .flatMap(new Function<Bitmap, SingleSource<Uri>>() {
-          @Override public SingleSource<Uri> apply(@io.reactivex.annotations.NonNull Bitmap bitmap)
-              throws Exception {
+	        @Override
+	        public SingleSource<Uri> apply(@io.reactivex.annotations.NonNull Bitmap bitmap) {
             return mCropView.save(bitmap)
                 .compressFormat(mCompressFormat)
                 .executeAsSingle(createSaveUri());
           }
         })
         .doOnSubscribe(new Consumer<Disposable>() {
-          @Override public void accept(@io.reactivex.annotations.NonNull Disposable disposable)
-              throws Exception {
+	        @Override
+	        public void accept(@io.reactivex.annotations.NonNull Disposable disposable) {
             showProgress();
           }
         })
         .doFinally(new Action() {
-          @Override public void run() throws Exception {
+	        @Override
+	        public void run() {
             dismissProgress();
           }
         })
         .subscribeOn(Schedulers.newThread())
         .observeOn(AndroidSchedulers.mainThread())
         .subscribe(new Consumer<Uri>() {
-          @Override public void accept(@io.reactivex.annotations.NonNull Uri uri) throws Exception {
+	        @Override
+	        public void accept(@io.reactivex.annotations.NonNull Uri uri) {
             ((RxActivity) getActivity()).startResultActivity(uri);
           }
         }, new Consumer<Throwable>() {
-          @Override public void accept(@io.reactivex.annotations.NonNull Throwable throwable)
-              throws Exception {
+	        @Override
+	        public void accept(@io.reactivex.annotations.NonNull Throwable throwable) {
           }
         });
-  }
-
-  // Bind views //////////////////////////////////////////////////////////////////////////////////
-
-  private void bindViews(View view) {
-    mCropView = (CropImageView) view.findViewById(R.id.cropImageView);
-    view.findViewById(R.id.buttonDone).setOnClickListener(btnListener);
-    view.findViewById(R.id.buttonFitImage).setOnClickListener(btnListener);
-    view.findViewById(R.id.button1_1).setOnClickListener(btnListener);
-    view.findViewById(R.id.button3_4).setOnClickListener(btnListener);
-    view.findViewById(R.id.button4_3).setOnClickListener(btnListener);
-    view.findViewById(R.id.button9_16).setOnClickListener(btnListener);
-    view.findViewById(R.id.button16_9).setOnClickListener(btnListener);
-    view.findViewById(R.id.buttonFree).setOnClickListener(btnListener);
-    view.findViewById(R.id.buttonPickImage).setOnClickListener(btnListener);
-    view.findViewById(R.id.buttonRotateLeft).setOnClickListener(btnListener);
-    view.findViewById(R.id.buttonRotateRight).setOnClickListener(btnListener);
-    view.findViewById(R.id.buttonCustom).setOnClickListener(btnListener);
-    view.findViewById(R.id.buttonCircle).setOnClickListener(btnListener);
-    view.findViewById(R.id.buttonShowCircleButCropAsSquare).setOnClickListener(btnListener);
   }
 
   public void pickImage() {
@@ -237,22 +243,22 @@ public class RxFragment extends Fragment {
     return createNewUri(getContext(), mCompressFormat);
   }
 
-  public static String getDirPath() {
-    String dirPath = "";
-    File imageDir = null;
-    File extStorageDir = Environment.getExternalStorageDirectory();
-    if (extStorageDir.canWrite()) {
-      imageDir = new File(extStorageDir.getPath() + "/simplecropview");
-    }
-    if (imageDir != null) {
-      if (!imageDir.exists()) {
-        imageDir.mkdirs();
-      }
-      if (imageDir.canWrite()) {
-        dirPath = imageDir.getPath();
-      }
-    }
-    return dirPath;
+	private void bindViews(View view) {
+		mCropView = view.findViewById(R.id.cropImageView);
+		view.findViewById(R.id.buttonDone).setOnClickListener(btnListener);
+		view.findViewById(R.id.buttonFitImage).setOnClickListener(btnListener);
+		view.findViewById(R.id.button1_1).setOnClickListener(btnListener);
+		view.findViewById(R.id.button3_4).setOnClickListener(btnListener);
+		view.findViewById(R.id.button4_3).setOnClickListener(btnListener);
+		view.findViewById(R.id.button9_16).setOnClickListener(btnListener);
+		view.findViewById(R.id.button16_9).setOnClickListener(btnListener);
+		view.findViewById(R.id.buttonFree).setOnClickListener(btnListener);
+		view.findViewById(R.id.buttonPickImage).setOnClickListener(btnListener);
+		view.findViewById(R.id.buttonRotateLeft).setOnClickListener(btnListener);
+		view.findViewById(R.id.buttonRotateRight).setOnClickListener(btnListener);
+		view.findViewById(R.id.buttonCustom).setOnClickListener(btnListener);
+		view.findViewById(R.id.buttonCircle).setOnClickListener(btnListener);
+		view.findViewById(R.id.buttonShowCircleButCropAsSquare).setOnClickListener(btnListener);
   }
 
   public static Uri getUriFromDrawableResId(Context context, int drawableResId) {

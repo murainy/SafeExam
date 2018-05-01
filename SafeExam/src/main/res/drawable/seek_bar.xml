@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 进度条的背景色，设置为橘黄色 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="line">
+            <stroke
+                android:width="1dp"
+                android:color="#8B8378"/>
+            <solid android:color="#EE9A00"/>
+        </shape>
+    </item>
+    <!-- 第一进度，设置为紫色 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="line">
+                <stroke
+                    android:width="1dp"
+                    android:color="#9932CC"/>
+                <solid android:color="#6959CD"/>
+            </shape>
+        </clip>
+    </item>
+    <!--第二进度条-->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="line">
+                <stroke
+                    android:width="1dp"
+                    android:color="#1132CC"/>
+                <corners android:radius="1dp"></corners>
+            </shape>
+        </clip>
+    </item>
+</layer-list>  

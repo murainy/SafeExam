@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下鼠标时，显示实心圆的图片 -->
+    <item android:drawable="@drawable/seek_solid" android:state_pressed="true"/>
+    <!-- 松开鼠标后，显示空心圆图片 -->
+    <item android:drawable="@drawable/seek_hollow" android:state_pressed="false"/>
+</selector> 

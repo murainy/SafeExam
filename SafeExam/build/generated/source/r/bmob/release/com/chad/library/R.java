@@ -7,103 +7,39 @@
 package com.chad.library;
 
 public final class R {
-    public static final class attr {
-        public static final int cardBackgroundColor = 0x7f04006d;
-        public static final int cardCornerRadius = 0x7f04006e;
-        public static final int cardElevation = 0x7f04006f;
-        public static final int cardMaxElevation = 0x7f040070;
-        public static final int cardPreventCornerOverlap = 0x7f040071;
-        public static final int cardUseCompatPadding = 0x7f040072;
-        public static final int contentPadding = 0x7f040097;
-        public static final int contentPaddingBottom = 0x7f040098;
-        public static final int contentPaddingLeft = 0x7f040099;
-        public static final int contentPaddingRight = 0x7f04009a;
-        public static final int contentPaddingTop = 0x7f04009b;
-        public static final int layoutManager = 0x7f04010b;
-        public static final int reverseLayout = 0x7f040182;
-        public static final int spanCount = 0x7f0401a7;
-        public static final int stackFromEnd = 0x7f0401ad;
-    }
-    public static final class color {
-        public static final int cardview_dark_background = 0x7f06004d;
-        public static final int cardview_light_background = 0x7f06004e;
-        public static final int cardview_shadow_end_color = 0x7f06004f;
-        public static final int cardview_shadow_start_color = 0x7f060050;
-    }
     public static final class dimen {
-        public static final int activity_horizontal_margin = 0x7f07004e;
-        public static final int activity_vertical_margin = 0x7f07004f;
-        public static final int avatarSize = 0x7f070050;
-        public static final int cardview_compat_inset_shadow = 0x7f070061;
-        public static final int cardview_default_elevation = 0x7f070062;
-        public static final int cardview_default_radius = 0x7f070063;
         public static final int def_height = 0x7f07006a;
-        public static final int dp_066 = 0x7f070093;
-        public static final int dp_10 = 0x7f070094;
-        public static final int dp_14 = 0x7f070095;
-        public static final int dp_22 = 0x7f070096;
-        public static final int dp_36 = 0x7f070097;
-        public static final int dp_4 = 0x7f070098;
-        public static final int dp_40 = 0x7f070099;
-        public static final int dp_60 = 0x7f07009a;
-        public static final int dp_72 = 0x7f07009b;
-        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0700bd;
-        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f0700be;
-        public static final int item_touch_helper_swipe_escape_velocity = 0x7f0700bf;
-        public static final int smallSpace = 0x7f0700fa;
-        public static final int sp_12 = 0x7f0700fb;
-        public static final int sp_14 = 0x7f0700fc;
-        public static final int sp_16 = 0x7f0700fd;
+        public static final int dp_10 = 0x7f070093;
+        public static final int dp_4 = 0x7f070094;
+        public static final int dp_40 = 0x7f070095;
+        public static final int dp_72 = 0x7f070096;
+        public static final int sp_12 = 0x7f0700f5;
+        public static final int sp_14 = 0x7f0700f6;
+        public static final int sp_16 = 0x7f0700f7;
     }
     public static final class drawable {
-        public static final int sample_footer_loading = 0x7f08018d;
-        public static final int sample_footer_loading_progress = 0x7f08018e;
+        public static final int brvah_sample_footer_loading = 0x7f080095;
+        public static final int brvah_sample_footer_loading_progress = 0x7f080096;
     }
     public static final class id {
-        public static final int item_touch_helper_previous_elevation = 0x7f0900eb;
-        public static final int loading_progress = 0x7f090116;
-        public static final int loading_text = 0x7f090117;
-        public static final int loading_view = 0x7f090118;
+        public static final int BaseQuickAdapter_databinding_support = 0x7f090001;
+        public static final int BaseQuickAdapter_dragging_support = 0x7f090002;
+        public static final int BaseQuickAdapter_swiping_support = 0x7f090003;
+        public static final int BaseQuickAdapter_viewholder_support = 0x7f090004;
+        public static final int load_more_load_end_view = 0x7f090117;
+        public static final int load_more_load_fail_view = 0x7f090118;
+        public static final int load_more_loading_view = 0x7f090119;
+        public static final int loading_progress = 0x7f09011a;
+        public static final int loading_text = 0x7f09011b;
+        public static final int tv_prompt = 0x7f0901f2;
     }
     public static final class layout {
-        public static final int def_loading = 0x7f0b004e;
+        public static final int brvah_quick_view_load_more = 0x7f0b004b;
     }
     public static final class string {
-        public static final int app_name = 0x7f0e0035;
-        public static final int loading = 0x7f0e009d;
-    }
-    public static final class style {
-        public static final int Base_CardView = 0x7f0f001b;
-        public static final int CardView = 0x7f0f00b5;
-        public static final int CardView_Dark = 0x7f0f00b6;
-        public static final int CardView_Light = 0x7f0f00b7;
-    }
-    public static final class styleable {
-        public static final int[] CardView = { 0x0101013f, 0x01010140, 0x7f04006d, 0x7f04006e, 0x7f04006f, 0x7f040070, 0x7f040071, 0x7f040072, 0x7f040097, 0x7f040098, 0x7f040099, 0x7f04009a, 0x7f04009b };
-        public static final int CardView_android_minWidth = 0;
-        public static final int CardView_android_minHeight = 1;
-        public static final int CardView_cardBackgroundColor = 2;
-        public static final int CardView_cardCornerRadius = 3;
-        public static final int CardView_cardElevation = 4;
-        public static final int CardView_cardMaxElevation = 5;
-        public static final int CardView_cardPreventCornerOverlap = 6;
-        public static final int CardView_cardUseCompatPadding = 7;
-        public static final int CardView_contentPadding = 8;
-        public static final int CardView_contentPaddingBottom = 9;
-        public static final int CardView_contentPaddingLeft = 10;
-        public static final int CardView_contentPaddingRight = 11;
-        public static final int CardView_contentPaddingTop = 12;
-        public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f0400c6, 0x7f0400c7, 0x7f0400c8, 0x7f0400c9, 0x7f0400ca, 0x7f04010b, 0x7f040182, 0x7f0401a7, 0x7f0401ad };
-        public static final int RecyclerView_android_orientation = 0;
-        public static final int RecyclerView_android_descendantFocusability = 1;
-        public static final int RecyclerView_fastScrollEnabled = 2;
-        public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 3;
-        public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 4;
-        public static final int RecyclerView_fastScrollVerticalThumbDrawable = 5;
-        public static final int RecyclerView_fastScrollVerticalTrackDrawable = 6;
-        public static final int RecyclerView_layoutManager = 7;
-        public static final int RecyclerView_reverseLayout = 8;
-        public static final int RecyclerView_spanCount = 9;
-        public static final int RecyclerView_stackFromEnd = 10;
+        public static final int brvah_app_name = 0x7f0e0054;
+        public static final int brvah_load_end = 0x7f0e0055;
+        public static final int brvah_load_failed = 0x7f0e0056;
+        public static final int brvah_loading = 0x7f0e0057;
     }
 }

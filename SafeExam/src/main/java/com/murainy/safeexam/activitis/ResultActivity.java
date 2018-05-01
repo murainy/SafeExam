@@ -9,14 +9,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.view.Display;
-import android.view.ViewGroup;
 import android.widget.ImageView;
+
 import com.isseiaoki.simplecropview.util.Utils;
 import com.murainy.safeexam.R;
 
@@ -39,11 +38,11 @@ public class ResultActivity extends AppCompatActivity {
     setContentView(R.layout.activity_result);
 
     // apply custom font
-    FontUtils.setFont((ViewGroup) findViewById(R.id.layout_root));
+	  FontUtils.setFont(findViewById(R.id.layout_root));
 
     initToolbar();
 
-    mImageView = (ImageView) findViewById(R.id.result_image);
+	  mImageView = findViewById(R.id.result_image);
     mExecutor = Executors.newSingleThreadExecutor();
 
     final Uri uri = getIntent().getData();
@@ -65,7 +64,7 @@ public class ResultActivity extends AppCompatActivity {
   }
 
   private void initToolbar() {
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+	  Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     ActionBar actionBar = getSupportActionBar();
     FontUtils.setTitle(actionBar, "Cropped Image");
@@ -87,7 +86,7 @@ public class ResultActivity extends AppCompatActivity {
     ImageView imageView;
     int width;
 
-    public LoadScaledImageTask(Context context, Uri uri, ImageView imageView, int width) {
+	  LoadScaledImageTask(Context context, Uri uri, ImageView imageView, int width) {
       this.context = context;
       this.uri = uri;
       this.imageView = imageView;
@@ -106,9 +105,7 @@ public class ResultActivity extends AppCompatActivity {
             imageView.setImageBitmap(sampledBitmap);
           }
         });
-      } catch (OutOfMemoryError e) {
-        e.printStackTrace();
-      } catch (Exception e) {
+      } catch (OutOfMemoryError | Exception e) {
         e.printStackTrace();
       }
     }

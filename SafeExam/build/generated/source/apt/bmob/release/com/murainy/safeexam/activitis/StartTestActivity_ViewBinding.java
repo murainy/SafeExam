@@ -22,19 +22,19 @@ import java.lang.Override;
 public class StartTestActivity_ViewBinding implements Unbinder {
   private StartTestActivity target;
 
-  private View view2131296324;
+  private View view2131296325;
 
-  private View view2131296330;
+  private View view2131296331;
 
-  private View view2131296320;
+  private View view2131296321;
 
-  private View view2131296316;
+  private View view2131296317;
 
   private View view2131296642;
 
-  private View view2131296507;
+  private View view2131296506;
 
-  private View view2131296508;
+  private View view2131296507;
 
   private View view2131296652;
 
@@ -44,17 +44,17 @@ public class StartTestActivity_ViewBinding implements Unbinder {
 
   private View view2131296655;
 
-  private View view2131296548;
-
-  private View view2131296549;
-
-  private View view2131296550;
-
   private View view2131296551;
 
   private View view2131296552;
 
   private View view2131296553;
+
+  private View view2131296554;
+
+  private View view2131296555;
+
+  private View view2131296556;
 
   @UiThread
   public StartTestActivity_ViewBinding(StartTestActivity target) {
@@ -68,7 +68,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.btn_mask_test, "field 'btnMaskTest' and method 'onBtnMaskTestClicked'");
     target.btnMaskTest = Utils.castView(view, R.id.btn_mask_test, "field 'btnMaskTest'", Button.class);
-    view2131296324 = view;
+    view2131296325 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -77,7 +77,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.btn_skip_test, "field 'btnSkipTest' and method 'onBtnSkipTestClicked'");
     target.btnSkipTest = Utils.castView(view, R.id.btn_skip_test, "field 'btnSkipTest'", Button.class);
-    view2131296330 = view;
+    view2131296331 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -86,7 +86,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.btn_finish_test, "field 'btnFinishTest' and method 'onBtnFinishTestClicked'");
     target.btnFinishTest = Utils.castView(view, R.id.btn_finish_test, "field 'btnFinishTest'", Button.class);
-    view2131296320 = view;
+    view2131296321 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -95,7 +95,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.btn_back, "field 'btnBack' and method 'onBtnBackClicked'");
     target.btnBack = Utils.castView(view, R.id.btn_back, "field 'btnBack'", ImageButton.class);
-    view2131296316 = view;
+    view2131296317 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -113,7 +113,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.judgeA, "field 'judgeA' and method 'onJudgeAClicked'");
     target.judgeA = Utils.castView(view, R.id.judgeA, "field 'judgeA'", RadioButton.class);
-    view2131296507 = view;
+    view2131296506 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -122,7 +122,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.judgeB, "field 'judgeB' and method 'onJudgeBClicked'");
     target.judgeB = Utils.castView(view, R.id.judgeB, "field 'judgeB'", RadioButton.class);
-    view2131296508 = view;
+    view2131296507 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -167,7 +167,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.multiOptionA, "field 'multiOptionA' and method 'onMultiOptionAClicked'");
     target.multiOptionA = Utils.castView(view, R.id.multiOptionA, "field 'multiOptionA'", CheckBox.class);
-    view2131296548 = view;
+    view2131296551 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -176,7 +176,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.multiOptionB, "field 'multiOptionB' and method 'onMultiOptionBClicked'");
     target.multiOptionB = Utils.castView(view, R.id.multiOptionB, "field 'multiOptionB'", CheckBox.class);
-    view2131296549 = view;
+    view2131296552 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -185,7 +185,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.multiOptionC, "field 'multiOptionC' and method 'onMultiOptionCClicked'");
     target.multiOptionC = Utils.castView(view, R.id.multiOptionC, "field 'multiOptionC'", CheckBox.class);
-    view2131296550 = view;
+    view2131296553 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -194,7 +194,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.multiOptionD, "field 'multiOptionD' and method 'onMultiOptionDClicked'");
     target.multiOptionD = Utils.castView(view, R.id.multiOptionD, "field 'multiOptionD'", CheckBox.class);
-    view2131296551 = view;
+    view2131296554 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -203,7 +203,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.multiOptionE, "field 'multiOptionE' and method 'onMultiOptionEClicked'");
     target.multiOptionE = Utils.castView(view, R.id.multiOptionE, "field 'multiOptionE'", CheckBox.class);
-    view2131296552 = view;
+    view2131296555 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -212,7 +212,7 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.multiOptionF, "field 'multiOptionF' and method 'onMultiOptionFClicked'");
     target.multiOptionF = Utils.castView(view, R.id.multiOptionF, "field 'multiOptionF'", CheckBox.class);
-    view2131296553 = view;
+    view2131296556 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -254,20 +254,20 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     target.multiOptionGroup = null;
     target.tvKsxm = null;
 
-    view2131296324.setOnClickListener(null);
-    view2131296324 = null;
-    view2131296330.setOnClickListener(null);
-    view2131296330 = null;
-    view2131296320.setOnClickListener(null);
-    view2131296320 = null;
-    view2131296316.setOnClickListener(null);
-    view2131296316 = null;
+    view2131296325.setOnClickListener(null);
+    view2131296325 = null;
+    view2131296331.setOnClickListener(null);
+    view2131296331 = null;
+    view2131296321.setOnClickListener(null);
+    view2131296321 = null;
+    view2131296317.setOnClickListener(null);
+    view2131296317 = null;
     view2131296642.setOnClickListener(null);
     view2131296642 = null;
+    view2131296506.setOnClickListener(null);
+    view2131296506 = null;
     view2131296507.setOnClickListener(null);
     view2131296507 = null;
-    view2131296508.setOnClickListener(null);
-    view2131296508 = null;
     view2131296652.setOnClickListener(null);
     view2131296652 = null;
     view2131296653.setOnClickListener(null);
@@ -276,17 +276,17 @@ public class StartTestActivity_ViewBinding implements Unbinder {
     view2131296654 = null;
     view2131296655.setOnClickListener(null);
     view2131296655 = null;
-    view2131296548.setOnClickListener(null);
-    view2131296548 = null;
-    view2131296549.setOnClickListener(null);
-    view2131296549 = null;
-    view2131296550.setOnClickListener(null);
-    view2131296550 = null;
     view2131296551.setOnClickListener(null);
     view2131296551 = null;
     view2131296552.setOnClickListener(null);
     view2131296552 = null;
     view2131296553.setOnClickListener(null);
     view2131296553 = null;
+    view2131296554.setOnClickListener(null);
+    view2131296554 = null;
+    view2131296555.setOnClickListener(null);
+    view2131296555 = null;
+    view2131296556.setOnClickListener(null);
+    view2131296556 = null;
   }
 }

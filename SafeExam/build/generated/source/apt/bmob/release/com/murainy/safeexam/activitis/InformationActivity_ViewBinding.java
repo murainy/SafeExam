@@ -18,13 +18,13 @@ import java.lang.Override;
 public class InformationActivity_ViewBinding implements Unbinder {
   private InformationActivity target;
 
-  private View view2131296500;
+  private View view2131296499;
 
-  private View view2131296311;
+  private View view2131296313;
 
-  private View view2131296485;
+  private View view2131296484;
 
-  private View view2131296378;
+  private View view2131296376;
 
   @UiThread
   public InformationActivity_ViewBinding(InformationActivity target) {
@@ -38,7 +38,7 @@ public class InformationActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.iv_left, "field 'iv_left' and method 'back'");
     target.iv_left = Utils.castView(view, R.id.iv_left, "field 'iv_left'", ImageView.class);
-    view2131296500 = view;
+    view2131296499 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +48,7 @@ public class InformationActivity_ViewBinding implements Unbinder {
     target.tv_title = Utils.findRequiredViewAsType(source, R.id.tv_title, "field 'tv_title'", TextView.class);
     view = Utils.findRequiredView(source, R.id.bnt_exit, "field 'bnt_exit' and method 'exit'");
     target.bnt_exit = Utils.castView(view, R.id.bnt_exit, "field 'bnt_exit'", Button.class);
-    view2131296311 = view;
+    view2131296313 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,7 +57,7 @@ public class InformationActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.info_end, "field 'bnt_end' and method 'exitsys'");
     target.bnt_end = Utils.castView(view, R.id.info_end, "field 'bnt_end'", Button.class);
-    view2131296485 = view;
+    view2131296484 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -66,7 +66,7 @@ public class InformationActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.ci_view, "field 'ci' and method 'largepic'");
     target.ci = Utils.castView(view, R.id.ci_view, "field 'ci'", CircleImageView.class);
-    view2131296378 = view;
+    view2131296376 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,13 +88,13 @@ public class InformationActivity_ViewBinding implements Unbinder {
     target.bnt_end = null;
     target.ci = null;
 
-    view2131296500.setOnClickListener(null);
-    view2131296500 = null;
-    view2131296311.setOnClickListener(null);
-    view2131296311 = null;
-    view2131296485.setOnClickListener(null);
-    view2131296485 = null;
-    view2131296378.setOnClickListener(null);
-    view2131296378 = null;
+    view2131296499.setOnClickListener(null);
+    view2131296499 = null;
+    view2131296313.setOnClickListener(null);
+    view2131296313 = null;
+    view2131296484.setOnClickListener(null);
+    view2131296484 = null;
+    view2131296376.setOnClickListener(null);
+    view2131296376 = null;
   }
 }

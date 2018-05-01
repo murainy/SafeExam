@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.murainy.safeexam.R;
-import com.murainy.safeexam.SafeExam;
 import com.zhy.view.CircleMenuLayout;
 import com.zhy.view.CircleMenuLayout.OnMenuItemClickListener;
 
@@ -35,7 +34,7 @@ public class CircleActivity extends Activity {
 		setContentView(R.layout.activity_circle);
 
 
-		mCircleMenuLayout = (CircleMenuLayout) findViewById(R.id.id_menulayout);
+		mCircleMenuLayout = findViewById(R.id.id_menulayout);
 		mCircleMenuLayout.setMenuItemIconsAndTexts(mItemImgs, mItemTexts);
 		mCircleMenuLayout.setOnMenuItemClickListener(new OnMenuItemClickListener() {
 
@@ -54,12 +53,12 @@ public class CircleActivity extends Activity {
 						startActivity(intent1);
 						break;
 					case 3:
-						Intent intent2 = new Intent(CircleActivity.this, AdminActivity.class);
+						Intent intent2 = new Intent(CircleActivity.this, MuniActivity.class);
 						intent2.putExtra("examMode", "模拟考试");
 						startActivity(intent2);
 						break;
 					case 4:
-						Intent intent3 = new Intent(CircleActivity.this, ExamActivity.class);
+						Intent intent3 = new Intent(CircleActivity.this, CuotiActivity.class);
 						intent3.putExtra("examMode", "错题练习");
 						startActivity(intent3);
 						break;

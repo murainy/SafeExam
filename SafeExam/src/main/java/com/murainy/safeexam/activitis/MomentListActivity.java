@@ -83,8 +83,7 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
      */
     private void addNetImageTestData() {
         List<Moment> moments = new ArrayList<>();
-
-      moments.add(new Moment("2张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/1.jpg", "http://oiqawgwly.bkt.clouddn.com/2.jpg", "http://oiqawgwly.bkt.clouddn.com/0897.jpg"))));
+	    moments.add(new Moment("2张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/1.jpg", "http://oiqawgwly.bkt.clouddn.com/2.jpg", "http://oiqawgwly.bkt.clouddn.com/0897.jpg"))));
 		moments.add(new Moment("2张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/3.jpg", "http://oiqawgwly.bkt.clouddn.com/4.jpg"))));
 		moments.add(new Moment("9张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/hjzgg.jpg", "http://oiqawgwly.bkt.clouddn.com/13.jpg", "http://oiqawgwly.bkt.clouddn.com/Image06.webp", "http://oiqawgwly.bkt.clouddn.com/Image13.webp", "http://oiqawgwly.bkt.clouddn.com/15.jpg", "http://oiqawgwly.bkt.clouddn.com/热浪垦丁.jpg", "http://oiqawgwly.bkt.clouddn.com/日光岩.jpg", "http://oiqawgwly.bkt.clouddn.com/清水断崖.jpg", "http://oiqawgwly.bkt.clouddn.com/白沙滩.jpg"))));
 		moments.add(new Moment("5张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/郑州大学.jpg", "http://oiqawgwly.bkt.clouddn.com/14.jpg", "http://oiqawgwly.bkt.clouddn.com/加州.张雨石.jpg", "http://oiqawgwly.bkt.clouddn.com/Image14.webp", "http://oiqawgwly.bkt.clouddn.com/psbCADUM0AR.jpg"))));
@@ -94,8 +93,6 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
 		moments.add(new Moment("5张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/10.jpg", "http://oiqawgwly.bkt.clouddn.com/Image03.webp", "http://oiqawgwly.bkt.clouddn.com/金门大桥.jpg", "http://oiqawgwly.bkt.clouddn.com/573842281.jpg", "http://oiqawgwly.bkt.clouddn.com/H5Cmr.jpg"))));
 		moments.add(new Moment("6张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/11.jpg", "http://oiqawgwly.bkt.clouddn.com/Image04.webp", "http://oiqawgwly.bkt.clouddn.com/Image12.webp", "http://oiqawgwly.bkt.clouddn.com/clusteramaryllis彼岸花.jpg", "http://oiqawgwly.bkt.clouddn.com/褚人伟.jpg", "http://oiqawgwly.bkt.clouddn.com/151.jpg"))));
 		moments.add(new Moment("7张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/facebook_s.jpg", "http://oiqawgwly.bkt.clouddn.com/25.jpg", "http://oiqawgwly.bkt.clouddn.com/private_aircraft_s.jpg", "http://oiqawgwly.bkt.clouddn.com/timg.jpg", "http://oiqawgwly.bkt.clouddn.com/yngkU.jpg", "http://oiqawgwly.bkt.clouddn.com/砂岛.jpg", "http://oiqawgwly.bkt.clouddn.com/平溪.jpg", "http://oiqawgwly.bkt.clouddn.com/jysperm.jpg"))));
-
-
         mMomentAdapter.setData(moments);
     }
 
@@ -133,7 +130,7 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
 
         String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
         if (EasyPermissions.hasPermissions(this, perms)) {
-            File downloadDir = new File(Environment.getExternalStorageDirectory(), "BGADownload");
+	        File downloadDir = new File(Environment.getExternalStorageDirectory(), "SafeExam");
             BGAPhotoPreviewActivity.IntentBuilder photoPreviewIntentBuilder = new BGAPhotoPreviewActivity.IntentBuilder(this)
                     .saveImgDir(downloadDir); // 保存图片的目录，如果传 null，则没有保存图片功能
 

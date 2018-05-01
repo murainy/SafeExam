@@ -4,7 +4,7 @@
             "outputFile": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\incremental\\mergeBmobReleaseResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\ea67630a1dfc8e7bf0076f05b5edf65d\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\7a9089ff1abfdcf65ee6ec01c915e8ea\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\50631d16d5c38fa662e3117e1a0e1fb1\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\b920c680b624f8174cd51b02d81ea84b\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

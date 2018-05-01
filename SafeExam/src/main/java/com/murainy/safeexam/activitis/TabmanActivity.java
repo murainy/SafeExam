@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.murainy.safeexam.R;
+import com.murainy.safeexam.Utils.ToastUtils;
 
 /**
  * 应用主界面
@@ -46,9 +46,9 @@ public class TabmanActivity extends TabActivity {
     public View getTabItemView(int i) {
         // TODO Auto-generated method stub  
         View view = layoutInflater.inflate(R.layout.tab_widget_item, null);
-        ImageView imageView = (ImageView) view.findViewById(R.id.imageview);
+	    ImageView imageView = view.findViewById(R.id.imageview);
         imageView.setImageResource(mIcon[i]);
-        TextView textView = (TextView) view.findViewById(R.id.textview);
+	    TextView textView = view.findViewById(R.id.textview);
         textView.setText(mTitle[i]);
         return view;
     }
@@ -98,7 +98,7 @@ public class TabmanActivity extends TabActivity {
                 if (isExitByDoubleClick) {
                     long secondTime = System.currentTimeMillis();
                     if (secondTime - firstTime > 2000) {
-                        Toast.makeText(this, "再按一次退出", Toast.LENGTH_SHORT).show();
+	                    ToastUtils.showShort(this, "再按一次退出");
                         firstTime = secondTime;
                     } else {//完全退出
                         moveTaskToBack(false);//应用退到后台

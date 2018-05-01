@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<paths>
-    <external-path
-        name="external_files"
-        path="."/>
-    //代表的根目录: Environment.getExternalStorageDirectory()
-    <external-path
-        name="images"
-        path="Pictures/"/>
-    <files-path
-        name="camera_photos"
-        path="."/>// 代表的根目录： Context.getFilesDir()
-    <cache-path
-        name="my_images"
-        path="/Pictures/"/>
-    //代表的根目录: getCacheDir()
-</paths>
+<resources>
+    <paths>
+        <files-path
+            name="files"
+            path=""/>
+        <cache-path
+            name="cache"
+            path=""/>
+        <external-path
+            name="safeexam"
+            path=""/>
+        <external-files-path
+            name="externalfiles"
+            path=""/>
+        <external-cache-path
+            name="externalcache"
+            path=""/>
+    </paths>
+</resources>

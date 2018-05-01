@@ -4,20 +4,13 @@
             "outputFile": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\incremental\\mergeBmobReleaseResources\\merged.dir\\values-en\\values-en.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\BaseRecyclerViewAdapterHelper-v1.7.4.aar\\812ab4df74b6f6e25ea4528fda9fdf45\\res\\values-en\\values-en.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\BaseRecyclerViewAdapterHelper-2.9.38.aar\\1e1035a0ce19fc0519f0dbdf13833d94\\res\\values-en\\values-en.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "161",
-                        "endColumns": "46",
-                        "endOffsets": "203"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "46",
-                        "endOffsets": "97"
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,111,174",
+                        "endColumns": "55,62,52",
+                        "endOffsets": "106,169,222"
                     }
                 }
             ]

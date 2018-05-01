@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.murainy.safeexam">
 
     <!-- 允许联网 -->
@@ -65,10 +66,11 @@
 
         <receiver android:name="cn.bmob.push.PushReceiver" >
             <intent-filter>
-
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.USER_PRESENT" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action
+                    android:name="android.net.conn.CONNECTIVITY_CHANGE"
+                    tools:ignore="BatteryLife"/>
             </intent-filter>
         </receiver>
 
@@ -131,7 +133,7 @@
             android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
-            android:name=".activitis.AdminActivity"
+            android:name=".activitis.MuniActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
 
@@ -188,7 +190,7 @@
             android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
-            android:name=".activitis.ExamActivity"
+            android:name=".activitis.CuotiActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
@@ -231,7 +233,7 @@
             android:name="cn.bmob.v3.update.UpdateDialogActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
-        <activity android:name="cn.bmob.pay.v3.act.PayAct" />
+
 
         <activity
             android:name=".activitis.RxActivity"

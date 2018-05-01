@@ -40,13 +40,12 @@ public class LargeImageView extends View {
 		try {
 			mDecoder = BitmapRegionDecoder.newInstance(is, false);
 			BitmapFactory.Options tmpOptions = new BitmapFactory.Options();
-			// Grab the bounds for the scene dimensions
 			tmpOptions.inJustDecodeBounds = true;
 			BitmapFactory.decodeStream(is, null, tmpOptions);
 			mImageWidth = tmpOptions.outWidth;
 			mImageHeight = tmpOptions.outHeight;
-
 			requestLayout();
+			//刷新View
 			invalidate();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -55,6 +54,7 @@ public class LargeImageView extends View {
 			try {
 				if (is != null) is.close();
 			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 	}
@@ -89,7 +89,6 @@ public class LargeImageView extends View {
 
 		Rect rect = mRect;
 		int imageWidth = mImageWidth;
-		int imageHeight = mImageHeight;
 
 		if (rect.right > imageWidth) {
 			rect.right = imageWidth;
@@ -106,7 +105,6 @@ public class LargeImageView extends View {
 	private void checkHeight() {
 
 		Rect rect = mRect;
-		int imageWidth = mImageWidth;
 		int imageHeight = mImageHeight;
 
 		if (rect.bottom > imageHeight) {
@@ -127,15 +125,29 @@ public class LargeImageView extends View {
 	}
 
 	@Override
+	public boolean performClick() {
+		// 模拟点击事件
+		return super.performClick();
+	}
+
+	@Override
 	public boolean onTouchEvent(MotionEvent event) {
+		if (event.getAction() == MotionEvent.ACTION_DOWN) {
+			performClick();
+		}
 		mDetector.onToucEvent(event);
 		return true;
 	}
 
 	@Override
 	protected void onDraw(Canvas canvas) {
-		Bitmap bm = mDecoder.decodeRegion(mRect, options);
-		canvas.drawBitmap(bm, 0, 0, null);
+		try {
+			Bitmap bm = mDecoder.decodeRegion(mRect, options);
+			canvas.drawBitmap(bm, 0, 0, null);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	@Override

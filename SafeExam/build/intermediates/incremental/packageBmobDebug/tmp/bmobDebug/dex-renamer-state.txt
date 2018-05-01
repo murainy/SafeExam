@@ -1,4 +1,0 @@
-#Fri Apr 20 23:34:50 CST 2018
-base.0=E\:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\transforms\\dexMerger\\bmob\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

@@ -18,11 +18,11 @@ import java.lang.Override;
 public class ResetPasswordActivity_ViewBinding implements Unbinder {
   private ResetPasswordActivity target;
 
-  private View view2131296500;
+  private View view2131296499;
 
-  private View view2131296329;
+  private View view2131296330;
 
-  private View view2131296327;
+  private View view2131296328;
 
   @UiThread
   public ResetPasswordActivity_ViewBinding(ResetPasswordActivity target) {
@@ -36,7 +36,7 @@ public class ResetPasswordActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.iv_left, "field 'iv_left' and method 'back'");
     target.iv_left = Utils.castView(view, R.id.iv_left, "field 'iv_left'", ImageView.class);
-    view2131296500 = view;
+    view2131296499 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +48,7 @@ public class ResetPasswordActivity_ViewBinding implements Unbinder {
     target.et_code = Utils.findRequiredViewAsType(source, R.id.et_verify_code, "field 'et_code'", EditText.class);
     view = Utils.findRequiredView(source, R.id.btn_send, "field 'btn_send' and method 'sendCode'");
     target.btn_send = Utils.castView(view, R.id.btn_send, "field 'btn_send'", Button.class);
-    view2131296329 = view;
+    view2131296330 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -58,7 +58,7 @@ public class ResetPasswordActivity_ViewBinding implements Unbinder {
     target.et_pwd = Utils.findRequiredViewAsType(source, R.id.et_pwd, "field 'et_pwd'", EditText.class);
     view = Utils.findRequiredView(source, R.id.btn_reset, "field 'btn_reset' and method 'reset'");
     target.btn_reset = Utils.castView(view, R.id.btn_reset, "field 'btn_reset'", Button.class);
-    view2131296327 = view;
+    view2131296328 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,11 +82,11 @@ public class ResetPasswordActivity_ViewBinding implements Unbinder {
     target.et_pwd = null;
     target.btn_reset = null;
 
-    view2131296500.setOnClickListener(null);
-    view2131296500 = null;
-    view2131296329.setOnClickListener(null);
-    view2131296329 = null;
-    view2131296327.setOnClickListener(null);
-    view2131296327 = null;
+    view2131296499.setOnClickListener(null);
+    view2131296499 = null;
+    view2131296330.setOnClickListener(null);
+    view2131296330 = null;
+    view2131296328.setOnClickListener(null);
+    view2131296328 = null;
   }
 }

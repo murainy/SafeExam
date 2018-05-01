@@ -23,7 +23,7 @@
       custom:scv_handle_show_mode="show_always"
       custom:scv_handle_size="14dp"
       custom:scv_min_frame_size="50dp"
-      custom:scv_overlay_color="@color/overlay"
+      custom:scv_overlay_color="@color/transparent_background"
       custom:scv_touch_padding="8dp"
       />
 
@@ -32,7 +32,7 @@
       android:layout_height="1dp"
       android:layout_marginLeft="8dp"
       android:layout_marginRight="8dp"
-      android:background="@color/shadowColor"
+      android:background="@color/base_color_text_white"
       />
 
   <HorizontalScrollView
@@ -167,7 +167,7 @@
       android:layout_height="1dp"
       android:layout_marginLeft="@dimen/spacing_small"
       android:layout_marginRight="@dimen/spacing_small"
-      android:background="@color/blue"
+      android:background="@color/base_color_text_white"
       />
 
   <RelativeLayout

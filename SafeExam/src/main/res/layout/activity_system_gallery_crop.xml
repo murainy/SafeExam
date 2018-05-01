@@ -13,10 +13,17 @@
     <TextView
         android:id="@+id/tv_system_gallery_crop_choose"
         style="@style/MatchWrapTv"
-        android:text="从系统相册选择头像"/>
+        android:text="选择"/>
 
     <TextView
         android:id="@+id/tv_system_gallery_crop_take_photo"
         style="@style/MatchWrapTv"
         android:text="拍照"/>
+
+    <TextView
+        android:id="@+id/tv_system_gallery_crop_take_apply"
+        style="@style/MatchWrapTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="应用"/>
 </LinearLayout>

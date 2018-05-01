@@ -3,6 +3,8 @@ package com.murainy.safeexam.activitis;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +14,8 @@ import android.widget.TextView;
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.SafeExam;
 import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
+
+import java.io.File;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -54,7 +58,7 @@ public class InformationActivity extends Activity implements View.OnClickListene
         //ci.setImageBitmap(BitmapUtil.GetBitmap(path,100));
         iv_left.setVisibility(View.VISIBLE);
         tv_title.setText("个人信息");
-
+	    readImage(ci);
     }
 
     @Override
@@ -83,6 +87,19 @@ public class InformationActivity extends Activity implements View.OnClickListene
 
         }
     }
+
+	//如果本地有,就不需要再去联网去请求
+	public void readImage(ImageView iv) {
+		File file = new File(getFilesDir(), "head.jpg");
+		if (file.exists()) {
+			//存储--->内存
+			Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+			iv.setImageBitmap(bitmap);
+
+		}
+
+
+	}
     @OnClick(R.id.iv_left)
     public void back(View view) {
         finish();

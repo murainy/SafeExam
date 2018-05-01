@@ -5,78 +5,91 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:background="@color/theme_bg_color">
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="false"
         android:background="@color/air_speed_label"
-        android:orientation="vertical" android:layout_alignParentEnd="false" android:weightSum="3" android:gravity="center">
+        android:fitsSystemWindows="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/view"
+            android:id="@+id/ci_view"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:layout_margin="@dimen/dp_4"
+            android:adjustViewBounds="false"
+            android:alpha="0.9"
             android:src="@drawable/man"
             app:civ_border_color="@color/dark_grey"
             app:civ_border_overlay="@color/opaque_white"
             app:civ_border_width="1dp"
-            android:alpha="0.9"
-            android:adjustViewBounds="false"
             app:civ_fill_color="@color/transparent_light"/>
+
         <LinearLayout
             android:layout_width="264dp"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@drawable/shape_corner"
-            android:orientation="vertical" android:theme="@style/AppTheme">
+            android:layout_margin="@dimen/bga_pp_size_level2"
+            android:background="@drawable/shape_red_corners_button"
+            android:orientation="vertical"
+            android:theme="@style/AppTheme">
 
             <EditText
                 android:id="@+id/username"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/base_action_bar_height"
+                android:layout_margin="8dp"
                 android:background="@color/transparent"
-                android:drawableLeft="@drawable/login_account_box_white_36dp"
                 android:drawablePadding="25dip"
-                android:hint="账号/手机号"
+                android:drawableStart="@drawable/login_account_box_white_36dp"
+                android:hint="@string/login_account"
                 android:inputType="text"
-                android:paddingLeft="15dip"
+                android:padding="@dimen/cardview_default_elevation"
                 android:shadowDx="0.0"
                 android:shadowDy="1.0"
                 android:shadowRadius="2.0"
-                android:textColorHint="#ffdddddd"
-                android:layout_margin="8dp"/>
+                android:textColorHint="#ffdddddd"/>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
                 android:background="@drawable/base_horization_line"/>
+
             <EditText
                 android:id="@+id/password"
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/base_action_bar_height"
+                android:layout_margin="8dp"
                 android:background="@color/transparent"
                 android:drawableLeft="@drawable/login_lock_white_36dp"
                 android:drawablePadding="25dip"
                 android:hint="密码"
                 android:inputType="textPassword"
-                android:paddingLeft="15dip"
-                android:textColorHint="#ffdddddd"
-                android:layout_margin="8dp"
-                />
+                android:padding="@dimen/cardview_default_elevation"
+                android:textColorHint="#ffdddddd"/>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
                 android:background="@drawable/base_horization_line"/>
+
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/remenberme"
                 android:id="@+id/checkBox"
-                android:checked="true"
-                android:layout_gravity="center"
                 style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/base_action_bar_height"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/bga_adapter_vertical_margin"
+                android:checked="true"
+                android:padding="@dimen/bga_adapter_vertical_margin"
+                android:text="@string/remenberme"
                 android:textColor="@color/air_speed_label"
-                android:textColorLink="?attr/colorButtonNormal"/>
+                />
         </LinearLayout>
 
         <Button
@@ -92,31 +105,36 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp" android:gravity="center" android:orientation="horizontal" android:id="@+id/linearLayout" android:weightSum="1">
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/account_no"
-            android:textColor="@color/base_color_text_gray" android:textSize="20sp"/>
+            android:textColor="@color/base_color_text_gray"
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/register"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_weight="0.34"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="@string/register_bnt"
             android:textAlignment="center"
             android:textColor="@color/color_theme"
             android:textSize="20sp"/>
+
         <TextView
             android:id="@+id/tv_forpass"
             android:layout_width="wrap_content"
@@ -126,7 +144,7 @@
             android:text="@string/forgetpass"
             android:textColor="@color/base_color_text_gray"
             android:textSize="20sp"
-            android:theme="@style/Smile.ImageView"/>
+            />
     </LinearLayout>
 
 </RelativeLayout>

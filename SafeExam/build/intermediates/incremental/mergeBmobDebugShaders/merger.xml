@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\shaders"/></dataSet><dataSet config="bmob"><source path="E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\bmob\shaders"/></dataSet><dataSet config="debug"><source path="E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\debug\shaders"/></dataSet><dataSet config="bmobDebug"><source path="E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\bmobDebug\shaders"/></dataSet></merger>

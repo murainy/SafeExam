@@ -16,7 +16,7 @@ import java.lang.Override;
 public class LookGradeActivity_ViewBinding implements Unbinder {
   private LookGradeActivity target;
 
-  private View view2131296500;
+  private View view2131296499;
 
   @UiThread
   public LookGradeActivity_ViewBinding(LookGradeActivity target) {
@@ -30,7 +30,7 @@ public class LookGradeActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.iv_left, "field 'iv_left' and method 'back'");
     target.iv_left = Utils.castView(view, R.id.iv_left, "field 'iv_left'", ImageView.class);
-    view2131296500 = view;
+    view2131296499 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,7 +50,7 @@ public class LookGradeActivity_ViewBinding implements Unbinder {
     target.iv_left = null;
     target.tv_title = null;
 
-    view2131296500.setOnClickListener(null);
-    view2131296500 = null;
+    view2131296499.setOnClickListener(null);
+    view2131296499 = null;
   }
 }

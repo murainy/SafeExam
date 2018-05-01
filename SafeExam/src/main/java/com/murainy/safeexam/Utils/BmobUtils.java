@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.murainy.safeexam.beans.Grade;
+import com.murainy.safeexam.beans.Kemu;
 import com.murainy.safeexam.beans.Paper;
 import com.murainy.safeexam.beans.Question;
 import com.murainy.safeexam.beans.Testqeba;
@@ -13,7 +14,6 @@ import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -34,13 +34,13 @@ import cn.bmob.v3.listener.UpdateListener;
  */
 public class BmobUtils {
 	public static ArrayList<Question> questionsList = new ArrayList<Question>() ;
-	public static List<String> paperSet = new ArrayList<String>();
 	public static List<Grade> gradeList = new ArrayList<Grade>();
 	public static List<Paper> paperList = new ArrayList<Paper>();
 	private static List<Paper> LP = new ArrayList<>();
-	private static List<Testqeba> LT = new ArrayList<>();
 	public static List<Testqeba> TestList = new ArrayList<>();
-	private static boolean ready = false;
+	public static List<Kemu> kmList = new ArrayList<>();
+	private static List<Testqeba> LT = new ArrayList<>();
+	private static List<Kemu> LK = new ArrayList<>();
 	public  static String ALL="1024" ;
 
 	public static void downloadGradeList(Context context, String username) {
@@ -52,9 +52,7 @@ public class BmobUtils {
 			public void done(List<Grade> object, BmobException e) {
 				if (e == null) {
 					gradeList = new ArrayList<>();
-					for (Grade grade : object) {
-						gradeList.add(grade);
-					}
+					gradeList.addAll(object);
 					EventBus.getDefault().post(Action.DOWNLOAD_GRADE_LIST);
 				} else {
 					Log.i("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
@@ -64,6 +62,26 @@ public class BmobUtils {
 
 	}
 
+	public static void downloadKemuList(Context context) {
+
+		BmobQuery<Kemu> query = new BmobQuery<>();
+		query.setLimit(100);
+		query.findObjects(new FindListener<Kemu>() {
+			@Override
+			public void done(List<Kemu> object, BmobException e) {
+				if (e == null) {
+					Logger.i(object.size() + "///");
+					kmList = new ArrayList<>();
+					kmList.addAll(object);
+					Logger.i(kmList.size() + "///");
+					EventBus.getDefault().post(Action.DOWNLOAD_KEMU_LIST);
+				} else {
+					Logger.i("查询失败");
+					EventBus.getDefault().post(Action.QUERY_ERROR);
+				}
+			}
+		});
+	}
 
 	public static void downloadPaperList(Context context) {
 
@@ -75,9 +93,7 @@ public class BmobUtils {
 				if (e == null) {
 					Logger.i(object.size() + "///");
 					paperList = new ArrayList<>();
-					for (int i = 0; i < object.size(); i++) {
-						paperList.add(object.get(i));
-					}
+					paperList.addAll(object);
 					Logger.i(paperList.size() + "///");
 					EventBus.getDefault().post(Action.DOWNLOAD_PAPER_LIST);
 				} else {
@@ -98,9 +114,7 @@ public class BmobUtils {
 				if (e == null) {
 					Logger.i(object.size() + "///");
 					TestList = new ArrayList<>();
-					for (int i = 0; i < object.size(); i++) {
-						TestList.add(object.get(i));
-					}
+					TestList.addAll(object);
 					Logger.i(TestList.size() + "///");
 					EventBus.getDefault().post(Action.DOWNLOAD_Test_LIST);
 				} else {
@@ -110,55 +124,6 @@ public class BmobUtils {
 			}
 		});
 	}
-
-	public static void downloadTPaperList(Context context) {
-
-		BmobQuery<Paper> query = new BmobQuery<>();
-		query.findObjects(new FindListener<Paper>() {
-			@Override
-			public void done(List<Paper> object, BmobException e) {
-				if (e == null) {
-					paperList = new ArrayList<Paper>();
-					Logger.i(object.size() + "///");
-					for (int i = 0; i < object.size(); i++) {
-						paperList.add(object.get(i));
-					}
-					Logger.i(paperList.size() + "///");
-					EventBus.getDefault().post(Action.DOWNLOAD_PAPER_LIST);
-				} else {
-					Logger.i("查询失败");
-					EventBus.getDefault().post(Action.QUERY_ERROR);
-				}
-			}
-		});
-	}
-
-	public static void downloadQuestionList() {
-		if(questionsList.size()>0){questionsList.clear();}
-		BmobQuery<Question> query = new BmobQuery<Question>();
-		//query.addWhereContainedIn("questionid",paperSet);需付费
-		query.setLimit(100);
-		query.findObjects(new FindListener<Question>() {
-			@Override
-			public void done(List<Question> object, BmobException e) {
-				if (e == null) {
-					Logger.i(object.size() + "````");
-					for (int i = 0; i < object.size(); i++) {
-						questionsList.add(object.get(i));
-					}
-					Logger.i(questionsList.size() + "````");
-					ALL = Integer.toString(questionsList.size());
-					EventBus.getDefault().postSticky(Action.DOWNLOAD_QUESTION_EXAM);
-					ready = true;
-				} else {
-					Logger.i("查询失败");
-					EventBus.getDefault().postSticky(Action.QUERY_ERROR);
-				}
-			}
-
-		});
-	}
-
 
 
 	public static void downloadQuestionListIni() {
@@ -375,7 +340,7 @@ public class BmobUtils {
 							for (int i = 0; i < c; i++) {
 								questionsList.add(result.get(tihao[i]));
 							}
-							Logger.e("第一题目：" + paperSet);
+
 						}
 						ALL = Integer.toString(questionsList.size());
 					} else {
@@ -388,10 +353,11 @@ public class BmobUtils {
 		});
 
 	}
-	private static void examListini(String y, String t, final int c) {
-		String bql = "select questionid from Question where year = ? and type = ?";
+
+	private static void examListini(String p, String t, final int c) {
+		String bql = "select * from Question where subject = ? and type = ?";
 		BmobQuery<Question> query = new BmobQuery<Question>();
-		query.setPreparedParams(new Object[]{y, t});
+		query.setPreparedParams(new Object[]{p, t});
 		query.setSQL(bql);
 		query.setLimit(500);
 		query.doSQLQuery(new SQLQueryListener<Question>() {
@@ -405,15 +371,15 @@ public class BmobUtils {
 					if ( count > 0) {
 						if (count < c) {
 							for (int i = 0; i < count; i++) {
-								paperSet.add(list.get(i).getQuestionid());
+								questionsList.add(list.get(i));
 							}
 
 						} else {
 							int[] tihao = randRange(c, count);
 							for (int i = 0; i < c; i++) {
-								paperSet.add(list.get(tihao[i]).getQuestionid());
+								questionsList.add(list.get(tihao[i]));
 							}
-							Logger.e("第一题目：" + paperSet);
+
 						}
 
 					} else {
@@ -427,13 +393,24 @@ public class BmobUtils {
 
 	}
 
+	public static void sequLists(String p) {
+		if (questionsList.size() > 0) {
+			questionsList.clear();
+		}
+		examListini(p, "判断题", 40);
+		examListini(p, "单选题", 40);
+		examListini(p, "多选题", 20);
+		ALL = Integer.toString(questionsList.size());
+		EventBus.getDefault().postSticky(Action.DOWNLOAD_QUESTION_SEQU);
+	}
+
 	public static void testLists(String p) {
 		if(questionsList.size()>0){questionsList.clear();}
 		questionCount(p, "判断题", 40);
 		questionCount(p, "单选题", 40);
 		questionCount(p, "多选题", 20);
+		ALL = Integer.toString(questionsList.size());
 		EventBus.getDefault().postSticky(Action.DOWNLOAD_QUESTION_TEST);
-
 	}
 
 	public static void examLists(String p) {
@@ -441,9 +418,61 @@ public class BmobUtils {
 		examListFree(p, "判断题", 40);
 		examListFree(p, "单选题", 40);
 		examListFree(p, "多选题", 20);
+		ALL = Integer.toString(questionsList.size());
 		EventBus.getDefault().postSticky(Action.DOWNLOAD_QUESTION_EXAM);
+	}
 
 
+	public static void kemu() {
+		String bql = "select distinct subject  from Question ";
+		new BmobQuery<Question>().doSQLQuery(bql, new SQLQueryListener<Question>() {
+
+			@Override
+			public void done(BmobQueryResult<Question> result, BmobException e) {
+				if (e == null) {
+					List<Question> list = result.getResults();
+
+					if (list != null && list.size() > 0) {
+						for (int i = 0; i < list.size(); i++) {
+							Kemu t = new Kemu();
+							t.setId(i);
+							t.setSubject(list.get(i).getSubject());
+							t.setNote(list.get(i).getPaperName());
+							LK.add(i, t);
+						}
+						Logger.e(LK.toString());
+						List<BmobObject> bank = new ArrayList<>();
+						for (int i = 0; i < BmobUtils.LK.size(); i++) {
+							bank.add(i, BmobUtils.LK.get(i));
+						}
+						Logger.e(bank.toString());
+						new BmobBatch().insertBatch(bank).doBatch(new QueryListListener<BatchResult>() {
+
+							@Override
+							public void done(List<BatchResult> o, BmobException e) {
+								if (e == null) {
+									for (int i = 0; i < o.size(); i++) {
+										BatchResult result = o.get(i);
+										BmobException ex = result.getError();
+										if (ex == null) {
+											Logger.e("第" + i + "个数据批量更新成功：" + result.getUpdatedAt());
+										} else {
+											Logger.e("第" + i + "个数据批量更新失败：" + ex.getMessage() + "," + ex.getErrorCode());
+										}
+									}
+								} else {
+									Log.i("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
+								}
+							}
+						});
+					} else {
+						Log.i("smile", "查询成功，无数据返回");
+					}
+				} else {
+					Log.i("smile", "错误码：" + e.getErrorCode() + "，错误描述：" + e.getMessage());
+				}
+			}
+		});
 	}
 
 	public static void testBanks() {
@@ -460,7 +489,7 @@ public class BmobUtils {
 							Testqeba t = new Testqeba();
 							t.setId(i);
 							t.setName(list.get(i).getYear());
-							t.setNote("安全考试");
+							t.setNote(list.get(i).getPaperName());
 							LT.add(i, t);
 						}
 						Logger.e(LT.toString());

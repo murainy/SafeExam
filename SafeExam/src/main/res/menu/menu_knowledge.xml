@@ -5,23 +5,23 @@
       tools:context=".activitis.KnowledgeActivity">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/check_grade"
+            android:id="@+id/empty_table"
             android:orderInCategory="100"
             android:title="@string/lookgrade"
             app:showAsAction="never"/>
 
         <item
-            android:id="@+id/change_password"
+            android:id="@+id/update_paper"
             android:orderInCategory="100"
             android:title="@string/update_paper"
             app:showAsAction="never"/>
         <item
-            android:id="@+id/action_testings"
+            android:id="@+id/update_tiku"
             android:orderInCategory="100"
             android:title="@string/action_testings"
             app:showAsAction="never"/>
         <item
-            android:id="@+id/ab_search"
+            android:id="@+id/update_subject"
             android:orderInCategory="100"
             android:title="@string/error_research"
             app:actionViewClass="android.support.v7.widget.SearchView"

@@ -4,7 +4,7 @@
             "outputFile": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\incremental\\mergeBmobReleaseResources\\merged.dir\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\welcome-release.aar\\ffcd61e6f039cceec63224ecc7c1f184\\res\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\welcome-release.aar\\f6af7b0671206814f00dd94e90c20fb5\\res\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\circle-menu.aar\\484bb5839623bcbbb3239bc909b74aa4\\res\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\circle-menu.aar\\6402827494e68731546dfef63fbd22f4\\res\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

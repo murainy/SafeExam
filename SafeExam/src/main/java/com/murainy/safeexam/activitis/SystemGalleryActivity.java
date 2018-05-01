@@ -2,6 +2,9 @@ package com.murainy.safeexam.activitis;
 
 import android.Manifest;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.NonNull;
@@ -9,8 +12,10 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.murainy.safeexam.R;
+import com.murainy.safeexam.Utils.LogUtil;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.util.List;
 
 import cn.bingoogolapple.baseadapter.BGABaseAdapterUtil;
@@ -50,7 +55,7 @@ public class SystemGalleryActivity extends BGAPPToolbarActivity implements EasyP
         setTitle("系统相册选择图片、裁剪");
 
         // 拍照后照片的存放目录，改成你自己拍照后要存放照片的目录。如果不传递该参数的话就没有拍照功能
-	    File takePhotoDir = new File(Environment.getExternalStorageDirectory(), "BGAPhoto");
+	    File takePhotoDir = new File(Environment.getExternalStorageDirectory(), "SafeExam");
         mPhotoHelper = new BGAPhotoHelper(takePhotoDir);
     }
 
@@ -67,11 +72,18 @@ public class SystemGalleryActivity extends BGAPPToolbarActivity implements EasyP
     }
 
     public void onClick(View v) {
-        if (v.getId() == R.id.tv_system_gallery_crop_choose) {
-            choosePhoto();
-        } else if (v.getId() == R.id.tv_system_gallery_crop_take_photo) {
-            takePhoto();
+	    switch (v.getId()) {
+		    case R.id.tv_system_gallery_crop_choose:
+			    choosePhoto();
+			    break;
+		    case R.id.tv_system_gallery_crop_take_photo:
+			    takePhoto();
+			    break;
+		    case R.id.tv_system_gallery_crop_take_apply:
+			    viewSaveToImage(mAvatarIv);
+			    break;
         }
+
     }
 
     @AfterPermissionGranted(REQUEST_CODE_PERMISSION_CHOOSE_PHOTO)
@@ -143,4 +155,58 @@ public class SystemGalleryActivity extends BGAPPToolbarActivity implements EasyP
     @Override
     public void onPermissionsDenied(int requestCode, List<String> perms) {
     }
+
+	private void viewSaveToImage(View view) {
+		view.setDrawingCacheEnabled(true);
+		view.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
+		view.setDrawingCacheBackgroundColor(Color.WHITE);
+
+		// 把一个View转换成图片
+		Bitmap cachebmp = loadBitmapFromView(view);
+
+		FileOutputStream fos;
+		String imagePath = "";
+		try {
+			// 判断手机设备是否有SD卡
+			boolean isHasSDCard = Environment.getExternalStorageState().equals(
+					android.os.Environment.MEDIA_MOUNTED);
+			if (isHasSDCard) {
+				// SD卡根目录
+				//File sdRoot = Environment.getExternalStorageDirectory();
+				//File file = new File(sdRoot, Calendar.getInstance().getTimeInMillis()+".png");
+				File sdRoot = getFilesDir();
+				File file = new File(sdRoot, "head.jpg");
+				fos = new FileOutputStream(file);
+				imagePath = file.getAbsolutePath();
+			} else
+				throw new Exception("创建文件失败!");
+
+			cachebmp.compress(Bitmap.CompressFormat.PNG, 90, fos);
+
+			fos.flush();
+			fos.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		LogUtil.e("imagePath=" + imagePath);
+
+		view.destroyDrawingCache();
+	}
+
+	private Bitmap loadBitmapFromView(View v) {
+		int w = v.getWidth();
+		int h = v.getHeight();
+
+		Bitmap bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+		Canvas c = new Canvas(bmp);
+
+		c.drawColor(Color.WHITE);
+		/** 如果不设置canvas画布为白色，则生成透明 */
+
+		//v.layout(0, 0, w, h);
+		v.draw(c);
+
+		return bmp;
+	}
 }

@@ -1,66 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/base_bg"
+                android:background="@color/air_speed_label"
                 android:fitsSystemWindows="true">
 
     <LinearLayout
         android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:orientation="vertical">
 
-        <EditText
+        <TextView
             android:id="@+id/name"
-            style="@style/Widget.AppCompat.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:allowUndo="false"
-            android:background="@color/base_bg"
-            android:editable="false"
-            android:elevation="@dimen/activity_horizontal_margin"
+            android:background="@color/air_speed_label"
             android:fadingEdge="horizontal|vertical"
             android:focusable="auto"
             android:freezesText="false"
-            android:hint="商品名"
             android:labelFor="@+id/alipay"
             android:padding="8dp"
-            android:text="赞赏「牧之河」"
+            android:text="赞赏支持"
             android:textAlignment="center"
-            android:textColor="@color/base_tab_indicator_text_color"
+            android:textColor="@color/base_actionbar_bg"
             android:textSize="24sp"
-            tools:editable="false"/>
+            android:theme="@style/AppTheme"/>
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/ci_view6"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="8dp"
             android:padding="8dp"
-            android:src="@drawable/man"/>
+            android:src="@drawable/code"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="8dp">
+            android:padding="@dimen/bga_pp_size_level1">
 
             <Button
                 android:id="@+id/button7"
                 style="@style/WelcomeScreenButton.Done"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/bga_pp_size_level1"
                 android:layout_weight="0.3"
                 android:background="@drawable/bnt_price"
                 android:freezesText="false"
-                android:padding="8dp"
+                android:padding="@dimen/bga_pp_size_level1"
                 android:text="2元"
                 android:textColor="@color/bg_btn_press_color"
                 android:typeface="normal"/>
@@ -70,12 +62,12 @@
                 style="@style/WelcomeScreenButton.Done"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/bga_pp_size_level1"
                 android:layout_weight="0.3"
                 android:background="@drawable/bnt_price"
                 android:cursorVisible="true"
                 android:freezesText="false"
-                android:padding="8dp"
+                android:padding="@dimen/bga_pp_size_level1"
                 android:text="5元"
                 android:textColor="@color/bg_btn_press_color"
                 android:typeface="normal"/>
@@ -85,11 +77,11 @@
                 style="@style/WelcomeScreenButton.Done"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/bga_pp_size_level1"
                 android:layout_weight="0.3"
                 android:background="@drawable/bnt_price"
                 android:freezesText="false"
-                android:padding="8dp"
+                android:padding="@dimen/bga_pp_size_level1"
                 android:text="10元"
                 android:textColor="@color/bg_btn_press_color"
                 android:typeface="normal"/>
@@ -103,18 +95,18 @@
             android:gravity="center"
             android:onClick="click"
             android:orientation="horizontal"
-            android:padding="8dp">
+            android:padding="@dimen/bga_pp_size_level1">
 
             <Button
                 android:id="@+id/button4"
                 style="@style/WelcomeScreenButton.Done"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/bga_pp_size_level1"
                 android:layout_weight="0.3"
                 android:background="@drawable/bnt_price"
                 android:freezesText="false"
-                android:padding="8dp"
+                android:padding="@dimen/bga_pp_size_level1"
                 android:text="20元"
                 android:textColor="@color/bg_btn_press_color"
                 android:typeface="normal"/>
@@ -124,11 +116,11 @@
                 style="@style/WelcomeScreenButton.Done"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/bga_pp_size_level1"
                 android:layout_weight="0.3"
                 android:background="@drawable/bnt_price"
                 android:freezesText="false"
-                android:padding="8dp"
+                android:padding="@dimen/bga_pp_size_level1"
                 android:text="50元"
                 android:textColor="@color/bg_btn_press_color"
                 android:typeface="normal"/>
@@ -138,92 +130,28 @@
                 style="@style/WelcomeScreenButton.Done"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/bga_pp_size_level1"
                 android:layout_weight="0.3"
                 android:background="@drawable/bnt_price"
                 android:freezesText="false"
-                android:padding="8dp"
+                android:padding="@dimen/bga_pp_size_level1"
                 android:text="100元"
                 android:textColor="@color/bg_btn_press_color"
                 android:typeface="normal"/>
 
-            <EditText
-                android:id="@+id/price"
-                android:layout_width="115dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:hint="价格"
-                android:text="5"
-                android:visibility="gone"/>
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/body"
-            style="@style/Widget.AppCompat.EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/base_bg"
-            android:editable="false"
-            android:freezesText="true"
-            android:hint="描述"
-            android:padding="16dp"
-            android:text="有了您的支持，本软件会作的更好，带给您方便是我的最大愿望！"/>
-
-        <EditText
-            android:id="@+id/order"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="订单号"
-            android:visibility="gone"/>
-
-        <RadioGroup
-            android:id="@+id/type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:orientation="horizontal"
-            android:padding="16dp">
-
-            <RadioButton
-                android:id="@+id/alipay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:checked="true"
-                android:text="支付宝"/>
-
-            <RadioButton
-                android:id="@+id/wxpay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="微信"/>
-
-            <RadioButton
-                android:id="@+id/qq"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="QQ"/>
-
-            <RadioButton
-                android:id="@+id/query"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="查询"/>
-        </RadioGroup>
 
         <Button
             android:id="@+id/go"
-            android:layout_width="wrap_content"
+            android:layout_width="168dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/bga_pp_size_level4"
             android:background="@drawable/shape_button"
             android:gravity="center_vertical|center_horizontal|center"
-            android:padding="16dp"
-            android:text="支付宝支付"
+            android:padding="@dimen/bga_pp_size_level1"
+            android:text="支持"
             android:textColor="@color/base_tab_indicator_text_color"/>
     </LinearLayout>
 

@@ -3,16 +3,16 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="WelcomeScreenTheme">
         <!-- Customize your theme here. -->
-        <item name="android:colorForeground">@color/fbutton_color_green_sea</item>
-        <item name="android:textColorPrimary">@color/accent_material_dark</item>
+        <item name="android:colorForeground">@color/guide_color</item>
+        <item name="android:textColorPrimary">@color/white_grey</item>
         <!-- Customize your theme here. -->
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/white_grey</item>
         <item name="welcomeButtonSkipText">跳过</item>
         <item name="welcomeButtonDoneText">开始</item>
         <!-- toolbar（actionbar）颜色 -->
         <item name="colorPrimary">@color/blue</item>
         <!-- 状态栏颜色 -->
-        <item name="colorPrimaryDark">#3A5FCD</item>
+        <item name="colorPrimaryDark">@color/greyText</item>
         <!-- 窗口的背景颜色 -->
         <item name="android:windowBackground">@color/air_speed_label</item>
         <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
@@ -22,9 +22,13 @@
         <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
     </style>
 
-    <style name="MenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+    <style name="NoBackGroundDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MenuStyle" parent="WelcomeScreenTheme">
         <item name="overlapAnchor">false</item>
-        <item name="android:popupBackground">?attr/colorPrimary</item>
+        <item name="android:popupBackground">@color/bga_pp_navigationBarColor</item>
         <item name="android:dropDownVerticalOffset">0dip</item>
     </style>
 
@@ -74,6 +78,19 @@
         <item name="android:paddingBottom">8dp</item>
     </style>
 
+    <!-- 共用层样式 -->
+    <style name="base_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
     <!-- 上圆角样式 -->
     <style name="setting_top_layout" parent="base_layout">
         <item name="android:background">@drawable/setting_top_layout_selector</item>
@@ -143,9 +160,9 @@
         <item name="android:layout_alignParentBottom">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.AppBarOverlay" parent="WelcomeScreenTheme"/>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.PopupOverlay" parent="WelcomeScreenTheme"/>
 
 
 </resources>

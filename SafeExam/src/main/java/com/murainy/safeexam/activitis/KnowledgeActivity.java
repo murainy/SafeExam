@@ -42,18 +42,44 @@ public class KnowledgeActivity extends AppCompatActivity {
 	private AppBarLayout mAppBarLayout;
 	private  TextView mTvTitle;
 	private  TextView device_id;
+	private Toolbar.OnMenuItemClickListener onMenuItemClick = new Toolbar.OnMenuItemClickListener() {
+		@Override
+		public boolean onMenuItemClick(MenuItem menuItem) {
+			String msg = "";
+			switch (menuItem.getItemId()) {
+				case R.id.empty_table:
+					BmobUtils.deletPaper();
+					break;
+				case R.id.update_paper:
+					BmobUtils.papers();
+					break;
+				case R.id.update_tiku:
+					BmobUtils.testBanks();
+					break;
+				case R.id.update_subject:
+					BmobUtils.kemu();
+					break;
+			}
+
+			if (!msg.equals("")) {
+				Toast.makeText(KnowledgeActivity.this, msg, Toast.LENGTH_SHORT).show();
+			}
+			return true;
+		}
+	};
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_knowledge);
-		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-		mNestedScrollView = (NestedScrollView) findViewById(R.id.myscroll);
+		Toolbar toolbar = findViewById(R.id.toolbar);
+		mNestedScrollView = findViewById(R.id.myscroll);
 		//设置 NestedScrollView 的内容是否拉伸填充整个视图，
 		//这个设置是必须的，否者我们在里面设置的ViewPager会不可见
 		mNestedScrollView.setFillViewport(true);
-		device_id=(TextView) findViewById(R.id.device_id);
-		mTvTitle=(TextView) findViewById(R.id.tv_title);
-		mAppBarLayout=(AppBarLayout) findViewById(R.id.apl);
+		device_id = findViewById(R.id.device_id);
+		mTvTitle = findViewById(R.id.tv_title);
+		mAppBarLayout = findViewById(R.id.apl);
 		mAppBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
 			@Override
 			public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
@@ -68,7 +94,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 				}
 			}
 		});
-		FancyButton updateBtn = (FancyButton) findViewById(R.id.btn_like);
+		FancyButton updateBtn = findViewById(R.id.btn_like);
 		//隐藏状态栏
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		welcomeScreen = new WelcomeHelper(this, SplashActivity.class);
@@ -151,37 +177,11 @@ public class KnowledgeActivity extends AppCompatActivity {
 			}
 		});
 		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-		LinearLayout container = (LinearLayout) findViewById(R.id.container);
+		LinearLayout container = findViewById(R.id.container);
 		container.addView(LoginBtn, layoutParams);
 		container.addView(signupBtn, layoutParams);
 		device_id.setText(getDeviceId(this));
 	}
-
-	private Toolbar.OnMenuItemClickListener onMenuItemClick = new Toolbar.OnMenuItemClickListener() {
-		@Override
-		public boolean onMenuItemClick(MenuItem menuItem) {
-			String msg = "";
-			switch (menuItem.getItemId()) {
-				case R.id.check_grade:
-					BmobUtils.deletPaper();
-					break;
-				case R.id.change_password:
-					BmobUtils.papers();
-					break;
-				case R.id.action_testings:
-					BmobUtils.testBanks();
-					break;
-				case R.id.ab_search:
-
-					break;
-			}
-
-			if (!msg.equals("")) {
-				Toast.makeText(KnowledgeActivity.this, msg, Toast.LENGTH_SHORT).show();
-			}
-			return true;
-		}
-	};
 
 	public void intro(View view) {
 		BottomSheetBehavior behavior = BottomSheetBehavior.from(findViewById(R.id.myscroll));
@@ -270,7 +270,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 
 			public Holder(View itemView) {
 				super(itemView);
-				tv = (TextView) itemView.findViewById(R.id.textView6);
+				tv = itemView.findViewById(R.id.textView6);
 			}
 		}
 

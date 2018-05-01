@@ -13,6 +13,24 @@ public class Paper extends BmobObject {
     private boolean finishState = false;
     private String year="";
 
+	private String subject = "";
+	private Number count = 0;
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public Number getCount() {
+		return count;
+	}
+
+	public void setCount(Number count) {
+		this.count = count;
+	}
 
     public String getYear() {
         return year;
@@ -52,4 +70,17 @@ public class Paper extends BmobObject {
     public void setPaperName(String paperName) {
         this.paperName = paperName;
     }
+
+	@Override
+	public String toString() {
+		return "Paper{" +
+				"paperId='" + paperId + '\'' +
+				", paperName='" + paperName + '\'' +
+				", joinTime='" + joinTime + '\'' +
+				", finishState=" + finishState +
+				", year='" + year + '\'' +
+				", subject='" + subject + '\'' +
+				", count=" + count +
+				'}';
+	}
 }

@@ -19,7 +19,6 @@
         android:elevation="0dp"
         android:textAlignment="center"
         android:textColor="@drawable/midnightblue"
-        style="@style/SetupSpinnerItem"
         />
 
     <com.zhy.view.CircleMenuLayout

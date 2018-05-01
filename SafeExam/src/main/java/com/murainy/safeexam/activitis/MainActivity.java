@@ -35,11 +35,9 @@ import butterknife.OnClick;
 
 import static com.murainy.safeexam.Utils.BmobUtils.TestList;
 import static com.murainy.safeexam.Utils.BmobUtils.downloadGradeList;
-import static com.murainy.safeexam.Utils.BmobUtils.downloadQuestionList;
 import static com.murainy.safeexam.Utils.BmobUtils.downloadTestList;
 import static com.murainy.safeexam.Utils.BmobUtils.examLists;
 import static com.murainy.safeexam.Utils.BmobUtils.gradeList;
-import static com.murainy.safeexam.Utils.BmobUtils.paperSet;
 import static com.murainy.safeexam.Utils.BmobUtils.updateTestpaper;
 
 /**
@@ -113,18 +111,11 @@ public class MainActivity extends Activity {
 	@Subscribe
 	public void onReceiveActionEvent(Action action) {
 		switch (action) {
-			case DOWNLOAD_QUESTION_SET:
-				if (BmobUtils.paperSet.size() <50) {
-					finish();
-				} else {
-					Logger.i("获取试题列表成功");
-					ToastUtils.showShort(this, paperSet.toString());
-				}
-				break;
+
 			case DOWNLOAD_QUESTION_EXAM:
 				Logger.i("获取试题列表成功");
 				questions = BmobUtils.questionsList;
-				ToastUtils.showShort(this, "下载成功");
+				ToastUtils.ToastMessage(this, "安全考试", "获取试题列表成功");
 				break;
 			case DOWNLOAD_QUESTION_LISTINI:
 				Logger.i("获取试题列表成功");

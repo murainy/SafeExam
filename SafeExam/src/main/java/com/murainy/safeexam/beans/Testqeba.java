@@ -19,6 +19,7 @@ public class Testqeba extends BmobObject {
 		this.finishState = finishState;
 	}
 
+
 	public String getName() {
 		return name;
 	}
@@ -41,5 +42,15 @@ public class Testqeba extends BmobObject {
 
 	public void setId(Number id) {
 		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "Testqeba{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", finishState=" + finishState +
+				", note='" + note + '\'' +
+				'}';
 	}
 }

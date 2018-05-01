@@ -32,10 +32,14 @@
     <init>(java.lang.Throwable);
 }
 
--libraryjars libs/BmobPay_v3.x.x_xxxxxx.jar
--keepclasseswithmembers class c.b.** { *; }
--keep interface c.b.PListener{ *; }
--keep interface c.b.QListener{ *; }
+-keep class com.chad.library.adapter.** {
+*;
+}
+-keep public class * extends com.chad.library.adapter.base.BaseQuickAdapter
+-keep public class * extends com.chad.library.adapter.base.BaseViewHolder
+-keepclassmembers  class **$** extends com.chad.library.adapter.base.BaseViewHolder {
+     <init>(...);
+}
 
 
 -keep class butterknife.** { *; }

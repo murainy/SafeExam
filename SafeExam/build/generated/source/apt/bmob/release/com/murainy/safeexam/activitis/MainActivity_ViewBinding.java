@@ -17,9 +17,9 @@ import java.lang.Override;
 public class MainActivity_ViewBinding implements Unbinder {
   private MainActivity target;
 
-  private View view2131296725;
+  private View view2131296727;
 
-  private View view2131296735;
+  private View view2131296737;
 
   @UiThread
   public MainActivity_ViewBinding(MainActivity target) {
@@ -36,7 +36,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.tv_title = Utils.findRequiredViewAsType(source, R.id.tv_title, "field 'tv_title'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_exam_time, "field 'tvExamTime' and method 'onViewClicked'");
     target.tvExamTime = Utils.castView(view, R.id.tv_exam_time, "field 'tvExamTime'", TextView.class);
-    view2131296725 = view;
+    view2131296727 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     });
     target.lvPaper = Utils.findRequiredViewAsType(source, R.id.lv_paper, "field 'lvPaper'", ListView.class);
     view = Utils.findRequiredView(source, R.id.tv_left, "method 'onViewClicked'");
-    view2131296735 = view;
+    view2131296737 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,9 +67,9 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.tvExamTime = null;
     target.lvPaper = null;
 
-    view2131296725.setOnClickListener(null);
-    view2131296725 = null;
-    view2131296735.setOnClickListener(null);
-    view2131296735 = null;
+    view2131296727.setOnClickListener(null);
+    view2131296727 = null;
+    view2131296737.setOnClickListener(null);
+    view2131296737 = null;
   }
 }

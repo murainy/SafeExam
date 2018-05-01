@@ -23,12 +23,10 @@ import butterknife.ButterKnife;
 
 public class AboutActivity extends Activity {
 	protected AgentWeb mAgentWeb;
-
 	@BindView(R.id.tv_title)
 	TextView tv_title;
 	@BindView(R.id.web_layout)
 	LinearLayout mLayout;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
