@@ -7,6 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/imageView6" android:src="@drawable/bisque"
+        android:id="@+id/imageView6"
+        android:src="@color/bisque"
         tools:ignore="ContentDescription"/>
 </LinearLayout>

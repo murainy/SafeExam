@@ -15,7 +15,10 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
-
+-keep class com.just.agentweb.** {
+    *;
+}
+-dontwarn com.just.agentweb.**
 
 -dontwarn com.tencent.bugly.**
 -keep public class com.tencent.bugly.**{*;}

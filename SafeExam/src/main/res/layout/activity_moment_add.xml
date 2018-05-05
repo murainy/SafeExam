@@ -11,7 +11,8 @@
         style="@style/MatchMatch.Vertical"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:fitsSystemWindows="true">
+        android:fitsSystemWindows="true"
+        android:paddingTop="24dp">
 
         <LinearLayout
             style="@style/MatchWrap.Horizontal"
@@ -73,12 +74,12 @@
             <TextView
                 android:id="@+id/tv_moment_add_choice_photo"
                 style="@style/AutoWrapTv"
-                android:text="选择图片"/>
+                android:text="@string/choose_pic"/>
 
             <TextView
                 android:id="@+id/tv_moment_add_publish"
                 style="@style/AutoWrapTv"
-                android:text="发布"/>
+                android:text="@string/publish"/>
         </LinearLayout>
 
         <EditText
@@ -96,7 +97,7 @@
         <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
             android:id="@+id/snpl_moment_add_photos"
             style="@style/WrapWrap"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
             app:bga_snpl_deleteDrawableOverlapQuarter="false"
             app:bga_snpl_editable="true"

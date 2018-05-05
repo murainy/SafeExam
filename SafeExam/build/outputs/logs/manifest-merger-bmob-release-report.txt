@@ -1,65 +1,67 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-266:12
-INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-266:12
-INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-266:12
-INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-266:12
-MERGED from [com.android.databinding:adapters:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-3.1.2.aar\852041dba378cfa95bf45f6337266993\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.databinding:library:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-3.1.2.aar\df869e23513f5d4b0d26454c43a637fe\AndroidManifest.xml:17:1-24:12
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:2:1-50:12
-MERGED from [cn.bingoogolapple:bga-baseadapter:1.2.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-baseadapter-1.2.9.aar\791b5095e2e7e23d31a440265dc49d9a\AndroidManifest.xml:2:1-10:12
-MERGED from [com.android.support:design:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\0c1d6cd4fc89e156a3138c705f877873\AndroidManifest.xml:17:1-22:12
-MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\562cf739145419855d0c7e6b0eae499f\AndroidManifest.xml:2:1-17:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b920c680b624f8174cd51b02d81ea84b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.hotchemi:permissionsdispatcher:2.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\permissionsdispatcher-2.1.2.aar\9715833934869957e5a472de5b8656f5\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\26c40687b88f87ef62c5871779a42160\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\15d48e50a3b949a1cb42f1268dc7e850\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\814ab65caeb886baa1a222751cabd5ea\AndroidManifest.xml:2:1-13:12
-MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:2:1-19:12
-MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\1c0947973cda45f4ec7b999c461fa32a\AndroidManifest.xml:2:1-13:12
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\3d3ff824e5f3a848c76ddedb6fadbb3c\AndroidManifest.xml:2:1-13:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\53775ddf603915e1b4ba069605cea99a\AndroidManifest.xml:15:1-21:12
-MERGED from [:simplecropview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\simplecropview-release.aar\fc681f0b691466c2317ba0d6c6b1ca7e\AndroidManifest.xml:2:1-9:12
-MERGED from [:welcome-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\welcome-release.aar\f6af7b0671206814f00dd94e90c20fb5\AndroidManifest.xml:2:1-12:12
-MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\2fc6ce4584303c27a24a8df2c44f05a1\AndroidManifest.xml:2:1-11:12
-MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\43950b77d901c798ea4f6b98501bc627\AndroidManifest.xml:2:1-11:12
-MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6402827494e68731546dfef63fbd22f4\AndroidManifest.xml:2:1-17:12
-MERGED from [:shimmer-android-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\shimmer-android-release.aar\548cf2b61f94dca9a715a8024eccb9c4\AndroidManifest.xml:2:1-11:12
-MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\c6a7028fdb68f60b3ea83c5e84551cef\AndroidManifest.xml:2:1-13:12
-MERGED from [:MaterialProgressBar:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MaterialProgressBar.aar\e61fba9ecb10971c0f57ae0325a7ba4b\AndroidManifest.xml:6:1-16:12
-MERGED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:2:1-26:12
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\c5e49bc5259e494ef02e2f5ed7c86787\AndroidManifest.xml:2:1-7:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e680c3a2f722fd91b88cba70a83a4345\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fa48976bd30cdacdba5f5318eb384878\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\b27c9ec752913593cc213e3350a266b3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\94fb5cf2f31aeca7f3dfa7c396cf571e\AndroidManifest.xml:2:1-8:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c0895779456ff4172683bf5431274d16\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\be82a61a78acff77d6b2dd265f503394\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\6d5bb8006c8038025ad2bc6e0f470dc4\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:transition:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\1f27938f75fe630da607e1a93d409cb2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6b8ff33714f4e0b05fd6a89cd04f47bc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\0094e95ea511965ae651dcbf149257f8\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7a9089ff1abfdcf65ee6ec01c915e8ea\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0795cd6cbf6d0f233f1e44577421e251\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92fbb301f18a4b4ab1c5939028b54eb2\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6f951b80bab6fad0a701938f1652a531\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.38.aar\1e1035a0ce19fc0519f0dbdf13833d94\AndroidManifest.xml:2:1-11:12
-MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\7c7cdd27b01c77eec8f75f97fae84fb8\AndroidManifest.xml:2:1-16:12
-MERGED from [com.tencent.bugly:crashreport:2.6.6.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\crashreport-2.6.6.1.aar\ebb4a546d56c153f8b36d128af37da30\AndroidManifest.xml:2:1-9:12
-MERGED from [com.tencent.bugly:nativecrashreport:3.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.3.1.aar\79bed99984fff82b257148de9aee1b71\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\971ebee7c7f56e3f01536ae4d9d749d1\AndroidManifest.xml:2:1-11:12
-MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.5.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\leakcanary-android-no-op-1.5.4.aar\71b3915d55446af21a597529de698545\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\931c014553e70c70ded2b1177caa1220\AndroidManifest.xml:17:1-22:12
-INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-266:12
-INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-266:12
-INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-266:12
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-272:12
+INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-272:12
+INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-272:12
+INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-272:12
+MERGED from [com.android.databinding:adapters:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-3.1.2.aar\274e00af8af2a87e53ed71ee49890ac5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.databinding:library:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-3.1.2.aar\71aeb882e26c33bc8f903f530f274b9a\AndroidManifest.xml:17:1-24:12
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:2:1-50:12
+MERGED from [cn.bingoogolapple:bga-baseadapter:1.2.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-baseadapter-1.2.9.aar\dcbf30a22f4ed00d762a66cbb7d88714\AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c3d4b84dcd6f6b69808bc9805cdffeb8\AndroidManifest.xml:17:1-22:12
+MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\38b80f48cd2a4ab6b0ed00181b2c7159\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e4e8a71d694deb2d7c610ecd70035957\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.hotchemi:permissionsdispatcher:2.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\permissionsdispatcher-2.1.2.aar\964711b2f72699df498d9f2b2a96bd4a\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\00bc6128c8e46c0f3aa5183d4dd8ea37\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\8972ea56f35bc8d6b609dd973bccc55a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\7e7b2dedf98d02d6eb268274337c65e5\AndroidManifest.xml:2:1-13:12
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:2:1-19:12
+MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\e06e729fcf25a4dc42e02ee4f8991bdd\AndroidManifest.xml:2:1-13:12
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\ac9b84226d9095ac2f621770d4c117b7\AndroidManifest.xml:2:1-13:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\f061ae446ef09d396057e0b36beb0a0f\AndroidManifest.xml:15:1-21:12
+MERGED from [:simplecropview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\simplecropview-release.aar\24cd4f369fbe6790bff896cada96593e\AndroidManifest.xml:2:1-9:12
+MERGED from [:welcome-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\welcome-release.aar\a84087c86e053bd346f0148dd6830bba\AndroidManifest.xml:2:1-12:12
+MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\eeda723452f91e9310e58ba3694a42b2\AndroidManifest.xml:2:1-11:12
+MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\883e7a61c4e7c58d1eab98757b8f1572\AndroidManifest.xml:2:1-11:12
+MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6b39386be7c97da77c78dc817d6077d5\AndroidManifest.xml:2:1-17:12
+MERGED from [:shimmer-android-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\shimmer-android-release.aar\20792433dc89828fa568a16565bf521c\AndroidManifest.xml:2:1-11:12
+MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\f0962a2bb349d84006e7a5691436d564\AndroidManifest.xml:2:1-13:12
+MERGED from [:MaterialProgressBar:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MaterialProgressBar.aar\433e0fe8edb47cd877dcc3f0d58a82cc\AndroidManifest.xml:6:1-16:12
+MERGED from [com.just.agentweb:download:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\download-4.0.2.aar\65daf81831a01f57e3a63c5429f04614\AndroidManifest.xml:2:1-15:12
+MERGED from [com.just.agentweb:filechooser:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\filechooser-4.0.2.aar\eeb6a8f49d389410ca08b3acd2eb3cb5\AndroidManifest.xml:2:1-11:12
+MERGED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:2:1-32:12
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\986e699d9a38990992509266f38c1c19\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\9eb374ee43bc2bf6a047addb59800ec4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\a7abac11bbbcfa7d6e85d51ba70ffe50\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\75ebc153610761fc28d38dbd4be70025\AndroidManifest.xml:17:1-22:12
+MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\6dfd617e0e7925a573cb1243669ea1ae\AndroidManifest.xml:2:1-8:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\b759209f7b4aafd690b8200ac453f8d9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\cd3198999c4432f5dfc6210ea5094165\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\beb6b56cc26c8a7b4272ea5eea33732f\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\bb409b211b6b4118e8bfc97e187d4afa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\df8b2e69901dc3353e0f014f8dd71ffd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\62b3ffa01765d28be2976badfafb752f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\982745f85ff480e77501e1e29e127296\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3fc8f270700fb69fe8a9d1e3e734223\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6b1431f41a649dd061e8113086329eee\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c101456da06d7fb589c09e047b6ac938\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.38.aar\e8acd23ec10f5ea3547e9013368eebdb\AndroidManifest.xml:2:1-11:12
+MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\acd723dacf35f8699db12a9953626773\AndroidManifest.xml:2:1-16:12
+MERGED from [com.tencent.bugly:crashreport:2.6.6.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\crashreport-2.6.6.1.aar\bb13398f36aa8de2449214d44e841438\AndroidManifest.xml:2:1-9:12
+MERGED from [com.tencent.bugly:nativecrashreport:3.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.3.1.aar\41ae113155c0200f28ed5bf43c893cc3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\733e2e30d2d025b6185f51ac36f026c6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.5.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\leakcanary-android-no-op-1.5.4.aar\4bf44fd3369cf569e52feb051d0088f4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\68475b1fa87fc8faeac368058462f661\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-272:12
+INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-272:12
+INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-272:12
 	package
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:4:11-41
 		INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 		INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-266:12
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:2:1-272:12
 		INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:3:11-57
@@ -87,20 +89,20 @@ ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifes
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:11:22-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:12:5-79
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:9:5-80
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:9:5-80
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:9:5-80
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:9:5-80
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:12:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:13:5-80
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:10:5-81
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:10:5-81
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:10:5-81
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:10:5-81
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.CAMERA
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:16:5-64
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:11:5-65
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:11:5-65
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:11:5-65
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:11:5-65
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:16:22-62
 uses-permission#android.permission.READ_PHONE_STATE
@@ -112,253 +114,259 @@ ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifes
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:20:22-81
 uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:22:5-81
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:21:5-81
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:22:22-79
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:21:22-79
 uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:23:5-87
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:22:5-87
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:23:22-85
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:22:22-85
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:24:5-77
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:23:5-77
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:24:22-75
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:23:22-75
 uses-permission#android.permission.DISABLE_KEYGUARD
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:25:5-74
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:24:5-74
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:25:22-72
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:24:22-72
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:26:5-80
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:25:5-80
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:26:22-78
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:25:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:27:5-78
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:27:22-76
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:26:22-76
 uses-permission#android.permission.RECEIVE_USER_PRESENT
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:29:5-79
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:28:5-78
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:29:22-76
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:28:22-76
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:30:5-81
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:29:5-80
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:30:22-78
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:29:22-78
 application
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:32:5-264:19
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:13:5-48:19
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:13:5-48:19
-MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\562cf739145419855d0c7e6b0eae499f\AndroidManifest.xml:11:5-15:19
-MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\562cf739145419855d0c7e6b0eae499f\AndroidManifest.xml:11:5-15:19
-MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\814ab65caeb886baa1a222751cabd5ea\AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\814ab65caeb886baa1a222751cabd5ea\AndroidManifest.xml:11:5-20
-MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:11:5-17:19
-MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:11:5-17:19
-MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\1c0947973cda45f4ec7b999c461fa32a\AndroidManifest.xml:11:5-20
-MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\1c0947973cda45f4ec7b999c461fa32a\AndroidManifest.xml:11:5-20
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\3d3ff824e5f3a848c76ddedb6fadbb3c\AndroidManifest.xml:11:5-20
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\3d3ff824e5f3a848c76ddedb6fadbb3c\AndroidManifest.xml:11:5-20
-MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\2fc6ce4584303c27a24a8df2c44f05a1\AndroidManifest.xml:9:5-20
-MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\2fc6ce4584303c27a24a8df2c44f05a1\AndroidManifest.xml:9:5-20
-MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\43950b77d901c798ea4f6b98501bc627\AndroidManifest.xml:9:5-20
-MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\43950b77d901c798ea4f6b98501bc627\AndroidManifest.xml:9:5-20
-MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6402827494e68731546dfef63fbd22f4\AndroidManifest.xml:11:5-15:19
-MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6402827494e68731546dfef63fbd22f4\AndroidManifest.xml:11:5-15:19
-MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\c6a7028fdb68f60b3ea83c5e84551cef\AndroidManifest.xml:11:5-20
-MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\c6a7028fdb68f60b3ea83c5e84551cef\AndroidManifest.xml:11:5-20
-MERGED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:11:5-24:19
-MERGED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:11:5-24:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\6d5bb8006c8038025ad2bc6e0f470dc4\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\6d5bb8006c8038025ad2bc6e0f470dc4\AndroidManifest.xml:9:5-20
-MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\7c7cdd27b01c77eec8f75f97fae84fb8\AndroidManifest.xml:11:5-14:19
-MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\7c7cdd27b01c77eec8f75f97fae84fb8\AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\971ebee7c7f56e3f01536ae4d9d749d1\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\971ebee7c7f56e3f01536ae4d9d749d1\AndroidManifest.xml:9:5-20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:31:5-270:19
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:13:5-48:19
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:13:5-48:19
+MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\38b80f48cd2a4ab6b0ed00181b2c7159\AndroidManifest.xml:11:5-15:19
+MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\38b80f48cd2a4ab6b0ed00181b2c7159\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\7e7b2dedf98d02d6eb268274337c65e5\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\7e7b2dedf98d02d6eb268274337c65e5\AndroidManifest.xml:11:5-20
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:11:5-17:19
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:11:5-17:19
+MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\e06e729fcf25a4dc42e02ee4f8991bdd\AndroidManifest.xml:11:5-20
+MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\e06e729fcf25a4dc42e02ee4f8991bdd\AndroidManifest.xml:11:5-20
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\ac9b84226d9095ac2f621770d4c117b7\AndroidManifest.xml:11:5-20
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\ac9b84226d9095ac2f621770d4c117b7\AndroidManifest.xml:11:5-20
+MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\eeda723452f91e9310e58ba3694a42b2\AndroidManifest.xml:9:5-20
+MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\eeda723452f91e9310e58ba3694a42b2\AndroidManifest.xml:9:5-20
+MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\883e7a61c4e7c58d1eab98757b8f1572\AndroidManifest.xml:9:5-20
+MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\883e7a61c4e7c58d1eab98757b8f1572\AndroidManifest.xml:9:5-20
+MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6b39386be7c97da77c78dc817d6077d5\AndroidManifest.xml:11:5-15:19
+MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6b39386be7c97da77c78dc817d6077d5\AndroidManifest.xml:11:5-15:19
+MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\f0962a2bb349d84006e7a5691436d564\AndroidManifest.xml:11:5-20
+MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\f0962a2bb349d84006e7a5691436d564\AndroidManifest.xml:11:5-20
+MERGED from [com.just.agentweb:download:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\download-4.0.2.aar\65daf81831a01f57e3a63c5429f04614\AndroidManifest.xml:11:5-13:19
+MERGED from [com.just.agentweb:download:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\download-4.0.2.aar\65daf81831a01f57e3a63c5429f04614\AndroidManifest.xml:11:5-13:19
+MERGED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:11:5-30:19
+MERGED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:11:5-30:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\beb6b56cc26c8a7b4272ea5eea33732f\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\beb6b56cc26c8a7b4272ea5eea33732f\AndroidManifest.xml:9:5-20
+MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\acd723dacf35f8699db12a9953626773\AndroidManifest.xml:11:5-14:19
+MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\acd723dacf35f8699db12a9953626773\AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\733e2e30d2d025b6185f51ac36f026c6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\733e2e30d2d025b6185f51ac36f026c6\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\562cf739145419855d0c7e6b0eae499f\AndroidManifest.xml:14:9-35
+		ADDED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\38b80f48cd2a4ab6b0ed00181b2c7159\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:37:9-41
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:35:9-41
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:36:9-40
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:37:9-40
 	android:versionCode
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:39:9-32
 	android:largeHeap
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:38:9-33
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:36:9-33
 	android:icon
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:35:9-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:34:9-43
 	android:allowBackup
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:34:9-35
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:33:9-35
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:40:9-40
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:38:9-40
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:33:9-33
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:32:9-33
 activity#com.murainy.safeexam.activitis.LauncherActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:41:9-50:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:40:9-53:20
+	android:layout_alignParentStart
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:45:13-51
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:44:13-44
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:42:13-44
 	android:uiOptions
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:45:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:46:13-57
+	android:layout_alignParentBottom
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:44:13-52
 	android:theme
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:43:13-76
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:42:13-55
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:41:13-55
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:46:13-49:29
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:48:13-52:29
 action#android.intent.action.MAIN
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:47:17-68
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:49:17-68
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:47:25-66
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:49:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:48:17-76
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:51:17-76
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:48:27-74
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:51:27-74
 service#cn.bmob.push.lib.service.PushService
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:51:8-59:19
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:55:9-63:19
 	android:process
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:54:13-40
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:59:13-40
 	android:label
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:52:13-40
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:58:13-40
 	android:exported
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:55:13-37
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:57:13-37
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:53:13-64
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:56:13-64
 intent-filter#action:name:cn.bmob.push.lib.service.PushService
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:56:13-58:29
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:60:13-62:29
 action#cn.bmob.push.lib.service.PushService
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:57:17-78
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:61:17-78
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:57:25-76
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:61:25-76
 service#cn.bmob.push.lib.service.PushNotifyService
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:62:9-65:19
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:64:9-67:19
 	android:process
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:64:13-40
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:66:13-40
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:63:13-70
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:65:13-70
 receiver#cn.bmob.push.PushReceiver
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:67:9-74:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:69:9-77:20
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:67:19-59
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:69:19-59
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.USER_PRESENT+action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:68:13-73:29
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:70:13-76:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:69:17-79
-	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:69:25-76
-action#android.intent.action.USER_PRESENT
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:70:17-77
-	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:70:25-74
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:71:17-72:53
-	tools:ignore
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:72:25-51
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:71:17-78
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:71:25-76
+action#android.intent.action.USER_PRESENT
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:72:17-76
+	android:name
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:72:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:73:17-75:49
+	tools:ignore
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:75:21-47
+	android:name
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:74:21-72
 receiver#com.murainy.safeexam.activitis.MyPushMessageReceiver
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:76:9-81:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:78:9-84:20
 	android:exported
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:77:19-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:80:13-37
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:76:19-66
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:79:13-60
 intent-filter#action:name:cn.bmob.push.action.MESSAGE
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:78:13-80:29
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:81:13-83:29
 action#cn.bmob.push.action.MESSAGE
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:79:17-69
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:82:17-69
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:79:25-67
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:82:25-67
 provider#android.support.v4.content.FileProvider
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:83:9-92:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:86:9-95:20
 	android:grantUriPermissions
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:87:13-47
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:90:13-47
 	android:authorities
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:85:13-68
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:88:13-68
 	android:exported
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:86:13-37
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:89:13-37
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:84:13-67
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:87:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:88:13-91:25
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:91:13-94:25
 	android:resource
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:90:17-50
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:93:17-50
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:89:17-67
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:92:17-67
 activity#com.murainy.safeexam.activitis.SplashActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:95:9-98:78
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:97:9-100:78
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:97:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:99:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:98:13-76
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:100:13-76
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:96:13-53
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:98:13-53
 activity#com.murainy.safeexam.activitis.LoginActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:99:9-103:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:101:9-105:20
 	android:windowSoftInputMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:102:13-82
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:104:13-82
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:101:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:103:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:100:13-52
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:102:13-52
 activity#com.murainy.safeexam.activitis.RegisterActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:104:9-108:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:106:9-110:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:106:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:108:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:107:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:109:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:105:13-55
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:107:13-55
 activity#com.murainy.safeexam.activitis.MainActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:109:9-112:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:111:9-114:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:111:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:113:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:110:13-51
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:112:13-51
 activity#com.murainy.safeexam.activitis.InformationActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:113:9-117:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:115:9-119:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:115:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:117:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:116:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:118:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:114:13-58
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:116:13-58
 activity#com.murainy.safeexam.activitis.ChangerPasswordActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:118:9-122:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:120:9-124:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:120:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:122:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:121:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:123:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:119:13-62
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:121:13-62
 activity#com.murainy.safeexam.activitis.LookGradeActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:123:9-127:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:125:9-129:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:125:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:127:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:126:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:128:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:124:13-56
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:126:13-56
 activity#com.murainy.safeexam.activitis.StartTestActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:128:9-133:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:130:9-135:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:130:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:133:13-43
 	android:allowBackup
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:131:13-40
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:132:13-40
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:132:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:134:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:129:13-56
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:131:13-56
 activity#com.murainy.safeexam.activitis.MuniActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:134:9-137:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:136:9-139:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:136:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:138:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:135:13-51
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:137:13-51
 activity#com.murainy.safeexam.activitis.AddPaperActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:139:9-143:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:140:9-144:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:141:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:142:13-43
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:142:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:143:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:140:13-55
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:141:13-55
 activity#com.murainy.safeexam.activitis.TabmanActivity
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:145:9-149:20
 	android:launchMode
@@ -368,11 +376,11 @@ ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifes
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:146:13-53
 activity#com.murainy.safeexam.activitis.SetHeadActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:151:9-160:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:150:9-160:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:153:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:152:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:152:13-54
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:151:13-54
 intent-filter#action:name:android.media.action.IMAGE_CAPTURE+category:name:android.intent.category.DEFAULT
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:155:13-159:29
 action#android.media.action.IMAGE_CAPTURE
@@ -408,237 +416,255 @@ ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifes
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:170:13-60
 activity#com.murainy.safeexam.activitis.GridActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:175:9-177:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:173:9-174:20
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:175:19-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:173:19-57
 activity#com.murainy.safeexam.activitis.ContentExamActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:178:9-181:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:175:9-178:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:180:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:177:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:179:13-58
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:176:13-58
 activity#com.murainy.safeexam.activitis.AboutActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:182:9-186:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:179:9-182:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:184:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:181:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:183:13-52
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:180:13-52
 activity#com.murainy.safeexam.activitis.SequenceActivity
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:183:9-186:20
+	android:theme
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:185:13-57
+	android:name
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:184:13-55
+activity#com.murainy.safeexam.activitis.CuotiActivity
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:187:9-190:20
 	android:theme
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:189:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:188:13-55
-activity#com.murainy.safeexam.activitis.CuotiActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:191:9-194:20
-	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:193:13-57
-	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:192:13-52
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:188:13-52
 activity#com.murainy.safeexam.activitis.KnowledgeActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:195:9-199:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:191:9-195:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:197:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:193:13-43
+	android:theme
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:194:13-57
+	android:name
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:192:13-56
+activity#com.murainy.safeexam.activitis.RubblerActivity
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:196:9-199:20
 	android:theme
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:198:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:196:13-56
-activity#com.murainy.safeexam.activitis.RubblerActivity
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:197:13-54
+activity#com.murainy.safeexam.activitis.LargeImageViewActivity
 ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:200:9-203:20
 	android:theme
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:202:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:201:13-54
-activity#com.murainy.safeexam.activitis.LargeImageViewActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:204:9-207:20
-	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:206:13-57
-	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:205:13-61
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:201:13-61
 activity#com.murainy.safeexam.activitis.MomentAddActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:208:9-212:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:204:9-208:20
 	android:screenOrientation
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:210:13-49
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:206:13-49
 	android:windowSoftInputMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:211:13-67
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:207:13-67
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:209:13-56
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:205:13-56
 activity#com.murainy.safeexam.activitis.PayActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:213:9-216:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:209:9-212:20
 	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:215:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:211:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:214:13-50
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:210:13-50
 activity#com.murainy.safeexam.activitis.MomentListActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:217:9-221:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:213:9-217:20
 	android:screenOrientation
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:219:13-49
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:215:13-49
 	android:windowSoftInputMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:220:13-67
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:216:13-67
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:218:13-57
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:214:13-57
 activity#com.murainy.safeexam.activitis.SystemGalleryActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:222:9-225:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:218:9-221:20
 	android:screenOrientation
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:224:13-49
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:220:13-49
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:223:13-60
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:219:13-60
 activity#com.murainy.safeexam.activitis.SettingsActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:226:9-230:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:222:9-226:20
 	android:launchMode
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:228:13-43
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:224:13-43
+	android:theme
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:225:13-57
+	android:name
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:223:13-55
+activity#cn.bmob.v3.update.UpdateDialogActivity
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:227:9-230:20
 	android:theme
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:229:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:227:13-55
-activity#cn.bmob.v3.update.UpdateDialogActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:231:9-234:20
-	android:theme
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:233:13-57
-	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:232:13-66
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:228:13-66
 activity#com.murainy.safeexam.activitis.RxActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:237:9-241:20
-	android:label
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:240:13-45
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:231:9-235:20
 	android:configChanges
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:239:13-59
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:233:13-59
+	android:theme
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:234:13-57
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:238:13-49
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:232:13-49
 activity#com.murainy.safeexam.activitis.ResultActivity
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:242:9-243:20
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:237:9-239:20
+	android:theme
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:238:19-63
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:242:19-59
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:237:19-59
+activity#com.murainy.safeexam.activitis.JsoupActivity
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:241:9-243:20
+	android:theme
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:242:19-63
+	android:name
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:241:19-58
+activity#com.murainy.safeexam.activitis.NewsDisplayActivity
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:245:9-247:20
+	android:theme
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:246:19-63
+	android:name
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:245:19-64
 meta-data#BUGLY_APPID
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:246:9-248:41
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:250:9-252:41
 	android:value
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:248:13-39
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:252:13-39
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:247:13-39
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:251:13-39
 meta-data#BUGLY_APP_VERSION
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:250:9-252:34
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:254:9-256:34
 	android:value
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:252:13-32
-	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:251:13-45
-meta-data#BUGLY_APP_CHANNEL
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:254:9-256:35
-	android:value
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:256:13-33
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:256:13-32
 	android:name
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:255:13-45
+meta-data#BUGLY_APP_CHANNEL
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:258:9-260:35
+	android:value
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:260:13-33
+	android:name
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:259:13-45
 meta-data#BUGLY_ENABLE_DEBUG
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:258:9-260:38
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:262:9-264:38
 	android:value
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:260:13-36
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:264:13-36
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:259:13-46
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:263:13-46
 meta-data#bmob
-ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:261:9-262:41
+ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:265:9-267:41
 	android:value
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:261:20-46
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:267:13-39
 	android:name
-		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:262:20-39
+		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml:266:13-32
 uses-sdk
 INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
-MERGED from [com.android.databinding:adapters:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-3.1.2.aar\852041dba378cfa95bf45f6337266993\AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:adapters:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-3.1.2.aar\852041dba378cfa95bf45f6337266993\AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:library:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-3.1.2.aar\df869e23513f5d4b0d26454c43a637fe\AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:library:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-3.1.2.aar\df869e23513f5d4b0d26454c43a637fe\AndroidManifest.xml:22:5-44
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:5:5-7:41
-MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:5:5-7:41
-MERGED from [cn.bingoogolapple:bga-baseadapter:1.2.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-baseadapter-1.2.9.aar\791b5095e2e7e23d31a440265dc49d9a\AndroidManifest.xml:6:5-8:41
-MERGED from [cn.bingoogolapple:bga-baseadapter:1.2.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-baseadapter-1.2.9.aar\791b5095e2e7e23d31a440265dc49d9a\AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:design:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\0c1d6cd4fc89e156a3138c705f877873\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\0c1d6cd4fc89e156a3138c705f877873\AndroidManifest.xml:20:5-44
-MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\562cf739145419855d0c7e6b0eae499f\AndroidManifest.xml:7:5-9:41
-MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\562cf739145419855d0c7e6b0eae499f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b920c680b624f8174cd51b02d81ea84b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\b920c680b624f8174cd51b02d81ea84b\AndroidManifest.xml:20:5-44
-MERGED from [com.github.hotchemi:permissionsdispatcher:2.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\permissionsdispatcher-2.1.2.aar\9715833934869957e5a472de5b8656f5\AndroidManifest.xml:6:5-9:55
-MERGED from [com.github.hotchemi:permissionsdispatcher:2.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\permissionsdispatcher-2.1.2.aar\9715833934869957e5a472de5b8656f5\AndroidManifest.xml:6:5-9:55
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\26c40687b88f87ef62c5871779a42160\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\26c40687b88f87ef62c5871779a42160\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\15d48e50a3b949a1cb42f1268dc7e850\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\15d48e50a3b949a1cb42f1268dc7e850\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\814ab65caeb886baa1a222751cabd5ea\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\814ab65caeb886baa1a222751cabd5ea\AndroidManifest.xml:7:5-9:41
-MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:7:5-9:41
-MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:7:5-9:41
-MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\1c0947973cda45f4ec7b999c461fa32a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\1c0947973cda45f4ec7b999c461fa32a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\3d3ff824e5f3a848c76ddedb6fadbb3c\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\3d3ff824e5f3a848c76ddedb6fadbb3c\AndroidManifest.xml:7:5-9:41
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\53775ddf603915e1b4ba069605cea99a\AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\53775ddf603915e1b4ba069605cea99a\AndroidManifest.xml:19:5-43
-MERGED from [:simplecropview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\simplecropview-release.aar\fc681f0b691466c2317ba0d6c6b1ca7e\AndroidManifest.xml:5:5-7:41
-MERGED from [:simplecropview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\simplecropview-release.aar\fc681f0b691466c2317ba0d6c6b1ca7e\AndroidManifest.xml:5:5-7:41
-MERGED from [:welcome-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\welcome-release.aar\f6af7b0671206814f00dd94e90c20fb5\AndroidManifest.xml:8:5-10:41
-MERGED from [:welcome-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\welcome-release.aar\f6af7b0671206814f00dd94e90c20fb5\AndroidManifest.xml:8:5-10:41
-MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\2fc6ce4584303c27a24a8df2c44f05a1\AndroidManifest.xml:7:5-43
-MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\2fc6ce4584303c27a24a8df2c44f05a1\AndroidManifest.xml:7:5-43
-MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\43950b77d901c798ea4f6b98501bc627\AndroidManifest.xml:5:5-7:41
-MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\43950b77d901c798ea4f6b98501bc627\AndroidManifest.xml:5:5-7:41
-MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6402827494e68731546dfef63fbd22f4\AndroidManifest.xml:7:5-9:41
-MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6402827494e68731546dfef63fbd22f4\AndroidManifest.xml:7:5-9:41
-MERGED from [:shimmer-android-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\shimmer-android-release.aar\548cf2b61f94dca9a715a8024eccb9c4\AndroidManifest.xml:7:5-9:41
-MERGED from [:shimmer-android-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\shimmer-android-release.aar\548cf2b61f94dca9a715a8024eccb9c4\AndroidManifest.xml:7:5-9:41
-MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\c6a7028fdb68f60b3ea83c5e84551cef\AndroidManifest.xml:7:5-9:41
-MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\c6a7028fdb68f60b3ea83c5e84551cef\AndroidManifest.xml:7:5-9:41
-MERGED from [:MaterialProgressBar:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MaterialProgressBar.aar\e61fba9ecb10971c0f57ae0325a7ba4b\AndroidManifest.xml:12:5-14:41
-MERGED from [:MaterialProgressBar:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MaterialProgressBar.aar\e61fba9ecb10971c0f57ae0325a7ba4b\AndroidManifest.xml:12:5-14:41
-MERGED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:7:5-9:41
-MERGED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:7:5-9:41
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\c5e49bc5259e494ef02e2f5ed7c86787\AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\c5e49bc5259e494ef02e2f5ed7c86787\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e680c3a2f722fd91b88cba70a83a4345\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\e680c3a2f722fd91b88cba70a83a4345\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fa48976bd30cdacdba5f5318eb384878\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\fa48976bd30cdacdba5f5318eb384878\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\b27c9ec752913593cc213e3350a266b3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\b27c9ec752913593cc213e3350a266b3\AndroidManifest.xml:20:5-44
-MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\94fb5cf2f31aeca7f3dfa7c396cf571e\AndroidManifest.xml:6:5-43
-MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\94fb5cf2f31aeca7f3dfa7c396cf571e\AndroidManifest.xml:6:5-43
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c0895779456ff4172683bf5431274d16\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c0895779456ff4172683bf5431274d16\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\be82a61a78acff77d6b2dd265f503394\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\be82a61a78acff77d6b2dd265f503394\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\6d5bb8006c8038025ad2bc6e0f470dc4\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\6d5bb8006c8038025ad2bc6e0f470dc4\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:transition:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\1f27938f75fe630da607e1a93d409cb2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\1f27938f75fe630da607e1a93d409cb2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6b8ff33714f4e0b05fd6a89cd04f47bc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6b8ff33714f4e0b05fd6a89cd04f47bc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\0094e95ea511965ae651dcbf149257f8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\0094e95ea511965ae651dcbf149257f8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7a9089ff1abfdcf65ee6ec01c915e8ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7a9089ff1abfdcf65ee6ec01c915e8ea\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0795cd6cbf6d0f233f1e44577421e251\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0795cd6cbf6d0f233f1e44577421e251\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92fbb301f18a4b4ab1c5939028b54eb2\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92fbb301f18a4b4ab1c5939028b54eb2\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6f951b80bab6fad0a701938f1652a531\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6f951b80bab6fad0a701938f1652a531\AndroidManifest.xml:20:5-44
-MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.38.aar\1e1035a0ce19fc0519f0dbdf13833d94\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.38.aar\1e1035a0ce19fc0519f0dbdf13833d94\AndroidManifest.xml:7:5-9:41
-MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\7c7cdd27b01c77eec8f75f97fae84fb8\AndroidManifest.xml:7:5-9:41
-MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\7c7cdd27b01c77eec8f75f97fae84fb8\AndroidManifest.xml:7:5-9:41
-MERGED from [com.tencent.bugly:crashreport:2.6.6.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\crashreport-2.6.6.1.aar\ebb4a546d56c153f8b36d128af37da30\AndroidManifest.xml:5:5-7:41
-MERGED from [com.tencent.bugly:crashreport:2.6.6.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\crashreport-2.6.6.1.aar\ebb4a546d56c153f8b36d128af37da30\AndroidManifest.xml:5:5-7:41
-MERGED from [com.tencent.bugly:nativecrashreport:3.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.3.1.aar\79bed99984fff82b257148de9aee1b71\AndroidManifest.xml:5:5-7:41
-MERGED from [com.tencent.bugly:nativecrashreport:3.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.3.1.aar\79bed99984fff82b257148de9aee1b71\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\971ebee7c7f56e3f01536ae4d9d749d1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\971ebee7c7f56e3f01536ae4d9d749d1\AndroidManifest.xml:5:5-7:41
-MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.5.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\leakcanary-android-no-op-1.5.4.aar\71b3915d55446af21a597529de698545\AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.5.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\leakcanary-android-no-op-1.5.4.aar\71b3915d55446af21a597529de698545\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\931c014553e70c70ded2b1177caa1220\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\931c014553e70c70ded2b1177caa1220\AndroidManifest.xml:20:5-44
+MERGED from [com.android.databinding:adapters:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-3.1.2.aar\274e00af8af2a87e53ed71ee49890ac5\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:adapters:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\adapters-3.1.2.aar\274e00af8af2a87e53ed71ee49890ac5\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-3.1.2.aar\71aeb882e26c33bc8f903f530f274b9a\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\library-3.1.2.aar\71aeb882e26c33bc8f903f530f274b9a\AndroidManifest.xml:22:5-44
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:5:5-7:41
+MERGED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:5:5-7:41
+MERGED from [cn.bingoogolapple:bga-baseadapter:1.2.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-baseadapter-1.2.9.aar\dcbf30a22f4ed00d762a66cbb7d88714\AndroidManifest.xml:6:5-8:41
+MERGED from [cn.bingoogolapple:bga-baseadapter:1.2.9] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-baseadapter-1.2.9.aar\dcbf30a22f4ed00d762a66cbb7d88714\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c3d4b84dcd6f6b69808bc9805cdffeb8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c3d4b84dcd6f6b69808bc9805cdffeb8\AndroidManifest.xml:20:5-44
+MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\38b80f48cd2a4ab6b0ed00181b2c7159\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.bmob.android:bmob-push:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-push-1.0.1.aar\38b80f48cd2a4ab6b0ed00181b2c7159\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e4e8a71d694deb2d7c610ecd70035957\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\e4e8a71d694deb2d7c610ecd70035957\AndroidManifest.xml:20:5-44
+MERGED from [com.github.hotchemi:permissionsdispatcher:2.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\permissionsdispatcher-2.1.2.aar\964711b2f72699df498d9f2b2a96bd4a\AndroidManifest.xml:6:5-9:55
+MERGED from [com.github.hotchemi:permissionsdispatcher:2.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\permissionsdispatcher-2.1.2.aar\964711b2f72699df498d9f2b2a96bd4a\AndroidManifest.xml:6:5-9:55
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\00bc6128c8e46c0f3aa5183d4dd8ea37\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\00bc6128c8e46c0f3aa5183d4dd8ea37\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\8972ea56f35bc8d6b609dd973bccc55a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\8972ea56f35bc8d6b609dd973bccc55a\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\7e7b2dedf98d02d6eb268274337c65e5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\7e7b2dedf98d02d6eb268274337c65e5\AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\e06e729fcf25a4dc42e02ee4f8991bdd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.shizhefei:LargeImageView:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\LargeImageView-1.1.0.aar\e06e729fcf25a4dc42e02ee4f8991bdd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\ac9b84226d9095ac2f621770d4c117b7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxpermissions-0.9.4.aar\ac9b84226d9095ac2f621770d4c117b7\AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\f061ae446ef09d396057e0b36beb0a0f\AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.1.aar\f061ae446ef09d396057e0b36beb0a0f\AndroidManifest.xml:19:5-43
+MERGED from [:simplecropview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\simplecropview-release.aar\24cd4f369fbe6790bff896cada96593e\AndroidManifest.xml:5:5-7:41
+MERGED from [:simplecropview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\simplecropview-release.aar\24cd4f369fbe6790bff896cada96593e\AndroidManifest.xml:5:5-7:41
+MERGED from [:welcome-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\welcome-release.aar\a84087c86e053bd346f0148dd6830bba\AndroidManifest.xml:8:5-10:41
+MERGED from [:welcome-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\welcome-release.aar\a84087c86e053bd346f0148dd6830bba\AndroidManifest.xml:8:5-10:41
+MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\eeda723452f91e9310e58ba3694a42b2\AndroidManifest.xml:7:5-43
+MERGED from [:volley-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\volley-release.aar\eeda723452f91e9310e58ba3694a42b2\AndroidManifest.xml:7:5-43
+MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\883e7a61c4e7c58d1eab98757b8f1572\AndroidManifest.xml:5:5-7:41
+MERGED from [:circleimageview-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circleimageview-release.aar\883e7a61c4e7c58d1eab98757b8f1572\AndroidManifest.xml:5:5-7:41
+MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6b39386be7c97da77c78dc817d6077d5\AndroidManifest.xml:7:5-9:41
+MERGED from [:circle-menu:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\circle-menu.aar\6b39386be7c97da77c78dc817d6077d5\AndroidManifest.xml:7:5-9:41
+MERGED from [:shimmer-android-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\shimmer-android-release.aar\20792433dc89828fa568a16565bf521c\AndroidManifest.xml:7:5-9:41
+MERGED from [:shimmer-android-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\shimmer-android-release.aar\20792433dc89828fa568a16565bf521c\AndroidManifest.xml:7:5-9:41
+MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\f0962a2bb349d84006e7a5691436d564\AndroidManifest.xml:7:5-9:41
+MERGED from [:fancybuttons-release:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\fancybuttons-release.aar\f0962a2bb349d84006e7a5691436d564\AndroidManifest.xml:7:5-9:41
+MERGED from [:MaterialProgressBar:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MaterialProgressBar.aar\433e0fe8edb47cd877dcc3f0d58a82cc\AndroidManifest.xml:12:5-14:41
+MERGED from [:MaterialProgressBar:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MaterialProgressBar.aar\433e0fe8edb47cd877dcc3f0d58a82cc\AndroidManifest.xml:12:5-14:41
+MERGED from [com.just.agentweb:download:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\download-4.0.2.aar\65daf81831a01f57e3a63c5429f04614\AndroidManifest.xml:7:5-9:41
+MERGED from [com.just.agentweb:download:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\download-4.0.2.aar\65daf81831a01f57e3a63c5429f04614\AndroidManifest.xml:7:5-9:41
+MERGED from [com.just.agentweb:filechooser:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\filechooser-4.0.2.aar\eeb6a8f49d389410ca08b3acd2eb3cb5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.just.agentweb:filechooser:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\filechooser-4.0.2.aar\eeb6a8f49d389410ca08b3acd2eb3cb5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\986e699d9a38990992509266f38c1c19\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\butterknife-8.5.1.aar\986e699d9a38990992509266f38c1c19\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\9eb374ee43bc2bf6a047addb59800ec4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\9eb374ee43bc2bf6a047addb59800ec4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\a7abac11bbbcfa7d6e85d51ba70ffe50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\a7abac11bbbcfa7d6e85d51ba70ffe50\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\75ebc153610761fc28d38dbd4be70025\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\75ebc153610761fc28d38dbd4be70025\AndroidManifest.xml:20:5-44
+MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\6dfd617e0e7925a573cb1243669ea1ae\AndroidManifest.xml:6:5-43
+MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\6dfd617e0e7925a573cb1243669ea1ae\AndroidManifest.xml:6:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\b759209f7b4aafd690b8200ac453f8d9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\b759209f7b4aafd690b8200ac453f8d9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\cd3198999c4432f5dfc6210ea5094165\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\cd3198999c4432f5dfc6210ea5094165\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\beb6b56cc26c8a7b4272ea5eea33732f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\beb6b56cc26c8a7b4272ea5eea33732f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\bb409b211b6b4118e8bfc97e187d4afa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\bb409b211b6b4118e8bfc97e187d4afa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\df8b2e69901dc3353e0f014f8dd71ffd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\df8b2e69901dc3353e0f014f8dd71ffd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\62b3ffa01765d28be2976badfafb752f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\62b3ffa01765d28be2976badfafb752f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\982745f85ff480e77501e1e29e127296\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\982745f85ff480e77501e1e29e127296\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3fc8f270700fb69fe8a9d1e3e734223\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3fc8f270700fb69fe8a9d1e3e734223\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6b1431f41a649dd061e8113086329eee\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\6b1431f41a649dd061e8113086329eee\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c101456da06d7fb589c09e047b6ac938\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c101456da06d7fb589c09e047b6ac938\AndroidManifest.xml:20:5-44
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.38.aar\e8acd23ec10f5ea3547e9013368eebdb\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.38.aar\e8acd23ec10f5ea3547e9013368eebdb\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\acd723dacf35f8699db12a9953626773\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.bmob.android:bmob-sdk:3.6.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.6.0.aar\acd723dacf35f8699db12a9953626773\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tencent.bugly:crashreport:2.6.6.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\crashreport-2.6.6.1.aar\bb13398f36aa8de2449214d44e841438\AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.bugly:crashreport:2.6.6.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\crashreport-2.6.6.1.aar\bb13398f36aa8de2449214d44e841438\AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.bugly:nativecrashreport:3.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.3.1.aar\41ae113155c0200f28ed5bf43c893cc3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.tencent.bugly:nativecrashreport:3.3.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\nativecrashreport-3.3.1.aar\41ae113155c0200f28ed5bf43c893cc3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\733e2e30d2d025b6185f51ac36f026c6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\733e2e30d2d025b6185f51ac36f026c6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.5.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\leakcanary-android-no-op-1.5.4.aar\4bf44fd3369cf569e52feb051d0088f4\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.5.4] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\leakcanary-android-no-op-1.5.4.aar\4bf44fd3369cf569e52feb051d0088f4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\68475b1fa87fc8faeac368058462f661\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\68475b1fa87fc8faeac368058462f661\AndroidManifest.xml:20:5-44
 INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.github.hotchemi:permissionsdispatcher:2.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\permissionsdispatcher-2.1.2.aar\9715833934869957e5a472de5b8656f5\AndroidManifest.xml:9:9-52
+		ADDED from [com.github.hotchemi:permissionsdispatcher:2.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\permissionsdispatcher-2.1.2.aar\964711b2f72699df498d9f2b2a96bd4a\AndroidManifest.xml:9:9-52
 	android:targetSdkVersion
 		INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
@@ -648,68 +674,86 @@ INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidMani
 		ADDED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 		INJECTED from E:\AndroidStudioProjects\SafeExam1.0\SafeExam\src\main\AndroidManifest.xml
 activity#cn.bingoogolapple.photopicker.activity.BGAPhotoPreviewActivity
-ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:16:9-21:63
+ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:16:9-21:63
 	android:screenOrientation
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:19:13-49
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:19:13-49
 	android:windowSoftInputMode
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:21:13-60
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:21:13-60
 	android:configChanges
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:18:13-74
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:18:13-74
 	android:theme
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:20:13-46
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:20:13-46
 	android:name
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:17:13-90
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:17:13-90
 activity#cn.bingoogolapple.photopicker.activity.BGAPhotoPickerActivity
-ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:24:9-29:63
+ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:24:9-29:63
 	android:screenOrientation
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:27:13-49
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:27:13-49
 	android:windowSoftInputMode
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:29:13-60
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:29:13-60
 	android:configChanges
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:26:13-74
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:26:13-74
 	android:theme
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:28:13-46
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:28:13-46
 	android:name
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:25:13-89
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:25:13-89
 activity#cn.bingoogolapple.photopicker.activity.BGAPhotoPickerPreviewActivity
-ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:32:9-37:63
+ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:32:9-37:63
 	android:screenOrientation
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:35:13-49
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:35:13-49
 	android:windowSoftInputMode
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:37:13-60
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:37:13-60
 	android:configChanges
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:34:13-74
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:34:13-74
 	android:theme
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:36:13-46
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:36:13-46
 	android:name
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:33:13-96
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:33:13-96
 provider#cn.bingoogolapple.photopicker.util.BGAPhotoFileProvider
-ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:39:9-47:20
+ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:39:9-47:20
 	android:grantUriPermissions
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:43:13-47
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:43:13-47
 	android:authorities
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:41:13-82
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:41:13-82
 	android:exported
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:42:13-37
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\a9ad3588c54d1775e29a126aa0da7cf0\AndroidManifest.xml:40:13-83
+		ADDED from [cn.bingoogolapple:bga-photopicker:1.2.8] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\bga-photopicker-1.2.8.aar\c6af27dec94b49c09f883241fdede3f2\AndroidManifest.xml:40:13-83
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
-ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:12:9-16:66
+ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:12:9-16:66
 	android:label
-		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:15:13-29
+		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:15:13-29
 	android:exported
-		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:14:13-37
+		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:14:13-37
 	android:theme
-		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:16:13-63
+		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:16:13-63
 	android:name
-		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\116bcd8cd8e42c55d70abc197bb0f1a3\AndroidManifest.xml:13:13-86
-provider#com.just.library.AgentWebFileProvider
-ADDED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:15:9-23:20
+		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c5a665d7059c1105dab24274b659dc6b\AndroidManifest.xml:13:13-86
+receiver#com.just.agentweb.download.NotificationCancelReceiver
+ADDED from [com.just.agentweb:download:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\download-4.0.2.aar\65daf81831a01f57e3a63c5429f04614\AndroidManifest.xml:12:9-90
+	android:name
+		ADDED from [com.just.agentweb:download:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\download-4.0.2.aar\65daf81831a01f57e3a63c5429f04614\AndroidManifest.xml:12:19-87
+provider#com.just.agentweb.AgentWebFileProvider
+ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:19:13-47
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:17:13-72
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:14:13-72
 	android:exported
-		ADDED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:18:13-37
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:agentweb:] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb.aar\6f8a9239ee4059a7c6f7b8cb879721c2\AndroidManifest.xml:16:13-65
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:13:13-66
+activity#com.just.agentweb.ActionActivity
+ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:22:9-29:20
+	android:launchMode
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:26:13-42
+	android:windowSoftInputMode
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:25:13-37
+	android:configChanges
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:24:13-74
+	android:theme
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:27:13-50
+	android:name
+		ADDED from [com.just.agentweb:agentweb:4.0.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\agentweb-4.0.2.aar\f1954031083453bb126b2936e455dc0b\AndroidManifest.xml:23:13-60

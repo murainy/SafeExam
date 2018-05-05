@@ -175,7 +175,7 @@
       android:layout_height="wrap_content"
       android:layout_alignBottom="@id/cropImageView"
       android:layout_centerHorizontal="true"
-      android:background="@color/blue"
+      android:background="@color/colorPrimary"
       android:orientation="horizontal"
       >
 
@@ -196,7 +196,8 @@
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
         >
-      <ImageButton
+
+        <ImageButton
           android:id="@+id/buttonRotateLeft"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -204,7 +205,8 @@
           android:padding="@dimen/spacing_small"
           custom:srcCompat="@drawable/ic_rotate_left_black_24dp"
           />
-      <ImageButton
+
+        <ImageButton
           android:id="@+id/buttonRotateRight"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"

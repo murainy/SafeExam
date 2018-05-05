@@ -40,8 +40,8 @@ public class KnowledgeActivity extends AppCompatActivity {
 	private WelcomeHelper welcomeScreen;
 	private NestedScrollView mNestedScrollView;
 	private AppBarLayout mAppBarLayout;
-	private  TextView mTvTitle;
-	private  TextView device_id;
+	private TextView mTvTitle;
+	private TextView device_id;
 	private Toolbar.OnMenuItemClickListener onMenuItemClick = new Toolbar.OnMenuItemClickListener() {
 		@Override
 		public boolean onMenuItemClick(MenuItem menuItem) {
@@ -121,16 +121,13 @@ public class KnowledgeActivity extends AppCompatActivity {
 				Display display = wm.getDefaultDisplay();
 				DisplayMetrics metric = new DisplayMetrics();
 				display.getRealMetrics(metric);
-
-                //获取的像素宽高不包含虚拟键所占空间
-				//context.getWindowManager().getDefaultDisplay().getMetrics(metric);
 				int width = metric.widthPixels;  // 宽度（像素）
 				int height = metric.heightPixels;  // 高度（像素）
 				float density = metric.density;  // dp缩放因子
 				int densityDpi = metric.densityDpi;  // 广义密度
 				float xdpi = metric.xdpi;//x轴方向的真实密度
 				float ydpi = metric.ydpi;//y轴方向的真实密度
-				ToastUtils.showShort(getBaseContext(),"屏幕密度："+Integer.toString(densityDpi));
+				ToastUtils.showShort(getBaseContext(), "屏幕密度：" + Integer.toString(densityDpi));
 			}
 		});
 		FancyButton LoginBtn = new FancyButton(this);

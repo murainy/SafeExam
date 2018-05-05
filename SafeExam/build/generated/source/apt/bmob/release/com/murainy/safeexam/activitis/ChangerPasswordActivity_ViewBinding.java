@@ -16,7 +16,7 @@ import java.lang.Override;
 public class ChangerPasswordActivity_ViewBinding implements Unbinder {
   private ChangerPasswordActivity target;
 
-  private View view2131296499;
+  private View view2131296501;
 
   @UiThread
   public ChangerPasswordActivity_ViewBinding(ChangerPasswordActivity target) {
@@ -30,7 +30,7 @@ public class ChangerPasswordActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.iv_left, "field 'iv_left' and method 'back'");
     target.iv_left = Utils.castView(view, R.id.iv_left, "field 'iv_left'", ImageView.class);
-    view2131296499 = view;
+    view2131296501 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -52,7 +52,7 @@ public class ChangerPasswordActivity_ViewBinding implements Unbinder {
     target.tv_title = null;
     target.tv_left = null;
 
-    view2131296499.setOnClickListener(null);
-    view2131296499 = null;
+    view2131296501.setOnClickListener(null);
+    view2131296501 = null;
   }
 }

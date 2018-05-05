@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="WelcomeScreenTheme">
+    <style name="AppTheme" parent="WelcomeScreenTheme.SolidNavigation">
         <!-- Customize your theme here. -->
         <item name="android:colorForeground">@color/guide_color</item>
         <item name="android:textColorPrimary">@color/white_grey</item>

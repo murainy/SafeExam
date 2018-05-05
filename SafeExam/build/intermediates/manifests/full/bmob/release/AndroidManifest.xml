@@ -46,6 +46,8 @@
         android:versionCode="3" >
         <activity
             android:name="com.murainy.safeexam.activitis.LauncherActivity"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
             android:launchMode="singleTask"
             android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation"
             android:uiOptions="splitActionBarWhenNarrow" >
@@ -233,9 +235,19 @@
         <activity
             android:name="com.murainy.safeexam.activitis.RxActivity"
             android:configChanges="orientation|screenSize"
-            android:label="@string/app_name" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
-        <activity android:name="com.murainy.safeexam.activitis.ResultActivity" >
+        <activity
+            android:name="com.murainy.safeexam.activitis.ResultActivity"
+            android:theme="@style/ImageTranslucentTheme" >
+        </activity>
+        <activity
+            android:name="com.murainy.safeexam.activitis.JsoupActivity"
+            android:theme="@style/ImageTranslucentTheme" >
+        </activity>
+        <activity
+            android:name="com.murainy.safeexam.activitis.NewsDisplayActivity"
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
 
         <!-- 配置APP ID -->
@@ -294,15 +306,26 @@
             android:label=""
             android:theme="@style/EasyPermissions.Transparent" />
 
+        <receiver android:name="com.just.agentweb.download.NotificationCancelReceiver" />
+
         <provider
-            android:name="com.just.library.AgentWebFileProvider"
+            android:name="com.just.agentweb.AgentWebFileProvider"
             android:authorities="c313355d6f4419b5084f07b9ee758da4.realse.AgentWebFileProvider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/web_download_paths" />
+                android:resource="@xml/web_files_paths" />
         </provider>
+
+        <activity
+            android:name="com.just.agentweb.ActionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:theme="@style/actionActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
     </application>
 
 </manifest>

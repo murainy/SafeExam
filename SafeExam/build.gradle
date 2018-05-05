@@ -116,8 +116,8 @@ android {
             versionNameSuffix 'b'
         }
     }
-    packagingOptions {exclude 'META-INF/rxjava.properties'}
-    lintOptions {   abortOnError false  }
+    packagingOptions { exclude 'META-INF/rxjava.properties' }
+    lintOptions { abortOnError false }
 }
 
 ext {
@@ -149,7 +149,9 @@ dependencies {
     implementation(name: 'shimmer-android-release', ext: 'aar')
     implementation(name: 'fancybuttons-release', ext: 'aar')
     implementation(name: 'MaterialProgressBar', ext: 'aar')
-    implementation(name: 'agentweb', ext: 'aar')
+    implementation 'com.just.agentweb:agentweb:4.0.2'
+    implementation 'com.just.agentweb:download:4.0.2' // (可选)
+    implementation 'com.just.agentweb:filechooser:4.0.2'// (可选)
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'org.greenrobot:eventbus:3.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
@@ -172,4 +174,3 @@ dependencies {
     //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
 }
-

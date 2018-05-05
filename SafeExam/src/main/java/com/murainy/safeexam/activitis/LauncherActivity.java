@@ -59,6 +59,8 @@ public class LauncherActivity extends AppCompatActivity {
 	TextView tl;
 	@BindView(R.id.support_me)
 	TextView supportMe;
+	@BindView(R.id.news)
+	ImageView NewMe;
 
 	@SuppressLint("ClickableViewAccessibility")
 	@Override
@@ -300,4 +302,10 @@ public class LauncherActivity extends AppCompatActivity {
 	public void onViewClicked() {
 		startActivity(new Intent(LauncherActivity.this, PayActivity.class));
 	}
+
+	@OnClick(R.id.news)
+	public void newsonClicked() {
+		startActivity(new Intent(LauncherActivity.this, JsoupActivity.class));
+	}
+
 }

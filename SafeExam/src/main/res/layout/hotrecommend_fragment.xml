@@ -29,7 +29,8 @@
         android:id="@+id/rdtj"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.44" android:background="@drawable/darkorange"
+        android:layout_weight="0.44"
+        android:background="@color/darkorange"
         tools:ignore="InefficientWeight">
         <ImageView
             android:id="@+id/lv_item"

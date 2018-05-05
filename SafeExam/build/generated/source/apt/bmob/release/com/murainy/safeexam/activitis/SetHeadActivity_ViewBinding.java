@@ -19,9 +19,9 @@ import java.lang.Override;
 public class SetHeadActivity_ViewBinding implements Unbinder {
   private SetHeadActivity target;
 
-  private View view2131296499;
+  private View view2131296501;
 
-  private View view2131296334;
+  private View view2131296336;
 
   @UiThread
   public SetHeadActivity_ViewBinding(SetHeadActivity target) {
@@ -37,7 +37,7 @@ public class SetHeadActivity_ViewBinding implements Unbinder {
     target.ci = Utils.findRequiredViewAsType(source, R.id.circleImageView2, "field 'ci'", CircleImageView.class);
     view = Utils.findRequiredView(source, R.id.iv_left, "field 'iv_left' and method 'back'");
     target.iv_left = Utils.castView(view, R.id.iv_left, "field 'iv_left'", ImageView.class);
-    view2131296499 = view;
+    view2131296501 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class SetHeadActivity_ViewBinding implements Unbinder {
     target.tv_title = Utils.findRequiredViewAsType(source, R.id.tv_title, "field 'tv_title'", TextView.class);
     view = Utils.findRequiredView(source, R.id.btn_upload, "field 'upload' and method 'upload'");
     target.upload = Utils.castView(view, R.id.btn_upload, "field 'upload'", Button.class);
-    view2131296334 = view;
+    view2131296336 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -77,9 +77,9 @@ public class SetHeadActivity_ViewBinding implements Unbinder {
     target.btnPhotosok = null;
     target.et_nick = null;
 
-    view2131296499.setOnClickListener(null);
-    view2131296499 = null;
-    view2131296334.setOnClickListener(null);
-    view2131296334 = null;
+    view2131296501.setOnClickListener(null);
+    view2131296501 = null;
+    view2131296336.setOnClickListener(null);
+    view2131296336 = null;
   }
 }

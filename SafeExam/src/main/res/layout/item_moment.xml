@@ -46,6 +46,7 @@
     <cn.bingoogolapple.photopicker.widget.BGANinePhotoLayout
         android:id="@+id/npl_item_moment_photos"
         style="@style/MatchWrap"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         app:bga_npl_itemCornerRadius="0dp"
         app:bga_npl_itemSpanCount="3"
@@ -53,7 +54,6 @@
         app:bga_npl_itemWidth="0dp"
         app:bga_npl_otherWhiteSpacing="64dp"
         app:bga_npl_placeholderDrawable="@mipmap/bga_pp_ic_holder_light"
-        android:layout_marginLeft="8dp"
         app:bga_npl_showAsLargeWhenOnlyOne="true"
         app:layout_constraintLeft_toRightOf="@id/iv_item_moment_avatar"
         app:layout_constraintTop_toBottomOf="@id/tv_item_moment_content"/>

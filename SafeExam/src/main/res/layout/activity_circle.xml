@@ -18,7 +18,7 @@
         android:textSize="18sp"
         android:elevation="0dp"
         android:textAlignment="center"
-        android:textColor="@drawable/midnightblue"
+        android:textColor="@color/midnightblue"
         />
 
     <com.zhy.view.CircleMenuLayout

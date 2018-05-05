@@ -7,23 +7,35 @@
         android:id="@+id/iv_system_gallery_crop_avatar"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_margin="30dp"
+        android:layout_margin="36dp"
         android:src="@drawable/hjzgg"/>
 
-    <TextView
-        android:id="@+id/tv_system_gallery_crop_choose"
-        style="@style/MatchWrapTv"
-        android:text="选择"/>
-
-    <TextView
-        android:id="@+id/tv_system_gallery_crop_take_photo"
-        style="@style/MatchWrapTv"
-        android:text="拍照"/>
-
-    <TextView
-        android:id="@+id/tv_system_gallery_crop_take_apply"
-        style="@style/MatchWrapTv"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="应用"/>
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tv_system_gallery_crop_take_apply"
+            style="@style/MatchWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="应用"/>
+
+        <TextView
+            android:id="@+id/tv_system_gallery_crop_take_photo"
+            style="@style/MatchWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="拍照"/>
+
+        <TextView
+            android:id="@+id/tv_system_gallery_crop_choose"
+            style="@style/MatchWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="选择"/>
+    </LinearLayout>
 </LinearLayout>

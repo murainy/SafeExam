@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/shape_red_corners_button"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_4"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/alice_blue"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/news_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/base_bg"
+            android:textSize="10sp"
+            tools:ignore="NestedWeights,SmallSp"/>
+
+        <TextView
+            android:id="@+id/news_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/c_f98800"
+            android:textSize="12sp"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</LinearLayout>

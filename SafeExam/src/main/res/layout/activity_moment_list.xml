@@ -2,11 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               style="@style/MatchMatch.Vertical"
               android:background="@color/air_speed_label"
-              android:fitsSystemWindows="false">
+              android:fitsSystemWindows="true">
 
     <LinearLayout
         style="@style/MatchWrap.Vertical"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="24dp">
 
         <CheckBox
             android:id="@+id/cb_moment_list_downloadable"
@@ -14,23 +16,24 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:checked="true"
-            android:text="预览图片时显示保存图片按钮"
+            android:text="@string/shoe_save"
             android:textColor="@color/colorPrimary"
             android:textSize="12sp"/>
 
         <TextView
             android:id="@+id/tv_moment_list_add"
             style="@style/MatchWrapTv"
+            android:layout_width="105dp"
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
-            android:text="添加朋友圈"/>
+            android:text="@string/add_friead"/>
 
         <TextView
             android:id="@+id/tv_moment_list_system"
             style="@style/MatchWrapTv"
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
-            android:text="测试系统相册"/>
+            android:text="@string/sys_gallery"/>
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView

@@ -9,24 +9,32 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.just.library.AgentWeb;
-import com.just.library.ChromeClientCallbackManager;
+import com.just.agentweb.AgentWeb;
 import com.murainy.safeexam.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class AboutActivity extends Activity {
+
 	protected AgentWeb mAgentWeb;
 	@BindView(R.id.tv_title)
 	TextView tv_title;
 	@BindView(R.id.web_layout)
 	LinearLayout mLayout;
+	private WebChromeClient mWebChromeClient = new WebChromeClient() {
+		@Override
+		public void onProgressChanged(WebView view, int newProgress) {
+			//do you work
+		}
+	};
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -43,22 +51,11 @@ public class AboutActivity extends Activity {
 		mAgentWeb = AgentWeb.with(this)//传入Activity
 				.setAgentWebParent(mLayout, new LinearLayout.LayoutParams(-1, -1))//传入AgentWeb 的父控件 ，如果父控件为 RelativeLayout ， 那么第二参数需要传入 RelativeLayout.LayoutParams
 				.useDefaultIndicator()// 使用默认进度条
-				.defaultProgressBarColor() // 使用默认进度条颜色
-				.setReceivedTitleCallback(mCallback) //设置 Web 页面的 title 回调
+				.setWebChromeClient(mWebChromeClient)
 				.createAgentWeb()//
 				.ready()
 				.go(mUrl);
 	}
-
-	private ChromeClientCallbackManager.ReceivedTitleCallback mCallback = new ChromeClientCallbackManager.ReceivedTitleCallback() {
-		@Override
-		public void onReceivedTitle(WebView view, String title) {
-			if (tv_title != null)
-				tv_title.setText(title);
-		}
-	};
-
-
 	// 获取当前应用的版本号
 	public static String getVersionName(Context context) {
 		try {

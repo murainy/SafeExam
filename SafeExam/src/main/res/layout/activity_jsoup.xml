@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.murainy.safeexam.activitis.JsoupActivity">
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"/>
+
+    <ListView
+        android:id="@+id/news_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp"
+        android:divider="@color/air_speed_label"
+        android:dividerHeight="7dp"
+        android:padding="8dp">
+    </ListView>
+</LinearLayout>

@@ -7,7 +7,7 @@
         <item
             android:id="@+id/empty_table"
             android:orderInCategory="100"
-            android:title="@string/lookgrade"
+            android:title="@string/empty_table"
             app:showAsAction="never"/>
 
         <item
@@ -36,8 +36,8 @@
             android:icon="@drawable/ic_free_breakfast_black_24dp"
             android:title="@string/cloud"/>
         <item
-            android:icon="@drawable/firebrick"
-            android:title="标签"/>
+            android:icon="@color/firebrick"
+            android:title="@string/label"/>
     </group>
 
 
