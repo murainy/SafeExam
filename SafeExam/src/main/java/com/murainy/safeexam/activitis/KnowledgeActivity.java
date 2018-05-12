@@ -2,7 +2,6 @@ package com.murainy.safeexam.activitis;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
@@ -22,7 +21,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +40,8 @@ public class KnowledgeActivity extends AppCompatActivity {
 	private AppBarLayout mAppBarLayout;
 	private TextView mTvTitle;
 	private TextView device_id;
+	private final Context context = this;
+	private int density;
 	private Toolbar.OnMenuItemClickListener onMenuItemClick = new Toolbar.OnMenuItemClickListener() {
 		@Override
 		public boolean onMenuItemClick(MenuItem menuItem) {
@@ -94,7 +94,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 				}
 			}
 		});
-		FancyButton updateBtn = findViewById(R.id.btn_like);
+
 		//隐藏状态栏
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		welcomeScreen = new WelcomeHelper(this, SplashActivity.class);
@@ -102,7 +102,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 		toolbar.inflateMenu(R.menu.menu_knowledge);//设置右上角的填充菜单
 
 		// Title
-		toolbar.setTitle("SafeExam" + getVersionName(this));
+		mTvTitle.setText("安全考试" + getVersionName(this));
 		// Sub Title
 		toolbar.setSubtitle("安全管理人员考试");
 		setSupportActionBar(toolbar);
@@ -112,38 +112,27 @@ public class KnowledgeActivity extends AppCompatActivity {
 		toolbar.setNavigationIcon(R.drawable.back_icon_selector);
 		// Menu item click 的監聽事件一樣要設定在 setSupportActionBar 才有作用
 		toolbar.setOnMenuItemClickListener(onMenuItemClick);
-		toolbar.setBackgroundColor(getResources().getColor(R.color.air_speed_label));
-
+		toolbar.setBackgroundColor(getResources().getColor(R.color.transparent));
+		FancyButton updateBtn = findViewById(R.id.btn_like);
 		updateBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
 				WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
+				assert wm != null;
 				Display display = wm.getDefaultDisplay();
 				DisplayMetrics metric = new DisplayMetrics();
 				display.getRealMetrics(metric);
 				int width = metric.widthPixels;  // 宽度（像素）
 				int height = metric.heightPixels;  // 高度（像素）
-				float density = metric.density;  // dp缩放因子
+				density = (int) metric.density;  // dp缩放因子
 				int densityDpi = metric.densityDpi;  // 广义密度
 				float xdpi = metric.xdpi;//x轴方向的真实密度
 				float ydpi = metric.ydpi;//y轴方向的真实密度
-				ToastUtils.showShort(getBaseContext(), "屏幕密度：" + Integer.toString(densityDpi));
+				ToastUtils.ToastMessage(context, "屏幕密度：" + Integer.toString(densityDpi), getAppInfo());
+				intro();
 			}
 		});
-		FancyButton LoginBtn = new FancyButton(this);
-		LoginBtn.setText("检查");
-		LoginBtn.setBackgroundColor(Color.parseColor("#3b5998"));
-		LoginBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
-		LoginBtn.setTextSize(20);
-		LoginBtn.setPadding(20, 20, 20, 20);
-		LoginBtn.setIconPadding(8, 0, 8, 0);
-		LoginBtn.setBorderColor(Color.parseColor("#ffffff"));
-		LoginBtn.setBorderWidth(5);
-		LoginBtn.setRadius(40);
-		LoginBtn.setMinimumWidth(192);
-		LoginBtn.setIconResource("\uf00d");
-		LoginBtn.setIconPosition(FancyButton.POSITION_RIGHT);
-		LoginBtn.setFontIconSize(20);
+		FancyButton LoginBtn = findViewById(R.id.btn_face);
 		LoginBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -151,21 +140,7 @@ public class KnowledgeActivity extends AppCompatActivity {
 			}
 		});
 
-		FancyButton signupBtn = new FancyButton(this);
-		signupBtn.setText("美图");
-		signupBtn.setIconResource("\uf016");
-		signupBtn.setBackgroundColor(Color.parseColor("#3b5998"));
-		signupBtn.setFocusBackgroundColor(Color.parseColor("#5577bd"));
-		signupBtn.setTextSize(20);
-		signupBtn.setRadius(40);
-		signupBtn.setBorderColor(Color.parseColor("#ffffff"));
-		signupBtn.setBorderWidth(5);
-		signupBtn.setFontIconSize(20);
-		signupBtn.setPadding(20, 20, 20, 20);
-		signupBtn.setIconPadding(8, 0, 8, 0);
-		signupBtn.setGhost(true);
-		signupBtn.setMinimumWidth(192);
-		signupBtn.setIconPosition(FancyButton.POSITION_RIGHT);
+		FancyButton signupBtn = findViewById(R.id.btn_select);
 		signupBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -173,14 +148,11 @@ public class KnowledgeActivity extends AppCompatActivity {
 				startActivity(intent);
 			}
 		});
-		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-		LinearLayout container = findViewById(R.id.container);
-		container.addView(LoginBtn, layoutParams);
-		container.addView(signupBtn, layoutParams);
-		device_id.setText(getDeviceId(this));
+
+		device_id.append(getDeviceId(this));
 	}
 
-	public void intro(View view) {
+	public void intro() {
 		BottomSheetBehavior behavior = BottomSheetBehavior.from(findViewById(R.id.myscroll));
 		if (behavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
 			behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);

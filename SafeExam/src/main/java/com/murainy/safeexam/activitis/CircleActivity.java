@@ -19,21 +19,19 @@ public class CircleActivity extends Activity {
 
 	private CircleMenuLayout mCircleMenuLayout;
 
-	private String[] mItemTexts = new String[]{"安全资讯 ", "安全知识", "顺序练习",
+	private String[] mItemTexts = new String[]{"网页精灵", "安全知识", "顺序练习",
 			"模拟考试", "错题练习", "幸运时刻", "设置", "关于"};
 	private int[] mItemImgs = new int[]{R.drawable.home_mbank_1_normal,
 			R.drawable.home_mbank_2_normal, R.drawable.home_mbank_3_normal,
 			R.drawable.home_mbank_4_normal, R.drawable.home_mbank_5_normal,
-			R.drawable.home_mbank_6_normal, R.drawable.home_mbank_8_normal,
-			R.drawable.home_mbank_7_normal};
+			R.drawable.home_mbank_6_normal, R.drawable.home_mbank_7_normal,
+			R.drawable.home_mbank_8_normal};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//自已切换布局文件看效果
 		setContentView(R.layout.activity_circle);
-
-
 		mCircleMenuLayout = findViewById(R.id.id_menulayout);
 		mCircleMenuLayout.setMenuItemIconsAndTexts(mItemImgs, mItemTexts);
 		mCircleMenuLayout.setOnMenuItemClickListener(new OnMenuItemClickListener() {
@@ -42,7 +40,9 @@ public class CircleActivity extends Activity {
 			public void itemClick(View view, int pos) {
 				switch (pos) {
 					case 0:
-						startActivity(new Intent(CircleActivity.this, ResetPasswordActivity.class));
+						Intent intent0 = new Intent(CircleActivity.this, WebActivity.class);
+						intent0.putExtra("url", "http://bmob-cdn-2129.b0.upaiyun.com/2018/05/12/bc151a21400e3f3f80dbeb58380d6f10.html");
+						startActivity(intent0);
 						break;
 					case 1:
 						startActivity(new Intent(CircleActivity.this, KnowledgeActivity.class));

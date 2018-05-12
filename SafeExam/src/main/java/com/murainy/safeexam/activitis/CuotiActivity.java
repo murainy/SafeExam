@@ -13,7 +13,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.Utils.BmobUtils;
@@ -26,18 +25,14 @@ public class CuotiActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 	    setContentView(R.layout.activity_cuoti);
-        //隐藏状态栏
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
 	    Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 	    FloatingActionButton fab = findViewById(R.id.fab);
         assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "开始错题练习", Snackbar.LENGTH_LONG)
+	            Snackbar.make(view, "开始练习", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
                 BmobUtils.downloadQuestionListIni();
 	            Intent intent = new Intent(CuotiActivity.this, StartTestActivity.class);
@@ -99,18 +94,20 @@ public class CuotiActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+	    switch (id) {
+		    case R.id.nav_camera:
+			    break;
+		    case R.id.nav_gallery:
+			    break;
+		    case R.id.nav_slideshow:
+			    break;
+		    case R.id.nav_manage:
+			    break;
+		    case R.id.nav_share:
+			    break;
+		    case R.id.nav_send:
+			    break;
         }
 
 	    DrawerLayout drawer = findViewById(R.id.drawer_layout);

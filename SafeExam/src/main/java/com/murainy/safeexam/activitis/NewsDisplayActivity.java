@@ -2,13 +2,15 @@ package com.murainy.safeexam.activitis;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.webkit.WebChromeClient;
+import android.view.View;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
-import android.widget.LinearLayout;
+import android.webkit.WebViewClient;
+import android.widget.Button;
 
-import com.just.agentweb.AgentWeb;
 import com.murainy.safeexam.R;
 
 import org.jsoup.Jsoup;
@@ -16,64 +18,86 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class NewsDisplayActivity extends Activity {
 	private static String newsUrl;
 	private static String webData;
-	protected LinearLayout mLayout;
-	private AgentWeb mAgentWeb;
-
+	@BindView(R.id.btn_large)
+	Button btnLarge;
 	@SuppressLint("SetJavaScriptEnabled")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_news_display);
-		mLayout = findViewById(R.id.baseWeb);
+		ButterKnife.bind(this);
 		newsUrl = getIntent().getStringExtra("news_url");
 		WebView webView = findViewById(R.id.web_view);
+		webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 		webView.getSettings().setDefaultTextEncodingName("UTF-8");
 		webView.getSettings().setJavaScriptEnabled(true);
-		webView.getSettings().setSupportZoom(true);
 		//适应屏幕
-		webView.getSettings().setUseWideViewPort(false);
 		webView.getSettings().setDefaultFontSize(21);
 		webView.getSettings().getStandardFontFamily();
-		webView.setWebChromeClient(new WebChromeClient());
+
 		try {
 			ProgressAsyncTask asyncTask = new ProgressAsyncTask(webView);
-			asyncTask.execute(6000);
-			mAgentWeb = AgentWeb.with(this)//传入Activity
-					.setAgentWebParent(mLayout, new LinearLayout.LayoutParams(-1, -1))//传入AgentWeb 的父控件 ，如果父控件为 RelativeLayout ， 那么第二参数需要传入 RelativeLayout.LayoutParams
-					.useDefaultIndicator()// 使用默认进度条
-					.createAgentWeb()//
-					.ready()
-					.go(webData);
+			asyncTask.execute(8000);
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
+		//java回调js代码，不要忘了@JavascriptInterface这个注解，不然点击事件不起作用
+		webView.addJavascriptInterface(new JsCallJavaObj() {
+			@JavascriptInterface
+			@Override
+			public void showBigImg(String url) {
+
+				Intent intent = new Intent(NewsDisplayActivity.this, LargeImageViewActivity.class);
+				intent.putExtra("fromMain", url);
+				startActivity(intent);
+			}
+		}, "jsCallJavaObj");
+		webView.setWebViewClient(new WebViewClient() {
+			@Override
+			public void onPageFinished(WebView view, String url) {
+				super.onPageFinished(view, url);
+				setWebImageClick(view);
+			}
+		});
 
 	}
 
 	/**
-	 * 跟随生命周期释放资源更省电
+	 * 設置網頁中圖片的點擊事件
+	 *
+	 * @param view
 	 */
-	@Override
-	protected void onPause() {
-		mAgentWeb.getWebLifeCycle().onPause();
-		super.onPause();
-
+	private void setWebImageClick(WebView view) {
+		String jsCode = "javascript:(function(){" +
+				"var imgs=document.getElementsByTagName(\"img\");" +
+				"for(var i=0;i<imgs.length;i++){" +
+				"imgs[i].onclick=function(){" +
+				"window.jsCallJavaObj.showBigImg(this.src);" +
+				"}}})()";
+		view.loadUrl(jsCode);
 	}
 
-	@Override
-	protected void onResume() {
-		mAgentWeb.getWebLifeCycle().onResume();
-		super.onResume();
+	@OnClick(R.id.btn_large)
+	public void onViewClicked() {
+		Intent i7 = new Intent(NewsDisplayActivity.this, LargeImageViewActivity.class);
+		i7.putExtra("fromMain", webData);
+		startActivity(i7);
 	}
 
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-		mAgentWeb.getWebLifeCycle().onDestroy();
+	/**
+	 * Js調用Java接口
+	 */
+	private interface JsCallJavaObj {
+		void showBigImg(String url);
 	}
 
 	static class ProgressAsyncTask extends AsyncTask<Integer, Integer, String> {
@@ -101,11 +125,10 @@ public class NewsDisplayActivity extends Activity {
 				//查找图片
 				for (Element element : ListDiv) {
 					Elements Listimg = ListDiv.select("img");
-					String strimg = "";
+
 					for (Element e : Listimg) {
-						e.attr("style", "width:100%,height:auto;");
-						strimg = strimg + e.attr("src");
-						webData = strimg;
+						e.attr("style", "MAX-WIDTH: 100%!important;HEIGHT: auto!important;width:expression(this.width > 600 ? \"600px\" : this.width)!important;");
+						webData = e.attr("src");
 					}
 					str = element.html();
 				}

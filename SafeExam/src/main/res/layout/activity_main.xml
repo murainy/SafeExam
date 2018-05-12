@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
               android:background="@drawable/index_bg_002"
+              android:fitsSystemWindows="false"
               android:orientation="vertical"
-              android:fitsSystemWindows="true"
-              android:paddingTop="25dp">
+    >
 
     <include
+        layout="@layout/include_header"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        layout="@layout/include_header"
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/textView9"/>
 
@@ -30,8 +31,8 @@
         android:fadingEdgeLength="0dp"
         android:fastScrollEnabled="true"
         android:paddingBottom="50dp"
-        android:scrollbars="vertical"
-        android:scrollIndicators="right"/>
+        android:scrollIndicators="right"
+        android:scrollbars="vertical"/>
 
     <TextView
         android:id="@+id/tv_exam_time"

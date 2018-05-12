@@ -1,7 +1,6 @@
 package com.murainy.safeexam.activitis;
 
 import android.app.Activity;
-import android.app.ActivityManager;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -13,80 +12,57 @@ import android.widget.TextView;
 
 import com.murainy.safeexam.R;
 import com.murainy.safeexam.SafeExam;
-import com.murainy.safeexam.Shareprefrence.OperateShareprefrence;
 
 import java.io.File;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import cn.bmob.v3.BmobUser;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
-public class InformationActivity extends Activity implements View.OnClickListener {
-    @BindView(R.id.iv_left)
-    ImageView iv_left;
-    @BindView(R.id.tv_title)
-    TextView tv_title;
-    @BindView(R.id.bnt_exit)
-    Button bnt_exit;
-    @BindView(R.id.info_end)
-    Button bnt_end;
-    @BindView(R.id.ci_view)
-    CircleImageView ci;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_information);
-        ButterKnife.bind(this);
-	    Button lookGradeBtn = findViewById(R.id.btn_look_grade);
-	    Button changePasswordBtn = findViewById(R.id.btn_change_password);
-	    TextView classTV = findViewById(R.id.tv_class);
-	    TextView numberTV = findViewById(R.id.tv_number);
-	    TextView nameTV = findViewById(R.id.tv_name);
-	    Button bindpBtn = findViewById(R.id.bnt_bindphone);
-	    Button setheadBtn = findViewById(R.id.bnt_sethead);
-	    nameTV.setText(SafeExam.getStudent().getName());
-	    numberTV.setText(SafeExam.getStudent().getUsername());
-	    classTV.setText(SafeExam.getStudent().getNick());
-	    lookGradeBtn.setOnClickListener(this);
-        changePasswordBtn.setOnClickListener(this);
-        bindpBtn.setOnClickListener(this);
-        setheadBtn.setOnClickListener(this);
-        //String path = getFilesDir()+"/head.jpg";
-        //ci.setImageBitmap(BitmapUtil.GetBitmap(path,100));
-        iv_left.setVisibility(View.VISIBLE);
-        tv_title.setText("个人信息");
-	    readImage(ci);
-    }
+public class InformationActivity extends Activity {
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.iv_left:
-                Intent i0 = new Intent(InformationActivity.this, TabmanActivity.class);
-                startActivity(i0);
-                break;
-            case R.id.btn_look_grade:
-                Intent i1 = new Intent(InformationActivity.this, LookGradeActivity.class);
-                startActivity(i1);
-                break;
-            case R.id.btn_change_password:
-                Intent i2 = new Intent(InformationActivity.this, ChangerPasswordActivity.class);
-                startActivity(i2);
-                break;
-            case R.id.bnt_bindphone:
-                Intent i3 = new Intent(InformationActivity.this, UserBindPhoneActivity.class);
-                startActivity(i3);
-                break;
-            case R.id.bnt_sethead:
-	            Intent i4 = new Intent(InformationActivity.this, SetHeadActivity.class);
-                startActivity(i4);
-                break;
+	@BindView(R.id.tv_title)
+	TextView tv_title;
+	@BindView(R.id.ci_view)
+	CircleImageView ci;
+	@BindView(R.id.btn_change_password)
+	Button btnChangePassword;
+	@BindView(R.id.bnt_bindphone)
+	Button bntBindphone;
+	@BindView(R.id.bnt_sethead)
+	Button bntSethead;
+	@BindView(R.id.btn_look_grade)
+	Button btnLookGrade;
+	@BindView(R.id.iv_left)
+	ImageView ivLeft;
+	@BindView(R.id.bnt_exit)
+	Button bntExit;
+	@BindView(R.id.info_end)
+	Button infoEnd;
+	@BindView(R.id.tv_name)
+	TextView tvName;
+	@BindView(R.id.tv_number)
+	TextView tvNumber;
+	@BindView(R.id.tv_class)
+	TextView tvClass;
 
-        }
-    }
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_information);
+		ButterKnife.bind(this);
+
+		tvName.setText(SafeExam.getStudent().getNick());
+		tvNumber.setText(SafeExam.getStudent().getUsername());
+		tvClass.setText(SafeExam.getStudent().getmClass());
+
+		ivLeft.setVisibility(View.VISIBLE);
+		tv_title.setText("个人信息");
+		readImage(ci);
+	}
+
 
 	//如果本地有,就不需要再去联网去请求
 	public void readImage(ImageView iv) {
@@ -100,27 +76,49 @@ public class InformationActivity extends Activity implements View.OnClickListene
 
 
 	}
-    @OnClick(R.id.iv_left)
-    public void back(View view) {
-        finish();
-    }
-    @OnClick(R.id.bnt_exit)
-    public void exit(View view) {
-        BmobUser.logOut();
-        OperateShareprefrence.deleteShareprefrence(this);
-       }
-    @OnClick(R.id.info_end)
-    public void exitsys(View view) {
-        ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
-        am.killBackgroundProcesses(getPackageName());
-        finish();
-        //退出后台线程,以及销毁静态变量
-        System.exit(0);
-        }
 
-    @OnClick(R.id.ci_view)
-    public void largepic(View view) {
-        Intent i5 = new Intent(InformationActivity.this, LargeImageViewActivity.class);
-        startActivity(i5);
-    }
+
+	@OnClick({R.id.btn_change_password, R.id.bnt_bindphone, R.id.bnt_sethead, R.id.btn_look_grade})
+	public void onViewClicked1(View view) {
+		switch (view.getId()) {
+			case R.id.btn_look_grade:
+				Intent i1 = new Intent(InformationActivity.this, LookGradeActivity.class);
+				startActivity(i1);
+				break;
+			case R.id.btn_change_password:
+				Intent i2 = new Intent(InformationActivity.this, ChangerPasswordActivity.class);
+				startActivity(i2);
+				break;
+			case R.id.bnt_bindphone:
+				Intent i3 = new Intent(InformationActivity.this, UserBindPhoneActivity.class);
+				startActivity(i3);
+				break;
+			case R.id.bnt_sethead:
+				Intent i4 = new Intent(InformationActivity.this, SetHeadActivity.class);
+				startActivity(i4);
+				break;
+		}
+	}
+
+	@OnClick({R.id.iv_left, R.id.bnt_exit, R.id.info_end, R.id.ci_view})
+	public void onViewClicked2(View view) {
+		switch (view.getId()) {
+			case R.id.iv_left:
+				Intent i0 = new Intent(InformationActivity.this, TabmanActivity.class);
+				startActivity(i0);
+				break;
+			case R.id.bnt_exit:
+				Intent i5 = new Intent(InformationActivity.this, ScrollingActivity.class);
+				startActivity(i5);
+				break;
+			case R.id.info_end:
+				Intent i6 = new Intent(InformationActivity.this, AddPaperActivity.class);
+				startActivity(i6);
+				break;
+			case R.id.ci_view:
+				Intent i7 = new Intent(InformationActivity.this, SystemGalleryActivity.class);
+				startActivity(i7);
+				break;
+		}
+	}
 }

@@ -8,7 +8,7 @@
         style="@style/MatchWrap.Vertical"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingTop="24dp">
+        >
 
         <CheckBox
             android:id="@+id/cb_moment_list_downloadable"
@@ -26,6 +26,7 @@
             android:layout_width="105dp"
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
+            android:background="@drawable/shape_button"
             android:text="@string/add_friead"/>
 
         <TextView
@@ -33,11 +34,13 @@
             style="@style/MatchWrapTv"
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
+            android:background="@drawable/shape_button"
             android:text="@string/sys_gallery"/>
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_moment_list_moments"
-        style="@style/MatchMatch"/>
+        style="@style/MatchMatch"
+        android:layout_margin="8dp"/>
 
 </LinearLayout>

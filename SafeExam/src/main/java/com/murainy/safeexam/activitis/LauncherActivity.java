@@ -32,7 +32,6 @@ import butterknife.OnClick;
 import cn.bmob.push.BmobPush;
 import cn.bmob.v3.BmobInstallation;
 import cn.bmob.v3.BmobPushManager;
-import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.LogInListener;
@@ -40,9 +39,7 @@ import cn.bmob.v3.update.BmobUpdateAgent;
 
 public class LauncherActivity extends AppCompatActivity {
 	private static final int REQUEST_WELCOME_SCREEN_RESULT = 13;
-
 	private WelcomeHelper welcomeScreen;
-
 	private ShimmerFrameLayout mShimmerViewContainer;
 	private ViewFlipper mFlipper;
 	private GestureDetectorCompat mDetector; //手势检测
@@ -69,7 +66,6 @@ public class LauncherActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_launcher);
 		ButterKnife.bind(this);
 		welcomeScreen = new WelcomeHelper(this, SplashActivity.class);
-
 		// 使用推送服务时的初始化操作
 		BmobInstallation.getQuery();
 		// 启动推送服务
@@ -77,7 +73,6 @@ public class LauncherActivity extends AppCompatActivity {
 		// 创建推送消息的对象
 		bmobPushManager = new BmobPushManager<>();
 		BmobUpdateAgent.update(this);
-
 		welcomeScreen.show(savedInstanceState);
 		mShimmerViewContainer = findViewById(R.id.shimmer_view_container);
 		assert mShimmerViewContainer != null;
@@ -179,16 +174,16 @@ public class LauncherActivity extends AppCompatActivity {
 			try {
 				String welcomeKey = data.getStringExtra(SplashActivity.WELCOME_SCREEN_KEY);
 			} catch (Exception e) {
-				System.out.println(e.getMessage());
+				Log.e("TAG", e.getMessage());
 			}
 			if (resultCode == RESULT_OK) {
-				//startActivity(new Intent(LauncherActivity.this, SplashActivity.class));
+				startActivity(new Intent(LauncherActivity.this, SplashActivity.class));
 				//Toast.makeText(getApplicationContext(), welcomeKey + " completed", Toast.LENGTH_SHORT).show();
 				Log.e("TAG", "首次启动");
 
 			} else {
 				//Toast.makeText(getApplicationContext(), welcomeKey + " canceled", Toast.LENGTH_SHORT).show();
-				//startActivity(new Intent(LauncherActivity.this, LoginActivity.class));
+				startActivity(new Intent(LauncherActivity.this, LoginActivity.class));
 				Log.e("TAG", "正常工作");
 
 			}
@@ -238,10 +233,6 @@ public class LauncherActivity extends AppCompatActivity {
 		welcomeScreen.onSaveInstanceState(outState);
 	}
 
-	@OnClick(R.id.tv_apple)
-	public void next(View view) {
-		startActivity(new Intent(LauncherActivity.this, ContentExamActivity.class));
-	}
 
 	@OnClick(R.id.tv_set)
 	public void man(View view) {
@@ -277,29 +268,25 @@ public class LauncherActivity extends AppCompatActivity {
 		}
 	}
 
+
+	@OnClick(R.id.tv_apple)
+	public void next(View view) {
+		startActivity(new Intent(LauncherActivity.this, ContentExamActivity.class));
+	}
+
 	@OnClick(R.id.tv_git)
 	public void setup(View view) {
-        // 创建Installation表的BmobQuery对象
-		BmobQuery<BmobInstallation> query = BmobInstallation.getQuery();
-		// 并添加条件为设备类型属于android
-		query.addWhereEqualTo("deviceType", "android");
-		// 设置推送条件给bmobPushManager对象。
-		bmobPushManager.setQuery(query);
-		// 设置推送消息，服务端会根据上面的查询条件，来进行推送这条消息
-		bmobPushManager.pushMessage("这是一条推送给所有Android设备的消息。");
-		//CrashReport.testJavaCrash();
 		startActivity(new Intent(LauncherActivity.this, CuotiActivity.class));
 	}
 
 	@OnClick(R.id.tv_let)
 	public void know(View view) {
-
-		//CrashReport.testJavaCrash();
 		startActivity(new Intent(LauncherActivity.this, KnowledgeActivity.class));
 	}
 
 	@OnClick(R.id.support_me)
 	public void onViewClicked() {
+		BmobUpdateAgent.forceUpdate(LauncherActivity.this);
 		startActivity(new Intent(LauncherActivity.this, PayActivity.class));
 	}
 

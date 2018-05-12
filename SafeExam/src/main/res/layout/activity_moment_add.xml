@@ -12,7 +12,7 @@
         android:clipChildren="false"
         android:clipToPadding="false"
         android:fitsSystemWindows="true"
-        android:paddingTop="24dp">
+        >
 
         <LinearLayout
             style="@style/MatchWrap.Horizontal"
@@ -74,11 +74,13 @@
             <TextView
                 android:id="@+id/tv_moment_add_choice_photo"
                 style="@style/AutoWrapTv"
+                android:background="@drawable/shape_button"
                 android:text="@string/choose_pic"/>
 
             <TextView
                 android:id="@+id/tv_moment_add_publish"
                 style="@style/AutoWrapTv"
+                android:background="@drawable/shape_button"
                 android:text="@string/publish"/>
         </LinearLayout>
 

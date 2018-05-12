@@ -109,41 +109,39 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:weightSum="3">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:text="@string/account_no"
-            android:textColor="@color/base_color_text_gray"
-            android:textSize="20sp"/>
+        android:weightSum="2">
 
         <TextView
             android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_margin="8dp"
             android:layout_weight="1"
+            android:background="@drawable/shape_button"
             android:gravity="center"
+            android:padding="@dimen/dp_4"
             android:text="@string/register_bnt"
             android:textAlignment="center"
-            android:textColor="@color/color_theme"
-            android:textSize="20sp"/>
+            android:textColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/tv_forpass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:layout_weight="1"
+            android:background="@drawable/shape_button"
             android:gravity="end"
+            android:padding="@dimen/dp_4"
             android:text="@string/forgetpass"
-            android:textColor="@color/base_color_text_gray"
-            android:textSize="20sp"
-            />
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
     </LinearLayout>
 
 </RelativeLayout>

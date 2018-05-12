@@ -2616,7 +2616,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -3952,18 +3952,129 @@ public final class R {
      */
     public static final int tooltipText=0x7f0401f0;
     /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_autoLoadMore=0x7f0401f1;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int tr_bottomView=0x7f0401f2;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int tr_bottom_height=0x7f0401f3;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_enable_keepIView=0x7f0401f4;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_enable_loadmore=0x7f0401f5;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_enable_overscroll=0x7f0401f6;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_enable_refresh=0x7f0401f7;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_floatRefresh=0x7f0401f8;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int tr_head_height=0x7f0401f9;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int tr_headerView=0x7f0401fa;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int tr_max_bottom_height=0x7f0401fb;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int tr_max_head_height=0x7f0401fc;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_overscroll_bottom_show=0x7f0401fd;
+    /**
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     */
+    public static final int tr_overscroll_height=0x7f0401fe;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_overscroll_top_show=0x7f0401ff;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_pureScrollMode_on=0x7f040200;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_showLoadingWhenOverScroll=0x7f040201;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int tr_showRefreshingWhenOverScroll=0x7f040202;
+    /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int track=0x7f0401f1;
+    public static final int track=0x7f040203;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int trackTint=0x7f0401f2;
+    public static final int trackTint=0x7f040204;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -3979,144 +4090,144 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int trackTintMode=0x7f0401f3;
+    public static final int trackTintMode=0x7f040205;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int useCompatPadding=0x7f0401f4;
+    public static final int useCompatPadding=0x7f040206;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int viewInflaterClass=0x7f0401f5;
+    public static final int viewInflaterClass=0x7f040207;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f0401f6;
+    public static final int voiceIcon=0x7f040208;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeButtonBackground=0x7f0401f7;
+    public static final int welcomeButtonBackground=0x7f040209;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int welcomeButtonBarBackground=0x7f0401f8;
+    public static final int welcomeButtonBarBackground=0x7f04020a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeButtonBarFirstStyle=0x7f0401f9;
+    public static final int welcomeButtonBarFirstStyle=0x7f04020b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeButtonBarSecondStyle=0x7f0401fa;
+    public static final int welcomeButtonBarSecondStyle=0x7f04020c;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeButtonDoneStyle=0x7f0401fb;
+    public static final int welcomeButtonDoneStyle=0x7f04020d;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int welcomeButtonDoneText=0x7f0401fc;
+    public static final int welcomeButtonDoneText=0x7f04020e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeButtonNextStyle=0x7f0401fd;
+    public static final int welcomeButtonNextStyle=0x7f04020f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeButtonPrevStyle=0x7f0401fe;
+    public static final int welcomeButtonPrevStyle=0x7f040210;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeButtonSkipStyle=0x7f0401ff;
+    public static final int welcomeButtonSkipStyle=0x7f040211;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int welcomeButtonSkipText=0x7f040200;
+    public static final int welcomeButtonSkipText=0x7f040212;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeDividerStyle=0x7f040201;
+    public static final int welcomeDividerStyle=0x7f040213;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeIndicatorStyle=0x7f040202;
+    public static final int welcomeIndicatorStyle=0x7f040214;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeLargeTextStyle=0x7f040203;
+    public static final int welcomeLargeTextStyle=0x7f040215;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int welcomeLayoutFitsSystemWindows=0x7f040204;
+    public static final int welcomeLayoutFitsSystemWindows=0x7f040216;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeNormalTextStyle=0x7f040205;
+    public static final int welcomeNormalTextStyle=0x7f040217;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int welcomeTitleTextStyle=0x7f040206;
+    public static final int welcomeTitleTextStyle=0x7f040218;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f040207;
+    public static final int windowActionBar=0x7f040219;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f040208;
+    public static final int windowActionBarOverlay=0x7f04021a;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f040209;
+    public static final int windowActionModeOverlay=0x7f04021b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4128,7 +4239,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f04020a;
+    public static final int windowFixedHeightMajor=0x7f04021c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4140,7 +4251,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f04020b;
+    public static final int windowFixedHeightMinor=0x7f04021d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4152,7 +4263,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f04020c;
+    public static final int windowFixedWidthMajor=0x7f04021e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4164,7 +4275,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f04020d;
+    public static final int windowFixedWidthMinor=0x7f04021f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4176,7 +4287,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f04020e;
+    public static final int windowMinWidthMajor=0x7f040220;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -4188,12 +4299,12 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f04020f;
+    public static final int windowMinWidthMinor=0x7f040221;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f040210;
+    public static final int windowNoTitle=0x7f040222;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f050000;
@@ -4203,398 +4314,402 @@ public final class R {
     public static final int wel_is_rtl=0x7f050004;
   }
   public static final class color {
-    public static final int abc_background_cache_hint_selector_material_dark=0x7f060000;
-    public static final int abc_background_cache_hint_selector_material_light=0x7f060001;
-    public static final int abc_btn_colored_borderless_text_material=0x7f060002;
-    public static final int abc_btn_colored_text_material=0x7f060003;
-    public static final int abc_color_highlight_material=0x7f060004;
-    public static final int abc_hint_foreground_material_dark=0x7f060005;
-    public static final int abc_hint_foreground_material_light=0x7f060006;
-    public static final int abc_input_method_navigation_guard=0x7f060007;
-    public static final int abc_primary_text_disable_only_material_dark=0x7f060008;
-    public static final int abc_primary_text_disable_only_material_light=0x7f060009;
-    public static final int abc_primary_text_material_dark=0x7f06000a;
-    public static final int abc_primary_text_material_light=0x7f06000b;
-    public static final int abc_search_url_text=0x7f06000c;
-    public static final int abc_search_url_text_normal=0x7f06000d;
-    public static final int abc_search_url_text_pressed=0x7f06000e;
-    public static final int abc_search_url_text_selected=0x7f06000f;
-    public static final int abc_secondary_text_material_dark=0x7f060010;
-    public static final int abc_secondary_text_material_light=0x7f060011;
-    public static final int abc_tint_btn_checkable=0x7f060012;
-    public static final int abc_tint_default=0x7f060013;
-    public static final int abc_tint_edittext=0x7f060014;
-    public static final int abc_tint_seek_thumb=0x7f060015;
-    public static final int abc_tint_spinner=0x7f060016;
-    public static final int abc_tint_switch_track=0x7f060017;
-    public static final int accent_material_dark=0x7f060018;
-    public static final int accent_material_light=0x7f060019;
-    public static final int air_speed_label=0x7f06001a;
-    public static final int alice_blue=0x7f06001b;
-    public static final int altitude_label=0x7f06001c;
-    public static final int antiquewhite=0x7f06001d;
-    public static final int aqua=0x7f06001e;
-    public static final int aquamarine=0x7f06001f;
-    public static final int azure=0x7f060020;
-    public static final int background_color=0x7f060021;
-    public static final int background_floating_material_dark=0x7f060022;
-    public static final int background_floating_material_light=0x7f060023;
-    public static final int background_material_dark=0x7f060024;
-    public static final int background_material_light=0x7f060025;
-    public static final int base_action_bar_title_color=0x7f060026;
-    public static final int base_actionbar_bg=0x7f060027;
-    public static final int base_bg=0x7f060028;
-    public static final int base_color_text_black=0x7f060029;
-    public static final int base_color_text_gray=0x7f06002a;
-    public static final int base_color_text_white=0x7f06002b;
-    public static final int base_menu_left_bg=0x7f06002c;
-    public static final int base_tab_indicator_text_color=0x7f06002d;
-    public static final int beige=0x7f06002e;
-    public static final int bg_btn_normal_color=0x7f06002f;
-    public static final int bg_btn_press_color=0x7f060030;
-    public static final int bga_adapter_divider=0x7f060031;
-    public static final int bga_adapter_empty_view_msg_textColor=0x7f060032;
-    public static final int bga_adapter_item_pressed=0x7f060033;
-    public static final int bga_adapter_line=0x7f060034;
-    public static final int bga_pp_activity_bg=0x7f060035;
-    public static final int bga_pp_btn_confirm_disabled=0x7f060036;
-    public static final int bga_pp_btn_confirm_enabled=0x7f060037;
-    public static final int bga_pp_btn_confirm_pressed=0x7f060038;
-    public static final int bga_pp_colorPrimary=0x7f060039;
-    public static final int bga_pp_colorPrimaryDark=0x7f06003a;
-    public static final int bga_pp_common_textColor=0x7f06003b;
-    public static final int bga_pp_folder_count_textColor=0x7f06003c;
-    public static final int bga_pp_folder_name_textColor=0x7f06003d;
-    public static final int bga_pp_loading_progress_centerColor=0x7f06003e;
-    public static final int bga_pp_loading_progress_endColor=0x7f06003f;
-    public static final int bga_pp_loading_progress_startColor=0x7f060040;
-    public static final int bga_pp_navigationBarColor=0x7f060041;
-    public static final int bga_pp_photo_item_bg=0x7f060042;
-    public static final int bga_pp_photo_selected_mask=0x7f060043;
-    public static final int bga_pp_preview_bottom_bg=0x7f060044;
-    public static final int bga_pp_take_photo_textColor=0x7f060045;
-    public static final int bisque=0x7f060046;
-    public static final int black=0x7f060047;
-    public static final int blanchedalmond=0x7f060048;
-    public static final int blue=0x7f060049;
-    public static final int blueviolet=0x7f06004a;
-    public static final int bottom_top_bar=0x7f06004b;
-    public static final int bright_foreground_disabled_material_dark=0x7f06004c;
-    public static final int bright_foreground_disabled_material_light=0x7f06004d;
-    public static final int bright_foreground_inverse_material_dark=0x7f06004e;
-    public static final int bright_foreground_inverse_material_light=0x7f06004f;
-    public static final int bright_foreground_material_dark=0x7f060050;
-    public static final int bright_foreground_material_light=0x7f060051;
-    public static final int brown=0x7f060052;
-    public static final int burlywood=0x7f060053;
-    public static final int buttonColor=0x7f060054;
-    public static final int button_material_dark=0x7f060055;
-    public static final int button_material_light=0x7f060056;
-    public static final int c_f98800=0x7f060057;
-    public static final int cadetblue=0x7f060058;
-    public static final int cardview_dark_background=0x7f060059;
-    public static final int cardview_light_background=0x7f06005a;
-    public static final int cardview_shadow_end_color=0x7f06005b;
-    public static final int cardview_shadow_start_color=0x7f06005c;
-    public static final int charcoal=0x7f06005d;
-    public static final int chartreuse=0x7f06005e;
-    public static final int chocolate=0x7f06005f;
-    public static final int climb_rate_label=0x7f060060;
-    public static final int colorAccent=0x7f060061;
-    public static final int colorPrimary=0x7f060062;
-    public static final int colorPrimaryDark=0x7f060063;
-    public static final int colorPrimaryDarkTrans=0x7f060064;
-    public static final int color_bottom_bg=0x7f060065;
-    public static final int color_bottom_text_normal=0x7f060066;
-    public static final int color_bottom_text_press=0x7f060067;
-    public static final int color_half_transparent=0x7f060068;
-    public static final int color_theme=0x7f060069;
-    public static final int color_transparent_bg=0x7f06006a;
-    public static final int color_transparent_bg1=0x7f06006b;
-    public static final int common_bg=0x7f06006c;
-    public static final int coral=0x7f06006d;
-    public static final int cornflowerblue=0x7f06006e;
-    public static final int cornsilk=0x7f06006f;
-    public static final int crimson=0x7f060070;
-    public static final int cyan=0x7f060071;
-    public static final int dark_grey=0x7f060072;
-    public static final int dark_title_bg=0x7f060073;
-    public static final int darkblue=0x7f060074;
-    public static final int darkcyan=0x7f060075;
-    public static final int darkgoldenrod=0x7f060076;
-    public static final int darkgray=0x7f060077;
-    public static final int darkgreen=0x7f060078;
-    public static final int darkgrey=0x7f060079;
-    public static final int darkkhaki=0x7f06007a;
-    public static final int darkmagenta=0x7f06007b;
-    public static final int darkolivegreen=0x7f06007c;
-    public static final int darkorange=0x7f06007d;
-    public static final int darkorchid=0x7f06007e;
-    public static final int darkred=0x7f06007f;
-    public static final int darksalmon=0x7f060080;
-    public static final int darkseagreen=0x7f060081;
-    public static final int darkslateblue=0x7f060082;
-    public static final int darkslategray=0x7f060083;
-    public static final int darkslategrey=0x7f060084;
-    public static final int darkturquoise=0x7f060085;
-    public static final int darkviolet=0x7f060086;
-    public static final int deeppink=0x7f060087;
-    public static final int deepskyblue=0x7f060088;
-    public static final int design_bottom_navigation_shadow_color=0x7f060089;
-    public static final int design_error=0x7f06008a;
-    public static final int design_fab_shadow_end_color=0x7f06008b;
-    public static final int design_fab_shadow_mid_color=0x7f06008c;
-    public static final int design_fab_shadow_start_color=0x7f06008d;
-    public static final int design_fab_stroke_end_inner_color=0x7f06008e;
-    public static final int design_fab_stroke_end_outer_color=0x7f06008f;
-    public static final int design_fab_stroke_top_inner_color=0x7f060090;
-    public static final int design_fab_stroke_top_outer_color=0x7f060091;
-    public static final int design_snackbar_background_color=0x7f060092;
-    public static final int design_tint_password_toggle=0x7f060093;
-    public static final int dialog_color_title=0x7f060094;
-    public static final int dim_foreground_disabled_material_dark=0x7f060095;
-    public static final int dim_foreground_disabled_material_light=0x7f060096;
-    public static final int dim_foreground_material_dark=0x7f060097;
-    public static final int dim_foreground_material_light=0x7f060098;
-    public static final int dimgray=0x7f060099;
-    public static final int dimgrey=0x7f06009a;
-    public static final int dodgerblue=0x7f06009b;
-    public static final int down_fragment_alpha=0x7f06009c;
-    public static final int editor_bar=0x7f06009d;
-    public static final int error_color_material=0x7f06009e;
-    public static final int fbutton_color_alizarin=0x7f06009f;
-    public static final int fbutton_color_amethyst=0x7f0600a0;
-    public static final int fbutton_color_asbestos=0x7f0600a1;
-    public static final int fbutton_color_belize_hole=0x7f0600a2;
-    public static final int fbutton_color_carrot=0x7f0600a3;
-    public static final int fbutton_color_clouds=0x7f0600a4;
-    public static final int fbutton_color_concrete=0x7f0600a5;
-    public static final int fbutton_color_emerald=0x7f0600a6;
-    public static final int fbutton_color_green_sea=0x7f0600a7;
-    public static final int fbutton_color_midnight_blue=0x7f0600a8;
-    public static final int fbutton_color_nephritis=0x7f0600a9;
-    public static final int fbutton_color_orange=0x7f0600aa;
-    public static final int fbutton_color_peter_river=0x7f0600ab;
-    public static final int fbutton_color_pomegranate=0x7f0600ac;
-    public static final int fbutton_color_pumpkin=0x7f0600ad;
-    public static final int fbutton_color_silver=0x7f0600ae;
-    public static final int fbutton_color_sun_flower=0x7f0600af;
-    public static final int fbutton_color_transparent=0x7f0600b0;
-    public static final int fbutton_color_turquoise=0x7f0600b1;
-    public static final int fbutton_color_wet_asphalt=0x7f0600b2;
-    public static final int fbutton_color_wisteria=0x7f0600b3;
-    public static final int fbutton_default_color=0x7f0600b4;
-    public static final int fbutton_default_shadow_color=0x7f0600b5;
-    public static final int firebrick=0x7f0600b6;
-    public static final int floral_white=0x7f0600b7;
-    public static final int foreground_material_dark=0x7f0600b8;
-    public static final int foreground_material_light=0x7f0600b9;
-    public static final int forestgreen=0x7f0600ba;
-    public static final int fuchsia=0x7f0600bb;
-    public static final int gainsboro=0x7f0600bc;
-    public static final int ghostwhite=0x7f0600bd;
-    public static final int gold=0x7f0600be;
-    public static final int goldenrod=0x7f0600bf;
-    public static final int gray=0x7f0600c0;
-    public static final int green=0x7f0600c1;
-    public static final int greenyellow=0x7f0600c2;
-    public static final int grey700=0x7f0600c3;
-    public static final int greyText=0x7f0600c4;
-    public static final int ground_speed_label=0x7f0600c5;
-    public static final int guide_color=0x7f0600c6;
-    public static final int highlighted_text_material_dark=0x7f0600c7;
-    public static final int highlighted_text_material_light=0x7f0600c8;
-    public static final int home_item_color_bg=0x7f0600c9;
-    public static final int honeydew=0x7f0600ca;
-    public static final int hotpink=0x7f0600cb;
-    public static final int indianred=0x7f0600cc;
-    public static final int indigo=0x7f0600cd;
-    public static final int ivory=0x7f0600ce;
-    public static final int khaki=0x7f0600cf;
-    public static final int lavender=0x7f0600d0;
-    public static final int lavenderblush=0x7f0600d1;
-    public static final int lawngreen=0x7f0600d2;
-    public static final int layout_bg_color=0x7f0600d3;
-    public static final int lemon_chiffon=0x7f0600d4;
-    public static final int light_green=0x7f0600d5;
-    public static final int light_grey=0x7f0600d6;
-    public static final int light_title_bg=0x7f0600d7;
-    public static final int light_yellow=0x7f0600d8;
-    public static final int lightblue=0x7f0600d9;
-    public static final int lightcoral=0x7f0600da;
-    public static final int lightcyan=0x7f0600db;
-    public static final int lightgoldenrodyellow=0x7f0600dc;
-    public static final int lightgray=0x7f0600dd;
-    public static final int lightgreen=0x7f0600de;
-    public static final int lightgrey=0x7f0600df;
-    public static final int lightpink=0x7f0600e0;
-    public static final int lightsalmon=0x7f0600e1;
-    public static final int lightseagreen=0x7f0600e2;
-    public static final int lightskyblue=0x7f0600e3;
-    public static final int lightslategray=0x7f0600e4;
-    public static final int lightslategrey=0x7f0600e5;
-    public static final int lightsteelblue=0x7f0600e6;
-    public static final int lime=0x7f0600e7;
-    public static final int limegreen=0x7f0600e8;
-    public static final int line=0x7f0600e9;
-    public static final int line_bg=0x7f0600ea;
-    public static final int linen=0x7f0600eb;
-    public static final int magenta=0x7f0600ec;
-    public static final int main_bg_color=0x7f0600ed;
-    public static final int main_font_color=0x7f0600ee;
-    public static final int marker_color=0x7f0600ef;
-    public static final int maroon=0x7f0600f0;
-    public static final int material_blue_grey_800=0x7f0600f1;
-    public static final int material_blue_grey_900=0x7f0600f2;
-    public static final int material_blue_grey_950=0x7f0600f3;
-    public static final int material_deep_teal_200=0x7f0600f4;
-    public static final int material_deep_teal_500=0x7f0600f5;
-    public static final int material_grey_100=0x7f0600f6;
-    public static final int material_grey_300=0x7f0600f7;
-    public static final int material_grey_50=0x7f0600f8;
-    public static final int material_grey_600=0x7f0600f9;
-    public static final int material_grey_800=0x7f0600fa;
-    public static final int material_grey_850=0x7f0600fb;
-    public static final int material_grey_900=0x7f0600fc;
-    public static final int medium_green=0x7f0600fd;
-    public static final int medium_grey=0x7f0600fe;
-    public static final int mediumaquamarine=0x7f0600ff;
-    public static final int mediumblue=0x7f060100;
-    public static final int mediumorchid=0x7f060101;
-    public static final int mediumpurple=0x7f060102;
-    public static final int mediumseagreen=0x7f060103;
-    public static final int mediumslateblue=0x7f060104;
-    public static final int mediumspringgreen=0x7f060105;
-    public static final int mediumturquoise=0x7f060106;
-    public static final int mediumvioletred=0x7f060107;
-    public static final int midnightblue=0x7f060108;
-    public static final int mintcream=0x7f060109;
-    public static final int mistyrose=0x7f06010a;
-    public static final int moccasin=0x7f06010b;
-    public static final int msg_chat_bg=0x7f06010c;
-    public static final int msg_emote_divider=0x7f06010d;
-    public static final int navajowhite=0x7f06010e;
-    public static final int navigationBarColor=0x7f06010f;
-    public static final int navigation_entry_color=0x7f060110;
-    public static final int navy=0x7f060111;
-    public static final int notification_action_color_filter=0x7f060112;
-    public static final int notification_icon_bg_color=0x7f060113;
-    public static final int notification_material_background_media_default_color=0x7f060114;
-    public static final int oldlace=0x7f060115;
-    public static final int olive=0x7f060116;
-    public static final int olivedrab=0x7f060117;
-    public static final int opaque_white=0x7f060118;
-    public static final int orange=0x7f060119;
-    public static final int orangered=0x7f06011a;
-    public static final int orchid=0x7f06011b;
-    public static final int overlay=0x7f06011c;
-    public static final int palegoldenrod=0x7f06011d;
-    public static final int palegreen=0x7f06011e;
-    public static final int paleturquoise=0x7f06011f;
-    public static final int palevioletred=0x7f060120;
-    public static final int papayawhip=0x7f060121;
-    public static final int paramAltRow=0x7f060122;
-    public static final int peachpuff=0x7f060123;
-    public static final int peru=0x7f060124;
-    public static final int pink=0x7f060125;
-    public static final int plum=0x7f060126;
-    public static final int powderblue=0x7f060127;
-    public static final int primary_dark_material_dark=0x7f060128;
-    public static final int primary_dark_material_light=0x7f060129;
-    public static final int primary_material_dark=0x7f06012a;
-    public static final int primary_material_light=0x7f06012b;
-    public static final int primary_text_default_material_dark=0x7f06012c;
-    public static final int primary_text_default_material_light=0x7f06012d;
-    public static final int primary_text_disabled_material_dark=0x7f06012e;
-    public static final int primary_text_disabled_material_light=0x7f06012f;
-    public static final int pull_refresh_textview=0x7f060130;
-    public static final int purple=0x7f060131;
-    public static final int radioButton=0x7f060132;
-    public static final int radio_button_selected_color=0x7f060133;
-    public static final int radio_button_unselected_color=0x7f060134;
-    public static final int red=0x7f060135;
-    public static final int reset_check=0x7f060136;
-    public static final int reset_normal=0x7f060137;
-    public static final int ripple_material_dark=0x7f060138;
-    public static final int ripple_material_light=0x7f060139;
-    public static final int rosybrown=0x7f06013a;
-    public static final int royalblue=0x7f06013b;
-    public static final int saddlebrown=0x7f06013c;
-    public static final int salmon=0x7f06013d;
-    public static final int sandybrown=0x7f06013e;
-    public static final int seagreen=0x7f06013f;
-    public static final int seashell=0x7f060140;
-    public static final int secondary_text_default_material_dark=0x7f060141;
-    public static final int secondary_text_default_material_light=0x7f060142;
-    public static final int secondary_text_disabled_material_dark=0x7f060143;
-    public static final int secondary_text_disabled_material_light=0x7f060144;
-    public static final int select_color=0x7f060145;
-    public static final int setting_blue=0x7f060146;
-    public static final int setting_line_color=0x7f060147;
-    public static final int setting_text_color=0x7f060148;
-    public static final int setting_white=0x7f060149;
-    public static final int shadowColor=0x7f06014a;
-    public static final int sienna=0x7f06014b;
-    public static final int silver=0x7f06014c;
-    public static final int skyblue=0x7f06014d;
-    public static final int slateblue=0x7f06014e;
-    public static final int slategray=0x7f06014f;
-    public static final int slategrey=0x7f060150;
-    public static final int snow=0x7f060151;
-    public static final int springgreen=0x7f060152;
-    public static final int stat_notify_connected=0x7f060153;
-    public static final int steelblue=0x7f060154;
-    public static final int switch_thumb_disabled_material_dark=0x7f060155;
-    public static final int switch_thumb_disabled_material_light=0x7f060156;
-    public static final int switch_thumb_material_dark=0x7f060157;
-    public static final int switch_thumb_material_light=0x7f060158;
-    public static final int switch_thumb_normal_material_dark=0x7f060159;
-    public static final int switch_thumb_normal_material_light=0x7f06015a;
-    public static final int tan=0x7f06015b;
-    public static final int teal=0x7f06015c;
-    public static final int text_color=0x7f06015d;
-    public static final int text_gray=0x7f06015e;
-    public static final int theme_bg_color=0x7f06015f;
-    public static final int theme_bg_color1=0x7f060160;
-    public static final int thistle=0x7f060161;
-    public static final int tomato=0x7f060162;
-    public static final int tooltip_background_dark=0x7f060163;
-    public static final int tooltip_background_light=0x7f060164;
-    public static final int transparent=0x7f060165;
-    public static final int transparent_background=0x7f060166;
-    public static final int transparent_black_80=0x7f060167;
-    public static final int transparent_light=0x7f060168;
-    public static final int transparent_light_grey=0x7f060169;
-    public static final int turquoise=0x7f06016a;
-    public static final int very_dark_grey=0x7f06016b;
-    public static final int violet=0x7f06016c;
-    public static final int vpi__background_holo_dark=0x7f06016d;
-    public static final int vpi__background_holo_light=0x7f06016e;
-    public static final int vpi__bright_foreground_disabled_holo_light=0x7f06016f;
-    public static final int vpi__bright_foreground_holo_dark=0x7f060170;
-    public static final int vpi__bright_foreground_holo_light=0x7f060171;
-    public static final int wel_button_background_theme_dark=0x7f060172;
-    public static final int wel_button_background_theme_light=0x7f060173;
-    public static final int wel_button_bar_background_dark=0x7f060174;
-    public static final int wel_button_bar_background_light=0x7f060175;
-    public static final int wel_default_background_color=0x7f060176;
-    public static final int wel_divider_color_theme_dark=0x7f060177;
-    public static final int wel_divider_color_theme_light=0x7f060178;
-    public static final int wel_indicator_color_primary_theme_dark=0x7f060179;
-    public static final int wel_indicator_color_primary_theme_light=0x7f06017a;
-    public static final int wel_indicator_color_secondary_theme_dark=0x7f06017b;
-    public static final int wel_indicator_color_secondary_theme_light=0x7f06017c;
-    public static final int wel_overscroll_color_theme_dark=0x7f06017d;
-    public static final int wel_overscroll_color_theme_light=0x7f06017e;
-    public static final int wel_text_primary_theme_dark=0x7f06017f;
-    public static final int wel_text_primary_theme_light=0x7f060180;
-    public static final int wel_transparent=0x7f060181;
-    public static final int wel_white=0x7f060182;
-    public static final int wheat=0x7f060183;
-    public static final int white=0x7f060184;
-    public static final int white_grey=0x7f060185;
-    public static final int white_smoke=0x7f060186;
-    public static final int yellow=0x7f060187;
+    public static final int Blue=0x7f060000;
+    public static final int Green=0x7f060001;
+    public static final int Orange=0x7f060002;
+    public static final int Yellow=0x7f060003;
+    public static final int abc_background_cache_hint_selector_material_dark=0x7f060004;
+    public static final int abc_background_cache_hint_selector_material_light=0x7f060005;
+    public static final int abc_btn_colored_borderless_text_material=0x7f060006;
+    public static final int abc_btn_colored_text_material=0x7f060007;
+    public static final int abc_color_highlight_material=0x7f060008;
+    public static final int abc_hint_foreground_material_dark=0x7f060009;
+    public static final int abc_hint_foreground_material_light=0x7f06000a;
+    public static final int abc_input_method_navigation_guard=0x7f06000b;
+    public static final int abc_primary_text_disable_only_material_dark=0x7f06000c;
+    public static final int abc_primary_text_disable_only_material_light=0x7f06000d;
+    public static final int abc_primary_text_material_dark=0x7f06000e;
+    public static final int abc_primary_text_material_light=0x7f06000f;
+    public static final int abc_search_url_text=0x7f060010;
+    public static final int abc_search_url_text_normal=0x7f060011;
+    public static final int abc_search_url_text_pressed=0x7f060012;
+    public static final int abc_search_url_text_selected=0x7f060013;
+    public static final int abc_secondary_text_material_dark=0x7f060014;
+    public static final int abc_secondary_text_material_light=0x7f060015;
+    public static final int abc_tint_btn_checkable=0x7f060016;
+    public static final int abc_tint_default=0x7f060017;
+    public static final int abc_tint_edittext=0x7f060018;
+    public static final int abc_tint_seek_thumb=0x7f060019;
+    public static final int abc_tint_spinner=0x7f06001a;
+    public static final int abc_tint_switch_track=0x7f06001b;
+    public static final int accent_material_dark=0x7f06001c;
+    public static final int accent_material_light=0x7f06001d;
+    public static final int air_speed_label=0x7f06001e;
+    public static final int alice_blue=0x7f06001f;
+    public static final int altitude_label=0x7f060020;
+    public static final int antiquewhite=0x7f060021;
+    public static final int aqua=0x7f060022;
+    public static final int aquamarine=0x7f060023;
+    public static final int azure=0x7f060024;
+    public static final int background_color=0x7f060025;
+    public static final int background_floating_material_dark=0x7f060026;
+    public static final int background_floating_material_light=0x7f060027;
+    public static final int background_material_dark=0x7f060028;
+    public static final int background_material_light=0x7f060029;
+    public static final int base_action_bar_title_color=0x7f06002a;
+    public static final int base_actionbar_bg=0x7f06002b;
+    public static final int base_bg=0x7f06002c;
+    public static final int base_color_text_black=0x7f06002d;
+    public static final int base_color_text_gray=0x7f06002e;
+    public static final int base_color_text_white=0x7f06002f;
+    public static final int base_menu_left_bg=0x7f060030;
+    public static final int base_tab_indicator_text_color=0x7f060031;
+    public static final int beige=0x7f060032;
+    public static final int bg_btn_normal_color=0x7f060033;
+    public static final int bg_btn_press_color=0x7f060034;
+    public static final int bga_adapter_divider=0x7f060035;
+    public static final int bga_adapter_empty_view_msg_textColor=0x7f060036;
+    public static final int bga_adapter_item_pressed=0x7f060037;
+    public static final int bga_adapter_line=0x7f060038;
+    public static final int bga_pp_activity_bg=0x7f060039;
+    public static final int bga_pp_btn_confirm_disabled=0x7f06003a;
+    public static final int bga_pp_btn_confirm_enabled=0x7f06003b;
+    public static final int bga_pp_btn_confirm_pressed=0x7f06003c;
+    public static final int bga_pp_colorPrimary=0x7f06003d;
+    public static final int bga_pp_colorPrimaryDark=0x7f06003e;
+    public static final int bga_pp_common_textColor=0x7f06003f;
+    public static final int bga_pp_folder_count_textColor=0x7f060040;
+    public static final int bga_pp_folder_name_textColor=0x7f060041;
+    public static final int bga_pp_loading_progress_centerColor=0x7f060042;
+    public static final int bga_pp_loading_progress_endColor=0x7f060043;
+    public static final int bga_pp_loading_progress_startColor=0x7f060044;
+    public static final int bga_pp_navigationBarColor=0x7f060045;
+    public static final int bga_pp_photo_item_bg=0x7f060046;
+    public static final int bga_pp_photo_selected_mask=0x7f060047;
+    public static final int bga_pp_preview_bottom_bg=0x7f060048;
+    public static final int bga_pp_take_photo_textColor=0x7f060049;
+    public static final int bisque=0x7f06004a;
+    public static final int black=0x7f06004b;
+    public static final int blanchedalmond=0x7f06004c;
+    public static final int blue=0x7f06004d;
+    public static final int blueviolet=0x7f06004e;
+    public static final int bottom_top_bar=0x7f06004f;
+    public static final int bright_foreground_disabled_material_dark=0x7f060050;
+    public static final int bright_foreground_disabled_material_light=0x7f060051;
+    public static final int bright_foreground_inverse_material_dark=0x7f060052;
+    public static final int bright_foreground_inverse_material_light=0x7f060053;
+    public static final int bright_foreground_material_dark=0x7f060054;
+    public static final int bright_foreground_material_light=0x7f060055;
+    public static final int brown=0x7f060056;
+    public static final int burlywood=0x7f060057;
+    public static final int buttonColor=0x7f060058;
+    public static final int button_material_dark=0x7f060059;
+    public static final int button_material_light=0x7f06005a;
+    public static final int c_f98800=0x7f06005b;
+    public static final int cadetblue=0x7f06005c;
+    public static final int cardview_dark_background=0x7f06005d;
+    public static final int cardview_light_background=0x7f06005e;
+    public static final int cardview_shadow_end_color=0x7f06005f;
+    public static final int cardview_shadow_start_color=0x7f060060;
+    public static final int charcoal=0x7f060061;
+    public static final int chartreuse=0x7f060062;
+    public static final int chocolate=0x7f060063;
+    public static final int climb_rate_label=0x7f060064;
+    public static final int colorAccent=0x7f060065;
+    public static final int colorPrimary=0x7f060066;
+    public static final int colorPrimaryDark=0x7f060067;
+    public static final int colorPrimaryDarkTrans=0x7f060068;
+    public static final int color_bottom_bg=0x7f060069;
+    public static final int color_bottom_text_normal=0x7f06006a;
+    public static final int color_bottom_text_press=0x7f06006b;
+    public static final int color_half_transparent=0x7f06006c;
+    public static final int color_theme=0x7f06006d;
+    public static final int color_transparent_bg=0x7f06006e;
+    public static final int color_transparent_bg1=0x7f06006f;
+    public static final int common_bg=0x7f060070;
+    public static final int coral=0x7f060071;
+    public static final int cornflowerblue=0x7f060072;
+    public static final int cornsilk=0x7f060073;
+    public static final int crimson=0x7f060074;
+    public static final int cyan=0x7f060075;
+    public static final int dark_grey=0x7f060076;
+    public static final int dark_title_bg=0x7f060077;
+    public static final int darkblue=0x7f060078;
+    public static final int darkcyan=0x7f060079;
+    public static final int darkgoldenrod=0x7f06007a;
+    public static final int darkgray=0x7f06007b;
+    public static final int darkgreen=0x7f06007c;
+    public static final int darkgrey=0x7f06007d;
+    public static final int darkkhaki=0x7f06007e;
+    public static final int darkmagenta=0x7f06007f;
+    public static final int darkolivegreen=0x7f060080;
+    public static final int darkorange=0x7f060081;
+    public static final int darkorchid=0x7f060082;
+    public static final int darkred=0x7f060083;
+    public static final int darksalmon=0x7f060084;
+    public static final int darkseagreen=0x7f060085;
+    public static final int darkslateblue=0x7f060086;
+    public static final int darkslategray=0x7f060087;
+    public static final int darkslategrey=0x7f060088;
+    public static final int darkturquoise=0x7f060089;
+    public static final int darkviolet=0x7f06008a;
+    public static final int deeppink=0x7f06008b;
+    public static final int deepskyblue=0x7f06008c;
+    public static final int design_bottom_navigation_shadow_color=0x7f06008d;
+    public static final int design_error=0x7f06008e;
+    public static final int design_fab_shadow_end_color=0x7f06008f;
+    public static final int design_fab_shadow_mid_color=0x7f060090;
+    public static final int design_fab_shadow_start_color=0x7f060091;
+    public static final int design_fab_stroke_end_inner_color=0x7f060092;
+    public static final int design_fab_stroke_end_outer_color=0x7f060093;
+    public static final int design_fab_stroke_top_inner_color=0x7f060094;
+    public static final int design_fab_stroke_top_outer_color=0x7f060095;
+    public static final int design_snackbar_background_color=0x7f060096;
+    public static final int design_tint_password_toggle=0x7f060097;
+    public static final int dialog_color_title=0x7f060098;
+    public static final int dim_foreground_disabled_material_dark=0x7f060099;
+    public static final int dim_foreground_disabled_material_light=0x7f06009a;
+    public static final int dim_foreground_material_dark=0x7f06009b;
+    public static final int dim_foreground_material_light=0x7f06009c;
+    public static final int dimgray=0x7f06009d;
+    public static final int dimgrey=0x7f06009e;
+    public static final int dodgerblue=0x7f06009f;
+    public static final int down_fragment_alpha=0x7f0600a0;
+    public static final int editor_bar=0x7f0600a1;
+    public static final int error_color_material=0x7f0600a2;
+    public static final int fbutton_color_alizarin=0x7f0600a3;
+    public static final int fbutton_color_amethyst=0x7f0600a4;
+    public static final int fbutton_color_asbestos=0x7f0600a5;
+    public static final int fbutton_color_belize_hole=0x7f0600a6;
+    public static final int fbutton_color_carrot=0x7f0600a7;
+    public static final int fbutton_color_clouds=0x7f0600a8;
+    public static final int fbutton_color_concrete=0x7f0600a9;
+    public static final int fbutton_color_emerald=0x7f0600aa;
+    public static final int fbutton_color_green_sea=0x7f0600ab;
+    public static final int fbutton_color_midnight_blue=0x7f0600ac;
+    public static final int fbutton_color_nephritis=0x7f0600ad;
+    public static final int fbutton_color_orange=0x7f0600ae;
+    public static final int fbutton_color_peter_river=0x7f0600af;
+    public static final int fbutton_color_pomegranate=0x7f0600b0;
+    public static final int fbutton_color_pumpkin=0x7f0600b1;
+    public static final int fbutton_color_silver=0x7f0600b2;
+    public static final int fbutton_color_sun_flower=0x7f0600b3;
+    public static final int fbutton_color_transparent=0x7f0600b4;
+    public static final int fbutton_color_turquoise=0x7f0600b5;
+    public static final int fbutton_color_wet_asphalt=0x7f0600b6;
+    public static final int fbutton_color_wisteria=0x7f0600b7;
+    public static final int fbutton_default_color=0x7f0600b8;
+    public static final int fbutton_default_shadow_color=0x7f0600b9;
+    public static final int firebrick=0x7f0600ba;
+    public static final int floral_white=0x7f0600bb;
+    public static final int foreground_material_dark=0x7f0600bc;
+    public static final int foreground_material_light=0x7f0600bd;
+    public static final int forestgreen=0x7f0600be;
+    public static final int fuchsia=0x7f0600bf;
+    public static final int gainsboro=0x7f0600c0;
+    public static final int ghostwhite=0x7f0600c1;
+    public static final int gold=0x7f0600c2;
+    public static final int goldenrod=0x7f0600c3;
+    public static final int gray=0x7f0600c4;
+    public static final int green=0x7f0600c5;
+    public static final int greenyellow=0x7f0600c6;
+    public static final int grey700=0x7f0600c7;
+    public static final int greyText=0x7f0600c8;
+    public static final int ground_speed_label=0x7f0600c9;
+    public static final int guide_color=0x7f0600ca;
+    public static final int highlighted_text_material_dark=0x7f0600cb;
+    public static final int highlighted_text_material_light=0x7f0600cc;
+    public static final int home_item_color_bg=0x7f0600cd;
+    public static final int honeydew=0x7f0600ce;
+    public static final int hotpink=0x7f0600cf;
+    public static final int indianred=0x7f0600d0;
+    public static final int indigo=0x7f0600d1;
+    public static final int ivory=0x7f0600d2;
+    public static final int khaki=0x7f0600d3;
+    public static final int lavender=0x7f0600d4;
+    public static final int lavenderblush=0x7f0600d5;
+    public static final int lawngreen=0x7f0600d6;
+    public static final int layout_bg_color=0x7f0600d7;
+    public static final int lemon_chiffon=0x7f0600d8;
+    public static final int light_green=0x7f0600d9;
+    public static final int light_grey=0x7f0600da;
+    public static final int light_title_bg=0x7f0600db;
+    public static final int light_yellow=0x7f0600dc;
+    public static final int lightblue=0x7f0600dd;
+    public static final int lightcoral=0x7f0600de;
+    public static final int lightcyan=0x7f0600df;
+    public static final int lightgoldenrodyellow=0x7f0600e0;
+    public static final int lightgray=0x7f0600e1;
+    public static final int lightgreen=0x7f0600e2;
+    public static final int lightgrey=0x7f0600e3;
+    public static final int lightpink=0x7f0600e4;
+    public static final int lightsalmon=0x7f0600e5;
+    public static final int lightseagreen=0x7f0600e6;
+    public static final int lightskyblue=0x7f0600e7;
+    public static final int lightslategray=0x7f0600e8;
+    public static final int lightslategrey=0x7f0600e9;
+    public static final int lightsteelblue=0x7f0600ea;
+    public static final int lime=0x7f0600eb;
+    public static final int limegreen=0x7f0600ec;
+    public static final int line=0x7f0600ed;
+    public static final int line_bg=0x7f0600ee;
+    public static final int linen=0x7f0600ef;
+    public static final int magenta=0x7f0600f0;
+    public static final int main_bg_color=0x7f0600f1;
+    public static final int main_font_color=0x7f0600f2;
+    public static final int marker_color=0x7f0600f3;
+    public static final int maroon=0x7f0600f4;
+    public static final int material_blue_grey_800=0x7f0600f5;
+    public static final int material_blue_grey_900=0x7f0600f6;
+    public static final int material_blue_grey_950=0x7f0600f7;
+    public static final int material_deep_teal_200=0x7f0600f8;
+    public static final int material_deep_teal_500=0x7f0600f9;
+    public static final int material_grey_100=0x7f0600fa;
+    public static final int material_grey_300=0x7f0600fb;
+    public static final int material_grey_50=0x7f0600fc;
+    public static final int material_grey_600=0x7f0600fd;
+    public static final int material_grey_800=0x7f0600fe;
+    public static final int material_grey_850=0x7f0600ff;
+    public static final int material_grey_900=0x7f060100;
+    public static final int medium_green=0x7f060101;
+    public static final int medium_grey=0x7f060102;
+    public static final int mediumaquamarine=0x7f060103;
+    public static final int mediumblue=0x7f060104;
+    public static final int mediumorchid=0x7f060105;
+    public static final int mediumpurple=0x7f060106;
+    public static final int mediumseagreen=0x7f060107;
+    public static final int mediumslateblue=0x7f060108;
+    public static final int mediumspringgreen=0x7f060109;
+    public static final int mediumturquoise=0x7f06010a;
+    public static final int mediumvioletred=0x7f06010b;
+    public static final int midnightblue=0x7f06010c;
+    public static final int mintcream=0x7f06010d;
+    public static final int mistyrose=0x7f06010e;
+    public static final int moccasin=0x7f06010f;
+    public static final int msg_chat_bg=0x7f060110;
+    public static final int msg_emote_divider=0x7f060111;
+    public static final int navajowhite=0x7f060112;
+    public static final int navigationBarColor=0x7f060113;
+    public static final int navigation_entry_color=0x7f060114;
+    public static final int navy=0x7f060115;
+    public static final int notification_action_color_filter=0x7f060116;
+    public static final int notification_icon_bg_color=0x7f060117;
+    public static final int notification_material_background_media_default_color=0x7f060118;
+    public static final int oldlace=0x7f060119;
+    public static final int olive=0x7f06011a;
+    public static final int olivedrab=0x7f06011b;
+    public static final int opaque_white=0x7f06011c;
+    public static final int orange=0x7f06011d;
+    public static final int orangered=0x7f06011e;
+    public static final int orchid=0x7f06011f;
+    public static final int overlay=0x7f060120;
+    public static final int palegoldenrod=0x7f060121;
+    public static final int palegreen=0x7f060122;
+    public static final int paleturquoise=0x7f060123;
+    public static final int palevioletred=0x7f060124;
+    public static final int papayawhip=0x7f060125;
+    public static final int paramAltRow=0x7f060126;
+    public static final int peachpuff=0x7f060127;
+    public static final int peru=0x7f060128;
+    public static final int pink=0x7f060129;
+    public static final int plum=0x7f06012a;
+    public static final int powderblue=0x7f06012b;
+    public static final int primary_dark_material_dark=0x7f06012c;
+    public static final int primary_dark_material_light=0x7f06012d;
+    public static final int primary_material_dark=0x7f06012e;
+    public static final int primary_material_light=0x7f06012f;
+    public static final int primary_text_default_material_dark=0x7f060130;
+    public static final int primary_text_default_material_light=0x7f060131;
+    public static final int primary_text_disabled_material_dark=0x7f060132;
+    public static final int primary_text_disabled_material_light=0x7f060133;
+    public static final int pull_refresh_textview=0x7f060134;
+    public static final int purple=0x7f060135;
+    public static final int radioButton=0x7f060136;
+    public static final int radio_button_selected_color=0x7f060137;
+    public static final int radio_button_unselected_color=0x7f060138;
+    public static final int red=0x7f060139;
+    public static final int reset_check=0x7f06013a;
+    public static final int reset_normal=0x7f06013b;
+    public static final int ripple_material_dark=0x7f06013c;
+    public static final int ripple_material_light=0x7f06013d;
+    public static final int rosybrown=0x7f06013e;
+    public static final int royalblue=0x7f06013f;
+    public static final int saddlebrown=0x7f060140;
+    public static final int salmon=0x7f060141;
+    public static final int sandybrown=0x7f060142;
+    public static final int seagreen=0x7f060143;
+    public static final int seashell=0x7f060144;
+    public static final int secondary_text_default_material_dark=0x7f060145;
+    public static final int secondary_text_default_material_light=0x7f060146;
+    public static final int secondary_text_disabled_material_dark=0x7f060147;
+    public static final int secondary_text_disabled_material_light=0x7f060148;
+    public static final int select_color=0x7f060149;
+    public static final int setting_blue=0x7f06014a;
+    public static final int setting_line_color=0x7f06014b;
+    public static final int setting_text_color=0x7f06014c;
+    public static final int setting_white=0x7f06014d;
+    public static final int shadowColor=0x7f06014e;
+    public static final int sienna=0x7f06014f;
+    public static final int silver=0x7f060150;
+    public static final int skyblue=0x7f060151;
+    public static final int slateblue=0x7f060152;
+    public static final int slategray=0x7f060153;
+    public static final int slategrey=0x7f060154;
+    public static final int snow=0x7f060155;
+    public static final int springgreen=0x7f060156;
+    public static final int stat_notify_connected=0x7f060157;
+    public static final int steelblue=0x7f060158;
+    public static final int switch_thumb_disabled_material_dark=0x7f060159;
+    public static final int switch_thumb_disabled_material_light=0x7f06015a;
+    public static final int switch_thumb_material_dark=0x7f06015b;
+    public static final int switch_thumb_material_light=0x7f06015c;
+    public static final int switch_thumb_normal_material_dark=0x7f06015d;
+    public static final int switch_thumb_normal_material_light=0x7f06015e;
+    public static final int tan=0x7f06015f;
+    public static final int teal=0x7f060160;
+    public static final int text_color=0x7f060161;
+    public static final int text_gray=0x7f060162;
+    public static final int theme_bg_color=0x7f060163;
+    public static final int theme_bg_color1=0x7f060164;
+    public static final int thistle=0x7f060165;
+    public static final int tomato=0x7f060166;
+    public static final int tooltip_background_dark=0x7f060167;
+    public static final int tooltip_background_light=0x7f060168;
+    public static final int transparent=0x7f060169;
+    public static final int transparent_background=0x7f06016a;
+    public static final int transparent_black_80=0x7f06016b;
+    public static final int transparent_light=0x7f06016c;
+    public static final int transparent_light_grey=0x7f06016d;
+    public static final int turquoise=0x7f06016e;
+    public static final int very_dark_grey=0x7f06016f;
+    public static final int violet=0x7f060170;
+    public static final int vpi__background_holo_dark=0x7f060171;
+    public static final int vpi__background_holo_light=0x7f060172;
+    public static final int vpi__bright_foreground_disabled_holo_light=0x7f060173;
+    public static final int vpi__bright_foreground_holo_dark=0x7f060174;
+    public static final int vpi__bright_foreground_holo_light=0x7f060175;
+    public static final int wel_button_background_theme_dark=0x7f060176;
+    public static final int wel_button_background_theme_light=0x7f060177;
+    public static final int wel_button_bar_background_dark=0x7f060178;
+    public static final int wel_button_bar_background_light=0x7f060179;
+    public static final int wel_default_background_color=0x7f06017a;
+    public static final int wel_divider_color_theme_dark=0x7f06017b;
+    public static final int wel_divider_color_theme_light=0x7f06017c;
+    public static final int wel_indicator_color_primary_theme_dark=0x7f06017d;
+    public static final int wel_indicator_color_primary_theme_light=0x7f06017e;
+    public static final int wel_indicator_color_secondary_theme_dark=0x7f06017f;
+    public static final int wel_indicator_color_secondary_theme_light=0x7f060180;
+    public static final int wel_overscroll_color_theme_dark=0x7f060181;
+    public static final int wel_overscroll_color_theme_light=0x7f060182;
+    public static final int wel_text_primary_theme_dark=0x7f060183;
+    public static final int wel_text_primary_theme_light=0x7f060184;
+    public static final int wel_transparent=0x7f060185;
+    public static final int wel_white=0x7f060186;
+    public static final int wheat=0x7f060187;
+    public static final int white=0x7f060188;
+    public static final int white_grey=0x7f060189;
+    public static final int white_smoke=0x7f06018a;
+    public static final int yellow=0x7f06018b;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f070000;
@@ -4857,25 +4972,26 @@ public final class R {
     public static final int textSize_20=0x7f070101;
     public static final int textSize_22=0x7f070102;
     public static final int textSize_24=0x7f070103;
-    public static final int text_size_large=0x7f070104;
-    public static final int toolbar_min_height=0x7f070105;
-    public static final int tooltip_corner_radius=0x7f070106;
-    public static final int tooltip_horizontal_padding=0x7f070107;
-    public static final int tooltip_margin=0x7f070108;
-    public static final int tooltip_precise_anchor_extra_offset=0x7f070109;
-    public static final int tooltip_precise_anchor_threshold=0x7f07010a;
-    public static final int tooltip_vertical_padding=0x7f07010b;
-    public static final int tooltip_y_offset_non_touch=0x7f07010c;
-    public static final int tooltip_y_offset_touch=0x7f07010d;
-    public static final int wel_activity_horizontal_margin=0x7f07010e;
-    public static final int wel_activity_vertical_margin=0x7f07010f;
-    public static final int wel_flat_button_horizontal_margin=0x7f070110;
-    public static final int wel_flat_button_vertical_margin=0x7f070111;
-    public static final int wel_text_bottom_padding=0x7f070112;
-    public static final int wel_text_horizontal_margin=0x7f070113;
-    public static final int wel_text_top_padding=0x7f070114;
-    public static final int wel_title_bottom_margin=0x7f070115;
-    public static final int wel_title_text_size=0x7f070116;
+    public static final int text_margin=0x7f070104;
+    public static final int text_size_large=0x7f070105;
+    public static final int toolbar_min_height=0x7f070106;
+    public static final int tooltip_corner_radius=0x7f070107;
+    public static final int tooltip_horizontal_padding=0x7f070108;
+    public static final int tooltip_margin=0x7f070109;
+    public static final int tooltip_precise_anchor_extra_offset=0x7f07010a;
+    public static final int tooltip_precise_anchor_threshold=0x7f07010b;
+    public static final int tooltip_vertical_padding=0x7f07010c;
+    public static final int tooltip_y_offset_non_touch=0x7f07010d;
+    public static final int tooltip_y_offset_touch=0x7f07010e;
+    public static final int wel_activity_horizontal_margin=0x7f07010f;
+    public static final int wel_activity_vertical_margin=0x7f070110;
+    public static final int wel_flat_button_horizontal_margin=0x7f070111;
+    public static final int wel_flat_button_vertical_margin=0x7f070112;
+    public static final int wel_text_bottom_padding=0x7f070113;
+    public static final int wel_text_horizontal_margin=0x7f070114;
+    public static final int wel_text_top_padding=0x7f070115;
+    public static final int wel_title_bottom_margin=0x7f070116;
+    public static final int wel_title_text_size=0x7f070117;
   }
   public static final class drawable {
     public static final int abc_ab_share_pack_mtrl_alpha=0x7f080006;
@@ -4965,240 +5081,243 @@ public final class R {
     public static final int about_mid_bg=0x7f08005a;
     public static final int about_top_bg=0x7f08005b;
     public static final int abs__tab_unselected_pressed_holo=0x7f08005c;
-    public static final int arrow=0x7f08005d;
-    public static final int avd_hide_password=0x7f08005e;
-    public static final int avd_show_password=0x7f08005f;
-    public static final int back_icon_selector=0x7f080060;
-    public static final int base_edit_input=0x7f080061;
-    public static final int base_horization_line=0x7f080062;
-    public static final int base_horizontal_line=0x7f080063;
-    public static final int base_horizontal_line_red=0x7f080064;
-    public static final int bear=0x7f080065;
-    public static final int bg=0x7f080066;
-    public static final int bg_border_color_white=0x7f080067;
-    public static final int bg_btn_normal_color=0x7f080068;
-    public static final int bg_btn_normal_color_1=0x7f080069;
-    public static final int bg_btn_press_color_1=0x7f08006a;
-    public static final int bg_btn_press_selector_1=0x7f08006b;
-    public static final int bga_baseadapter_divider_shape=0x7f08006c;
-    public static final int bga_baseadapter_white_gray=0x7f08006d;
-    public static final int bga_pp_rotate_progress_bar=0x7f08006e;
-    public static final int bga_pp_selector_btn_confirm=0x7f08006f;
-    public static final int bga_pp_selector_item_folder=0x7f080070;
-    public static final int bga_pp_shape_dialog_bg=0x7f080071;
-    public static final int bga_pp_shape_photo_folder_pw_bg=0x7f080072;
-    public static final int bluebg=0x7f080073;
-    public static final int bmob_update_btn_check_off_focused_holo_light=0x7f080074;
-    public static final int bmob_update_btn_check_off_holo_light=0x7f080075;
-    public static final int bmob_update_btn_check_off_pressed_holo_light=0x7f080076;
-    public static final int bmob_update_btn_check_on_focused_holo_light=0x7f080077;
-    public static final int bmob_update_btn_check_on_holo_light=0x7f080078;
-    public static final int bmob_update_btn_check_on_pressed_holo_light=0x7f080079;
-    public static final int bmob_update_button_cancel_bg_focused=0x7f08007a;
-    public static final int bmob_update_button_cancel_bg_normal=0x7f08007b;
-    public static final int bmob_update_button_cancel_bg_selector=0x7f08007c;
-    public static final int bmob_update_button_cancel_bg_tap=0x7f08007d;
-    public static final int bmob_update_button_check_selector=0x7f08007e;
-    public static final int bmob_update_button_close_bg_selector=0x7f08007f;
-    public static final int bmob_update_button_ok_bg_focused=0x7f080080;
-    public static final int bmob_update_button_ok_bg_normal=0x7f080081;
-    public static final int bmob_update_button_ok_bg_selector=0x7f080082;
-    public static final int bmob_update_button_ok_bg_tap=0x7f080083;
-    public static final int bmob_update_close_bg_normal=0x7f080084;
-    public static final int bmob_update_close_bg_tap=0x7f080085;
-    public static final int bmob_update_dialog_bg=0x7f080086;
-    public static final int bmob_update_wifi_disable=0x7f080087;
-    public static final int bnt_price=0x7f080088;
-    public static final int brvah_sample_footer_loading=0x7f080089;
-    public static final int brvah_sample_footer_loading_progress=0x7f08008a;
-    public static final int btn_grey_selector=0x7f08008b;
-    public static final int btn_login_n=0x7f08008c;
-    public static final int btn_login_p=0x7f08008d;
-    public static final int btn_login_selector=0x7f08008e;
-    public static final int btn_logout_n=0x7f08008f;
-    public static final int btn_logout_p=0x7f080090;
-    public static final int btn_logout_selector=0x7f080091;
-    public static final int button_markdown_hotkey_normal=0x7f080092;
-    public static final int button_markdown_hotkey_press=0x7f080093;
-    public static final int ccb_comm_bg0=0x7f080094;
-    public static final int cerect=0x7f080095;
-    public static final int cerectb=0x7f080096;
-    public static final int cherry=0x7f080097;
-    public static final int circle_bg=0x7f080098;
-    public static final int circle_bg2=0x7f080099;
-    public static final int circle_bg3=0x7f08009a;
-    public static final int circle_translucent=0x7f08009b;
-    public static final int cloud=0x7f08009c;
-    public static final int code=0x7f08009d;
-    public static final int default_head=0x7f08009e;
-    public static final int design_bottom_navigation_item_background=0x7f08009f;
-    public static final int design_fab_background=0x7f0800a0;
-    public static final int design_ic_visibility=0x7f0800a1;
-    public static final int design_ic_visibility_off=0x7f0800a2;
-    public static final int design_password_eye=0x7f0800a3;
-    public static final int design_snackbar_background=0x7f0800a4;
-    public static final int editor_button_bg=0x7f0800a5;
-    public static final int editor_trash_button_bg=0x7f0800a6;
-    public static final int err=0x7f0800a7;
-    public static final int errb=0x7f0800a8;
-    public static final int fish=0x7f0800a9;
-    public static final int five=0x7f0800aa;
-    public static final int flight_action_row_bg_selector=0x7f0800ab;
-    public static final int flower=0x7f0800ac;
-    public static final int gg=0x7f0800ad;
-    public static final int gourd=0x7f0800ae;
-    public static final int grade_button_normal=0x7f0800af;
-    public static final int grade_button_press=0x7f0800b0;
-    public static final int hippophaes=0x7f0800b1;
-    public static final int hjzgg=0x7f0800b2;
-    public static final int home_mbank_1_clicked=0x7f0800b3;
-    public static final int home_mbank_1_normal=0x7f0800b4;
-    public static final int home_mbank_2_clicked=0x7f0800b5;
-    public static final int home_mbank_2_normal=0x7f0800b6;
-    public static final int home_mbank_3_clicked=0x7f0800b7;
-    public static final int home_mbank_3_normal=0x7f0800b8;
-    public static final int home_mbank_4_clicked=0x7f0800b9;
-    public static final int home_mbank_4_normal=0x7f0800ba;
-    public static final int home_mbank_5_clicked=0x7f0800bb;
-    public static final int home_mbank_5_normal=0x7f0800bc;
-    public static final int home_mbank_6_clicked=0x7f0800bd;
-    public static final int home_mbank_6_normal=0x7f0800be;
-    public static final int home_mbank_7_clicked=0x7f0800bf;
-    public static final int home_mbank_7_normal=0x7f0800c0;
-    public static final int home_mbank_8_clicked=0x7f0800c1;
-    public static final int home_mbank_8_normal=0x7f0800c2;
-    public static final int ic_account_circle_white_36dp=0x7f0800c3;
-    public static final int ic_arrow_left=0x7f0800c4;
-    public static final int ic_cancel_transparent_2dp=0x7f0800c5;
-    public static final int ic_check_box_white_24dp=0x7f0800c6;
-    public static final int ic_chevron_right_black_48dp=0x7f0800c7;
-    public static final int ic_chevron_right_blue_48dp=0x7f0800c8;
-    public static final int ic_close_white_24dp=0x7f0800c9;
-    public static final int ic_done_black_24dp=0x7f0800ca;
-    public static final int ic_done_red_900_18dp=0x7f0800cb;
-    public static final int ic_file_download_black_24dp=0x7f0800cc;
-    public static final int ic_free_breakfast_black_24dp=0x7f0800cd;
-    public static final int ic_info_black_24dp=0x7f0800ce;
-    public static final int ic_launcher=0x7f0800cf;
-    public static final int ic_lock_white_36dp=0x7f0800d0;
-    public static final int ic_menu_camera=0x7f0800d1;
-    public static final int ic_menu_gallery=0x7f0800d2;
-    public static final int ic_menu_manage=0x7f0800d3;
-    public static final int ic_menu_send=0x7f0800d4;
-    public static final int ic_menu_share=0x7f0800d5;
-    public static final int ic_menu_slideshow=0x7f0800d6;
-    public static final int ic_menu_white_24dp=0x7f0800d7;
-    public static final int ic_notifications_black_24dp=0x7f0800d8;
-    public static final int ic_pages_black_24dp=0x7f0800d9;
-    public static final int ic_person_blue_a400_18dp=0x7f0800da;
-    public static final int ic_person_grey_700_18dp=0x7f0800db;
-    public static final int ic_person_pin_white_18dp=0x7f0800dc;
-    public static final int ic_photo_library_black_24dp=0x7f0800dd;
-    public static final int ic_portrait_black_24dp=0x7f0800de;
-    public static final int ic_rotate_left_black_24dp=0x7f0800df;
-    public static final int ic_rotate_right_black_24dp=0x7f0800e0;
-    public static final int ic_status_flight_time=0x7f0800e1;
-    public static final int ic_sync_black_24dp=0x7f0800e2;
-    public static final int ic_timer_black_24dp=0x7f0800e3;
-    public static final int ic_timer_white_24dp=0x7f0800e4;
-    public static final int index_bg_001=0x7f0800e5;
-    public static final int index_bg_002=0x7f0800e6;
-    public static final int index_bg_003=0x7f0800e7;
-    public static final int index_bg_004=0x7f0800e8;
-    public static final int index_bg_005=0x7f0800e9;
-    public static final int input_bg=0x7f0800ea;
-    public static final int input_checkbox=0x7f0800eb;
-    public static final int input_green_button=0x7f0800ec;
-    public static final int jjz2013=0x7f0800ed;
-    public static final int jjzk=0x7f0800ee;
-    public static final int launcher=0x7f0800ef;
-    public static final int login_account_box_white_36dp=0x7f0800f0;
-    public static final int login_button_bg=0x7f0800f1;
-    public static final int login_button_normal=0x7f0800f2;
-    public static final int login_button_press=0x7f0800f3;
-    public static final int login_button_shape=0x7f0800f4;
-    public static final int login_cell_white_36dp=0x7f0800f5;
-    public static final int login_edit_text_shape=0x7f0800f6;
-    public static final int login_lock_white_36dp=0x7f0800f7;
-    public static final int logo=0x7f0800f8;
-    public static final int look_grade=0x7f0800f9;
-    public static final int man=0x7f0800fa;
-    public static final int mask=0x7f0800fb;
-    public static final int navigation_empty_icon=0x7f0800fc;
-    public static final int nonk=0x7f0800fd;
-    public static final int notification_action_background=0x7f0800fe;
-    public static final int notification_bg=0x7f0800ff;
-    public static final int notification_bg_low=0x7f080100;
-    public static final int notification_bg_low_normal=0x7f080101;
-    public static final int notification_bg_low_pressed=0x7f080102;
-    public static final int notification_bg_normal=0x7f080103;
-    public static final int notification_bg_normal_pressed=0x7f080104;
-    public static final int notification_icon_background=0x7f080105;
-    public static final int notification_template_icon_bg=0x7f080106;
-    public static final int notification_template_icon_low_bg=0x7f080107;
-    public static final int notification_tile_bg=0x7f080108;
-    public static final int notify_panel_notification_icon_bg=0x7f080109;
-    public static final int person_selector=0x7f08010a;
-    public static final int pick_photo_checkbox_check=0x7f08010b;
-    public static final int pick_photo_checkbox_normal=0x7f08010c;
-    public static final int rain=0x7f08010d;
-    public static final int redocn=0x7f08010e;
-    public static final int reset_check=0x7f08010f;
-    public static final int reset_normal=0x7f080110;
-    public static final int reset_selector=0x7f080111;
-    public static final int reversal_left=0x7f080112;
-    public static final int reversal_up=0x7f080113;
-    public static final int rotate_left=0x7f080114;
-    public static final int rotate_right=0x7f080115;
-    public static final int sample1=0x7f080116;
-    public static final int seek_bar=0x7f080117;
-    public static final int seek_hollow=0x7f080118;
-    public static final int seek_solid=0x7f080119;
-    public static final int seek_thumb=0x7f08011a;
-    public static final int selector_gird=0x7f08011b;
-    public static final int selector_red_corners_button=0x7f08011c;
-    public static final int setting_arrow=0x7f08011d;
-    public static final int setting_bottom_layout_selector=0x7f08011e;
-    public static final int setting_bottom_select=0x7f08011f;
-    public static final int setting_bottom_unselect=0x7f080120;
-    public static final int setting_mid_layout_selector=0x7f080121;
-    public static final int setting_outer_shape=0x7f080122;
-    public static final int setting_single_layout_selector=0x7f080123;
-    public static final int setting_single_select=0x7f080124;
-    public static final int setting_single_unselect=0x7f080125;
-    public static final int setting_top_layout_selector=0x7f080126;
-    public static final int setting_top_select=0x7f080127;
-    public static final int setting_top_unselect=0x7f080128;
-    public static final int shape_button=0x7f080129;
-    public static final int shape_corner=0x7f08012a;
-    public static final int shape_corner_down=0x7f08012b;
-    public static final int shape_corner_up=0x7f08012c;
-    public static final int shape_no_corner=0x7f08012d;
-    public static final int shape_red_corners_button=0x7f08012e;
-    public static final int shape_red_corners_button_pressed=0x7f08012f;
-    public static final int side_nav_bar=0x7f080130;
-    public static final int sky=0x7f080131;
-    public static final int tab_bg_selector=0x7f080132;
-    public static final int textview_border=0x7f080133;
-    public static final int tooltip_frame_dark=0x7f080134;
-    public static final int tooltip_frame_light=0x7f080135;
-    public static final int turnplate_bg_left=0x7f080136;
-    public static final int turnplate_bg_right=0x7f080137;
-    public static final int turnplate_center_unlogin=0x7f080138;
-    public static final int turnplate_inner_icon=0x7f080139;
-    public static final int turnplate_mask_unlogin_normal=0x7f08013a;
-    public static final int unmask=0x7f08013b;
-    public static final int v_debug=0x7f08013c;
-    public static final int v_release=0x7f08013d;
-    public static final int wallpaper_selector=0x7f08013e;
-    public static final int wel_button_borderless_background=0x7f08013f;
-    public static final int wel_button_borderless_background_theme_light=0x7f080140;
-    public static final int wel_ic_chevron_left_white_24dp=0x7f080141;
-    public static final int wel_ic_chevron_right_white_24dp=0x7f080142;
-    public static final int wel_ic_done_black=0x7f080143;
-    public static final int wel_ic_done_white=0x7f080144;
-    public static final int xm_logo1=0x7f080145;
-    public static final int yule=0x7f080146;
+    public static final int anim_loading_view=0x7f08005d;
+    public static final int arrow=0x7f08005e;
+    public static final int avd_hide_password=0x7f08005f;
+    public static final int avd_show_password=0x7f080060;
+    public static final int back_icon_selector=0x7f080061;
+    public static final int base_edit_input=0x7f080062;
+    public static final int base_horization_line=0x7f080063;
+    public static final int base_horizontal_line=0x7f080064;
+    public static final int base_horizontal_line_red=0x7f080065;
+    public static final int bear=0x7f080066;
+    public static final int bg=0x7f080067;
+    public static final int bg_border_color_white=0x7f080068;
+    public static final int bg_btn_normal_color=0x7f080069;
+    public static final int bg_btn_normal_color_1=0x7f08006a;
+    public static final int bg_btn_press_color_1=0x7f08006b;
+    public static final int bg_btn_press_selector_1=0x7f08006c;
+    public static final int bga_baseadapter_divider_shape=0x7f08006d;
+    public static final int bga_baseadapter_white_gray=0x7f08006e;
+    public static final int bga_pp_rotate_progress_bar=0x7f08006f;
+    public static final int bga_pp_selector_btn_confirm=0x7f080070;
+    public static final int bga_pp_selector_item_folder=0x7f080071;
+    public static final int bga_pp_shape_dialog_bg=0x7f080072;
+    public static final int bga_pp_shape_photo_folder_pw_bg=0x7f080073;
+    public static final int bluebg=0x7f080074;
+    public static final int bmob_update_btn_check_off_focused_holo_light=0x7f080075;
+    public static final int bmob_update_btn_check_off_holo_light=0x7f080076;
+    public static final int bmob_update_btn_check_off_pressed_holo_light=0x7f080077;
+    public static final int bmob_update_btn_check_on_focused_holo_light=0x7f080078;
+    public static final int bmob_update_btn_check_on_holo_light=0x7f080079;
+    public static final int bmob_update_btn_check_on_pressed_holo_light=0x7f08007a;
+    public static final int bmob_update_button_cancel_bg_focused=0x7f08007b;
+    public static final int bmob_update_button_cancel_bg_normal=0x7f08007c;
+    public static final int bmob_update_button_cancel_bg_selector=0x7f08007d;
+    public static final int bmob_update_button_cancel_bg_tap=0x7f08007e;
+    public static final int bmob_update_button_check_selector=0x7f08007f;
+    public static final int bmob_update_button_close_bg_selector=0x7f080080;
+    public static final int bmob_update_button_ok_bg_focused=0x7f080081;
+    public static final int bmob_update_button_ok_bg_normal=0x7f080082;
+    public static final int bmob_update_button_ok_bg_selector=0x7f080083;
+    public static final int bmob_update_button_ok_bg_tap=0x7f080084;
+    public static final int bmob_update_close_bg_normal=0x7f080085;
+    public static final int bmob_update_close_bg_tap=0x7f080086;
+    public static final int bmob_update_dialog_bg=0x7f080087;
+    public static final int bmob_update_wifi_disable=0x7f080088;
+    public static final int bnt_price=0x7f080089;
+    public static final int brvah_sample_footer_loading=0x7f08008a;
+    public static final int brvah_sample_footer_loading_progress=0x7f08008b;
+    public static final int btn_grey_selector=0x7f08008c;
+    public static final int btn_login_n=0x7f08008d;
+    public static final int btn_login_p=0x7f08008e;
+    public static final int btn_login_selector=0x7f08008f;
+    public static final int btn_logout_n=0x7f080090;
+    public static final int btn_logout_p=0x7f080091;
+    public static final int btn_logout_selector=0x7f080092;
+    public static final int button_markdown_hotkey_normal=0x7f080093;
+    public static final int button_markdown_hotkey_press=0x7f080094;
+    public static final int ccb_comm_bg0=0x7f080095;
+    public static final int cerect=0x7f080096;
+    public static final int cerectb=0x7f080097;
+    public static final int cherry=0x7f080098;
+    public static final int circle_bg=0x7f080099;
+    public static final int circle_bg2=0x7f08009a;
+    public static final int circle_bg3=0x7f08009b;
+    public static final int circle_translucent=0x7f08009c;
+    public static final int cloud=0x7f08009d;
+    public static final int code=0x7f08009e;
+    public static final int default_head=0x7f08009f;
+    public static final int design_bottom_navigation_item_background=0x7f0800a0;
+    public static final int design_fab_background=0x7f0800a1;
+    public static final int design_ic_visibility=0x7f0800a2;
+    public static final int design_ic_visibility_off=0x7f0800a3;
+    public static final int design_password_eye=0x7f0800a4;
+    public static final int design_snackbar_background=0x7f0800a5;
+    public static final int editor_button_bg=0x7f0800a6;
+    public static final int editor_trash_button_bg=0x7f0800a7;
+    public static final int err=0x7f0800a8;
+    public static final int errb=0x7f0800a9;
+    public static final int fish=0x7f0800aa;
+    public static final int five=0x7f0800ab;
+    public static final int flight_action_row_bg_selector=0x7f0800ac;
+    public static final int flower=0x7f0800ad;
+    public static final int gg=0x7f0800ae;
+    public static final int gourd=0x7f0800af;
+    public static final int grade_button_normal=0x7f0800b0;
+    public static final int grade_button_press=0x7f0800b1;
+    public static final int hippophaes=0x7f0800b2;
+    public static final int hjjgg=0x7f0800b3;
+    public static final int home_mbank_1_clicked=0x7f0800b4;
+    public static final int home_mbank_1_normal=0x7f0800b5;
+    public static final int home_mbank_2_clicked=0x7f0800b6;
+    public static final int home_mbank_2_normal=0x7f0800b7;
+    public static final int home_mbank_3_clicked=0x7f0800b8;
+    public static final int home_mbank_3_normal=0x7f0800b9;
+    public static final int home_mbank_4_clicked=0x7f0800ba;
+    public static final int home_mbank_4_normal=0x7f0800bb;
+    public static final int home_mbank_5_clicked=0x7f0800bc;
+    public static final int home_mbank_5_normal=0x7f0800bd;
+    public static final int home_mbank_6_clicked=0x7f0800be;
+    public static final int home_mbank_6_normal=0x7f0800bf;
+    public static final int home_mbank_7_clicked=0x7f0800c0;
+    public static final int home_mbank_7_normal=0x7f0800c1;
+    public static final int home_mbank_8_clicked=0x7f0800c2;
+    public static final int home_mbank_8_normal=0x7f0800c3;
+    public static final int ic_account_circle_white_36dp=0x7f0800c4;
+    public static final int ic_arrow=0x7f0800c5;
+    public static final int ic_arrow_left=0x7f0800c6;
+    public static final int ic_cancel_transparent_2dp=0x7f0800c7;
+    public static final int ic_check_box_white_24dp=0x7f0800c8;
+    public static final int ic_chevron_right_black_48dp=0x7f0800c9;
+    public static final int ic_chevron_right_blue_48dp=0x7f0800ca;
+    public static final int ic_close_white_24dp=0x7f0800cb;
+    public static final int ic_done_black_24dp=0x7f0800cc;
+    public static final int ic_done_red_900_18dp=0x7f0800cd;
+    public static final int ic_file_download_black_24dp=0x7f0800ce;
+    public static final int ic_free_breakfast_black_24dp=0x7f0800cf;
+    public static final int ic_info_black_24dp=0x7f0800d0;
+    public static final int ic_launcher=0x7f0800d1;
+    public static final int ic_lock_white_36dp=0x7f0800d2;
+    public static final int ic_menu_camera=0x7f0800d3;
+    public static final int ic_menu_gallery=0x7f0800d4;
+    public static final int ic_menu_manage=0x7f0800d5;
+    public static final int ic_menu_send=0x7f0800d6;
+    public static final int ic_menu_share=0x7f0800d7;
+    public static final int ic_menu_slideshow=0x7f0800d8;
+    public static final int ic_menu_white_24dp=0x7f0800d9;
+    public static final int ic_notifications_black_24dp=0x7f0800da;
+    public static final int ic_pages_black_24dp=0x7f0800db;
+    public static final int ic_person_blue_a400_18dp=0x7f0800dc;
+    public static final int ic_person_grey_700_18dp=0x7f0800dd;
+    public static final int ic_person_pin_white_18dp=0x7f0800de;
+    public static final int ic_photo_library_black_24dp=0x7f0800df;
+    public static final int ic_portrait_black_24dp=0x7f0800e0;
+    public static final int ic_rotate_left_black_24dp=0x7f0800e1;
+    public static final int ic_rotate_right_black_24dp=0x7f0800e2;
+    public static final int ic_status_flight_time=0x7f0800e3;
+    public static final int ic_sync_black_24dp=0x7f0800e4;
+    public static final int ic_timer_black_24dp=0x7f0800e5;
+    public static final int ic_timer_white_24dp=0x7f0800e6;
+    public static final int index_bg_001=0x7f0800e7;
+    public static final int index_bg_002=0x7f0800e8;
+    public static final int index_bg_003=0x7f0800e9;
+    public static final int index_bg_004=0x7f0800ea;
+    public static final int index_bg_005=0x7f0800eb;
+    public static final int input_bg=0x7f0800ec;
+    public static final int input_checkbox=0x7f0800ed;
+    public static final int input_green_button=0x7f0800ee;
+    public static final int jjz2013=0x7f0800ef;
+    public static final int jjzk=0x7f0800f0;
+    public static final int launcher=0x7f0800f1;
+    public static final int login_account_box_white_36dp=0x7f0800f2;
+    public static final int login_button_bg=0x7f0800f3;
+    public static final int login_button_normal=0x7f0800f4;
+    public static final int login_button_press=0x7f0800f5;
+    public static final int login_button_shape=0x7f0800f6;
+    public static final int login_cell_white_36dp=0x7f0800f7;
+    public static final int login_edit_text_shape=0x7f0800f8;
+    public static final int login_lock_white_36dp=0x7f0800f9;
+    public static final int logo=0x7f0800fa;
+    public static final int look_grade=0x7f0800fb;
+    public static final int man=0x7f0800fc;
+    public static final int mask=0x7f0800fd;
+    public static final int navigation_empty_icon=0x7f0800fe;
+    public static final int nonk=0x7f0800ff;
+    public static final int notification_action_background=0x7f080100;
+    public static final int notification_bg=0x7f080101;
+    public static final int notification_bg_low=0x7f080102;
+    public static final int notification_bg_low_normal=0x7f080103;
+    public static final int notification_bg_low_pressed=0x7f080104;
+    public static final int notification_bg_normal=0x7f080105;
+    public static final int notification_bg_normal_pressed=0x7f080106;
+    public static final int notification_icon_background=0x7f080107;
+    public static final int notification_template_icon_bg=0x7f080108;
+    public static final int notification_template_icon_low_bg=0x7f080109;
+    public static final int notification_tile_bg=0x7f08010a;
+    public static final int notify_panel_notification_icon_bg=0x7f08010b;
+    public static final int person_selector=0x7f08010c;
+    public static final int pick_photo_checkbox_check=0x7f08010d;
+    public static final int pick_photo_checkbox_normal=0x7f08010e;
+    public static final int rain=0x7f08010f;
+    public static final int redocn=0x7f080110;
+    public static final int reset_check=0x7f080111;
+    public static final int reset_normal=0x7f080112;
+    public static final int reset_selector=0x7f080113;
+    public static final int reversal_left=0x7f080114;
+    public static final int reversal_up=0x7f080115;
+    public static final int rotate_left=0x7f080116;
+    public static final int rotate_right=0x7f080117;
+    public static final int sample1=0x7f080118;
+    public static final int seek_bar=0x7f080119;
+    public static final int seek_hollow=0x7f08011a;
+    public static final int seek_solid=0x7f08011b;
+    public static final int seek_thumb=0x7f08011c;
+    public static final int selector_gird=0x7f08011d;
+    public static final int selector_red_corners_button=0x7f08011e;
+    public static final int setting_arrow=0x7f08011f;
+    public static final int setting_bottom_layout_selector=0x7f080120;
+    public static final int setting_bottom_select=0x7f080121;
+    public static final int setting_bottom_unselect=0x7f080122;
+    public static final int setting_mid_layout_selector=0x7f080123;
+    public static final int setting_outer_shape=0x7f080124;
+    public static final int setting_single_layout_selector=0x7f080125;
+    public static final int setting_single_select=0x7f080126;
+    public static final int setting_single_unselect=0x7f080127;
+    public static final int setting_top_layout_selector=0x7f080128;
+    public static final int setting_top_select=0x7f080129;
+    public static final int setting_top_unselect=0x7f08012a;
+    public static final int shape_button=0x7f08012b;
+    public static final int shape_corner=0x7f08012c;
+    public static final int shape_corner_down=0x7f08012d;
+    public static final int shape_corner_up=0x7f08012e;
+    public static final int shape_no_corner=0x7f08012f;
+    public static final int shape_red_corners_button=0x7f080130;
+    public static final int shape_red_corners_button_pressed=0x7f080131;
+    public static final int side_nav_bar=0x7f080132;
+    public static final int sky=0x7f080133;
+    public static final int tab_bg_selector=0x7f080134;
+    public static final int textview_border=0x7f080135;
+    public static final int tooltip_frame_dark=0x7f080136;
+    public static final int tooltip_frame_light=0x7f080137;
+    public static final int turnplate_bg_left=0x7f080138;
+    public static final int turnplate_bg_right=0x7f080139;
+    public static final int turnplate_center_unlogin=0x7f08013a;
+    public static final int turnplate_inner_icon=0x7f08013b;
+    public static final int turnplate_mask_unlogin_normal=0x7f08013c;
+    public static final int unmask=0x7f08013d;
+    public static final int v_debug=0x7f08013e;
+    public static final int v_release=0x7f08013f;
+    public static final int wallpaper_selector=0x7f080140;
+    public static final int wel_button_borderless_background=0x7f080141;
+    public static final int wel_button_borderless_background_theme_light=0x7f080142;
+    public static final int wel_ic_chevron_left_white_24dp=0x7f080143;
+    public static final int wel_ic_chevron_right_white_24dp=0x7f080144;
+    public static final int wel_ic_done_black=0x7f080145;
+    public static final int wel_ic_done_white=0x7f080146;
+    public static final int xm_logo1=0x7f080147;
+    public static final int yule=0x7f080148;
+    public static final int zx=0x7f080149;
   }
   public static final class id {
     public static final int ALT=0x7f090000;
@@ -5246,515 +5365,534 @@ public final class R {
     public static final int answerd=0x7f09002a;
     public static final int answers=0x7f09002b;
     public static final int apl=0x7f09002c;
-    public static final int async=0x7f09002d;
-    public static final int auto=0x7f09002e;
-    public static final int barrier=0x7f09002f;
-    public static final int baseWeb=0x7f090030;
-    public static final int beginning=0x7f090031;
-    public static final int blocking=0x7f090032;
-    public static final int bmob_update_content=0x7f090033;
-    public static final int bmob_update_id_cancel=0x7f090034;
-    public static final int bmob_update_id_check=0x7f090035;
-    public static final int bmob_update_id_close=0x7f090036;
-    public static final int bmob_update_id_ignore=0x7f090037;
-    public static final int bmob_update_id_ok=0x7f090038;
-    public static final int bmob_update_wifi_indicator=0x7f090039;
-    public static final int bnt_bindphone=0x7f09003a;
-    public static final int bnt_exit=0x7f09003b;
-    public static final int bnt_mei=0x7f09003c;
-    public static final int bnt_sethead=0x7f09003d;
-    public static final int bottom=0x7f09003e;
-    public static final int btn_back=0x7f09003f;
-    public static final int btn_change_password=0x7f090040;
-    public static final int btn_crop=0x7f090041;
-    public static final int btn_face=0x7f090042;
-    public static final int btn_finish_test=0x7f090043;
-    public static final int btn_layout=0x7f090044;
-    public static final int btn_like=0x7f090045;
-    public static final int btn_look_grade=0x7f090046;
-    public static final int btn_mask_test=0x7f090047;
-    public static final int btn_okphoto=0x7f090048;
-    public static final int btn_photos=0x7f090049;
-    public static final int btn_reset=0x7f09004a;
-    public static final int btn_select=0x7f09004b;
-    public static final int btn_send=0x7f09004c;
-    public static final int btn_skip_test=0x7f09004d;
-    public static final int btn_sure_change=0x7f09004e;
-    public static final int btn_takephoto=0x7f09004f;
-    public static final int btn_upload=0x7f090050;
-    public static final int button=0x7f090051;
-    public static final int button16_9=0x7f090052;
-    public static final int button1_1=0x7f090053;
-    public static final int button2=0x7f090054;
-    public static final int button3=0x7f090055;
-    public static final int button3_4=0x7f090056;
-    public static final int button4=0x7f090057;
-    public static final int button4_3=0x7f090058;
-    public static final int button5=0x7f090059;
-    public static final int button6=0x7f09005a;
-    public static final int button7=0x7f09005b;
-    public static final int button9_16=0x7f09005c;
-    public static final int buttonCircle=0x7f09005d;
-    public static final int buttonCustom=0x7f09005e;
-    public static final int buttonDone=0x7f09005f;
-    public static final int buttonFitImage=0x7f090060;
-    public static final int buttonFree=0x7f090061;
-    public static final int buttonPanel=0x7f090062;
-    public static final int buttonPickImage=0x7f090063;
-    public static final int buttonRotateLeft=0x7f090064;
-    public static final int buttonRotateRight=0x7f090065;
-    public static final int buttonShowCircleButCropAsSquare=0x7f090066;
-    public static final int cancel_action=0x7f090067;
-    public static final int cb_moment_add_editable=0x7f090068;
-    public static final int cb_moment_add_plus=0x7f090069;
-    public static final int cb_moment_add_single_choice=0x7f09006a;
-    public static final int cb_moment_add_sortable=0x7f09006b;
-    public static final int cb_moment_add_take_photo=0x7f09006c;
-    public static final int cb_moment_list_downloadable=0x7f09006d;
-    public static final int cb_option_A=0x7f09006e;
-    public static final int cb_option_B=0x7f09006f;
-    public static final int cb_option_C=0x7f090070;
-    public static final int cb_option_D=0x7f090071;
-    public static final int center=0x7f090072;
-    public static final int center_horizontal=0x7f090073;
-    public static final int center_vertical=0x7f090074;
-    public static final int chains=0x7f090075;
-    public static final int checkBox=0x7f090076;
-    public static final int checkbox=0x7f090077;
-    public static final int cherry=0x7f090078;
-    public static final int chronometer=0x7f090079;
-    public static final int ci_view=0x7f09007a;
-    public static final int ci_view1=0x7f09007b;
-    public static final int ci_view2=0x7f09007c;
-    public static final int ci_view3=0x7f09007d;
-    public static final int ci_view4=0x7f09007e;
-    public static final int ci_view5=0x7f09007f;
-    public static final int ci_view6=0x7f090080;
-    public static final int circle=0x7f090081;
-    public static final int circleImageView=0x7f090082;
-    public static final int circleImageView2=0x7f090083;
-    public static final int circle_square=0x7f090084;
-    public static final int circular=0x7f090085;
-    public static final int clip_horizontal=0x7f090086;
-    public static final int clip_vertical=0x7f090087;
-    public static final int collapseActionView=0x7f090088;
-    public static final int container=0x7f090089;
-    public static final int contentPanel=0x7f09008a;
-    public static final int content_tv=0x7f09008b;
-    public static final int coordinator=0x7f09008c;
-    public static final int cropImageView=0x7f09008d;
-    public static final int custom=0x7f09008e;
-    public static final int customPanel=0x7f09008f;
-    public static final int cw_0=0x7f090090;
-    public static final int cw_180=0x7f090091;
-    public static final int cw_270=0x7f090092;
-    public static final int cw_90=0x7f090093;
-    public static final int dataBinding=0x7f090094;
-    public static final int decor_content_parent=0x7f090095;
-    public static final int default_activity_button=0x7f090096;
-    public static final int design_bottom_sheet=0x7f090097;
-    public static final int design_menu_item_action_area=0x7f090098;
-    public static final int design_menu_item_action_area_stub=0x7f090099;
-    public static final int design_menu_item_text=0x7f09009a;
-    public static final int design_navigation_view=0x7f09009b;
-    public static final int device_id=0x7f09009c;
-    public static final int dialog_sure=0x7f09009d;
-    public static final int dimensions=0x7f09009e;
-    public static final int direct=0x7f09009f;
-    public static final int disableHome=0x7f0900a0;
-    public static final int drawer_layout=0x7f0900a1;
-    public static final int editText=0x7f0900a2;
-    public static final int edit_query=0x7f0900a3;
-    public static final int empty_table=0x7f0900a4;
-    public static final int end=0x7f0900a5;
-    public static final int end_padder=0x7f0900a6;
-    public static final int enterAlways=0x7f0900a7;
-    public static final int enterAlwaysCollapsed=0x7f0900a8;
-    public static final int et_input=0x7f0900a9;
-    public static final int et_moment_add_content=0x7f0900aa;
-    public static final int et_new_password=0x7f0900ab;
-    public static final int et_new_password_again=0x7f0900ac;
-    public static final int et_nick=0x7f0900ad;
-    public static final int et_number=0x7f0900ae;
-    public static final int et_old_password=0x7f0900af;
-    public static final int et_optionA=0x7f0900b0;
-    public static final int et_optionB=0x7f0900b1;
-    public static final int et_optionC=0x7f0900b2;
-    public static final int et_optionD=0x7f0900b3;
-    public static final int et_paper_id=0x7f0900b4;
-    public static final int et_paper_name=0x7f0900b5;
-    public static final int et_phone=0x7f0900b6;
-    public static final int et_pwd=0x7f0900b7;
-    public static final int et_question=0x7f0900b8;
-    public static final int et_verify_code=0x7f0900b9;
-    public static final int exitUntilCollapsed=0x7f0900ba;
-    public static final int expand_activities_button=0x7f0900bb;
-    public static final int expanded_menu=0x7f0900bc;
-    public static final int fab=0x7f0900bd;
-    public static final int fade=0x7f0900be;
-    public static final int fill=0x7f0900bf;
-    public static final int fill_horizontal=0x7f0900c0;
-    public static final int fill_vertical=0x7f0900c1;
-    public static final int finish=0x7f0900c2;
-    public static final int fit_image=0x7f0900c3;
-    public static final int fixed=0x7f0900c4;
-    public static final int flipper=0x7f0900c5;
-    public static final int forever=0x7f0900c6;
-    public static final int fragment2_tv=0x7f0900c7;
-    public static final int free=0x7f0900c8;
-    public static final int ghost_view=0x7f0900c9;
-    public static final int go=0x7f0900ca;
-    public static final int gone=0x7f0900cb;
-    public static final int grade=0x7f0900cc;
-    public static final int home=0x7f0900cd;
-    public static final int homeAsUp=0x7f0900ce;
-    public static final int horizontal=0x7f0900cf;
-    public static final int hvp_photo_picker_preview_content=0x7f0900d0;
-    public static final int hvp_photo_preview_content=0x7f0900d1;
-    public static final int icon=0x7f0900d2;
-    public static final int icon_group=0x7f0900d3;
-    public static final int icons_container=0x7f0900d4;
-    public static final int id=0x7f0900d5;
-    public static final int id_circle_menu_item_center=0x7f0900d6;
-    public static final int id_circle_menu_item_image=0x7f0900d7;
-    public static final int id_circle_menu_item_text=0x7f0900d8;
-    public static final int id_largetImageview=0x7f0900d9;
-    public static final int id_menulayout=0x7f0900da;
-    public static final int ifRoom=0x7f0900db;
-    public static final int image=0x7f0900dc;
-    public static final int imageView=0x7f0900dd;
-    public static final int imageView2=0x7f0900de;
-    public static final int imageView3=0x7f0900df;
-    public static final int imageView6=0x7f0900e0;
-    public static final int imageView7=0x7f0900e1;
-    public static final int imageView8=0x7f0900e2;
-    public static final int imageview=0x7f0900e3;
-    public static final int include=0x7f0900e4;
-    public static final int info=0x7f0900e5;
-    public static final int info_end=0x7f0900e6;
-    public static final int invisible=0x7f0900e7;
-    public static final int italic=0x7f0900e8;
-    public static final int item_photo_picker_preview_title=0x7f0900e9;
-    public static final int item_photo_picker_title=0x7f0900ea;
-    public static final int item_photo_preview_title=0x7f0900eb;
-    public static final int item_touch_helper_previous_elevation=0x7f0900ec;
-    public static final int iv_bga_adapter_empty_view_icon=0x7f0900ed;
-    public static final int iv_item_moment_avatar=0x7f0900ee;
-    public static final int iv_item_nine_photo_flag=0x7f0900ef;
-    public static final int iv_item_nine_photo_photo=0x7f0900f0;
-    public static final int iv_item_photo_camera_camera=0x7f0900f1;
-    public static final int iv_item_photo_folder_photo=0x7f0900f2;
-    public static final int iv_item_photo_picker_flag=0x7f0900f3;
-    public static final int iv_item_photo_picker_photo=0x7f0900f4;
-    public static final int iv_left=0x7f0900f5;
-    public static final int iv_ok=0x7f0900f6;
-    public static final int iv_photo_picker_arrow=0x7f0900f7;
-    public static final int iv_photo_preview_download=0x7f0900f8;
-    public static final int iv_right=0x7f0900f9;
-    public static final int iv_system_gallery_crop_avatar=0x7f0900fa;
-    public static final int judge=0x7f0900fb;
-    public static final int judgeA=0x7f0900fc;
-    public static final int judgeB=0x7f0900fd;
-    public static final int largeLabel=0x7f0900fe;
-    public static final int layout=0x7f0900ff;
-    public static final int layout_all=0x7f090100;
-    public static final int layout_gender=0x7f090101;
-    public static final int layout_name=0x7f090102;
-    public static final int layout_nick=0x7f090103;
-    public static final int layout_root=0x7f090104;
-    public static final int left=0x7f090105;
-    public static final int line=0x7f090106;
-    public static final int line1=0x7f090107;
-    public static final int line3=0x7f090108;
-    public static final int linear=0x7f090109;
-    public static final int linearLayout=0x7f09010a;
-    public static final int listMode=0x7f09010b;
-    public static final int list_item=0x7f09010c;
-    public static final int ll=0x7f09010d;
-    public static final int llToast=0x7f09010e;
-    public static final int llToastContent=0x7f09010f;
-    public static final int ll_bga_adapter_empty_view_root=0x7f090110;
-    public static final int ll_btn=0x7f090111;
-    public static final int ll_left=0x7f090112;
-    public static final int ll_month=0x7f090113;
-    public static final int ll_photo_folder_root=0x7f090114;
-    public static final int ll_recommend=0x7f090115;
-    public static final int ll_right=0x7f090116;
-    public static final int ll_root=0x7f090117;
-    public static final int ll_today=0x7f090118;
-    public static final int load_more_load_end_view=0x7f090119;
-    public static final int load_more_load_fail_view=0x7f09011a;
-    public static final int load_more_loading_view=0x7f09011b;
-    public static final int loading_progress=0x7f09011c;
-    public static final int loading_text=0x7f09011d;
-    public static final int login=0x7f09011e;
-    public static final int lv_item=0x7f09011f;
-    public static final int lv_note=0x7f090120;
-    public static final int lv_paper=0x7f090121;
-    public static final int lv_paper_grade=0x7f090122;
-    public static final int lv_paper_test=0x7f090123;
-    public static final int mainframe_error_container_id=0x7f090124;
-    public static final int mainframe_error_viewsub_id=0x7f090125;
-    public static final int masked=0x7f090126;
-    public static final int media_actions=0x7f090127;
-    public static final int message=0x7f090128;
-    public static final int middle=0x7f090129;
-    public static final int mini=0x7f09012a;
-    public static final int multiOptionA=0x7f09012b;
-    public static final int multiOptionB=0x7f09012c;
-    public static final int multiOptionC=0x7f09012d;
-    public static final int multiOptionD=0x7f09012e;
-    public static final int multiOptionE=0x7f09012f;
-    public static final int multiOptionF=0x7f090130;
-    public static final int multiOptionGroup=0x7f090131;
-    public static final int multiply=0x7f090132;
-    public static final int my_gridview=0x7f090133;
-    public static final int myscroll=0x7f090134;
-    public static final int name=0x7f090135;
-    public static final int nav_camera=0x7f090136;
-    public static final int nav_gallery=0x7f090137;
-    public static final int nav_manage=0x7f090138;
-    public static final int nav_send=0x7f090139;
-    public static final int nav_share=0x7f09013a;
-    public static final int nav_slideshow=0x7f09013b;
-    public static final int nav_view=0x7f09013c;
-    public static final int navigation_header_container=0x7f09013d;
-    public static final int never=0x7f09013e;
-    public static final int news=0x7f09013f;
-    public static final int news_desc=0x7f090140;
-    public static final int news_lv=0x7f090141;
-    public static final int news_time=0x7f090142;
-    public static final int news_title=0x7f090143;
-    public static final int none=0x7f090144;
-    public static final int normal=0x7f090145;
-    public static final int not_show=0x7f090146;
-    public static final int notification_background=0x7f090147;
-    public static final int notification_main_column=0x7f090148;
-    public static final int notification_main_column_container=0x7f090149;
-    public static final int npl_item_moment_photos=0x7f09014a;
-    public static final int onAttachStateChangeListener=0x7f09014b;
-    public static final int onDateChanged=0x7f09014c;
-    public static final int packed=0x7f09014d;
-    public static final int paper_date=0x7f09014e;
-    public static final int paper_grade=0x7f09014f;
-    public static final int paper_name=0x7f090150;
-    public static final int paper_state=0x7f090151;
-    public static final int parallax=0x7f090152;
-    public static final int parent=0x7f090153;
-    public static final int parentPanel=0x7f090154;
-    public static final int parent_matrix=0x7f090155;
-    public static final int password=0x7f090156;
-    public static final int percent=0x7f090157;
-    public static final int pin=0x7f090158;
-    public static final int progress=0x7f090159;
-    public static final int progress_circular=0x7f09015a;
-    public static final int progress_horizontal=0x7f09015b;
-    public static final int question=0x7f09015c;
-    public static final int radial=0x7f09015d;
-    public static final int radio=0x7f09015e;
-    public static final int ratio_16_9=0x7f09015f;
-    public static final int ratio_3_4=0x7f090160;
-    public static final int ratio_4_3=0x7f090161;
-    public static final int ratio_9_16=0x7f090162;
-    public static final int rdtj=0x7f090163;
-    public static final int register=0x7f090164;
-    public static final int register_class=0x7f090165;
-    public static final int register_name=0x7f090166;
-    public static final int relativeLayout=0x7f090167;
-    public static final int restart=0x7f090168;
-    public static final int result_image=0x7f090169;
-    public static final int reverse=0x7f09016a;
-    public static final int right=0x7f09016b;
-    public static final int right_icon=0x7f09016c;
-    public static final int right_side=0x7f09016d;
-    public static final int rl1=0x7f09016e;
-    public static final int rl_paper_view=0x7f09016f;
-    public static final int rl_photo_picker_preview_choose=0x7f090170;
-    public static final int root_layout=0x7f090171;
-    public static final int rubbler=0x7f090172;
-    public static final int rv_list=0x7f090173;
-    public static final int rv_moment_list_moments=0x7f090174;
-    public static final int rv_photo_folder_content=0x7f090175;
-    public static final int rv_photo_picker_content=0x7f090176;
-    public static final int rv_view=0x7f090177;
-    public static final int save_image_matrix=0x7f090178;
-    public static final int save_non_transition_alpha=0x7f090179;
-    public static final int save_scale_type=0x7f09017a;
-    public static final int screen=0x7f09017b;
-    public static final int scroll=0x7f09017c;
-    public static final int scrollIndicatorDown=0x7f09017d;
-    public static final int scrollIndicatorUp=0x7f09017e;
-    public static final int scrollView=0x7f09017f;
-    public static final int scrollable=0x7f090180;
-    public static final int search_badge=0x7f090181;
-    public static final int search_bar=0x7f090182;
-    public static final int search_button=0x7f090183;
-    public static final int search_close_btn=0x7f090184;
-    public static final int search_edit_frame=0x7f090185;
-    public static final int search_go_btn=0x7f090186;
-    public static final int search_mag_icon=0x7f090187;
-    public static final int search_plate=0x7f090188;
-    public static final int search_src_text=0x7f090189;
-    public static final int search_voice_btn=0x7f09018a;
-    public static final int seekBar=0x7f09018b;
-    public static final int select_dialog_listview=0x7f09018c;
-    public static final int settings_container=0x7f09018d;
-    public static final int shimmer_view_container=0x7f09018e;
-    public static final int shortcut=0x7f09018f;
-    public static final int showCustom=0x7f090190;
-    public static final int showHome=0x7f090191;
-    public static final int showTitle=0x7f090192;
-    public static final int show_always=0x7f090193;
-    public static final int show_on_touch=0x7f090194;
-    public static final int single_option_A=0x7f090195;
-    public static final int single_option_B=0x7f090196;
-    public static final int single_option_C=0x7f090197;
-    public static final int single_option_D=0x7f090198;
-    public static final int single_option_group=0x7f090199;
-    public static final int slide=0x7f09019a;
-    public static final int smallLabel=0x7f09019b;
-    public static final int snackbar_action=0x7f09019c;
-    public static final int snackbar_text=0x7f09019d;
-    public static final int snap=0x7f09019e;
-    public static final int snpl_moment_add_photos=0x7f09019f;
-    public static final int spacer=0x7f0901a0;
-    public static final int split_action_bar=0x7f0901a1;
-    public static final int spread=0x7f0901a2;
-    public static final int spread_inside=0x7f0901a3;
-    public static final int square=0x7f0901a4;
-    public static final int src_atop=0x7f0901a5;
-    public static final int src_in=0x7f0901a6;
-    public static final int src_over=0x7f0901a7;
-    public static final int standard=0x7f0901a8;
-    public static final int start=0x7f0901a9;
-    public static final int status_bar_latest_event_content=0x7f0901aa;
-    public static final int submenuarrow=0x7f0901ab;
-    public static final int submit_area=0x7f0901ac;
-    public static final int support_me=0x7f0901ad;
-    public static final int tabMode=0x7f0901ae;
-    public static final int tab_FindFragment_title=0x7f0901af;
-    public static final int tab_bar=0x7f0901b0;
-    public static final int tab_layout=0x7f0901b1;
-    public static final int tag_transition_group=0x7f0901b2;
-    public static final int test_fm=0x7f0901b3;
-    public static final int test_item=0x7f0901b4;
-    public static final int test_time=0x7f0901b5;
-    public static final int text=0x7f0901b6;
-    public static final int text2=0x7f0901b7;
-    public static final int textSpacerNoButtons=0x7f0901b8;
-    public static final int textSpacerNoTitle=0x7f0901b9;
-    public static final int textView=0x7f0901ba;
-    public static final int textView1=0x7f0901bb;
-    public static final int textView11=0x7f0901bc;
-    public static final int textView2=0x7f0901bd;
-    public static final int textView3=0x7f0901be;
-    public static final int textView4=0x7f0901bf;
-    public static final int textView5=0x7f0901c0;
-    public static final int textView6=0x7f0901c1;
-    public static final int textView7=0x7f0901c2;
-    public static final int textView8=0x7f0901c3;
-    public static final int textView9=0x7f0901c4;
-    public static final int textWatcher=0x7f0901c5;
-    public static final int text_input_password_toggle=0x7f0901c6;
-    public static final int textinput_counter=0x7f0901c7;
-    public static final int textinput_error=0x7f0901c8;
-    public static final int textview=0x7f0901c9;
-    public static final int time=0x7f0901ca;
-    public static final int title=0x7f0901cb;
-    public static final int titleDividerNoCustom=0x7f0901cc;
-    public static final int title_template=0x7f0901cd;
-    public static final int toolbar=0x7f0901ce;
-    public static final int toolbar_layout=0x7f0901cf;
-    public static final int top=0x7f0901d0;
-    public static final int topPanel=0x7f0901d1;
-    public static final int touch_outside=0x7f0901d2;
-    public static final int transition_current_scene=0x7f0901d3;
-    public static final int transition_layout_save=0x7f0901d4;
-    public static final int transition_position=0x7f0901d5;
-    public static final int transition_scene_layoutid_cache=0x7f0901d6;
-    public static final int transition_transform=0x7f0901d7;
-    public static final int tv=0x7f0901d8;
-    public static final int tvImageToast=0x7f0901d9;
-    public static final int tvTextToast=0x7f0901da;
-    public static final int tvTitleToast=0x7f0901db;
-    public static final int tv_apple=0x7f0901dc;
-    public static final int tv_bga_adapter_empty_view_msg=0x7f0901dd;
-    public static final int tv_bind=0x7f0901de;
-    public static final int tv_class=0x7f0901df;
-    public static final int tv_exam_time=0x7f0901e0;
-    public static final int tv_forpass=0x7f0901e1;
-    public static final int tv_git=0x7f0901e2;
-    public static final int tv_id=0x7f0901e3;
-    public static final int tv_item_moment_content=0x7f0901e4;
-    public static final int tv_item_moment_username=0x7f0901e5;
-    public static final int tv_item_photo_folder_count=0x7f0901e6;
-    public static final int tv_item_photo_folder_name=0x7f0901e7;
-    public static final int tv_item_photo_picker_tip=0x7f0901e8;
-    public static final int tv_ksxm=0x7f0901e9;
-    public static final int tv_left=0x7f0901ea;
-    public static final int tv_let=0x7f0901eb;
-    public static final int tv_moment_add_choice_photo=0x7f0901ec;
-    public static final int tv_moment_add_publish=0x7f0901ed;
-    public static final int tv_moment_list_add=0x7f0901ee;
-    public static final int tv_moment_list_system=0x7f0901ef;
-    public static final int tv_name=0x7f0901f0;
-    public static final int tv_next=0x7f0901f1;
-    public static final int tv_num=0x7f0901f2;
-    public static final int tv_number=0x7f0901f3;
-    public static final int tv_paper_date=0x7f0901f4;
-    public static final int tv_photo_picker_preview_choose=0x7f0901f5;
-    public static final int tv_photo_picker_preview_submit=0x7f0901f6;
-    public static final int tv_photo_picker_preview_title=0x7f0901f7;
-    public static final int tv_photo_picker_submit=0x7f0901f8;
-    public static final int tv_photo_picker_title=0x7f0901f9;
-    public static final int tv_photo_preview_title=0x7f0901fa;
-    public static final int tv_prompt=0x7f0901fb;
-    public static final int tv_right=0x7f0901fc;
-    public static final int tv_send=0x7f0901fd;
-    public static final int tv_set=0x7f0901fe;
-    public static final int tv_system_gallery_crop_choose=0x7f0901ff;
-    public static final int tv_system_gallery_crop_take_apply=0x7f090200;
-    public static final int tv_system_gallery_crop_take_photo=0x7f090201;
-    public static final int tv_time=0x7f090202;
-    public static final int tv_title=0x7f090203;
-    public static final int tweetAvatar=0x7f090204;
-    public static final int tweetDate=0x7f090205;
-    public static final int tweetName=0x7f090206;
-    public static final int tweetRT=0x7f090207;
-    public static final int tweetText=0x7f090208;
-    public static final int uniform=0x7f090209;
-    public static final int up=0x7f09020a;
-    public static final int update_paper=0x7f09020b;
-    public static final int update_subject=0x7f09020c;
-    public static final int update_tiku=0x7f09020d;
-    public static final int useLogo=0x7f09020e;
-    public static final int username=0x7f09020f;
-    public static final int viewStub=0x7f090210;
-    public static final int view_offset_helper=0x7f090211;
-    public static final int visible=0x7f090212;
-    public static final int vp_FindFragment_pager=0x7f090213;
-    public static final int web_layout=0x7f090214;
-    public static final int web_parent_layout_id=0x7f090215;
-    public static final int web_view=0x7f090216;
-    public static final int wel_background_view=0x7f090217;
-    public static final int wel_bottom_frame=0x7f090218;
-    public static final int wel_button_bar_first=0x7f090219;
-    public static final int wel_button_bar_second=0x7f09021a;
-    public static final int wel_button_done=0x7f09021b;
-    public static final int wel_button_next=0x7f09021c;
-    public static final int wel_button_prev=0x7f09021d;
-    public static final int wel_button_skip=0x7f09021e;
-    public static final int wel_center_view=0x7f09021f;
-    public static final int wel_description=0x7f090220;
-    public static final int wel_image=0x7f090221;
-    public static final int wel_pager_indicator=0x7f090222;
-    public static final int wel_parallax_frame=0x7f090223;
-    public static final int wel_root=0x7f090224;
-    public static final int wel_title=0x7f090225;
-    public static final int wel_view_pager=0x7f090226;
-    public static final int withText=0x7f090227;
-    public static final int wrap=0x7f090228;
-    public static final int wrap_content=0x7f090229;
+    public static final int appBarLayout=0x7f09002d;
+    public static final int appbar=0x7f09002e;
+    public static final int async=0x7f09002f;
+    public static final int auto=0x7f090030;
+    public static final int backdrop=0x7f090031;
+    public static final int barrier=0x7f090032;
+    public static final int beginning=0x7f090033;
+    public static final int blocking=0x7f090034;
+    public static final int bmob_update_content=0x7f090035;
+    public static final int bmob_update_id_cancel=0x7f090036;
+    public static final int bmob_update_id_check=0x7f090037;
+    public static final int bmob_update_id_close=0x7f090038;
+    public static final int bmob_update_id_ignore=0x7f090039;
+    public static final int bmob_update_id_ok=0x7f09003a;
+    public static final int bmob_update_wifi_indicator=0x7f09003b;
+    public static final int bnt_bindphone=0x7f09003c;
+    public static final int bnt_exit=0x7f09003d;
+    public static final int bnt_mei=0x7f09003e;
+    public static final int bnt_sethead=0x7f09003f;
+    public static final int bottom=0x7f090040;
+    public static final int btn_back=0x7f090041;
+    public static final int btn_change_password=0x7f090042;
+    public static final int btn_crop=0x7f090043;
+    public static final int btn_face=0x7f090044;
+    public static final int btn_finish_test=0x7f090045;
+    public static final int btn_large=0x7f090046;
+    public static final int btn_layout=0x7f090047;
+    public static final int btn_like=0x7f090048;
+    public static final int btn_look_grade=0x7f090049;
+    public static final int btn_mask_test=0x7f09004a;
+    public static final int btn_okphoto=0x7f09004b;
+    public static final int btn_photos=0x7f09004c;
+    public static final int btn_reset=0x7f09004d;
+    public static final int btn_select=0x7f09004e;
+    public static final int btn_send=0x7f09004f;
+    public static final int btn_skip_test=0x7f090050;
+    public static final int btn_sure_change=0x7f090051;
+    public static final int btn_takephoto=0x7f090052;
+    public static final int btn_upload=0x7f090053;
+    public static final int button=0x7f090054;
+    public static final int button16_9=0x7f090055;
+    public static final int button1_1=0x7f090056;
+    public static final int button2=0x7f090057;
+    public static final int button3=0x7f090058;
+    public static final int button3_4=0x7f090059;
+    public static final int button4=0x7f09005a;
+    public static final int button4_3=0x7f09005b;
+    public static final int button5=0x7f09005c;
+    public static final int button6=0x7f09005d;
+    public static final int button7=0x7f09005e;
+    public static final int button8=0x7f09005f;
+    public static final int button9_16=0x7f090060;
+    public static final int buttonCircle=0x7f090061;
+    public static final int buttonCustom=0x7f090062;
+    public static final int buttonDone=0x7f090063;
+    public static final int buttonFitImage=0x7f090064;
+    public static final int buttonFree=0x7f090065;
+    public static final int buttonPanel=0x7f090066;
+    public static final int buttonPickImage=0x7f090067;
+    public static final int buttonRotateLeft=0x7f090068;
+    public static final int buttonRotateRight=0x7f090069;
+    public static final int buttonShowCircleButCropAsSquare=0x7f09006a;
+    public static final int cancel_action=0x7f09006b;
+    public static final int cb_moment_add_editable=0x7f09006c;
+    public static final int cb_moment_add_plus=0x7f09006d;
+    public static final int cb_moment_add_single_choice=0x7f09006e;
+    public static final int cb_moment_add_sortable=0x7f09006f;
+    public static final int cb_moment_add_take_photo=0x7f090070;
+    public static final int cb_moment_list_downloadable=0x7f090071;
+    public static final int cb_option_A=0x7f090072;
+    public static final int cb_option_B=0x7f090073;
+    public static final int cb_option_C=0x7f090074;
+    public static final int cb_option_D=0x7f090075;
+    public static final int cb_option_E=0x7f090076;
+    public static final int cb_option_F=0x7f090077;
+    public static final int center=0x7f090078;
+    public static final int center_horizontal=0x7f090079;
+    public static final int center_vertical=0x7f09007a;
+    public static final int chains=0x7f09007b;
+    public static final int checkBox=0x7f09007c;
+    public static final int checkbox=0x7f09007d;
+    public static final int cherry=0x7f09007e;
+    public static final int chronometer=0x7f09007f;
+    public static final int ci_view=0x7f090080;
+    public static final int ci_view1=0x7f090081;
+    public static final int ci_view2=0x7f090082;
+    public static final int ci_view3=0x7f090083;
+    public static final int ci_view4=0x7f090084;
+    public static final int ci_view5=0x7f090085;
+    public static final int ci_view6=0x7f090086;
+    public static final int circle=0x7f090087;
+    public static final int circleImageView=0x7f090088;
+    public static final int circleImageView2=0x7f090089;
+    public static final int circle_square=0x7f09008a;
+    public static final int circular=0x7f09008b;
+    public static final int clip_horizontal=0x7f09008c;
+    public static final int clip_vertical=0x7f09008d;
+    public static final int cloud=0x7f09008e;
+    public static final int collapseActionView=0x7f09008f;
+    public static final int collapsing_toolbar=0x7f090090;
+    public static final int container=0x7f090091;
+    public static final int contentPanel=0x7f090092;
+    public static final int content_tv=0x7f090093;
+    public static final int coordinator=0x7f090094;
+    public static final int coordinatorLayout=0x7f090095;
+    public static final int cropImageView=0x7f090096;
+    public static final int custom=0x7f090097;
+    public static final int customPanel=0x7f090098;
+    public static final int cw_0=0x7f090099;
+    public static final int cw_180=0x7f09009a;
+    public static final int cw_270=0x7f09009b;
+    public static final int cw_90=0x7f09009c;
+    public static final int dataBinding=0x7f09009d;
+    public static final int decor_content_parent=0x7f09009e;
+    public static final int default_activity_button=0x7f09009f;
+    public static final int design_bottom_sheet=0x7f0900a0;
+    public static final int design_menu_item_action_area=0x7f0900a1;
+    public static final int design_menu_item_action_area_stub=0x7f0900a2;
+    public static final int design_menu_item_text=0x7f0900a3;
+    public static final int design_navigation_view=0x7f0900a4;
+    public static final int device_id=0x7f0900a5;
+    public static final int dialog_cancel=0x7f0900a6;
+    public static final int dialog_sure=0x7f0900a7;
+    public static final int dimensions=0x7f0900a8;
+    public static final int direct=0x7f0900a9;
+    public static final int disableHome=0x7f0900aa;
+    public static final int draweeView=0x7f0900ab;
+    public static final int drawer_layout=0x7f0900ac;
+    public static final int edit_query=0x7f0900ad;
+    public static final int empty_table=0x7f0900ae;
+    public static final int end=0x7f0900af;
+    public static final int end_padder=0x7f0900b0;
+    public static final int enterAlways=0x7f0900b1;
+    public static final int enterAlwaysCollapsed=0x7f0900b2;
+    public static final int et_input=0x7f0900b3;
+    public static final int et_moment_add_content=0x7f0900b4;
+    public static final int et_new_password=0x7f0900b5;
+    public static final int et_new_password_again=0x7f0900b6;
+    public static final int et_number=0x7f0900b7;
+    public static final int et_old_password=0x7f0900b8;
+    public static final int et_optionA=0x7f0900b9;
+    public static final int et_optionB=0x7f0900ba;
+    public static final int et_optionC=0x7f0900bb;
+    public static final int et_optionD=0x7f0900bc;
+    public static final int et_optionE=0x7f0900bd;
+    public static final int et_optionF=0x7f0900be;
+    public static final int et_paper_id=0x7f0900bf;
+    public static final int et_paper_name=0x7f0900c0;
+    public static final int et_phone=0x7f0900c1;
+    public static final int et_pwd=0x7f0900c2;
+    public static final int et_question=0x7f0900c3;
+    public static final int et_verify_code=0x7f0900c4;
+    public static final int ex_header=0x7f0900c5;
+    public static final int exitUntilCollapsed=0x7f0900c6;
+    public static final int expand_activities_button=0x7f0900c7;
+    public static final int expanded_menu=0x7f0900c8;
+    public static final int fab=0x7f0900c9;
+    public static final int fade=0x7f0900ca;
+    public static final int fill=0x7f0900cb;
+    public static final int fill_horizontal=0x7f0900cc;
+    public static final int fill_vertical=0x7f0900cd;
+    public static final int finish=0x7f0900ce;
+    public static final int fit_image=0x7f0900cf;
+    public static final int fixed=0x7f0900d0;
+    public static final int flipper=0x7f0900d1;
+    public static final int forever=0x7f0900d2;
+    public static final int fragment2_tv=0x7f0900d3;
+    public static final int free=0x7f0900d4;
+    public static final int ghost_view=0x7f0900d5;
+    public static final int go=0x7f0900d6;
+    public static final int gone=0x7f0900d7;
+    public static final int grade=0x7f0900d8;
+    public static final int hjz=0x7f0900d9;
+    public static final int home=0x7f0900da;
+    public static final int homeAsUp=0x7f0900db;
+    public static final int horizontal=0x7f0900dc;
+    public static final int hvp_photo_picker_preview_content=0x7f0900dd;
+    public static final int hvp_photo_preview_content=0x7f0900de;
+    public static final int icon=0x7f0900df;
+    public static final int icon_group=0x7f0900e0;
+    public static final int icons_container=0x7f0900e1;
+    public static final int id=0x7f0900e2;
+    public static final int id_circle_menu_item_center=0x7f0900e3;
+    public static final int id_circle_menu_item_image=0x7f0900e4;
+    public static final int id_circle_menu_item_text=0x7f0900e5;
+    public static final int id_largetImageview=0x7f0900e6;
+    public static final int id_menulayout=0x7f0900e7;
+    public static final int ifRoom=0x7f0900e8;
+    public static final int image=0x7f0900e9;
+    public static final int imageView=0x7f0900ea;
+    public static final int imageView2=0x7f0900eb;
+    public static final int imageView3=0x7f0900ec;
+    public static final int imageView4=0x7f0900ed;
+    public static final int imageView8=0x7f0900ee;
+    public static final int imageview=0x7f0900ef;
+    public static final int include=0x7f0900f0;
+    public static final int info=0x7f0900f1;
+    public static final int info_end=0x7f0900f2;
+    public static final int invisible=0x7f0900f3;
+    public static final int italic=0x7f0900f4;
+    public static final int item_longclicked_saveImage=0x7f0900f5;
+    public static final int item_photo_picker_preview_title=0x7f0900f6;
+    public static final int item_photo_picker_title=0x7f0900f7;
+    public static final int item_photo_preview_title=0x7f0900f8;
+    public static final int item_touch_helper_previous_elevation=0x7f0900f9;
+    public static final int iv_arrow=0x7f0900fa;
+    public static final int iv_bga_adapter_empty_view_icon=0x7f0900fb;
+    public static final int iv_item_moment_avatar=0x7f0900fc;
+    public static final int iv_item_nine_photo_flag=0x7f0900fd;
+    public static final int iv_item_nine_photo_photo=0x7f0900fe;
+    public static final int iv_item_photo_camera_camera=0x7f0900ff;
+    public static final int iv_item_photo_folder_photo=0x7f090100;
+    public static final int iv_item_photo_picker_flag=0x7f090101;
+    public static final int iv_item_photo_picker_photo=0x7f090102;
+    public static final int iv_left=0x7f090103;
+    public static final int iv_loading=0x7f090104;
+    public static final int iv_ok=0x7f090105;
+    public static final int iv_photo_picker_arrow=0x7f090106;
+    public static final int iv_photo_preview_download=0x7f090107;
+    public static final int iv_right=0x7f090108;
+    public static final int iv_system_gallery_crop_avatar=0x7f090109;
+    public static final int judge=0x7f09010a;
+    public static final int judgeA=0x7f09010b;
+    public static final int judgeB=0x7f09010c;
+    public static final int label=0x7f09010d;
+    public static final int largeLabel=0x7f09010e;
+    public static final int layout=0x7f09010f;
+    public static final int layout_all=0x7f090110;
+    public static final int layout_gender=0x7f090111;
+    public static final int layout_name=0x7f090112;
+    public static final int layout_nick=0x7f090113;
+    public static final int layout_root=0x7f090114;
+    public static final int left=0x7f090115;
+    public static final int line=0x7f090116;
+    public static final int line1=0x7f090117;
+    public static final int line2=0x7f090118;
+    public static final int line3=0x7f090119;
+    public static final int linear=0x7f09011a;
+    public static final int linearLayout=0x7f09011b;
+    public static final int listMode=0x7f09011c;
+    public static final int list_item=0x7f09011d;
+    public static final int ll=0x7f09011e;
+    public static final int llToast=0x7f09011f;
+    public static final int llToastContent=0x7f090120;
+    public static final int ll_bga_adapter_empty_view_root=0x7f090121;
+    public static final int ll_btn=0x7f090122;
+    public static final int ll_hotcollection=0x7f090123;
+    public static final int ll_left=0x7f090124;
+    public static final int ll_month=0x7f090125;
+    public static final int ll_photo_folder_root=0x7f090126;
+    public static final int ll_recommend=0x7f090127;
+    public static final int ll_right=0x7f090128;
+    public static final int ll_root=0x7f090129;
+    public static final int ll_today=0x7f09012a;
+    public static final int load_more_load_end_view=0x7f09012b;
+    public static final int load_more_load_fail_view=0x7f09012c;
+    public static final int load_more_loading_view=0x7f09012d;
+    public static final int loading_progress=0x7f09012e;
+    public static final int loading_text=0x7f09012f;
+    public static final int login=0x7f090130;
+    public static final int lv_note=0x7f090131;
+    public static final int lv_paper=0x7f090132;
+    public static final int lv_paper_grade=0x7f090133;
+    public static final int lv_paper_test=0x7f090134;
+    public static final int main_content=0x7f090135;
+    public static final int mainframe_error_container_id=0x7f090136;
+    public static final int mainframe_error_viewsub_id=0x7f090137;
+    public static final int masked=0x7f090138;
+    public static final int media_actions=0x7f090139;
+    public static final int message=0x7f09013a;
+    public static final int middle=0x7f09013b;
+    public static final int mini=0x7f09013c;
+    public static final int multiOptionA=0x7f09013d;
+    public static final int multiOptionB=0x7f09013e;
+    public static final int multiOptionC=0x7f09013f;
+    public static final int multiOptionD=0x7f090140;
+    public static final int multiOptionE=0x7f090141;
+    public static final int multiOptionF=0x7f090142;
+    public static final int multiOptionGroup=0x7f090143;
+    public static final int multiply=0x7f090144;
+    public static final int myscroll=0x7f090145;
+    public static final int name=0x7f090146;
+    public static final int nav_camera=0x7f090147;
+    public static final int nav_gallery=0x7f090148;
+    public static final int nav_manage=0x7f090149;
+    public static final int nav_send=0x7f09014a;
+    public static final int nav_share=0x7f09014b;
+    public static final int nav_slideshow=0x7f09014c;
+    public static final int nav_view=0x7f09014d;
+    public static final int navigation_header_container=0x7f09014e;
+    public static final int never=0x7f09014f;
+    public static final int news=0x7f090150;
+    public static final int news_desc=0x7f090151;
+    public static final int news_lv=0x7f090152;
+    public static final int news_time=0x7f090153;
+    public static final int news_title=0x7f090154;
+    public static final int none=0x7f090155;
+    public static final int normal=0x7f090156;
+    public static final int not_show=0x7f090157;
+    public static final int notification_background=0x7f090158;
+    public static final int notification_main_column=0x7f090159;
+    public static final int notification_main_column_container=0x7f09015a;
+    public static final int npl_item_moment_photos=0x7f09015b;
+    public static final int onAttachStateChangeListener=0x7f09015c;
+    public static final int onDateChanged=0x7f09015d;
+    public static final int packed=0x7f09015e;
+    public static final int paper_date=0x7f09015f;
+    public static final int paper_grade=0x7f090160;
+    public static final int paper_name=0x7f090161;
+    public static final int paper_state=0x7f090162;
+    public static final int parallax=0x7f090163;
+    public static final int parent=0x7f090164;
+    public static final int parentPanel=0x7f090165;
+    public static final int parent_matrix=0x7f090166;
+    public static final int password=0x7f090167;
+    public static final int percent=0x7f090168;
+    public static final int pin=0x7f090169;
+    public static final int progress=0x7f09016a;
+    public static final int progress_circular=0x7f09016b;
+    public static final int progress_horizontal=0x7f09016c;
+    public static final int question=0x7f09016d;
+    public static final int radial=0x7f09016e;
+    public static final int radio=0x7f09016f;
+    public static final int ratio_16_9=0x7f090170;
+    public static final int ratio_3_4=0x7f090171;
+    public static final int ratio_4_3=0x7f090172;
+    public static final int ratio_9_16=0x7f090173;
+    public static final int refreshLayout=0x7f090174;
+    public static final int register=0x7f090175;
+    public static final int register_class=0x7f090176;
+    public static final int register_name=0x7f090177;
+    public static final int relativeLayout=0x7f090178;
+    public static final int restart=0x7f090179;
+    public static final int result_image=0x7f09017a;
+    public static final int reverse=0x7f09017b;
+    public static final int right=0x7f09017c;
+    public static final int right_icon=0x7f09017d;
+    public static final int right_side=0x7f09017e;
+    public static final int ripple=0x7f09017f;
+    public static final int rl1=0x7f090180;
+    public static final int rl_paper_view=0x7f090181;
+    public static final int rl_photo_picker_preview_choose=0x7f090182;
+    public static final int root_layout=0x7f090183;
+    public static final int round1=0x7f090184;
+    public static final int round2=0x7f090185;
+    public static final int rubbler=0x7f090186;
+    public static final int rv1=0x7f090187;
+    public static final int rv2=0x7f090188;
+    public static final int rv3=0x7f090189;
+    public static final int rv4=0x7f09018a;
+    public static final int rv_list=0x7f09018b;
+    public static final int rv_moment_list_moments=0x7f09018c;
+    public static final int rv_photo_folder_content=0x7f09018d;
+    public static final int rv_photo_picker_content=0x7f09018e;
+    public static final int rv_view=0x7f09018f;
+    public static final int save_image_matrix=0x7f090190;
+    public static final int save_non_transition_alpha=0x7f090191;
+    public static final int save_scale_type=0x7f090192;
+    public static final int screen=0x7f090193;
+    public static final int scroll=0x7f090194;
+    public static final int scrollIndicatorDown=0x7f090195;
+    public static final int scrollIndicatorUp=0x7f090196;
+    public static final int scrollView=0x7f090197;
+    public static final int scrollable=0x7f090198;
+    public static final int search_badge=0x7f090199;
+    public static final int search_bar=0x7f09019a;
+    public static final int search_button=0x7f09019b;
+    public static final int search_close_btn=0x7f09019c;
+    public static final int search_edit_frame=0x7f09019d;
+    public static final int search_go_btn=0x7f09019e;
+    public static final int search_mag_icon=0x7f09019f;
+    public static final int search_plate=0x7f0901a0;
+    public static final int search_src_text=0x7f0901a1;
+    public static final int search_voice_btn=0x7f0901a2;
+    public static final int seekBar=0x7f0901a3;
+    public static final int select_dialog_listview=0x7f0901a4;
+    public static final int settings_container=0x7f0901a5;
+    public static final int shimmer_view_container=0x7f0901a6;
+    public static final int shortcut=0x7f0901a7;
+    public static final int showCustom=0x7f0901a8;
+    public static final int showHome=0x7f0901a9;
+    public static final int showTitle=0x7f0901aa;
+    public static final int show_always=0x7f0901ab;
+    public static final int show_on_touch=0x7f0901ac;
+    public static final int single_option_A=0x7f0901ad;
+    public static final int single_option_B=0x7f0901ae;
+    public static final int single_option_C=0x7f0901af;
+    public static final int single_option_D=0x7f0901b0;
+    public static final int single_option_group=0x7f0901b1;
+    public static final int slide=0x7f0901b2;
+    public static final int smallLabel=0x7f0901b3;
+    public static final int snackbar_action=0x7f0901b4;
+    public static final int snackbar_text=0x7f0901b5;
+    public static final int snap=0x7f0901b6;
+    public static final int snpl_moment_add_photos=0x7f0901b7;
+    public static final int spacer=0x7f0901b8;
+    public static final int split_action_bar=0x7f0901b9;
+    public static final int spread=0x7f0901ba;
+    public static final int spread_inside=0x7f0901bb;
+    public static final int square=0x7f0901bc;
+    public static final int src_atop=0x7f0901bd;
+    public static final int src_in=0x7f0901be;
+    public static final int src_over=0x7f0901bf;
+    public static final int standard=0x7f0901c0;
+    public static final int start=0x7f0901c1;
+    public static final int status_bar_latest_event_content=0x7f0901c2;
+    public static final int submenuarrow=0x7f0901c3;
+    public static final int submit_area=0x7f0901c4;
+    public static final int support_me=0x7f0901c5;
+    public static final int tabMode=0x7f0901c6;
+    public static final int tab_FindFragment_title=0x7f0901c7;
+    public static final int tab_bar=0x7f0901c8;
+    public static final int tab_layout=0x7f0901c9;
+    public static final int tag_transition_group=0x7f0901ca;
+    public static final int test_fm=0x7f0901cb;
+    public static final int test_item=0x7f0901cc;
+    public static final int test_time=0x7f0901cd;
+    public static final int text=0x7f0901ce;
+    public static final int text2=0x7f0901cf;
+    public static final int textSpacerNoButtons=0x7f0901d0;
+    public static final int textSpacerNoTitle=0x7f0901d1;
+    public static final int textView=0x7f0901d2;
+    public static final int textView3=0x7f0901d3;
+    public static final int textView6=0x7f0901d4;
+    public static final int textView9=0x7f0901d5;
+    public static final int textWatcher=0x7f0901d6;
+    public static final int text_input_password_toggle=0x7f0901d7;
+    public static final int textinput_counter=0x7f0901d8;
+    public static final int textinput_error=0x7f0901d9;
+    public static final int textview=0x7f0901da;
+    public static final int time=0x7f0901db;
+    public static final int title=0x7f0901dc;
+    public static final int titleDividerNoCustom=0x7f0901dd;
+    public static final int title_template=0x7f0901de;
+    public static final int toolbar=0x7f0901df;
+    public static final int toolbar_layout=0x7f0901e0;
+    public static final int toolbar_title=0x7f0901e1;
+    public static final int top=0x7f0901e2;
+    public static final int topPanel=0x7f0901e3;
+    public static final int touch_outside=0x7f0901e4;
+    public static final int transition_current_scene=0x7f0901e5;
+    public static final int transition_layout_save=0x7f0901e6;
+    public static final int transition_position=0x7f0901e7;
+    public static final int transition_scene_layoutid_cache=0x7f0901e8;
+    public static final int transition_transform=0x7f0901e9;
+    public static final int tv=0x7f0901ea;
+    public static final int tvImageToast=0x7f0901eb;
+    public static final int tvTextToast=0x7f0901ec;
+    public static final int tvTitleToast=0x7f0901ed;
+    public static final int tv_apple=0x7f0901ee;
+    public static final int tv_bga_adapter_empty_view_msg=0x7f0901ef;
+    public static final int tv_bind=0x7f0901f0;
+    public static final int tv_class=0x7f0901f1;
+    public static final int tv_exam_time=0x7f0901f2;
+    public static final int tv_forpass=0x7f0901f3;
+    public static final int tv_git=0x7f0901f4;
+    public static final int tv_id=0x7f0901f5;
+    public static final int tv_item_moment_content=0x7f0901f6;
+    public static final int tv_item_moment_username=0x7f0901f7;
+    public static final int tv_item_photo_folder_count=0x7f0901f8;
+    public static final int tv_item_photo_folder_name=0x7f0901f9;
+    public static final int tv_item_photo_picker_tip=0x7f0901fa;
+    public static final int tv_ksxm=0x7f0901fb;
+    public static final int tv_left=0x7f0901fc;
+    public static final int tv_let=0x7f0901fd;
+    public static final int tv_moment_add_choice_photo=0x7f0901fe;
+    public static final int tv_moment_add_publish=0x7f0901ff;
+    public static final int tv_moment_list_add=0x7f090200;
+    public static final int tv_moment_list_system=0x7f090201;
+    public static final int tv_name=0x7f090202;
+    public static final int tv_next=0x7f090203;
+    public static final int tv_num=0x7f090204;
+    public static final int tv_number=0x7f090205;
+    public static final int tv_paper_date=0x7f090206;
+    public static final int tv_photo_picker_preview_choose=0x7f090207;
+    public static final int tv_photo_picker_preview_submit=0x7f090208;
+    public static final int tv_photo_picker_preview_title=0x7f090209;
+    public static final int tv_photo_picker_submit=0x7f09020a;
+    public static final int tv_photo_picker_title=0x7f09020b;
+    public static final int tv_photo_preview_title=0x7f09020c;
+    public static final int tv_prompt=0x7f09020d;
+    public static final int tv_right=0x7f09020e;
+    public static final int tv_send=0x7f09020f;
+    public static final int tv_set=0x7f090210;
+    public static final int tv_system_gallery_crop_choose=0x7f090211;
+    public static final int tv_system_gallery_crop_take_apply=0x7f090212;
+    public static final int tv_system_gallery_crop_take_photo=0x7f090213;
+    public static final int tv_time=0x7f090214;
+    public static final int tv_title=0x7f090215;
+    public static final int tweetAvatar=0x7f090216;
+    public static final int tweetDate=0x7f090217;
+    public static final int tweetName=0x7f090218;
+    public static final int tweetRT=0x7f090219;
+    public static final int tweetText=0x7f09021a;
+    public static final int uniform=0x7f09021b;
+    public static final int up=0x7f09021c;
+    public static final int update_paper=0x7f09021d;
+    public static final int update_subject=0x7f09021e;
+    public static final int update_tiku=0x7f09021f;
+    public static final int useLogo=0x7f090220;
+    public static final int username=0x7f090221;
+    public static final int viewStub=0x7f090222;
+    public static final int view_offset_helper=0x7f090223;
+    public static final int visible=0x7f090224;
+    public static final int vp_FindFragment_pager=0x7f090225;
+    public static final int webView=0x7f090226;
+    public static final int web_layout=0x7f090227;
+    public static final int web_parent_layout_id=0x7f090228;
+    public static final int web_view=0x7f090229;
+    public static final int wel_background_view=0x7f09022a;
+    public static final int wel_bottom_frame=0x7f09022b;
+    public static final int wel_button_bar_first=0x7f09022c;
+    public static final int wel_button_bar_second=0x7f09022d;
+    public static final int wel_button_done=0x7f09022e;
+    public static final int wel_button_next=0x7f09022f;
+    public static final int wel_button_prev=0x7f090230;
+    public static final int wel_button_skip=0x7f090231;
+    public static final int wel_center_view=0x7f090232;
+    public static final int wel_description=0x7f090233;
+    public static final int wel_image=0x7f090234;
+    public static final int wel_pager_indicator=0x7f090235;
+    public static final int wel_parallax_frame=0x7f090236;
+    public static final int wel_root=0x7f090237;
+    public static final int wel_title=0x7f090238;
+    public static final int wel_view_pager=0x7f090239;
+    public static final int withText=0x7f09023a;
+    public static final int wrap=0x7f09023b;
+    public static final int wrap_content=0x7f09023c;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0a0000;
@@ -5798,134 +5936,140 @@ public final class R {
     public static final int abc_tooltip=0x7f0b001a;
     public static final int activity_about=0x7f0b001b;
     public static final int activity_add_paper=0x7f0b001c;
-    public static final int activity_basic=0x7f0b001d;
-    public static final int activity_basices=0x7f0b001e;
-    public static final int activity_bind=0x7f0b001f;
-    public static final int activity_change_password=0x7f0b0020;
-    public static final int activity_circle=0x7f0b0021;
-    public static final int activity_cuoti=0x7f0b0022;
-    public static final int activity_grid=0x7f0b0023;
-    public static final int activity_head=0x7f0b0024;
-    public static final int activity_image_translucent_bar=0x7f0b0025;
-    public static final int activity_information=0x7f0b0026;
-    public static final int activity_jsoup=0x7f0b0027;
-    public static final int activity_knowledge=0x7f0b0028;
-    public static final int activity_large_image_view=0x7f0b0029;
-    public static final int activity_launcher=0x7f0b002a;
-    public static final int activity_login=0x7f0b002b;
-    public static final int activity_look_grade=0x7f0b002c;
-    public static final int activity_main=0x7f0b002d;
-    public static final int activity_moment_add=0x7f0b002e;
-    public static final int activity_moment_list=0x7f0b002f;
-    public static final int activity_muni=0x7f0b0030;
-    public static final int activity_news_display=0x7f0b0031;
-    public static final int activity_pay=0x7f0b0032;
-    public static final int activity_register=0x7f0b0033;
-    public static final int activity_reset_pwd=0x7f0b0034;
-    public static final int activity_result=0x7f0b0035;
-    public static final int activity_sequence=0x7f0b0036;
-    public static final int activity_settings=0x7f0b0037;
-    public static final int activity_start_test=0x7f0b0038;
-    public static final int activity_system_gallery_crop=0x7f0b0039;
-    public static final int activity_tabman=0x7f0b003a;
-    public static final int add_question_list_item=0x7f0b003b;
-    public static final int agentweb_error_page=0x7f0b003c;
-    public static final int app_bar_eaxm=0x7f0b003d;
-    public static final int bga_baseadapter_empty_view=0x7f0b003e;
-    public static final int bga_baseadapter_item_databinding_dummy=0x7f0b003f;
-    public static final int bga_pp_activity_photo_picker=0x7f0b0040;
-    public static final int bga_pp_activity_photo_picker_preview=0x7f0b0041;
-    public static final int bga_pp_activity_photo_preview=0x7f0b0042;
-    public static final int bga_pp_al_photo_picker=0x7f0b0043;
-    public static final int bga_pp_al_photo_picker_preview=0x7f0b0044;
-    public static final int bga_pp_al_photo_preview=0x7f0b0045;
-    public static final int bga_pp_dialog_loading=0x7f0b0046;
-    public static final int bga_pp_item_nine_photo=0x7f0b0047;
-    public static final int bga_pp_item_photo_camera=0x7f0b0048;
-    public static final int bga_pp_item_photo_folder=0x7f0b0049;
-    public static final int bga_pp_item_photo_picker=0x7f0b004a;
-    public static final int bga_pp_pw_photo_folder=0x7f0b004b;
-    public static final int bga_pp_toolbar_viewstub=0x7f0b004c;
-    public static final int bmob_update_dialog=0x7f0b004d;
-    public static final int brvah_quick_view_load_more=0x7f0b004e;
-    public static final int circle_menu_item=0x7f0b004f;
-    public static final int content_eaxm=0x7f0b0050;
-    public static final int content_header_and_footer_use=0x7f0b0051;
-    public static final int design_bottom_navigation_item=0x7f0b0052;
-    public static final int design_bottom_sheet_dialog=0x7f0b0053;
-    public static final int design_layout_snackbar=0x7f0b0054;
-    public static final int design_layout_snackbar_include=0x7f0b0055;
-    public static final int design_layout_tab_icon=0x7f0b0056;
-    public static final int design_layout_tab_text=0x7f0b0057;
-    public static final int design_menu_item_action_area=0x7f0b0058;
-    public static final int design_navigation_item=0x7f0b0059;
-    public static final int design_navigation_item_header=0x7f0b005a;
-    public static final int design_navigation_item_separator=0x7f0b005b;
-    public static final int design_navigation_item_subheader=0x7f0b005c;
-    public static final int design_navigation_menu=0x7f0b005d;
-    public static final int design_navigation_menu_item=0x7f0b005e;
-    public static final int design_text_input_password_icon=0x7f0b005f;
-    public static final int dialog_add_paper=0x7f0b0060;
-    public static final int drawer_header=0x7f0b0061;
-    public static final int fragment=0x7f0b0062;
-    public static final int fragment_basic=0x7f0b0063;
-    public static final int fragment_cherry=0x7f0b0064;
-    public static final int fragment_done=0x7f0b0065;
-    public static final int fragment_progress_dialog=0x7f0b0066;
-    public static final int grade_list_item=0x7f0b0067;
-    public static final int hotcollection_fragment=0x7f0b0068;
-    public static final int hotmonth_fragment=0x7f0b0069;
-    public static final int hotrecommend_fragment=0x7f0b006a;
-    public static final int hottoday_fragment=0x7f0b006b;
-    public static final int include_header=0x7f0b006c;
-    public static final int item_moment=0x7f0b006d;
-    public static final int knowledge_list_item=0x7f0b006e;
-    public static final int knowledge_list_rv=0x7f0b006f;
-    public static final int nav_header_eaxm=0x7f0b0070;
-    public static final int news_item=0x7f0b0071;
-    public static final int notification_action=0x7f0b0072;
-    public static final int notification_action_tombstone=0x7f0b0073;
-    public static final int notification_media_action=0x7f0b0074;
-    public static final int notification_media_cancel_action=0x7f0b0075;
-    public static final int notification_template_big_media=0x7f0b0076;
-    public static final int notification_template_big_media_custom=0x7f0b0077;
-    public static final int notification_template_big_media_narrow=0x7f0b0078;
-    public static final int notification_template_big_media_narrow_custom=0x7f0b0079;
-    public static final int notification_template_custom_big=0x7f0b007a;
-    public static final int notification_template_icon_group=0x7f0b007b;
-    public static final int notification_template_lines_media=0x7f0b007c;
-    public static final int notification_template_media=0x7f0b007d;
-    public static final int notification_template_media_custom=0x7f0b007e;
-    public static final int notification_template_part_chronometer=0x7f0b007f;
-    public static final int notification_template_part_time=0x7f0b0080;
-    public static final int paper_list_item=0x7f0b0081;
-    public static final int paper_list_item_teacher=0x7f0b0082;
-    public static final int parallax_welcome=0x7f0b0083;
-    public static final int preference_category_widget=0x7f0b0084;
-    public static final int preference_item=0x7f0b0085;
-    public static final int rubbler=0x7f0b0086;
-    public static final int select_dialog_item_material=0x7f0b0087;
-    public static final int select_dialog_multichoice_material=0x7f0b0088;
-    public static final int select_dialog_singlechoice_material=0x7f0b0089;
-    public static final int status_grid_layout=0x7f0b008a;
-    public static final int status_griditem_layout=0x7f0b008b;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b008c;
-    public static final int tab_widget_item=0x7f0b008d;
-    public static final int test_answer_list=0x7f0b008e;
-    public static final int test_list_item=0x7f0b008f;
-    public static final int testqeba_list_item=0x7f0b0090;
-    public static final int toast_style=0x7f0b0091;
-    public static final int tweet=0x7f0b0092;
-    public static final int wel_activity_welcome=0x7f0b0093;
-    public static final int wel_bottom_button_bar=0x7f0b0094;
-    public static final int wel_bottom_done_image=0x7f0b0095;
-    public static final int wel_bottom_indicator=0x7f0b0096;
-    public static final int wel_bottom_single_button=0x7f0b0097;
-    public static final int wel_bottom_standard=0x7f0b0098;
-    public static final int wel_fragment_basic=0x7f0b0099;
-    public static final int wel_fragment_parallax=0x7f0b009a;
-    public static final int wel_fragment_parallax_full_screen=0x7f0b009b;
-    public static final int wel_fragment_title=0x7f0b009c;
+    public static final int activity_base_web=0x7f0b001d;
+    public static final int activity_basic=0x7f0b001e;
+    public static final int activity_basices=0x7f0b001f;
+    public static final int activity_bind=0x7f0b0020;
+    public static final int activity_change_password=0x7f0b0021;
+    public static final int activity_circle=0x7f0b0022;
+    public static final int activity_cuoti=0x7f0b0023;
+    public static final int activity_grid=0x7f0b0024;
+    public static final int activity_head=0x7f0b0025;
+    public static final int activity_image_translucent_bar=0x7f0b0026;
+    public static final int activity_information=0x7f0b0027;
+    public static final int activity_jsoup=0x7f0b0028;
+    public static final int activity_knowledge=0x7f0b0029;
+    public static final int activity_large_image_view=0x7f0b002a;
+    public static final int activity_launcher=0x7f0b002b;
+    public static final int activity_login=0x7f0b002c;
+    public static final int activity_look_grade=0x7f0b002d;
+    public static final int activity_main=0x7f0b002e;
+    public static final int activity_moment_add=0x7f0b002f;
+    public static final int activity_moment_list=0x7f0b0030;
+    public static final int activity_muni=0x7f0b0031;
+    public static final int activity_news_display=0x7f0b0032;
+    public static final int activity_pay=0x7f0b0033;
+    public static final int activity_register=0x7f0b0034;
+    public static final int activity_reset_pwd=0x7f0b0035;
+    public static final int activity_result=0x7f0b0036;
+    public static final int activity_scrolling=0x7f0b0037;
+    public static final int activity_sequence=0x7f0b0038;
+    public static final int activity_settings=0x7f0b0039;
+    public static final int activity_start_test=0x7f0b003a;
+    public static final int activity_system_gallery_crop=0x7f0b003b;
+    public static final int activity_tabman=0x7f0b003c;
+    public static final int activity_web=0x7f0b003d;
+    public static final int add_question_list_item=0x7f0b003e;
+    public static final int agentweb_error_page=0x7f0b003f;
+    public static final int app_bar_eaxm=0x7f0b0040;
+    public static final int bga_baseadapter_empty_view=0x7f0b0041;
+    public static final int bga_baseadapter_item_databinding_dummy=0x7f0b0042;
+    public static final int bga_pp_activity_photo_picker=0x7f0b0043;
+    public static final int bga_pp_activity_photo_picker_preview=0x7f0b0044;
+    public static final int bga_pp_activity_photo_preview=0x7f0b0045;
+    public static final int bga_pp_al_photo_picker=0x7f0b0046;
+    public static final int bga_pp_al_photo_picker_preview=0x7f0b0047;
+    public static final int bga_pp_al_photo_preview=0x7f0b0048;
+    public static final int bga_pp_dialog_loading=0x7f0b0049;
+    public static final int bga_pp_item_nine_photo=0x7f0b004a;
+    public static final int bga_pp_item_photo_camera=0x7f0b004b;
+    public static final int bga_pp_item_photo_folder=0x7f0b004c;
+    public static final int bga_pp_item_photo_picker=0x7f0b004d;
+    public static final int bga_pp_pw_photo_folder=0x7f0b004e;
+    public static final int bga_pp_toolbar_viewstub=0x7f0b004f;
+    public static final int bmob_update_dialog=0x7f0b0050;
+    public static final int brvah_quick_view_load_more=0x7f0b0051;
+    public static final int circle_menu_item=0x7f0b0052;
+    public static final int content_eaxm=0x7f0b0053;
+    public static final int content_header_and_footer_use=0x7f0b0054;
+    public static final int design_bottom_navigation_item=0x7f0b0055;
+    public static final int design_bottom_sheet_dialog=0x7f0b0056;
+    public static final int design_layout_snackbar=0x7f0b0057;
+    public static final int design_layout_snackbar_include=0x7f0b0058;
+    public static final int design_layout_tab_icon=0x7f0b0059;
+    public static final int design_layout_tab_text=0x7f0b005a;
+    public static final int design_menu_item_action_area=0x7f0b005b;
+    public static final int design_navigation_item=0x7f0b005c;
+    public static final int design_navigation_item_header=0x7f0b005d;
+    public static final int design_navigation_item_separator=0x7f0b005e;
+    public static final int design_navigation_item_subheader=0x7f0b005f;
+    public static final int design_navigation_menu=0x7f0b0060;
+    public static final int design_navigation_menu_item=0x7f0b0061;
+    public static final int design_text_input_password_icon=0x7f0b0062;
+    public static final int dialog_add_paper=0x7f0b0063;
+    public static final int fragment=0x7f0b0064;
+    public static final int fragment_basic=0x7f0b0065;
+    public static final int fragment_cherry=0x7f0b0066;
+    public static final int fragment_done=0x7f0b0067;
+    public static final int fragment_progress_dialog=0x7f0b0068;
+    public static final int fragment_twk_web=0x7f0b0069;
+    public static final int grade_list_item=0x7f0b006a;
+    public static final int hotcollection_fragment=0x7f0b006b;
+    public static final int hotmonth_fragment=0x7f0b006c;
+    public static final int hotrecommend_fragment=0x7f0b006d;
+    public static final int hottoday_fragment=0x7f0b006e;
+    public static final int include_header=0x7f0b006f;
+    public static final int item_moment=0x7f0b0070;
+    public static final int knowledge_list_item=0x7f0b0071;
+    public static final int knowledge_list_rv=0x7f0b0072;
+    public static final int list_item_longclicked_img=0x7f0b0073;
+    public static final int nav_header_eaxm=0x7f0b0074;
+    public static final int news_item=0x7f0b0075;
+    public static final int notification_action=0x7f0b0076;
+    public static final int notification_action_tombstone=0x7f0b0077;
+    public static final int notification_media_action=0x7f0b0078;
+    public static final int notification_media_cancel_action=0x7f0b0079;
+    public static final int notification_template_big_media=0x7f0b007a;
+    public static final int notification_template_big_media_custom=0x7f0b007b;
+    public static final int notification_template_big_media_narrow=0x7f0b007c;
+    public static final int notification_template_big_media_narrow_custom=0x7f0b007d;
+    public static final int notification_template_custom_big=0x7f0b007e;
+    public static final int notification_template_icon_group=0x7f0b007f;
+    public static final int notification_template_lines_media=0x7f0b0080;
+    public static final int notification_template_media=0x7f0b0081;
+    public static final int notification_template_media_custom=0x7f0b0082;
+    public static final int notification_template_part_chronometer=0x7f0b0083;
+    public static final int notification_template_part_time=0x7f0b0084;
+    public static final int paper_list_item=0x7f0b0085;
+    public static final int paper_list_item_teacher=0x7f0b0086;
+    public static final int parallax_welcome=0x7f0b0087;
+    public static final int preference_category_widget=0x7f0b0088;
+    public static final int preference_item=0x7f0b0089;
+    public static final int rubbler=0x7f0b008a;
+    public static final int select_dialog_item_material=0x7f0b008b;
+    public static final int select_dialog_multichoice_material=0x7f0b008c;
+    public static final int select_dialog_singlechoice_material=0x7f0b008d;
+    public static final int status_grid_layout=0x7f0b008e;
+    public static final int status_griditem_layout=0x7f0b008f;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b0090;
+    public static final int tab_widget_item=0x7f0b0091;
+    public static final int test_answer_list=0x7f0b0092;
+    public static final int test_list_item=0x7f0b0093;
+    public static final int testqeba_list_item=0x7f0b0094;
+    public static final int toast_style=0x7f0b0095;
+    public static final int tweet=0x7f0b0096;
+    public static final int view_bezier=0x7f0b0097;
+    public static final int view_sinaheader=0x7f0b0098;
+    public static final int wel_activity_welcome=0x7f0b0099;
+    public static final int wel_bottom_button_bar=0x7f0b009a;
+    public static final int wel_bottom_done_image=0x7f0b009b;
+    public static final int wel_bottom_indicator=0x7f0b009c;
+    public static final int wel_bottom_single_button=0x7f0b009d;
+    public static final int wel_bottom_standard=0x7f0b009e;
+    public static final int wel_fragment_basic=0x7f0b009f;
+    public static final int wel_fragment_parallax=0x7f0b00a0;
+    public static final int wel_fragment_parallax_full_screen=0x7f0b00a1;
+    public static final int wel_fragment_title=0x7f0b00a2;
   }
   public static final class menu {
     public static final int bga_pp_menu_photo_picker=0x7f0c0000;
@@ -5948,6 +6092,19 @@ public final class R {
     public static final int bga_pp_ic_holder_light=0x7f0d0008;
     public static final int bga_pp_ic_plus=0x7f0d0009;
     public static final int ic_launcher=0x7f0d000a;
+    public static final int refresh_head_arrow=0x7f0d000b;
+    public static final int refresh_loading01=0x7f0d000c;
+    public static final int refresh_loading02=0x7f0d000d;
+    public static final int refresh_loading03=0x7f0d000e;
+    public static final int refresh_loading04=0x7f0d000f;
+    public static final int refresh_loading05=0x7f0d0010;
+    public static final int refresh_loading06=0x7f0d0011;
+    public static final int refresh_loading07=0x7f0d0012;
+    public static final int refresh_loading08=0x7f0d0013;
+    public static final int refresh_loading09=0x7f0d0014;
+    public static final int refresh_loading10=0x7f0d0015;
+    public static final int refresh_loading11=0x7f0d0016;
+    public static final int refresh_loading12=0x7f0d0017;
   }
   public static final class string {
     public static final int BMAppUpdate=0x7f0e0000;
@@ -6103,94 +6260,99 @@ public final class R {
     public static final int fa_gear=0x7f0e0096;
     public static final int fa_gears=0x7f0e0097;
     public static final int fa_gg=0x7f0e0098;
-    public static final int fa_github=0x7f0e0099;
-    public static final int fa_heart=0x7f0e009a;
-    public static final int fa_heart_o=0x7f0e009b;
-    public static final int fa_home=0x7f0e009c;
-    public static final int fa_leaf=0x7f0e009d;
-    public static final int fa_male=0x7f0e009e;
-    public static final int fa_navicon=0x7f0e009f;
-    public static final int fa_ok=0x7f0e00a0;
-    public static final int fa_paper_plane=0x7f0e00a1;
-    public static final int fa_paper_plane_o=0x7f0e00a2;
-    public static final int fa_paperclip=0x7f0e00a3;
-    public static final int fa_question=0x7f0e00a4;
-    public static final int fa_remove=0x7f0e00a5;
-    public static final int fa_user=0x7f0e00a6;
-    public static final int face=0x7f0e00a7;
-    public static final int fisfh=0x7f0e00a8;
-    public static final int forgetpass=0x7f0e00a9;
-    public static final int gallay=0x7f0e00aa;
-    public static final int hello_world=0x7f0e00ab;
-    public static final int id_10=0x7f0e00ac;
-    public static final int image_translucent_bar=0x7f0e00ad;
-    public static final int info_class=0x7f0e00ae;
-    public static final int info_name=0x7f0e00af;
-    public static final int info_number=0x7f0e00b0;
-    public static final int info_person=0x7f0e00b1;
-    public static final int info_production=0x7f0e00b2;
-    public static final int instridution=0x7f0e00b3;
-    public static final int jdt=0x7f0e00b4;
-    public static final int judgeA=0x7f0e00b5;
-    public static final int ksxm=0x7f0e00b6;
-    public static final int label=0x7f0e00b7;
-    public static final int login_account=0x7f0e00b8;
-    public static final int login_bnt=0x7f0e00b9;
-    public static final int lookgrade=0x7f0e00ba;
-    public static final int ltitle=0x7f0e00bb;
-    public static final int mutiselect=0x7f0e00bc;
-    public static final int navigation_drawer_close=0x7f0e00bd;
-    public static final int navigation_drawer_open=0x7f0e00be;
-    public static final int nextqusetion=0x7f0e00bf;
-    public static final int note=0x7f0e00c0;
-    public static final int notify_priority=0x7f0e00c1;
-    public static final int password_toggle_content_description=0x7f0e00c2;
-    public static final int path_password_eye=0x7f0e00c3;
-    public static final int path_password_eye_mask_strike_through=0x7f0e00c4;
-    public static final int path_password_eye_mask_visible=0x7f0e00c5;
-    public static final int path_password_strike_through=0x7f0e00c6;
-    public static final int permission_crop_rationale=0x7f0e00c7;
-    public static final int permission_denied=0x7f0e00c8;
-    public static final int permission_denied_never_ask_again=0x7f0e00c9;
-    public static final int permission_pick_rationale=0x7f0e00ca;
-    public static final int person_name=0x7f0e00cb;
-    public static final int picture=0x7f0e00cc;
-    public static final int publish=0x7f0e00cd;
-    public static final int rationale_ask_again=0x7f0e00ce;
-    public static final int register_bnt=0x7f0e00cf;
-    public static final int remenberme=0x7f0e00d0;
-    public static final int reset=0x7f0e00d1;
-    public static final int safe=0x7f0e00d2;
-    public static final int search_menu_title=0x7f0e00d3;
-    public static final int select_paper=0x7f0e00d4;
-    public static final int set_head=0x7f0e00d5;
-    public static final int shoe_save=0x7f0e00d6;
-    public static final int sigerselect=0x7f0e00d7;
-    public static final int skipqusetion=0x7f0e00d8;
-    public static final int status_bar_notification_info_overflow=0x7f0e00d9;
-    public static final int submit=0x7f0e00da;
-    public static final int submit_report=0x7f0e00db;
-    public static final int sys_gallery=0x7f0e00dc;
-    public static final int t_15=0x7f0e00dd;
-    public static final int test=0x7f0e00de;
-    public static final int this_is_fragment=0x7f0e00df;
-    public static final int tihao=0x7f0e00e0;
-    public static final int title_activity_eaxm=0x7f0e00e1;
-    public static final int title_activity_setting=0x7f0e00e2;
-    public static final int title_activity_settings=0x7f0e00e3;
-    public static final int title_settings_dialog=0x7f0e00e4;
-    public static final int toast_close=0x7f0e00e5;
-    public static final int toast_open=0x7f0e00e6;
-    public static final int tv_head=0x7f0e00e7;
-    public static final int tv_nick=0x7f0e00e8;
-    public static final int tv_nick_n=0x7f0e00e9;
-    public static final int update_paper=0x7f0e00ea;
-    public static final int upload=0x7f0e00eb;
-    public static final int wel_done=0x7f0e00ec;
-    public static final int wel_log_in=0x7f0e00ed;
-    public static final int wel_sign_up=0x7f0e00ee;
-    public static final int wel_skip=0x7f0e00ef;
-    public static final int xiaomi_attention=0x7f0e00f0;
+    public static final int fa_gg_circle=0x7f0e0099;
+    public static final int fa_github=0x7f0e009a;
+    public static final int fa_heart=0x7f0e009b;
+    public static final int fa_heart_o=0x7f0e009c;
+    public static final int fa_home=0x7f0e009d;
+    public static final int fa_leaf=0x7f0e009e;
+    public static final int fa_male=0x7f0e009f;
+    public static final int fa_navicon=0x7f0e00a0;
+    public static final int fa_ok=0x7f0e00a1;
+    public static final int fa_paper_plane=0x7f0e00a2;
+    public static final int fa_paper_plane_o=0x7f0e00a3;
+    public static final int fa_paperclip=0x7f0e00a4;
+    public static final int fa_question=0x7f0e00a5;
+    public static final int fa_remove=0x7f0e00a6;
+    public static final int fa_twitter=0x7f0e00a7;
+    public static final int fa_user=0x7f0e00a8;
+    public static final int face=0x7f0e00a9;
+    public static final int fisfh=0x7f0e00aa;
+    public static final int forgetpass=0x7f0e00ab;
+    public static final int gallay=0x7f0e00ac;
+    public static final int hello_world=0x7f0e00ad;
+    public static final int id_10=0x7f0e00ae;
+    public static final int image_translucent_bar=0x7f0e00af;
+    public static final int info_class=0x7f0e00b0;
+    public static final int info_name=0x7f0e00b1;
+    public static final int info_number=0x7f0e00b2;
+    public static final int info_person=0x7f0e00b3;
+    public static final int info_production=0x7f0e00b4;
+    public static final int instridution=0x7f0e00b5;
+    public static final int jdt=0x7f0e00b6;
+    public static final int judgeA=0x7f0e00b7;
+    public static final int ksxm=0x7f0e00b8;
+    public static final int label=0x7f0e00b9;
+    public static final int large_text=0x7f0e00ba;
+    public static final int login_account=0x7f0e00bb;
+    public static final int login_bnt=0x7f0e00bc;
+    public static final int lookgrade=0x7f0e00bd;
+    public static final int ltitle=0x7f0e00be;
+    public static final int mutiselect=0x7f0e00bf;
+    public static final int navigation_drawer_close=0x7f0e00c0;
+    public static final int navigation_drawer_open=0x7f0e00c1;
+    public static final int nextqusetion=0x7f0e00c2;
+    public static final int note=0x7f0e00c3;
+    public static final int notify_priority=0x7f0e00c4;
+    public static final int password_toggle_content_description=0x7f0e00c5;
+    public static final int path_password_eye=0x7f0e00c6;
+    public static final int path_password_eye_mask_strike_through=0x7f0e00c7;
+    public static final int path_password_eye_mask_visible=0x7f0e00c8;
+    public static final int path_password_strike_through=0x7f0e00c9;
+    public static final int permission_crop_rationale=0x7f0e00ca;
+    public static final int permission_denied=0x7f0e00cb;
+    public static final int permission_denied_never_ask_again=0x7f0e00cc;
+    public static final int permission_pick_rationale=0x7f0e00cd;
+    public static final int person_name=0x7f0e00ce;
+    public static final int picture=0x7f0e00cf;
+    public static final int publish=0x7f0e00d0;
+    public static final int rationale_ask_again=0x7f0e00d1;
+    public static final int register_bnt=0x7f0e00d2;
+    public static final int remenberme=0x7f0e00d3;
+    public static final int reset=0x7f0e00d4;
+    public static final int safe=0x7f0e00d5;
+    public static final int search_menu_title=0x7f0e00d6;
+    public static final int select_paper=0x7f0e00d7;
+    public static final int set_head=0x7f0e00d8;
+    public static final int shoe_save=0x7f0e00d9;
+    public static final int sigerselect=0x7f0e00da;
+    public static final int skipqusetion=0x7f0e00db;
+    public static final int status_bar_notification_info_overflow=0x7f0e00dc;
+    public static final int submit=0x7f0e00dd;
+    public static final int submit_report=0x7f0e00de;
+    public static final int sys_gallery=0x7f0e00df;
+    public static final int t_15=0x7f0e00e0;
+    public static final int test=0x7f0e00e1;
+    public static final int this_is_fragment=0x7f0e00e2;
+    public static final int tihao=0x7f0e00e3;
+    public static final int title_activity_eaxm=0x7f0e00e4;
+    public static final int title_activity_scrolling=0x7f0e00e5;
+    public static final int title_activity_setting=0x7f0e00e6;
+    public static final int title_activity_settings=0x7f0e00e7;
+    public static final int title_setting=0x7f0e00e8;
+    public static final int title_settings_dialog=0x7f0e00e9;
+    public static final int toast_close=0x7f0e00ea;
+    public static final int toast_open=0x7f0e00eb;
+    public static final int tv_head=0x7f0e00ec;
+    public static final int tv_nick=0x7f0e00ed;
+    public static final int tv_nick_n=0x7f0e00ee;
+    public static final int update_paper=0x7f0e00ef;
+    public static final int upload=0x7f0e00f0;
+    public static final int wel_done=0x7f0e00f1;
+    public static final int wel_log_in=0x7f0e00f2;
+    public static final int wel_sign_up=0x7f0e00f3;
+    public static final int wel_skip=0x7f0e00f4;
+    public static final int xiaomi_attention=0x7f0e00f5;
   }
   public static final class style {
     public static final int About=0x7f0f0000;
@@ -6684,35 +6846,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background c313355d6f4419b5084f07b9ee758da4.realse:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit c313355d6f4419b5084f07b9ee758da4.realse:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked c313355d6f4419b5084f07b9ee758da4.realse:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd c313355d6f4419b5084f07b9ee758da4.realse:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions c313355d6f4419b5084f07b9ee758da4.realse:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft c313355d6f4419b5084f07b9ee758da4.realse:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight c313355d6f4419b5084f07b9ee758da4.realse:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart c313355d6f4419b5084f07b9ee758da4.realse:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation c313355d6f4419b5084f07b9ee758da4.realse:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout c313355d6f4419b5084f07b9ee758da4.realse:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions c313355d6f4419b5084f07b9ee758da4.realse:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider c313355d6f4419b5084f07b9ee758da4.realse:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation c313355d6f4419b5084f07b9ee758da4.realse:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height c313355d6f4419b5084f07b9ee758da4.realse:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll c313355d6f4419b5084f07b9ee758da4.realse:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator c313355d6f4419b5084f07b9ee758da4.realse:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout c313355d6f4419b5084f07b9ee758da4.realse:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon c313355d6f4419b5084f07b9ee758da4.realse:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle c313355d6f4419b5084f07b9ee758da4.realse:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding c313355d6f4419b5084f07b9ee758da4.realse:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo c313355d6f4419b5084f07b9ee758da4.realse:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode c313355d6f4419b5084f07b9ee758da4.realse:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme c313355d6f4419b5084f07b9ee758da4.realse:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding c313355d6f4419b5084f07b9ee758da4.realse:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle c313355d6f4419b5084f07b9ee758da4.realse:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle c313355d6f4419b5084f07b9ee758da4.realse:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle c313355d6f4419b5084f07b9ee758da4.realse:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title c313355d6f4419b5084f07b9ee758da4.realse:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle c313355d6f4419b5084f07b9ee758da4.realse:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.murainy.safeexam.realse:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.murainy.safeexam.realse:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.murainy.safeexam.realse:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.murainy.safeexam.realse:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.murainy.safeexam.realse:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.murainy.safeexam.realse:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.murainy.safeexam.realse:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.murainy.safeexam.realse:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.murainy.safeexam.realse:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.murainy.safeexam.realse:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.murainy.safeexam.realse:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.murainy.safeexam.realse:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.murainy.safeexam.realse:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.murainy.safeexam.realse:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.murainy.safeexam.realse:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.murainy.safeexam.realse:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.murainy.safeexam.realse:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.murainy.safeexam.realse:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.murainy.safeexam.realse:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.murainy.safeexam.realse:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.murainy.safeexam.realse:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.murainy.safeexam.realse:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.murainy.safeexam.realse:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.murainy.safeexam.realse:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.murainy.safeexam.realse:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.murainy.safeexam.realse:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.murainy.safeexam.realse:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.murainy.safeexam.realse:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.murainy.safeexam.realse:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -6755,7 +6917,7 @@ public final class R {
       0x7f0401ea
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6763,11 +6925,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:background
+     * @attr name com.murainy.safeexam.realse:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6778,11 +6940,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:backgroundSplit
+     * @attr name com.murainy.safeexam.realse:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6793,11 +6955,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:backgroundStacked
+     * @attr name com.murainy.safeexam.realse:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6806,11 +6968,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetEnd
+     * @attr name com.murainy.safeexam.realse:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6819,11 +6981,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetEndWithActions
+     * @attr name com.murainy.safeexam.realse:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6832,11 +6994,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetLeft
+     * @attr name com.murainy.safeexam.realse:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6845,11 +7007,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetRight
+     * @attr name com.murainy.safeexam.realse:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6858,11 +7020,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetStart
+     * @attr name com.murainy.safeexam.realse:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6871,11 +7033,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetStartWithNavigation
+     * @attr name com.murainy.safeexam.realse:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6883,11 +7045,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:customNavigationLayout
+     * @attr name com.murainy.safeexam.realse:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -6905,11 +7067,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:displayOptions
+     * @attr name com.murainy.safeexam.realse:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6917,11 +7079,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:divider
+     * @attr name com.murainy.safeexam.realse:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6930,11 +7092,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:elevation
+     * @attr name com.murainy.safeexam.realse:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6943,21 +7105,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:height
+     * @attr name com.murainy.safeexam.realse:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:hideOnContentScroll
+     * @attr name com.murainy.safeexam.realse:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6965,11 +7127,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:homeAsUpIndicator
+     * @attr name com.murainy.safeexam.realse:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6977,11 +7139,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:homeLayout
+     * @attr name com.murainy.safeexam.realse:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6989,11 +7151,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:icon
+     * @attr name com.murainy.safeexam.realse:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7001,11 +7163,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:indeterminateProgressStyle
+     * @attr name com.murainy.safeexam.realse:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7014,11 +7176,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:itemPadding
+     * @attr name com.murainy.safeexam.realse:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7026,11 +7188,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:logo
+     * @attr name com.murainy.safeexam.realse:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7044,11 +7206,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:navigationMode
+     * @attr name com.murainy.safeexam.realse:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7056,11 +7218,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:popupTheme
+     * @attr name com.murainy.safeexam.realse:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7069,11 +7231,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:progressBarPadding
+     * @attr name com.murainy.safeexam.realse:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7081,21 +7243,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:progressBarStyle
+     * @attr name com.murainy.safeexam.realse:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:subtitle
+     * @attr name com.murainy.safeexam.realse:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7103,21 +7265,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:subtitleTextStyle
+     * @attr name com.murainy.safeexam.realse:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:title
+     * @attr name com.murainy.safeexam.realse:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7125,7 +7287,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleTextStyle
+     * @attr name com.murainy.safeexam.realse:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -7207,12 +7369,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background c313355d6f4419b5084f07b9ee758da4.realse:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit c313355d6f4419b5084f07b9ee758da4.realse:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout c313355d6f4419b5084f07b9ee758da4.realse:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height c313355d6f4419b5084f07b9ee758da4.realse:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle c313355d6f4419b5084f07b9ee758da4.realse:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle c313355d6f4419b5084f07b9ee758da4.realse:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.murainy.safeexam.realse:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.murainy.safeexam.realse:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.murainy.safeexam.realse:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.murainy.safeexam.realse:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.murainy.safeexam.realse:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.murainy.safeexam.realse:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -7226,7 +7388,7 @@ public final class R {
       0x7f0401b3, 0x7f0401ea
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7234,11 +7396,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:background
+     * @attr name com.murainy.safeexam.realse:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7249,11 +7411,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:backgroundSplit
+     * @attr name com.murainy.safeexam.realse:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7261,11 +7423,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:closeItemLayout
+     * @attr name com.murainy.safeexam.realse:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7274,11 +7436,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:height
+     * @attr name com.murainy.safeexam.realse:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7286,11 +7448,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:subtitleTextStyle
+     * @attr name com.murainy.safeexam.realse:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7298,7 +7460,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleTextStyle
+     * @attr name com.murainy.safeexam.realse:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -7308,8 +7470,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable c313355d6f4419b5084f07b9ee758da4.realse:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount c313355d6f4419b5084f07b9ee758da4.realse:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.murainy.safeexam.realse:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.murainy.safeexam.realse:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -7318,7 +7480,7 @@ public final class R {
       0x7f0400b8, 0x7f0400fd
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7326,17 +7488,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expandActivityOverflowButtonDrawable
+     * @attr name com.murainy.safeexam.realse:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:initialActivityCount
+     * @attr name com.murainy.safeexam.realse:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -7347,13 +7509,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen c313355d6f4419b5084f07b9ee758da4.realse:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout c313355d6f4419b5084f07b9ee758da4.realse:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout c313355d6f4419b5084f07b9ee758da4.realse:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout c313355d6f4419b5084f07b9ee758da4.realse:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout c313355d6f4419b5084f07b9ee758da4.realse:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle c313355d6f4419b5084f07b9ee758da4.realse:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout c313355d6f4419b5084f07b9ee758da4.realse:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.murainy.safeexam.realse:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.murainy.safeexam.realse:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.murainy.safeexam.realse:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.murainy.safeexam.realse:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.murainy.safeexam.realse:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.murainy.safeexam.realse:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.murainy.safeexam.realse:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -7381,7 +7543,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7390,11 +7552,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonIconDimen
+     * @attr name com.murainy.safeexam.realse:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7402,11 +7564,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonPanelSideLayout
+     * @attr name com.murainy.safeexam.realse:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7414,11 +7576,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listItemLayout
+     * @attr name com.murainy.safeexam.realse:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7426,11 +7588,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listLayout
+     * @attr name com.murainy.safeexam.realse:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7438,21 +7600,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:multiChoiceItemLayout
+     * @attr name com.murainy.safeexam.realse:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:showTitle
+     * @attr name com.murainy.safeexam.realse:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7460,7 +7622,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:singleChoiceItemLayout
+     * @attr name com.murainy.safeexam.realse:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -7473,8 +7635,8 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation c313355d6f4419b5084f07b9ee758da4.realse:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded c313355d6f4419b5084f07b9ee758da4.realse:expanded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.murainy.safeexam.realse:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded com.murainy.safeexam.realse:expanded}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -7522,7 +7684,7 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#elevation}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7531,17 +7693,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:elevation
+     * @attr name com.murainy.safeexam.realse:elevation
      */
     public static final int AppBarLayout_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expanded}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expanded}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expanded
+     * @attr name com.murainy.safeexam.realse:expanded
      */
     public static final int AppBarLayout_expanded=4;
     /**
@@ -7551,8 +7713,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed c313355d6f4419b5084f07b9ee758da4.realse:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible c313355d6f4419b5084f07b9ee758da4.realse:state_collapsible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.murainy.safeexam.realse:state_collapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.murainy.safeexam.realse:state_collapsible}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
@@ -7561,23 +7723,23 @@ public final class R {
       0x7f0401aa, 0x7f0401ab
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#state_collapsed}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#state_collapsed}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:state_collapsed
+     * @attr name com.murainy.safeexam.realse:state_collapsed
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#state_collapsible}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#state_collapsible}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:state_collapsible
+     * @attr name com.murainy.safeexam.realse:state_collapsible
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
@@ -7587,8 +7749,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags c313355d6f4419b5084f07b9ee758da4.realse:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator c313355d6f4419b5084f07b9ee758da4.realse:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.murainy.safeexam.realse:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.murainy.safeexam.realse:layout_scrollInterpolator}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -7597,7 +7759,7 @@ public final class R {
       0x7f040143, 0x7f040144
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7613,11 +7775,11 @@ public final class R {
      * <tr><td>snap</td><td>10</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_scrollFlags
+     * @attr name com.murainy.safeexam.realse:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_scrollInterpolator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_scrollInterpolator}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7625,7 +7787,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_scrollInterpolator
+     * @attr name com.murainy.safeexam.realse:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -7636,9 +7798,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat c313355d6f4419b5084f07b9ee758da4.realse:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint c313355d6f4419b5084f07b9ee758da4.realse:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode c313355d6f4419b5084f07b9ee758da4.realse:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.murainy.safeexam.realse:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.murainy.safeexam.realse:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.murainy.safeexam.realse:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -7664,7 +7826,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7672,22 +7834,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:srcCompat
+     * @attr name com.murainy.safeexam.realse:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tint
+     * @attr name com.murainy.safeexam.realse:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7704,7 +7866,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tintMode
+     * @attr name com.murainy.safeexam.realse:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -7715,9 +7877,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark c313355d6f4419b5084f07b9ee758da4.realse:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint c313355d6f4419b5084f07b9ee758da4.realse:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode c313355d6f4419b5084f07b9ee758da4.realse:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.murainy.safeexam.realse:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.murainy.safeexam.realse:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.murainy.safeexam.realse:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -7740,7 +7902,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7748,22 +7910,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tickMark
+     * @attr name com.murainy.safeexam.realse:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tickMarkTint
+     * @attr name com.murainy.safeexam.realse:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7780,7 +7942,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tickMarkTintMode
+     * @attr name com.murainy.safeexam.realse:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -7920,13 +8082,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize c313355d6f4419b5084f07b9ee758da4.realse:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize c313355d6f4419b5084f07b9ee758da4.realse:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes c313355d6f4419b5084f07b9ee758da4.realse:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity c313355d6f4419b5084f07b9ee758da4.realse:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType c313355d6f4419b5084f07b9ee758da4.realse:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily c313355d6f4419b5084f07b9ee758da4.realse:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps c313355d6f4419b5084f07b9ee758da4.realse:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.murainy.safeexam.realse:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.murainy.safeexam.realse:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.murainy.safeexam.realse:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.murainy.safeexam.realse:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.murainy.safeexam.realse:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.murainy.safeexam.realse:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.murainy.safeexam.realse:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -7954,7 +8116,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7963,11 +8125,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:autoSizeMaxTextSize
+     * @attr name com.murainy.safeexam.realse:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7976,11 +8138,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:autoSizeMinTextSize
+     * @attr name com.murainy.safeexam.realse:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7988,11 +8150,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:autoSizePresetSizes
+     * @attr name com.murainy.safeexam.realse:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8001,11 +8163,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:autoSizeStepGranularity
+     * @attr name com.murainy.safeexam.realse:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8018,21 +8180,21 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:autoSizeTextType
+     * @attr name com.murainy.safeexam.realse:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontFamily
+     * @attr name com.murainy.safeexam.realse:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8042,7 +8204,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAllCaps
+     * @attr name com.murainy.safeexam.realse:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=7;
     /**
@@ -8054,124 +8216,124 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider c313355d6f4419b5084f07b9ee758da4.realse:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground c313355d6f4419b5084f07b9ee758da4.realse:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme c313355d6f4419b5084f07b9ee758da4.realse:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize c313355d6f4419b5084f07b9ee758da4.realse:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle c313355d6f4419b5084f07b9ee758da4.realse:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle c313355d6f4419b5084f07b9ee758da4.realse:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle c313355d6f4419b5084f07b9ee758da4.realse:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle c313355d6f4419b5084f07b9ee758da4.realse:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle c313355d6f4419b5084f07b9ee758da4.realse:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme c313355d6f4419b5084f07b9ee758da4.realse:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme c313355d6f4419b5084f07b9ee758da4.realse:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle c313355d6f4419b5084f07b9ee758da4.realse:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor c313355d6f4419b5084f07b9ee758da4.realse:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground c313355d6f4419b5084f07b9ee758da4.realse:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable c313355d6f4419b5084f07b9ee758da4.realse:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable c313355d6f4419b5084f07b9ee758da4.realse:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable c313355d6f4419b5084f07b9ee758da4.realse:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable c313355d6f4419b5084f07b9ee758da4.realse:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable c313355d6f4419b5084f07b9ee758da4.realse:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle c313355d6f4419b5084f07b9ee758da4.realse:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable c313355d6f4419b5084f07b9ee758da4.realse:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable c313355d6f4419b5084f07b9ee758da4.realse:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground c313355d6f4419b5084f07b9ee758da4.realse:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle c313355d6f4419b5084f07b9ee758da4.realse:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable c313355d6f4419b5084f07b9ee758da4.realse:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle c313355d6f4419b5084f07b9ee758da4.realse:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle c313355d6f4419b5084f07b9ee758da4.realse:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle c313355d6f4419b5084f07b9ee758da4.realse:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons c313355d6f4419b5084f07b9ee758da4.realse:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle c313355d6f4419b5084f07b9ee758da4.realse:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme c313355d6f4419b5084f07b9ee758da4.realse:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle c313355d6f4419b5084f07b9ee758da4.realse:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle c313355d6f4419b5084f07b9ee758da4.realse:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle c313355d6f4419b5084f07b9ee758da4.realse:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall c313355d6f4419b5084f07b9ee758da4.realse:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle c313355d6f4419b5084f07b9ee758da4.realse:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle c313355d6f4419b5084f07b9ee758da4.realse:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent c313355d6f4419b5084f07b9ee758da4.realse:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating c313355d6f4419b5084f07b9ee758da4.realse:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal c313355d6f4419b5084f07b9ee758da4.realse:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated c313355d6f4419b5084f07b9ee758da4.realse:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight c313355d6f4419b5084f07b9ee758da4.realse:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal c313355d6f4419b5084f07b9ee758da4.realse:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError c313355d6f4419b5084f07b9ee758da4.realse:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary c313355d6f4419b5084f07b9ee758da4.realse:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark c313355d6f4419b5084f07b9ee758da4.realse:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal c313355d6f4419b5084f07b9ee758da4.realse:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground c313355d6f4419b5084f07b9ee758da4.realse:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding c313355d6f4419b5084f07b9ee758da4.realse:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme c313355d6f4419b5084f07b9ee758da4.realse:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal c313355d6f4419b5084f07b9ee758da4.realse:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical c313355d6f4419b5084f07b9ee758da4.realse:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle c313355d6f4419b5084f07b9ee758da4.realse:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight c313355d6f4419b5084f07b9ee758da4.realse:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground c313355d6f4419b5084f07b9ee758da4.realse:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor c313355d6f4419b5084f07b9ee758da4.realse:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle c313355d6f4419b5084f07b9ee758da4.realse:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator c313355d6f4419b5084f07b9ee758da4.realse:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator c313355d6f4419b5084f07b9ee758da4.realse:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog c313355d6f4419b5084f07b9ee758da4.realse:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle c313355d6f4419b5084f07b9ee758da4.realse:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle c313355d6f4419b5084f07b9ee758da4.realse:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground c313355d6f4419b5084f07b9ee758da4.realse:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme c313355d6f4419b5084f07b9ee758da4.realse:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth c313355d6f4419b5084f07b9ee758da4.realse:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle c313355d6f4419b5084f07b9ee758da4.realse:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle c313355d6f4419b5084f07b9ee758da4.realse:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle c313355d6f4419b5084f07b9ee758da4.realse:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator c313355d6f4419b5084f07b9ee758da4.realse:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall c313355d6f4419b5084f07b9ee758da4.realse:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle c313355d6f4419b5084f07b9ee758da4.realse:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle c313355d6f4419b5084f07b9ee758da4.realse:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground c313355d6f4419b5084f07b9ee758da4.realse:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless c313355d6f4419b5084f07b9ee758da4.realse:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle c313355d6f4419b5084f07b9ee758da4.realse:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle c313355d6f4419b5084f07b9ee758da4.realse:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle c313355d6f4419b5084f07b9ee758da4.realse:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader c313355d6f4419b5084f07b9ee758da4.realse:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem c313355d6f4419b5084f07b9ee758da4.realse:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl c313355d6f4419b5084f07b9ee758da4.realse:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle c313355d6f4419b5084f07b9ee758da4.realse:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle c313355d6f4419b5084f07b9ee758da4.realse:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor c313355d6f4419b5084f07b9ee758da4.realse:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground c313355d6f4419b5084f07b9ee758da4.realse:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass c313355d6f4419b5084f07b9ee758da4.realse:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar c313355d6f4419b5084f07b9ee758da4.realse:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay c313355d6f4419b5084f07b9ee758da4.realse:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay c313355d6f4419b5084f07b9ee758da4.realse:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor c313355d6f4419b5084f07b9ee758da4.realse:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor c313355d6f4419b5084f07b9ee758da4.realse:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor c313355d6f4419b5084f07b9ee758da4.realse:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor c313355d6f4419b5084f07b9ee758da4.realse:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor c313355d6f4419b5084f07b9ee758da4.realse:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor c313355d6f4419b5084f07b9ee758da4.realse:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle c313355d6f4419b5084f07b9ee758da4.realse:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.murainy.safeexam.realse:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.murainy.safeexam.realse:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.murainy.safeexam.realse:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.murainy.safeexam.realse:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.murainy.safeexam.realse:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.murainy.safeexam.realse:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.murainy.safeexam.realse:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.murainy.safeexam.realse:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.murainy.safeexam.realse:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.murainy.safeexam.realse:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.murainy.safeexam.realse:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.murainy.safeexam.realse:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.murainy.safeexam.realse:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.murainy.safeexam.realse:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.murainy.safeexam.realse:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.murainy.safeexam.realse:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.murainy.safeexam.realse:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.murainy.safeexam.realse:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.murainy.safeexam.realse:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.murainy.safeexam.realse:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.murainy.safeexam.realse:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.murainy.safeexam.realse:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.murainy.safeexam.realse:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.murainy.safeexam.realse:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.murainy.safeexam.realse:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.murainy.safeexam.realse:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.murainy.safeexam.realse:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.murainy.safeexam.realse:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.murainy.safeexam.realse:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.murainy.safeexam.realse:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.murainy.safeexam.realse:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.murainy.safeexam.realse:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.murainy.safeexam.realse:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.murainy.safeexam.realse:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.murainy.safeexam.realse:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.murainy.safeexam.realse:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.murainy.safeexam.realse:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.murainy.safeexam.realse:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.murainy.safeexam.realse:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.murainy.safeexam.realse:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.murainy.safeexam.realse:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.murainy.safeexam.realse:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.murainy.safeexam.realse:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.murainy.safeexam.realse:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.murainy.safeexam.realse:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.murainy.safeexam.realse:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.murainy.safeexam.realse:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.murainy.safeexam.realse:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.murainy.safeexam.realse:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.murainy.safeexam.realse:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.murainy.safeexam.realse:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.murainy.safeexam.realse:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.murainy.safeexam.realse:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.murainy.safeexam.realse:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.murainy.safeexam.realse:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.murainy.safeexam.realse:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.murainy.safeexam.realse:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.murainy.safeexam.realse:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.murainy.safeexam.realse:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.murainy.safeexam.realse:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.murainy.safeexam.realse:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.murainy.safeexam.realse:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.murainy.safeexam.realse:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.murainy.safeexam.realse:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.murainy.safeexam.realse:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.murainy.safeexam.realse:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.murainy.safeexam.realse:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.murainy.safeexam.realse:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.murainy.safeexam.realse:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.murainy.safeexam.realse:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.murainy.safeexam.realse:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.murainy.safeexam.realse:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.murainy.safeexam.realse:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.murainy.safeexam.realse:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.murainy.safeexam.realse:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.murainy.safeexam.realse:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.murainy.safeexam.realse:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.murainy.safeexam.realse:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.murainy.safeexam.realse:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.murainy.safeexam.realse:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.murainy.safeexam.realse:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.murainy.safeexam.realse:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.murainy.safeexam.realse:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.murainy.safeexam.realse:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.murainy.safeexam.realse:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.murainy.safeexam.realse:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.murainy.safeexam.realse:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.murainy.safeexam.realse:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.murainy.safeexam.realse:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.murainy.safeexam.realse:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.murainy.safeexam.realse:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.murainy.safeexam.realse:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.murainy.safeexam.realse:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.murainy.safeexam.realse:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.murainy.safeexam.realse:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.murainy.safeexam.realse:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.murainy.safeexam.realse:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.murainy.safeexam.realse:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.murainy.safeexam.realse:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.murainy.safeexam.realse:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.murainy.safeexam.realse:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.murainy.safeexam.realse:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.murainy.safeexam.realse:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.murainy.safeexam.realse:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.murainy.safeexam.realse:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.murainy.safeexam.realse:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.murainy.safeexam.realse:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.murainy.safeexam.realse:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.murainy.safeexam.realse:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.murainy.safeexam.realse:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.murainy.safeexam.realse:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.murainy.safeexam.realse:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.murainy.safeexam.realse:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.murainy.safeexam.realse:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.murainy.safeexam.realse:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.murainy.safeexam.realse:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.murainy.safeexam.realse:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.murainy.safeexam.realse:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -8322,9 +8484,9 @@ public final class R {
       0x7f0401cb, 0x7f0401cc, 0x7f0401cd, 0x7f0401ce, 
       0x7f0401cf, 0x7f0401d0, 0x7f0401d1, 0x7f0401d2, 
       0x7f0401d4, 0x7f0401ec, 0x7f0401ed, 0x7f0401ee, 
-      0x7f0401ef, 0x7f0401f5, 0x7f040207, 0x7f040208, 
-      0x7f040209, 0x7f04020a, 0x7f04020b, 0x7f04020c, 
-      0x7f04020d, 0x7f04020e, 0x7f04020f, 0x7f040210
+      0x7f0401ef, 0x7f040207, 0x7f040219, 0x7f04021a, 
+      0x7f04021b, 0x7f04021c, 0x7f04021d, 0x7f04021e, 
+      0x7f04021f, 0x7f040220, 0x7f040221, 0x7f040222
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -8349,7 +8511,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8357,11 +8519,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarDivider
+     * @attr name com.murainy.safeexam.realse:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8369,11 +8531,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarItemBackground
+     * @attr name com.murainy.safeexam.realse:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8381,11 +8543,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarPopupTheme
+     * @attr name com.murainy.safeexam.realse:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8402,11 +8564,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarSize
+     * @attr name com.murainy.safeexam.realse:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8414,11 +8576,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarSplitStyle
+     * @attr name com.murainy.safeexam.realse:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8426,11 +8588,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarStyle
+     * @attr name com.murainy.safeexam.realse:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8438,11 +8600,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarTabBarStyle
+     * @attr name com.murainy.safeexam.realse:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8450,11 +8612,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarTabStyle
+     * @attr name com.murainy.safeexam.realse:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8462,11 +8624,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarTabTextStyle
+     * @attr name com.murainy.safeexam.realse:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8474,11 +8636,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarTheme
+     * @attr name com.murainy.safeexam.realse:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8486,11 +8648,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionBarWidgetTheme
+     * @attr name com.murainy.safeexam.realse:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8498,11 +8660,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionButtonStyle
+     * @attr name com.murainy.safeexam.realse:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8510,11 +8672,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionDropDownStyle
+     * @attr name com.murainy.safeexam.realse:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8522,11 +8684,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionMenuTextAppearance
+     * @attr name com.murainy.safeexam.realse:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8537,11 +8699,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionMenuTextColor
+     * @attr name com.murainy.safeexam.realse:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8549,11 +8711,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeBackground
+     * @attr name com.murainy.safeexam.realse:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8561,11 +8723,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeCloseButtonStyle
+     * @attr name com.murainy.safeexam.realse:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8573,11 +8735,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeCloseDrawable
+     * @attr name com.murainy.safeexam.realse:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8585,11 +8747,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeCopyDrawable
+     * @attr name com.murainy.safeexam.realse:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8597,11 +8759,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeCutDrawable
+     * @attr name com.murainy.safeexam.realse:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8609,11 +8771,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeFindDrawable
+     * @attr name com.murainy.safeexam.realse:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8621,11 +8783,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModePasteDrawable
+     * @attr name com.murainy.safeexam.realse:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8633,11 +8795,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModePopupWindowStyle
+     * @attr name com.murainy.safeexam.realse:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8645,11 +8807,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeSelectAllDrawable
+     * @attr name com.murainy.safeexam.realse:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8657,11 +8819,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeShareDrawable
+     * @attr name com.murainy.safeexam.realse:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8669,11 +8831,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeSplitBackground
+     * @attr name com.murainy.safeexam.realse:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8681,11 +8843,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeStyle
+     * @attr name com.murainy.safeexam.realse:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8693,11 +8855,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionModeWebSearchDrawable
+     * @attr name com.murainy.safeexam.realse:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8705,11 +8867,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionOverflowButtonStyle
+     * @attr name com.murainy.safeexam.realse:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8717,11 +8879,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionOverflowMenuStyle
+     * @attr name com.murainy.safeexam.realse:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8729,11 +8891,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:activityChooserViewStyle
+     * @attr name com.murainy.safeexam.realse:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8741,21 +8903,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:alertDialogButtonGroupStyle
+     * @attr name com.murainy.safeexam.realse:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:alertDialogCenterButtons
+     * @attr name com.murainy.safeexam.realse:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8763,11 +8925,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:alertDialogStyle
+     * @attr name com.murainy.safeexam.realse:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8775,11 +8937,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:alertDialogTheme
+     * @attr name com.murainy.safeexam.realse:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8787,11 +8949,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:autoCompleteTextViewStyle
+     * @attr name com.murainy.safeexam.realse:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8799,11 +8961,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:borderlessButtonStyle
+     * @attr name com.murainy.safeexam.realse:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8811,11 +8973,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonBarButtonStyle
+     * @attr name com.murainy.safeexam.realse:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8823,11 +8985,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonBarNegativeButtonStyle
+     * @attr name com.murainy.safeexam.realse:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8835,11 +8997,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonBarNeutralButtonStyle
+     * @attr name com.murainy.safeexam.realse:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8847,11 +9009,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonBarPositiveButtonStyle
+     * @attr name com.murainy.safeexam.realse:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8859,11 +9021,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonBarStyle
+     * @attr name com.murainy.safeexam.realse:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8871,11 +9033,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonStyle
+     * @attr name com.murainy.safeexam.realse:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8883,11 +9045,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonStyleSmall
+     * @attr name com.murainy.safeexam.realse:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8895,11 +9057,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:checkboxStyle
+     * @attr name com.murainy.safeexam.realse:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8907,77 +9069,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:checkedTextViewStyle
+     * @attr name com.murainy.safeexam.realse:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorAccent
+     * @attr name com.murainy.safeexam.realse:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorBackgroundFloating
+     * @attr name com.murainy.safeexam.realse:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorButtonNormal
+     * @attr name com.murainy.safeexam.realse:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorControlActivated
+     * @attr name com.murainy.safeexam.realse:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorControlHighlight
+     * @attr name com.murainy.safeexam.realse:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorControlNormal
+     * @attr name com.murainy.safeexam.realse:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8988,44 +9150,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorError
+     * @attr name com.murainy.safeexam.realse:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorPrimary
+     * @attr name com.murainy.safeexam.realse:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorPrimaryDark
+     * @attr name com.murainy.safeexam.realse:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:colorSwitchThumbNormal
+     * @attr name com.murainy.safeexam.realse:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9033,11 +9195,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:controlBackground
+     * @attr name com.murainy.safeexam.realse:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9046,11 +9208,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:dialogPreferredPadding
+     * @attr name com.murainy.safeexam.realse:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=59;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9058,11 +9220,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:dialogTheme
+     * @attr name com.murainy.safeexam.realse:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=60;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9070,11 +9232,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:dividerHorizontal
+     * @attr name com.murainy.safeexam.realse:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=61;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9082,11 +9244,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:dividerVertical
+     * @attr name com.murainy.safeexam.realse:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=62;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9094,11 +9256,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:dropDownListViewStyle
+     * @attr name com.murainy.safeexam.realse:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=63;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9107,11 +9269,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:dropdownListPreferredItemHeight
+     * @attr name com.murainy.safeexam.realse:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=64;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9119,11 +9281,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:editTextBackground
+     * @attr name com.murainy.safeexam.realse:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=65;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9134,11 +9296,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:editTextColor
+     * @attr name com.murainy.safeexam.realse:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=66;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9146,11 +9308,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:editTextStyle
+     * @attr name com.murainy.safeexam.realse:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=67;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9158,11 +9320,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:homeAsUpIndicator
+     * @attr name com.murainy.safeexam.realse:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=68;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9170,11 +9332,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:imageButtonStyle
+     * @attr name com.murainy.safeexam.realse:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=69;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9182,11 +9344,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listChoiceBackgroundIndicator
+     * @attr name com.murainy.safeexam.realse:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=70;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9194,11 +9356,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listDividerAlertDialog
+     * @attr name com.murainy.safeexam.realse:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=71;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9206,11 +9368,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listMenuViewStyle
+     * @attr name com.murainy.safeexam.realse:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=72;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9218,11 +9380,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listPopupWindowStyle
+     * @attr name com.murainy.safeexam.realse:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9231,11 +9393,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemHeight
+     * @attr name com.murainy.safeexam.realse:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=74;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9244,11 +9406,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemHeightLarge
+     * @attr name com.murainy.safeexam.realse:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=75;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9257,11 +9419,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemHeightSmall
+     * @attr name com.murainy.safeexam.realse:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=76;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9270,11 +9432,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemPaddingLeft
+     * @attr name com.murainy.safeexam.realse:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=77;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9283,11 +9445,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:listPreferredItemPaddingRight
+     * @attr name com.murainy.safeexam.realse:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=78;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9295,11 +9457,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:panelBackground
+     * @attr name com.murainy.safeexam.realse:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=79;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9307,11 +9469,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:panelMenuListTheme
+     * @attr name com.murainy.safeexam.realse:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=80;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9320,11 +9482,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:panelMenuListWidth
+     * @attr name com.murainy.safeexam.realse:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=81;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9332,11 +9494,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:popupMenuStyle
+     * @attr name com.murainy.safeexam.realse:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=82;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9344,11 +9506,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:popupWindowStyle
+     * @attr name com.murainy.safeexam.realse:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9356,11 +9518,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:radioButtonStyle
+     * @attr name com.murainy.safeexam.realse:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9368,11 +9530,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:ratingBarStyle
+     * @attr name com.murainy.safeexam.realse:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9380,11 +9542,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:ratingBarStyleIndicator
+     * @attr name com.murainy.safeexam.realse:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=86;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9392,11 +9554,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:ratingBarStyleSmall
+     * @attr name com.murainy.safeexam.realse:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=87;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9404,11 +9566,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:searchViewStyle
+     * @attr name com.murainy.safeexam.realse:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=88;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9416,11 +9578,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:seekBarStyle
+     * @attr name com.murainy.safeexam.realse:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9428,11 +9590,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:selectableItemBackground
+     * @attr name com.murainy.safeexam.realse:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=90;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9440,11 +9602,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:selectableItemBackgroundBorderless
+     * @attr name com.murainy.safeexam.realse:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=91;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9452,11 +9614,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:spinnerDropDownItemStyle
+     * @attr name com.murainy.safeexam.realse:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=92;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9464,11 +9626,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:spinnerStyle
+     * @attr name com.murainy.safeexam.realse:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9476,11 +9638,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:switchStyle
+     * @attr name com.murainy.safeexam.realse:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9488,11 +9650,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceLargePopupMenu
+     * @attr name com.murainy.safeexam.realse:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=95;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9500,11 +9662,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceListItem
+     * @attr name com.murainy.safeexam.realse:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=96;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9512,11 +9674,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceListItemSecondary
+     * @attr name com.murainy.safeexam.realse:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=97;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9524,11 +9686,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceListItemSmall
+     * @attr name com.murainy.safeexam.realse:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=98;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9536,11 +9698,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAppearancePopupMenuHeader
+     * @attr name com.murainy.safeexam.realse:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=99;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9548,11 +9710,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceSearchResultSubtitle
+     * @attr name com.murainy.safeexam.realse:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=100;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9560,11 +9722,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceSearchResultTitle
+     * @attr name com.murainy.safeexam.realse:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=101;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9572,11 +9734,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAppearanceSmallPopupMenu
+     * @attr name com.murainy.safeexam.realse:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=102;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9587,11 +9749,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textColorAlertDialogListItem
+     * @attr name com.murainy.safeexam.realse:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=103;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9602,11 +9764,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textColorSearchUrl
+     * @attr name com.murainy.safeexam.realse:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=104;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9614,11 +9776,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:toolbarNavigationButtonStyle
+     * @attr name com.murainy.safeexam.realse:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=105;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9626,11 +9788,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:toolbarStyle
+     * @attr name com.murainy.safeexam.realse:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9641,11 +9803,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tooltipForegroundColor
+     * @attr name com.murainy.safeexam.realse:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=107;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9653,51 +9815,51 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tooltipFrameBackground
+     * @attr name com.murainy.safeexam.realse:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=108;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:viewInflaterClass
+     * @attr name com.murainy.safeexam.realse:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=109;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowActionBar
+     * @attr name com.murainy.safeexam.realse:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=110;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowActionBarOverlay
+     * @attr name com.murainy.safeexam.realse:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=111;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowActionModeOverlay
+     * @attr name com.murainy.safeexam.realse:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=112;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9710,11 +9872,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowFixedHeightMajor
+     * @attr name com.murainy.safeexam.realse:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=113;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9727,11 +9889,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowFixedHeightMinor
+     * @attr name com.murainy.safeexam.realse:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=114;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9744,11 +9906,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowFixedWidthMajor
+     * @attr name com.murainy.safeexam.realse:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=115;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9761,11 +9923,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowFixedWidthMinor
+     * @attr name com.murainy.safeexam.realse:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=116;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9778,11 +9940,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowMinWidthMajor
+     * @attr name com.murainy.safeexam.realse:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=117;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9795,17 +9957,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowMinWidthMinor
+     * @attr name com.murainy.safeexam.realse:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=118;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:windowNoTitle
+     * @attr name com.murainy.safeexam.realse:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=119;
     /**
@@ -9816,11 +9978,11 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #BGAImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGAImageView_bga_iv_borderColor c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_borderColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGAImageView_bga_iv_borderWidth c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGAImageView_bga_iv_circle c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_circle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGAImageView_bga_iv_cornerRadius c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGAImageView_bga_iv_square c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_square}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGAImageView_bga_iv_borderColor com.murainy.safeexam.realse:bga_iv_borderColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGAImageView_bga_iv_borderWidth com.murainy.safeexam.realse:bga_iv_borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGAImageView_bga_iv_circle com.murainy.safeexam.realse:bga_iv_circle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGAImageView_bga_iv_cornerRadius com.murainy.safeexam.realse:bga_iv_cornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGAImageView_bga_iv_square com.murainy.safeexam.realse:bga_iv_square}</code></td><td></td></tr>
      * </table>
      * @see #BGAImageView_android_src
      * @see #BGAImageView_bga_iv_borderColor
@@ -9849,7 +10011,7 @@ public final class R {
      */
     public static final int BGAImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_iv_borderColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_iv_borderColor}
      * attribute's value can be found in the {@link #BGAImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9860,11 +10022,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_borderColor
+     * @attr name com.murainy.safeexam.realse:bga_iv_borderColor
      */
     public static final int BGAImageView_bga_iv_borderColor=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_iv_borderWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_iv_borderWidth}
      * attribute's value can be found in the {@link #BGAImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9877,21 +10039,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_borderWidth
+     * @attr name com.murainy.safeexam.realse:bga_iv_borderWidth
      */
     public static final int BGAImageView_bga_iv_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_iv_circle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_iv_circle}
      * attribute's value can be found in the {@link #BGAImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_circle
+     * @attr name com.murainy.safeexam.realse:bga_iv_circle
      */
     public static final int BGAImageView_bga_iv_circle=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_iv_cornerRadius}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_iv_cornerRadius}
      * attribute's value can be found in the {@link #BGAImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9904,17 +10066,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_cornerRadius
+     * @attr name com.murainy.safeexam.realse:bga_iv_cornerRadius
      */
     public static final int BGAImageView_bga_iv_cornerRadius=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_iv_square}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_iv_square}
      * attribute's value can be found in the {@link #BGAImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_iv_square
+     * @attr name com.murainy.safeexam.realse:bga_iv_square
      */
     public static final int BGAImageView_bga_iv_square=5;
     /**
@@ -9924,13 +10086,13 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_itemCornerRadius c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_itemCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_itemSpanCount c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_itemSpanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_itemWhiteSpacing c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_itemWhiteSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_itemWidth c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_itemWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_otherWhiteSpacing c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_otherWhiteSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_placeholderDrawable c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_placeholderDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_showAsLargeWhenOnlyOne c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_showAsLargeWhenOnlyOne}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_itemCornerRadius com.murainy.safeexam.realse:bga_npl_itemCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_itemSpanCount com.murainy.safeexam.realse:bga_npl_itemSpanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_itemWhiteSpacing com.murainy.safeexam.realse:bga_npl_itemWhiteSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_itemWidth com.murainy.safeexam.realse:bga_npl_itemWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_otherWhiteSpacing com.murainy.safeexam.realse:bga_npl_otherWhiteSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_placeholderDrawable com.murainy.safeexam.realse:bga_npl_placeholderDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGANinePhotoLayout_bga_npl_showAsLargeWhenOnlyOne com.murainy.safeexam.realse:bga_npl_showAsLargeWhenOnlyOne}</code></td><td></td></tr>
      * </table>
      * @see #BGANinePhotoLayout_bga_npl_itemCornerRadius
      * @see #BGANinePhotoLayout_bga_npl_itemSpanCount
@@ -9945,7 +10107,7 @@ public final class R {
       0x7f04004b, 0x7f04004c, 0x7f04004d
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_npl_itemCornerRadius}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_npl_itemCornerRadius}
      * attribute's value can be found in the {@link #BGANinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9958,20 +10120,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_itemCornerRadius
+     * @attr name com.murainy.safeexam.realse:bga_npl_itemCornerRadius
      */
     public static final int BGANinePhotoLayout_bga_npl_itemCornerRadius=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_npl_itemSpanCount}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_npl_itemSpanCount}
      * attribute's value can be found in the {@link #BGANinePhotoLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_itemSpanCount
+     * @attr name com.murainy.safeexam.realse:bga_npl_itemSpanCount
      */
     public static final int BGANinePhotoLayout_bga_npl_itemSpanCount=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_npl_itemWhiteSpacing}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_npl_itemWhiteSpacing}
      * attribute's value can be found in the {@link #BGANinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9984,11 +10146,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_itemWhiteSpacing
+     * @attr name com.murainy.safeexam.realse:bga_npl_itemWhiteSpacing
      */
     public static final int BGANinePhotoLayout_bga_npl_itemWhiteSpacing=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_npl_itemWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_npl_itemWidth}
      * attribute's value can be found in the {@link #BGANinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10001,11 +10163,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_itemWidth
+     * @attr name com.murainy.safeexam.realse:bga_npl_itemWidth
      */
     public static final int BGANinePhotoLayout_bga_npl_itemWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_npl_otherWhiteSpacing}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_npl_otherWhiteSpacing}
      * attribute's value can be found in the {@link #BGANinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10018,11 +10180,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_otherWhiteSpacing
+     * @attr name com.murainy.safeexam.realse:bga_npl_otherWhiteSpacing
      */
     public static final int BGANinePhotoLayout_bga_npl_otherWhiteSpacing=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_npl_placeholderDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_npl_placeholderDrawable}
      * attribute's value can be found in the {@link #BGANinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10030,17 +10192,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_placeholderDrawable
+     * @attr name com.murainy.safeexam.realse:bga_npl_placeholderDrawable
      */
     public static final int BGANinePhotoLayout_bga_npl_placeholderDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_npl_showAsLargeWhenOnlyOne}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_npl_showAsLargeWhenOnlyOne}
      * attribute's value can be found in the {@link #BGANinePhotoLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_npl_showAsLargeWhenOnlyOne
+     * @attr name com.murainy.safeexam.realse:bga_npl_showAsLargeWhenOnlyOne
      */
     public static final int BGANinePhotoLayout_bga_npl_showAsLargeWhenOnlyOne=6;
     /**
@@ -10050,19 +10212,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_deleteDrawable c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_deleteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_deleteDrawableOverlapQuarter c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_deleteDrawableOverlapQuarter}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_editable c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_editable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_itemCornerRadius c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_itemCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_itemSpanCount c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_itemSpanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_itemWhiteSpacing c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_itemWhiteSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_itemWidth c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_itemWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_maxItemCount c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_maxItemCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_otherWhiteSpacing c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_otherWhiteSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_placeholderDrawable c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_placeholderDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_plusDrawable c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_plusDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_plusEnable c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_plusEnable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_sortable c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_sortable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_deleteDrawable com.murainy.safeexam.realse:bga_snpl_deleteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_deleteDrawableOverlapQuarter com.murainy.safeexam.realse:bga_snpl_deleteDrawableOverlapQuarter}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_editable com.murainy.safeexam.realse:bga_snpl_editable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_itemCornerRadius com.murainy.safeexam.realse:bga_snpl_itemCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_itemSpanCount com.murainy.safeexam.realse:bga_snpl_itemSpanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_itemWhiteSpacing com.murainy.safeexam.realse:bga_snpl_itemWhiteSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_itemWidth com.murainy.safeexam.realse:bga_snpl_itemWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_maxItemCount com.murainy.safeexam.realse:bga_snpl_maxItemCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_otherWhiteSpacing com.murainy.safeexam.realse:bga_snpl_otherWhiteSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_placeholderDrawable com.murainy.safeexam.realse:bga_snpl_placeholderDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_plusDrawable com.murainy.safeexam.realse:bga_snpl_plusDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_plusEnable com.murainy.safeexam.realse:bga_snpl_plusEnable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BGASortableNinePhotoLayout_bga_snpl_sortable com.murainy.safeexam.realse:bga_snpl_sortable}</code></td><td></td></tr>
      * </table>
      * @see #BGASortableNinePhotoLayout_bga_snpl_deleteDrawable
      * @see #BGASortableNinePhotoLayout_bga_snpl_deleteDrawableOverlapQuarter
@@ -10085,7 +10247,7 @@ public final class R {
       0x7f04005a
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_deleteDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_deleteDrawable}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10093,31 +10255,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_deleteDrawable
+     * @attr name com.murainy.safeexam.realse:bga_snpl_deleteDrawable
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_deleteDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_deleteDrawableOverlapQuarter}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_deleteDrawableOverlapQuarter}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_deleteDrawableOverlapQuarter
+     * @attr name com.murainy.safeexam.realse:bga_snpl_deleteDrawableOverlapQuarter
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_deleteDrawableOverlapQuarter=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_editable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_editable}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_editable
+     * @attr name com.murainy.safeexam.realse:bga_snpl_editable
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_editable=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_itemCornerRadius}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_itemCornerRadius}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10130,20 +10292,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_itemCornerRadius
+     * @attr name com.murainy.safeexam.realse:bga_snpl_itemCornerRadius
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_itemCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_itemSpanCount}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_itemSpanCount}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_itemSpanCount
+     * @attr name com.murainy.safeexam.realse:bga_snpl_itemSpanCount
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_itemSpanCount=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_itemWhiteSpacing}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_itemWhiteSpacing}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10156,11 +10318,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_itemWhiteSpacing
+     * @attr name com.murainy.safeexam.realse:bga_snpl_itemWhiteSpacing
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_itemWhiteSpacing=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_itemWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_itemWidth}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10173,20 +10335,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_itemWidth
+     * @attr name com.murainy.safeexam.realse:bga_snpl_itemWidth
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_itemWidth=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_maxItemCount}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_maxItemCount}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_maxItemCount
+     * @attr name com.murainy.safeexam.realse:bga_snpl_maxItemCount
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_maxItemCount=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_otherWhiteSpacing}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_otherWhiteSpacing}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10199,11 +10361,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_otherWhiteSpacing
+     * @attr name com.murainy.safeexam.realse:bga_snpl_otherWhiteSpacing
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_otherWhiteSpacing=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_placeholderDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_placeholderDrawable}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10211,11 +10373,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_placeholderDrawable
+     * @attr name com.murainy.safeexam.realse:bga_snpl_placeholderDrawable
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_placeholderDrawable=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_plusDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_plusDrawable}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10223,27 +10385,27 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_plusDrawable
+     * @attr name com.murainy.safeexam.realse:bga_snpl_plusDrawable
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_plusDrawable=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_plusEnable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_plusEnable}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_plusEnable
+     * @attr name com.murainy.safeexam.realse:bga_snpl_plusEnable
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_plusEnable=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bga_snpl_sortable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bga_snpl_sortable}
      * attribute's value can be found in the {@link #BGASortableNinePhotoLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bga_snpl_sortable
+     * @attr name com.murainy.safeexam.realse:bga_snpl_sortable
      */
     public static final int BGASortableNinePhotoLayout_bga_snpl_sortable=12;
     /**
@@ -10253,11 +10415,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation c313355d6f4419b5084f07b9ee758da4.realse:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground c313355d6f4419b5084f07b9ee758da4.realse:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint c313355d6f4419b5084f07b9ee758da4.realse:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor c313355d6f4419b5084f07b9ee758da4.realse:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu c313355d6f4419b5084f07b9ee758da4.realse:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.murainy.safeexam.realse:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.murainy.safeexam.realse:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.murainy.safeexam.realse:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.murainy.safeexam.realse:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.murainy.safeexam.realse:menu}</code></td><td></td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -10270,7 +10432,7 @@ public final class R {
       0x7f040155
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#elevation}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10279,11 +10441,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:elevation
+     * @attr name com.murainy.safeexam.realse:elevation
      */
     public static final int BottomNavigationView_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#itemBackground}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10291,33 +10453,33 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:itemBackground
+     * @attr name com.murainy.safeexam.realse:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:itemIconTint
+     * @attr name com.murainy.safeexam.realse:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:itemTextColor
+     * @attr name com.murainy.safeexam.realse:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#menu}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10325,7 +10487,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:menu
+     * @attr name com.murainy.safeexam.realse:menu
      */
     public static final int BottomNavigationView_menu=4;
     /**
@@ -10335,9 +10497,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable c313355d6f4419b5084f07b9ee758da4.realse:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight c313355d6f4419b5084f07b9ee758da4.realse:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed c313355d6f4419b5084f07b9ee758da4.realse:behavior_skipCollapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.murainy.safeexam.realse:behavior_hideable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.murainy.safeexam.realse:behavior_peekHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.murainy.safeexam.realse:behavior_skipCollapsed}</code></td><td></td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_behavior_hideable
      * @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -10347,17 +10509,17 @@ public final class R {
       0x7f04003e, 0x7f040040, 0x7f040041
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#behavior_hideable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#behavior_hideable}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:behavior_hideable
+     * @attr name com.murainy.safeexam.realse:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#behavior_peekHeight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#behavior_peekHeight}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10374,17 +10536,17 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:behavior_peekHeight
+     * @attr name com.murainy.safeexam.realse:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#behavior_skipCollapsed}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#behavior_skipCollapsed}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:behavior_skipCollapsed
+     * @attr name com.murainy.safeexam.realse:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=2;
     /**
@@ -10394,7 +10556,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking c313355d6f4419b5084f07b9ee758da4.realse:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.murainy.safeexam.realse:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -10402,13 +10564,13 @@ public final class R {
       0x7f040026
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:allowStacking
+     * @attr name com.murainy.safeexam.realse:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -10420,17 +10582,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor c313355d6f4419b5084f07b9ee758da4.realse:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius c313355d6f4419b5084f07b9ee758da4.realse:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation c313355d6f4419b5084f07b9ee758da4.realse:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation c313355d6f4419b5084f07b9ee758da4.realse:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap c313355d6f4419b5084f07b9ee758da4.realse:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding c313355d6f4419b5084f07b9ee758da4.realse:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding c313355d6f4419b5084f07b9ee758da4.realse:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom c313355d6f4419b5084f07b9ee758da4.realse:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft c313355d6f4419b5084f07b9ee758da4.realse:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight c313355d6f4419b5084f07b9ee758da4.realse:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop c313355d6f4419b5084f07b9ee758da4.realse:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.murainy.safeexam.realse:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.murainy.safeexam.realse:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.murainy.safeexam.realse:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.murainy.safeexam.realse:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.murainy.safeexam.realse:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.murainy.safeexam.realse:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.murainy.safeexam.realse:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.murainy.safeexam.realse:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.murainy.safeexam.realse:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.murainy.safeexam.realse:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.murainy.safeexam.realse:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -10479,18 +10641,18 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:cardBackgroundColor
+     * @attr name com.murainy.safeexam.realse:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10499,11 +10661,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:cardCornerRadius
+     * @attr name com.murainy.safeexam.realse:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10512,11 +10674,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:cardElevation
+     * @attr name com.murainy.safeexam.realse:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10525,31 +10687,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:cardMaxElevation
+     * @attr name com.murainy.safeexam.realse:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:cardPreventCornerOverlap
+     * @attr name com.murainy.safeexam.realse:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:cardUseCompatPadding
+     * @attr name com.murainy.safeexam.realse:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10558,11 +10720,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentPadding
+     * @attr name com.murainy.safeexam.realse:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10571,11 +10733,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentPaddingBottom
+     * @attr name com.murainy.safeexam.realse:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10584,11 +10746,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentPaddingLeft
+     * @attr name com.murainy.safeexam.realse:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10597,11 +10759,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentPaddingRight
+     * @attr name com.murainy.safeexam.realse:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10610,7 +10772,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentPaddingTop
+     * @attr name com.murainy.safeexam.realse:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -10620,10 +10782,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_border_color c313355d6f4419b5084f07b9ee758da4.realse:civ_border_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_border_overlay c313355d6f4419b5084f07b9ee758da4.realse:civ_border_overlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_border_width c313355d6f4419b5084f07b9ee758da4.realse:civ_border_width}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_fill_color c313355d6f4419b5084f07b9ee758da4.realse:civ_fill_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_border_color com.murainy.safeexam.realse:civ_border_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_border_overlay com.murainy.safeexam.realse:civ_border_overlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_border_width com.murainy.safeexam.realse:civ_border_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_fill_color com.murainy.safeexam.realse:civ_fill_color}</code></td><td></td></tr>
      * </table>
      * @see #CircleImageView_civ_border_color
      * @see #CircleImageView_civ_border_overlay
@@ -10634,28 +10796,28 @@ public final class R {
       0x7f040075, 0x7f040076, 0x7f040077, 0x7f040078
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#civ_border_color}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#civ_border_color}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:civ_border_color
+     * @attr name com.murainy.safeexam.realse:civ_border_color
      */
     public static final int CircleImageView_civ_border_color=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#civ_border_overlay}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#civ_border_overlay}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:civ_border_overlay
+     * @attr name com.murainy.safeexam.realse:civ_border_overlay
      */
     public static final int CircleImageView_civ_border_overlay=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#civ_border_width}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#civ_border_width}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10664,18 +10826,18 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:civ_border_width
+     * @attr name com.murainy.safeexam.realse:civ_border_width
      */
     public static final int CircleImageView_civ_border_width=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#civ_fill_color}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#civ_fill_color}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:civ_fill_color
+     * @attr name com.murainy.safeexam.realse:civ_fill_color
      */
     public static final int CircleImageView_civ_fill_color=3;
     /**
@@ -10685,22 +10847,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity c313355d6f4419b5084f07b9ee758da4.realse:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim c313355d6f4419b5084f07b9ee758da4.realse:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration c313355d6f4419b5084f07b9ee758da4.realse:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger c313355d6f4419b5084f07b9ee758da4.realse:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim c313355d6f4419b5084f07b9ee758da4.realse:statusBarScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title c313355d6f4419b5084f07b9ee758da4.realse:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled c313355d6f4419b5084f07b9ee758da4.realse:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId c313355d6f4419b5084f07b9ee758da4.realse:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.murainy.safeexam.realse:collapsedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.murainy.safeexam.realse:collapsedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.murainy.safeexam.realse:contentScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.murainy.safeexam.realse:expandedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.murainy.safeexam.realse:expandedTitleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.murainy.safeexam.realse:expandedTitleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.murainy.safeexam.realse:expandedTitleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.murainy.safeexam.realse:expandedTitleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.murainy.safeexam.realse:expandedTitleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.murainy.safeexam.realse:expandedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.murainy.safeexam.realse:scrimAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.murainy.safeexam.realse:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.murainy.safeexam.realse:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.murainy.safeexam.realse:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.murainy.safeexam.realse:titleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.murainy.safeexam.realse:toolbarId}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -10726,7 +10888,7 @@ public final class R {
       0x7f0401ad, 0x7f0401e0, 0x7f0401e1, 0x7f0401eb
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#collapsedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#collapsedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10747,11 +10909,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:collapsedTitleGravity
+     * @attr name com.murainy.safeexam.realse:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#collapsedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#collapsedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10759,22 +10921,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:collapsedTitleTextAppearance
+     * @attr name com.murainy.safeexam.realse:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentScrim}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentScrim
+     * @attr name com.murainy.safeexam.realse:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expandedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expandedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10795,11 +10957,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleGravity
+     * @attr name com.murainy.safeexam.realse:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expandedTitleMargin}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expandedTitleMargin}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10808,11 +10970,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMargin
+     * @attr name com.murainy.safeexam.realse:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expandedTitleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expandedTitleMarginBottom}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10821,11 +10983,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMarginBottom
+     * @attr name com.murainy.safeexam.realse:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expandedTitleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expandedTitleMarginEnd}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10834,11 +10996,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMarginEnd
+     * @attr name com.murainy.safeexam.realse:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expandedTitleMarginStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expandedTitleMarginStart}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10847,11 +11009,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMarginStart
+     * @attr name com.murainy.safeexam.realse:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expandedTitleMarginTop}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expandedTitleMarginTop}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10860,11 +11022,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleMarginTop
+     * @attr name com.murainy.safeexam.realse:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#expandedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#expandedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10872,20 +11034,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:expandedTitleTextAppearance
+     * @attr name com.murainy.safeexam.realse:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scrimAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scrimAnimationDuration}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scrimAnimationDuration
+     * @attr name com.murainy.safeexam.realse:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scrimVisibleHeightTrigger}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scrimVisibleHeightTrigger}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10894,42 +11056,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scrimVisibleHeightTrigger
+     * @attr name com.murainy.safeexam.realse:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#statusBarScrim}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#statusBarScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:statusBarScrim
+     * @attr name com.murainy.safeexam.realse:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#title}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:title
+     * @attr name com.murainy.safeexam.realse:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleEnabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleEnabled}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleEnabled
+     * @attr name com.murainy.safeexam.realse:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#toolbarId}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#toolbarId}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10937,7 +11099,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:toolbarId
+     * @attr name com.murainy.safeexam.realse:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -10947,8 +11109,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode c313355d6f4419b5084f07b9ee758da4.realse:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier c313355d6f4419b5084f07b9ee758da4.realse:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.murainy.safeexam.realse:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.murainy.safeexam.realse:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -10957,7 +11119,7 @@ public final class R {
       0x7f04010c, 0x7f04010d
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10971,16 +11133,16 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_collapseMode
+     * @attr name com.murainy.safeexam.realse:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_collapseParallaxMultiplier}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_collapseParallaxMultiplier}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_collapseParallaxMultiplier
+     * @attr name com.murainy.safeexam.realse:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
@@ -10992,7 +11154,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha c313355d6f4419b5084f07b9ee758da4.realse:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.murainy.safeexam.realse:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -11022,12 +11184,12 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:alpha
+     * @attr name com.murainy.safeexam.realse:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -11038,8 +11200,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint c313355d6f4419b5084f07b9ee758da4.realse:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode c313355d6f4419b5084f07b9ee758da4.realse:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.murainy.safeexam.realse:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.murainy.safeexam.realse:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -11061,18 +11223,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonTint
+     * @attr name com.murainy.safeexam.realse:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11089,7 +11251,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonTintMode
+     * @attr name com.murainy.safeexam.realse:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -11104,61 +11266,61 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets c313355d6f4419b5084f07b9ee758da4.realse:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection c313355d6f4419b5084f07b9ee758da4.realse:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl c313355d6f4419b5084f07b9ee758da4.realse:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet c313355d6f4419b5084f07b9ee758da4.realse:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids c313355d6f4419b5084f07b9ee758da4.realse:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight c313355d6f4419b5084f07b9ee758da4.realse:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth c313355d6f4419b5084f07b9ee758da4.realse:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX c313355d6f4419b5084f07b9ee758da4.realse:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY c313355d6f4419b5084f07b9ee758da4.realse:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel c313355d6f4419b5084f07b9ee758da4.realse:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.murainy.safeexam.realse:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.murainy.safeexam.realse:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.murainy.safeexam.realse:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.murainy.safeexam.realse:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.murainy.safeexam.realse:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.murainy.safeexam.realse:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.murainy.safeexam.realse:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.murainy.safeexam.realse:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.murainy.safeexam.realse:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.murainy.safeexam.realse:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.murainy.safeexam.realse:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.murainy.safeexam.realse:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.murainy.safeexam.realse:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.murainy.safeexam.realse:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.murainy.safeexam.realse:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.murainy.safeexam.realse:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.murainy.safeexam.realse:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.murainy.safeexam.realse:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.murainy.safeexam.realse:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.murainy.safeexam.realse:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.murainy.safeexam.realse:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.murainy.safeexam.realse:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.murainy.safeexam.realse:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.murainy.safeexam.realse:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.murainy.safeexam.realse:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.murainy.safeexam.realse:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.murainy.safeexam.realse:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.murainy.safeexam.realse:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.murainy.safeexam.realse:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.murainy.safeexam.realse:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.murainy.safeexam.realse:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.murainy.safeexam.realse:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.murainy.safeexam.realse:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.murainy.safeexam.realse:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.murainy.safeexam.realse:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.murainy.safeexam.realse:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.murainy.safeexam.realse:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.murainy.safeexam.realse:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.murainy.safeexam.realse:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.murainy.safeexam.realse:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.murainy.safeexam.realse:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.murainy.safeexam.realse:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.murainy.safeexam.realse:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.murainy.safeexam.realse:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.murainy.safeexam.realse:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.murainy.safeexam.realse:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.murainy.safeexam.realse:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.murainy.safeexam.realse:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.murainy.safeexam.realse:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.murainy.safeexam.realse:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.murainy.safeexam.realse:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.murainy.safeexam.realse:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.murainy.safeexam.realse:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.murainy.safeexam.realse:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.murainy.safeexam.realse:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -11308,17 +11470,17 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_minHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:barrierAllowsGoneWidgets
+     * @attr name com.murainy.safeexam.realse:barrierAllowsGoneWidgets
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11335,21 +11497,21 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:barrierDirection
+     * @attr name com.murainy.safeexam.realse:barrierDirection
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:chainUseRtl
+     * @attr name com.murainy.safeexam.realse:chainUseRtl
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11357,50 +11519,50 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:constraintSet
+     * @attr name com.murainy.safeexam.realse:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:constraint_referenced_ids
+     * @attr name com.murainy.safeexam.realse:constraint_referenced_ids
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constrainedHeight
+     * @attr name com.murainy.safeexam.realse:layout_constrainedHeight
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constrainedWidth
+     * @attr name com.murainy.safeexam.realse:layout_constrainedWidth
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBaseline_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11416,20 +11578,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBaseline_toBaselineOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11445,11 +11607,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_toBottomOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11465,11 +11627,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_toTopOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11477,20 +11639,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircle
+     * @attr name com.murainy.safeexam.realse:layout_constraintCircle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircleAngle
+     * @attr name com.murainy.safeexam.realse:layout_constraintCircleAngle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11499,21 +11661,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircleRadius
+     * @attr name com.murainy.safeexam.realse:layout_constraintCircleRadius
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintDimensionRatio
+     * @attr name com.murainy.safeexam.realse:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11529,11 +11691,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintEnd_toEndOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11549,11 +11711,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintEnd_toStartOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11562,11 +11724,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_begin
+     * @attr name com.murainy.safeexam.realse:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11575,20 +11737,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_end
+     * @attr name com.murainy.safeexam.realse:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_percent
+     * @attr name com.murainy.safeexam.realse:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11602,11 +11764,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_default
+     * @attr name com.murainy.safeexam.realse:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11623,11 +11785,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_max
+     * @attr name com.murainy.safeexam.realse:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11644,29 +11806,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_min
+     * @attr name com.murainy.safeexam.realse:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_percent
+     * @attr name com.murainy.safeexam.realse:layout_constraintHeight_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_bias
+     * @attr name com.murainy.safeexam.realse:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11680,29 +11842,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_chainStyle
+     * @attr name com.murainy.safeexam.realse:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_weight
+     * @attr name com.murainy.safeexam.realse:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11718,11 +11880,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_toLeftOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11738,20 +11900,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_toRightOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11767,11 +11929,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_toLeftOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11787,11 +11949,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_toRightOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11807,11 +11969,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintStart_toEndOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11827,20 +11989,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintStart_toStartOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11856,11 +12018,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_toBottomOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11876,20 +12038,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_toTopOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_bias
+     * @attr name com.murainy.safeexam.realse:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11903,20 +12065,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_chainStyle
+     * @attr name com.murainy.safeexam.realse:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_weight
+     * @attr name com.murainy.safeexam.realse:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11930,11 +12092,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_default
+     * @attr name com.murainy.safeexam.realse:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11951,11 +12113,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_max
+     * @attr name com.murainy.safeexam.realse:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11972,20 +12134,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_min
+     * @attr name com.murainy.safeexam.realse:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_percent
+     * @attr name com.murainy.safeexam.realse:layout_constraintWidth_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11994,11 +12156,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_editor_absoluteX
+     * @attr name com.murainy.safeexam.realse:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12007,11 +12169,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_editor_absoluteY
+     * @attr name com.murainy.safeexam.realse:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12020,11 +12182,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginBottom
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12033,11 +12195,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginEnd
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12046,11 +12208,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginLeft
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12059,11 +12221,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginRight
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12072,11 +12234,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginStart
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12085,11 +12247,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginTop
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -12101,12 +12263,12 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_optimizationLevel
+     * @attr name com.murainy.safeexam.realse:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
     /**
@@ -12116,8 +12278,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_content c313355d6f4419b5084f07b9ee758da4.realse:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility c313355d6f4419b5084f07b9ee758da4.realse:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.murainy.safeexam.realse:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.murainy.safeexam.realse:emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
      * @see #ConstraintLayout_placeholder_emptyVisibility
@@ -12126,7 +12288,7 @@ public final class R {
       0x7f04008d, 0x7f0400b5
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#content}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12134,11 +12296,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:content
+     * @attr name com.murainy.safeexam.realse:content
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12151,7 +12313,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:emptyVisibility
+     * @attr name com.murainy.safeexam.realse:emptyVisibility
      */
     public static final int ConstraintLayout_placeholder_emptyVisibility=1;
     /**
@@ -12184,55 +12346,55 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight c313355d6f4419b5084f07b9ee758da4.realse:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth c313355d6f4419b5084f07b9ee758da4.realse:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX c313355d6f4419b5084f07b9ee758da4.realse:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY c313355d6f4419b5084f07b9ee758da4.realse:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.murainy.safeexam.realse:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.murainy.safeexam.realse:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.murainy.safeexam.realse:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.murainy.safeexam.realse:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.murainy.safeexam.realse:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.murainy.safeexam.realse:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.murainy.safeexam.realse:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.murainy.safeexam.realse:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.murainy.safeexam.realse:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.murainy.safeexam.realse:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.murainy.safeexam.realse:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.murainy.safeexam.realse:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.murainy.safeexam.realse:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.murainy.safeexam.realse:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.murainy.safeexam.realse:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.murainy.safeexam.realse:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.murainy.safeexam.realse:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.murainy.safeexam.realse:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.murainy.safeexam.realse:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.murainy.safeexam.realse:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.murainy.safeexam.realse:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.murainy.safeexam.realse:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.murainy.safeexam.realse:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.murainy.safeexam.realse:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.murainy.safeexam.realse:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.murainy.safeexam.realse:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.murainy.safeexam.realse:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.murainy.safeexam.realse:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.murainy.safeexam.realse:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.murainy.safeexam.realse:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.murainy.safeexam.realse:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.murainy.safeexam.realse:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.murainy.safeexam.realse:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.murainy.safeexam.realse:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.murainy.safeexam.realse:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.murainy.safeexam.realse:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.murainy.safeexam.realse:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.murainy.safeexam.realse:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.murainy.safeexam.realse:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.murainy.safeexam.realse:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.murainy.safeexam.realse:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.murainy.safeexam.realse:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.murainy.safeexam.realse:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.murainy.safeexam.realse:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.murainy.safeexam.realse:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.murainy.safeexam.realse:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.murainy.safeexam.realse:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.murainy.safeexam.realse:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.murainy.safeexam.realse:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -12631,36 +12793,36 @@ public final class R {
      */
     public static final int ConstraintSet_android_elevation=22;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constrainedHeight
+     * @attr name com.murainy.safeexam.realse:layout_constrainedHeight
      */
     public static final int ConstraintSet_layout_constrainedHeight=23;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constrainedWidth
+     * @attr name com.murainy.safeexam.realse:layout_constrainedWidth
      */
     public static final int ConstraintSet_layout_constrainedWidth=24;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBaseline_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=25;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12676,20 +12838,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBaseline_toBaselineOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=26;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=27;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12705,11 +12867,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_toBottomOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=28;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12725,11 +12887,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintBottom_toTopOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=29;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12737,20 +12899,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircle
+     * @attr name com.murainy.safeexam.realse:layout_constraintCircle
      */
     public static final int ConstraintSet_layout_constraintCircle=30;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircleAngle
+     * @attr name com.murainy.safeexam.realse:layout_constraintCircleAngle
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=31;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12759,21 +12921,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintCircleRadius
+     * @attr name com.murainy.safeexam.realse:layout_constraintCircleRadius
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=32;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintDimensionRatio
+     * @attr name com.murainy.safeexam.realse:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=33;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12789,11 +12951,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintEnd_toEndOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=34;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12809,11 +12971,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintEnd_toStartOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=35;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12822,11 +12984,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_begin
+     * @attr name com.murainy.safeexam.realse:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=36;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12835,20 +12997,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_end
+     * @attr name com.murainy.safeexam.realse:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=37;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintGuide_percent
+     * @attr name com.murainy.safeexam.realse:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=38;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12862,11 +13024,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_default
+     * @attr name com.murainy.safeexam.realse:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=39;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12883,11 +13045,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_max
+     * @attr name com.murainy.safeexam.realse:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=40;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12904,29 +13066,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_min
+     * @attr name com.murainy.safeexam.realse:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=41;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHeight_percent
+     * @attr name com.murainy.safeexam.realse:layout_constraintHeight_percent
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=42;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_bias
+     * @attr name com.murainy.safeexam.realse:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=43;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12940,29 +13102,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_chainStyle
+     * @attr name com.murainy.safeexam.realse:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintHorizontal_weight
+     * @attr name com.murainy.safeexam.realse:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=45;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=46;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12978,11 +13140,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_toLeftOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=47;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12998,20 +13160,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintLeft_toRightOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=48;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=49;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13027,11 +13189,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_toLeftOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=50;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13047,11 +13209,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintRight_toRightOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=51;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13067,11 +13229,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintStart_toEndOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=52;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13087,20 +13249,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintStart_toStartOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=53;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_creator
+     * @attr name com.murainy.safeexam.realse:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=54;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13116,11 +13278,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_toBottomOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=55;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13136,20 +13298,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintTop_toTopOf
+     * @attr name com.murainy.safeexam.realse:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=56;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_bias
+     * @attr name com.murainy.safeexam.realse:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=57;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13163,20 +13325,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_chainStyle
+     * @attr name com.murainy.safeexam.realse:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=58;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintVertical_weight
+     * @attr name com.murainy.safeexam.realse:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=59;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13190,11 +13352,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_default
+     * @attr name com.murainy.safeexam.realse:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=60;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13211,11 +13373,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_max
+     * @attr name com.murainy.safeexam.realse:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=61;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13232,20 +13394,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_min
+     * @attr name com.murainy.safeexam.realse:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=62;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_constraintWidth_percent
+     * @attr name com.murainy.safeexam.realse:layout_constraintWidth_percent
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=63;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13254,11 +13416,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_editor_absoluteX
+     * @attr name com.murainy.safeexam.realse:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=64;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13267,11 +13429,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_editor_absoluteY
+     * @attr name com.murainy.safeexam.realse:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=65;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13280,11 +13442,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginBottom
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=66;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13293,11 +13455,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginEnd
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=67;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13306,11 +13468,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginLeft
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=68;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13319,11 +13481,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginRight
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=69;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13332,11 +13494,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginStart
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=70;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13345,7 +13507,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_goneMarginTop
+     * @attr name com.murainy.safeexam.realse:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=71;
     /**
@@ -13355,8 +13517,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines c313355d6f4419b5084f07b9ee758da4.realse:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground c313355d6f4419b5084f07b9ee758da4.realse:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.murainy.safeexam.realse:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.murainy.safeexam.realse:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -13365,7 +13527,7 @@ public final class R {
       0x7f040106, 0x7f0401ac
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#keylines}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#keylines}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13373,11 +13535,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:keylines
+     * @attr name com.murainy.safeexam.realse:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#statusBarBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#statusBarBackground}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13388,7 +13550,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:statusBarBackground
+     * @attr name com.murainy.safeexam.realse:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -13399,12 +13561,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor c313355d6f4419b5084f07b9ee758da4.realse:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity c313355d6f4419b5084f07b9ee758da4.realse:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior c313355d6f4419b5084f07b9ee758da4.realse:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges c313355d6f4419b5084f07b9ee758da4.realse:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge c313355d6f4419b5084f07b9ee758da4.realse:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline c313355d6f4419b5084f07b9ee758da4.realse:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.murainy.safeexam.realse:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.murainy.safeexam.realse:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.murainy.safeexam.realse:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.murainy.safeexam.realse:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.murainy.safeexam.realse:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.murainy.safeexam.realse:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -13448,7 +13610,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_anchor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_anchor}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13456,11 +13618,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_anchor
+     * @attr name com.murainy.safeexam.realse:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_anchorGravity}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_anchorGravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13485,21 +13647,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_anchorGravity
+     * @attr name com.murainy.safeexam.realse:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_behavior}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_behavior}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_behavior
+     * @attr name com.murainy.safeexam.realse:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_dodgeInsetEdges}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_dodgeInsetEdges}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13518,11 +13680,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_dodgeInsetEdges
+     * @attr name com.murainy.safeexam.realse:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_insetEdge}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_insetEdge}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13540,16 +13702,16 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_insetEdge
+     * @attr name com.murainy.safeexam.realse:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout_keyline}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout_keyline}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout_keyline
+     * @attr name com.murainy.safeexam.realse:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -13559,9 +13721,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme c313355d6f4419b5084f07b9ee758da4.realse:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle c313355d6f4419b5084f07b9ee758da4.realse:bottomSheetStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_textColorError c313355d6f4419b5084f07b9ee758da4.realse:textColorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.murainy.safeexam.realse:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.murainy.safeexam.realse:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_textColorError com.murainy.safeexam.realse:textColorError}</code></td><td></td></tr>
      * </table>
      * @see #DesignTheme_bottomSheetDialogTheme
      * @see #DesignTheme_bottomSheetStyle
@@ -13571,7 +13733,7 @@ public final class R {
       0x7f04005d, 0x7f04005e, 0x7f0401d3
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13579,11 +13741,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bottomSheetDialogTheme
+     * @attr name com.murainy.safeexam.realse:bottomSheetDialogTheme
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13591,11 +13753,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:bottomSheetStyle
+     * @attr name com.murainy.safeexam.realse:bottomSheetStyle
      */
     public static final int DesignTheme_bottomSheetStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textColorError}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textColorError}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13606,7 +13768,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textColorError
+     * @attr name com.murainy.safeexam.realse:textColorError
      */
     public static final int DesignTheme_textColorError=2;
     /**
@@ -13616,14 +13778,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength c313355d6f4419b5084f07b9ee758da4.realse:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength c313355d6f4419b5084f07b9ee758da4.realse:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength c313355d6f4419b5084f07b9ee758da4.realse:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color c313355d6f4419b5084f07b9ee758da4.realse:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize c313355d6f4419b5084f07b9ee758da4.realse:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars c313355d6f4419b5084f07b9ee758da4.realse:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars c313355d6f4419b5084f07b9ee758da4.realse:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness c313355d6f4419b5084f07b9ee758da4.realse:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.murainy.safeexam.realse:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.murainy.safeexam.realse:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.murainy.safeexam.realse:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.murainy.safeexam.realse:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.murainy.safeexam.realse:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.murainy.safeexam.realse:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.murainy.safeexam.realse:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.murainy.safeexam.realse:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -13639,7 +13801,7 @@ public final class R {
       0x7f0400ab, 0x7f0400ec, 0x7f0401a3, 0x7f0401d6
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13648,11 +13810,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:arrowHeadLength
+     * @attr name com.murainy.safeexam.realse:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13661,11 +13823,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:arrowShaftLength
+     * @attr name com.murainy.safeexam.realse:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13674,22 +13836,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:barLength
+     * @attr name com.murainy.safeexam.realse:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:color
+     * @attr name com.murainy.safeexam.realse:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13698,11 +13860,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:drawableSize
+     * @attr name com.murainy.safeexam.realse:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13711,21 +13873,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:gapBetweenBars
+     * @attr name com.murainy.safeexam.realse:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:spinBars
+     * @attr name com.murainy.safeexam.realse:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13734,7 +13896,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:thickness
+     * @attr name com.murainy.safeexam.realse:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -13744,29 +13906,29 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_borderColor c313355d6f4419b5084f07b9ee758da4.realse:fb_borderColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_borderWidth c313355d6f4419b5084f07b9ee758da4.realse:fb_borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_defaultColor c313355d6f4419b5084f07b9ee758da4.realse:fb_defaultColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_focusColor c313355d6f4419b5084f07b9ee758da4.realse:fb_focusColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_fontIconResource c313355d6f4419b5084f07b9ee758da4.realse:fb_fontIconResource}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_fontIconSize c313355d6f4419b5084f07b9ee758da4.realse:fb_fontIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_ghost c313355d6f4419b5084f07b9ee758da4.realse:fb_ghost}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconColor c313355d6f4419b5084f07b9ee758da4.realse:fb_iconColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconFont c313355d6f4419b5084f07b9ee758da4.realse:fb_iconFont}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPaddingBottom c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPaddingLeft c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPaddingRight c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPaddingTop c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPosition c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPosition}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconResource c313355d6f4419b5084f07b9ee758da4.realse:fb_iconResource}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_radius c313355d6f4419b5084f07b9ee758da4.realse:fb_radius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_text c313355d6f4419b5084f07b9ee758da4.realse:fb_text}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textAllCaps c313355d6f4419b5084f07b9ee758da4.realse:fb_textAllCaps}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textColor c313355d6f4419b5084f07b9ee758da4.realse:fb_textColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textFont c313355d6f4419b5084f07b9ee758da4.realse:fb_textFont}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textGravity c313355d6f4419b5084f07b9ee758da4.realse:fb_textGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textPosition c313355d6f4419b5084f07b9ee758da4.realse:fb_textPosition}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textSize c313355d6f4419b5084f07b9ee758da4.realse:fb_textSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_borderColor com.murainy.safeexam.realse:fb_borderColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_borderWidth com.murainy.safeexam.realse:fb_borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_defaultColor com.murainy.safeexam.realse:fb_defaultColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_focusColor com.murainy.safeexam.realse:fb_focusColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_fontIconResource com.murainy.safeexam.realse:fb_fontIconResource}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_fontIconSize com.murainy.safeexam.realse:fb_fontIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_ghost com.murainy.safeexam.realse:fb_ghost}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconColor com.murainy.safeexam.realse:fb_iconColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconFont com.murainy.safeexam.realse:fb_iconFont}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPaddingBottom com.murainy.safeexam.realse:fb_iconPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPaddingLeft com.murainy.safeexam.realse:fb_iconPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPaddingRight com.murainy.safeexam.realse:fb_iconPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPaddingTop com.murainy.safeexam.realse:fb_iconPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconPosition com.murainy.safeexam.realse:fb_iconPosition}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_iconResource com.murainy.safeexam.realse:fb_iconResource}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_radius com.murainy.safeexam.realse:fb_radius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_text com.murainy.safeexam.realse:fb_text}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textAllCaps com.murainy.safeexam.realse:fb_textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textColor com.murainy.safeexam.realse:fb_textColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textFont com.murainy.safeexam.realse:fb_textFont}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textGravity com.murainy.safeexam.realse:fb_textGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textPosition com.murainy.safeexam.realse:fb_textPosition}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FancyButtonsAttrs_fb_textSize com.murainy.safeexam.realse:fb_textSize}</code></td><td></td></tr>
      * </table>
      * @see #FancyButtonsAttrs_fb_borderColor
      * @see #FancyButtonsAttrs_fb_borderWidth
@@ -13801,18 +13963,18 @@ public final class R {
       0x7f0400dc, 0x7f0400dd, 0x7f0400de
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_borderColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_borderColor}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_borderColor
+     * @attr name com.murainy.safeexam.realse:fb_borderColor
      */
     public static final int FancyButtonsAttrs_fb_borderColor=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_borderWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_borderWidth}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13821,43 +13983,43 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_borderWidth
+     * @attr name com.murainy.safeexam.realse:fb_borderWidth
      */
     public static final int FancyButtonsAttrs_fb_borderWidth=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_defaultColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_defaultColor}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_defaultColor
+     * @attr name com.murainy.safeexam.realse:fb_defaultColor
      */
     public static final int FancyButtonsAttrs_fb_defaultColor=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_focusColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_focusColor}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_focusColor
+     * @attr name com.murainy.safeexam.realse:fb_focusColor
      */
     public static final int FancyButtonsAttrs_fb_focusColor=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_fontIconResource}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_fontIconResource}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_fontIconResource
+     * @attr name com.murainy.safeexam.realse:fb_fontIconResource
      */
     public static final int FancyButtonsAttrs_fb_fontIconResource=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_fontIconSize}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_fontIconSize}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13866,42 +14028,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_fontIconSize
+     * @attr name com.murainy.safeexam.realse:fb_fontIconSize
      */
     public static final int FancyButtonsAttrs_fb_fontIconSize=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_ghost}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_ghost}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_ghost
+     * @attr name com.murainy.safeexam.realse:fb_ghost
      */
     public static final int FancyButtonsAttrs_fb_ghost=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_iconColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_iconColor}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_iconColor
+     * @attr name com.murainy.safeexam.realse:fb_iconColor
      */
     public static final int FancyButtonsAttrs_fb_iconColor=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_iconFont}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_iconFont}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_iconFont
+     * @attr name com.murainy.safeexam.realse:fb_iconFont
      */
     public static final int FancyButtonsAttrs_fb_iconFont=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_iconPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_iconPaddingBottom}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13910,11 +14072,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPaddingBottom
+     * @attr name com.murainy.safeexam.realse:fb_iconPaddingBottom
      */
     public static final int FancyButtonsAttrs_fb_iconPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_iconPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_iconPaddingLeft}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13923,11 +14085,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPaddingLeft
+     * @attr name com.murainy.safeexam.realse:fb_iconPaddingLeft
      */
     public static final int FancyButtonsAttrs_fb_iconPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_iconPaddingRight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_iconPaddingRight}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13936,11 +14098,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPaddingRight
+     * @attr name com.murainy.safeexam.realse:fb_iconPaddingRight
      */
     public static final int FancyButtonsAttrs_fb_iconPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_iconPaddingTop}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_iconPaddingTop}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13949,11 +14111,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPaddingTop
+     * @attr name com.murainy.safeexam.realse:fb_iconPaddingTop
      */
     public static final int FancyButtonsAttrs_fb_iconPaddingTop=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_iconPosition}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_iconPosition}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13968,20 +14130,20 @@ public final class R {
      * <tr><td>top</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_iconPosition
+     * @attr name com.murainy.safeexam.realse:fb_iconPosition
      */
     public static final int FancyButtonsAttrs_fb_iconPosition=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_iconResource}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_iconResource}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_iconResource
+     * @attr name com.murainy.safeexam.realse:fb_iconResource
      */
     public static final int FancyButtonsAttrs_fb_iconResource=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_radius}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_radius}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13990,52 +14152,52 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_radius
+     * @attr name com.murainy.safeexam.realse:fb_radius
      */
     public static final int FancyButtonsAttrs_fb_radius=15;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_text}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_text}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_text
+     * @attr name com.murainy.safeexam.realse:fb_text
      */
     public static final int FancyButtonsAttrs_fb_text=16;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_textAllCaps}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_textAllCaps}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_textAllCaps
+     * @attr name com.murainy.safeexam.realse:fb_textAllCaps
      */
     public static final int FancyButtonsAttrs_fb_textAllCaps=17;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_textColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_textColor}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_textColor
+     * @attr name com.murainy.safeexam.realse:fb_textColor
      */
     public static final int FancyButtonsAttrs_fb_textColor=18;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_textFont}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_textFont}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_textFont
+     * @attr name com.murainy.safeexam.realse:fb_textFont
      */
     public static final int FancyButtonsAttrs_fb_textFont=19;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_textGravity}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_textGravity}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14060,11 +14222,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_textGravity
+     * @attr name com.murainy.safeexam.realse:fb_textGravity
      */
     public static final int FancyButtonsAttrs_fb_textGravity=20;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_textPosition}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_textPosition}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14079,11 +14241,11 @@ public final class R {
      * <tr><td>top</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_textPosition
+     * @attr name com.murainy.safeexam.realse:fb_textPosition
      */
     public static final int FancyButtonsAttrs_fb_textPosition=21;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fb_textSize}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fb_textSize}
      * attribute's value can be found in the {@link #FancyButtonsAttrs} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14092,7 +14254,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fb_textSize
+     * @attr name com.murainy.safeexam.realse:fb_textSize
      */
     public static final int FancyButtonsAttrs_fb_textSize=22;
     /**
@@ -14102,15 +14264,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint c313355d6f4419b5084f07b9ee758da4.realse:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode c313355d6f4419b5084f07b9ee758da4.realse:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth c313355d6f4419b5084f07b9ee758da4.realse:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation c313355d6f4419b5084f07b9ee758da4.realse:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize c313355d6f4419b5084f07b9ee758da4.realse:fabCustomSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize c313355d6f4419b5084f07b9ee758da4.realse:fabSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ c313355d6f4419b5084f07b9ee758da4.realse:pressedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor c313355d6f4419b5084f07b9ee758da4.realse:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding c313355d6f4419b5084f07b9ee758da4.realse:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.murainy.safeexam.realse:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.murainy.safeexam.realse:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.murainy.safeexam.realse:borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.murainy.safeexam.realse:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.murainy.safeexam.realse:fabCustomSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize com.murainy.safeexam.realse:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.murainy.safeexam.realse:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.murainy.safeexam.realse:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.murainy.safeexam.realse:useCompatPadding}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -14125,21 +14287,21 @@ public final class R {
     public static final int[] FloatingActionButton={
       0x7f040037, 0x7f040038, 0x7f04005b, 0x7f0400b4, 
       0x7f0400c1, 0x7f0400c2, 0x7f040171, 0x7f040180, 
-      0x7f0401f4
+      0x7f040206
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:backgroundTint
+     * @attr name com.murainy.safeexam.realse:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14156,11 +14318,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:backgroundTintMode
+     * @attr name com.murainy.safeexam.realse:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#borderWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#borderWidth}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14169,11 +14331,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:borderWidth
+     * @attr name com.murainy.safeexam.realse:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#elevation}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14182,11 +14344,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:elevation
+     * @attr name com.murainy.safeexam.realse:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fabCustomSize}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fabCustomSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14195,11 +14357,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fabCustomSize
+     * @attr name com.murainy.safeexam.realse:fabCustomSize
      */
     public static final int FloatingActionButton_fabCustomSize=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fabSize}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fabSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14213,11 +14375,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fabSize
+     * @attr name com.murainy.safeexam.realse:fabSize
      */
     public static final int FloatingActionButton_fabSize=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#pressedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#pressedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14226,28 +14388,28 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:pressedTranslationZ
+     * @attr name com.murainy.safeexam.realse:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#rippleColor}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:rippleColor
+     * @attr name com.murainy.safeexam.realse:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#useCompatPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#useCompatPadding}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:useCompatPadding
+     * @attr name com.murainy.safeexam.realse:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=8;
     /**
@@ -14257,7 +14419,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide c313355d6f4419b5084f07b9ee758da4.realse:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.murainy.safeexam.realse:behavior_autoHide}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -14265,13 +14427,13 @@ public final class R {
       0x7f04003d
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#behavior_autoHide}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#behavior_autoHide}
      * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:behavior_autoHide
+     * @attr name com.murainy.safeexam.realse:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
@@ -14281,12 +14443,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority c313355d6f4419b5084f07b9ee758da4.realse:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts c313355d6f4419b5084f07b9ee758da4.realse:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy c313355d6f4419b5084f07b9ee758da4.realse:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout c313355d6f4419b5084f07b9ee758da4.realse:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage c313355d6f4419b5084f07b9ee758da4.realse:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery c313355d6f4419b5084f07b9ee758da4.realse:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.murainy.safeexam.realse:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.murainy.safeexam.realse:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.murainy.safeexam.realse:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.murainy.safeexam.realse:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.murainy.safeexam.realse:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.murainy.safeexam.realse:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -14300,17 +14462,17 @@ public final class R {
       0x7f0400e7, 0x7f0400e8
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontProviderAuthority
+     * @attr name com.murainy.safeexam.realse:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14318,11 +14480,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontProviderCerts
+     * @attr name com.murainy.safeexam.realse:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14335,11 +14497,11 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontProviderFetchStrategy
+     * @attr name com.murainy.safeexam.realse:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14352,27 +14514,27 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontProviderFetchTimeout
+     * @attr name com.murainy.safeexam.realse:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontProviderPackage
+     * @attr name com.murainy.safeexam.realse:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontProviderQuery
+     * @attr name com.murainy.safeexam.realse:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -14385,9 +14547,9 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_font android:font}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontWeight android:fontWeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font c313355d6f4419b5084f07b9ee758da4.realse:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle c313355d6f4419b5084f07b9ee758da4.realse:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight c313355d6f4419b5084f07b9ee758da4.realse:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.murainy.safeexam.realse:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.murainy.safeexam.realse:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.murainy.safeexam.realse:fontWeight}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -14439,7 +14601,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#font}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14447,11 +14609,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:font
+     * @attr name com.murainy.safeexam.realse:font
      */
     public static final int FontFamilyFont_font=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14464,16 +14626,16 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontStyle
+     * @attr name com.murainy.safeexam.realse:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontWeight
+     * @attr name com.murainy.safeexam.realse:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=5;
     /**
@@ -14485,7 +14647,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding c313355d6f4419b5084f07b9ee758da4.realse:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.murainy.safeexam.realse:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
@@ -14537,13 +14699,13 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:foregroundInsidePadding
+     * @attr name com.murainy.safeexam.realse:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -14589,10 +14751,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider c313355d6f4419b5084f07b9ee758da4.realse:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding c313355d6f4419b5084f07b9ee758da4.realse:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild c313355d6f4419b5084f07b9ee758da4.realse:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers c313355d6f4419b5084f07b9ee758da4.realse:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.murainy.safeexam.realse:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.murainy.safeexam.realse:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.murainy.safeexam.realse:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.murainy.safeexam.realse:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -14684,7 +14846,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14692,11 +14854,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:divider
+     * @attr name com.murainy.safeexam.realse:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14705,21 +14867,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:dividerPadding
+     * @attr name com.murainy.safeexam.realse:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:measureWithLargestChild
+     * @attr name com.murainy.safeexam.realse:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -14734,7 +14896,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:showDividers
+     * @attr name com.murainy.safeexam.realse:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -14891,11 +15053,11 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MaterialProgressBar_android_tint android:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressStyle c313355d6f4419b5084f07b9ee758da4.realse:mpb_progressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_setBothDrawables c313355d6f4419b5084f07b9ee758da4.realse:mpb_setBothDrawables}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_showTrack c313355d6f4419b5084f07b9ee758da4.realse:mpb_showTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_tintMode c313355d6f4419b5084f07b9ee758da4.realse:mpb_tintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_useIntrinsicPadding c313355d6f4419b5084f07b9ee758da4.realse:mpb_useIntrinsicPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressStyle com.murainy.safeexam.realse:mpb_progressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_setBothDrawables com.murainy.safeexam.realse:mpb_setBothDrawables}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_showTrack com.murainy.safeexam.realse:mpb_showTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_tintMode com.murainy.safeexam.realse:mpb_tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_useIntrinsicPadding com.murainy.safeexam.realse:mpb_useIntrinsicPadding}</code></td><td></td></tr>
      * </table>
      * @see #MaterialProgressBar_android_tint
      * @see #MaterialProgressBar_mpb_progressStyle
@@ -14920,7 +15082,7 @@ public final class R {
      */
     public static final int MaterialProgressBar_android_tint=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#mpb_progressStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#mpb_progressStyle}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14933,31 +15095,31 @@ public final class R {
      * <tr><td>horizontal</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:mpb_progressStyle
+     * @attr name com.murainy.safeexam.realse:mpb_progressStyle
      */
     public static final int MaterialProgressBar_mpb_progressStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#mpb_setBothDrawables}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#mpb_setBothDrawables}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:mpb_setBothDrawables
+     * @attr name com.murainy.safeexam.realse:mpb_setBothDrawables
      */
     public static final int MaterialProgressBar_mpb_setBothDrawables=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#mpb_showTrack}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#mpb_showTrack}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:mpb_showTrack
+     * @attr name com.murainy.safeexam.realse:mpb_showTrack
      */
     public static final int MaterialProgressBar_mpb_showTrack=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#mpb_tintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#mpb_tintMode}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14974,17 +15136,17 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:mpb_tintMode
+     * @attr name com.murainy.safeexam.realse:mpb_tintMode
      */
     public static final int MaterialProgressBar_mpb_tintMode=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#mpb_useIntrinsicPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#mpb_useIntrinsicPadding}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:mpb_useIntrinsicPadding
+     * @attr name com.murainy.safeexam.realse:mpb_useIntrinsicPadding
      */
     public static final int MaterialProgressBar_mpb_useIntrinsicPadding=5;
     /**
@@ -15110,16 +15272,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout c313355d6f4419b5084f07b9ee758da4.realse:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass c313355d6f4419b5084f07b9ee758da4.realse:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass c313355d6f4419b5084f07b9ee758da4.realse:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers c313355d6f4419b5084f07b9ee758da4.realse:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription c313355d6f4419b5084f07b9ee758da4.realse:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint c313355d6f4419b5084f07b9ee758da4.realse:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode c313355d6f4419b5084f07b9ee758da4.realse:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers c313355d6f4419b5084f07b9ee758da4.realse:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction c313355d6f4419b5084f07b9ee758da4.realse:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText c313355d6f4419b5084f07b9ee758da4.realse:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.murainy.safeexam.realse:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.murainy.safeexam.realse:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.murainy.safeexam.realse:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.murainy.safeexam.realse:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.murainy.safeexam.realse:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.murainy.safeexam.realse:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.murainy.safeexam.realse:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.murainy.safeexam.realse:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.murainy.safeexam.realse:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.murainy.safeexam.realse:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -15296,7 +15458,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15304,31 +15466,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionLayout
+     * @attr name com.murainy.safeexam.realse:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionProviderClass
+     * @attr name com.murainy.safeexam.realse:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:actionViewClass
+     * @attr name com.murainy.safeexam.realse:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15345,32 +15507,32 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:alphabeticModifiers
+     * @attr name com.murainy.safeexam.realse:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentDescription
+     * @attr name com.murainy.safeexam.realse:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:iconTint
+     * @attr name com.murainy.safeexam.realse:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15387,11 +15549,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:iconTintMode
+     * @attr name com.murainy.safeexam.realse:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15408,11 +15570,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:numericModifiers
+     * @attr name com.murainy.safeexam.realse:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15428,17 +15590,17 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:showAsAction
+     * @attr name com.murainy.safeexam.realse:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tooltipText
+     * @attr name com.murainy.safeexam.realse:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -15455,8 +15617,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing c313355d6f4419b5084f07b9ee758da4.realse:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow c313355d6f4419b5084f07b9ee758da4.realse:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.murainy.safeexam.realse:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.murainy.safeexam.realse:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -15561,17 +15723,17 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:preserveIconSpacing
+     * @attr name com.murainy.safeexam.realse:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15579,7 +15741,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:subMenuArrow
+     * @attr name com.murainy.safeexam.realse:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -15592,13 +15754,13 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation c313355d6f4419b5084f07b9ee758da4.realse:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout c313355d6f4419b5084f07b9ee758da4.realse:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground c313355d6f4419b5084f07b9ee758da4.realse:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint c313355d6f4419b5084f07b9ee758da4.realse:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor c313355d6f4419b5084f07b9ee758da4.realse:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu c313355d6f4419b5084f07b9ee758da4.realse:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.murainy.safeexam.realse:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout com.murainy.safeexam.realse:headerLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground com.murainy.safeexam.realse:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint com.murainy.safeexam.realse:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.murainy.safeexam.realse:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor com.murainy.safeexam.realse:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.murainy.safeexam.realse:menu}</code></td><td></td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -15655,7 +15817,7 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#elevation}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15664,11 +15826,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:elevation
+     * @attr name com.murainy.safeexam.realse:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#headerLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#headerLayout}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15676,11 +15838,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:headerLayout
+     * @attr name com.murainy.safeexam.realse:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#itemBackground}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15688,22 +15850,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:itemBackground
+     * @attr name com.murainy.safeexam.realse:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:itemIconTint
+     * @attr name com.murainy.safeexam.realse:itemIconTint
      */
     public static final int NavigationView_itemIconTint=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15711,22 +15873,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:itemTextAppearance
+     * @attr name com.murainy.safeexam.realse:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:itemTextColor
+     * @attr name com.murainy.safeexam.realse:itemTextColor
      */
     public static final int NavigationView_itemTextColor=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#menu}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15734,7 +15896,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:menu
+     * @attr name com.murainy.safeexam.realse:menu
      */
     public static final int NavigationView_menu=9;
     /**
@@ -15746,7 +15908,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor c313355d6f4419b5084f07b9ee758da4.realse:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.murainy.safeexam.realse:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -15783,13 +15945,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:overlapAnchor
+     * @attr name com.murainy.safeexam.realse:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -15799,7 +15961,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor c313355d6f4419b5084f07b9ee758da4.realse:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.murainy.safeexam.realse:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -15807,13 +15969,13 @@ public final class R {
       0x7f0401a9
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:state_above_anchor
+     * @attr name com.murainy.safeexam.realse:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -15823,8 +15985,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons c313355d6f4419b5084f07b9ee758da4.realse:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle c313355d6f4419b5084f07b9ee758da4.realse:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.murainy.safeexam.realse:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.murainy.safeexam.realse:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -15833,7 +15995,7 @@ public final class R {
       0x7f040161, 0x7f040164
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15842,11 +16004,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:paddingBottomNoButtons
+     * @attr name com.murainy.safeexam.realse:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15855,7 +16017,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:paddingTopNoTitle
+     * @attr name com.murainy.safeexam.realse:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -15867,15 +16029,15 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled c313355d6f4419b5084f07b9ee758da4.realse:fastScrollEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable c313355d6f4419b5084f07b9ee758da4.realse:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable c313355d6f4419b5084f07b9ee758da4.realse:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable c313355d6f4419b5084f07b9ee758da4.realse:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable c313355d6f4419b5084f07b9ee758da4.realse:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager c313355d6f4419b5084f07b9ee758da4.realse:layoutManager}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout c313355d6f4419b5084f07b9ee758da4.realse:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount c313355d6f4419b5084f07b9ee758da4.realse:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd c313355d6f4419b5084f07b9ee758da4.realse:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.murainy.safeexam.realse:fastScrollEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.murainy.safeexam.realse:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.murainy.safeexam.realse:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.murainy.safeexam.realse:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.murainy.safeexam.realse:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.murainy.safeexam.realse:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout com.murainy.safeexam.realse:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount com.murainy.safeexam.realse:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.murainy.safeexam.realse:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_descendantFocusability
@@ -15930,17 +16092,17 @@ public final class R {
      */
     public static final int RecyclerView_android_descendantFocusability=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fastScrollEnabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fastScrollEnabled}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fastScrollEnabled
+     * @attr name com.murainy.safeexam.realse:fastScrollEnabled
      */
     public static final int RecyclerView_fastScrollEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fastScrollHorizontalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fastScrollHorizontalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15948,11 +16110,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fastScrollHorizontalThumbDrawable
+     * @attr name com.murainy.safeexam.realse:fastScrollHorizontalThumbDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fastScrollHorizontalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fastScrollHorizontalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15960,11 +16122,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fastScrollHorizontalTrackDrawable
+     * @attr name com.murainy.safeexam.realse:fastScrollHorizontalTrackDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fastScrollVerticalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fastScrollVerticalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15972,11 +16134,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fastScrollVerticalThumbDrawable
+     * @attr name com.murainy.safeexam.realse:fastScrollVerticalThumbDrawable
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fastScrollVerticalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fastScrollVerticalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15984,46 +16146,46 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fastScrollVerticalTrackDrawable
+     * @attr name com.murainy.safeexam.realse:fastScrollVerticalTrackDrawable
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layoutManager}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layoutManager}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layoutManager
+     * @attr name com.murainy.safeexam.realse:layoutManager
      */
     public static final int RecyclerView_layoutManager=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:reverseLayout
+     * @attr name com.murainy.safeexam.realse:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:spanCount
+     * @attr name com.murainy.safeexam.realse:spanCount
      */
     public static final int RecyclerView_spanCount=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:stackFromEnd
+     * @attr name com.murainy.safeexam.realse:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=10;
     /**
@@ -16033,7 +16195,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground c313355d6f4419b5084f07b9ee758da4.realse:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.murainy.safeexam.realse:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
@@ -16041,7 +16203,7 @@ public final class R {
       0x7f0400fe
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16052,7 +16214,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:insetForeground
+     * @attr name com.murainy.safeexam.realse:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -16062,7 +16224,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop c313355d6f4419b5084f07b9ee758da4.realse:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.murainy.safeexam.realse:behavior_overlapTop}</code></td><td></td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -16070,7 +16232,7 @@ public final class R {
       0x7f04003f
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#behavior_overlapTop}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#behavior_overlapTop}
      * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16079,7 +16241,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:behavior_overlapTop
+     * @attr name com.murainy.safeexam.realse:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -16093,19 +16255,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon c313355d6f4419b5084f07b9ee758da4.realse:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon c313355d6f4419b5084f07b9ee758da4.realse:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint c313355d6f4419b5084f07b9ee758da4.realse:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon c313355d6f4419b5084f07b9ee758da4.realse:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault c313355d6f4419b5084f07b9ee758da4.realse:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout c313355d6f4419b5084f07b9ee758da4.realse:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground c313355d6f4419b5084f07b9ee758da4.realse:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint c313355d6f4419b5084f07b9ee758da4.realse:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon c313355d6f4419b5084f07b9ee758da4.realse:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon c313355d6f4419b5084f07b9ee758da4.realse:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground c313355d6f4419b5084f07b9ee758da4.realse:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout c313355d6f4419b5084f07b9ee758da4.realse:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon c313355d6f4419b5084f07b9ee758da4.realse:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.murainy.safeexam.realse:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.murainy.safeexam.realse:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.murainy.safeexam.realse:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.murainy.safeexam.realse:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.murainy.safeexam.realse:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.murainy.safeexam.realse:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.murainy.safeexam.realse:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.murainy.safeexam.realse:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.murainy.safeexam.realse:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.murainy.safeexam.realse:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.murainy.safeexam.realse:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.murainy.safeexam.realse:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.murainy.safeexam.realse:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -16130,7 +16292,7 @@ public final class R {
       0x7f040079, 0x7f04008a, 0x7f0400a3, 0x7f0400ed, 
       0x7f0400f9, 0x7f040107, 0x7f040174, 0x7f040175, 
       0x7f040196, 0x7f040197, 0x7f0401af, 0x7f0401b4, 
-      0x7f0401f6
+      0x7f040208
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -16243,7 +16405,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16251,11 +16413,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:closeIcon
+     * @attr name com.murainy.safeexam.realse:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16263,21 +16425,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:commitIcon
+     * @attr name com.murainy.safeexam.realse:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:defaultQueryHint
+     * @attr name com.murainy.safeexam.realse:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16285,21 +16447,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:goIcon
+     * @attr name com.murainy.safeexam.realse:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:iconifiedByDefault
+     * @attr name com.murainy.safeexam.realse:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16307,11 +16469,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:layout
+     * @attr name com.murainy.safeexam.realse:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16319,21 +16481,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:queryBackground
+     * @attr name com.murainy.safeexam.realse:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:queryHint
+     * @attr name com.murainy.safeexam.realse:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16341,11 +16503,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:searchHintIcon
+     * @attr name com.murainy.safeexam.realse:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16353,11 +16515,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:searchIcon
+     * @attr name com.murainy.safeexam.realse:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16365,11 +16527,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:submitBackground
+     * @attr name com.murainy.safeexam.realse:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16377,11 +16539,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:suggestionRowLayout
+     * @attr name com.murainy.safeexam.realse:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16389,7 +16551,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:voiceIcon
+     * @attr name com.murainy.safeexam.realse:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -16399,21 +16561,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_angle c313355d6f4419b5084f07b9ee758da4.realse:angle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_auto_start c313355d6f4419b5084f07b9ee758da4.realse:auto_start}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_base_alpha c313355d6f4419b5084f07b9ee758da4.realse:base_alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_dropoff c313355d6f4419b5084f07b9ee758da4.realse:dropoff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_duration c313355d6f4419b5084f07b9ee758da4.realse:duration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_fixed_height c313355d6f4419b5084f07b9ee758da4.realse:fixed_height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_fixed_width c313355d6f4419b5084f07b9ee758da4.realse:fixed_width}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_intensity c313355d6f4419b5084f07b9ee758da4.realse:intensity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_relative_height c313355d6f4419b5084f07b9ee758da4.realse:relative_height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_relative_width c313355d6f4419b5084f07b9ee758da4.realse:relative_width}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_repeat_count c313355d6f4419b5084f07b9ee758da4.realse:repeat_count}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_repeat_delay c313355d6f4419b5084f07b9ee758da4.realse:repeat_delay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_repeat_mode c313355d6f4419b5084f07b9ee758da4.realse:repeat_mode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_shape c313355d6f4419b5084f07b9ee758da4.realse:shape}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShimmerFrameLayout_tilt c313355d6f4419b5084f07b9ee758da4.realse:tilt}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_angle com.murainy.safeexam.realse:angle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_auto_start com.murainy.safeexam.realse:auto_start}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_base_alpha com.murainy.safeexam.realse:base_alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_dropoff com.murainy.safeexam.realse:dropoff}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_duration com.murainy.safeexam.realse:duration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_fixed_height com.murainy.safeexam.realse:fixed_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_fixed_width com.murainy.safeexam.realse:fixed_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_intensity com.murainy.safeexam.realse:intensity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_relative_height com.murainy.safeexam.realse:relative_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_relative_width com.murainy.safeexam.realse:relative_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_repeat_count com.murainy.safeexam.realse:repeat_count}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_repeat_delay com.murainy.safeexam.realse:repeat_delay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_repeat_mode com.murainy.safeexam.realse:repeat_mode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_shape com.murainy.safeexam.realse:shape}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShimmerFrameLayout_tilt com.murainy.safeexam.realse:tilt}</code></td><td></td></tr>
      * </table>
      * @see #ShimmerFrameLayout_angle
      * @see #ShimmerFrameLayout_auto_start
@@ -16438,7 +16600,7 @@ public final class R {
       0x7f04017e, 0x7f04019c, 0x7f0401dd
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#angle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#angle}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16453,48 +16615,48 @@ public final class R {
      * <tr><td>cw_90</td><td>5a</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:angle
+     * @attr name com.murainy.safeexam.realse:angle
      */
     public static final int ShimmerFrameLayout_angle=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#auto_start}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#auto_start}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:auto_start
+     * @attr name com.murainy.safeexam.realse:auto_start
      */
     public static final int ShimmerFrameLayout_auto_start=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#base_alpha}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#base_alpha}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:base_alpha
+     * @attr name com.murainy.safeexam.realse:base_alpha
      */
     public static final int ShimmerFrameLayout_base_alpha=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#dropoff}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#dropoff}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:dropoff
+     * @attr name com.murainy.safeexam.realse:dropoff
      */
     public static final int ShimmerFrameLayout_dropoff=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#duration}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#duration}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:duration
+     * @attr name com.murainy.safeexam.realse:duration
      */
     public static final int ShimmerFrameLayout_duration=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fixed_height}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fixed_height}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16503,11 +16665,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fixed_height
+     * @attr name com.murainy.safeexam.realse:fixed_height
      */
     public static final int ShimmerFrameLayout_fixed_height=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fixed_width}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fixed_width}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16516,56 +16678,56 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fixed_width
+     * @attr name com.murainy.safeexam.realse:fixed_width
      */
     public static final int ShimmerFrameLayout_fixed_width=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#intensity}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#intensity}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:intensity
+     * @attr name com.murainy.safeexam.realse:intensity
      */
     public static final int ShimmerFrameLayout_intensity=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#relative_height}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#relative_height}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:relative_height
+     * @attr name com.murainy.safeexam.realse:relative_height
      */
     public static final int ShimmerFrameLayout_relative_height=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#relative_width}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#relative_width}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:relative_width
+     * @attr name com.murainy.safeexam.realse:relative_width
      */
     public static final int ShimmerFrameLayout_relative_width=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#repeat_count}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#repeat_count}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:repeat_count
+     * @attr name com.murainy.safeexam.realse:repeat_count
      */
     public static final int ShimmerFrameLayout_repeat_count=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#repeat_delay}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#repeat_delay}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:repeat_delay
+     * @attr name com.murainy.safeexam.realse:repeat_delay
      */
     public static final int ShimmerFrameLayout_repeat_delay=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#repeat_mode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#repeat_mode}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16578,11 +16740,11 @@ public final class R {
      * <tr><td>reverse</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:repeat_mode
+     * @attr name com.murainy.safeexam.realse:repeat_mode
      */
     public static final int ShimmerFrameLayout_repeat_mode=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#shape}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#shape}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16595,16 +16757,16 @@ public final class R {
      * <tr><td>radial</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:shape
+     * @attr name com.murainy.safeexam.realse:shape
      */
     public static final int ShimmerFrameLayout_shape=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tilt}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tilt}
      * attribute's value can be found in the {@link #ShimmerFrameLayout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tilt
+     * @attr name com.murainy.safeexam.realse:tilt
      */
     public static final int ShimmerFrameLayout_tilt=14;
     /**
@@ -16614,9 +16776,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SimpleViewPagerIndicator_animation c313355d6f4419b5084f07b9ee758da4.realse:animation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleViewPagerIndicator_currentPageColor c313355d6f4419b5084f07b9ee758da4.realse:currentPageColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SimpleViewPagerIndicator_indicatorColor c313355d6f4419b5084f07b9ee758da4.realse:indicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleViewPagerIndicator_animation com.murainy.safeexam.realse:animation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleViewPagerIndicator_currentPageColor com.murainy.safeexam.realse:currentPageColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SimpleViewPagerIndicator_indicatorColor com.murainy.safeexam.realse:indicatorColor}</code></td><td></td></tr>
      * </table>
      * @see #SimpleViewPagerIndicator_animation
      * @see #SimpleViewPagerIndicator_currentPageColor
@@ -16626,7 +16788,7 @@ public final class R {
       0x7f04002a, 0x7f0400a1, 0x7f0400fc
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#animation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#animation}
      * attribute's value can be found in the {@link #SimpleViewPagerIndicator} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16640,29 +16802,29 @@ public final class R {
      * <tr><td>slide</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:animation
+     * @attr name com.murainy.safeexam.realse:animation
      */
     public static final int SimpleViewPagerIndicator_animation=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#currentPageColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#currentPageColor}
      * attribute's value can be found in the {@link #SimpleViewPagerIndicator} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:currentPageColor
+     * @attr name com.murainy.safeexam.realse:currentPageColor
      */
     public static final int SimpleViewPagerIndicator_currentPageColor=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#indicatorColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#indicatorColor}
      * attribute's value can be found in the {@link #SimpleViewPagerIndicator} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:indicatorColor
+     * @attr name com.murainy.safeexam.realse:indicatorColor
      */
     public static final int SimpleViewPagerIndicator_indicatorColor=2;
     /**
@@ -16673,8 +16835,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation c313355d6f4419b5084f07b9ee758da4.realse:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth c313355d6f4419b5084f07b9ee758da4.realse:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.murainy.safeexam.realse:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.murainy.safeexam.realse:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_elevation
@@ -16697,7 +16859,7 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#elevation}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16706,11 +16868,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:elevation
+     * @attr name com.murainy.safeexam.realse:elevation
      */
     public static final int SnackbarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16719,7 +16881,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:maxActionInlineWidth
+     * @attr name com.murainy.safeexam.realse:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=2;
     /**
@@ -16733,7 +16895,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme c313355d6f4419b5084f07b9ee758da4.realse:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.murainy.safeexam.realse:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -16808,7 +16970,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16816,7 +16978,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:popupTheme
+     * @attr name com.murainy.safeexam.realse:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -16829,17 +16991,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText c313355d6f4419b5084f07b9ee758da4.realse:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack c313355d6f4419b5084f07b9ee758da4.realse:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth c313355d6f4419b5084f07b9ee758da4.realse:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding c313355d6f4419b5084f07b9ee758da4.realse:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding c313355d6f4419b5084f07b9ee758da4.realse:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint c313355d6f4419b5084f07b9ee758da4.realse:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode c313355d6f4419b5084f07b9ee758da4.realse:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track c313355d6f4419b5084f07b9ee758da4.realse:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint c313355d6f4419b5084f07b9ee758da4.realse:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode c313355d6f4419b5084f07b9ee758da4.realse:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.murainy.safeexam.realse:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.murainy.safeexam.realse:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.murainy.safeexam.realse:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.murainy.safeexam.realse:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.murainy.safeexam.realse:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.murainy.safeexam.realse:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.murainy.safeexam.realse:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.murainy.safeexam.realse:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.murainy.safeexam.realse:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.murainy.safeexam.realse:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.murainy.safeexam.realse:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -16859,8 +17021,8 @@ public final class R {
     public static final int[] SwitchCompat={
       0x01010124, 0x01010125, 0x01010142, 0x7f04019f, 
       0x7f0401a6, 0x7f0401b5, 0x7f0401b6, 0x7f0401b8, 
-      0x7f0401d7, 0x7f0401d8, 0x7f0401d9, 0x7f0401f1, 
-      0x7f0401f2, 0x7f0401f3
+      0x7f0401d7, 0x7f0401d8, 0x7f0401d9, 0x7f040203, 
+      0x7f040204, 0x7f040205
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textOn}
@@ -16895,27 +17057,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:showText
+     * @attr name com.murainy.safeexam.realse:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:splitTrack
+     * @attr name com.murainy.safeexam.realse:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16924,11 +17086,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:switchMinWidth
+     * @attr name com.murainy.safeexam.realse:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16937,11 +17099,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:switchPadding
+     * @attr name com.murainy.safeexam.realse:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16949,11 +17111,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:switchTextAppearance
+     * @attr name com.murainy.safeexam.realse:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16962,22 +17124,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:thumbTextPadding
+     * @attr name com.murainy.safeexam.realse:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:thumbTint
+     * @attr name com.murainy.safeexam.realse:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16994,11 +17156,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:thumbTintMode
+     * @attr name com.murainy.safeexam.realse:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17006,22 +17168,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:track
+     * @attr name com.murainy.safeexam.realse:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:trackTint
+     * @attr name com.murainy.safeexam.realse:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17038,7 +17200,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:trackTintMode
+     * @attr name com.murainy.safeexam.realse:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -17100,22 +17262,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground c313355d6f4419b5084f07b9ee758da4.realse:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart c313355d6f4419b5084f07b9ee758da4.realse:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity c313355d6f4419b5084f07b9ee758da4.realse:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor c313355d6f4419b5084f07b9ee758da4.realse:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight c313355d6f4419b5084f07b9ee758da4.realse:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth c313355d6f4419b5084f07b9ee758da4.realse:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth c313355d6f4419b5084f07b9ee758da4.realse:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode c313355d6f4419b5084f07b9ee758da4.realse:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding c313355d6f4419b5084f07b9ee758da4.realse:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom c313355d6f4419b5084f07b9ee758da4.realse:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd c313355d6f4419b5084f07b9ee758da4.realse:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart c313355d6f4419b5084f07b9ee758da4.realse:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop c313355d6f4419b5084f07b9ee758da4.realse:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor c313355d6f4419b5084f07b9ee758da4.realse:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor c313355d6f4419b5084f07b9ee758da4.realse:tabTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground com.murainy.safeexam.realse:tabBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart com.murainy.safeexam.realse:tabContentStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity com.murainy.safeexam.realse:tabGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.murainy.safeexam.realse:tabIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.murainy.safeexam.realse:tabIndicatorHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.murainy.safeexam.realse:tabMaxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth com.murainy.safeexam.realse:tabMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode com.murainy.safeexam.realse:tabMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding com.murainy.safeexam.realse:tabPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.murainy.safeexam.realse:tabPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.murainy.safeexam.realse:tabPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.murainy.safeexam.realse:tabPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.murainy.safeexam.realse:tabPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.murainy.safeexam.realse:tabSelectedTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.murainy.safeexam.realse:tabTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor com.murainy.safeexam.realse:tabTextColor}</code></td><td></td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -17141,7 +17303,7 @@ public final class R {
       0x7f0401c5, 0x7f0401c6, 0x7f0401c7, 0x7f0401c8
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabBackground}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17149,11 +17311,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabBackground
+     * @attr name com.murainy.safeexam.realse:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabContentStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabContentStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17162,11 +17324,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabContentStart
+     * @attr name com.murainy.safeexam.realse:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabGravity}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17179,22 +17341,22 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabGravity
+     * @attr name com.murainy.safeexam.realse:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabIndicatorColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabIndicatorColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabIndicatorColor
+     * @attr name com.murainy.safeexam.realse:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabIndicatorHeight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabIndicatorHeight}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17203,11 +17365,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabIndicatorHeight
+     * @attr name com.murainy.safeexam.realse:tabIndicatorHeight
      */
     public static final int TabLayout_tabIndicatorHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabMaxWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabMaxWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17216,11 +17378,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabMaxWidth
+     * @attr name com.murainy.safeexam.realse:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabMinWidth}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabMinWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17229,11 +17391,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabMinWidth
+     * @attr name com.murainy.safeexam.realse:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17246,11 +17408,11 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabMode
+     * @attr name com.murainy.safeexam.realse:tabMode
      */
     public static final int TabLayout_tabMode=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabPadding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabPadding}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17259,11 +17421,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabPadding
+     * @attr name com.murainy.safeexam.realse:tabPadding
      */
     public static final int TabLayout_tabPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabPaddingBottom}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17272,11 +17434,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabPaddingBottom
+     * @attr name com.murainy.safeexam.realse:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabPaddingEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabPaddingEnd}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17285,11 +17447,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabPaddingEnd
+     * @attr name com.murainy.safeexam.realse:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabPaddingStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabPaddingStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17298,11 +17460,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabPaddingStart
+     * @attr name com.murainy.safeexam.realse:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabPaddingTop}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabPaddingTop}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17311,22 +17473,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabPaddingTop
+     * @attr name com.murainy.safeexam.realse:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabSelectedTextColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabSelectedTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabSelectedTextColor
+     * @attr name com.murainy.safeexam.realse:tabSelectedTextColor
      */
     public static final int TabLayout_tabSelectedTextColor=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabTextAppearance}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17334,18 +17496,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabTextAppearance
+     * @attr name com.murainy.safeexam.realse:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#tabTextColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tabTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:tabTextColor
+     * @attr name com.murainy.safeexam.realse:tabTextColor
      */
     public static final int TabLayout_tabTextColor=15;
     /**
@@ -17366,8 +17528,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily c313355d6f4419b5084f07b9ee758da4.realse:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps c313355d6f4419b5084f07b9ee758da4.realse:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.murainy.safeexam.realse:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.murainy.safeexam.realse:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -17533,17 +17695,17 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:fontFamily
+     * @attr name com.murainy.safeexam.realse:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17553,7 +17715,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:textAllCaps
+     * @attr name com.murainy.safeexam.realse:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -17565,20 +17727,20 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled c313355d6f4419b5084f07b9ee758da4.realse:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength c313355d6f4419b5084f07b9ee758da4.realse:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled c313355d6f4419b5084f07b9ee758da4.realse:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled c313355d6f4419b5084f07b9ee758da4.realse:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled c313355d6f4419b5084f07b9ee758da4.realse:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.murainy.safeexam.realse:counterEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.murainy.safeexam.realse:counterMaxLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.murainy.safeexam.realse:counterOverflowTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.murainy.safeexam.realse:counterTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.murainy.safeexam.realse:errorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.murainy.safeexam.realse:errorTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.murainy.safeexam.realse:hintAnimationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.murainy.safeexam.realse:hintEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.murainy.safeexam.realse:hintTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.murainy.safeexam.realse:passwordToggleContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.murainy.safeexam.realse:passwordToggleDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.murainy.safeexam.realse:passwordToggleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.murainy.safeexam.realse:passwordToggleTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.murainy.safeexam.realse:passwordToggleTintMode}</code></td><td></td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -17629,26 +17791,26 @@ public final class R {
      */
     public static final int TextInputLayout_android_hint=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#counterEnabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#counterEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:counterEnabled
+     * @attr name com.murainy.safeexam.realse:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#counterMaxLength}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#counterMaxLength}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:counterMaxLength
+     * @attr name com.murainy.safeexam.realse:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#counterOverflowTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#counterOverflowTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17656,11 +17818,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:counterOverflowTextAppearance
+     * @attr name com.murainy.safeexam.realse:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#counterTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#counterTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17668,21 +17830,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:counterTextAppearance
+     * @attr name com.murainy.safeexam.realse:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#errorEnabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#errorEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:errorEnabled
+     * @attr name com.murainy.safeexam.realse:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#errorTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#errorTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17690,31 +17852,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:errorTextAppearance
+     * @attr name com.murainy.safeexam.realse:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#hintAnimationEnabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#hintAnimationEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:hintAnimationEnabled
+     * @attr name com.murainy.safeexam.realse:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#hintEnabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#hintEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:hintEnabled
+     * @attr name com.murainy.safeexam.realse:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#hintTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#hintTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17722,21 +17884,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:hintTextAppearance
+     * @attr name com.murainy.safeexam.realse:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#passwordToggleContentDescription}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#passwordToggleContentDescription}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleContentDescription
+     * @attr name com.murainy.safeexam.realse:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#passwordToggleDrawable}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#passwordToggleDrawable}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17744,32 +17906,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleDrawable
+     * @attr name com.murainy.safeexam.realse:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#passwordToggleEnabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#passwordToggleEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleEnabled
+     * @attr name com.murainy.safeexam.realse:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#passwordToggleTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#passwordToggleTint}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleTint
+     * @attr name com.murainy.safeexam.realse:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#passwordToggleTintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#passwordToggleTintMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17785,7 +17947,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:passwordToggleTintMode
+     * @attr name com.murainy.safeexam.realse:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=15;
     /**
@@ -17795,22 +17957,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonBackground c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonBarBackground c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonBarBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonBarFirstStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonBarFirstStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonBarSecondStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonBarSecondStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonDoneStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonDoneStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonDoneText c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonDoneText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonNextStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonNextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonPrevStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonPrevStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonSkipStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonSkipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeButtonSkipText c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonSkipText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeDividerStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeDividerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeIndicatorStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeLargeTextStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeLargeTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeLayoutFitsSystemWindows c313355d6f4419b5084f07b9ee758da4.realse:welcomeLayoutFitsSystemWindows}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeNormalTextStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeNormalTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Theme_welcomeTitleTextStyle c313355d6f4419b5084f07b9ee758da4.realse:welcomeTitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonBackground com.murainy.safeexam.realse:welcomeButtonBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonBarBackground com.murainy.safeexam.realse:welcomeButtonBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonBarFirstStyle com.murainy.safeexam.realse:welcomeButtonBarFirstStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonBarSecondStyle com.murainy.safeexam.realse:welcomeButtonBarSecondStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonDoneStyle com.murainy.safeexam.realse:welcomeButtonDoneStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonDoneText com.murainy.safeexam.realse:welcomeButtonDoneText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonNextStyle com.murainy.safeexam.realse:welcomeButtonNextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonPrevStyle com.murainy.safeexam.realse:welcomeButtonPrevStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonSkipStyle com.murainy.safeexam.realse:welcomeButtonSkipStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeButtonSkipText com.murainy.safeexam.realse:welcomeButtonSkipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeDividerStyle com.murainy.safeexam.realse:welcomeDividerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeIndicatorStyle com.murainy.safeexam.realse:welcomeIndicatorStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeLargeTextStyle com.murainy.safeexam.realse:welcomeLargeTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeLayoutFitsSystemWindows com.murainy.safeexam.realse:welcomeLayoutFitsSystemWindows}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeNormalTextStyle com.murainy.safeexam.realse:welcomeNormalTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Theme_welcomeTitleTextStyle com.murainy.safeexam.realse:welcomeTitleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #Theme_welcomeButtonBackground
      * @see #Theme_welcomeButtonBarBackground
@@ -17830,13 +17992,13 @@ public final class R {
      * @see #Theme_welcomeTitleTextStyle
      */
     public static final int[] Theme={
-      0x7f0401f7, 0x7f0401f8, 0x7f0401f9, 0x7f0401fa, 
-      0x7f0401fb, 0x7f0401fc, 0x7f0401fd, 0x7f0401fe, 
-      0x7f0401ff, 0x7f040200, 0x7f040201, 0x7f040202, 
-      0x7f040203, 0x7f040204, 0x7f040205, 0x7f040206
+      0x7f040209, 0x7f04020a, 0x7f04020b, 0x7f04020c, 
+      0x7f04020d, 0x7f04020e, 0x7f04020f, 0x7f040210, 
+      0x7f040211, 0x7f040212, 0x7f040213, 0x7f040214, 
+      0x7f040215, 0x7f040216, 0x7f040217, 0x7f040218
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonBackground}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17844,22 +18006,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonBackground
+     * @attr name com.murainy.safeexam.realse:welcomeButtonBackground
      */
     public static final int Theme_welcomeButtonBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonBarBackground}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonBarBackground}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonBarBackground
+     * @attr name com.murainy.safeexam.realse:welcomeButtonBarBackground
      */
     public static final int Theme_welcomeButtonBarBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonBarFirstStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonBarFirstStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17867,11 +18029,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonBarFirstStyle
+     * @attr name com.murainy.safeexam.realse:welcomeButtonBarFirstStyle
      */
     public static final int Theme_welcomeButtonBarFirstStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonBarSecondStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonBarSecondStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17879,11 +18041,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonBarSecondStyle
+     * @attr name com.murainy.safeexam.realse:welcomeButtonBarSecondStyle
      */
     public static final int Theme_welcomeButtonBarSecondStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonDoneStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonDoneStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17891,21 +18053,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonDoneStyle
+     * @attr name com.murainy.safeexam.realse:welcomeButtonDoneStyle
      */
     public static final int Theme_welcomeButtonDoneStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonDoneText}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonDoneText}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonDoneText
+     * @attr name com.murainy.safeexam.realse:welcomeButtonDoneText
      */
     public static final int Theme_welcomeButtonDoneText=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonNextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonNextStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17913,11 +18075,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonNextStyle
+     * @attr name com.murainy.safeexam.realse:welcomeButtonNextStyle
      */
     public static final int Theme_welcomeButtonNextStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonPrevStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonPrevStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17925,11 +18087,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonPrevStyle
+     * @attr name com.murainy.safeexam.realse:welcomeButtonPrevStyle
      */
     public static final int Theme_welcomeButtonPrevStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonSkipStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonSkipStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17937,21 +18099,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonSkipStyle
+     * @attr name com.murainy.safeexam.realse:welcomeButtonSkipStyle
      */
     public static final int Theme_welcomeButtonSkipStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeButtonSkipText}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeButtonSkipText}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeButtonSkipText
+     * @attr name com.murainy.safeexam.realse:welcomeButtonSkipText
      */
     public static final int Theme_welcomeButtonSkipText=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeDividerStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeDividerStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17959,11 +18121,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeDividerStyle
+     * @attr name com.murainy.safeexam.realse:welcomeDividerStyle
      */
     public static final int Theme_welcomeDividerStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeIndicatorStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeIndicatorStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17971,11 +18133,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeIndicatorStyle
+     * @attr name com.murainy.safeexam.realse:welcomeIndicatorStyle
      */
     public static final int Theme_welcomeIndicatorStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeLargeTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeLargeTextStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17983,21 +18145,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeLargeTextStyle
+     * @attr name com.murainy.safeexam.realse:welcomeLargeTextStyle
      */
     public static final int Theme_welcomeLargeTextStyle=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeLayoutFitsSystemWindows}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeLayoutFitsSystemWindows}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeLayoutFitsSystemWindows
+     * @attr name com.murainy.safeexam.realse:welcomeLayoutFitsSystemWindows
      */
     public static final int Theme_welcomeLayoutFitsSystemWindows=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeNormalTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeNormalTextStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18005,11 +18167,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeNormalTextStyle
+     * @attr name com.murainy.safeexam.realse:welcomeNormalTextStyle
      */
     public static final int Theme_welcomeNormalTextStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#welcomeTitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#welcomeTitleTextStyle}
      * attribute's value can be found in the {@link #Theme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18017,7 +18179,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:welcomeTitleTextStyle
+     * @attr name com.murainy.safeexam.realse:welcomeTitleTextStyle
      */
     public static final int Theme_welcomeTitleTextStyle=15;
     /**
@@ -18029,33 +18191,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity c313355d6f4419b5084f07b9ee758da4.realse:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription c313355d6f4419b5084f07b9ee758da4.realse:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon c313355d6f4419b5084f07b9ee758da4.realse:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd c313355d6f4419b5084f07b9ee758da4.realse:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions c313355d6f4419b5084f07b9ee758da4.realse:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft c313355d6f4419b5084f07b9ee758da4.realse:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight c313355d6f4419b5084f07b9ee758da4.realse:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart c313355d6f4419b5084f07b9ee758da4.realse:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation c313355d6f4419b5084f07b9ee758da4.realse:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo c313355d6f4419b5084f07b9ee758da4.realse:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription c313355d6f4419b5084f07b9ee758da4.realse:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight c313355d6f4419b5084f07b9ee758da4.realse:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription c313355d6f4419b5084f07b9ee758da4.realse:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon c313355d6f4419b5084f07b9ee758da4.realse:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme c313355d6f4419b5084f07b9ee758da4.realse:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle c313355d6f4419b5084f07b9ee758da4.realse:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor c313355d6f4419b5084f07b9ee758da4.realse:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title c313355d6f4419b5084f07b9ee758da4.realse:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin c313355d6f4419b5084f07b9ee758da4.realse:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom c313355d6f4419b5084f07b9ee758da4.realse:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd c313355d6f4419b5084f07b9ee758da4.realse:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart c313355d6f4419b5084f07b9ee758da4.realse:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop c313355d6f4419b5084f07b9ee758da4.realse:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins c313355d6f4419b5084f07b9ee758da4.realse:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance c313355d6f4419b5084f07b9ee758da4.realse:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor c313355d6f4419b5084f07b9ee758da4.realse:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.murainy.safeexam.realse:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.murainy.safeexam.realse:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.murainy.safeexam.realse:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.murainy.safeexam.realse:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.murainy.safeexam.realse:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.murainy.safeexam.realse:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.murainy.safeexam.realse:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.murainy.safeexam.realse:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.murainy.safeexam.realse:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.murainy.safeexam.realse:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.murainy.safeexam.realse:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.murainy.safeexam.realse:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.murainy.safeexam.realse:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.murainy.safeexam.realse:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.murainy.safeexam.realse:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.murainy.safeexam.realse:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.murainy.safeexam.realse:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.murainy.safeexam.realse:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.murainy.safeexam.realse:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.murainy.safeexam.realse:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.murainy.safeexam.realse:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.murainy.safeexam.realse:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.murainy.safeexam.realse:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.murainy.safeexam.realse:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.murainy.safeexam.realse:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.murainy.safeexam.realse:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.murainy.safeexam.realse:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -18140,7 +18302,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -18153,21 +18315,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:buttonGravity
+     * @attr name com.murainy.safeexam.realse:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:collapseContentDescription
+     * @attr name com.murainy.safeexam.realse:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18175,11 +18337,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:collapseIcon
+     * @attr name com.murainy.safeexam.realse:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18188,11 +18350,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetEnd
+     * @attr name com.murainy.safeexam.realse:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18201,11 +18363,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetEndWithActions
+     * @attr name com.murainy.safeexam.realse:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18214,11 +18376,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetLeft
+     * @attr name com.murainy.safeexam.realse:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18227,11 +18389,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetRight
+     * @attr name com.murainy.safeexam.realse:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18240,11 +18402,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetStart
+     * @attr name com.murainy.safeexam.realse:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18253,11 +18415,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:contentInsetStartWithNavigation
+     * @attr name com.murainy.safeexam.realse:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18265,21 +18427,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:logo
+     * @attr name com.murainy.safeexam.realse:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:logoDescription
+     * @attr name com.murainy.safeexam.realse:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18288,21 +18450,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:maxButtonHeight
+     * @attr name com.murainy.safeexam.realse:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:navigationContentDescription
+     * @attr name com.murainy.safeexam.realse:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18310,11 +18472,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:navigationIcon
+     * @attr name com.murainy.safeexam.realse:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18322,21 +18484,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:popupTheme
+     * @attr name com.murainy.safeexam.realse:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:subtitle
+     * @attr name com.murainy.safeexam.realse:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18344,32 +18506,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:subtitleTextAppearance
+     * @attr name com.murainy.safeexam.realse:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:subtitleTextColor
+     * @attr name com.murainy.safeexam.realse:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:title
+     * @attr name com.murainy.safeexam.realse:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18378,11 +18540,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleMargin
+     * @attr name com.murainy.safeexam.realse:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18391,11 +18553,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleMarginBottom
+     * @attr name com.murainy.safeexam.realse:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18404,11 +18566,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleMarginEnd
+     * @attr name com.murainy.safeexam.realse:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18417,11 +18579,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleMarginStart
+     * @attr name com.murainy.safeexam.realse:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18430,11 +18592,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleMarginTop
+     * @attr name com.murainy.safeexam.realse:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18443,11 +18605,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleMargins
+     * @attr name com.murainy.safeexam.realse:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18455,20 +18617,273 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleTextAppearance
+     * @attr name com.murainy.safeexam.realse:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:titleTextColor
+     * @attr name com.murainy.safeexam.realse:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
+    /**
+     * Attributes that can be used with a TwinklingRefreshLayout.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_autoLoadMore com.murainy.safeexam.realse:tr_autoLoadMore}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_bottomView com.murainy.safeexam.realse:tr_bottomView}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_bottom_height com.murainy.safeexam.realse:tr_bottom_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_enable_keepIView com.murainy.safeexam.realse:tr_enable_keepIView}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_enable_loadmore com.murainy.safeexam.realse:tr_enable_loadmore}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_enable_overscroll com.murainy.safeexam.realse:tr_enable_overscroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_enable_refresh com.murainy.safeexam.realse:tr_enable_refresh}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_floatRefresh com.murainy.safeexam.realse:tr_floatRefresh}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_head_height com.murainy.safeexam.realse:tr_head_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_headerView com.murainy.safeexam.realse:tr_headerView}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_max_bottom_height com.murainy.safeexam.realse:tr_max_bottom_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_max_head_height com.murainy.safeexam.realse:tr_max_head_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_overscroll_bottom_show com.murainy.safeexam.realse:tr_overscroll_bottom_show}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_overscroll_height com.murainy.safeexam.realse:tr_overscroll_height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_overscroll_top_show com.murainy.safeexam.realse:tr_overscroll_top_show}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_pureScrollMode_on com.murainy.safeexam.realse:tr_pureScrollMode_on}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_showLoadingWhenOverScroll com.murainy.safeexam.realse:tr_showLoadingWhenOverScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TwinklingRefreshLayout_tr_showRefreshingWhenOverScroll com.murainy.safeexam.realse:tr_showRefreshingWhenOverScroll}</code></td><td></td></tr>
+     * </table>
+     * @see #TwinklingRefreshLayout_tr_autoLoadMore
+     * @see #TwinklingRefreshLayout_tr_bottomView
+     * @see #TwinklingRefreshLayout_tr_bottom_height
+     * @see #TwinklingRefreshLayout_tr_enable_keepIView
+     * @see #TwinklingRefreshLayout_tr_enable_loadmore
+     * @see #TwinklingRefreshLayout_tr_enable_overscroll
+     * @see #TwinklingRefreshLayout_tr_enable_refresh
+     * @see #TwinklingRefreshLayout_tr_floatRefresh
+     * @see #TwinklingRefreshLayout_tr_head_height
+     * @see #TwinklingRefreshLayout_tr_headerView
+     * @see #TwinklingRefreshLayout_tr_max_bottom_height
+     * @see #TwinklingRefreshLayout_tr_max_head_height
+     * @see #TwinklingRefreshLayout_tr_overscroll_bottom_show
+     * @see #TwinklingRefreshLayout_tr_overscroll_height
+     * @see #TwinklingRefreshLayout_tr_overscroll_top_show
+     * @see #TwinklingRefreshLayout_tr_pureScrollMode_on
+     * @see #TwinklingRefreshLayout_tr_showLoadingWhenOverScroll
+     * @see #TwinklingRefreshLayout_tr_showRefreshingWhenOverScroll
+     */
+    public static final int[] TwinklingRefreshLayout={
+      0x7f0401f1, 0x7f0401f2, 0x7f0401f3, 0x7f0401f4, 
+      0x7f0401f5, 0x7f0401f6, 0x7f0401f7, 0x7f0401f8, 
+      0x7f0401f9, 0x7f0401fa, 0x7f0401fb, 0x7f0401fc, 
+      0x7f0401fd, 0x7f0401fe, 0x7f0401ff, 0x7f040200, 
+      0x7f040201, 0x7f040202
+    };
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_autoLoadMore}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_autoLoadMore
+     */
+    public static final int TwinklingRefreshLayout_tr_autoLoadMore=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_bottomView}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.murainy.safeexam.realse:tr_bottomView
+     */
+    public static final int TwinklingRefreshLayout_tr_bottomView=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_bottom_height}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.murainy.safeexam.realse:tr_bottom_height
+     */
+    public static final int TwinklingRefreshLayout_tr_bottom_height=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_enable_keepIView}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_enable_keepIView
+     */
+    public static final int TwinklingRefreshLayout_tr_enable_keepIView=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_enable_loadmore}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_enable_loadmore
+     */
+    public static final int TwinklingRefreshLayout_tr_enable_loadmore=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_enable_overscroll}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_enable_overscroll
+     */
+    public static final int TwinklingRefreshLayout_tr_enable_overscroll=5;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_enable_refresh}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_enable_refresh
+     */
+    public static final int TwinklingRefreshLayout_tr_enable_refresh=6;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_floatRefresh}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_floatRefresh
+     */
+    public static final int TwinklingRefreshLayout_tr_floatRefresh=7;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_head_height}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.murainy.safeexam.realse:tr_head_height
+     */
+    public static final int TwinklingRefreshLayout_tr_head_height=8;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_headerView}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.murainy.safeexam.realse:tr_headerView
+     */
+    public static final int TwinklingRefreshLayout_tr_headerView=9;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_max_bottom_height}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.murainy.safeexam.realse:tr_max_bottom_height
+     */
+    public static final int TwinklingRefreshLayout_tr_max_bottom_height=10;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_max_head_height}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.murainy.safeexam.realse:tr_max_head_height
+     */
+    public static final int TwinklingRefreshLayout_tr_max_head_height=11;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_overscroll_bottom_show}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_overscroll_bottom_show
+     */
+    public static final int TwinklingRefreshLayout_tr_overscroll_bottom_show=12;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_overscroll_height}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name com.murainy.safeexam.realse:tr_overscroll_height
+     */
+    public static final int TwinklingRefreshLayout_tr_overscroll_height=13;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_overscroll_top_show}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_overscroll_top_show
+     */
+    public static final int TwinklingRefreshLayout_tr_overscroll_top_show=14;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_pureScrollMode_on}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_pureScrollMode_on
+     */
+    public static final int TwinklingRefreshLayout_tr_pureScrollMode_on=15;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_showLoadingWhenOverScroll}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_showLoadingWhenOverScroll
+     */
+    public static final int TwinklingRefreshLayout_tr_showLoadingWhenOverScroll=16;
+    /**
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#tr_showRefreshingWhenOverScroll}
+     * attribute's value can be found in the {@link #TwinklingRefreshLayout} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.murainy.safeexam.realse:tr_showRefreshingWhenOverScroll
+     */
+    public static final int TwinklingRefreshLayout_tr_showRefreshingWhenOverScroll=17;
     /**
      * Attributes that can be used with a View.
      * <p>Includes the following attributes:</p>
@@ -18478,9 +18893,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd c313355d6f4419b5084f07b9ee758da4.realse:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart c313355d6f4419b5084f07b9ee758da4.realse:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme c313355d6f4419b5084f07b9ee758da4.realse:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.murainy.safeexam.realse:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.murainy.safeexam.realse:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.murainy.safeexam.realse:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -18523,7 +18938,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18532,11 +18947,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:paddingEnd
+     * @attr name com.murainy.safeexam.realse:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18545,11 +18960,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:paddingStart
+     * @attr name com.murainy.safeexam.realse:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18557,7 +18972,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:theme
+     * @attr name com.murainy.safeexam.realse:theme
      */
     public static final int View_theme=4;
     /**
@@ -18568,8 +18983,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint c313355d6f4419b5084f07b9ee758da4.realse:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode c313355d6f4419b5084f07b9ee758da4.realse:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.murainy.safeexam.realse:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.murainy.safeexam.realse:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -18594,18 +19009,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:backgroundTint
+     * @attr name com.murainy.safeexam.realse:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18622,7 +19037,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:backgroundTintMode
+     * @attr name com.murainy.safeexam.realse:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**
@@ -18686,25 +19101,25 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_animation_duration c313355d6f4419b5084f07b9ee758da4.realse:scv_animation_duration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_animation_enabled c313355d6f4419b5084f07b9ee758da4.realse:scv_animation_enabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_background_color c313355d6f4419b5084f07b9ee758da4.realse:scv_background_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_crop_enabled c313355d6f4419b5084f07b9ee758da4.realse:scv_crop_enabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_crop_mode c313355d6f4419b5084f07b9ee758da4.realse:scv_crop_mode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_frame_color c313355d6f4419b5084f07b9ee758da4.realse:scv_frame_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_frame_stroke_weight c313355d6f4419b5084f07b9ee758da4.realse:scv_frame_stroke_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_guide_color c313355d6f4419b5084f07b9ee758da4.realse:scv_guide_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_guide_show_mode c313355d6f4419b5084f07b9ee758da4.realse:scv_guide_show_mode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_guide_stroke_weight c313355d6f4419b5084f07b9ee758da4.realse:scv_guide_stroke_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_handle_color c313355d6f4419b5084f07b9ee758da4.realse:scv_handle_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_handle_shadow_enabled c313355d6f4419b5084f07b9ee758da4.realse:scv_handle_shadow_enabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_handle_show_mode c313355d6f4419b5084f07b9ee758da4.realse:scv_handle_show_mode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_handle_size c313355d6f4419b5084f07b9ee758da4.realse:scv_handle_size}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_img_src c313355d6f4419b5084f07b9ee758da4.realse:scv_img_src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_initial_frame_scale c313355d6f4419b5084f07b9ee758da4.realse:scv_initial_frame_scale}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_min_frame_size c313355d6f4419b5084f07b9ee758da4.realse:scv_min_frame_size}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_overlay_color c313355d6f4419b5084f07b9ee758da4.realse:scv_overlay_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #scv_CropImageView_scv_touch_padding c313355d6f4419b5084f07b9ee758da4.realse:scv_touch_padding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_animation_duration com.murainy.safeexam.realse:scv_animation_duration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_animation_enabled com.murainy.safeexam.realse:scv_animation_enabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_background_color com.murainy.safeexam.realse:scv_background_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_crop_enabled com.murainy.safeexam.realse:scv_crop_enabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_crop_mode com.murainy.safeexam.realse:scv_crop_mode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_frame_color com.murainy.safeexam.realse:scv_frame_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_frame_stroke_weight com.murainy.safeexam.realse:scv_frame_stroke_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_guide_color com.murainy.safeexam.realse:scv_guide_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_guide_show_mode com.murainy.safeexam.realse:scv_guide_show_mode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_guide_stroke_weight com.murainy.safeexam.realse:scv_guide_stroke_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_handle_color com.murainy.safeexam.realse:scv_handle_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_handle_shadow_enabled com.murainy.safeexam.realse:scv_handle_shadow_enabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_handle_show_mode com.murainy.safeexam.realse:scv_handle_show_mode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_handle_size com.murainy.safeexam.realse:scv_handle_size}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_img_src com.murainy.safeexam.realse:scv_img_src}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_initial_frame_scale com.murainy.safeexam.realse:scv_initial_frame_scale}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_min_frame_size com.murainy.safeexam.realse:scv_min_frame_size}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_overlay_color com.murainy.safeexam.realse:scv_overlay_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #scv_CropImageView_scv_touch_padding com.murainy.safeexam.realse:scv_touch_padding}</code></td><td></td></tr>
      * </table>
      * @see #scv_CropImageView_scv_animation_duration
      * @see #scv_CropImageView_scv_animation_enabled
@@ -18734,26 +19149,26 @@ public final class R {
       0x7f040193, 0x7f040194, 0x7f040195
     };
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_animation_duration}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_animation_duration}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_animation_duration
+     * @attr name com.murainy.safeexam.realse:scv_animation_duration
      */
     public static final int scv_CropImageView_scv_animation_duration=0;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_animation_enabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_animation_enabled}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_animation_enabled
+     * @attr name com.murainy.safeexam.realse:scv_animation_enabled
      */
     public static final int scv_CropImageView_scv_animation_enabled=1;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_background_color}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_background_color}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18764,21 +19179,21 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_background_color
+     * @attr name com.murainy.safeexam.realse:scv_background_color
      */
     public static final int scv_CropImageView_scv_background_color=2;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_crop_enabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_crop_enabled}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_crop_enabled
+     * @attr name com.murainy.safeexam.realse:scv_crop_enabled
      */
     public static final int scv_CropImageView_scv_crop_enabled=3;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_crop_mode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_crop_mode}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18799,11 +19214,11 @@ public final class R {
      * <tr><td>square</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_crop_mode
+     * @attr name com.murainy.safeexam.realse:scv_crop_mode
      */
     public static final int scv_CropImageView_scv_crop_mode=4;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_frame_color}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_frame_color}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18814,11 +19229,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_frame_color
+     * @attr name com.murainy.safeexam.realse:scv_frame_color
      */
     public static final int scv_CropImageView_scv_frame_color=5;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_frame_stroke_weight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_frame_stroke_weight}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18827,11 +19242,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_frame_stroke_weight
+     * @attr name com.murainy.safeexam.realse:scv_frame_stroke_weight
      */
     public static final int scv_CropImageView_scv_frame_stroke_weight=6;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_guide_color}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_guide_color}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18842,11 +19257,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_guide_color
+     * @attr name com.murainy.safeexam.realse:scv_guide_color
      */
     public static final int scv_CropImageView_scv_guide_color=7;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_guide_show_mode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_guide_show_mode}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18860,11 +19275,11 @@ public final class R {
      * <tr><td>show_on_touch</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_guide_show_mode
+     * @attr name com.murainy.safeexam.realse:scv_guide_show_mode
      */
     public static final int scv_CropImageView_scv_guide_show_mode=8;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_guide_stroke_weight}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_guide_stroke_weight}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18873,11 +19288,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_guide_stroke_weight
+     * @attr name com.murainy.safeexam.realse:scv_guide_stroke_weight
      */
     public static final int scv_CropImageView_scv_guide_stroke_weight=9;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_handle_color}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_handle_color}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18888,21 +19303,21 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_handle_color
+     * @attr name com.murainy.safeexam.realse:scv_handle_color
      */
     public static final int scv_CropImageView_scv_handle_color=10;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_handle_shadow_enabled}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_handle_shadow_enabled}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_handle_shadow_enabled
+     * @attr name com.murainy.safeexam.realse:scv_handle_shadow_enabled
      */
     public static final int scv_CropImageView_scv_handle_shadow_enabled=11;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_handle_show_mode}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_handle_show_mode}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18916,11 +19331,11 @@ public final class R {
      * <tr><td>show_on_touch</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_handle_show_mode
+     * @attr name com.murainy.safeexam.realse:scv_handle_show_mode
      */
     public static final int scv_CropImageView_scv_handle_show_mode=12;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_handle_size}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_handle_size}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18929,11 +19344,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_handle_size
+     * @attr name com.murainy.safeexam.realse:scv_handle_size
      */
     public static final int scv_CropImageView_scv_handle_size=13;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_img_src}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_img_src}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18941,20 +19356,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_img_src
+     * @attr name com.murainy.safeexam.realse:scv_img_src
      */
     public static final int scv_CropImageView_scv_img_src=14;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_initial_frame_scale}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_initial_frame_scale}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_initial_frame_scale
+     * @attr name com.murainy.safeexam.realse:scv_initial_frame_scale
      */
     public static final int scv_CropImageView_scv_initial_frame_scale=15;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_min_frame_size}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_min_frame_size}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18963,11 +19378,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_min_frame_size
+     * @attr name com.murainy.safeexam.realse:scv_min_frame_size
      */
     public static final int scv_CropImageView_scv_min_frame_size=16;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_overlay_color}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_overlay_color}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18978,11 +19393,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_overlay_color
+     * @attr name com.murainy.safeexam.realse:scv_overlay_color
      */
     public static final int scv_CropImageView_scv_overlay_color=17;
     /**
-     * <p>This symbol is the offset where the {@link c313355d6f4419b5084f07b9ee758da4.realse.R.attr#scv_touch_padding}
+     * <p>This symbol is the offset where the {@link com.murainy.safeexam.realse.R.attr#scv_touch_padding}
      * attribute's value can be found in the {@link #scv_CropImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18991,7 +19406,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name c313355d6f4419b5084f07b9ee758da4.realse:scv_touch_padding
+     * @attr name com.murainy.safeexam.realse:scv_touch_padding
      */
     public static final int scv_CropImageView_scv_touch_padding=18;
   }

@@ -52,8 +52,7 @@ public class SystemGalleryActivity extends BGAPPToolbarActivity implements EasyP
 
     @Override
     protected void processLogic(Bundle savedInstanceState) {
-        setTitle("系统相册选择图片、裁剪");
-
+	    setTitle("图片裁剪");
         // 拍照后照片的存放目录，改成你自己拍照后要存放照片的目录。如果不传递该参数的话就没有拍照功能
 	    File takePhotoDir = new File(Environment.getExternalStorageDirectory(), "SafeExam");
         mPhotoHelper = new BGAPhotoHelper(takePhotoDir);

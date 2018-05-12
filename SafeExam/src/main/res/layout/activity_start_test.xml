@@ -76,10 +76,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
+        android:layout_margin="8dp"
         android:background="@color/air_speed_label"
-        android:orientation="horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_mask_test"
@@ -89,6 +88,7 @@
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:background="@drawable/shape_button"
             android:gravity="center"
             android:text="@string/skipqusetion"
             android:textColor="@color/base_color_text_white"
@@ -102,6 +102,7 @@
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:background="@drawable/shape_button"
             android:gravity="center"
             android:text="@string/checkqusetion"
             android:textColor="@color/base_color_text_white"
@@ -115,6 +116,7 @@
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:layout_weight="1"
+            android:background="@drawable/shape_button"
             android:gravity="center"
             android:text="@string/nextqusetion"
             android:textColor="@color/base_color_text_white"

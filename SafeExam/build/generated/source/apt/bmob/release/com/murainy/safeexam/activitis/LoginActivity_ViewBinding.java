@@ -16,9 +16,9 @@ import java.lang.Override;
 public class LoginActivity_ViewBinding implements Unbinder {
   private LoginActivity target;
 
-  private View view2131296378;
+  private View view2131296384;
 
-  private View view2131296374;
+  private View view2131296380;
 
   @UiThread
   public LoginActivity_ViewBinding(LoginActivity target) {
@@ -32,7 +32,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.ci_view, "field 'ciView' and method 'ci'");
     target.ciView = Utils.castView(view, R.id.ci_view, "field 'ciView'", CircleImageView.class);
-    view2131296378 = view;
+    view2131296384 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -41,7 +41,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.checkBox, "field 'rem' and method 'remb'");
     target.rem = Utils.castView(view, R.id.checkBox, "field 'rem'", CheckBox.class);
-    view2131296374 = view;
+    view2131296380 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,9 +60,9 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.ciView = null;
     target.rem = null;
 
-    view2131296378.setOnClickListener(null);
-    view2131296378 = null;
-    view2131296374.setOnClickListener(null);
-    view2131296374 = null;
+    view2131296384.setOnClickListener(null);
+    view2131296384 = null;
+    view2131296380.setOnClickListener(null);
+    view2131296380 = null;
   }
 }

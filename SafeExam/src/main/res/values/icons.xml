@@ -17,11 +17,14 @@
     <string name="fa_delicious">&#xf1a5;</string>
     <string name="fa_diamond">&#xf219;</string>
     <string name="fa_envira">&#xf299;</string>
+    <string name="fa_error">&#xf00d;</string>
+    <string name="fa_error_o">&#xf057;</string>
     <string name="fa_file_o">&#xf016;</string>
     <string name="fa_file_text">&#xf0f6;</string>
     <string name="fa_gear">&#xf013;</string>
     <string name="fa_gears">&#xf085;</string>
     <string name="fa_gg">&#xf260;</string>
+    <string name="fa_gg_circle">&#xf261;</string>
     <string name="fa_github">&#xf09b;</string>
     <string name="fa_heart">&#xf004;</string>
     <string name="fa_heart_o">&#xf08a;</string>
@@ -29,13 +32,13 @@
     <string name="fa_leaf">&#xf06c;</string>
     <string name="fa_male">&#xf183;</string>
     <string name="fa_navicon">&#xf0c9;</string>
+    <string name="fa_ok">&#xf00c;</string>
     <string name="fa_paper_plane">&#xf1d8;</string>
     <string name="fa_paper_plane_o">&#xf1d9;</string>
     <string name="fa_paperclip">&#xf0c6;</string>
     <string name="fa_question">&#xf128;</string>
-    <string name="fa_error">&#xf00d;</string>
-    <string name="fa_error_o">&#xf057;</string>
-    <string name="fa_user">&#xf007;</string>
-    <string name="fa_ok">&#xf00c;</string>
     <string name="fa_remove">&#xf00d;</string>
+    <string name="fa_twitter">&#xf099;</string>
+    <string name="fa_user">&#xf007;</string>
+
 </resources>

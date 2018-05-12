@@ -12,13 +12,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.murainy.safeexam.R;
-import com.murainy.safeexam.Utils.ToastUtils;
 import com.murainy.safeexam.adapter.FindTabAdapter;
-import com.murainy.safeexam.data.RequestManager;
 import com.murainy.safeexam.view.FindHotCollectionFragment;
 import com.murainy.safeexam.view.FindHotMonthFragment;
 import com.murainy.safeexam.view.FindHotRecommendFragment;
@@ -27,7 +22,6 @@ import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 /**
  * 发现页面
@@ -68,8 +62,8 @@ public class ContentExamActivity extends FragmentActivity {
 	 */
 	private void initControls() {
 
-		tab_FindFragment_title = (TabLayout) findViewById(R.id.tab_FindFragment_title);
-		vp_FindFragment_pager = (ViewPager) findViewById(R.id.vp_FindFragment_pager);
+		tab_FindFragment_title = findViewById(R.id.tab_FindFragment_title);
+		vp_FindFragment_pager = findViewById(R.id.vp_FindFragment_pager);
 
 		//初始化各fragment
 		hotRecommendFragment = new FindHotRecommendFragment();
@@ -114,7 +108,6 @@ public class ContentExamActivity extends FragmentActivity {
 
 			@Override
 			public void onTabUnselected(TabLayout.Tab tab) {
-
 			}
 
 			@Override
@@ -129,22 +122,5 @@ public class ContentExamActivity extends FragmentActivity {
 
 	}
 
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-		RequestManager.cancelAll(this);
-	}
 
-	protected void executeRequest(Request<?> request) {
-		RequestManager.addRequest(request, this);
-	}
-
-	protected Response.ErrorListener errorListener() {
-		return new Response.ErrorListener() {
-			@Override
-			public void onErrorResponse(VolleyError error) {
-				ToastUtils.showLong(getApplicationContext(), error.getMessage());
-			}
-		};
-	}
 }

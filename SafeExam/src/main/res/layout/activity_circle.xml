@@ -8,26 +8,13 @@
               android:weightSum="1"
               android:fitsSystemWindows="true">
 
-    <TextView
-        android:text="安全管理人员考试系统"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView11"
-        android:padding="16dp"
-        android:background="@drawable/setting_single_select"
-        android:textSize="18sp"
-        android:elevation="0dp"
-        android:textAlignment="center"
-        android:textColor="@color/midnightblue"
-        />
-
     <com.zhy.view.CircleMenuLayout
         android:id="@+id/id_menulayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/circle_bg3"
-        android:layout_margin="16dp"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/circle_bg3">
 
         <RelativeLayout
             android:id="@id/id_circle_menu_item_center"
@@ -39,14 +26,9 @@
                 android:layout_height="104.0dip"
                 android:layout_centerInParent="true"
                 android:background="@drawable/turnplate_center_unlogin"
+                android:scaleType="fitCenter"
                 tools:ignore="ContentDescription"/>
 
-            <ImageView
-                android:layout_width="116.0dip"
-                android:layout_height="116.0dip"
-                android:layout_centerInParent="true"
-                android:background="@drawable/turnplate_mask_unlogin_normal"
-                tools:ignore="ContentDescription"/>
         </RelativeLayout>
     </com.zhy.view.CircleMenuLayout>
 

@@ -10,12 +10,19 @@
         <item name="welcomeButtonSkipText">跳过</item>
         <item name="welcomeButtonDoneText">开始</item>
         <!-- toolbar（actionbar）颜色 -->
-        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimary">@color/air_speed_label</item>
         <!-- 状态栏颜色 -->
         <item name="colorPrimaryDark">@color/greyText</item>
         <!-- 窗口的背景颜色 -->
         <item name="android:windowBackground">@color/air_speed_label</item>
+        <item name="android:windowTranslucentStatus">true</item>
         <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 隐藏标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
     </style>
 
     <style name="ImageTranslucentTheme" parent="AppTheme">
@@ -123,7 +130,7 @@
     </style>
 
     <style name="tweetName">
-        <item name="android:textColor">@color/green</item>
+        <item name="android:textColor">@color/light_yellow</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:shadowColor">#44000000</item>
@@ -163,6 +170,5 @@
     <style name="AppTheme.AppBarOverlay" parent="WelcomeScreenTheme"/>
 
     <style name="AppTheme.PopupOverlay" parent="WelcomeScreenTheme"/>
-
 
 </resources>

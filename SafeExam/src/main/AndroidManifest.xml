@@ -40,14 +40,12 @@
         <activity
             android:name=".activitis.LauncherActivity"
             android:layout_alignParentBottom="true"
-            android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation"
             android:layout_alignParentStart="true"
             android:launchMode="singleTask"
-            android:uiOptions="splitActionBarWhenNarrow"
-            >
+            android:theme="@style/WelcomeScreenTheme.Light.SolidNavigation"
+            android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -150,18 +148,11 @@
         <activity
             android:name=".activitis.SetHeadActivity"
             android:theme="@style/ImageTranslucentTheme">
-
-            <!-- 具有相机功能 -->
-            <intent-filter>
-                <action android:name="android.media.action.IMAGE_CAPTURE"/>
-
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
         </activity>
         <activity
             android:name=".activitis.CircleActivity"
-            android:label="@string/image_translucent_bar"
-            android:launchMode="singleTop"/>
+            android:launchMode="singleTop"
+            android:theme="@style/ImageTranslucentTheme"/>
         <activity
             android:name=".activitis.ResetPasswordActivity"
             android:launchMode="singleTop"
@@ -203,7 +194,7 @@
         </activity>
         <activity
             android:name=".activitis.MomentAddActivity"
-            android:screenOrientation="portrait"
+            android:theme="@style/ImageTranslucentTheme"
             android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
         <activity
@@ -212,12 +203,12 @@
         </activity>
         <activity
             android:name=".activitis.MomentListActivity"
-            android:screenOrientation="portrait"
+            android:theme="@style/ImageTranslucentTheme"
             android:windowSoftInputMode="stateHidden|adjustResize">
         </activity>
         <activity
             android:name=".activitis.SystemGalleryActivity"
-            android:screenOrientation="portrait">
+            android:theme="@style/ImageTranslucentTheme">
         </activity>
         <activity
             android:name=".activitis.SettingsActivity"
@@ -233,21 +224,19 @@
             android:configChanges="orientation|screenSize"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
-
         <activity
             android:name=".activitis.ResultActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
-
         <activity
             android:name=".activitis.JsoupActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
-
         <activity
             android:name=".activitis.NewsDisplayActivity"
             android:theme="@style/ImageTranslucentTheme">
         </activity>
+        <activity android:name=".activitis.BaseActivity"/>
 
         <!-- 配置APP ID -->
         <meta-data
@@ -269,7 +258,14 @@
             android:name="bmob"
             android:value="Channel ID"/>
 
-
+        <activity
+            android:name=".activitis.ScrollingActivity"
+            android:label="@string/title_activity_scrolling">
+        </activity>
+        <activity android:name=".activitis.BaseWebActivity">
+        </activity>
+        <activity android:name=".activitis.WebActivity">
+        </activity>
     </application>
 
 </manifest>

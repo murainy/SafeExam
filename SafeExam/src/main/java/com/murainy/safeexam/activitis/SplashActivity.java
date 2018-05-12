@@ -12,9 +12,7 @@ import com.stephentuso.welcome.TitlePage;
 import com.stephentuso.welcome.WelcomeActivity;
 import com.stephentuso.welcome.WelcomeConfiguration;
 
-/**
- * Created by stephentuso on 11/15/15.
- */
+
 public class SplashActivity extends WelcomeActivity {
 
 	@Override

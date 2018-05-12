@@ -8,10 +8,10 @@ package cn.bingoogolapple.baseadapter;
 
 public final class R {
     public static final class color {
-        public static final int bga_adapter_divider = 0x7f060031;
-        public static final int bga_adapter_empty_view_msg_textColor = 0x7f060032;
-        public static final int bga_adapter_item_pressed = 0x7f060033;
-        public static final int bga_adapter_line = 0x7f060034;
+        public static final int bga_adapter_divider = 0x7f060035;
+        public static final int bga_adapter_empty_view_msg_textColor = 0x7f060036;
+        public static final int bga_adapter_item_pressed = 0x7f060037;
+        public static final int bga_adapter_line = 0x7f060038;
     }
     public static final class dimen {
         public static final int bga_adapter_divider_size = 0x7f070052;
@@ -56,21 +56,21 @@ public final class R {
         public static final int textSize_24 = 0x7f070103;
     }
     public static final class drawable {
-        public static final int bga_baseadapter_divider_shape = 0x7f08006c;
-        public static final int bga_baseadapter_white_gray = 0x7f08006d;
+        public static final int bga_baseadapter_divider_shape = 0x7f08006d;
+        public static final int bga_baseadapter_white_gray = 0x7f08006e;
     }
     public static final class id {
-        public static final int dataBinding = 0x7f090094;
-        public static final int iv_bga_adapter_empty_view_icon = 0x7f0900ed;
-        public static final int ll_bga_adapter_empty_view_root = 0x7f090110;
-        public static final int onAttachStateChangeListener = 0x7f09014b;
-        public static final int onDateChanged = 0x7f09014c;
-        public static final int textWatcher = 0x7f0901c5;
-        public static final int tv_bga_adapter_empty_view_msg = 0x7f0901dd;
+        public static final int dataBinding = 0x7f09009d;
+        public static final int iv_bga_adapter_empty_view_icon = 0x7f0900fb;
+        public static final int ll_bga_adapter_empty_view_root = 0x7f090121;
+        public static final int onAttachStateChangeListener = 0x7f09015c;
+        public static final int onDateChanged = 0x7f09015d;
+        public static final int textWatcher = 0x7f0901d6;
+        public static final int tv_bga_adapter_empty_view_msg = 0x7f0901ef;
     }
     public static final class layout {
-        public static final int bga_baseadapter_empty_view = 0x7f0b003e;
-        public static final int bga_baseadapter_item_databinding_dummy = 0x7f0b003f;
+        public static final int bga_baseadapter_empty_view = 0x7f0b0041;
+        public static final int bga_baseadapter_item_databinding_dummy = 0x7f0b0042;
     }
     public static final class mipmap {
         public static final int bga_baseadapter_divider_bitmap = 0x7f0d0000;

@@ -1,15 +1,13 @@
-package com.murainy.safeexam.activitis;;
+package com.murainy.safeexam.activitis;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 
 import com.murainy.safeexam.R;
 
@@ -46,10 +44,10 @@ public class BasicActivity extends AppCompatActivity {
   }
 
   private void initToolbar() {
-    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+	  Toolbar toolbar = findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
     ActionBar actionBar = getSupportActionBar();
-    FontUtils.setTitle(actionBar, "Basic Sample");
+	  FontUtils.setTitle(actionBar, "例子");
     actionBar.setDisplayHomeAsUpEnabled(true);
     actionBar.setHomeButtonEnabled(true);
   }

@@ -3,13 +3,16 @@
       xmlns:tools="http://schemas.android.com/tools"
       android:fitsSystemWindows="true"
       tools:context=".activitis.KnowledgeActivity">
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="none"
+        >
+
         <item
             android:id="@+id/empty_table"
+            android:icon="@drawable/back_icon_selector"
             android:orderInCategory="100"
             android:title="@string/empty_table"
             app:showAsAction="never"/>
-
         <item
             android:id="@+id/update_paper"
             android:orderInCategory="100"
@@ -33,9 +36,11 @@
             app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
 
         <item
+            android:id="@+id/cloud"
             android:icon="@drawable/ic_free_breakfast_black_24dp"
             android:title="@string/cloud"/>
         <item
+            android:id="@+id/label"
             android:icon="@color/firebrick"
             android:title="@string/label"/>
     </group>

@@ -12,16 +12,16 @@ public final class R {
         public static final int activity_vertical_margin = 0x7f07004f;
     }
     public static final class drawable {
-        public static final int ic_launcher = 0x7f0800cf;
+        public static final int ic_launcher = 0x7f0800d1;
     }
     public static final class id {
         public static final int action_settings = 0x7f09001b;
-        public static final int id_circle_menu_item_center = 0x7f0900d6;
-        public static final int id_circle_menu_item_image = 0x7f0900d7;
-        public static final int id_circle_menu_item_text = 0x7f0900d8;
+        public static final int id_circle_menu_item_center = 0x7f0900e3;
+        public static final int id_circle_menu_item_image = 0x7f0900e4;
+        public static final int id_circle_menu_item_text = 0x7f0900e5;
     }
     public static final class layout {
-        public static final int circle_menu_item = 0x7f0b004f;
+        public static final int circle_menu_item = 0x7f0b0052;
     }
     public static final class menu {
         public static final int main = 0x7f0c0003;
@@ -29,7 +29,7 @@ public final class R {
     public static final class string {
         public static final int action_settings = 0x7f0e002d;
         public static final int app_name = 0x7f0e0048;
-        public static final int hello_world = 0x7f0e00ab;
+        public static final int hello_world = 0x7f0e00ad;
     }
     public static final class style {
         public static final int AppBaseTheme = 0x7f0f0007;

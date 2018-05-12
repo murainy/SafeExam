@@ -20,6 +20,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import cn.bingoogolapple.baseadapter.BGAOnRVItemClickListener;
 import cn.bingoogolapple.baseadapter.BGAOnRVItemLongClickListener;
@@ -63,13 +64,12 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
         mMomentAdapter = new MomentAdapter(mMomentRv);
         mMomentAdapter.setOnRVItemClickListener(this);
         mMomentAdapter.setOnRVItemLongClickListener(this);
-
         mMomentRv.addOnScrollListener(new BGARVOnScrollListener(this));
     }
 
     @Override
     protected void processLogic(Bundle savedInstanceState) {
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+	    Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
         setTitle("朋友圈列表");
 
         mMomentRv.setLayoutManager(new LinearLayoutManager(this));
@@ -83,8 +83,9 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
      */
     private void addNetImageTestData() {
         List<Moment> moments = new ArrayList<>();
-	    moments.add(new Moment("2张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/1.jpg", "http://oiqawgwly.bkt.clouddn.com/2.jpg", "http://oiqawgwly.bkt.clouddn.com/0897.jpg"))));
-		moments.add(new Moment("2张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/3.jpg", "http://oiqawgwly.bkt.clouddn.com/4.jpg"))));
+
+	    moments.add(new Moment("3张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/1.jpg", "http://oiqawgwly.bkt.clouddn.com/2.jpg", "http://oiqawgwly.bkt.clouddn.com/0897.jpg"))));
+	    moments.add(new Moment("4张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/3.jpg", "http://oiqawgwly.bkt.clouddn.com/4.jpg", "http://oiqawgwly.bkt.clouddn.com/lgy.jpg", "http://oiqawgwly.bkt.clouddn.com/2341.jpg"))));
 		moments.add(new Moment("9张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/hjzgg.jpg", "http://oiqawgwly.bkt.clouddn.com/13.jpg", "http://oiqawgwly.bkt.clouddn.com/Image06.webp", "http://oiqawgwly.bkt.clouddn.com/Image13.webp", "http://oiqawgwly.bkt.clouddn.com/15.jpg", "http://oiqawgwly.bkt.clouddn.com/热浪垦丁.jpg", "http://oiqawgwly.bkt.clouddn.com/日光岩.jpg", "http://oiqawgwly.bkt.clouddn.com/清水断崖.jpg", "http://oiqawgwly.bkt.clouddn.com/白沙滩.jpg"))));
 		moments.add(new Moment("5张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/郑州大学.jpg", "http://oiqawgwly.bkt.clouddn.com/14.jpg", "http://oiqawgwly.bkt.clouddn.com/加州.张雨石.jpg", "http://oiqawgwly.bkt.clouddn.com/Image14.webp", "http://oiqawgwly.bkt.clouddn.com/psbCADUM0AR.jpg"))));
 		moments.add(new Moment("5张网络图片", new ArrayList<>(Arrays.asList("http://oiqawgwly.bkt.clouddn.com/7.jpg", "http://oiqawgwly.bkt.clouddn.com/山丘.jpg", "http://oiqawgwly.bkt.clouddn.com/Image08.webp", "http://oiqawgwly.bkt.clouddn.com/211862.jpg", "http://oiqawgwly.bkt.clouddn.com/484962.jpg"))));
@@ -142,7 +143,8 @@ public class MomentListActivity extends BGAPPToolbarActivity implements EasyPerm
                 photoPreviewIntentBuilder.previewPhotos(mCurrentClickNpl.getData())
                         .currentPosition(mCurrentClickNpl.getCurrentClickItemPosition()); // 当前预览图片的索引
             }
-            startActivity(photoPreviewIntentBuilder.build());
+
+	        startActivity(photoPreviewIntentBuilder.build());
         } else {
             EasyPermissions.requestPermissions(this, "图片预览需要以下权限:\n\n1.访问设备上的照片", PRC_PHOTO_PREVIEW, perms);
         }

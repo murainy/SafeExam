@@ -8,20 +8,23 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="设置试卷信息"
-        android:gravity="center"
-        android:textSize="18sp"
         android:layout_marginBottom="5dp"
-        android:textColor="@color/black"/>
+        android:gravity="center"
+        android:text="选择查询条件"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_4"
+        android:padding="@dimen/dp_4"
+        android:weightSum="2">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="编 号: "
+            android:text="题 号："
             android:textColor="@color/black"/>
 
         <EditText
@@ -33,12 +36,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_4"
+        android:padding="@dimen/dp_4">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="卷 名: "
+            android:text="卷 名："
             android:textColor="@color/black"/>
 
         <EditText
@@ -51,28 +56,52 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_margin="@dimen/dp_4"
+        android:padding="@dimen/dp_4">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="日 期:  "
+            android:text="日 期："
             android:textColor="@color/black"/>
 
-        <TextView
+        <EditText
             android:id="@+id/tv_paper_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"/>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/dialog_sure"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/btn_grey_selector"
-        android:text="确定"
-        android:textSize="18sp"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_4">
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:text="清空"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/dialog_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="查询"
+            android:textAlignment="center"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
 
 </LinearLayout>

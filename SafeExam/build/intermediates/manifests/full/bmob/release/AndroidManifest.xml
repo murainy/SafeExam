@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="c313355d6f4419b5084f07b9ee758da4.realse"
-    android:versionCode="2"
+    package="com.murainy.safeexam.realse"
+    android:versionCode="3"
     android:versionName="1ibr" >
 
     <uses-sdk
-        android:minSdkVersion="19"
+        android:minSdkVersion="21"
         android:targetSdkVersion="25" />
 
     <!-- 允许联网 -->
@@ -154,18 +154,11 @@
         <activity
             android:name="com.murainy.safeexam.activitis.SetHeadActivity"
             android:theme="@style/ImageTranslucentTheme" >
-
-            <!-- 具有相机功能 -->
-            <intent-filter>
-                <action android:name="android.media.action.IMAGE_CAPTURE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.CircleActivity"
-            android:label="@string/image_translucent_bar"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTop"
+            android:theme="@style/ImageTranslucentTheme" />
         <activity
             android:name="com.murainy.safeexam.activitis.ResetPasswordActivity"
             android:launchMode="singleTop"
@@ -207,7 +200,7 @@
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.MomentAddActivity"
-            android:screenOrientation="portrait"
+            android:theme="@style/ImageTranslucentTheme"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
@@ -216,12 +209,12 @@
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.MomentListActivity"
-            android:screenOrientation="portrait"
+            android:theme="@style/ImageTranslucentTheme"
             android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.SystemGalleryActivity"
-            android:screenOrientation="portrait" >
+            android:theme="@style/ImageTranslucentTheme" >
         </activity>
         <activity
             android:name="com.murainy.safeexam.activitis.SettingsActivity"
@@ -249,6 +242,7 @@
             android:name="com.murainy.safeexam.activitis.NewsDisplayActivity"
             android:theme="@style/ImageTranslucentTheme" >
         </activity>
+        <activity android:name="com.murainy.safeexam.activitis.BaseActivity" />
 
         <!-- 配置APP ID -->
         <meta-data
@@ -270,6 +264,14 @@
             android:name="bmob"
             android:value="Channel ID" />
 
+        <activity
+            android:name="com.murainy.safeexam.activitis.ScrollingActivity"
+            android:label="@string/title_activity_scrolling" >
+        </activity>
+        <activity android:name="com.murainy.safeexam.activitis.BaseWebActivity" >
+        </activity>
+        <activity android:name="com.murainy.safeexam.activitis.WebActivity" >
+        </activity>
         <!-- 图片预览界面 -->
         <activity
             android:name="cn.bingoogolapple.photopicker.activity.BGAPhotoPreviewActivity"
@@ -292,7 +294,7 @@
 
         <provider
             android:name="cn.bingoogolapple.photopicker.util.BGAPhotoFileProvider"
-            android:authorities="c313355d6f4419b5084f07b9ee758da4.realse.bga_photo_picker.file_provider"
+            android:authorities="com.murainy.safeexam.realse.bga_photo_picker.file_provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -310,7 +312,7 @@
 
         <provider
             android:name="com.just.agentweb.AgentWebFileProvider"
-            android:authorities="c313355d6f4419b5084f07b9ee758da4.realse.AgentWebFileProvider"
+            android:authorities="com.murainy.safeexam.realse.AgentWebFileProvider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data

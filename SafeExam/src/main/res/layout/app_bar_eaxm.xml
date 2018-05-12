@@ -3,42 +3,55 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    android:fitsSystemWindows="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".activitis.CuotiActivity">
 
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay"
-        android:background="@color/air_speed_label">
+        app:layout_scrollFlags="scroll|enterAlways">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            android:layout_height="match_parent"/>
+            />
     </android.support.design.widget.AppBarLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_dialog_info"
         app:backgroundTint="@color/goldenrod"
-        app:rippleColor="#33728dff"
         app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_scrollFlags="scroll|enterAlways"
         app:pressedTranslationZ="12dp"
-        android:src="@android:drawable/ic_dialog_info"/>
+        app:rippleColor="#33728dff"/>
+
     <me.zhanghai.android.materialprogressbar.MaterialProgressBar
         android:id="@+id/progress"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:indeterminate="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:indeterminate="false"
+        android:isScrollContainer="true"
+        android:max="100"
         android:progress="30"
-        android:secondaryProgress="60"
-        android:layout_gravity="center_horizontal"
-        android:max="100"/>
+        android:secondaryProgress="60"/>
 </android.support.design.widget.CoordinatorLayout>

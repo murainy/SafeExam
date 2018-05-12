@@ -3,14 +3,14 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/theme_bg_color">
+                android:background="@color/air_speed_label">
 
     <RelativeLayout
         android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
-        android:background="@color/white">
+        android:background="@color/air_speed_label">
 
         <ImageButton
             android:id="@+id/btn_back"
@@ -19,8 +19,8 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="8dp"
             android:background="#00000000"
-            android:src="@drawable/back_icon_selector"
             android:contentDescription=""
+            android:src="@drawable/back_icon_selector"
             tools:ignore="ContentDescription"/>
 
         <TextView
@@ -28,8 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/add_papers"
-            android:textSize="20sp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
 
     </RelativeLayout>
 
@@ -38,8 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/top"
-        android:src="@drawable/base_horization_line"
         android:contentDescription=""
+        android:src="@drawable/base_horization_line"
         tools:ignore="ContentDescription"/>
 
     <LinearLayout
@@ -47,15 +47,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <Button
             android:id="@+id/add_question"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/base_action_bar_height"
-            android:layout_weight="1"
             android:layout_margin="12dp"
-            android:background="@drawable/btn_login_selector"
+            android:layout_weight="0.5"
+            android:background="@drawable/shape_corner"
             android:gravity="center"
             android:text="@string/add"
             android:textColor="@color/base_color_text_white"
@@ -64,11 +65,11 @@
 
         <Button
             android:id="@+id/finish"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/base_action_bar_height"
-            android:layout_weight="1"
             android:layout_margin="12dp"
-            android:background="@drawable/input_green_button"
+            android:layout_weight="0.5"
+            android:background="@drawable/shape_corner"
             android:gravity="center"
             android:text="@string/submit"
             android:textColor="@color/base_color_text_white"
@@ -81,15 +82,15 @@
         layout="@layout/add_question_list_item"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/line"
-        android:layout_above="@id/bottom"/>
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/line"/>
 
 
     <include
         android:id="@+id/add_paper_dialog"
         layout="@layout/dialog_add_paper"
-        android:layout_height="210dp"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"/>
 
 </RelativeLayout>

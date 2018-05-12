@@ -16,20 +16,20 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\anim_abc_grow_fade_in_from_bottom.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi_bmob_update_btn_check_on_holo_light.png.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-hdpi\\bmob_update_btn_check_on_holo_light.png"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi_bmob_update_btn_check_on_holo_light.png.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-hdpi\\bmob_update_btn_check_on_holo_light.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_ic_rotate_left_black_24dp.xml.flat",
@@ -116,10 +116,6 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\anim_design_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\anim\\design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -132,12 +128,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_bga_pp_item_photo_picker.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\layout\\bga_pp_item_photo_picker.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_bga_pp_item_photo_picker.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\layout\\bga_pp_item_photo_picker.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_activity_information.xml.flat",
@@ -168,12 +164,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_wel_bottom_button_bar.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\welcome-release.aar\\a84087c86e053bd346f0148dd6830bba\\res\\layout\\wel_bottom_button_bar.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\anim_left_out.xml.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\anim\\left_out.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_wel_bottom_button_bar.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\welcome-release.aar\\a84087c86e053bd346f0148dd6830bba\\res\\layout\\wel_bottom_button_bar.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_setting_bottom_unselect.xml.flat",
@@ -182,14 +178,6 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\982745f85ff480e77501e1e29e127296\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_abc_edit_text_material.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_setting_outer_shape.xml.flat",
@@ -202,6 +190,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading07.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading07.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -252,12 +244,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\welcome-release.aar\\a84087c86e053bd346f0148dd6830bba\\res\\layout\\wel_bottom_single_button.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bga_pp_selector_btn_confirm.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\drawable\\bga_pp_selector_btn_confirm.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi_ic_done_red_900_18dp.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-xhdpi\\ic_done_red_900_18dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bga_pp_selector_btn_confirm.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\drawable\\bga_pp_selector_btn_confirm.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -300,24 +292,24 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_index_bg_003.webp.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\index_bg_003.webp"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_redocn.jpg.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\redocn.jpg"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_index_bg_003.webp.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\index_bg_003.webp"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_design_navigation_menu_item.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_app_bar_eaxm.xml.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\app_bar_eaxm.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi_ic_person_grey_700_18dp.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-mdpi\\ic_person_grey_700_18dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_app_bar_eaxm.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\app_bar_eaxm.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_tweet.xml.flat",
@@ -404,12 +396,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\982745f85ff480e77501e1e29e127296\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_seek_thumb.xml.flat",
@@ -436,6 +428,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_head_arrow.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_head_arrow.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_seek_hollow.xml.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\seek_hollow.xml"
     },
@@ -454,6 +450,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bmob_update_button_ok_bg_focused.xml.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\bmob_update_button_ok_bg_focused.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_activity_base_web.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\activity_base_web.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi_home_mbank_4_normal.png.flat",
@@ -532,12 +532,16 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-hdpi\\home_mbank_8_normal.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading04.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading04.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_bga_pp_pw_photo_folder.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\layout\\bga_pp_pw_photo_folder.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\color_abc_primary_text_material_light.xml.flat",
@@ -558,6 +562,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\menu_menu_knowledge.xml.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\menu\\menu_knowledge.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_list_item_longclicked_img.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\list_item_longclicked_img.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi_ic_person_pin_white_18dp.png.flat",
@@ -616,12 +624,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-xxhdpi-v4_bga_pp_ic_holder_light.png.flat",
@@ -632,12 +640,12 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\selector_red_corners_button.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_preference_item.xml.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\preference_item.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bga_pp_rotate_progress_bar.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\drawable\\bga_pp_rotate_progress_bar.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_preference_item.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\preference_item.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-xxhdpi-v4_bga_pp_ic_plus.png.flat",
@@ -668,12 +676,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_setting_single_select.xml.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\setting_single_select.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bg_btn_normal_color.xml.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\bg_btn_normal_color.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_setting_single_select.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\setting_single_select.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bg_border_color_white.xml.flat",
@@ -710,6 +718,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_hjjgg.png.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\hjjgg.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -764,16 +776,16 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\setting_bottom_layout_selector.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_abc_switch_thumb_material.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -828,6 +840,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\mipmap-xxhdpi-v4\\bga_pp_ic_download.png"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading03.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading03.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -836,20 +852,24 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\gg.webp"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_activity_web.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\activity_web.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_v_release.png.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\v_release.png"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_input_bg.9.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\input_bg.9.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_v_release.png.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\v_release.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi_ic_check_box_white_24dp.png.flat",
@@ -884,12 +904,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\download-4.0.2.aar\\65daf81831a01f57e3a63c5429f04614\\res\\drawable-xxhdpi-v4\\ic_file_download_black_24dp.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi_button_markdown_hotkey_press.xml.flat",
@@ -904,12 +924,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-anydpi-v21_ic_cancel_transparent_2dp.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\download-4.0.2.aar\\65daf81831a01f57e3a63c5429f04614\\res\\drawable-anydpi-v21\\ic_cancel_transparent_2dp.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bmob_update_wifi_disable.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\bmob_update_wifi_disable.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-anydpi-v21_ic_cancel_transparent_2dp.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\download-4.0.2.aar\\65daf81831a01f57e3a63c5429f04614\\res\\drawable-anydpi-v21\\ic_cancel_transparent_2dp.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout-land_wel_fragment_title.xml.flat",
@@ -1032,12 +1052,12 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-hdpi\\ic_pages_black_24dp.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_wallpaper_selector.xml.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\wallpaper_selector.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_shape_red_corners_button.xml.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\shape_red_corners_button.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_wallpaper_selector.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\wallpaper_selector.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_abc_list_menu_item_radio.xml.flat",
@@ -1144,12 +1164,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_launcher.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\launcher.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\color_design_tint_password_toggle.xml.flat",
@@ -1192,16 +1212,12 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_ic_done_black_24dp.xml.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\ic_done_black_24dp.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_activity_launcher.xml.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\activity_launcher.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_notification_action.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\982745f85ff480e77501e1e29e127296\\res\\layout\\notification_action.xml"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_ic_done_black_24dp.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\ic_done_black_24dp.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1228,12 +1244,12 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bmob_update_button_close_bg_selector.xml.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\bmob_update_button_close_bg_selector.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-xxhdpi_bga_pp_ic_cb_normal.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\mipmap-xxhdpi\\bga_pp_ic_cb_normal.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bmob_update_button_close_bg_selector.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\bmob_update_button_close_bg_selector.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_btn_login_n.9.png.flat",
@@ -1264,12 +1280,12 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\anim\\left_in.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi_ic_info_black_24dp.png.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-xxhdpi\\ic_info_black_24dp.png"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_design_navigation_item.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi_ic_info_black_24dp.png.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-xxhdpi\\ic_info_black_24dp.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\color_abc_background_cache_hint_selector_material_light.xml.flat",
@@ -1298,10 +1314,6 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout-v16_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\982745f85ff480e77501e1e29e127296\\res\\layout-v16\\notification_template_custom_big.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -1346,10 +1358,6 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\anim_abc_slide_in_bottom.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_wel_button_borderless_background.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\welcome-release.aar\\a84087c86e053bd346f0148dd6830bba\\res\\drawable\\wel_button_borderless_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_abc_popup_menu_item_layout.xml.flat",
@@ -1512,6 +1520,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\tooltip_frame_dark.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_ic_arrow.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\drawable-xhdpi-v4\\ic_arrow.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bga_pp_shape_dialog_bg.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\drawable\\bga_pp_shape_dialog_bg.xml"
     },
@@ -1526,6 +1538,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi_ic_timer_white_24dp.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-hdpi\\ic_timer_white_24dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_anim_loading_view.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\drawable\\anim_loading_view.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1812,6 +1828,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading09.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading09.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi_home_mbank_6_normal.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-hdpi\\home_mbank_6_normal.png"
     },
@@ -1822,6 +1842,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi_zx.jpg.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-hdpi\\zx.jpg"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi-v4_wel_ic_done_white.png.flat",
@@ -1846,10 +1870,6 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_wel_ic_chevron_left_white_24dp.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\welcome-release.aar\\a84087c86e053bd346f0148dd6830bba\\res\\drawable-xhdpi-v4\\wel_ic_chevron_left_white_24dp.png"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_abc_btn_colored_material.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_abc_cab_background_internal_bg.xml.flat",
@@ -1976,6 +1996,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\hotcollection_fragment.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading05.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading05.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_toast_style.xml.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\toast_style.xml"
     },
@@ -2046,6 +2070,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_design_bottom_sheet_dialog.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_fragment_twk_web.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\fragment_twk_web.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_activity_change_password.xml.flat",
@@ -2124,10 +2152,6 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_drawer_header.xml.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\drawer_header.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_list_focused_holo.9.png"
     },
@@ -2138,10 +2162,6 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_base_edit_input.9.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\base_edit_input.9.png"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_design_bottom_navigation_item_background.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_content_header_and_footer_use.xml.flat",
@@ -2166,10 +2186,6 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\color_switch_thumb_material_dark.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\color_abc_btn_colored_borderless_text_material.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -2260,10 +2276,6 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\download-4.0.2.aar\\65daf81831a01f57e3a63c5429f04614\\res\\drawable-hdpi-v4\\ic_file_download_black_24dp.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\anim_design_bottom_sheet_slide_in.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\anim\\design_bottom_sheet_slide_in.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
     },
@@ -2282,6 +2294,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_abc_btn_borderless_material.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading02.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading02.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_status_griditem_layout.xml.flat",
@@ -2332,6 +2348,10 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-mdpi\\ic_pages_black_24dp.png"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading01.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading01.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -2350,10 +2370,6 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_abc_list_menu_item_icon.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_design_password_eye.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\drawable\\design_password_eye.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_nav_header_eaxm.xml.flat",
@@ -2396,6 +2412,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_view_sinaheader.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\layout\\view_sinaheader.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_bga_pp_al_photo_picker_preview.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-photopicker-1.2.8.aar\\c6af27dec94b49c09f883241fdede3f2\\res\\layout\\bga_pp_al_photo_picker_preview.xml"
     },
@@ -2430,6 +2450,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_design_layout_snackbar.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c3d4b84dcd6f6b69808bc9805cdffeb8\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_activity_scrolling.xml.flat",
+        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\activity_scrolling.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_editor_button_bg.xml.flat",
@@ -2696,6 +2720,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\bga-baseadapter-1.2.9.aar\\dcbf30a22f4ed00d762a66cbb7d88714\\res\\drawable\\bga_baseadapter_white_gray.xml"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_view_bezier.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\layout\\view_bezier.xml"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
@@ -2804,8 +2832,8 @@
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\layout\\item_moment.xml"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_wel_button_borderless_background_theme_light.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\welcome-release.aar\\a84087c86e053bd346f0148dd6830bba\\res\\drawable\\wel_button_borderless_background_theme_light.xml"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading06.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading06.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_bmob_update_button_ok_bg_normal.xml.flat",
@@ -3076,6 +3104,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading10.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading10.png"
+    },
+    {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_notification_bg_low.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\982745f85ff480e77501e1e29e127296\\res\\drawable\\notification_bg_low.xml"
     },
@@ -3090,10 +3122,6 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_grade_button_normal.9.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\grade_button_normal.9.png"
-    },
-    {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\layout_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\982745f85ff480e77501e1e29e127296\\res\\layout\\notification_action_tombstone.xml"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_setting_top_unselect.xml.flat",
@@ -3136,8 +3164,8 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable_hjzgg.jpg.flat",
-        "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable\\hjzgg.jpg"
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading11.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading11.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -3198,6 +3226,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi_ic_chevron_right_black_48dp.png.flat",
         "source": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\src\\main\\res\\drawable-xhdpi\\ic_chevron_right_black_48dp.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading12.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading12.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -3426,6 +3458,10 @@
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e4e8a71d694deb2d7c610ecd70035957\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\mipmap-hdpi-v4_refresh_loading08.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\tkrefreshlayout-1.0.7.aar\\ecd17f0a7b73c37afee4770beb01e9c0\\res\\mipmap-hdpi-v4\\refresh_loading08.png"
     },
     {
         "merged": "E:\\AndroidStudioProjects\\SafeExam1.0\\SafeExam\\build\\intermediates\\res\\merged\\bmob\\release\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",

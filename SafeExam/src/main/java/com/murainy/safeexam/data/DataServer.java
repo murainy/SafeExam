@@ -8,8 +8,8 @@ import java.util.List;
 public class DataServer {
 
 	public static List<Kemu> getSampleData() {
-
 		return new ArrayList<>(BmobUtils.kmList);
 	}
+
 
 }

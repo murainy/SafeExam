@@ -27,7 +27,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -87,8 +86,7 @@ public class SetHeadActivity extends AppCompatActivity implements OnClickListene
 	Button btnTakephoto;
 	@BindView(R.id.btn_okphoto)
 	Button btnPhotosok;
-	@BindView(R.id.et_nick)
-	EditText et_nick;
+
 
 	//位图操作
 	public static Bitmap createImageThumbnail(String filePath) {
@@ -327,8 +325,8 @@ public class SetHeadActivity extends AppCompatActivity implements OnClickListene
 	/*分片上传单个文件 、到bmob库*/
 	public void uploadbmobfile() {
 
-		String picPath = cropImageUri.getPath();
-		final BmobFile bmobFile = new BmobFile(new File(picPath));
+		final BmobFile bmobFile = new BmobFile(new File(path));
+
 		bmobFile.uploadblock(new UploadFileListener() {
 
 			@Override
@@ -339,10 +337,8 @@ public class SetHeadActivity extends AppCompatActivity implements OnClickListene
 					//et_nick.setText(url);
 					BmobUser student = BmobUser.getCurrentUser();
 					Student stu = new Student();
-					stu.setNick(et_nick.getText().toString());
 					stu.setHeadurl(url);
 					stu.setHeadpng(bmobFile);
-					stu.setmClass("2016");
 					stu.update(student.getObjectId(), new UpdateListener() {
 						@Override
 						public void done(BmobException e) {

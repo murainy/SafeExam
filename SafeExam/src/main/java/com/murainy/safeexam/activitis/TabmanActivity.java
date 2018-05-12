@@ -37,10 +37,7 @@ public class TabmanActivity extends TabActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tabman);
-
         initTabView();
-
-
     }
 
     public View getTabItemView(int i) {
@@ -54,13 +51,6 @@ public class TabmanActivity extends TabActivity {
     }
 
     public void initTabView() {
-
-        /**
-         * tabHost.newTabSpec("artist")创建一个标签项，其中artist为它的标签标识符，相当于jsp页面标签的name属性 
-         * setIndicator("艺术标签",resources.getDrawable(R.drawable.ic_tab))设置标签显示文本以及标签上的图标（该图标并不是一个图片，而是一个xml文件哦） 
-         * setContent(intent)为当前标签指定一个意图 
-         * tabHost.addTab(spec); 将标签项添加到标签中 
-         */
 
         tabHost = getTabHost();
         layoutInflater = LayoutInflater.from(this);
@@ -79,10 +69,7 @@ public class TabmanActivity extends TabActivity {
         //个人信息
         Intent intent3 = new Intent(this, InformationActivity.class);
         spec = tabHost.newTabSpec(mTitle[2]).setIndicator(getTabItemView(2)).setContent(intent3);
-        tabHost.addTab(spec); 
-        
-
-
+	    tabHost.addTab(spec);
         tabHost.setCurrentTab(0);
     }
 
@@ -111,5 +98,19 @@ public class TabmanActivity extends TabActivity {
         return super.onKeyUp(keyCode, event);
     }
 
-
+	/*隐藏状态栏*/
+   /* @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus && Build.VERSION.SDK_INT >= 19) {
+            View decorView = getWindow().getDecorView();
+            decorView.setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
+    }*/
 }

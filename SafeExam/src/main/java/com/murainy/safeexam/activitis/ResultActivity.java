@@ -23,91 +23,97 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ResultActivity extends AppCompatActivity {
-  private static final String TAG = ResultActivity.class.getSimpleName();
-  private ImageView mImageView;
-  private ExecutorService mExecutor;
+	private static final String TAG = ResultActivity.class.getSimpleName();
+	private ImageView mImageView;
+	private ExecutorService mExecutor;
 
-  public static Intent createIntent(Activity activity, Uri uri) {
-    Intent intent = new Intent(activity, ResultActivity.class);
-    intent.setData(uri);
-    return intent;
-  }
+	public static Intent createIntent(Activity activity, Uri uri) {
+		Intent intent = new Intent(activity, ResultActivity.class);
+		intent.setData(uri);
+		return intent;
+	}
 
-  @Override protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_result);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_result);
 
-    // apply custom font
-	  FontUtils.setFont(findViewById(R.id.layout_root));
+		// apply custom font
+		FontUtils.setFont(findViewById(R.id.layout_root));
 
-    initToolbar();
+		initToolbar();
 
-	  mImageView = findViewById(R.id.result_image);
-    mExecutor = Executors.newSingleThreadExecutor();
+		mImageView = findViewById(R.id.result_image);
+		mExecutor = Executors.newSingleThreadExecutor();
 
-    final Uri uri = getIntent().getData();
-    mExecutor.submit(new LoadScaledImageTask(this, uri, mImageView, calcImageSize()));
-  }
+		final Uri uri = getIntent().getData();
+		mExecutor.submit(new LoadScaledImageTask(this, uri, mImageView, calcImageSize()));
+	}
 
-  @Override protected void onDestroy() {
-    mExecutor.shutdown();
-    super.onDestroy();
-  }
+	@Override
+	protected void onDestroy() {
+		mExecutor.shutdown();
+		super.onDestroy();
+	}
 
-  @Override public void onConfigurationChanged(Configuration newConfig) {
-    super.onConfigurationChanged(newConfig);
-  }
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+	}
 
-  @Override public boolean onSupportNavigateUp() {
-    onBackPressed();
-    return super.onSupportNavigateUp();
-  }
+	@Override
+	public boolean onSupportNavigateUp() {
+		onBackPressed();
+		return super.onSupportNavigateUp();
+	}
 
-  private void initToolbar() {
-	  Toolbar toolbar = findViewById(R.id.toolbar);
-    setSupportActionBar(toolbar);
-    ActionBar actionBar = getSupportActionBar();
-    FontUtils.setTitle(actionBar, "Cropped Image");
-    actionBar.setDisplayHomeAsUpEnabled(true);
-    actionBar.setHomeButtonEnabled(true);
-  }
+	private void initToolbar() {
+		Toolbar toolbar = findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
+		ActionBar actionBar = getSupportActionBar();
+		FontUtils.setTitle(actionBar, "剪切图像");
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setHomeButtonEnabled(true);
+	}
 
-  private int calcImageSize() {
-    DisplayMetrics metrics = new DisplayMetrics();
-    Display display = getWindowManager().getDefaultDisplay();
-    display.getMetrics(metrics);
-    return Math.min(Math.max(metrics.widthPixels, metrics.heightPixels), 2048);
-  }
+	private int calcImageSize() {
+		DisplayMetrics metrics = new DisplayMetrics();
+		Display display = getWindowManager().getDefaultDisplay();
+		display.getMetrics(metrics);
+		return Math.min(Math.max(metrics.widthPixels, metrics.heightPixels), 2048);
+	}
 
-  public static class LoadScaledImageTask implements Runnable {
-    private Handler mHandler = new Handler(Looper.getMainLooper());
-    Context context;
-    Uri uri;
-    ImageView imageView;
-    int width;
+	public static class LoadScaledImageTask implements Runnable {
+		Context context;
+		Uri uri;
+		ImageView imageView;
+		int width;
+		private Handler mHandler = new Handler(Looper.getMainLooper());
 
-	  LoadScaledImageTask(Context context, Uri uri, ImageView imageView, int width) {
-      this.context = context;
-      this.uri = uri;
-      this.imageView = imageView;
-      this.width = width;
-    }
+		LoadScaledImageTask(Context context, Uri uri, ImageView imageView, int width) {
+			this.context = context;
+			this.uri = uri;
+			this.imageView = imageView;
+			this.width = width;
+		}
 
-    @Override public void run() {
-      final int exifRotation = Utils.getExifOrientation(context, uri);
-      int maxSize = Utils.getMaxSize();
-      int requestSize = Math.min(width, maxSize);
-      try {
-        final Bitmap sampledBitmap = Utils.decodeSampledBitmapFromUri(context, uri, requestSize);
-        mHandler.post(new Runnable() {
-          @Override public void run() {
-            imageView.setImageMatrix(Utils.getMatrixFromExifOrientation(exifRotation));
-            imageView.setImageBitmap(sampledBitmap);
-          }
-        });
-      } catch (OutOfMemoryError | Exception e) {
-        e.printStackTrace();
-      }
-    }
-  }
+		@Override
+		public void run() {
+			final int exifRotation = Utils.getExifOrientation(context, uri);
+			int maxSize = Utils.getMaxSize();
+			int requestSize = Math.min(width, maxSize);
+			try {
+				final Bitmap sampledBitmap = Utils.decodeSampledBitmapFromUri(context, uri, requestSize);
+				mHandler.post(new Runnable() {
+					@Override
+					public void run() {
+						imageView.setImageMatrix(Utils.getMatrixFromExifOrientation(exifRotation));
+						imageView.setImageBitmap(sampledBitmap);
+					}
+				});
+			} catch (OutOfMemoryError | Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
 }

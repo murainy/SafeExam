@@ -25,14 +25,14 @@ public final class R {
         public static final int tilt = 0x7f0401dd;
     }
     public static final class id {
-        public static final int cw_0 = 0x7f090090;
-        public static final int cw_180 = 0x7f090091;
-        public static final int cw_270 = 0x7f090092;
-        public static final int cw_90 = 0x7f090093;
-        public static final int linear = 0x7f090109;
-        public static final int radial = 0x7f09015d;
-        public static final int restart = 0x7f090168;
-        public static final int reverse = 0x7f09016a;
+        public static final int cw_0 = 0x7f090099;
+        public static final int cw_180 = 0x7f09009a;
+        public static final int cw_270 = 0x7f09009b;
+        public static final int cw_90 = 0x7f09009c;
+        public static final int linear = 0x7f09011a;
+        public static final int radial = 0x7f09016e;
+        public static final int restart = 0x7f090179;
+        public static final int reverse = 0x7f09017b;
     }
     public static final class styleable {
         public static final int[] ShimmerFrameLayout = { 0x7f040029, 0x7f040033, 0x7f04003c, 0x7f0400af, 0x7f0400b0, 0x7f0400df, 0x7f0400e0, 0x7f0400ff, 0x7f04017a, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f04019c, 0x7f0401dd };

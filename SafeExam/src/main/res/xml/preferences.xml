@@ -1,62 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen
-    android:layout="@layout/preference_item"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout="@layout/preference_item"
     android:title="@string/title_activity_setting">
     <PreferenceCategory
         android:layout="@layout/preference_category_widget"
         android:title="人性化自由选择">
 
+
         <CheckBoxPreference
-            android:layout="@layout/preference_item"
-            android:title="贝壳通知栏单词处于最高位置"
-            android:key="@string/notify_priority"
-            android:summaryOn="当前为最高位置"
-            android:summaryOff="当前为最低位置(默认)"
-            android:defaultValue="false"/>
-        <CheckBoxPreference
-            android:layout="@layout/preference_item"
+            android:defaultValue="false"
             android:key="auto_login"
-            android:title="保存登录密码"
+            android:layout="@layout/preference_item"
             android:summary="当前为不保存"
-            android:defaultValue="false"/>
+            android:title="保存登录密码"/>
         <CheckBoxPreference
-            android:layout="@layout/preference_item"
+            android:defaultValue="false"
             android:key="night_mode"
-            android:title="夜间模式"
-            android:summary="正常模式"
-            android:defaultValue="false"/>
-        <CheckBoxPreference
             android:layout="@layout/preference_item"
-            android:title="全局复习小吐司"
+            android:summary="正常模式"
+            android:title="夜间模式"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:layout="@layout/preference_item"
             android:summaryOff="@string/toast_close"
             android:summaryOn="@string/toast_open"
-            android:defaultValue="true"/>
+            android:title="开启每日一题"/>
         <CheckBoxPreference
+            android:defaultValue="true"
             android:layout="@layout/preference_item"
-            android:title="通知栏消息字体颜色"
             android:summaryOff="当前为黑色"
             android:summaryOn="当前为白色"
-            android:defaultValue="true"/>
+            android:title="通知栏消息字体颜色"/>
         <CheckBoxPreference
+            android:defaultValue="true"
             android:layout="@layout/preference_item"
-            android:title="开机自启动"
-            android:summaryOn="@string/xiaomi_attention"
             android:summaryOff="@string/xiaomi_attention"
-            android:defaultValue="true"/>
+            android:summaryOn="@string/xiaomi_attention"
+            android:title="开机自启动"/>
 
-        <EditTextPreference
-            android:key="text"
-            android:title="Text Entry Dialog"
-            android:summary="Click to pop up a field for entry"
-            android:dialogTitle="Enter something useful"/>
-        <ListPreference
-            android:key="list"
-            android:title="Selection Dialog"
-            android:summary="Click to pop yo a list for select"
-            android:entries="@array/cities"
-            android:entryValues="@array/airport_codes"
-            android:dialogTitle="Choose a City"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -67,25 +50,17 @@
             android:title="关于">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="http://fir.im/seashell"/>
+                android:data="http://weibo.com/u/2043282821"/>
         </Preference>
 
         <Preference
             android:layout="@layout/preference_item"
-            android:title="手动检查更新">
+            android:title="检查更新">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="http://fir.im/seashell"/>
+                android:data="https://murainy.github.io"/>
         </Preference>
 
-        <Preference
-            android:layout="@layout/preference_item"
-            android:title="喜欢贝壳单词"
-            android:summary="若你觉得贝壳单词很赞的话，麻烦点击此处到应用商店给个好评，非常感谢">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="market://details?id=me.drakeet.seashell"/>
-        </Preference>
 
     </PreferenceCategory>
 
@@ -94,8 +69,8 @@
         android:title="感谢有你">
         <Preference
             android:layout="@layout/preference_item"
-            android:summary="我的博客：http://drakeet.me"
-            android:title="作者：drakeet"/>
+            android:summary="有趣的灵魂百里挑一"
+            android:title="作者：牧之河"/>
 
         <Preference
             android:layout="@layout/preference_item"

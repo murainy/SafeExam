@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fancy="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ll_root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    app:layout_scrollFlags="scroll|exitUntilCollapsed"
-    tools:context="com.murainy.safeexam.activitis.KnowledgeActivity">
+    android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/apl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="@color/blue"
             app:expandedTitleMargin="10dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
@@ -29,24 +25,24 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:background="@drawable/hjzgg"
+                android:background="@drawable/hjjgg"
                 android:scaleType="matrix"
                 app:layout_collapseMode="pin"/>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/toolbar_min_height"
+                android:layout_height="wrap_content"
                 app:layout_collapseMode="pin"
                 app:layout_collapseParallaxMultiplier="0.7"
-                app:navigationIcon="@mipmap/ic_launcher"
-                >
+                app:navigationIcon="@mipmap/ic_launcher">
 
                 <TextView
                     android:id="@+id/tv_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-"/>
+                    android:text="@string/app_name"
+                    android:textColor="@color/Green"/>
             </android.support.v7.widget.Toolbar>
         </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -57,20 +53,21 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_margin="@dimen/dp_4"
         android:orientation="horizontal"
+        android:padding="4dp"
         android:visibility="visible"
-        app:layout_anchorGravity="top"
+        android:weightSum="3"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <mehdi.sakout.fancybuttons.FancyButton
             android:id="@+id/btn_face"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_weight="1"
             android:minWidth="96dp"
-            android:padding="8dp"
-            android:paddingBottom="8dp"
+            android:padding="@dimen/dp_4"
             fancy:fb_borderColor="#FFFFFF"
             fancy:fb_borderWidth="2dp"
             fancy:fb_defaultColor="#3b5998"
@@ -88,10 +85,10 @@
             android:id="@+id/btn_like"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_weight="1"
             android:minWidth="96dp"
-            android:onClick="intro"
-            android:padding="8dp"
+            android:padding="@dimen/dp_4"
             fancy:fb_borderColor="#FFFFFF"
             fancy:fb_borderWidth="2dp"
             fancy:fb_defaultColor="#3b5998"
@@ -108,10 +105,10 @@
             android:id="@+id/btn_select"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2"
+            android:layout_margin="@dimen/dp_4"
+            android:layout_weight="1"
             android:minWidth="96dp"
-            android:onClick="select"
-            android:padding="8dp"
+            android:padding="@dimen/dp_4"
             fancy:fb_borderColor="#FFFFFF"
             fancy:fb_borderWidth="2dp"
             fancy:fb_defaultColor="#3b5998"
@@ -123,7 +120,9 @@
             fancy:fb_radius="16dp"
             fancy:fb_text="选择"
             fancy:fb_textColor="#FFFFFF"
-            fancy:fb_textSize="20sp"/>
+            fancy:fb_textSize="20sp">
+
+        </mehdi.sakout.fancybuttons.FancyButton>
 
 
     </LinearLayout>
@@ -132,22 +131,26 @@
         android:id="@+id/myscroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+        android:layout_margin="@dimen/dp_4"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:ignore="ExtraText">
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
 
         <LinearLayout
             android:id="@+id/btn_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="108dp"
-                android:layout_height="108dp"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
                 android:adjustViewBounds="false"
+                android:contentDescription="@string/app_name"
                 fancy:srcCompat="@drawable/five"/>
 
             <TextView
@@ -155,7 +158,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="32dp"
                 android:text="@string/adage"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"/>
@@ -163,5 +165,8 @@
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
 

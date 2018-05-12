@@ -16,7 +16,6 @@ public class HomeAdapter extends BaseQuickAdapter<Student, BaseViewHolder> {
 	public HomeAdapter(@LayoutRes int layoutResId, @Nullable List<Student> data) {
 		super(layoutResId, data);
 	}
-
 	@Override
 	protected void convert(BaseViewHolder helper, Student item) {
 		helper.setText(R.id.tweetText, item.getName());

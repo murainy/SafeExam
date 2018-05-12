@@ -18,7 +18,7 @@ import java.lang.Override;
 public class PayActivity_ViewBinding implements Unbinder {
   private PayActivity target;
 
-  private View view2131296458;
+  private View view2131296470;
 
   @UiThread
   public PayActivity_ViewBinding(PayActivity target) {
@@ -36,7 +36,7 @@ public class PayActivity_ViewBinding implements Unbinder {
     target.tv = Utils.findRequiredViewAsType(source, R.id.tv, "field 'tv'", TextView.class);
     view = Utils.findRequiredView(source, R.id.go, "field 'go' and method 'onGoClick'");
     target.go = Utils.castView(view, R.id.go, "field 'go'", Button.class);
-    view2131296458 = view;
+    view2131296470 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -58,7 +58,7 @@ public class PayActivity_ViewBinding implements Unbinder {
     target.tv = null;
     target.go = null;
 
-    view2131296458.setOnClickListener(null);
-    view2131296458 = null;
+    view2131296470.setOnClickListener(null);
+    view2131296470 = null;
   }
 }
